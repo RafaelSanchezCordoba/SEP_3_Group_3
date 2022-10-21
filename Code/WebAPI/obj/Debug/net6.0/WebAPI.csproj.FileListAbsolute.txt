@@ -31,3 +31,4 @@
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.genruntimeconfig.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/data.json

@@ -32,6 +32,31 @@ public class SocksLogic : ISocksLogic
         return socksDao.GetById(id);
     }
 
+    public async Task UpdateAsync(SocksCardUpdateDto dto)
+    {
+        ProductCard? existing = await socksDao.GetById(dto.Id);
+
+        if (existing == null)
+        {
+            throw new Exception($"Socks with ID {dto.Id} not found!!!");
+        }
+
+        Stock stockToUse =  existing.Stock;
+        string titleToUse = dto.Title ?? existing.Title;
+        string descriptionToUse = dto.Description ?? existing.Description;
+        string materialToUse = dto.Material ?? existing.Material;
+        string brandToUse = dto.Brand ?? existing.Brand;
+        string imageToUse = dto.Image ?? existing.Image;
+
+        ProductCard updated = new(stockToUse, titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse)
+        {
+            Id = existing.Id
+        };
+        
+        ValidateSocks(updated);
+        await socksDao.UpdateAsync(updated);
+    }
+
     private void ValidateSocks(ProductCard dto)
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("The title can not be empty!!!");

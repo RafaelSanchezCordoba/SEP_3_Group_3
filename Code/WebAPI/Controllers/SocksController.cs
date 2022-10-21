@@ -60,4 +60,19 @@ public class SocksController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+
+    [HttpPatch]
+    public async Task<ActionResult> UpdateAsync([FromBody] SocksCardUpdateDto dto)
+    {
+        try
+        {
+            await socksLogic.UpdateAsync(dto);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

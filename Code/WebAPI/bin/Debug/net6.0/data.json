@@ -3,6 +3,20 @@
   "ProductCards": [
     {
       "Stock": {
+        "Color": "asdfasd",
+        "Size": "asdfas",
+        "Quantity": 0
+      },
+      "Title": "asdfasdf",
+      "Description": "asdfasdf",
+      "Price": 11,
+      "Material": "sdfas",
+      "Brand": "asdfasd",
+      "Image": "asdfasdf",
+      "Id": 1
+    },
+    {
+      "Stock": {
         "Color": "a",
         "Size": "s",
         "Quantity": 0
@@ -14,20 +28,6 @@
       "Brand": "w",
       "Image": "e",
       "Id": 2
-    },
-    {
-      "Stock": {
-        "Color": "asdfasd",
-        "Size": "asdfas",
-        "Quantity": 0
-      },
-      "Title": "ffff",
-      "Description": "ffff",
-      "Price": 69,
-      "Material": "ffff",
-      "Brand": "ffff",
-      "Image": "ffff",
-      "Id": 1
     }
   ],
   "Products": [],

@@ -1,3 +1,4 @@
+using System.Data.Common;
 using Application.DaoInterfaces;
 using Shared.Models;
 
@@ -39,5 +40,19 @@ public class SocksFileDao : ISocksDao
     {
         ProductCard? existing = context.ProductCards.FirstOrDefault(productCard => productCard.Id == id);
         return Task.FromResult(existing);
+    }
+
+    public Task UpdateAsync(ProductCard dto)
+    {
+        ProductCard? existing = context.ProductCards.FirstOrDefault(card => card.Id == dto.Id);
+        if (existing == null)
+        {
+            throw new Exception($"Socks with ID {dto.Id} does not exist!!!");
+        }
+
+        context.ProductCards.Remove(existing);
+        context.ProductCards.Add(dto);
+        context.SaveChanges();
+        return Task.CompletedTask;
     }
 }
