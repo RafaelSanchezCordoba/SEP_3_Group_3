@@ -1,0 +1,35 @@
+{
+  "Stocks": [],
+  "ProductCards": [
+    {
+      "Stock": {
+        "Color": "asdfasd",
+        "Size": "asdfas",
+        "Quantity": 0
+      },
+      "Title": "asdfasdf",
+      "Description": "asdfasdf",
+      "Price": 11,
+      "Material": "sdfas",
+      "Brand": "asdfasd",
+      "Image": "asdfasdf",
+      "Id": 1
+    },
+    {
+      "Stock": {
+        "Color": "a",
+        "Size": "s",
+        "Quantity": 0
+      },
+      "Title": "d",
+      "Description": "f",
+      "Price": 11,
+      "Material": "q",
+      "Brand": "w",
+      "Image": "e",
+      "Id": 2
+    }
+  ],
+  "Products": [],
+  "Socks": []
+}

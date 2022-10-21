@@ -10,7 +10,7 @@ public class ProductCard
     public string Material { get; set; }
     public string Brand { get; set; }
     public string Image { get; set; }
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     public ProductCard(Stock stock, string title, string description, double price, string material, string brand, string image)
     {

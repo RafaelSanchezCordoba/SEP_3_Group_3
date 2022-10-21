@@ -22,13 +22,18 @@ public class SocksLogic : ISocksLogic
         return created;
     }
 
+    public Task<IEnumerable<ProductCard>> GetAsync()
+    {
+        return socksDao.GetAsync();
+    }
+
+    public Task<ProductCard> GetById(int id)
+    {
+        return socksDao.GetById(id);
+    }
+
     private void ValidateSocks(ProductCard dto)
     {
-        List<string> sizes = new List<string>
-        {
-            "XXS", "XS", "S", "M", "L", "XL", "XXL" 
-        };
-
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("The title can not be empty!!!");
         if (string.IsNullOrEmpty(dto.Description)) throw new Exception("The description can not be empty!!!");
         if (string.IsNullOrEmpty(dto.Material)) throw new Exception("The material can not be empty!!!");
@@ -36,12 +41,5 @@ public class SocksLogic : ISocksLogic
         if (string.IsNullOrEmpty(dto.Image)) throw new Exception("The image can not be empty!!!");
         if (dto.Price == 0) throw new Exception("The price can not be 0!!!");
         if (string.IsNullOrEmpty(dto.Stock.Color)) throw new Exception("The color can not be empty!!!");
-        
-        foreach (var size in sizes)
-        {
-            if (!dto.Stock.Equals(size))
-                throw new Exception("The size is incorrect, try with: XXS, XS, S, M, L, XL, XXL");
-        }
-        
     }
 }

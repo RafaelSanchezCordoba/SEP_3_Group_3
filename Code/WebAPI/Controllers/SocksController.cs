@@ -30,4 +30,34 @@ public class SocksController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ProductCard>>> GetAsync()
+    {
+        try
+        {
+            var socks = await socksLogic.GetAsync();
+            return Ok(socks);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<ProductCard>> GetById([FromRoute] int id)
+    {
+        try
+        {
+            var result = await socksLogic.GetById(id);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }
