@@ -2,17 +2,20 @@ namespace Shared.Models;
 
 public class ProductCard
 {
-    private Stock Stock { get; set; }
-    private string Description { get; set; }
-    private double Price { get; set; }
-    private string Material { get; set; }
-    private string Brand { get; set; }
-    private string Image { get; set; }
-    private long Id { get; set; }
+    //We need to add a title to the product card.
+    public Stock Stock { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public double Price { get; set; }
+    public string Material { get; set; }
+    public string Brand { get; set; }
+    public string Image { get; set; }
+    public long Id { get; set; }
 
-    public ProductCard(Stock stock, string description, double price, string material, string brand, string image)
+    public ProductCard(Stock stock, string title, string description, double price, string material, string brand, string image)
     {
         Stock = stock;
+        Title = title;
         Description = description;
         Price = price;
         Material = material;

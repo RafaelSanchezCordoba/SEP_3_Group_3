@@ -1,3 +1,9 @@
+using Application.DaoInterfaces;
+using Application.Logic;
+using Application.LogicInterfaces;
+using FileData;
+using FileData.DAOs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +12,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<FileContext>();
+builder.Services.AddScoped<ISocksDao, SocksFileDao>();
+builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+
+
 
 var app = builder.Build();
 

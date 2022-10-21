@@ -1,0 +1,33 @@
+using Application.LogicInterfaces;
+using Microsoft.AspNetCore.Mvc;
+using Shared.DTOs;
+using Shared.Models;
+
+namespace WebAPI.Controllers;
+
+[ApiController]
+[Route("[controller]")]
+public class SocksController : ControllerBase
+{
+    private readonly ISocksLogic socksLogic;
+
+    public SocksController(ISocksLogic socksLogic)
+    {
+        this.socksLogic = socksLogic;
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<ProductCard>> CreateAsync(CreateSockCardDto dto)
+    {
+        try
+        {
+            ProductCard socks = await socksLogic.CreateAsync(dto);
+            return Created($"/socks/{socks.Id}", socks);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+}
