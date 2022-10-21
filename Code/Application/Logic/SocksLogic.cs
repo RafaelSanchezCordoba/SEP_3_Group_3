@@ -41,7 +41,7 @@ public class SocksLogic : ISocksLogic
             throw new Exception($"Socks with ID {dto.Id} not found!!!");
         }
 
-        Stock stockToUse =  existing.Stock;
+        Stock stockToUse =  dto.Stock;
         string titleToUse = dto.Title ?? existing.Title;
         string descriptionToUse = dto.Description ?? existing.Description;
         string materialToUse = dto.Material ?? existing.Material;
@@ -55,6 +55,17 @@ public class SocksLogic : ISocksLogic
         
         ValidateSocks(updated);
         await socksDao.UpdateAsync(updated);
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        ProductCard? productCard = await socksDao.GetById(id);
+        if (productCard == null)
+        {
+            throw new Exception($"Socks with ID {id} was not found!!!");
+        }
+
+        await socksDao.DeleteAsync(id);
     }
 
     private void ValidateSocks(ProductCard dto)

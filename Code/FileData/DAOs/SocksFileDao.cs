@@ -55,4 +55,18 @@ public class SocksFileDao : ISocksDao
         context.SaveChanges();
         return Task.CompletedTask;
     }
+
+    public Task DeleteAsync(int id)
+    {
+        ProductCard? existing = context.ProductCards.FirstOrDefault(card => card.Id == id);
+        if (existing == null)
+        {
+            throw new Exception($"Socks with ID {id} does not exist!!!");
+        }
+
+        context.ProductCards.Remove(existing);
+        context.SaveChanges();
+
+        return Task.CompletedTask;
+    }
 }

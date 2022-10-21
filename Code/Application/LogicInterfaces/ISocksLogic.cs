@@ -9,4 +9,5 @@ public interface ISocksLogic
     Task<IEnumerable<ProductCard>> GetAsync();
     Task<ProductCard> GetById(int id);
     Task UpdateAsync(SocksCardUpdateDto dto);
+    Task DeleteAsync(int id);
 }

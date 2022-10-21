@@ -10,4 +10,5 @@ public interface ISocksDao
     Task<ProductCard> GetById(int id);
 
     Task UpdateAsync(ProductCard dto);
+    Task DeleteAsync(int id);
 }

@@ -3,31 +3,17 @@
   "ProductCards": [
     {
       "Stock": {
-        "Color": "a",
-        "Size": "s",
-        "Quantity": 0
-      },
-      "Title": "d",
-      "Description": "f",
-      "Price": 11,
-      "Material": "q",
-      "Brand": "w",
-      "Image": "e",
-      "Id": 2
-    },
-    {
-      "Stock": {
-        "Color": "asdfasd",
-        "Size": "asdfas",
-        "Quantity": 0
+        "Color": "ffff",
+        "Size": "ffff",
+        "Quantity": 6
       },
       "Title": "ffff",
       "Description": "ffff",
-      "Price": 69,
-      "Material": "ffff",
-      "Brand": "ffff",
+      "Price": 33,
+      "Material": "fffff",
+      "Brand": "fff",
       "Image": "ffff",
-      "Id": 1
+      "Id": 2
     }
   ],
   "Products": [],
