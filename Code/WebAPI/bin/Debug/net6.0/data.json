@@ -14,6 +14,48 @@
       "Brand": "fff",
       "Image": "ffff",
       "Id": 2
+    },
+    {
+      "Stock": {
+        "Color": "string",
+        "Size": "string",
+        "Quantity": 0
+      },
+      "Title": "string",
+      "Description": "string",
+      "Price": 12,
+      "Material": "string",
+      "Brand": "string",
+      "Image": "ball",
+      "Id": 3
+    },
+    {
+      "Stock": {
+        "Color": "don\u0027t know",
+        "Size": "XXL",
+        "Quantity": 0
+      },
+      "Title": "fghjk",
+      "Description": "ghjkasda",
+      "Price": 12,
+      "Material": "asda",
+      "Brand": "eqweq",
+      "Image": "sada",
+      "Id": 4
+    },
+    {
+      "Stock": {
+        "Color": "black",
+        "Size": "XXL",
+        "Quantity": 23
+      },
+      "Title": "fghjkl",
+      "Description": "bula ",
+      "Price": 12,
+      "Material": "adjpa",
+      "Brand": "asdg",
+      "Image": "adhiuw",
+      "Id": 5
     }
   ],
   "Products": [],

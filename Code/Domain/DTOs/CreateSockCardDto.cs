@@ -12,6 +12,8 @@ public class CreateSockCardDto
     public string Brand { get; }
     public string Image { get; }
 
+   
+
     public CreateSockCardDto(Stock stock, string title, string description, double price, string material, string brand, string image)
     {
         Stock = stock;
