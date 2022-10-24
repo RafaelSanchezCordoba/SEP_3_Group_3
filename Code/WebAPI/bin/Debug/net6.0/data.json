@@ -3,16 +3,16 @@
   "ProductCards": [
     {
       "Stock": {
-        "Color": "a",
-        "Size": "s",
-        "Quantity": 0
+        "Color": "ffff",
+        "Size": "ffff",
+        "Quantity": 6
       },
-      "Title": "aaaa",
-      "Description": "aaaaa",
-      "Price": 44,
-      "Material": "aaaaa",
-      "Brand": "aaaa",
-      "Image": "aaaa",
+      "Title": "ffff",
+      "Description": "ffff",
+      "Price": 33,
+      "Material": "fffff",
+      "Brand": "fff",
+      "Image": "ffff",
       "Id": 2
     }
   ],
