@@ -98,6 +98,20 @@
       "Brand": "dfghjk",
       "Image": "fghj",
       "Id": 8
+    },
+    {
+      "Stock": {
+        "Color": "none",
+        "Size": "none",
+        "Quantity": 0
+      },
+      "Title": "drghjkl\u00F2\u00E0",
+      "Description": "dfghjkl",
+      "Price": 12.9,
+      "Material": "dhjk",
+      "Brand": "dfghjk",
+      "Image": "bullaba",
+      "Id": 9
     }
   ],
   "Products": [],
