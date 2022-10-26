@@ -44,61 +44,11 @@
         <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
 
     </div>
+  
     
-    <fieldset id="colorsBox" >
-        <legend>Choose colors:</legend>
-        <div>
-            <input type="checkbox" id="black" @bind="blackColor" name="black"/>
-            <label for="black" style="color: black">Black</label>
-              <div class="form-group field">
-                    <label>Stock:</label>
-                    <input type="number" @bind="blackStock" @bind:event ="oninput"/>
-                    
-                </div>
-        </div>
-        <div>
-            <input type="checkbox" id="white" name="white"/>
-            <label for="white" style="color:gainsboro">White</label>
-        </div>
-        <div>
-            <input type="checkbox" id="red" name="red"/>
-            <label for="black" style="color: orangered">Red</label>
-        </div>
-        <div>
-            <input type="checkbox" id="green" name="green"/>
-            <label for="green" style="color:green">Green</label>
-        </div>
-        <div>
-            <input type="checkbox" id="yellow" name="yellow"/>
-            <label for="yellow" style="color:yellow">Yellow</label>
-        </div>
-        <div>
-            <input type="checkbox" id="grey" name="grey"/>
-            <label for="grey" style="color:grey">Grey</label>
-        </div>
-        <div>
-            <input type="checkbox" id="purple" name="purple"/>
-            <label for="purple" style="color:purple">Purple</label>
-        </div>
-        <div>
-            <input type="checkbox" id="brown" name="brown"/>
-            <label for="brown" style="color:#683838">Brown</label>
-        </div>
-        <div>
-            <input type="checkbox" id="orange" name="orange"/>
-            <label for="orange" style="color:orange">Orange</label>
-        </div>
-        <div>
-                    <input type="checkbox" id="multi" name="multi"/>
-                    <label for="multi" style="color:deeppink">Multicolor</label>
-                </div>
+    <StockCreationComponent>
         
-        
-        
-        
-        
-    </fieldset>
-
+    </StockCreationComponent>
 </div>
 
 
@@ -116,23 +66,19 @@
     private string color = "";
 
     private bool blackColor = false;
-    private long blackStock = 0;
+    private long blackStockXXS = 0;
 
     private async Task CreateSomething()
     {
         resultMsg = "";
-        if (blackColor)
-        {
-            _stock.Color = "black";
-            _stock.Quantity = blackStock;
-        }
+    
 
         try
         {
             
             await sockService.Create(new CreateSockCardDto( _stock,title, description, price, material, brand, image));
 
-           
+            _stock = new Stock();
             title = "";
             material = "";
             description = "";

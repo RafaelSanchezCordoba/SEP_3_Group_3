@@ -70,6 +70,34 @@
       "Brand": "rthjk",
       "Image": "rtyukl",
       "Id": 6
+    },
+    {
+      "Stock": {
+        "Color": "none",
+        "Size": "none",
+        "Quantity": 0
+      },
+      "Title": "568",
+      "Description": "tyuj",
+      "Price": 4567,
+      "Material": "ghj,",
+      "Brand": "dfghjk.",
+      "Image": "jkl\u00F2",
+      "Id": 7
+    },
+    {
+      "Stock": {
+        "Color": "black",
+        "Size": "XXS",
+        "Quantity": 56
+      },
+      "Title": "rtyujkl",
+      "Description": "dfghjk,.",
+      "Price": 567,
+      "Material": "fdghj",
+      "Brand": "dfghjk",
+      "Image": "fghj",
+      "Id": 8
     }
   ],
   "Products": [],
