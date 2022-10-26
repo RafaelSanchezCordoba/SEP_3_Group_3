@@ -16,7 +16,7 @@ public class SocksLogic : ISocksLogic
 
     public async Task<ProductCard> CreateAsync(CreateSockCardDto dto)
     {
-        ProductCard socksCard = new ProductCard(dto.Stock, dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image);
+        ProductCard socksCard = new ProductCard( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image);
         ValidateSocks(socksCard);
         ProductCard created = await socksDao.CreateAsync(socksCard);
         return created;
@@ -40,15 +40,14 @@ public class SocksLogic : ISocksLogic
         {
             throw new Exception($"Socks with ID {dto.Id} not found!!!");
         }
-
-        Stock stockToUse =  dto.Stock;
+        
         string titleToUse = dto.Title ?? existing.Title;
         string descriptionToUse = dto.Description ?? existing.Description;
         string materialToUse = dto.Material ?? existing.Material;
         string brandToUse = dto.Brand ?? existing.Brand;
         string imageToUse = dto.Image ?? existing.Image;
 
-        ProductCard updated = new(stockToUse, titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse)
+        ProductCard updated = new(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse)
         {
             Id = existing.Id
         };
@@ -76,6 +75,6 @@ public class SocksLogic : ISocksLogic
         if (string.IsNullOrEmpty(dto.Brand)) throw new Exception("The brand can not be empty!!!");
         if (string.IsNullOrEmpty(dto.Image)) throw new Exception("The image can not be empty!!!");
         if (dto.Price == 0) throw new Exception("The price can not be 0!!!");
-        if (string.IsNullOrEmpty(dto.Stock.Color)) throw new Exception("The color can not be empty!!!");
+        
     }
 }

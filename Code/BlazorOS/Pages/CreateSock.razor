@@ -53,7 +53,7 @@
 
 
 @code {
-    private Stock _stock = new Stock();
+    
     private string title = "";
     private string description = "";
     private string material = "";
@@ -76,9 +76,9 @@
         try
         {
             
-            await sockService.Create(new CreateSockCardDto( _stock,title, description, price, material, brand, image));
+            await sockService.Create(new CreateSockCardDto( title, description, price, material, brand, image));
 
-            _stock = new Stock();
+            
             title = "";
             material = "";
             description = "";

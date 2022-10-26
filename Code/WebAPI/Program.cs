@@ -3,6 +3,7 @@ using Application.Logic;
 using Application.LogicInterfaces;
 using FileData;
 using FileData.DAOs;
+using Shared.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<FileContext>();
 builder.Services.AddScoped<ISocksDao, SocksFileDao>();
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+builder.Services.AddScoped<ISockStockDao, SockStockFileDao>();
+builder.Services.AddScoped<ISockStockLogic, SockStockLogic>();
 
 
 

@@ -1,117 +1,45 @@
 {
-  "Stocks": [],
-  "ProductCards": [
+  "Stocks": [
     {
-      "Stock": {
-        "Color": "ffff",
-        "Size": "ffff",
-        "Quantity": 6
-      },
-      "Title": "ffff",
-      "Description": "ffff",
-      "Price": 33,
-      "Material": "fffff",
-      "Brand": "fff",
-      "Image": "ffff",
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 2,
+      "Id": 1
+    },
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "bing",
+      "Quantity": 2,
       "Id": 2
     },
     {
-      "Stock": {
-        "Color": "string",
-        "Size": "string",
-        "Quantity": 0
-      },
-      "Title": "string",
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 0,
+      "Id": 3
+    }
+  ],
+  "ProductCards": [
+    {
+      "Title": "bully",
       "Description": "string",
       "Price": 12,
       "Material": "string",
       "Brand": "string",
-      "Image": "ball",
-      "Id": 3
+      "Image": "string",
+      "Id": 1
     },
     {
-      "Stock": {
-        "Color": "don\u0027t know",
-        "Size": "XXL",
-        "Quantity": 0
-      },
       "Title": "fghjk",
-      "Description": "ghjkasda",
-      "Price": 12,
-      "Material": "asda",
-      "Brand": "eqweq",
-      "Image": "sada",
-      "Id": 4
-    },
-    {
-      "Stock": {
-        "Color": "black",
-        "Size": "XXL",
-        "Quantity": 23
-      },
-      "Title": "fghjkl",
-      "Description": "bula ",
-      "Price": 12,
-      "Material": "adjpa",
-      "Brand": "asdg",
-      "Image": "adhiuw",
-      "Id": 5
-    },
-    {
-      "Stock": {
-        "Color": "none",
-        "Size": "none",
-        "Quantity": 0
-      },
-      "Title": "rtyujkl",
-      "Description": "fghj",
-      "Price": 67,
-      "Material": "fghjkl",
-      "Brand": "rthjk",
-      "Image": "rtyukl",
-      "Id": 6
-    },
-    {
-      "Stock": {
-        "Color": "none",
-        "Size": "none",
-        "Quantity": 0
-      },
-      "Title": "568",
-      "Description": "tyuj",
-      "Price": 4567,
-      "Material": "ghj,",
-      "Brand": "dfghjk.",
-      "Image": "jkl\u00F2",
-      "Id": 7
-    },
-    {
-      "Stock": {
-        "Color": "black",
-        "Size": "XXS",
-        "Quantity": 56
-      },
-      "Title": "rtyujkl",
-      "Description": "dfghjk,.",
-      "Price": 567,
-      "Material": "fdghj",
-      "Brand": "dfghjk",
-      "Image": "fghj",
-      "Id": 8
-    },
-    {
-      "Stock": {
-        "Color": "none",
-        "Size": "none",
-        "Quantity": 0
-      },
-      "Title": "drghjkl\u00F2\u00E0",
-      "Description": "dfghjkl",
-      "Price": 12.9,
-      "Material": "dhjk",
-      "Brand": "dfghjk",
-      "Image": "bullaba",
-      "Id": 9
+      "Description": "ghjkl",
+      "Price": 12.97,
+      "Material": "hjkl.",
+      "Brand": "ghjkl.",
+      "Image": "hjkl\u00F2",
+      "Id": 2
     }
   ],
   "Products": [],
