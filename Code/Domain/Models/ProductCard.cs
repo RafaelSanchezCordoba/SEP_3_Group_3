@@ -12,14 +12,16 @@ public class ProductCard
     public string Image { get; set; }
     public int Id { get; set; }
 
-    public ProductCard( string title, string description, double price, string material, string brand, string image)
+
+
+    protected ProductCard(string title, string description, double price, string material, string brand, string image)
     {
-        
         Title = title;
         Description = description;
         Price = price;
         Material = material;
         Brand = brand;
         Image = image;
+      
     }
 }
