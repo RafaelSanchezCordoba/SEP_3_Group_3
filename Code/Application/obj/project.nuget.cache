@@ -1,8 +1,33 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "XwzMUwZz/sm+X2nfGIBIH0y/GeZJMH6Mt+bPs+hbTrUMPlMusAWUw9bwtiTeNxCvCQe6JrObFSjRjr0GrYMVrA==",
   "success": true,
   "projectFilePath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Application/Application.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "T/d1P5zMSrrndcci/jPQAXwNFpexaeUAtdbqUjUlUqC5qLEiH8fadqsW/TURiSNR3CVEcKXIxXUB/XxnhOgUHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.8\\microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.8\\microsoft.aspnetcore.components.forms.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.8\\microsoft.aspnetcore.components.web.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.8\\microsoft.aspnetcore.metadata.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.jsinterop\\6.0.8\\microsoft.jsinterop.6.0.8.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\smart.blazor\\11.0.46\\smart.blazor.11.0.46.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\rosab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+>>>>>>> Stashed changes
   "logs": []
 }

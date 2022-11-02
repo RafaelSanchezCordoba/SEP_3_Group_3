@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Domain/Domain.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
+=======
+    "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -37,6 +54,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
