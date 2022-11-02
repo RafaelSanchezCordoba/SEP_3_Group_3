@@ -212,6 +212,36 @@
           "buildMultiTargeting/Smart.Blazor.props": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Smart.Blazor/11.0.46": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2",
+          "Microsoft.AspNetCore.Components.Web": "3.1.2",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/Smart.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Smart.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Smart.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Smart.Blazor.props": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -1888,7 +1918,11 @@
   },
   "packageFolders": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "/Users/rafael/.nuget/packages/": {}
+=======
+    "C:\\Users\\rosab\\.nuget\\packages\\": {}
+>>>>>>> Stashed changes
 =======
     "C:\\Users\\rosab\\.nuget\\packages\\": {}
 >>>>>>> Stashed changes
@@ -1896,6 +1930,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/WebAPI.csproj",
       "projectName": "WebAPI",
@@ -1905,6 +1940,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rafael/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Stashed changes
 =======
       "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
@@ -1927,17 +1972,23 @@
           "targetAlias": "net6.0",
           "projectReferences": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Application/Application.csproj": {
               "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Application/Application.csproj"
             },
             "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/FileData/FileData.csproj": {
               "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/FileData/FileData.csproj"
 =======
+=======
+>>>>>>> Stashed changes
             "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj"
             },
             "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\FileData\\FileData.csproj": {
               "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\FileData\\FileData.csproj"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
           }

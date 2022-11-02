@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "1VAk/4J+0IKHjgPXlnXDiTN+DcXOzrPIG7iJqHBlCv0cp460M3lpBi1/+doDzL7N6/RmrGY9feT9iam8J+rqpg==",
   "success": true,
   "projectFilePath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/BlazorOS/BlazorOS.csproj",
@@ -40,6 +41,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "00162+6O1B9o2AQUvpRcmBBXQNcQTsgUy2o+arlG/tvTdTwDJwGDHP/t4MsSi2Q183uuVObE+OyFLrOYw44x6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj",
+  "expectedPackageFiles": [
+>>>>>>> Stashed changes
     "C:\\Users\\rosab\\.nuget\\packages\\blazorfluentui.corecomponents\\6.0.2\\blazorfluentui.corecomponents.6.0.2.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
@@ -81,6 +88,9 @@
     "C:\\Users\\rosab\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.8\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.8.nupkg.sha512"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ],
   "logs": []

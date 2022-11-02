@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/BlazorOS/BlazorOS.csproj": {}
   },
   "projects": {
@@ -32,6 +33,22 @@
         "configFilePaths": [
           "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> Stashed changes
+=======
+    "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj",
+        "projectName": "BlazorOS",
+        "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj",
+        "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -44,8 +61,13 @@
             "targetAlias": "net6.0",
             "projectReferences": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/HttpClients/HttpClients.csproj": {
                 "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/HttpClients/HttpClients.csproj"
+=======
+              "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj": {
+                "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj"
+>>>>>>> Stashed changes
 =======
               "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj": {
                 "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj"
@@ -118,6 +140,7 @@
       }
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -129,6 +152,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
+=======
+    "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Stashed changes
 =======
     "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {
       "version": "1.0.0",
@@ -195,6 +231,7 @@
       }
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/HttpClients/HttpClients.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -207,6 +244,8 @@
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
 =======
+=======
+>>>>>>> Stashed changes
     "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -218,6 +257,9 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
@@ -231,8 +273,13 @@
             "targetAlias": "net6.0",
             "projectReferences": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Domain/Domain.csproj": {
                 "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Domain/Domain.csproj"
+=======
+              "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj"
+>>>>>>> Stashed changes
 =======
               "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Domain\\Domain.csproj"
