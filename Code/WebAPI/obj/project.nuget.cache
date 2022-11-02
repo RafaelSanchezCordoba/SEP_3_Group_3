@@ -1,7 +1,6 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   "dgSpecHash": "9YOoP1mTooMgqXVZcdwi/6WPrMdL1nAAUqc6Ngbq+q23SbWtPV/UWgO1TtxqaFxQ9UfxHdfBK6ZxErGdhHXBLg==",
   "success": true,
   "projectFilePath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/WebAPI.csproj",
@@ -17,12 +16,6 @@
   "success": true,
   "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
-=======
-  "dgSpecHash": "YFuALGcrfETPGbIYHPXwNzuaGcM6WwF0PNKXFe8ocn9uMSvs19T3RaoS2uLHa3M5tuWNCIFjwtInaAFBJ9x5yQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\WebAPI\\WebAPI.csproj",
-  "expectedPackageFiles": [
->>>>>>> Stashed changes
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.8\\microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512",
@@ -46,9 +39,6 @@
     "C:\\Users\\rosab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   ],
   "logs": []

@@ -1656,11 +1656,7 @@
   },
   "packageFolders": {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "/Users/rafael/.nuget/packages/": {}
-=======
-    "C:\\Users\\rosab\\.nuget\\packages\\": {}
->>>>>>> Stashed changes
 =======
     "C:\\Users\\rosab\\.nuget\\packages\\": {}
 >>>>>>> Stashed changes
@@ -1668,7 +1664,6 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/FileData/FileData.csproj",
       "projectName": "FileData",
@@ -1679,8 +1674,6 @@
       "configFilePaths": [
         "/Users/rafael/.nuget/NuGet/NuGet.Config"
 =======
-=======
->>>>>>> Stashed changes
       "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\FileData\\FileData.csproj",
       "projectName": "FileData",
       "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\FileData\\FileData.csproj",
@@ -1689,9 +1682,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
       ],
       "originalTargetFrameworks": [
@@ -1705,13 +1695,8 @@
           "targetAlias": "net6.0",
           "projectReferences": {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
             "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Application/Application.csproj": {
               "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/Application/Application.csproj"
-=======
-            "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj"
->>>>>>> Stashed changes
 =======
             "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\Application\\Application.csproj"

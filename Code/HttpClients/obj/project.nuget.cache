@@ -1,7 +1,6 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   "dgSpecHash": "fIvvq+XovEAQtEGymTs11mWCShfihWuy8jymWKn2JxdjgiYaPj9trzMptOHNn1iMMQI2WcxFvg8WbaFMiZ2rHw==",
   "success": true,
   "projectFilePath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/HttpClients/HttpClients.csproj",
@@ -9,10 +8,6 @@
 =======
   "dgSpecHash": "lanHwhXZbe6OT/qXMG4hZzgePJhZfeuk8UsTTaLt8DA944S2jdqqOx7NSfxZPYYnlxObDCLMwcz6PCUHibSFjQ==",
   "success": true,
-=======
-  "dgSpecHash": "lanHwhXZbe6OT/qXMG4hZzgePJhZfeuk8UsTTaLt8DA944S2jdqqOx7NSfxZPYYnlxObDCLMwcz6PCUHibSFjQ==",
-  "success": true,
->>>>>>> Stashed changes
   "projectFilePath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\HttpClients\\HttpClients.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rosab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
@@ -30,9 +25,6 @@
     "C:\\Users\\rosab\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\rosab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   "logs": []
 }
