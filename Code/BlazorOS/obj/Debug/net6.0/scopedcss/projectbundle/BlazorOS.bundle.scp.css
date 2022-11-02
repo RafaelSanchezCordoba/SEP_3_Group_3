@@ -1,3 +1,57 @@
+/* /Pages/CreateSock.razor.rz.scp.css */
+*[b-12n00fbuqh] {box-sizing: border-box;}
+
+.form-group-field[b-12n00fbuqh]{
+    padding: 10px;
+    float: left;
+}
+.card[b-12n00fbuqh]{
+    padding: 20px;
+    float: left;
+    width: 65%;
+}
+
+.button-message[b-12n00fbuqh]
+{
+    float: left;
+    margin-left: 2%;
+}
+.small-form-field[b-12n00fbuqh]
+{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+
+input[b-12n00fbuqh]
+{
+    width: 73%;
+    float: right;
+}
+.long-input[b-12n00fbuqh]
+{
+    width: 87%;
+}
+
+.acceptbtn[b-12n00fbuqh]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+#dropdown-list[b-12n00fbuqh]
+{
+    float: right;
+    width: 75%;
+}
+#dropdown-input[b-12n00fbuqh]
+{
+    width: 100%;
+    float: right;
+}
+
+
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-wcssxcvg4k] {
     position: relative;
