@@ -1,111 +1,91 @@
 @page "/CreateSock"
-@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@using System.Drawing
 @using global::Shared.DTOs
+@using HttpClients.ClientInterfaces
 @inject ISockService sockService
-@inject NavigationManager NavManager
-
-<h3>Create Sock</h3>
 
 <div class="card">
-    
-    <div class="form-group-field">
+    <h3>CreateSock</h3>
+    <div class="form-group field">
         <label>Title:</label>
-        <input class="long-input" type="text" @bind="title" @bind:event ="oninput"/>
-        </div>
-    
-    <div class="form-group-field">
+        <input type="text" @bind="title" @bind:event ="oninput"/>
+        
+    </div>
+    <div class="form-group field">
         <label>Description:</label>
-        <input class="long-input" type="text" @bind="description" @bind:event ="oninput"/>
+        <input type="text" @bind="description" @bind:event ="oninput"/>
         
     </div>
-    <div>
-    <div class="small-form-field" >
-        <label>Price (€):</label>
-        <input type="text" class="small-input" @bind="price" @bind:event ="oninput"/>
-    </div>  
-    
-    <div class="small-form-field" >
+    <div class="form-group field">
         <label>Material:</label>
-        <input type="text" class="small-input"  @bind="material" @bind:event ="oninput"/>
+        <input type="text" @bind="material" @bind:event ="oninput"/>
         
     </div>
+    <div class="form-group field">
+        <label>Price:</label>
+        <input type="number" @bind="price" @bind:event ="oninput"/>
+        
     </div>
-    <div class="form-group-field">
+    <div class="form-group field">
+        <label>Brand:</label>
+        <input type="text" @bind="brand" @bind:event ="oninput"/>
+       
+    </div>
+    <div class="form-group field">
         <label>Image:</label>
-        <input class="long-input" type="text" @bind="image" @bind:event ="oninput"/>
+        <input type="text" @bind="image" @bind:event ="oninput"/>
+        @if (!string.IsNullOrEmpty(resultMsg))
+        {
+            <label style="color:@color">@resultMsg</label>
+        }
     </div>
-    <div>
-    <div class="small-form-field">
-            <label>Brand:</label>
-            <input type="text" class="small-input" @bind="brand" @bind:event ="oninput"/>
-    </div>
-    
-    <div  class="small-form-field">
-        <label>Type:</label>
-        <div id="dropdown-list">
-            <DropDownList Id="dropdown-input" Placeholder="Select the type">
-            <ListItem Value="Invisible">Invisible</ListItem>
-            <ListItem Value="Extra low cut">Extra low cut</ListItem>
-            <ListItem Value="Low cut">Low cut</ListItem>
-            <ListItem Value="Anklets">Anklets</ListItem>
-            <ListItem Value="Mid calf">Mid calf</ListItem>
-            <ListItem Value="Executive">Executive</ListItem>
-            <ListItem Value="Knee high">Knee high</ListItem>
-        </DropDownList></div>
-    </div>   </div></div>
-    <div class="button-message">
+    <div class="button-row">
         <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
-         @if (!string.IsNullOrEmpty(resultMsg))
-                {
-                   <br/> <label style="color:red">@resultMsg</label>
-                }
+
     </div>
-    
   
     
-    
-
+    <StockCreationComponent>
+        
+    </StockCreationComponent>
+</div>
 
 
 @code {
-
+    
     private string title = "";
     private string description = "";
     private string material = "";
-    private string price = "";
+    private double price = 0;
     private string brand = "";
     private string image = "";
-
+    
+    
     private string resultMsg = "";
     private string color = "";
 
     private bool blackColor = false;
     private long blackStockXXS = 0;
 
-
-
-
-
     private async Task CreateSomething()
     {
         resultMsg = "";
-
+    
 
         try
         {
+            
+            await sockService.Create(new CreateSockCardDto( title, description, price, material, brand, image));
 
-            await sockService.Create(new CreateSockCardDto(title, description, Convert.ToDouble(price), material, brand, image));
-
-
+            
             title = "";
             material = "";
             description = "";
-            price = "";
+            price = 0;
             brand = "";
             image = "";
             
-           // NavManager.NavigateTo("/CreateStock");
-
         }
         catch (Exception e)
         {
@@ -114,7 +94,4 @@
             color = "red";
         }
     }
-
-
 }
-

@@ -8,8 +8,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
-        
-     <PackageReference Include="Smart.Blazor" Version="11.0.46" />
     </ItemGroup>
 
 </Project>
