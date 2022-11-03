@@ -33,12 +33,12 @@ public class FileContext
             return dataContainer!.Socks;
         }
     }
-    public ICollection<ProductCard> ProductCards
+    public ICollection<ProductCardSock> ProductCardSocks
     {
         get
         {
             LoadData();
-            return dataContainer!.ProductCards;
+            return dataContainer!.ProductCardsSocks;
         }
     }
     private void LoadData()
@@ -51,7 +51,7 @@ public class FileContext
             {
                 Stocks = new List<Stock>(),
                 Products = new List<Product>(),
-                ProductCards = new List<ProductCard>(),
+                ProductCardsSocks = new List<ProductCardSock>(),
                 Socks = new List<Socks>()
             };
             return;

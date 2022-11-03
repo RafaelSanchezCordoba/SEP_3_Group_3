@@ -9,6 +9,7 @@ namespace HttpClients.Implementations;
 public class SockHttpClient:ISockService
 {
     private readonly HttpClient client;
+    private ISockService _sockServiceImplementation;
 
     public SockHttpClient(HttpClient client)
     {
@@ -31,5 +32,22 @@ public class SockHttpClient:ISockService
         })!;
 
         return product;
+    }
+
+    public async Task<ICollection<ProductCardBasicDto>> GetTitlesAsync()
+    {
+        HttpResponseMessage response = await client.GetAsync("/Post");
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        ICollection<ProductCardBasicDto> socks = JsonSerializer.Deserialize<ICollection<ProductCardBasicDto>>(content,
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            })!;
+        return socks;
     }
 }

@@ -14,20 +14,20 @@ public class SocksLogic : ISocksLogic
         this.socksDao = socksDao;
     }
 
-    public async Task<ProductCard> CreateAsync(CreateSockCardDto dto)
+    public async Task<ProductCardSock> CreateAsync(CreateSockCardDto dto)
     {
-        ProductCard socksCard = new ProductCardSock( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image);
+        ProductCardSock socksCard = new ProductCardSock( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image);
         ValidateSocks(socksCard);
-        ProductCard created = await socksDao.CreateAsync(socksCard);
+        ProductCardSock created = await socksDao.CreateAsync(socksCard);
         return created;
     }
 
-    public Task<IEnumerable<ProductCard>> GetAsync()
+    public Task<IEnumerable<ProductCardSock>> GetAsync()
     {
         return socksDao.GetAsync();
     }
 
-    public Task<ProductCard> GetById(int id)
+    public Task<ProductCardSock> GetById(int id)
     {
         return socksDao.GetById(id);
     }
@@ -53,7 +53,7 @@ public class SocksLogic : ISocksLogic
         };
         
         ValidateSocks(updated);
-        await socksDao.UpdateAsync(updated);
+        await socksDao.UpdateAsync((ProductCardSock)updated);
     }
 
     public async Task DeleteAsync(int id)
@@ -65,6 +65,16 @@ public class SocksLogic : ISocksLogic
         }
 
         await socksDao.DeleteAsync(id);
+    }
+
+    public async Task<IEnumerable<ProductCardBasicDto>> GetProductSockCardTitlesAsync()
+    {
+        return await socksDao.GetTitlesAsync();
+    }
+
+    public async Task<ProductCardSock?> GetByTitleAsync(string title)
+    {
+        return await socksDao.GetByTitlesAsync(title);
     }
 
     private void ValidateSocks(ProductCard dto)

@@ -17,7 +17,7 @@ public class SocksController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<ProductCard>> CreateAsync(CreateSockCardDto dto)
+    public async Task<ActionResult<ProductCardSock>> CreateAsync(CreateSockCardDto dto)
     {
         try
         {
@@ -32,11 +32,11 @@ public class SocksController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<ProductCard>>> GetAsync()
+    public async Task<ActionResult<IEnumerable<ProductCardBasicDto>>> GetAsync()
     {
         try
         {
-            var socks = await socksLogic.GetAsync();
+            var socks = await socksLogic.GetProductSockCardTitlesAsync();
             return Ok(socks);
         }
         catch (Exception e)
@@ -47,7 +47,7 @@ public class SocksController : ControllerBase
     }
 
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<ProductCard>> GetById([FromRoute] int id)
+    public async Task<ActionResult<ProductCardSock>> GetById([FromRoute] int id)
     {
         try
         {
@@ -83,6 +83,20 @@ public class SocksController : ControllerBase
         {
             await socksLogic.DeleteAsync(id);
             return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    [HttpGet("{title}")]
+    public async Task<ActionResult<ProductCardSock>> GetByIdAsync([FromRoute] string title)
+    {
+        try
+        {
+            ProductCardSock post = await socksLogic.GetByTitleAsync(title);
+            return Ok(post);
         }
         catch (Exception e)
         {

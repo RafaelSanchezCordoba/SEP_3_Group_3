@@ -22,7 +22,7 @@ public class SockStockFileDao:ISockStockDao
             Id++;
         }
 
-        ProductCard exists = context.ProductCards.FirstOrDefault(c => c.Id == stock.CardId);
+        ProductCard exists = context.ProductCardSocks.FirstOrDefault(c => c.Id == stock.CardId);
         if (exists==null)
         {
             throw new Exception($"Product with id{stock.CardId} does not exists !!! cannot add Stock");
