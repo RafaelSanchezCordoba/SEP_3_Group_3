@@ -1,0 +1,97 @@
+@page "/CreateSock"
+@using global::Shared.Models
+@using System.Drawing
+@using global::Shared.DTOs
+@using HttpClients.ClientInterfaces
+@inject ISockService sockService
+
+<div class="card">
+    <h3>CreateSock</h3>
+    <div class="form-group field">
+        <label>Title:</label>
+        <input type="text" @bind="title" @bind:event ="oninput"/>
+        
+    </div>
+    <div class="form-group field">
+        <label>Description:</label>
+        <input type="text" @bind="description" @bind:event ="oninput"/>
+        
+    </div>
+    <div class="form-group field">
+        <label>Material:</label>
+        <input type="text" @bind="material" @bind:event ="oninput"/>
+        
+    </div>
+    <div class="form-group field">
+        <label>Price:</label>
+        <input type="number" @bind="price" @bind:event ="oninput"/>
+        
+    </div>
+    <div class="form-group field">
+        <label>Brand:</label>
+        <input type="text" @bind="brand" @bind:event ="oninput"/>
+       
+    </div>
+    <div class="form-group field">
+        <label>Image:</label>
+        <input type="text" @bind="image" @bind:event ="oninput"/>
+        @if (!string.IsNullOrEmpty(resultMsg))
+        {
+            <label style="color:@color">@resultMsg</label>
+        }
+    </div>
+    <div class="button-row">
+        <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
+
+    </div>
+  
+    
+    <StockCreationComponent>
+        
+    </StockCreationComponent>
+</div>
+
+
+@code {
+    
+    private string title = "";
+    private string description = "";
+    private string material = "";
+    private double price = 0;
+    private string brand = "";
+    private string image = "";
+    
+    
+    private string resultMsg = "";
+    private string color = "";
+
+    private bool blackColor = false;
+    private long blackStockXXS = 0;
+
+    private async Task CreateSomething()
+    {
+        resultMsg = "";
+    
+
+        try
+        {
+            
+            await sockService.Create(new CreateSockCardDto( title, description, price, material, brand, image));
+
+            
+            title = "";
+            material = "";
+            description = "";
+            price = 0;
+            brand = "";
+            image = "";
+            
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+            color = "red";
+        }
+    }
+}

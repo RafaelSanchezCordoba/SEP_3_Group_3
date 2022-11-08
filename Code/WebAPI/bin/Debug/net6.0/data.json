@@ -1,0 +1,47 @@
+{
+  "Stocks": [
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 2,
+      "Id": 1
+    },
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "bing",
+      "Quantity": 2,
+      "Id": 2
+    },
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 0,
+      "Id": 3
+    }
+  ],
+  "ProductCards": [
+    {
+      "Title": "bully",
+      "Description": "string",
+      "Price": 12,
+      "Material": "string",
+      "Brand": "string",
+      "Image": "string",
+      "Id": 1
+    },
+    {
+      "Title": "fghjk",
+      "Description": "ghjkl",
+      "Price": 12.97,
+      "Material": "hjkl.",
+      "Brand": "ghjkl.",
+      "Image": "hjkl\u00F2",
+      "Id": 2
+    }
+  ],
+  "Products": [],
+  "Socks": []
+}
