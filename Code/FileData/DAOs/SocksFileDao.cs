@@ -52,6 +52,11 @@ public class SocksFileDao : ISocksDao
     public Task<ProductCardSock?> GetById(int id)
     {
         ProductCardSock? existing = context.ProductCardSocks.FirstOrDefault(productCard => productCard.Id == id);
+        
+        if (existing == null)
+        {
+            throw new Exception($"CardSock with id {id} does not exist!");
+        }
         return Task.FromResult(existing);
     }
 

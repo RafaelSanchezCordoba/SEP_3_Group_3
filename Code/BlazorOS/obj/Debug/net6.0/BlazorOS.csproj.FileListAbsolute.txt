@@ -1669,3 +1669,4 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\BlazorOS\bin\Debug\net6.0\Smart.Blazor.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\build-gz\Tim0UxMq.gz
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\build-gz\f+USewgz.gz
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockStock.razor.rz.scp.css

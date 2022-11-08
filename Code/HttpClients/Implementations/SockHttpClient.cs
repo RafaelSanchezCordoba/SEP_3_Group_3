@@ -34,7 +34,25 @@ public class SockHttpClient:ISockService
         return product;
     }
 
-    public async Task<ICollection<ProductCardBasicDto>> GetTitlesAsync()
+    public async Task<ProductCardSock> GetById(int id)
+    {
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Socks/{id}");
+        string result = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+
+        ProductCardSock product = JsonSerializer.Deserialize<ProductCardSock>(result, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+
+        return product;
+    }
+
+    /*public async Task<ICollection<ProductCardBasicDto>> GetTitlesAsync()
     {
         HttpResponseMessage response = await client.GetAsync("/Post");
         string content = await response.Content.ReadAsStringAsync();
@@ -49,5 +67,5 @@ public class SockHttpClient:ISockService
                 PropertyNameCaseInsensitive = true
             })!;
         return socks;
-    }
+    }*/
 }

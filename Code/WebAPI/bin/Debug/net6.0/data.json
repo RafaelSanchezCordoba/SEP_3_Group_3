@@ -22,27 +22,48 @@
       "Id": 3
     }
   ],
-  "ProductCards": [
+  "ProductCardsSocks": [
     {
-      "Title": "bully",
-      "Description": "string",
-      "Price": 12,
-      "Material": "string",
-      "Brand": "string",
-      "Image": "string",
+      "Title": "Pokemon socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
+      "Type": "",
       "Id": 1
     },
     {
-      "Title": "fghjk",
-      "Description": "ghjkl",
-      "Price": 12.97,
-      "Material": "hjkl.",
-      "Brand": "ghjkl.",
-      "Image": "hjkl\u00F2",
+      "Title": "xdfcgvbhjnk",
+      "Description": "xdcfgvbhjnkm",
+      "Price": 8,
+      "Material": "gvbhjnmk",
+      "Brand": "rdftghjn",
+      "Image": "rdftgyhjk",
+      "Type": "Anklets",
       "Id": 2
+    },
+    {
+      "Title": "hello",
+      "Description": "ycfvcuvbsuhcb",
+      "Price": 5,
+      "Material": "rctvbhnj",
+      "Brand": "xcfgvbhjn",
+      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
+      "Type": "Executive",
+      "Id": 3
+    },
+    {
+      "Title": "dcfgvbhjnkm",
+      "Description": "xdcfgvbh",
+      "Price": 4,
+      "Material": "vgbhjn",
+      "Brand": "dfghj",
+      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
+      "Type": "Mid calf",
+      "Id": 4
     }
   ],
   "Products": [],
-  "Socks": [],
-  "ProductCardSocks": []
+  "Socks": []
 }

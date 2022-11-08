@@ -46,7 +46,7 @@
     <div  class="small-form-field">
         <label>Type:</label>
         <div id="dropdown-list">
-            <DropDownList Id="dropdown-input" Placeholder="Select the type"  @bind="type">
+            <DropDownList Id="dropdown-input" Placeholder="Select the type"  OnItemClick="TypeSelection">
             <ListItem Value="Invisible">Invisible</ListItem>
             <ListItem Value="Extra low cut">Extra low cut</ListItem>
             <ListItem Value="Low cut">Low cut</ListItem>
@@ -82,6 +82,12 @@
     private bool blackColor = false;
     private long blackStockXXS = 0;
 
+    private void TypeSelection(Event ev)
+    {
+        DropDownListItemClickEventDetail detail = ev["Detail"];
+        
+        type = detail.Label;
+    }
     private async Task CreateSomething()
     {
         resultMsg = "";
