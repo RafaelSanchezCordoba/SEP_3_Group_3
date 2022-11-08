@@ -1,55 +1,69 @@
 @page "/CreateSock"
-@using global::Shared.Models
-@using System.Drawing
-@using global::Shared.DTOs
 @using HttpClients.ClientInterfaces
+@using Microsoft.AspNetCore.Components
+@using global::Shared.DTOs
+@using global::Shared.Models
+
 @inject ISockService sockService
+@inject NavigationManager NavManager
+
+<h3>Create Sock</h3>
 
 <div class="card">
-    <h3>CreateSock</h3>
-    <div class="form-group field">
-        <label>Title:</label>
-        <input type="text" @bind="title" @bind:event ="oninput"/>
-        
-    </div>
-    <div class="form-group field">
-        <label>Description:</label>
-        <input type="text" @bind="description" @bind:event ="oninput"/>
-        
-    </div>
-    <div class="form-group field">
-        <label>Material:</label>
-        <input type="text" @bind="material" @bind:event ="oninput"/>
-        
-    </div>
-    <div class="form-group field">
-        <label>Price:</label>
-        <input type="number" @bind="price" @bind:event ="oninput"/>
-        
-    </div>
-    <div class="form-group field">
-        <label>Brand:</label>
-        <input type="text" @bind="brand" @bind:event ="oninput"/>
-       
-    </div>
-    <div class="form-group field">
-        <label>Image:</label>
-        <input type="text" @bind="image" @bind:event ="oninput"/>
-        @if (!string.IsNullOrEmpty(resultMsg))
-        {
-            <label style="color:@color">@resultMsg</label>
-        }
-    </div>
-    <div class="button-row">
-        <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
-
-    </div>
-  
     
-    <StockCreationComponent>
+    <div class="form-group-field">
+        <label>Title:</label>
+        <input class="long-input" type="text" @bind="title" @bind:event ="oninput"/>
+        </div>
+    
+    <div class="form-group-field">
+        <label>Description:</label>
+        <input class="long-input" type="text" @bind="description" @bind:event ="oninput"/>
         
-    </StockCreationComponent>
-</div>
+    </div>
+    <div>
+    <div class="small-form-field" >
+        <label>Price (€):</label>
+        <input type="text" class="small-input" @bind="price" @bind:event ="oninput"/>
+    </div>  
+    
+    <div class="small-form-field" >
+        <label>Material:</label>
+        <input type="text" class="small-input"  @bind="material" @bind:event ="oninput"/>
+        
+    </div>
+    </div>
+    <div class="form-group-field">
+        <label>Image:</label>
+        <input class="long-input" type="text" @bind="image" @bind:event ="oninput"/>
+    </div>
+    <div>
+    <div class="small-form-field">
+            <label>Brand:</label>
+            <input type="text" class="small-input" @bind="brand" @bind:event ="oninput"/>
+    </div>
+    
+    <div  class="small-form-field">
+        <label>Type:</label>
+        <div id="dropdown-list">
+            <DropDownList Id="dropdown-input" Placeholder="Select the type"  @bind="type">
+            <ListItem Value="Invisible">Invisible</ListItem>
+            <ListItem Value="Extra low cut">Extra low cut</ListItem>
+            <ListItem Value="Low cut">Low cut</ListItem>
+            <ListItem Value="Anklets">Anklets</ListItem>
+            <ListItem Value="Mid calf">Mid calf</ListItem>
+            <ListItem Value="Executive">Executive</ListItem>
+            <ListItem Value="Knee high">Knee high</ListItem>
+        </DropDownList></div>
+    </div>   </div></div>
+    <div class="button-message">
+        <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
+         @if (!string.IsNullOrEmpty(resultMsg))
+                {
+                   <br/> <label style="color:red">@resultMsg</label>
+                }
+    </div>
+   
 
 
 @code {
@@ -57,10 +71,10 @@
     private string title = "";
     private string description = "";
     private string material = "";
-    private double price = 0;
+    private string price = "";
     private string brand = "";
     private string image = "";
-    
+    private string type = "";
     
     private string resultMsg = "";
     private string color = "";
@@ -76,16 +90,19 @@
         try
         {
             
-            await sockService.Create(new CreateSockCardDto( title, description, price, material, brand, image));
+           ProductCardSock card= await sockService.Create(new CreateSockCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
 
             
             title = "";
             material = "";
             description = "";
-            price = 0;
+            price = "";
             brand = "";
             image = "";
+            type = "Select the type";
             
+            NavManager.NavigateTo($"/CreateSockStock/{card.Id}");
+
         }
         catch (Exception e)
         {

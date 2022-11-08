@@ -10,11 +10,12 @@ public class ProductCard
     public string Material { get; set; }
     public string Brand { get; set; }
     public string Image { get; set; }
+    public string Type { get; set; }
     public int Id { get; set; }
 
 
 
-    protected ProductCard(string title, string description, double price, string material, string brand, string image)
+    protected ProductCard(string title, string description, double price, string material, string brand, string image, string type)
     {
         Title = title;
         Description = description;
@@ -22,6 +23,6 @@ public class ProductCard
         Material = material;
         Brand = brand;
         Image = image;
-      
+        Type = type;
     }
 }

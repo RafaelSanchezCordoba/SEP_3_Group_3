@@ -16,7 +16,7 @@ public class SocksLogic : ISocksLogic
 
     public async Task<ProductCardSock> CreateAsync(CreateSockCardDto dto)
     {
-        ProductCardSock socksCard = new ProductCardSock( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image);
+        ProductCardSock socksCard = new ProductCardSock( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image, dto.Type);
         ValidateSocks(socksCard);
         ProductCardSock created = await socksDao.CreateAsync(socksCard);
         return created;
@@ -46,8 +46,9 @@ public class SocksLogic : ISocksLogic
         string materialToUse = dto.Material ?? existing.Material;
         string brandToUse = dto.Brand ?? existing.Brand;
         string imageToUse = dto.Image ?? existing.Image;
+        string typeToUse = dto.Type ?? existing.Type;
 
-        ProductCard updated = new ProductCardSock(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse)
+        ProductCard updated = new ProductCardSock(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
         {
             Id = existing.Id
         };

@@ -16,7 +16,7 @@ public class SockHttpClient:ISockService
         this.client = client;
     }
 
-    public async Task<ProductCard> Create(CreateSockCardDto dto)
+    public async Task<ProductCardSock> Create(CreateSockCardDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("Socks", dto);
         string result = await response.Content.ReadAsStringAsync();
@@ -26,7 +26,7 @@ public class SockHttpClient:ISockService
             throw new Exception(result);
         }
 
-        ProductCard product = JsonSerializer.Deserialize<ProductCard>(result, new JsonSerializerOptions
+        ProductCardSock product = JsonSerializer.Deserialize<ProductCardSock>(result, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;

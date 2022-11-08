@@ -22,24 +22,16 @@
       "Id": 3
     }
   ],
-  "ProductCards": [
+  "ProductCardsSocks": [
     {
-      "Title": "bully",
-      "Description": "string",
-      "Price": 12,
-      "Material": "string",
-      "Brand": "string",
-      "Image": "string",
+      "Title": "Pokemon socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
+      "Type": "",
       "Id": 1
-    },
-    {
-      "Title": "fghjk",
-      "Description": "ghjkl",
-      "Price": 12.97,
-      "Material": "hjkl.",
-      "Brand": "ghjkl.",
-      "Image": "hjkl\u00F2",
-      "Id": 2
     }
   ],
   "Products": [],

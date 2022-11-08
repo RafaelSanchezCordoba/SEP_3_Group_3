@@ -11,6 +11,8 @@ public class SocksCardUpdateDto
     public string Brand { get; set; }
     public string Image { get; set; }
     public int Id { get; }
+    
+    public string Type { get; }
 
     public SocksCardUpdateDto(int id)
     {

@@ -36,7 +36,7 @@ public class SocksController : ControllerBase
     {
         try
         {
-            var socks = await socksLogic.GetProductSockCardTitlesAsync();
+            var socks = await socksLogic.GetAsync();
             return Ok(socks);
         }
         catch (Exception e)

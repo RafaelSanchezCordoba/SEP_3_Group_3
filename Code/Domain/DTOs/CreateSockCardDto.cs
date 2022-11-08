@@ -11,10 +11,11 @@ public class CreateSockCardDto
     public string Material { get; }
     public string Brand { get; }
     public string Image { get; }
+    public string Type { get; }
 
    
 
-    public CreateSockCardDto(string title, string description, double price, string material, string brand, string image)
+    public CreateSockCardDto(string title, string description, double price, string material, string brand, string image, string type)
     {
        
         Title = title;
@@ -23,5 +24,6 @@ public class CreateSockCardDto
         Material = material;
         Brand = brand;
         Image = image;
+        Type = type;
     }
 }
