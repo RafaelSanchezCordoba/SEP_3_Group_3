@@ -62,6 +62,26 @@
       "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
       "Type": "Mid calf",
       "Id": 4
+    },
+    {
+      "Title": "fghjD",
+      "Description": "DXCFGVH",
+      "Price": 1,
+      "Material": "yfghj",
+      "Brand": "dxs",
+      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
+      "Type": "Low cut",
+      "Id": 5
+    },
+    {
+      "Title": "Xmas Sock",
+      "Description": "Perfect socks for your elf costume",
+      "Price": 430,
+      "Material": "Recycled polyester",
+      "Brand": "IDK",
+      "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
+      "Type": "Mid calf",
+      "Id": 6
     }
   ],
   "Products": [],

@@ -1,14 +1,19 @@
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
+
+.card{
+    width: 65%;
+    padding: 20px;
+    float: left;
+    
+}
 
 .form-group-field{
     padding: 10px;
     float: left;
 }
-.card{
-    padding: 20px;
-    float: left;
-    width: 65%;
-}
+
 
 .button-message
 {
