@@ -1,0 +1,48 @@
+@page "/CreateSockStock/{id:int}"
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@inject ISockService sockService;
+
+<h3>Create Stock</h3>
+
+<div class="card">
+    here would be the actual stuff
+    
+</div>
+
+<div class="button-message">
+    <button  class="acceptbtn">Confirm</button>
+    @if (!string.IsNullOrEmpty(resultMsg))
+    {
+        <br/> <label style="color:red">@resultMsg</label>
+    }
+
+</div>
+<div class="small-card">
+    <p>Product Summary</p>
+    <div>
+        <img src="@card.Image" id="product-image"/>
+        <label id="title-label">@card.Title</label>
+        <label id="price-label">@card.Price €</label>
+    </div>
+    <p>@card.Description</p>
+    <p>Material: @card.Material</p>
+    <p>Brand: @card.Brand</p>
+     <p>Type: @card.Type</p> 
+
+</div>
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private ProductCardSock? card;
+   
+
+    private string resultMsg = "";
+    private string color = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+     card = await sockService.GetById(Id);
+    }
+}
