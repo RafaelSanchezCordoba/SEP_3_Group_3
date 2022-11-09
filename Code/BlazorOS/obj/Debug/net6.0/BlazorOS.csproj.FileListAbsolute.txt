@@ -1680,3 +1680,4 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\bu
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\build-gz\YF3Nee5G.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSock.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockStock.razor.rz.scp.css
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\BrowseSocks.razor.rz.scp.css

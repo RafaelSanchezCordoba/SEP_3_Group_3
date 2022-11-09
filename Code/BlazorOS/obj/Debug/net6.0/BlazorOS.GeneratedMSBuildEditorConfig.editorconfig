@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/BlazorOS/Pages/ManageSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/BlazorOS/Pages/StockCreationComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tDcmVhdGlvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/BlazorOS/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/BlazorOS/Pages/BrowseSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJvd3NlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qno29iuakm
 
 [C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/BlazorOS/Pages/CreateSock.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU29jay5yYXpvcg==
