@@ -1,0 +1,30 @@
+*[b-gc80i31fbb] {box-sizing: border-box;}
+
+.card[b-gc80i31fbb]{
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+.button-message[b-gc80i31fbb]
+{
+    float: left;
+    margin-left: 2%;
+}
+
+.acceptbtn[b-gc80i31fbb]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+#product-image[b-gc80i31fbb]
+{
+    width: 50%;
+}
+
+.small-card[b-gc80i31fbb]
+{
+    padding: 20px;
+    width: 34%;
+    float: right;
+}
