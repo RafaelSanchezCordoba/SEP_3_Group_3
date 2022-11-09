@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ozvJsYon4ESVMw3Agjad13r1g/6f16WXgf+6kX9aCt55+1NRnYnUUqj5eTZiiYy9W4cLzJVTQFkCbwB8+PSYvw==",
+  "dgSpecHash": "UEmFSKQIr37JYJWEk5ytx5Pv/TAp7UE+RADB9GYOKezuOj5yH26iPsd3LwcN2nXqMBGBHzAg22N2orM56apuXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\BlazorOS\\BlazorOS.csproj",
+  "projectFilePath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexd\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
