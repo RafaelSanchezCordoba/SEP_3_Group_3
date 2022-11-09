@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5B567E13-176C-49FB-A81B-F29005C5C8CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClients", "HttpClients\HttpClients.csproj", "{59DA2BE4-476C-4259-BF59-10B760E77D2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorOS", "BlazorOS\BlazorOS.csproj", "{D4020041-CEEF-468F-8BC5-AD746E138C0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B567E13-176C-49FB-A81B-F29005C5C8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B567E13-176C-49FB-A81B-F29005C5C8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B567E13-176C-49FB-A81B-F29005C5C8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B567E13-176C-49FB-A81B-F29005C5C8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DA2BE4-476C-4259-BF59-10B760E77D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DA2BE4-476C-4259-BF59-10B760E77D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DA2BE4-476C-4259-BF59-10B760E77D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DA2BE4-476C-4259-BF59-10B760E77D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4020041-CEEF-468F-8BC5-AD746E138C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4020041-CEEF-468F-8BC5-AD746E138C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4020041-CEEF-468F-8BC5-AD746E138C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4020041-CEEF-468F-8BC5-AD746E138C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
