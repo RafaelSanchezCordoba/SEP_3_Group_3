@@ -1,0 +1,57 @@
+*[b-junbstq3fg] {
+    box-sizing: border-box;
+}
+
+.card[b-junbstq3fg]{
+    width: 65%;
+    height: 600px;
+    padding: 20px;
+    float: left;
+    
+}
+
+.form-group-field[b-junbstq3fg]{
+    padding: 10px;
+    float: left;
+}
+
+
+.button-message[b-junbstq3fg]
+{
+    float: left;
+    margin-left: 2%;
+}
+.small-form-field[b-junbstq3fg]
+{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+
+input[b-junbstq3fg]
+{
+    width: 73%;
+    float: right;
+}
+.long-input[b-junbstq3fg]
+{
+    width: 87%;
+}
+
+.acceptbtn[b-junbstq3fg]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+#dropdown-list[b-junbstq3fg]
+{
+    float: right;
+    width: 75%;
+}
+#dropdown-input[b-junbstq3fg]
+{
+    width: 100%;
+    float: right;
+}
