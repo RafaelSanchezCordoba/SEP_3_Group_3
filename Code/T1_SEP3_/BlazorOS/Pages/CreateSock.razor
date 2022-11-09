@@ -38,24 +38,26 @@
         <input class="long-input" type="text" @bind="image" @bind:event ="oninput"/>
     </div>
     <div>
-    <div class="small-form-field">
+        <div class="small-form-field">
             <label>Brand:</label>
             <input type="text" class="small-input" @bind="brand" @bind:event ="oninput"/>
-    </div>
+        </div>
     
-    <div  class="small-form-field">
-        <label>Type:</label>
-        <div id="dropdown-list">
-            <DropDownList Id="dropdown-input" Placeholder="Select the type"  OnItemClick="TypeSelection">
-            <ListItem Value="Invisible">Invisible</ListItem>
-            <ListItem Value="Extra low cut">Extra low cut</ListItem>
-            <ListItem Value="Low cut">Low cut</ListItem>
-            <ListItem Value="Anklets">Anklets</ListItem>
-            <ListItem Value="Mid calf">Mid calf</ListItem>
-            <ListItem Value="Executive">Executive</ListItem>
-            <ListItem Value="Knee high">Knee high</ListItem>
-        </DropDownList></div>
-    </div>   </div></div>
+        <div  class="small-form-field">
+            <label>Type:</label>
+            <div id="dropdown-list">
+                <DropDownList Id="dropdown-input" Placeholder="Select the type"  OnItemClick="TypeSelection">
+                    <ListItem Value="Invisible">Invisible</ListItem>
+                    <ListItem Value="Extra low cut">Extra low cut</ListItem>
+                    <ListItem Value="Low cut">Low cut</ListItem>
+                    <ListItem Value="Anklets">Anklets</ListItem>
+                    <ListItem Value="Mid calf">Mid calf</ListItem>
+                    <ListItem Value="Executive">Executive</ListItem>
+                    <ListItem Value="Knee high">Knee high</ListItem>
+                </DropDownList></div>
+        </div>  
+        </div>
+    </div>
 <div class="button-message">
     <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
     @if (!string.IsNullOrEmpty(resultMsg))

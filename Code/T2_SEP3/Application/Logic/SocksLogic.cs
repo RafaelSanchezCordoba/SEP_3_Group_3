@@ -32,9 +32,9 @@ public class SocksLogic : ISocksLogic
         return socksDao.GetById(id);
     }
 
-    public async Task UpdateAsync(SocksCardUpdateDto dto)
+    public async Task UpdateAsync(ProductCardSock dto)
     {
-        ProductCard? existing = await socksDao.GetById(dto.Id);
+        ProductCardSock? existing = await socksDao.GetById(dto.Id);
 
         if (existing == null)
         {
@@ -48,7 +48,7 @@ public class SocksLogic : ISocksLogic
         string imageToUse = dto.Image ?? existing.Image;
         string typeToUse = dto.Type ?? existing.Type;
 
-        ProductCard updated = new ProductCardSock(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
+        ProductCardSock updated = new ProductCardSock(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
         {
             Id = existing.Id
         };

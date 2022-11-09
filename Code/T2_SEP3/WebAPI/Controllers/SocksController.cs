@@ -62,7 +62,7 @@ public class SocksController : ControllerBase
     }
 
     [HttpPatch]
-    public async Task<ActionResult> UpdateAsync([FromBody] SocksCardUpdateDto dto)
+    public async Task<ActionResult> UpdateAsync([FromBody] ProductCardSock dto)
     {
         try
         {

@@ -12,4 +12,6 @@ public interface ISockService
     Task<ICollection<ProductCardSock>> GetAllSockCards();
 
     Task RemoveProductCardSockById(int id);
+
+    Task UpdateAsync(ProductCardSock card);
 }
