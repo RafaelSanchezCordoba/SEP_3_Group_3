@@ -11,53 +11,53 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorOS
 build_property.RootNamespace = BlazorOS
-build_property.ProjectDir = /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/
+build_property.ProjectDir = C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS
+build_property.MSBuildProjectDirectory = C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/App.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/ManageSocks.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFuYWdlU29ja3MucmF6b3I=
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/StockCreationComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RvY2tDcmVhdGlvbkNvbXBvbmVudC5yYXpvcg==
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/StockCreationComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tDcmVhdGlvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/_Imports.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/BrowseSocks.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJvd3NlU29ja3MucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-6a93qks4sm
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/BrowseSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJvd3NlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qno29iuakm
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/CreateSock.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlU29jay5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-5pk7h60kwx
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSock.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU29jay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-12n00fbuqh
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/CreateSockStock.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlU29ja1N0b2NrLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-mrz7op9c9d
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSockStock.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU29ja1N0b2NrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-6vohmx41p5
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-fgro0f5ktg
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wcssxcvg4k
 
-[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-iknbjjsc52
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ov4nba62sm
