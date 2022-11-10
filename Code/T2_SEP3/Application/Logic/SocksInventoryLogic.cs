@@ -5,36 +5,36 @@ using Shared.Models;
 
 namespace Application.Logic;
 
-public class SockStockLogic:ISockStockLogic
+public class SocksInventoryLogic:ISockStockLogic
 {
     
-    private readonly ISockStockDao stockDao;
+    private readonly ISocksInventoryDao inventoryDao;
 
-    public SockStockLogic(ISockStockDao stockDao)
+    public SocksInventoryLogic(ISocksInventoryDao inventoryDao)
     {
-        this.stockDao = stockDao;
+        this.inventoryDao = inventoryDao;
     }
     public async Task<Stock> CreateAsync(CreateSockStockDto dto)
     {
         Stock result = new Stock(dto.CardId, dto.Color,dto.Size,dto.Quantity);
         
-        Stock created = await stockDao.CreateAsync(result);
+        Stock created = await inventoryDao.CreateAsync(result);
         return created;
     }
 
     public Task<IEnumerable<Stock>> GetAsync()
     {
-        return stockDao.GetAsync();
+        return inventoryDao.GetAsync();
     }
 
     public Task<Stock> GetById(int id)
     {
-        return stockDao.GetById(id);
+        return inventoryDao.GetById(id);
     }
 
     public Task<IEnumerable<Stock>> GetByCardIdAsync(int id)
     {
-        return stockDao.GetByCardIdAsync(id);
+        return inventoryDao.GetByCardIdAsync(id);
     }
 
     public Task UpdateAsync(Stock dto)
@@ -44,25 +44,25 @@ public class SockStockLogic:ISockStockLogic
 
     public async Task DeleteFromCardAsync(int id)
     {
-       Task<IEnumerable<Stock>> toBeDeleted = stockDao.GetByCardIdAsync(id);
+       Task<IEnumerable<Stock>> toBeDeleted = inventoryDao.GetByCardIdAsync(id);
        if (toBeDeleted==null)
        {
            throw new Exception($"Sock Card with id{id} does not have any stock!!!");
        }
 
-       await stockDao.DeleteFromCardAsync(id);
+       await inventoryDao.DeleteFromCardAsync(id);
        
     }
 
     public async Task DeleteAsync(int id)
     {
-        Stock? stock = await stockDao.GetById(id);
+        Stock? stock = await inventoryDao.GetById(id);
         if (stock == null)
         {
             throw new Exception($"Stock with ID {id} was not found!!!");
         }
 
-        await stockDao.DeleteAsync(id);
+        await inventoryDao.DeleteAsync(id);
        
     }
 }

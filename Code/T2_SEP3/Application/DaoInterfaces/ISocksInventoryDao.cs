@@ -2,7 +2,7 @@ using Shared.Models;
 
 namespace Application.DaoInterfaces;
 
-public interface ISockStockDao
+public interface ISocksInventoryDao
 {
     Task<Stock> CreateAsync(Stock stock);
     Task<IEnumerable<Stock>> GetAsync();

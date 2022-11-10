@@ -3,11 +3,11 @@ using Shared.Models;
 
 namespace FileData.DAOs;
 
-public class SockStockFileDao:ISockStockDao
+public class SocksInventoryFileDao:ISocksInventoryDao
 {
     private readonly FileContext context;
 
-    public SockStockFileDao(FileContext context)
+    public SocksInventoryFileDao(FileContext context)
     {
         this.context = context;
     }
