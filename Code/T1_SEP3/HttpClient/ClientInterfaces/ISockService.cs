@@ -5,7 +5,7 @@ namespace HttpClients.ClientInterfaces;
 
 public interface ISockService
 {
-    Task<SocksCard> Create(CreateSockCardDto dto);
+    Task<SocksCard> Create(CreateSocksCardDto dto);
   //  Task<ICollection<ProductCardBasicDto>> GetTitlesAsync();
     Task<SocksCard> GetById(int id);
 

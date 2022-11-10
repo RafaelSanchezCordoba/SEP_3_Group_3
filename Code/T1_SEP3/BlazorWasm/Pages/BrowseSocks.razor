@@ -8,10 +8,10 @@
    
     <button onclick="@LoadData">load</button>
     <p>@msg</p>
-    @if (sockCards != null)
+    @if (socksCards != null)
     {
         
-            @foreach (SocksCard card in sockCards)
+            @foreach (SocksCard card in socksCards)
             {
                 <div class="card">
                     <div class="card_title">@card.Title</div>
@@ -26,27 +26,20 @@
                 </div>
             }
     }
-
-
 </div>
-
-
 
 @code {
 
-  
-   
-
-    private ICollection<SocksCard> sockCards;
-    private ICollection<SocksCard> sockCardsLoaded;
+    private ICollection<SocksCard> socksCards;
+    private ICollection<SocksCard> socksCardsLoaded;
     private string msg = "";
 
-    protected async  void LoadData()
+    private async void LoadData()
     {
         try
         {
             
-            sockCards = await sockService.GetAllSockCards();
+            socksCards = await sockService.GetAllSockCards();
             msg = "data loaded";
         }
         catch (Exception e)
@@ -57,11 +50,11 @@
         
     }
 
-    protected  async override void OnInitialized()
+    protected override async void OnInitialized()
     {
         base.OnInitialized();
-        sockCardsLoaded = await sockService.GetAllSockCards();
-        sockCards = sockCardsLoaded;
+        socksCardsLoaded = await sockService.GetAllSockCards();
+        socksCards = socksCardsLoaded;
     }
 
 }

@@ -2,7 +2,7 @@ using Shared.Models;
 
 namespace Shared.DTOs;
 
-public class CreateSockCardDto
+public class CreateSocksCardDto
 {
     
     public string Title { get; }
@@ -15,7 +15,7 @@ public class CreateSockCardDto
 
    
 
-    public CreateSockCardDto(string title, string description, double price, string material, string brand, string image, string type)
+    public CreateSocksCardDto(string title, string description, double price, string material, string brand, string image, string type)
     {
        
         Title = title;

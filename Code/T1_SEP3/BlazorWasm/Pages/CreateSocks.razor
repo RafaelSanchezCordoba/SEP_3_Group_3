@@ -1,4 +1,4 @@
-@page "/CreateSock"
+@page "/CreateSocks"
 @using HttpClients.ClientInterfaces
 @using Microsoft.AspNetCore.Components
 @using global::Shared.DTOs
@@ -56,13 +56,13 @@
             <ListItem Value="Knee high">Knee high</ListItem>
         </DropDownList></div>
     </div>   </div></div>
-<div class="button-message">
-    <button @onclick="CreateSomething" class="acceptbtn">Confirm</button>
-    @if (!string.IsNullOrEmpty(resultMsg))
-    {
-        <br/> <label style="color:red">@resultMsg</label>
-    }
-</div>
+    <div class="button-message">
+        <button @onclick="CreateSocksCard" class="acceptbtn">Confirm</button>
+        @if (!string.IsNullOrEmpty(resultMsg))
+        {
+            <br/> <label style="color:red">@resultMsg</label>
+        }
+    </div>
 </div>
    
 
@@ -89,7 +89,8 @@
         
         type = detail.Label;
     }
-    private async Task CreateSomething()
+    
+    private async Task CreateSocksCard()
     {
         resultMsg = "";
     
@@ -97,7 +98,7 @@
         try
         {
             
-           SocksCard card= await sockService.Create(new CreateSockCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
+           SocksCard card= await sockService.Create(new CreateSocksCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
 
             
             title = "";
