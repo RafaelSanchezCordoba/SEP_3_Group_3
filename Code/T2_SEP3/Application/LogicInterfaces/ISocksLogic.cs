@@ -5,11 +5,11 @@ namespace Application.LogicInterfaces;
 
 public interface ISocksLogic
 {
-    Task<ProductCardSock> CreateAsync(CreateSockCardDto dto);
-    Task<IEnumerable<ProductCardSock>> GetAsync();
-    Task<ProductCardSock> GetById(int id);
-    Task UpdateAsync(ProductCardSock dto);
+    Task<SocksCard> CreateAsync(CreateSocksCardDto dto);
+    Task<IEnumerable<SocksCard>> GetAsync();
+    Task<SocksCard> GetById(int id);
+    Task UpdateAsync(SocksCard dto);
     Task DeleteAsync(int id);
     Task<IEnumerable<ProductCardBasicDto>> GetProductSockCardTitlesAsync();
-    Task<ProductCardSock?> GetByTitleAsync(string title);
+    Task<SocksCard?> GetByTitleAsync(string title);
 }

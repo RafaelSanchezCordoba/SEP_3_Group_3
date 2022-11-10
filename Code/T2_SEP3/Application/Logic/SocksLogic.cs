@@ -14,27 +14,27 @@ public class SocksLogic : ISocksLogic
         this.socksDao = socksDao;
     }
 
-    public async Task<ProductCardSock> CreateAsync(CreateSockCardDto dto)
+    public async Task<SocksCard> CreateAsync(CreateSocksCardDto dto)
     {
-        ProductCardSock socksCard = new ProductCardSock( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image, dto.Type);
+        SocksCard socksCard = new SocksCard( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image, dto.Type);
         ValidateSocks(socksCard);
-        ProductCardSock created = await socksDao.CreateAsync(socksCard);
+        SocksCard created = await socksDao.CreateAsync(socksCard);
         return created;
     }
 
-    public Task<IEnumerable<ProductCardSock>> GetAsync()
+    public Task<IEnumerable<SocksCard>> GetAsync()
     {
         return socksDao.GetAsync();
     }
 
-    public Task<ProductCardSock> GetById(int id)
+    public Task<SocksCard> GetById(int id)
     {
         return socksDao.GetById(id);
     }
 
-    public async Task UpdateAsync(ProductCardSock dto)
+    public async Task UpdateAsync(SocksCard dto)
     {
-        ProductCardSock? existing = await socksDao.GetById(dto.Id);
+        SocksCard? existing = await socksDao.GetById(dto.Id);
 
         if (existing == null)
         {
@@ -48,13 +48,13 @@ public class SocksLogic : ISocksLogic
         string imageToUse = dto.Image ?? existing.Image;
         string typeToUse = dto.Type ?? existing.Type;
 
-        ProductCardSock updated = new ProductCardSock(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
+        SocksCard updated = new SocksCard(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
         {
             Id = existing.Id
         };
         
         ValidateSocks(updated);
-        await socksDao.UpdateAsync((ProductCardSock)updated);
+        await socksDao.UpdateAsync((SocksCard)updated);
     }
 
     public async Task DeleteAsync(int id)
@@ -73,7 +73,7 @@ public class SocksLogic : ISocksLogic
         return await socksDao.GetTitlesAsync();
     }
 
-    public async Task<ProductCardSock?> GetByTitleAsync(string title)
+    public async Task<SocksCard?> GetByTitleAsync(string title)
     {
         return await socksDao.GetByTitlesAsync(title);
     }

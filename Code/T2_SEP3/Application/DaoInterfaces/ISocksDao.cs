@@ -5,12 +5,12 @@ namespace Application.DaoInterfaces;
 
 public interface ISocksDao
 {
-    Task<ProductCardSock> CreateAsync(ProductCardSock productCard);
-    Task<IEnumerable<ProductCardSock>> GetAsync();
+    Task<SocksCard> CreateAsync(SocksCard productCard);
+    Task<IEnumerable<SocksCard>> GetAsync();
     Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync();
-    Task<ProductCardSock> GetById(int id);
+    Task<SocksCard> GetById(int id);
 
-    Task UpdateAsync(ProductCardSock dto);
+    Task UpdateAsync(SocksCard dto);
     Task DeleteAsync(int id);
-    Task<ProductCardSock?> GetByTitlesAsync(string title);
+    Task<SocksCard?> GetByTitlesAsync(string title);
 }

@@ -1,8 +1,16 @@
 namespace Shared.Models;
 
-public class Socks : Product
+public class Socks
 {
-    public Socks(ProductCard productCard, string size, string color) : base(productCard, size, color)
+    private SocksCard SocksCard { get; set; }
+    private int Id { get; set; }
+    private string Size { get; set; }
+    private string Color { get; set; }
+
+    public Socks(SocksCard socksCard, string size, string color)
     {
+        SocksCard = socksCard;
+        Size = size;
+        Color = color;
     }
 }

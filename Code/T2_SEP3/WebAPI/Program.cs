@@ -17,8 +17,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<FileContext>();
 builder.Services.AddScoped<ISocksDao, SocksFileDao>();
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
-builder.Services.AddScoped<ISockStockDao, SockStockFileDao>();
-builder.Services.AddScoped<ISockStockLogic, SockStockLogic>();
+builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
+builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
 
 
 

@@ -14,32 +14,32 @@ public class SocksFileDao : ISocksDao
         this.context = context;
     }
 
-    public Task<ProductCardSock> CreateAsync(ProductCardSock productCard)
+    public Task<SocksCard> CreateAsync(SocksCard productCard)
     {
         int Id = 1;
-        if (context.ProductCardSocks.Any())
+        if (context.SocksCards.Any())
         {
-            Id = context.ProductCardSocks.Max(u => u.Id);
+            Id = context.SocksCards.Max(u => u.Id);
             Id++;
         }
 
         productCard.Id = Id;
         
-        context.ProductCardSocks.Add(productCard);
+        context.SocksCards.Add(productCard);
         context.SaveChanges();
 
         return Task.FromResult(productCard);
     }
 
-    public Task<IEnumerable<ProductCardSock>>GetAsync()
+    public Task<IEnumerable<SocksCard>>GetAsync()
     {
-        IEnumerable<ProductCardSock> result = context.ProductCardSocks.AsEnumerable();
+        IEnumerable<SocksCard> result = context.SocksCards.AsEnumerable();
         return Task.FromResult(result);
     }
 
     public async Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
     {
-        List<ProductCardSock> result = context.ProductCardSocks.AsEnumerable().ToList();
+        List<SocksCard> result = context.SocksCards.AsEnumerable().ToList();
         List<ProductCardBasicDto> resultTitle = new List<ProductCardBasicDto>();
         for (int i = 0; i < result.Count; i++)
         {
@@ -49,9 +49,9 @@ public class SocksFileDao : ISocksDao
         return resultTitle.AsEnumerable();
     }
 
-    public Task<ProductCardSock?> GetById(int id)
+    public Task<SocksCard?> GetById(int id)
     {
-        ProductCardSock? existing = context.ProductCardSocks.FirstOrDefault(productCard => productCard.Id == id);
+        SocksCard? existing = context.SocksCards.FirstOrDefault(productCard => productCard.Id == id);
         
         if (existing == null)
         {
@@ -62,37 +62,37 @@ public class SocksFileDao : ISocksDao
 
    
 
-    public Task UpdateAsync(ProductCardSock dto)
+    public Task UpdateAsync(SocksCard dto)
     {
-        ProductCardSock? existing = context.ProductCardSocks.FirstOrDefault(card => card.Id == dto.Id);
+        SocksCard? existing = context.SocksCards.FirstOrDefault(card => card.Id == dto.Id);
         if (existing == null)
         {
             throw new Exception($"Socks with ID {dto.Id} does not exist!!!");
         }
 
-        context.ProductCardSocks.Remove(existing);
-        context.ProductCardSocks.Add(dto);
+        context.SocksCards.Remove(existing);
+        context.SocksCards.Add(dto);
         context.SaveChanges();
         return Task.CompletedTask;
     }
 
     public Task DeleteAsync(int id)
     {
-        ProductCardSock? existing = context.ProductCardSocks.FirstOrDefault(card => card.Id == id);
+        SocksCard? existing = context.SocksCards.FirstOrDefault(card => card.Id == id);
         if (existing == null)
         {
             throw new Exception($"Socks with ID {id} does not exist!!!");
         }
 
-        context.ProductCardSocks.Remove(existing);
+        context.SocksCards.Remove(existing);
         context.SaveChanges();
 
         return Task.CompletedTask;
     }
 
-    public Task<ProductCardSock?> GetByTitlesAsync(string title)
+    public Task<SocksCard?> GetByTitlesAsync(string title)
     {
-        ProductCardSock? existing= context.ProductCardSocks.FirstOrDefault(s=>s.Title.Equals(title));
+        SocksCard? existing= context.SocksCards.FirstOrDefault(s=>s.Title.Equals(title));
         return Task.FromResult(existing);
     }
 }

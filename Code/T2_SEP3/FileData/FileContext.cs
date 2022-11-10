@@ -8,21 +8,12 @@ public class FileContext
     private const string filePath = "data.json";
     private DataContainer? dataContainer;
 
-    public ICollection<Stock> Stocks
+    public ICollection<Inventory> Inventories
     {
         get
         {
             LoadData();
-            return dataContainer!.Stocks;
-        }
-    }
-    
-    public ICollection<Product> Products
-    {
-        get
-        {
-            LoadData();
-            return dataContainer!.Products;
+            return dataContainer!.Inventories;
         }
     }
     public ICollection<Socks> Socks
@@ -33,12 +24,12 @@ public class FileContext
             return dataContainer!.Socks;
         }
     }
-    public ICollection<ProductCardSock> ProductCardSocks
+    public ICollection<SocksCard> SocksCards
     {
         get
         {
             LoadData();
-            return dataContainer!.ProductCardsSocks;
+            return dataContainer!.SocksCards;
         }
     }
     private void LoadData()
@@ -49,9 +40,8 @@ public class FileContext
         {
             dataContainer = new ()
             {
-                Stocks = new List<Stock>(),
-                Products = new List<Product>(),
-                ProductCardsSocks = new List<ProductCardSock>(),
+                Inventories = new List<Inventory>(),
+                SocksCards = new List<SocksCard>(),
                 Socks = new List<Socks>()
             };
             return;
