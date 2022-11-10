@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json
-    "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj",
-        "projectName": "BlazorOS",
-        "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj",
-        "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\obj\\",
-=======
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/BlazorWasm.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/BlazorWasm.csproj",
         "packagesPath": "/Users/rafael/.nuget/packages/",
         "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/obj/",
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
@@ -40,13 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json
-              "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj": {
-                "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj"
-=======
               "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj": {
                 "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj"
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json
               }
             }
           }
@@ -106,16 +87,6 @@
         }
       }
     },
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json
-    "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\obj\\",
-=======
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -124,7 +95,6 @@
         "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/Domain/Domain.csproj",
         "packagesPath": "/Users/rafael/.nuget/packages/",
         "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/Domain/obj/",
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
@@ -170,16 +140,6 @@
         }
       }
     },
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json
-    "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj",
-        "projectName": "HttpClients",
-        "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj",
-        "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\obj\\",
-=======
     "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -188,7 +148,6 @@
         "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj",
         "packagesPath": "/Users/rafael/.nuget/packages/",
         "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/obj/",
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rafael/.nuget/NuGet/NuGet.Config"
@@ -203,13 +162,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json
-              "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\Domain\\Domain.csproj"
-=======
               "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/Domain/Domain.csproj": {
                 "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/Domain/Domain.csproj"
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json
               }
             }
           }

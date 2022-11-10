@@ -3062,19 +3062,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/project.assets.json
-      "projectUniqueName": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj",
-      "projectName": "BlazorOS",
-      "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\BlazorOS.csproj",
-      "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\BlazorOS\\obj\\",
-=======
       "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/BlazorWasm.csproj",
       "projectName": "BlazorWasm",
       "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/BlazorWasm.csproj",
       "packagesPath": "/Users/rafael/.nuget/packages/",
       "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/BlazorWasm/obj/",
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/project.assets.json
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rafael/.nuget/NuGet/NuGet.Config"
@@ -3089,13 +3081,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorOS/obj/project.assets.json
-            "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj": {
-              "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T1_SEP3\\HttpClients\\HttpClients.csproj"
-=======
             "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj": {
               "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T1_SEP3/HttpClient/HttpClient.csproj"
->>>>>>> 6cc51bc411ef6948552812a6afe49a46e7fc01af:Code/T1_SEP3/BlazorWasm/obj/project.assets.json
             }
           }
         }
