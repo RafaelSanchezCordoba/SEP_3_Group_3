@@ -16,7 +16,7 @@ public class SockHttpClient:ISockService
         this.client = client;
     }
 
-    public async Task<ProductCardSock> Create(CreateSockCardDto dto)
+    public async Task<SocksCard> Create(CreateSockCardDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("Socks", dto);
         string result = await response.Content.ReadAsStringAsync();
@@ -26,7 +26,7 @@ public class SockHttpClient:ISockService
             throw new Exception(result);
         }
 
-        ProductCardSock product = JsonSerializer.Deserialize<ProductCardSock>(result, new JsonSerializerOptions
+        SocksCard product = JsonSerializer.Deserialize<SocksCard>(result, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;
@@ -34,7 +34,7 @@ public class SockHttpClient:ISockService
         return product;
     }
 
-    public async Task<ProductCardSock> GetById(int id)
+    public async Task<SocksCard> GetById(int id)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Socks/{id}");
         string result = await response.Content.ReadAsStringAsync();
@@ -44,7 +44,7 @@ public class SockHttpClient:ISockService
             throw new Exception(result);
         }
 
-        ProductCardSock product = JsonSerializer.Deserialize<ProductCardSock>(result, new JsonSerializerOptions
+        SocksCard product = JsonSerializer.Deserialize<SocksCard>(result, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;
@@ -52,7 +52,7 @@ public class SockHttpClient:ISockService
         return product;
     }
 
-    public async Task<ICollection<ProductCardSock>> GetAllSockCards()
+    public async Task<ICollection<SocksCard>> GetAllSockCards()
     {
         HttpResponseMessage response = await client.GetAsync("https://localhost:7999/Socks");
         string content = await response.Content.ReadAsStringAsync();
@@ -61,7 +61,7 @@ public class SockHttpClient:ISockService
             throw new Exception(content);
         }
 
-        ICollection<ProductCardSock> socks = JsonSerializer.Deserialize<ICollection<ProductCardSock>>(content,
+        ICollection<SocksCard> socks = JsonSerializer.Deserialize<ICollection<SocksCard>>(content,
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true

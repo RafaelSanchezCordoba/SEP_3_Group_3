@@ -11,7 +11,7 @@
     @if (sockCards != null)
     {
         
-            @foreach (ProductCardSock card in sockCards)
+            @foreach (SocksCard card in sockCards)
             {
                 <div class="card">
                     <div class="card_title">@card.Title</div>
@@ -37,8 +37,8 @@
   
    
 
-    private ICollection<ProductCardSock> sockCards;
-    private ICollection<ProductCardSock> sockCardsLoaded;
+    private ICollection<SocksCard> sockCards;
+    private ICollection<SocksCard> sockCardsLoaded;
     private string msg = "";
 
     protected async  void LoadData()

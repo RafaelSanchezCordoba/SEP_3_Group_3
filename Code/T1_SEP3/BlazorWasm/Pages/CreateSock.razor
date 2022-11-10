@@ -97,7 +97,7 @@
         try
         {
             
-           ProductCardSock card= await sockService.Create(new CreateSockCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
+           SocksCard card= await sockService.Create(new CreateSockCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
 
             
             title = "";

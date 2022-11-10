@@ -1,15 +1,15 @@
 namespace Shared.Models;
 
-public class Stock
+public class Inventory
 {
-    public Stock()
+    public Inventory()
     {
         Color = "none";
         Size = "none";
         Quantity = 0;
     }
 
-    public Stock(int cardId, string color, string size, long quantity)
+    public Inventory(int cardId, string color, string size, long quantity)
     {
         CardId = cardId;
         Color = color;
