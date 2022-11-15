@@ -8,7 +8,6 @@ using Smart.Blazor;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
-builder.Services.AddScoped<ISockService, SockHttpClient>();
 builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
 builder.Services.AddScoped<ISockCardService, SockCardHttpClient>();
 builder.Services.AddSmart();

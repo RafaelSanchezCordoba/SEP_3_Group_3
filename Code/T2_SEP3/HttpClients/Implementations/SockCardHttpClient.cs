@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
 using HttpClients.ClientInterfaces;
 using Shared.DTOs;
@@ -78,6 +79,19 @@ public class SockCardHttpClient:ISockCardService
       
         if (!response.IsSuccessStatusCode)
         {
+            throw new Exception(content);
+        }
+    }
+
+    public async Task UpdateAsync(SocksCard card)
+    {
+        string cardAsJson = JsonSerializer.Serialize(card);
+        StringContent body = new StringContent(cardAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PatchAsync("SocksCards", body);
+      
+        if (!response.IsSuccessStatusCode)
+        {
+            string content = await response.Content.ReadAsStringAsync();
             throw new Exception(content);
         }
     }
