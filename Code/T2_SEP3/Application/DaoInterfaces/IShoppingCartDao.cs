@@ -1,0 +1,12 @@
+using Shared.DTOs;
+using Shared.Models;
+
+namespace Application.DaoInterfaces;
+
+public interface IShoppingCartDao
+{
+    Task<ShoppingCart> CreateAsync(ShoppingCart shoppingCart);
+    Task<ShoppingCart> GetById(int id);
+    Task<ShoppingCart> AddProduct(Product product, int cartId);
+    Task DeleteAsync(int cartId);
+}

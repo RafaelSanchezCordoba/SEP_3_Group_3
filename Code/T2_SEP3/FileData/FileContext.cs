@@ -16,6 +16,14 @@ public class FileContext
             return dataContainer!.Inventories;
         }
     }
+    public ICollection<ShoppingCart> ShoppingCarts
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.ShoppingCarts;
+        }
+    }
     public ICollection<Socks> Socks
     {
         get
@@ -42,7 +50,8 @@ public class FileContext
             {
                 Inventories = new List<Inventory>(),
                 SocksCards = new List<SocksCard>(),
-                Socks = new List<Socks>()
+                Socks = new List<Socks>(),
+                ShoppingCarts = new List<ShoppingCart>()
             };
             return;
         }
