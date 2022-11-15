@@ -1,8 +1,8 @@
 @page "/ManageSocks"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-@inject ISocksService sockService;
-@inject NavigationManager _navigationManager
+@inject ISockService sockService;
+@inject NavigationManager _navigationManager;
 
 <h3>ManageSocks</h3>
 <button onclick="@LoadCards">Load</button>
@@ -37,8 +37,8 @@ else
 }
 
 @code {
-    private ICollection<SocksCard> sockCards;
-    private ICollection<SocksCard> sockCardsLoaded;
+    private ICollection<ProductCardSock> sockCards;
+    private ICollection<ProductCardSock> sockCardsLoaded;
     private string msg = "";
 
     private async void LoadCards()
@@ -56,10 +56,6 @@ else
         }
         
     }
-    public void Edit(int cardId)
-    {
-        _navigationManager.NavigateTo($"EditSockCard/{cardId}");
-    }
 
     private async Task RemoveCardById(int id)
     {
@@ -75,6 +71,10 @@ else
         }
         LoadCards();
        
+    }
+    public void Edit(int cardId)
+    {
+        _navigationManager.NavigateTo($"EditSockCard/{cardId}");
     }
 
 

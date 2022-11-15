@@ -1,7 +1,7 @@
 @page "/BrowseSocks"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-@inject ISocksService sockService;
+@inject ISockService sockService;
 <div class="container">
     <h3>Browse Socks</h3>
     
@@ -11,7 +11,7 @@
     @if (sockCards != null)
     {
         
-            @foreach (SocksCard card in sockCards)
+            @foreach (ProductCardSock card in sockCards)
             {
                 <div class="card">
                     <div class="card_title">@card.Title</div>
@@ -37,8 +37,8 @@
   
    
 
-    private ICollection<SocksCard> sockCards;
-    private ICollection<SocksCard> sockCardsLoaded;
+    private ICollection<ProductCardSock> sockCards;
+    private ICollection<ProductCardSock> sockCardsLoaded;
     private string msg = "";
 
     protected async  void LoadData()

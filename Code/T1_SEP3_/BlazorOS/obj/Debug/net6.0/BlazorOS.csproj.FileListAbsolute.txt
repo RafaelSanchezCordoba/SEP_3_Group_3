@@ -2325,7 +2325,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\aEF7NfrL.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\rn+ijD+K.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\TRwPVRba.gz
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\nHDBWs7W.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\YF3Nee5G.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\PwwxSr4Z.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\GudGYy3h.gz
@@ -2513,7 +2512,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\BrowseSocks.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSock.razor.rz.scp.css
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockStock.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\bundle\BlazorOS.styles.css
@@ -3389,3 +3387,29 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\dQq6p9zG.gz
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\oAy+rnoa.gz
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockInventory.razor.rz.scp.css
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\BlazorFluentUI.CoreComponents.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.ExcelExport.Net.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Licensing.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.PdfExport.Net.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\System.Reactive.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\System.Reactive.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.ExcelExport.Net.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.PdfExport.Net.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\BlazorFluentUI.CoreComponents.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Licensing.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\BlazorFluentUI.CoreComponents.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\Syncfusion.Blazor.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\bin\Debug\net6.0\System.Reactive.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\tXORPBYb.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\8MNUYGfN.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\OXxHSrgt.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\dFyUcAab.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\ZTVOQY+b.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\Ngr+M7OY.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\build-gz\9xUvtTMz.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T1_SEP3_\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockInventory.razor.rz.scp.css
