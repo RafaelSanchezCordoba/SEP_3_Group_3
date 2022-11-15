@@ -1,0 +1,30 @@
+*[b-sdc4cnfsfu] {box-sizing: border-box;}
+
+.card[b-sdc4cnfsfu]{
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+.button-message[b-sdc4cnfsfu]
+{
+    float: left;
+    margin-left: 2%;
+}
+
+.acceptbtn[b-sdc4cnfsfu]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+#product-image[b-sdc4cnfsfu]
+{
+    width: 50%;
+}
+
+.small-card[b-sdc4cnfsfu]
+{
+    padding: 20px;
+    width: 34%;
+    float: right;
+}
