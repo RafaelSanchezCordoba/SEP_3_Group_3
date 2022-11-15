@@ -3,7 +3,7 @@ using Shared.Models;
 
 namespace Application.DaoInterfaces;
 
-public interface ISocksDao
+public interface ISockCardDao
 {
     Task<SocksCard> CreateAsync(SocksCard productCard);
     Task<IEnumerable<SocksCard>> GetAsync();

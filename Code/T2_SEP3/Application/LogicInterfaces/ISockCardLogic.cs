@@ -3,7 +3,7 @@ using Shared.Models;
 
 namespace Application.LogicInterfaces;
 
-public interface ISocksLogic
+public interface ISockCardLogic
 {
     Task<SocksCard> CreateAsync(CreateSockCardDto dto);
     Task<IEnumerable<SocksCard>> GetAsync();

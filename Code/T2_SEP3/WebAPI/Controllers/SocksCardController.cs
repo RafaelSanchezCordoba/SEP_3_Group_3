@@ -9,9 +9,9 @@ namespace WebAPI.Controllers;
 [Route("[controller]")]
 public class SocksCardsController : ControllerBase
 {
-    private readonly ISocksLogic socksLogic;
+    private readonly ISockCardLogic socksLogic;
 
-    public SocksCardsController(ISocksLogic socksLogic)
+    public SocksCardsController(ISockCardLogic socksLogic)
     {
         this.socksLogic = socksLogic;
     }

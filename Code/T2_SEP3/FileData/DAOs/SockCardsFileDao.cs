@@ -5,11 +5,11 @@ using Shared.Models;
 
 namespace FileData.DAOs;
 
-public class SocksFileDao : ISocksDao
+public class SockCardsFileDao : ISockCardDao
 {
     private readonly FileContext context;
 
-    public SocksFileDao(FileContext context)
+    public SockCardsFileDao(FileContext context)
     {
         this.context = context;
     }

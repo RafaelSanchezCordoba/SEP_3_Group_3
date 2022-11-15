@@ -5,11 +5,11 @@ using Shared.Models;
 
 namespace Application.Logic;
 
-public class SocksLogic : ISocksLogic
+public class SockCardLogic : ISockCardLogic
 {
-    private readonly ISocksDao socksDao;
+    private readonly ISockCardDao socksDao;
 
-    public SocksLogic(ISocksDao socksDao)
+    public SockCardLogic(ISockCardDao socksDao)
     {
         this.socksDao = socksDao;
     }
