@@ -8,26 +8,23 @@
    
     <button onclick="@LoadData">load</button>
     <p>@msg</p>
+    <div class="container">
     @if (sockCards != null)
     {
         
             @foreach (SocksCard card in sockCards)
             {
                 <div class="card">
-                    <div class="card_title"><b>@card.Title</b></div>
-                    <div class="card_info">
-                        <p><label>Description:</label>@card.Description</p>
-                        <p><label>Brand:</label>@card.Brand</p>
-                    </div>
-                    
                     <div class="card_image">
                         <img src="@card.Image ">
                     </div>
+                    <div class="card_info">
+                        <p>@card.Price €</p>
+                        <p><b>@card.Title</b></p>
+                    </div>
                 </div>
             }
-    }
-
-
+    }</div>
 </div>
 
 
@@ -35,8 +32,6 @@
 @code {
 
   
-   
-
     private ICollection<SocksCard> sockCards;
     private ICollection<SocksCard> sockCardsLoaded;
     private string msg = "";
