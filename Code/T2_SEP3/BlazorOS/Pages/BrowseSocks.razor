@@ -2,30 +2,29 @@
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
 @inject ISockCardService sockService;
-<div class="container">
+
     <h3>Browse Socks</h3>
-    
-   
-    <button onclick="@LoadData">load</button>
+<button onclick="@LoadData">load</button>
     <p>@msg</p>
-    <div class="container">
+    <div class="product-card-container">
     @if (sockCards != null)
     {
         
             @foreach (SocksCard card in sockCards)
             {
                 <div class="card">
-                    <div class="card_image">
+                    
                         <img src="@card.Image ">
-                    </div>
+                   
                     <div class="card_info">
-                        <p>@card.Price €</p>
-                        <p><b>@card.Title</b></p>
+                        <p><b>@card.Price €</b></p>
+                        <p>@card.Title</p>
                     </div>
                 </div>
             }
-    }</div>
-</div>
+    }
+    </div>
+
 
 
 
@@ -33,7 +32,6 @@
 
   
     private ICollection<SocksCard> sockCards;
-    private ICollection<SocksCard> sockCardsLoaded;
     private string msg = "";
 
     protected async  void LoadData()
@@ -54,9 +52,7 @@
 
     protected  async override void OnInitialized()
     {
-        base.OnInitialized();
-        sockCardsLoaded = await sockService.GetAllSockCards();
-        sockCards = sockCardsLoaded;
+        sockCards = await sockService.GetAllSockCards();
     }
 
 }

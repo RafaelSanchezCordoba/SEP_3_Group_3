@@ -2,19 +2,34 @@
 *[b-qno29iuakm] {box-sizing: border-box;}
 
 .card[b-qno29iuakm]{
-    width: 29%;
-    padding: 10px;
-   margin: 10px;
+    width: 25%;
+    padding: 20px;
     float:left;
-}
-.container[b-qno29iuakm]
-{
-    display: inline;
+    height: 400px;
 }
 
+div[b-qno29iuakm]
+{
+    border: none;
+}
+.product-card-container[b-qno29iuakm]
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_info[b-qno29iuakm]{
+    position: relative;
+    left: 10px;
+    font-size: medium;
+}
 img[b-qno29iuakm]{
-    width:90% ;
-    padding: 10px;
+    width:95% ;
+    max-height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: black solid 2px;
 }
 /* /Pages/CreateSocks.razor.rz.scp.css */
 *[b-zjw7gqpu4y] {
