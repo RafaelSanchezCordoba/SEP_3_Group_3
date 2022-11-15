@@ -8,12 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45bb0ab7-2af7-4d1a-af29-79f661d82a9d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Application/DaoInterfaces/ISocksDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/DaoInterfaces/ISockCardDao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Logic/SocksLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Logic/SockCardLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/LogicInterfaces/ISocksLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/LogicInterfaces/ISockCardLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/DAOs/SocksFileDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/DAOs/SockCardsFileDao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/Controllers/SocksCardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/Controllers/SocksCardController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/ManageSocks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/ManageSocks.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/TestComponent.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Shared/NavMenu.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <updated>1667991631259</updated>
       <workItem from="1667991645412" duration="644000" />
       <workItem from="1668506234820" duration="642000" />
-      <workItem from="1668509508167" duration="3506000" />
+      <workItem from="1668509508167" duration="3948000" />
     </task>
     <servers />
   </component>

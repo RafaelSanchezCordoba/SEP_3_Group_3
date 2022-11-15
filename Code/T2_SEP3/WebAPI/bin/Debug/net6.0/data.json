@@ -4,25 +4,67 @@
       "CardId": 1,
       "Color": "string",
       "Size": "string",
-      "Quantity": 2,
-      "Id": 1
-    },
-    {
-      "CardId": 1,
-      "Color": "string",
-      "Size": "bing",
-      "Quantity": 2,
-      "Id": 2
-    },
-    {
-      "CardId": 1,
-      "Color": "string",
-      "Size": "string",
       "Quantity": 0,
       "Id": 3
+    },
+    {
+      "CardId": 9,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 4,
+      "Id": 4
+    },
+    {
+      "CardId": 9,
+      "Color": "red",
+      "Size": "s",
+      "Quantity": 6,
+      "Id": 5
+    },
+    {
+      "CardId": 9,
+      "Color": "red",
+      "Size": "m",
+      "Quantity": 6,
+      "Id": 6
+    },
+    {
+      "CardId": 9,
+      "Color": "grey",
+      "Size": "xs",
+      "Quantity": 456789,
+      "Id": 7
+    },
+    {
+      "CardId": 9,
+      "Color": "grey",
+      "Size": "s",
+      "Quantity": 456,
+      "Id": 8
+    },
+    {
+      "CardId": 9,
+      "Color": "grey",
+      "Size": "m",
+      "Quantity": 5,
+      "Id": 9
+    },
+    {
+      "CardId": 9,
+      "Color": "grey",
+      "Size": "l",
+      "Quantity": 89,
+      "Id": 10
+    },
+    {
+      "CardId": 9,
+      "Color": "grey",
+      "Size": "xl",
+      "Quantity": 9,
+      "Id": 11
     }
   ],
-  "SockCards": [
+  "SocksCards": [
     {
       "Title": "Pokemon socks",
       "Description": "Cute Psyduck socks",
@@ -44,46 +86,15 @@
       "Id": 6
     },
     {
-      "Title": "here it is",
-      "Description": "asdjlk\u00F2",
-      "Price": 12,
-      "Material": "jbhkl\u00F2",
-      "Brand": "hjkl",
-      "Image": "asd",
-      "Type": "Extra low cut",
-      "Id": 7
-    },
-    {
-      "Title": "HERE",
-      "Description": "string",
-      "Price": 1,
-      "Material": "string",
-      "Brand": "string",
-      "Image": "string",
-      "Type": "string",
-      "Id": 2
-    },
-    {
-      "Title": "Change this",
-      "Description": "DXCFGVH",
-      "Price": 1,
-      "Material": "yfghj",
-      "Brand": "dxs",
-      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
-      "Type": "Low cut",
-      "Id": 5
-    },
-    {
-      "Title": "type change 2",
-      "Description": "this is cahnged",
-      "Price": 5,
-      "Material": "rctvbhnj",
-      "Brand": "xcfgvbhjn",
-      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
-      "Type": "Executive",
-      "Id": 3
+      "Title": "unicorn socks",
+      "Description": "makes you feel magical",
+      "Price": 8,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
+      "Type": "Knee high",
+      "Id": 9
     }
   ],
-  "Products": [],
   "Socks": []
 }
