@@ -10,6 +10,7 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped<ISockService, SockHttpClient>();
 builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
+builder.Services.AddScoped<ISockCardService, SockCardHttpClient>();
 builder.Services.AddSmart();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7999") });
 

@@ -14,7 +14,7 @@ public class SocksInventoryLogic:ISocksInventoryLogic
     {
         this.inventoryDao = inventoryDao;
     }
-    public async Task<Inventory> CreateAsync(CreateSocksInventoryDto dto)
+    public async Task<Inventory> CreateAsync(CreateSockInventoryDto dto)
     {
         Inventory result = new Inventory(dto.CardId, dto.Color,dto.Size,dto.Quantity);
         

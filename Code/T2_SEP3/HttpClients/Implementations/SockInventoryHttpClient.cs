@@ -20,7 +20,7 @@ public class SockInventoryHttpClient:ISockInventoryService
 
     public async Task<Inventory> CreateAsync(CreateSockInventoryDto dto)
     {
-        HttpResponseMessage response = await client.PostAsJsonAsync("SockInventory", dto);
+        HttpResponseMessage response = await client.PostAsJsonAsync("SocksInventory", dto);
         string result = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

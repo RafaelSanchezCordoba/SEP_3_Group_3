@@ -5,7 +5,7 @@ namespace Application.LogicInterfaces;
 
 public interface ISocksInventoryLogic
 {
-    Task<Inventory> CreateAsync(CreateSocksInventoryDto dto);
+    Task<Inventory> CreateAsync(CreateSockInventoryDto dto);
     Task<IEnumerable<Inventory>> GetAsync();
     Task<Inventory> GetById(int id);
     Task<IEnumerable<Inventory>> GetByCardIdAsync(int id);

@@ -5,7 +5,7 @@
 @using global::Shared.Models
 @using Smart.Blazor
 
-@inject ISocksService sockService
+@inject ISockCardService sockService
 @inject NavigationManager NavManager
 
 <h3>Create Sock</h3>
@@ -98,7 +98,7 @@
         try
         {
             
-           SocksCard card= await sockService.Create(new CreateSocksCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
+           SocksCard card= await sockService.Create(new CreateSockCardDto( title, description,  Convert.ToDouble(price), material, brand, image, type));
 
             
             title = "";
@@ -109,7 +109,7 @@
             image = "";
             type = "Select the type";
             
-            NavManager.NavigateTo($"/CreateSockStock/{card.Id}");
+            NavManager.NavigateTo($"/CreateSocksInventory/{card.Id}");
 
         }
         catch (Exception e)

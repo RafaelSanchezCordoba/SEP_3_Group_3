@@ -3,7 +3,7 @@ using Shared.Models;
 
 namespace HttpClients.ClientInterfaces;
 
-public interface ISockService
+public interface ISockCardService
 {
     Task<SocksCard> Create(CreateSockCardDto dto);
   //  Task<ICollection<ProductCardBasicDto>> GetTitlesAsync();
@@ -12,6 +12,4 @@ public interface ISockService
     Task<ICollection<SocksCard>> GetAllSockCards();
 
     Task RemoveProductCardSockById(int id);
-
-    Task UpdateAsync(SocksCard card);
 }

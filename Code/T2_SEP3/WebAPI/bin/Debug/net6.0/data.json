@@ -1,5 +1,5 @@
 {
-  "Stocks": [
+  "Inventories": [
     {
       "CardId": 1,
       "Color": "string",
@@ -22,7 +22,7 @@
       "Id": 3
     }
   ],
-  "ProductCardsSocks": [
+  "SockCards": [
     {
       "Title": "Pokemon socks",
       "Description": "Cute Psyduck socks",

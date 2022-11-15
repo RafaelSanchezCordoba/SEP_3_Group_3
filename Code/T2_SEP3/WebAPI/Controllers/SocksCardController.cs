@@ -7,22 +7,22 @@ namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class SocksInventoryController:ControllerBase
+public class SocksCardsController : ControllerBase
 {
-    private readonly ISocksInventoryLogic inventoryLogic;
+    private readonly ISocksLogic socksLogic;
 
-    public SocksInventoryController(ISocksInventoryLogic stockLogic)
+    public SocksCardsController(ISocksLogic socksLogic)
     {
-        this.inventoryLogic = stockLogic;
+        this.socksLogic = socksLogic;
     }
-    
+
     [HttpPost]
-    public async Task<ActionResult<Inventory>> CreateAsync(CreateSockInventoryDto dto)
+    public async Task<ActionResult<SocksCard>> CreateAsync(CreateSockCardDto dto)
     {
         try
         {
-            Inventory inventory = await inventoryLogic.CreateAsync(dto);
-            return Created($"/inventory/{inventory.Id}", inventory);
+            ProductCard socks = await socksLogic.CreateAsync(dto);
+            return Created($"/socksCards/{socks.Id}", socks);
         }
         catch (Exception e)
         {
@@ -30,14 +30,14 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
+
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Inventory>>> GetAsync()
+    public async Task<ActionResult<IEnumerable<ProductCardBasicDto>>> GetAsync()
     {
         try
         {
-            var inventories = await inventoryLogic.GetAsync();
-            return Ok(inventories);
+            var socks = await socksLogic.GetAsync();
+            return Ok(socks);
         }
         catch (Exception e)
         {
@@ -45,13 +45,13 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
+
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<Inventory>> GetById([FromRoute] int id)
+    public async Task<ActionResult<SocksCard>> GetById([FromRoute] int id)
     {
         try
         {
-            var result = await inventoryLogic.GetById(id);
+            var result = await socksLogic.GetById(id);
             return Ok(result);
         }
         catch (Exception e)
@@ -60,13 +60,14 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    [HttpGet("Cards/{id:int}")]
-    public async Task<ActionResult<Inventory>> GetByCardId([FromRoute] int id)
+
+    [HttpPatch]
+    public async Task<ActionResult> UpdateAsync([FromBody] SocksCard dto)
     {
         try
         {
-            var result = await inventoryLogic.GetByCardIdAsync(id);
-            return Ok(result);
+            await socksLogic.UpdateAsync(dto);
+            return Ok();
         }
         catch (Exception e)
         {
@@ -74,13 +75,13 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
+
     [HttpDelete("{id:int}")]
     public async Task<ActionResult> DeleteAsync([FromRoute] int id)
     {
         try
         {
-            await inventoryLogic.DeleteAsync(id);
+            await socksLogic.DeleteAsync(id);
             return Ok();
         }
         catch (Exception e)
@@ -89,13 +90,13 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    [HttpDelete("Cards/{id:int}")]
-    public async Task<ActionResult> DeleteFromCardAsync([FromRoute] int id)
+    [HttpGet("{title}")]
+    public async Task<ActionResult<SocksCard>> GetByIdAsync([FromRoute] string title)
     {
         try
         {
-            await inventoryLogic.DeleteFromCardAsync(id);
-            return Ok();
+            SocksCard post = await socksLogic.GetByTitleAsync(title);
+            return Ok(post);
         }
         catch (Exception e)
         {

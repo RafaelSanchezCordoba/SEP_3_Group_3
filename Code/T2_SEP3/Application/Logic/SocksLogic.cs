@@ -14,7 +14,7 @@ public class SocksLogic : ISocksLogic
         this.socksDao = socksDao;
     }
 
-    public async Task<SocksCard> CreateAsync(CreateSocksCardDto dto)
+    public async Task<SocksCard> CreateAsync(CreateSockCardDto dto)
     {
         SocksCard socksCard = new SocksCard( dto.Title, dto.Description, dto.Price, dto.Material, dto.Brand, dto.Image, dto.Type);
         ValidateSocks(socksCard);
