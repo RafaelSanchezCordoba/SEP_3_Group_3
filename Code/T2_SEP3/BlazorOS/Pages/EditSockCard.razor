@@ -3,6 +3,7 @@
 @using HttpClients.ClientInterfaces
 @inject ISockCardService sockService;
 @inject NavigationManager _navigationManager;
+@using Smart.Blazor
 <h3>EditSockCard</h3>
 <div class="container">
     @if (card == null)
@@ -33,8 +34,21 @@
         </div>
         <div>
             <label for="inputType">Type:</label>
-            <input type="text" class="form-control" id="inputType" @bind-value="card.Type"/>
-            
+          
+            <label>@card.Type</label>
+             <div  class="small-form-field">
+                   
+                    <div id="dropdown-list">
+                        <DropDownList Id="dropdown-input" Placeholder="Select the type"  OnItemClick="TypeSelection">
+                        <ListItem Value="Invisible">Invisible</ListItem>
+                        <ListItem Value="Extra low cut">Extra low cut</ListItem>
+                        <ListItem Value="Low cut">Low cut</ListItem>
+                        <ListItem Value="Anklets">Anklets</ListItem>
+                        <ListItem Value="Mid calf">Mid calf</ListItem>
+                        <ListItem Value="Executive">Executive</ListItem>
+                        <ListItem Value="Knee high">Knee high</ListItem>
+                    </DropDownList></div>
+                </div> 
       
         </div>
        
@@ -44,6 +58,8 @@
     <p>@msg</p>
 </div>
 @code {
+    
+    
     SocksCard card;
    
     
@@ -78,6 +94,12 @@
         {
             msg = e.Message;
         }
+    }
+    private void TypeSelection(Event ev)
+    {
+        DropDownListItemClickEventDetail detail = ev["Detail"];
+        
+        card.Type = detail.Label;
     }
     
 

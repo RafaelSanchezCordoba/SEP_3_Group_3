@@ -3473,32 +3473,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rosab\\.nuget\\packages\\": {}
+    "C:\\Users\\alexd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\BlazorOS.csproj",
+      "projectUniqueName": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\BlazorOS.csproj",
       "projectName": "BlazorOS",
-      "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\BlazorOS.csproj",
-      "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\obj\\",
+      "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\BlazorOS.csproj",
+      "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\BlazorOS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\HttpClients\\HttpClients.csproj": {
-              "projectPath": "C:\\Users\\rosab\\OneDrive\\Escritorio\\Software Engineering\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\HttpClients\\HttpClients.csproj"
+            "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\HttpClients\\HttpClients.csproj": {
+              "projectPath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\HttpClients\\HttpClients.csproj"
             }
           }
         }

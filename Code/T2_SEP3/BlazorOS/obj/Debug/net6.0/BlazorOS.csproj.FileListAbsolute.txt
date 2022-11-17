@@ -4268,8 +4268,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\n
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\BrowseSocks.razor.rz.scp.css
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSock.razor.rz.scp.css
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSockInventory.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSocks.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateSocksInventory.razor.rz.scp.css
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
