@@ -2,6 +2,7 @@
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
 @inject ISockCardService sockService;
+@inject NavigationManager navMgr
 
     <h3>Browse Socks</h3>
 <button onclick="@LoadData">load</button>
@@ -12,7 +13,7 @@
         
             @foreach (SocksCard card in sockCards)
             {
-                <div class="card">
+                <div class="card" @onclick="@(() => navMgr.NavigateTo($"/ViewSockInfo/{card.Id}"))">
                     
                         <img src="@card.Image ">
                    

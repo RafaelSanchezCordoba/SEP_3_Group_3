@@ -22,7 +22,7 @@ public class SocksInventoryController:ControllerBase
         try
         {
             Inventory inventory = await inventoryLogic.CreateAsync(dto);
-            return Created($"/inventory/{inventory.Id}", inventory);
+            return Created($"/sockInventory/{inventory.Id}", inventory);
         }
         catch (Exception e)
         {
@@ -60,8 +60,8 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    [HttpGet("Cards/{id:int}")]
-    public async Task<ActionResult<Inventory>> GetByCardId([FromRoute] int id)
+    [HttpGet("card{id:int}")]
+    public async Task<ActionResult<IEnumerable<Inventory>>> GetByCardId([FromRoute] int id)
     {
         try
         {

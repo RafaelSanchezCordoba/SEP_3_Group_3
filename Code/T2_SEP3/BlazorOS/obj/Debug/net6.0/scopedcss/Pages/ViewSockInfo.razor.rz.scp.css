@@ -1,0 +1,24 @@
+.colorBtn[b-ecdsryc5i8] {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.selectedColorBtn[b-ecdsryc5i8]
+{
+    width: 80px;
+    border-radius: 50%;
+    border: solid black 3px;
+}  
+
+.sockImg[b-ecdsryc5i8]
+{
+    width: 48%;
+    float: left;
+}
+.sockInfo[b-ecdsryc5i8]
+{
+    width: 50%;
+    float: left;
+}

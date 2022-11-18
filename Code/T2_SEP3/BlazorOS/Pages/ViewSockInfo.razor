@@ -1,0 +1,90 @@
+@page "/ViewSockInfo/{id:int}"
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@inject ISockCardService cardService
+@inject ISockInventoryService inventoryService
+
+
+<h3>ViewSockInfo</h3>
+
+<div class="sockImg">
+    <img src=@card.Image/>
+</div>
+<div class="sockInfo">
+    <button @onclick="LoadColors">click me</button>
+    <h4>@card.Title</h4>
+    <b><label id="price-label">@card.Price €</label></b>
+    <p>@card.Description</p>
+    <p>Material: @card.Material</p>
+    <p>Brand: @card.Brand</p>
+    <p>Type: @card.Type</p>
+    <p>Color: @selectedColor</p>
+    
+    @foreach (string color in colors)
+    {
+        <div class="colorBtn" style="color: @color" @onclick="() => { selectedColor=color; LoadSizes();}">@color</div>
+    }
+    
+    @foreach (string s in sizes)
+    {
+        <div >@s</div>
+
+    }
+</div>
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    private string errorMsg = "";
+    private SocksCard card=null!;
+    private ICollection<String> colors { get; set; }=new List<string>();
+    private String selectedColor;
+    private ICollection<String> sizes{ get; set; }=new List<string>();
+    private String selectedSizes;
+    private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            card = await cardService.GetById(Id);
+            inventories = await inventoryService.GetByCardIdAsync(card.Id);
+            LoadColors();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
+    }
+
+    private void LoadColors()
+    {
+        foreach (Inventory i in inventories)
+        {
+            if (!colors.Contains(i.Color))
+            {
+                colors.Add(i.Color);
+            }
+        }
+        
+    }
+    private void LoadSizes()
+    {
+        sizes.Clear();
+        foreach (var i in inventories)
+        {
+            if (selectedColor.Equals(i.Color))
+            {
+                if (!sizes.Contains(i.Size))
+                {
+                    sizes.Add(i.Size);
+                }
+            }
+        }
+    }
+}

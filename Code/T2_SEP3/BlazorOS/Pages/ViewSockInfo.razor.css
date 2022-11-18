@@ -1,0 +1,24 @@
+.colorBtn {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.selectedColorBtn
+{
+    width: 80px;
+    border-radius: 50%;
+    border: solid black 3px;
+}  
+
+.sockImg
+{
+    width: 48%;
+    float: left;
+}
+.sockInfo
+{
+    width: 50%;
+    float: left;
+}
