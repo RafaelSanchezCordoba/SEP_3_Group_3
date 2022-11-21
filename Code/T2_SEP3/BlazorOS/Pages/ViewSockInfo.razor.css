@@ -1,22 +1,26 @@
 .colorBtn {
     aspect-ratio: 1;
     border-radius: 50%;
-    display: grid;
+    float:left;
     place-items: center;
 }
 
-.selectedColorBtn
+.sizeBtn
 {
-    width: 80px;
-    border-radius: 50%;
-    border: solid black 3px;
-}  
+    aspect-ratio: 1;
+    border-radius: 20%;
+    float:left;
+    place-items: center;
+    border: black solid;
+    width: 40px;
+}
 
 .sockImg
 {
     width: 48%;
     float: left;
 }
+
 .sockInfo
 {
     width: 50%;

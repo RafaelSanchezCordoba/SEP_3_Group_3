@@ -6,12 +6,10 @@
 
 
 <h3>ViewSockInfo</h3>
+<div style="display: inline">
+    <img class="sockImg" src=@card.Image/>
 
-<div class="sockImg">
-    <img src=@card.Image/>
-</div>
 <div class="sockInfo">
-    <button @onclick="LoadColors">click me</button>
     <h4>@card.Title</h4>
     <b><label id="price-label">@card.Price €</label></b>
     <p>@card.Description</p>
@@ -19,17 +17,23 @@
     <p>Brand: @card.Brand</p>
     <p>Type: @card.Type</p>
     <p>Color: @selectedColor</p>
-    
-    @foreach (string color in colors)
-    {
-        <div class="colorBtn" style="color: @color" @onclick="() => { selectedColor=color; LoadSizes();}">@color</div>
-    }
-    
-    @foreach (string s in sizes)
-    {
-        <div >@s</div>
+     <p>Size: @selectedSizes</p>
+    <div style="display: inline">
+        @foreach (string color in colors)
+        {
+           <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
+        }
+    </div>
+    <div style="display: inline">
+        @foreach (string s in sizes)
+        {
+            <div class="sizeBtn" @onclick="() => { selectedSizes = s; }" >@s</div>
 
-    }
+        }
+    </div>
+    <button onclick="AddToCart">Add to the cart</button>
+    @errorMsg
+    </div>
 </div>
 
 
@@ -86,5 +90,10 @@
                 }
             }
         }
+    }
+
+    private void AddToCart()
+    {
+        
     }
 }
