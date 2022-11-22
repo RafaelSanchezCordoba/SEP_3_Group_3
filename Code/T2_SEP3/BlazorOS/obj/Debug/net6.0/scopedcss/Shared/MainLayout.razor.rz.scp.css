@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 
+
 main[b-wcssxcvg4k] {
     flex: 1;
 }
@@ -17,7 +18,7 @@ main[b-wcssxcvg4k] {
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
-    display: flex;
+    display: inline;
     align-items: center;
 }
 

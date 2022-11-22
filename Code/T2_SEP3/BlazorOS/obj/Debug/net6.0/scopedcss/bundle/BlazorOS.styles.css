@@ -8,6 +8,13 @@
     padding: 20px;
     float:left;
     height: 400px;
+    background-color: #acb7bf;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 30px;
+}
+.card:hover[b-qno29iuakm] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 div[b-qno29iuakm]
@@ -23,15 +30,16 @@ div[b-qno29iuakm]
 .card_info[b-qno29iuakm]{
     position: relative;
     left: 10px;
-    font-size: medium;
 }
+
 img[b-qno29iuakm]{
     width:95% ;
     max-height: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
-    border: black solid 2px;
+    /*border: black solid 2px;*/
+    border-radius: 15px;
 }
 /* /Pages/CreateSocks.razor.rz.scp.css */
 *[b-zjw7gqpu4y] {
@@ -157,6 +165,7 @@ input[b-zjw7gqpu4y]
     flex-direction: column;
 }
 
+
 main[b-wcssxcvg4k] {
     flex: 1;
 }
@@ -170,7 +179,7 @@ main[b-wcssxcvg4k] {
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
-    display: flex;
+    display: inline;
     align-items: center;
 }
 
