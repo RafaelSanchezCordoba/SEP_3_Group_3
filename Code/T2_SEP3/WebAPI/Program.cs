@@ -3,6 +3,7 @@ using Application.Logic;
 using Application.LogicInterfaces;
 using FileData;
 using FileData.DAOs;
+using Microsoft.AspNetCore.WebSockets;
 using Shared.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
 builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
+builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+builder.Services.AddScoped<ISocksDao, SocksFileDao>();
 
 
 

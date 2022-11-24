@@ -3,17 +3,12 @@ namespace Shared.Models;
 public class ShoppingCart
 {
     public int Id { get; set; }
-    public int? OwnerId { get; set; }
+    public int OwnerId { get; set; }
     private ICollection<Product> products;
 
-    public ShoppingCart( int? ownerId)
+    public ShoppingCart( int ownerId)
     {
-        if (ownerId != null)
-        {
-            OwnerId = ownerId;
-        }
-
-      
+        OwnerId = ownerId;
         products = new List<Product>();
     }
 

@@ -127,7 +127,16 @@
       "Id": 20
     }
   ],
-  "ShoppingCarts": null,
+  "ShoppingCarts": [
+    {
+      "Id": 0,
+      "OwnerId": null
+    },
+    {
+      "Id": 12,
+      "OwnerId": 2
+    }
+  ],
   "SocksCards": [
     {
       "Title": "Penguin socks",
