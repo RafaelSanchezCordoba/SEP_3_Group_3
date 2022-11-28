@@ -131,6 +131,8 @@ public class SockCardComunicatorImpl extends SockCardGrpcImplBase {
 
         SockCard daoCard = new SockCard(card.getTitle(),card.getDescription(),card.getPrice(), card.getMaterial(), card.getBrand(), card.getImage(), card.getType());
         service.saveCard(daoCard);
+        responseStream.onNext(Empty.newBuilder().build());
+        responseStream.onCompleted();
     }
 
 }

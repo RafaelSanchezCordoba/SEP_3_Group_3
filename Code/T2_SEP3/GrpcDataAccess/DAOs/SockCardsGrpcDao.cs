@@ -2,6 +2,7 @@ using Application.DaoInterfaces;
 using Grpc.Core;
 using Shared.DTOs;
 using Shared.Models;
+using Empty = Google.Protobuf.WellKnownTypes.Empty;
 
 namespace GrpcDataAccess.DAOs;
 
@@ -12,17 +13,25 @@ public class SockCardsGrpcDao: ISockCardDao
     
      public Task<SocksCard> CreateAsync(SocksCard sockCard)
      {
-         var req = new sockCard
+          var req = new sockCard
          {
              Id = sockCard.Id,
              Brand = sockCard.Brand, Title = sockCard.Title, Description = sockCard.Description, Image = sockCard.Image,
              Price = sockCard.Price, Material = sockCard.Material, Type = sockCard.Type
          };
 
-         Empty empty = new Empty( stub.addSockCard(req));
-         channel.ShutdownAsync().Wait();
-         
-         return Task.FromResult(sockCard);
+          try
+          {
+              var empty =  stub.addSockCard(req);
+              empty.ToString();
+          }
+          catch (Exception e)
+          {
+              Console.WriteLine(e);
+              throw;
+          }
+
+          return Task.FromResult(sockCard);
         
      }
 
