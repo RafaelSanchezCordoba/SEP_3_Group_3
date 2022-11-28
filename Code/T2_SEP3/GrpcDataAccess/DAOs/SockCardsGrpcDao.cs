@@ -14,14 +14,17 @@ public class SockCardsGrpcDao: ISockCardDao
      {
          var req = new sockCard
          {
+             Id = sockCard.Id,
              Brand = sockCard.Brand, Title = sockCard.Title, Description = sockCard.Description, Image = sockCard.Image,
              Price = sockCard.Price, Material = sockCard.Material, Type = sockCard.Type
          };
 
-         var resp = stub.addSockCard(req);
-       
+         Empty empty = new Empty( stub.addSockCard(req));
+         channel.ShutdownAsync().Wait();
+         
          return Task.FromResult(sockCard);
-    }
+        
+     }
 
      public Task<IEnumerable<SocksCard>> GetAsync()
      {
