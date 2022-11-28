@@ -130,11 +130,18 @@
   "ShoppingCarts": [
     {
       "Id": 0,
-      "OwnerId": null
+      "OwnerId": 3,
+      "Products": []
     },
     {
       "Id": 12,
-      "OwnerId": 2
+      "OwnerId": 2,
+      "Products": []
+    },
+    {
+      "Id": 12,
+      "OwnerId": 1,
+      "Products": []
     }
   ],
   "SocksCards": [

@@ -25,4 +25,8 @@ public class ProductCard
         Image = image;
         Type = type;
     }
+
+    public ProductCard()
+    {
+    }
 }

@@ -6,4 +6,5 @@ public class SocksCard:ProductCard
     {
    
     }
+    public SocksCard(){}
 }
