@@ -7,8 +7,8 @@
 <h3>ShoppingCart</h3>
 <div class="shoppingCart-form">
     <label>User ID: </label>
-    <Input type="text" @bind="id"/>
-    <p>@msg</p>
+    <input type="text" @bind="id" @bind:event ="oninput"/>
+     <p>@msg</p>
 </div>
 <button onclick="@LoadData">Load shopping from customer: @id</button>
 
@@ -34,13 +34,13 @@
     private global::Shared.Models.ShoppingCart shoppingCart;
     private List<Socks> socksList;
     private string msg = "";
-    private int id;
+    private string id;
 
     protected async void LoadData()
     {
         try
         {
-            shoppingCart = await shoppingCartService.getByIdAsync(id);
+            shoppingCart = await shoppingCartService.getByIdAsync(Int32.Parse(id));
             msg = "data loaded";
         }
         catch (Exception e)

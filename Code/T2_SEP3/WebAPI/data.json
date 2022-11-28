@@ -142,6 +142,11 @@
       "Id": 12,
       "OwnerId": 1,
       "Products": []
+    },
+    {
+      "Id": 12,
+      "OwnerId": 0,
+      "Products": []
     }
   ],
   "SocksCards": [
