@@ -3,7 +3,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "sock_card")
+@Table(name = "sock_card",schema = "sep_db")
 public class SockCard implements Serializable {
 
     @Id
