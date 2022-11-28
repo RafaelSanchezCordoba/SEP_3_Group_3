@@ -4,10 +4,10 @@
 @inject ISockCardService sockService;
 @inject NavigationManager navMgr
 
-    <h3>Browse Socks</h3>
-<button onclick="@LoadData">load</button>
-    <p>@msg</p>
-    <div class="product-card-container">
+
+<p>@msg</p>
+
+<div class="product-card-container">
     @if (sockCards != null)
     {
         
@@ -18,8 +18,8 @@
                         <img src="@card.Image ">
                    
                     <div class="card_info">
-                        <p><b>@card.Price €</b></p>
-                        <p>@card.Title</p>
+                        <p id="price-label"><b>@card.Price €</b></p>
+                        <p id="title-label">@card.Title</p>
                     </div>
                 </div>
             }
@@ -51,7 +51,7 @@
         
     }
 
-    protected  async override void OnInitialized()
+    protected async override Task OnInitializedAsync()
     {
         sockCards = await sockService.GetAllSockCards();
     }

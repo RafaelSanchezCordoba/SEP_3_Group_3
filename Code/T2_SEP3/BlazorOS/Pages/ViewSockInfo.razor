@@ -5,7 +5,6 @@
 @inject ISockInventoryService inventoryService
 
 
-<h3>ViewSockInfo</h3>
 <div style="display: inline">
     <img class="sockImg" src=@card.Image/>
 
@@ -17,21 +16,22 @@
     <p>Brand: @card.Brand</p>
     <p>Type: @card.Type</p>
     <p>Color: @selectedColor</p>
-     <p>Size: @selectedSizes</p>
-    <div style="display: inline">
+    <div class="color-container">
         @foreach (string color in colors)
         {
-           <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
+            <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
         }
-    </div>
-    <div style="display: inline">
+    </div><br/><br/>
+    <p>Size: @selectedSizes</p>
+    <div class="size-container">
         @foreach (string s in sizes)
         {
             <div class="sizeBtn" @onclick="() => { selectedSizes = s; }" >@s</div>
 
         }
     </div>
-    <button onclick="AddToCart">Add to the cart</button>
+    <br/><br/>
+    <button onclick="AddToCart" class="myButton">Add to the cart</button>
     @errorMsg
     </div>
 </div>

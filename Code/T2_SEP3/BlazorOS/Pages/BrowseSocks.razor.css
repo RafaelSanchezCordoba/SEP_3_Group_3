@@ -1,25 +1,31 @@
 * {box-sizing: border-box;}
 
+
+
 .card {
     width: 22%;
     margin: 10px;
     padding: 20px;
     float:left;
-    height: 400px;
+    height: 350px;
     background-color: #DEE2FF;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 30px;
+
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #778DA9;
+    transform: scale(1.02);
 }
 
 div
 {
     border: none;
 }
+
 .product-card-container
 {
     display: flex;
@@ -39,4 +45,15 @@ img{
     margin-bottom: 8px;
     border: #c7cae1 solid 1px;
     border-radius: 15px;
+}
+
+#price-label{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+#title-label{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #424242;
 }
