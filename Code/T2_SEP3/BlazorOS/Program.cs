@@ -11,6 +11,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
 builder.Services.AddScoped<ISockCardService, SockCardHttpClient>();
 builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
+builder.Services.AddScoped<ISocksService, SocksHttpClient>();
+builder.Services.AddScoped<IShoppingCartService, ShoppingCartHttpClient>();
 builder.Services.AddSmart();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7999") });
 

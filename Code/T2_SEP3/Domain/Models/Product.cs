@@ -13,4 +13,9 @@ public class Product
         Size = size;
         Color = color;
     }
+
+    public string getProductImg(ProductCard productCard)
+    {
+        return productCard.Image;
+    }
 }
