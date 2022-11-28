@@ -8,28 +8,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45bb0ab7-2af7-4d1a-af29-79f661d82a9d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockCardsGrpcDao.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockInventoryGrpcDao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/BrowseSocks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/BrowseSocks.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/BrowseSocks.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/BrowseSocks.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/29vJdthH.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/29vJdthH.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/bueFgF2+.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/bueFgF2+.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/BrowseSocks.razor.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/BrowseSocks.razor.rz.scp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/bundle/BlazorOS.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/bundle/BlazorOS.styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShop.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/WebAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
