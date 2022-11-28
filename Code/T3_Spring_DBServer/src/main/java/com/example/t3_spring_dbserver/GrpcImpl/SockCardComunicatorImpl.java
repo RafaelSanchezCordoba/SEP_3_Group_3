@@ -21,6 +21,63 @@ public class SockCardComunicatorImpl extends SockCardGrpcImplBase {
 
 
     @Override
+    public void getByTitle(StringReq req,StreamObserver<sockCard> responseStream){
+        System.out.println("riecied req to get by title");
+        SockCard sockCard = service.getByTitle(req.getRequest());
+        System.out.println(sockCard.getId()+"id of get by title");
+    }
+    @Override
+    public void updateSockCard(sockCard card,StreamObserver<sockCard> responseStream){
+        System.out.println("reicieved req to update sock card");
+
+        SockCard daoCard = new SockCard(card.getTitle()
+                ,card.getDescription(),card.getPrice()
+                , card.getMaterial()
+                , card.getBrand()
+                , card.getImage()
+                , card.getType());
+
+
+        SockCard sockCard = service.updateSockCard(daoCard);
+
+        SocksComunicator.sockCard toSent = SocksComunicator.sockCard.newBuilder()
+                .setId((int) sockCard.getId())
+                .setPrice(sockCard.getPrice())
+                .setBrand(sockCard.getBrand())
+                .setType(sockCard.getType())
+                .setDescription(sockCard.getDescription())
+                .setImage(sockCard.getImage())
+                .setMaterial(sockCard.getMaterial()).build();
+
+
+        responseStream.onNext(toSent);
+        responseStream.onCompleted();
+
+    }
+
+    @Override
+    public void deleteSockCardById(IntReq req, StreamObserver<sockCard> responseStream){
+        System.out.println("riecieved req to delete sock card with id::"+req.getRequest());
+
+        SockCard sockCard = service.deleteSockCard(req.getRequest());
+
+        SocksComunicator.sockCard toSent = SocksComunicator.sockCard.newBuilder()
+                .setId((int) sockCard.getId())
+                .setPrice(sockCard.getPrice())
+                .setBrand(sockCard.getBrand())
+                .setType(sockCard.getType())
+                .setDescription(sockCard.getDescription())
+                .setImage(sockCard.getImage())
+                .setMaterial(sockCard.getMaterial()).build();
+
+
+        responseStream.onNext(toSent);
+        responseStream.onCompleted();
+
+
+    }
+
+    @Override
     public void getAllSockCards(Empty req, StreamObserver<sockCard> responseStream) {
 
         System.out.println("reicieved req for all animals");
