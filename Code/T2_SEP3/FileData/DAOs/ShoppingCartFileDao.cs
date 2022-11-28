@@ -29,6 +29,12 @@ public class ShoppingCartFileDao:IShoppingCartDao
 
         return Task.FromResult(shoppingCart);
     }
+    
+    public Task<IEnumerable<ShoppingCart>>GetAsync()
+    {
+        IEnumerable<ShoppingCart> result = context.ShoppingCarts.AsEnumerable();
+        return Task.FromResult(result);
+    }
 
     public Task<ShoppingCart> GetById(int id)
     {

@@ -26,6 +26,11 @@ public class ShoppingCartLogic :IShoppingCartLogic
         return dao.GetById(id);
     }
 
+    public Task<IEnumerable<ShoppingCart>> GetAsync()
+    {
+        return dao.GetAsync();
+    }
+
     public Task<ShoppingCart> AddProduct(Product product, int cartId)
     {
         return dao.AddProduct(product, cartId);

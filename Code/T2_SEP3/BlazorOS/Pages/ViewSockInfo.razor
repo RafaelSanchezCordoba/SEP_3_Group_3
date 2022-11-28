@@ -1,8 +1,10 @@
 @page "/ViewSockInfo/{id:int}"
 @using global::Shared.Models
 @using HttpClients.ClientInterfaces
+@using global::Shared.DTOs
 @inject ISockCardService cardService
 @inject ISockInventoryService inventoryService
+@inject ISocksService socksService
 
 
 <div style="display: inline">
@@ -30,8 +32,12 @@
 
         }
     </div>
+<<<<<<< Updated upstream
     <br/><br/>
     <button onclick="AddToCart" class="myButton">Add to the cart</button>
+=======
+    <button @onclick="AddToCart">Add to the cart</button>
+>>>>>>> Stashed changes
     @errorMsg
     </div>
 </div>
@@ -77,6 +83,8 @@
         }
         
     }
+    
+    
     private void LoadSizes()
     {
         sizes.Clear();
@@ -94,6 +102,7 @@
 
     private void AddToCart()
     {
-        
+        CreateSocksDto socks = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
+        socksService.CreateAsync(socks);
     }
 }

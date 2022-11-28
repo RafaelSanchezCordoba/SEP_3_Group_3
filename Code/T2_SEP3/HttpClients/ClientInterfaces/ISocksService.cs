@@ -5,6 +5,6 @@ namespace HttpClients.ClientInterfaces;
 
 public interface ISocksService
 {
-    Task<Socks> CreateAsync(CreateSocks dto);
+    Task<Socks> CreateAsync(CreateSocksDto dto);
     Task<Socks> getByIdAsync(int id);
 }

@@ -1,57 +1,57 @@
-@page "/ShoppingCart"
-@using HttpClients.ClientInterfaces
-@using global::Shared.Models
-@inject IShoppingCartService shoppingCartService
-@inject NavigationManager navMgr
-
-<h3>ShoppingCart</h3>
-<div class="shoppingCart-form">
-    <label>User ID: </label>
-    <input type="text" @bind="id" @bind:event ="oninput"/>
-     <p>@msg</p>
-</div>
-<button onclick="@LoadData">Load shopping from customer: @id</button>
-
-<div class="shoppingCart-container">
-    @if (socksList != null)
-    {
-        @foreach (Socks socks in socksList)
-            {
-                <div class="product" @onclick="@(() => navMgr.NavigateTo($"/ViewSockInfo/{socks.Id}"))">
-                    
-                        <img src="@socks.ProductCard.Image ">
-                   
-                    <div class="product_info">
-                        <p><b>@socks.ProductCard.Price €</b></p>
-                        <p>@socks.ProductCard.Title</p>
-                    </div>
-                </div>
-            }
-    }
-</div>
-
-@code {
-    private global::Shared.Models.ShoppingCart shoppingCart;
-    private List<Socks> socksList;
-    private string msg = "";
-    private string id;
-
-    protected async void LoadData()
-    {
-        try
-        {
-            shoppingCart = await shoppingCartService.getByIdAsync(Int32.Parse(id));
-            msg = "data loaded";
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            msg = e.Message;
-        }
-    }
-    
-    protected  async override void OnInitialized()
-    {
-        socksList = (List<Socks>)await shoppingCartService.GetAsync();
-    }
-}
+@* @page "/ShoppingCart" *@
+@* @using HttpClients.ClientInterfaces *@
+@* @using global::Shared.Models *@
+@* @inject IShoppingCartService shoppingCartService *@
+@* @inject NavigationManager navMgr *@
+@* *@
+@* <h3>ShoppingCart</h3> *@
+@* <div class="shoppingCart-form"> *@
+@*     <label>User ID: </label> *@
+@*     <input type="text" @bind="id" @bind:event ="oninput"/> *@
+@*      <p>@msg</p> *@
+@* </div> *@
+@* <button onclick="@LoadData">Load shopping from customer: @id</button> *@
+@* *@
+@* <div class="shoppingCart-container"> *@
+@*     @if (socksList != null) *@
+@*     { *@
+@*         @foreach (Socks socks in socksList) *@
+@*             { *@
+@*                 <div class="product" @onclick="@(() => navMgr.NavigateTo($"/ViewSockInfo/{socks.Id}"))"> *@
+@*                      *@
+@*                         <img src="@socks.ProductCard.Image "> *@
+@*                     *@
+@*                     <div class="product_info"> *@
+@*                         <p><b>@socks.ProductCard.Price €</b></p> *@
+@*                         <p>@socks.ProductCard.Title</p> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             } *@
+@*     } *@
+@* </div> *@
+@* *@
+@* @code { *@
+@*     private global::Shared.Models.ShoppingCart shoppingCart; *@
+@*     private List<Socks> socksList; *@
+@*     private string msg = ""; *@
+@*     private string id; *@
+@* *@
+@*     protected async void LoadData() *@
+@*     { *@
+@*         try *@
+@*         { *@
+@*             shoppingCart = await shoppingCartService.getByIdAsync(Int32.Parse(id)); *@
+@*             msg = "data loaded"; *@
+@*         } *@
+@*         catch (Exception e) *@
+@*         { *@
+@*             Console.WriteLine(e); *@
+@*             msg = e.Message; *@
+@*         } *@
+@*     } *@
+@*      *@
+@*     protected  async override void OnInitialized() *@
+@*     { *@
+@*         socksList = (List<Socks>)await shoppingCartService.GetAsync(); *@
+@*     } *@
+@* } *@

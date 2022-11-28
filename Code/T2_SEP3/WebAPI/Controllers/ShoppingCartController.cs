@@ -31,6 +31,36 @@ public class ShoppingCartController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ShoppingCart>>> GetAsync()
+    {
+        try
+        {
+            var socks = await shoppingcartLogic.GetAsync();
+            return Ok(socks);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<ShoppingCart>> GetById([FromRoute] int id)
+    {
+        try
+        {
+            var result = await shoppingcartLogic.GetById(id);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 
     [HttpPatch("{shoppingCartId:int}")]
     public async Task<ActionResult<ShoppingCart>> AddProductAsync([FromBody]Product product,[FromRoute]int shoppingCartId)

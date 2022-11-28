@@ -16,7 +16,7 @@ public class SocksHttpClient : ISocksService
         this.client = client;
     }
 
-    public async Task<Socks> CreateAsync(CreateSocks dto)
+    public async Task<Socks> CreateAsync(CreateSocksDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("Socks", dto);
         string result = await response.Content.ReadAsStringAsync();

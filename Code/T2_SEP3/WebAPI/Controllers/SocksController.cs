@@ -17,7 +17,7 @@ public class SocksController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<ActionResult<Socks>> CreateAsync(CreateSocks dto)
+    public async Task<ActionResult<Socks>> CreateAsync(CreateSocksDto dto)
     {
         try
         {

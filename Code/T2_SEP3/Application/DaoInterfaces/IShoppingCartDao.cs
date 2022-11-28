@@ -7,6 +7,7 @@ public interface IShoppingCartDao
 {
     Task<ShoppingCart> CreateAsync(ShoppingCart shoppingCart);
     Task<ShoppingCart> GetById(int id);
+    Task<IEnumerable<ShoppingCart>> GetAsync();
     Task<ShoppingCart> AddProduct(Product product, int cartId);
     Task DeleteAsync(int cartId);
 }

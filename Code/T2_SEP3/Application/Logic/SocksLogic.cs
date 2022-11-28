@@ -14,9 +14,9 @@ public class SocksLogic : ISocksLogic
         this.socksDao = socksDao;
     }
 
-    public async Task<Socks> CreateAsync(CreateSocks dto)
+    public async Task<Socks> CreateAsync(CreateSocksDto dto)
     {
-        Socks socks = new Socks(dto.ProductCard, dto.Size, dto.Color);
+        Socks socks = new Socks(dto.ProductCardId, dto.Size, dto.Color);
         Socks created = await socksDao.CreateAsync(socks);
         return created;
     }
