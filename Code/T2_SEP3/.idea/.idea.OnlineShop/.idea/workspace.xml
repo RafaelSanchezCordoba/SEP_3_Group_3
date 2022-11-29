@@ -8,8 +8,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45bb0ab7-2af7-4d1a-af29-79f661d82a9d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/SockCardDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Models/SocksCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/SocksCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/ref/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/ref/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/refint/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/refint/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/DAOs/SockCardsFileDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/DAOs/SockCardsFileDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockCardsGrpcDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockCardsGrpcDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/SockCardComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/SockCardComunicatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/SockCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/SockCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/SockCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/SockCardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

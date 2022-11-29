@@ -76,6 +76,8 @@ public class SockCardsFileDao : ISockCardDao
         return Task.CompletedTask;
     }
 
+    
+
     public Task DeleteAsync(int id)
     {
         SocksCard? existing = context.SocksCards.FirstOrDefault(card => card.Id == id);

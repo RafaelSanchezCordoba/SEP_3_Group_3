@@ -35,6 +35,7 @@ public class SockCardsGrpcDao: ISockCardDao
           return Task.FromResult(sockCard);
         
      }
+     //get all doesn t work
 
      public Task<IEnumerable<SocksCard>> GetAsync()
      {
@@ -74,11 +75,20 @@ public class SockCardsGrpcDao: ISockCardDao
          return Task.FromResult(socksCard);
      }
 
+   
+
      public Task UpdateAsync(SocksCard dto)
      {
          var req = new sockCard()
          {
-             Id = dto.Id,Description = dto.Description,Brand = dto.Brand,Image = dto.Image,Material = dto.Material,Price = dto.Price,Title = dto.Title,Type = dto.Title
+             Id = dto.Id
+             ,Description = dto.Description
+             ,Brand = dto.Brand
+             ,Image = dto.Image
+             ,Material = dto.Material
+             ,Price = dto.Price
+             ,Title = dto.Title
+             ,Type = dto.Title
          };
          var resp = stub.updateSockCard(req);
          SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
