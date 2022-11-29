@@ -1,8 +1,9 @@
 using Application.DaoInterfaces;
 using Grpc.Core;
+using Grpc.Core.Utils;
 using Shared.DTOs;
 using Shared.Models;
-using Empty = Google.Protobuf.WellKnownTypes.Empty;
+
 
 namespace GrpcDataAccess.DAOs;
 
@@ -37,7 +38,22 @@ public class SockCardsGrpcDao: ISockCardDao
 
      public Task<IEnumerable<SocksCard>> GetAsync()
      {
-         throw new NotImplementedException();
+         var req = new Empty();
+         var resp = stub.getAllSockCards(req);
+         var list = resp.ResponseStream.ToListAsync();
+         IEnumerable<SocksCard> socksCards = new List<SocksCard>();
+
+         for (int i = 0; i < list.Result.Count; i++)
+         {
+             var s = list.Result[i];
+             SocksCard socksCard = new SocksCard(s.Title, s.Description,
+                 s.Price, s.Material, s.Brand,
+                 s.Image, s.Type);
+             socksCards.Append(socksCard);
+         }
+
+         return Task.FromResult(socksCards);
+
      }
 
      public Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
@@ -47,21 +63,53 @@ public class SockCardsGrpcDao: ISockCardDao
 
      public Task<SocksCard> GetById(int id)
      {
-         throw new NotImplementedException();
+         var req = new IntReq
+         {
+             Request = id
+         };
+         var resp = stub.getById(req);
+         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+             resp.Price, resp.Material, resp.Brand,
+             resp.Image, resp.Type);
+         return Task.FromResult(socksCard);
      }
 
      public Task UpdateAsync(SocksCard dto)
      {
-         throw new NotImplementedException();
+         var req = new sockCard()
+         {
+             Id = dto.Id,Description = dto.Description,Brand = dto.Brand,Image = dto.Image,Material = dto.Material,Price = dto.Price,Title = dto.Title,Type = dto.Title
+         };
+         var resp = stub.updateSockCard(req);
+         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+             resp.Price, resp.Material, resp.Brand,
+             resp.Image, resp.Type);
+         return Task.CompletedTask;
      }
 
      public Task DeleteAsync(int id)
      {
-         throw new NotImplementedException();
+         var req = new IntReq()
+         {
+             Request =id
+         };
+         var resp = stub.deleteSockCardById(req);
+         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+             resp.Price, resp.Material, resp.Brand,
+             resp.Image, resp.Type);
+         return Task.CompletedTask;
      }
 
      public Task<SocksCard?> GetByTitlesAsync(string title)
      {
-         throw new NotImplementedException();
+         var req = new StringReq()
+         {
+             Request =title
+         };
+         var resp = stub.getByTitle(req);
+         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+             resp.Price, resp.Material, resp.Brand,
+             resp.Image, resp.Type);
+         return Task.FromResult(socksCard);
      }
 }
