@@ -1,5 +1,6 @@
 package com.example.t3_spring_dbserver.service;
 
+import com.example.t3_spring_dbserver.DTOs.SockCardDto;
 import com.example.t3_spring_dbserver.entity.SockCard;
 import com.example.t3_spring_dbserver.repository.ISockCardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,11 +43,19 @@ public class SockCardService implements ISockCardService {
     }
 
     @Override
-    public SockCard updateSockCard(SockCard sockCard){
+    public SockCard updateSockCard(SockCard sockCard) {
+        return null;
+    }
 
-        Optional<SockCard> sockCardData = repository.findById(sockCard.getId());
-        repository.save(sockCard);
-        return sockCardData.get();
+
+    public SockCard updateSockCard(SockCardDto dtoCard){
+
+        Optional<SockCard> sockCardToUpdate = repository.findById((long)15);
+        sockCardToUpdate.get().setBrand("newBrand");
+
+        repository.save(sockCardToUpdate.get());
+
+        return repository.getReferenceById(dtoCard.getId());
     }
 
     @Override

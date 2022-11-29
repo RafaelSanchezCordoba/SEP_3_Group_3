@@ -1,43 +1,37 @@
-package com.example.t3_spring_dbserver.entity;
-import javax.persistence.*;
-import java.io.Serializable;
+package com.example.t3_spring_dbserver.DTOs;
 
-@Entity
-@Table(name = "sock_card",schema = "sep_db")
-public class SockCard implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+
+public class SockCardDto {
+
     private long id;
 
-    @Column(name = "title")
+
     private String title;
 
-    @Column(name = "description")
+
     private String description;
 
-    @Column (name = "price")
+
     private double  price;
 
-    @Column(name = "material")
+
     private String material;
 
-    @Column(name = "brand")
+
     private String brand;
 
-    @Column(name = "image")
+
     private String image;
 
-    @Column(name = "type")
+
     private String type;
 
-    public SockCard(){
+    public SockCardDto(){
 
     }
 
-
-    public SockCard(String title, String description, double price,String material, String brand, String image, String type) {
+    public SockCardDto(String title, String description, double price,String material, String brand, String image, String type) {
         this.title = title;
         this.description = description;
         this.price = price;
@@ -46,7 +40,7 @@ public class SockCard implements Serializable {
         this.material = material;
         this.type = type;
     }
-    public SockCard(long id,String title, String description, double price,String material, String brand, String image, String type) {
+    public SockCardDto(long id,String title, String description, double price,String material, String brand, String image, String type) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -130,7 +124,5 @@ public class SockCard implements Serializable {
                 ", type='" + type + '\'' +
                 '}';
     }
-
-
 
 }
