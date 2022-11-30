@@ -50,8 +50,16 @@ public class SockCardService implements ISockCardService {
 
     public SockCard updateSockCard(SockCardDto dtoCard){
 
-        Optional<SockCard> sockCardToUpdate = repository.findById((long)15);
-        sockCardToUpdate.get().setBrand("newBrand");
+        Optional<SockCard> sockCardToUpdate = repository.findById(dtoCard.getId());
+        sockCardToUpdate.get().setBrand(dtoCard.getBrand());
+        sockCardToUpdate.get().setPrice(dtoCard.getPrice());
+        sockCardToUpdate.get().setDescription(dtoCard.getDescription());
+        sockCardToUpdate.get().setBrand(dtoCard.getBrand());
+        sockCardToUpdate.get().setTitle(dtoCard.getTitle());
+        sockCardToUpdate.get().setImage(dtoCard.getImage());
+        sockCardToUpdate.get().setMaterial(dtoCard.getMaterial());
+        sockCardToUpdate.get().setType(dtoCard.getType());
+
 
         repository.save(sockCardToUpdate.get());
 

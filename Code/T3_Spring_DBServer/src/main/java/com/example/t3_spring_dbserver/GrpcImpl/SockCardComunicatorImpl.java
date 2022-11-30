@@ -26,6 +26,19 @@ public class SockCardComunicatorImpl extends SockCardGrpcImplBase {
         System.out.println("riecied req to get by title");
         SockCard sockCard = service.getByTitle(req.getRequest());
 
+        SocksComunicator.sockCard toSend = SocksComunicator.sockCard.newBuilder()
+                .setId((int) sockCard.getId())
+                .setPrice(sockCard.getPrice())
+                .setBrand(sockCard.getBrand())
+                .setType(sockCard.getType())
+                .setDescription(sockCard.getDescription())
+                .setImage(sockCard.getImage())
+                .setMaterial(sockCard.getMaterial()).build();
+
+        responseStream.onNext(toSend);
+        responseStream.onCompleted();
+
+
     }
     @Override
     public void updateSockCard(sockCard card,StreamObserver<sockCard> responseStream){

@@ -43,7 +43,9 @@ public class SockCardsGrpcDao: ISockCardDao
          var resp = stub.getAllSockCards(req);
          var list = resp.ResponseStream.ToListAsync();
          IEnumerable<SocksCard> socksCards = new List<SocksCard>();
-
+//get list from t3
+//trannsoform lidt in csharp objects
+//return list
          for (int i = 0; i < list.Result.Count; i++)
          {
              var s = list.Result[i];
