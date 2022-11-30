@@ -10,35 +10,35 @@
 <div style="display: inline">
     <img class="sockImg" src=@card.Image/>
 
-<div class="sockInfo">
-    <h4>@card.Title</h4>
-    <b><label id="price-label">@card.Price €</label></b>
-    <p>@card.Description</p>
-    <p>Material: @card.Material</p>
-    <p>Brand: @card.Brand</p>
-    <p>Type: @card.Type</p>
-    <p>Color: @selectedColor</p>
-    <div class="color-container">
-        @foreach (string color in colors)
-        {
-            <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
-        }
-    </div><br/><br/>
-    <p>Size: @selectedSizes</p>
-    <div class="size-container">
-        @foreach (string s in sizes)
-        {
-            <div class="sizeBtn" @onclick="() => { selectedSizes = s; }" >@s</div>
+    <div class="sockInfo">
+        <h4>@card.Title</h4>
+        <b><label id="price-label">@card.Price €</label></b>
+        <p>@card.Description</p>
+        <p>Material: @card.Material</p>
+        <p>Brand: @card.Brand</p>
+        <p>Type: @card.Type</p>
+        <p>Color: @selectedColor</p>
+        <div class="color-container">
+            @foreach (string color in colors)
+            {
+                <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
+            }
+        </div><br/><br/>
+        <p>Size: @selectedSizes</p>
+        <div class="size-container">
+            @foreach (string s in sizes)
+            {
+                <div class="sizeBtn" @onclick="() => { selectedSizes = s; }" >@s</div>
 
-        }
-    </div>
-<<<<<<< Updated upstream
-    <br/><br/>
-    <button onclick="AddToCart" class="myButton">Add to the cart</button>
-=======
-    <button @onclick="AddToCart">Add to the cart</button>
->>>>>>> Stashed changes
-    @errorMsg
+            }
+        </div>
+        
+        <br/><br/>
+        
+        <button onclick="AddToCart" class="myButton">Add to the cart</button>
+
+        <button @onclick="AddToCart">Add to the cart</button>
+        @errorMsg
     </div>
 </div>
 

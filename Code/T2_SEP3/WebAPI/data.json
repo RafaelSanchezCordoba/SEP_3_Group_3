@@ -129,31 +129,33 @@
   ],
   "ShoppingCarts": [
     {
-      "Id": 0,
+      "Id": 1,
       "OwnerId": 3,
       "Products": [
         {
-          "ProductCardId": 0,
-          "Id": 0,
-          "Size": null,
-          "Color": null
+          "ProductCardId": 1,
+          "Id": 2,
+          "Size": "xl",
+          "Color": "red"
         }
       ]
     },
     {
-      "Id": 12,
-      "OwnerId": 2,
-      "Products": []
-    },
-    {
-      "Id": 12,
+      "Id": 3,
       "OwnerId": 1,
       "Products": []
     },
     {
-      "Id": 12,
-      "OwnerId": 0,
-      "Products": []
+      "Id": 2,
+      "OwnerId": 2,
+      "Products": [
+        {
+          "ProductCardId": 3,
+          "Id": 5,
+          "Size": "s",
+          "Color": "blue"
+        }
+      ]
     }
   ],
   "SocksCards": [

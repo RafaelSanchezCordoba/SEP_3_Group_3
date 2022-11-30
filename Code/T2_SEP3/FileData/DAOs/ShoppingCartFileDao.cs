@@ -16,9 +16,9 @@ public class ShoppingCartFileDao:IShoppingCartDao
     public Task<ShoppingCart> CreateAsync(ShoppingCart shoppingCart)
     {
         int Id = 1;
-        if (context.SocksCards.Any())
+        if (context.ShoppingCarts.Any())
         {
-            Id = context.SocksCards.Max(u => u.Id);
+            Id = context.ShoppingCarts.Max(u => u.Id);
             Id++;
         }
 
@@ -56,7 +56,11 @@ public class ShoppingCartFileDao:IShoppingCartDao
         {
             throw new Exception($"Shopping cart with id {cartId} does not exist!");
         }
+
+        context.ShoppingCarts.Remove(existing);
         existing.addProduct(product);
+        context.ShoppingCarts.Add(existing);
+        context.SaveChanges();
         return Task.FromResult(existing);
     }
 

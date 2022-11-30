@@ -62,7 +62,7 @@ public class ShoppingCartController:ControllerBase
         }
     }
 
-    [HttpPatch("{shoppingCartId:int}")]
+    [HttpPost("{shoppingCartId:int}")]
     public async Task<ActionResult<ShoppingCart>> AddProductAsync([FromBody]Product product,[FromRoute]int shoppingCartId)
     {
         try
