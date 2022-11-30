@@ -234,6 +234,18 @@
       "Id": 4,
       "Size": "xl",
       "Color": "blue"
+    },
+    {
+      "ProductCardId": 9,
+      "Id": 5,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 11,
+      "Id": 6,
+      "Size": "s",
+      "Color": "blue"
     }
   ]
 }

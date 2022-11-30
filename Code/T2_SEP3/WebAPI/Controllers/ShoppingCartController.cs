@@ -7,15 +7,17 @@ namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ShoppingCartController:ControllerBase
+public class ShoppingCartController : ControllerBase
 {
     private readonly IShoppingCartLogic shoppingcartLogic;
+    private readonly ICardItemLogic cardItemLogic;
 
-    public ShoppingCartController(IShoppingCartLogic shoppingCartLogic)
+    public ShoppingCartController(IShoppingCartLogic shoppingCartLogic, ICardItemLogic cardItemLogic)
     {
-        shoppingcartLogic = shoppingCartLogic;
+        this.shoppingcartLogic = shoppingCartLogic;
+        this.cardItemLogic = cardItemLogic;
     }
-    
+
     [HttpPost]
     public async Task<ActionResult<ShoppingCart>> CreateAsync(CreateShoppingCartDto dto)
     {
@@ -26,12 +28,12 @@ public class ShoppingCartController:ControllerBase
         }
         catch (Exception e)
         {
-            
+
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
         }
     }
-    
+
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ShoppingCart>>> GetAsync()
     {
@@ -46,7 +48,7 @@ public class ShoppingCartController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
+
     [HttpGet("{id:int}")]
     public async Task<ActionResult<ShoppingCart>> GetById([FromRoute] int id)
     {
@@ -63,11 +65,13 @@ public class ShoppingCartController:ControllerBase
     }
 
     [HttpPost("{shoppingCartId:int}")]
-    public async Task<ActionResult<ShoppingCart>> AddProductAsync([FromBody]Product product,[FromRoute]int shoppingCartId)
+    public async Task<ActionResult<ShoppingCart>> AddProductAsync([FromBody] Product product,
+        [FromRoute] int shoppingCartId)
     {
         try
         {
-            ShoppingCart pc=  await shoppingcartLogic.AddProduct(product,shoppingCartId);
+            ShoppingCart pc = await shoppingcartLogic.AddProduct(product, shoppingCartId);
+            cardItemLogic.CreateAsync(new CardItem(shoppingCartId, product.Id));
             return Ok(pc);
         }
         catch (Exception e)
@@ -76,6 +80,34 @@ public class ShoppingCartController:ControllerBase
             throw;
         }
     }
+
+    [HttpPatch("{cardItemIncrease:int}")]
+    public async Task<ActionResult<ShoppingCart>> IncreaseQuantityAsync([FromRoute] int cardItemId)
+    {
+        try
+        {
+            CardItem cardItem = await cardItemLogic.IncreaseQuantityAsync(cardItemId);
+            return Ok(cardItem);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
     
-    
+    [HttpPatch("{cardItemDecrease:int}")]
+    public async Task<ActionResult<ShoppingCart>> DecreaseQuantityAsync([FromRoute] int cardItemId)
+    {
+        try
+        {
+            CardItem cardItem = await cardItemLogic.DecreaseQuantityAsync(cardItemId);
+            return Ok(cardItem);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
 }
