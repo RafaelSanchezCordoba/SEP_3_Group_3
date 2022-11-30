@@ -29,7 +29,7 @@ public class SockCardComunicatorImpl extends SockCardGrpcImplBase {
     }
     @Override
     public void updateSockCard(sockCard card,StreamObserver<sockCard> responseStream){
-        System.out.println("reicieved req to update sock card");
+        System.out.println("reicieved req to update sock card::"+card.getId());
 
          SockCardDto dtoCard = new SockCardDto(card.getId(),card.getTitle()
                  ,card.getDescription(),card.getPrice()

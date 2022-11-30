@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.ObjectModel;
 using Application.DaoInterfaces;
 using Grpc.Core;
 using Grpc.Core.Utils;
@@ -37,23 +39,24 @@ public class SockCardsGrpcDao: ISockCardDao
      }
      //get all doesn t work
 
-     public Task<IEnumerable<SocksCard>> GetAsync()
+     public async Task<IEnumerable<SocksCard>> GetAsync()
      {
          var req = new Empty();
-         var resp = stub.getAllSockCards(req);
-         var list = resp.ResponseStream.ToListAsync();
-         IEnumerable<SocksCard> socksCards = new List<SocksCard>();
+         using var call = stub.getAllSockCards(req);
+         Console.WriteLine("hhhh");
+         List<SocksCard> list = new List<SocksCard>();
 
-         for (int i = 0; i < list.Result.Count; i++)
+         while (await call.ResponseStream.MoveNext())
          {
-             var s = list.Result[i];
-             SocksCard socksCard = new SocksCard(s.Title, s.Description,
-                 s.Price, s.Material, s.Brand,
-                 s.Image, s.Type);
-             socksCards.Append(socksCard);
+             var resp = call.ResponseStream.Current;
+             SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+                 resp.Price, resp.Material, resp.Brand,
+                 resp.Image, resp.Type);
+             Console.WriteLine(socksCard.Material);
+             list.Add(socksCard);
          }
-
-         return Task.FromResult(socksCards);
+         Console.WriteLine(list.Count);
+         return await Task.FromResult(list.AsEnumerable());
 
      }
 
@@ -77,7 +80,7 @@ public class SockCardsGrpcDao: ISockCardDao
 
    
 
-     public Task UpdateAsync(SocksCard dto)
+     public Task UpdateAsync(UpdateSocksCardDto dto)
      {
          var req = new sockCard()
          {

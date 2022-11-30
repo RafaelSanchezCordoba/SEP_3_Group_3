@@ -20,16 +20,16 @@ public class ClientTest {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9999).usePlaintext().build();
         SockCardGrpcGrpc.SockCardGrpcBlockingStub stub = SockCardGrpcGrpc.newBlockingStub(channel);
 
-       Iterator<SocksComunicator.sockCard>result =  stub.getAllSockCards(SocksComunicator.Empty.newBuilder().build());
+    //   Iterator<SocksComunicator.sockCard>result =  stub.getAllSockCards(SocksComunicator.Empty.newBuilder().build());
 
 
 
-       for (int i = 1;result.hasNext();i++){
-           System.out.println(result.next().getId());
-       }
+       //for (int i = 1;result.hasNext();i++){
+         //  System.out.println(result.next().getId());
+       //}
        //find by id testing
 
-     SocksComunicator.sockCard card = stub.getByTitle(SocksComunicator.StringReq.newBuilder().setRequest("title").build());
+    // SocksComunicator.sockCard card = stub.getByTitle(SocksComunicator.StringReq.newBuilder().setRequest("title").build());
        //update needs testing
 
        //delete needs testing
@@ -48,7 +48,7 @@ public class ClientTest {
 
 
       //SocksComunicator.sockCard card =   stub.getById(SocksComunicator.IntReq.newBuilder().setRequest(10).build());
-      /*  SocksComunicator.Empty empty = stub.addSockCard( SocksComunicator.sockCard.newBuilder().setType("type")
+        SocksComunicator.Empty empty = stub.addSockCard( SocksComunicator.sockCard.newBuilder().setType("type")
                 .setPrice(13.72)
                 .setBrand("brand")
                 .setDescription("descrpition")
@@ -57,6 +57,6 @@ public class ClientTest {
                 .setTitle("title")
                 .build());
 
-        System.out.println("check db");*/
+        System.out.println("check db");
     }
 }

@@ -10,7 +10,7 @@ public interface ISockCardDao
     Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync();
     Task<SocksCard> GetById(int id);
 
-    Task UpdateAsync(SocksCard dto);
+    Task UpdateAsync(UpdateSocksCardDto dto);
     Task DeleteAsync(int id);
     Task<SocksCard?> GetByTitlesAsync(string title);
 }

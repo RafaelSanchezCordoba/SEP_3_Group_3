@@ -6,5 +6,9 @@ public class SocksCard:ProductCard
     {
    
     }
-    public new int  Id { get; set; }
+    public SocksCard(int id,string title, string description, double price, string material, string brand, string image, string type): base(id,title,description,price,material,brand,image,type)
+    {
+   
+    }
+    
 }

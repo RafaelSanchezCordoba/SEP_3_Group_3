@@ -83,7 +83,7 @@ public class SockCardHttpClient:ISockCardService
         }
     }
 
-    public async Task UpdateAsync(SocksCard card)
+    public async Task UpdateAsync(UpdateSocksCardDto card)
     {
         string cardAsJson = JsonSerializer.Serialize(card);
         StringContent body = new StringContent(cardAsJson, Encoding.UTF8, "application/json");

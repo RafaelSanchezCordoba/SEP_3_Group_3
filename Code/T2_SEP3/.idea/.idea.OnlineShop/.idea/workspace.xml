@@ -7,70 +7,90 @@
     <projectFile profileName="WebAPI">WebAPI/WebAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45bb0ab7-2af7-4d1a-af29-79f661d82a9d" name="Changes" comment="">
+    <list default="true" id="fa904435-3eea-4923-8a98-4f7085b41d1d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/DaoInterfaces/ISockCardDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/DaoInterfaces/ISockCardDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Logic/SockCardLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Logic/SockCardLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/LogicInterfaces/ISockCardLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/LogicInterfaces/ISockCardLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/ref/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/ref/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/refint/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/refint/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/EditSockCard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/EditSockCard.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/DTOs/UpdateSocksCardDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/DTOs/UpdateSocksCardDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Models/ProductCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/ProductCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Models/SocksCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/SocksCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/ref/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/ref/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/refint/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/refint/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/DAOs/SockCardsFileDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/DAOs/SockCardsFileDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/bin/Debug/net6.0/FileData.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/FileData.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/ref/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/ref/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/refint/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/refint/FileData.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockCardsGrpcDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/DAOs/SockCardsGrpcDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/bin/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/12fbc7ffe642ca7e_socksComunicator.protodep" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/12fbc7ffe642ca7e_socksComunicator.protodep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/protos/SocksComunicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/protos/SocksComunicator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/protos/SocksComunicatorGrpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/protos/SocksComunicatorGrpc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/ref/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/ref/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/refint/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/refint/GrpcDataAccess.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/ClientInterfaces/ISockCardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/ClientInterfaces/ISockCardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/Implementations/SockCardHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/Implementations/SockCardHttpClient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/HttpClients.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/Controllers/SocksCardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/Controllers/SocksCardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/FileData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/GrpcDataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/WebAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/refint/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/refint/WebAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

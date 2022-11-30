@@ -10,9 +10,9 @@ public class UpdateSocksCardDto
     public string Material { get; set; }
     public string Brand { get; set; }
     public string Image { get; set; }
-    public int Id { get; }
+    public int Id { get; set; }
     
-    public string Type { get; }
+    public string Type { get; set; }
 
     public UpdateSocksCardDto(int id)
     {
