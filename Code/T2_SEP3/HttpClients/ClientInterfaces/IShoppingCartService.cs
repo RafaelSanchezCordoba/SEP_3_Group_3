@@ -9,4 +9,7 @@ public interface IShoppingCartService
     Task<ICollection<Socks>> GetAsync();
 
     Task<ShoppingCart> getByIdAsync(int id);
+
+    Task<ShoppingCart> AddProductAsync(Product product, int shoppingCartId);
+
 }

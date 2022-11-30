@@ -3,8 +3,10 @@
 @using HttpClients.ClientInterfaces
 @using global::Shared.DTOs
 @inject ISockCardService cardService
-@inject ISockInventoryService inventoryService
+@inject ISockInventoryService inventoryService 
 @inject ISocksService socksService
+@inject IShoppingCartService shoppingCartService
+@inject NavigationManager navMgr
 
 
 <div style="display: inline">
@@ -35,10 +37,10 @@
         
         <br/><br/>
         
-        <button onclick="AddToCart" class="myButton">Add to the cart</button>
-
-        <button @onclick="AddToCart">Add to the cart</button>
+        <button @onclick="AddToCart" class="myButton">Add to the cart</button>
         @errorMsg
+        <input type="text" @bind="cartId" @bind:event ="oninput"/>
+        shopping cart id (to be deleted when login is implemented)
     </div>
 </div>
 
@@ -55,6 +57,7 @@
     private ICollection<String> sizes{ get; set; }=new List<string>();
     private String selectedSizes;
     private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
+    private String cartId;
 
 
     protected override async Task OnInitializedAsync()
@@ -100,9 +103,10 @@
         }
     }
 
-    private void AddToCart()
+    private async void AddToCart()
     {
         CreateSocksDto socks = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
-        socksService.CreateAsync(socks);
+        shoppingCartService.AddProductAsync(await socksService.CreateAsync(socks), Convert.ToInt32(cartId));
+        navMgr.NavigateTo($"/shoppingCart/{cartId}");
     }
 }

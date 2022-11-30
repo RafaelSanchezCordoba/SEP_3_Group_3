@@ -70,4 +70,23 @@ public class ShoppingCartHttpClient:IShoppingCartService
         )!;
         return shoppingCart;
     }
+
+    public async Task<ShoppingCart> AddProductAsync(Product product, int shoppingCartId)
+    {
+        HttpResponseMessage response = await client.PostAsJsonAsync($"https://localhost:7999/shoppingCarts/{shoppingCartId}", product);
+        string result = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+
+        ShoppingCart shoppingCart = JsonSerializer.Deserialize<ShoppingCart>(result, new JsonSerializerOptions 
+            {
+                PropertyNameCaseInsensitive = true 
+            }
+        )!;
+
+        return shoppingCart;
+    }
 }

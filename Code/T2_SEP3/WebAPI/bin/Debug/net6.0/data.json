@@ -131,7 +131,31 @@
     {
       "Id": 1,
       "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 2,
+          "Size": "xl",
+          "Color": "red"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 1,
       "Products": []
+    },
+    {
+      "Id": 2,
+      "OwnerId": 2,
+      "Products": [
+        {
+          "ProductCardId": 3,
+          "Id": 5,
+          "Size": "s",
+          "Color": "blue"
+        }
+      ]
     }
   ],
   "SocksCards": [
@@ -198,6 +222,18 @@
       "Id": 2,
       "Size": "xl",
       "Color": "red"
+    },
+    {
+      "ProductCardId": 11,
+      "Id": 3,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 11,
+      "Id": 4,
+      "Size": "xl",
+      "Color": "blue"
     }
   ]
 }
