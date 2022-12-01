@@ -184,6 +184,18 @@
           "Id": 30,
           "Size": "s",
           "Color": "blue"
+        },
+        {
+          "ProductCardId": 10,
+          "Id": 31,
+          "Size": "xs",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 10,
+          "Id": 33,
+          "Size": "xs",
+          "Color": "blue"
         }
       ]
     }
@@ -419,6 +431,24 @@
       "ProductCardId": 11,
       "Id": 30,
       "Size": "s",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 10,
+      "Id": 31,
+      "Size": "xs",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 11,
+      "Id": 32,
+      "Size": "xl",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 10,
+      "Id": 33,
+      "Size": "xs",
       "Color": "blue"
     }
   ]
