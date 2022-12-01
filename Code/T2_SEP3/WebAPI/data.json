@@ -247,5 +247,25 @@
       "Size": "s",
       "Color": "blue"
     }
+  ],
+  "CardItems": [
+    {
+      "Id": 2,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 2
+    },
+    {
+      "Id": 3,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 5
+    },
+    {
+      "Id": 1,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 1
+    }
   ]
 }

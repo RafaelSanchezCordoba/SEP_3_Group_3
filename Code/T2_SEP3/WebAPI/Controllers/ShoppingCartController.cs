@@ -10,12 +10,10 @@ namespace WebAPI.Controllers;
 public class ShoppingCartController : ControllerBase
 {
     private readonly IShoppingCartLogic shoppingcartLogic;
-    private readonly ICardItemLogic cardItemLogic;
 
-    public ShoppingCartController(IShoppingCartLogic shoppingCartLogic, ICardItemLogic cardItemLogic)
+    public ShoppingCartController(IShoppingCartLogic shoppingCartLogic)
     {
         this.shoppingcartLogic = shoppingCartLogic;
-        this.cardItemLogic = cardItemLogic;
     }
 
     [HttpPost]
@@ -71,38 +69,7 @@ public class ShoppingCartController : ControllerBase
         try
         {
             ShoppingCart pc = await shoppingcartLogic.AddProduct(product, shoppingCartId);
-            cardItemLogic.CreateAsync(new CardItem(shoppingCartId, product.Id));
             return Ok(pc);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-    }
-
-    [HttpPatch("{cardItemIncrease:int}")]
-    public async Task<ActionResult<ShoppingCart>> IncreaseQuantityAsync([FromRoute] int cardItemId)
-    {
-        try
-        {
-            CardItem cardItem = await cardItemLogic.IncreaseQuantityAsync(cardItemId);
-            return Ok(cardItem);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-    }
-    
-    [HttpPatch("{cardItemDecrease:int}")]
-    public async Task<ActionResult<ShoppingCart>> DecreaseQuantityAsync([FromRoute] int cardItemId)
-    {
-        try
-        {
-            CardItem cardItem = await cardItemLogic.DecreaseQuantityAsync(cardItemId);
-            return Ok(cardItem);
         }
         catch (Exception e)
         {

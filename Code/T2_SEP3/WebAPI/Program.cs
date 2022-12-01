@@ -24,6 +24,8 @@ builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
 builder.Services.AddScoped<ISocksDao, SocksFileDao>();
+builder.Services.AddScoped<ICardItemDao, CardItemFileDao>();
+builder.Services.AddScoped<ICardItemLogic, CardItemLogic>();
 
 
 

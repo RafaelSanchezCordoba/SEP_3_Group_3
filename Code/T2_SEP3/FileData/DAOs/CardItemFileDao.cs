@@ -48,7 +48,7 @@ public class CardItemFileDao : ICardItemDao
         return Task.FromResult(existing);
     }
 
-    public Task<CardItem> IncreaseQuantityAsync(int id)
+    public Task<int> GetQuantityById(int id)
     {
         CardItem? existing = context.CardItems.FirstOrDefault(cardItem => cardItem.Id == id);
         
@@ -56,15 +56,11 @@ public class CardItemFileDao : ICardItemDao
         {
             throw new Exception($"Card item with id {id} does not exist!");
         }
-
-        context.CardItems.Remove(existing);
-        existing.Quantity++;
-        context.CardItems.Add(existing);
-        context.SaveChanges();
-        return Task.FromResult(existing);
+        
+        return Task.FromResult(existing.Quantity);
     }
 
-    public Task<CardItem> DecreaseQuantityAsync(int id)
+    public Task<CardItem> UpdateQuantityAsync(int id, int newQuantity)
     {
         CardItem? existing = context.CardItems.FirstOrDefault(cardItem => cardItem.Id == id);
         
@@ -74,7 +70,7 @@ public class CardItemFileDao : ICardItemDao
         }
 
         context.CardItems.Remove(existing);
-        existing.Quantity--;
+        existing.Quantity = newQuantity;
         context.CardItems.Add(existing);
         context.SaveChanges();
         return Task.FromResult(existing);

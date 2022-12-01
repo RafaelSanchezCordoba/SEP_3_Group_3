@@ -1,5 +1,6 @@
 using Application.DaoInterfaces;
 using Application.LogicInterfaces;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace Application.Logic;
@@ -13,9 +14,10 @@ public class CardItemLogic : ICardItemLogic
         this.dao = dao;
     }
     
-    public async Task<CardItem> CreateAsync(CardItem cardItem)
+    public async Task<CardItem> CreateAsync(CreateCardItemDto dto)
     {
-        cardItem = await dao.CreateAsync(cardItem);
+        CardItem cardItem = new CardItem(dto.ShoppingCartId, dto.ProductId);
+        CardItem created = await dao.CreateAsync(cardItem);
         return cardItem;
     }
 
@@ -29,13 +31,13 @@ public class CardItemLogic : ICardItemLogic
         return dao.GetByIdAsync(id);
     }
 
-    public Task<CardItem> IncreaseQuantityAsync(int id)
+    public Task<int> GetQuantityById(int id)
     {
-        return dao.IncreaseQuantityAsync(id);
+        return dao.GetQuantityById(id);
     }
 
-    public Task<CardItem> DecreaseQuantityAsync(int id)
+    public Task<CardItem> UpdateQuantityAsync(int id, int newQuantity)
     {
-        return dao.DecreaseQuantityAsync(id);
+        return dao.UpdateQuantityAsync(id, newQuantity);
     }
 }
