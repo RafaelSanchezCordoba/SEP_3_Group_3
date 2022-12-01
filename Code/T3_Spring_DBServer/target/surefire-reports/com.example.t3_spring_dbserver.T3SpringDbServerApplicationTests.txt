@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.t3_spring_dbserver.T3SpringDbServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.456 s - in com.example.t3_spring_dbserver.T3SpringDbServerApplicationTests
