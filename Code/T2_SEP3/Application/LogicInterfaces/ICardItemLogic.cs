@@ -11,4 +11,6 @@ public interface ICardItemLogic
     Task<CardItem> GetByIdAsync(int id);
     Task<int> GetQuantityById(int id);
     Task<CardItem> UpdateQuantityAsync(int id, int newQuantity);
+    Task DeleteAsync(int cardId);
+
 }

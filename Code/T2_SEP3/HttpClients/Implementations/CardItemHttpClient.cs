@@ -120,4 +120,16 @@ public class CardItemHttpClient:ICardItemService
             return cardItem;
        
     }
+    
+    public async Task RemoveCardItemId(int id)
+    {
+        HttpResponseMessage response = await client.DeleteAsync($"https://localhost:7999/ShoppingCartQuantities/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+
+      
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+    }
 }

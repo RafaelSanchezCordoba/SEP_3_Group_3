@@ -81,4 +81,18 @@ public class CardItemFileDao : ICardItemDao
         context.SaveChanges();
         return Task.FromResult(existing);
     }
+
+    public async Task DeleteAsync(int cardId)
+    {
+        CardItem? existing = context.CardItems.FirstOrDefault(card => card.Id == cardId);
+        if (existing == null)
+        {
+            throw new Exception($"shopping cart with ID {cardId} does not exist!!!");
+        }
+
+        context.CardItems.Remove(existing);
+        context.SaveChanges();
+
+        
+    }
 }

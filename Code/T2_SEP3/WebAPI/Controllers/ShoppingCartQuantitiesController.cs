@@ -103,4 +103,19 @@ public class ShoppingCartQuantitiesController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    
+    [HttpDelete("{id:int}")]
+    public async Task<ActionResult> DeleteAsync([FromRoute] int id)
+    {
+        try
+        {
+            await cardItemLogic.DeleteAsync(id);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

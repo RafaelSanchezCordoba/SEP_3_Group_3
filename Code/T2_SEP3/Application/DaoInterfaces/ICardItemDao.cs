@@ -11,4 +11,6 @@ public interface ICardItemDao
     Task<CardItem?> GetByIdsAsync(int idProduct, int idShoppingCard);
 
     Task<CardItem> UpdateQuantityAsync(int id, int newQuantity);
+    Task DeleteAsync(int cardId);
+
 }

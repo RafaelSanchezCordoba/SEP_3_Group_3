@@ -45,4 +45,9 @@ public class CardItemLogic : ICardItemLogic
     {
         return dao.UpdateQuantityAsync(id, newQuantity);
     }
+
+    public Task DeleteAsync(int cardId)
+    {
+        return dao.DeleteAsync(cardId);
+    }
 }

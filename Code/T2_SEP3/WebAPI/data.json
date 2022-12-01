@@ -235,5 +235,22 @@
       "Color": "blue"
     }
   ],
+<<<<<<< Updated upstream
   "CardItems": []
+=======
+  "CardItems": [
+    {
+      "Id": 2,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 2
+    },
+    {
+      "Id": 3,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 5
+    }
+  ]
+>>>>>>> Stashed changes
 }
