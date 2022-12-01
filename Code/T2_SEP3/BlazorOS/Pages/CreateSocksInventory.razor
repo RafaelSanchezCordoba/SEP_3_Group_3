@@ -1,32 +1,4 @@
 
-@page "/CreateSockInventory/{id:int}"
-@using global::Shared.Models
-@using HttpClients.ClientInterfaces
-@inject ISockService sockService;
-
-<h3>Create Stock</h3>
-
-<div class="card">
-    here would be the actual stuff
-    
-</div>
-
-<div class="button-message">
-    <button  class="acceptbtn">Confirm</button>
-    @if (!string.IsNullOrEmpty(resultMsg))
-    {
-        <br/> <label style="color:red">@resultMsg</label>
-    }
-
-</div>
-<div class="small-card">
-    <p>Product Summary</p>
-    <div>
-        <img src="@card.Image" id="product-image"/>
-        <label id="title-label">@card.Title</label>
-        <label id="price-label">@card.Price €</label>
-    </div>
-=======
 @page "/CreateSocksInventory/{id:int}"
 @using global::Shared.Models
 @using HttpClients.ClientInterfaces
@@ -304,24 +276,13 @@
         <b><label id="price-label">@card.Price €</label></b>
     </div>
     <h5 id="title-label">@card.Title</h5>
->>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocksInventory.razor
+
     <p>@card.Description</p>
     <p>Material: @card.Material</p>
     <p>Brand: @card.Brand</p>
-     <p>Type: @card.Type</p> 
-<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocksInventory.razor
-
+<p>Type: @card.Type</p> 
 </div>
-@code {
-    [Parameter]
-    public int Id { get; set; }
-    private SocksCard? card;
-   
 
-    private string resultMsg = "";
-    private string color = "";
-=======
-</div>
 
 @code {
 
@@ -424,15 +385,12 @@
     private int mMulticolor = 0;
     private int lMulticolor = 0;
     private int xlMulticolor = 0;
->>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocksInventory.razor
+
 
 
     protected override async Task OnInitializedAsync()
     {
-<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocksInventory.razor
-     card = await sockService.GetById(Id);
-    }
-=======
+        
         card = await sockService.GetById(Id);
     }
 
@@ -933,5 +891,5 @@
         }
     }
 
->>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocksInventory.razor
+
 }

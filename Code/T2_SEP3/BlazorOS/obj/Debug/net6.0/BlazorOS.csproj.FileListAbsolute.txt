@@ -5145,3 +5145,9 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\refint\BlazorOS.dll
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.pdb
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\ref\BlazorOS.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.csproj.AssemblyReference.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.AssemblyInfoInputs.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.AssemblyInfo.cs
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.csproj.CoreCompileInputs.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.MvcApplicationPartsAssemblyInfo.cache

@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
-builder.Services.AddScoped<ISockCardDao, SockCardsGrpcDao>();
+builder.Services.AddScoped<ISockCardDao, SockCardsFileDao>();
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
