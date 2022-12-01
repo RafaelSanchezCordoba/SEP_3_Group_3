@@ -6,7 +6,8 @@ namespace HttpClients.ClientInterfaces;
 public interface IShoppingCartService
 {
     Task<ShoppingCart> CreateAsync(CreateShoppingCartDto dto);
-    Task<ICollection<Socks>> GetAsync();
+    Task<ICollection<ShoppingCart>> GetAsync();
+    Task<ICollection<Product>> GetProducts(int id);
 
     Task<ShoppingCart> getByIdAsync(int id);
 

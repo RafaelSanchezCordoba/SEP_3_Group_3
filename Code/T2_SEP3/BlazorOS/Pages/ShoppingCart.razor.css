@@ -1,0 +1,15 @@
+.table-div
+{
+    width: 67%;
+    margin-right: 5px;
+}
+.order-summary-div
+{
+    width: 30%;
+    border: 1px solid black;
+}
+
+.product-image
+{
+    width: 10%;
+}

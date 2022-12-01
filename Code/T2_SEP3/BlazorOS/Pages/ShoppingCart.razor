@@ -8,7 +8,8 @@
 @inject NavigationManager navMgr
 
 <h3>Item summary (@productList.Count)</h3>
- <table class="table">
+<div class="table-div">
+    <table class="table">
         <thread>
             <th></th>
             <th>Item</th>
@@ -16,19 +17,25 @@
             <th>Quantity</th>
             <th>Total</th>
         </thread>
-       <tbody>  
+        <tbody>
         @foreach (var p in productList)
         {
-            <tr>
-                <td class="product-image">@socksCardService.GetById(p.ProductCardId).Result.Image</td>
-                <td>@socksCardService.GetById(p.ProductCardId).Result.Title</td>
-               <td>@socksCardService.GetById(p.ProductCardId).Result.Price</td>
+            ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+            <tr> <td class="product-image"><img src="@card.Image"/></td>
+                <td>
+                    <p>@card.Title</p>
+                    <p>@p.Size.ToUpper()</p>
+                    <p>@p.Color</p>
+                </td>
+                <td>@card.Price</td>
                 <td><input type="number" placeholder="1"/></td>
-                <td>@socksCardService.GetById(p.ProductCardId).Result.Price (*quantity to be implemented)</td>
+                <td>@card.Price (*quantity to be implemented)</td>
             </tr>
         }
         </tbody>
     </table>
+    </div>
+
 <div class="order-summary-div">
     Order Summary
     <p>Sutotal: @subtotal</p>
@@ -44,7 +51,7 @@
     private List<Product> productList=new List<Product>();
     private double subtotal=0;
     private string msg = "";
-   
+    private List<ProductCard?> cards = new List<ProductCard?>();
 
 
     protected override async Task OnInitializedAsync()
@@ -52,10 +59,11 @@
         try
         {
             shoppingCart= await shoppingCartService.getByIdAsync(Id);
-            productList = (List<Product>)shoppingCart.Products;
+            productList = (List<Product>)await shoppingCartService.GetProducts(Id);
             foreach (Product p in productList)
             {
-                SocksCard card = await socksCardService.GetById(p.Id);
+                SocksCard card = await socksCardService.GetById(p.ProductCardId);
+                cards.Add(card);
                 subtotal += card.Price;
             }
         }
@@ -65,6 +73,6 @@
             msg = e.Message;
         }
     }
-    
+
    
 }

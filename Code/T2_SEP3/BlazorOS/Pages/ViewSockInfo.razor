@@ -50,14 +50,14 @@
     [Parameter]
     public int Id { get; set; }
     
-    private string errorMsg = "";
-    private SocksCard card=null!;
+    private string errorMsg{ get; set; } = "";
+    private SocksCard card{ get; set; }=null!;
     private ICollection<String> colors { get; set; }=new List<string>();
-    private String selectedColor;
+    private String selectedColor{ get; set; }="" ;
     private ICollection<String> sizes{ get; set; }=new List<string>();
-    private String selectedSizes;
+    private String selectedSizes{ get; set; }="";
     private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
-    private String cartId;
+    private String cartId{ get; set; }="";
 
 
     protected override async Task OnInitializedAsync()
@@ -105,8 +105,9 @@
 
     private async void AddToCart()
     {
-        CreateSocksDto socks = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
-        shoppingCartService.AddProductAsync(await socksService.CreateAsync(socks), Convert.ToInt32(cartId));
+        CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
+        Socks socks = await socksService.CreateAsync(socksDto);
+        await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
         navMgr.NavigateTo($"/shoppingCart/{cartId}");
     }
 }

@@ -22,7 +22,7 @@ public class ShoppingCartController:ControllerBase
         try
         {
             ShoppingCart shoppingCart = await shoppingcartLogic.CreateAsync(dto);
-            return Created($"/shoppingCarts/{shoppingCart.Id}", shoppingCart);
+            return Created($"/shoppingCart/{shoppingCart.Id}", shoppingCart);
         }
         catch (Exception e)
         {
@@ -77,5 +77,21 @@ public class ShoppingCartController:ControllerBase
         }
     }
     
+    
+     
+    [HttpGet("products/{id:int}")]
+    public async Task<ActionResult<Product>> GetProducts([FromRoute] int id)
+    {
+        try
+        {
+            var result = await shoppingcartLogic.GetById(id);
+            return Ok(result.Products);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
     
 }

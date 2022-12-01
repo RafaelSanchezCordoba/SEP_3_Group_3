@@ -148,6 +148,22 @@ input[b-zjw7gqpu4y]
     width: 34%;
     float: right;
 }
+/* /Pages/ShoppingCart.razor.rz.scp.css */
+.table-div[b-rmsxhl3zv7]
+{
+    width: 67%;
+    margin-right: 5px;
+}
+.order-summary-div[b-rmsxhl3zv7]
+{
+    width: 30%;
+    border: 1px solid black;
+}
+
+.product-image[b-rmsxhl3zv7]
+{
+    width: 10%;
+}
 /* /Pages/ViewSockInfo.razor.rz.scp.css */
 .colorBtn[b-ecdsryc5i8] {
     aspect-ratio: 1;
