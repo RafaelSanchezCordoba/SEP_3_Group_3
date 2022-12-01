@@ -8,5 +8,7 @@ public interface ICardItemDao
     Task<IEnumerable<CardItem>> GetAsync();
     Task<CardItem> GetByIdAsync(int id);
     Task<int> GetQuantityById(int id);
+    Task<CardItem?> GetByIdsAsync(int idProduct, int idShoppingCard);
+
     Task<CardItem> UpdateQuantityAsync(int id, int newQuantity);
 }

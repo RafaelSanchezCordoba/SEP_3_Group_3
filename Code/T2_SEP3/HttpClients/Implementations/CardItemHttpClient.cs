@@ -101,4 +101,23 @@ public class CardItemHttpClient:ICardItemService
             throw new Exception(content);
         }
     }
+
+    public async Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
+    {
+        HttpResponseMessage response = await client.GetAsync($"ShoppingCartQuantities/Ids/{idProduct}/{idShoppingCard}");
+            string content = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception(content);
+            }
+
+            CardItem cardItem = JsonSerializer.Deserialize<CardItem>(content, 
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                }
+            )!;
+            return cardItem;
+       
+    }
 }

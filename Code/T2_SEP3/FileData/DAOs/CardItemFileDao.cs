@@ -60,6 +60,12 @@ public class CardItemFileDao : ICardItemDao
         return Task.FromResult(existing.Quantity);
     }
 
+    public Task<CardItem?> GetByIdsAsync(int idProduct, int idShoppingCard)
+    {
+       CardItem result = context.CardItems.FirstOrDefault(c=>c.ProductId==idProduct&&c.ShoppingCartId==idShoppingCard);
+       return Task.FromResult(result);
+    }
+
     public Task<CardItem> UpdateQuantityAsync(int id, int newQuantity)
     {
         CardItem? existing = context.CardItems.FirstOrDefault(cardItem => cardItem.Id == id);

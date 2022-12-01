@@ -26,6 +26,11 @@ public class CardItemLogic : ICardItemLogic
         return dao.GetAsync();
     }
 
+    public Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
+    {
+        return dao.GetByIdsAsync(idProduct, idShoppingCard);
+    }
+
     public Task<CardItem> GetByIdAsync(int id)
     {
         return dao.GetByIdAsync(id);

@@ -88,4 +88,19 @@ public class ShoppingCartQuantitiesController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    [HttpGet("/ShoppingCartQuantities/IDs")]
+    public async Task<ActionResult<ShoppingCart>> GetByIdsAsync([FromQuery] int product_id,
+        [FromQuery] int shoppingCard_id)
+    {
+        try
+        {
+            var result = await cardItemLogic.GetByIdsAsync(product_id,shoppingCard_id);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

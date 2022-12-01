@@ -10,5 +10,7 @@ public interface ICardItemService
     Task<CardItem> GetByIdAsync(int Id);
     Task<int> GetQuantityById(int id);
     Task UpdateQuantityAsync(int id, int newQuantity);
+    Task<CardItem> GetByIdsAsync(int idProduct,int idShoppingCard);
+
     
 }
