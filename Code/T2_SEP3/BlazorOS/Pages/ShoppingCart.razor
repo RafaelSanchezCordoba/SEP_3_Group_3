@@ -78,9 +78,10 @@
         }
     }
     
-    protected void Remove(int productId)
+    protected async Task Remove(int productId)
     {
-        
+        Product product = await socksService.getByIdAsync(productId);
+        shoppingCartService.RemoveProduct(product, Id);
     }
 
    

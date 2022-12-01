@@ -94,9 +94,6 @@ public class ShoppingCartHttpClient:IShoppingCartService
 
     public async Task<ShoppingCart> AddProductAsync(Product product, int shoppingCartId)
     {
-        string productAsJson = JsonSerializer.Serialize(product);
-        StringContent body = new StringContent(productAsJson, Encoding.UTF8, "application/json");
-
        HttpResponseMessage response = await client.PostAsJsonAsync($"https://localhost:7999/shoppingCart/{shoppingCartId}", product);
               string result = await response.Content.ReadAsStringAsync();
         
@@ -115,5 +112,27 @@ public class ShoppingCartHttpClient:IShoppingCartService
        
  return shoppingCart;
       
+    }
+
+    public async Task<ShoppingCart> RemoveProduct(Product product, int id)
+    {
+        string productAsJson = JsonSerializer.Serialize(product);
+        StringContent body = new StringContent(productAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/shoppingCart/{id}", body);
+        string content = await response.Content.ReadAsStringAsync();
+       
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+        
+        ShoppingCart shoppingCart = JsonSerializer.Deserialize<ShoppingCart>(content, 
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            }
+        )!;
+        
+        return shoppingCart;
     }
 }

@@ -94,4 +94,20 @@ public class ShoppingCartController:ControllerBase
         }
     }
     
+    
+    [HttpPatch("{id:int}")]
+    public async Task<ActionResult> RemoveProduct([FromRoute] int id,[FromBody] Product product)
+    {
+        try
+        {
+            ShoppingCart pc=  await shoppingcartLogic.RemoveProduct(product,id);
+            return Ok(pc);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
 }

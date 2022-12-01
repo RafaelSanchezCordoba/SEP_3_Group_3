@@ -10,4 +10,5 @@ public interface IShoppingCartLogic
     Task<IEnumerable<ShoppingCart>> GetAsync();
     Task<ShoppingCart> AddProduct(Product product, int cartId);
     Task DeleteAsync(int cardId);
+    Task<ShoppingCart> RemoveProduct(Product product, int id);
 }

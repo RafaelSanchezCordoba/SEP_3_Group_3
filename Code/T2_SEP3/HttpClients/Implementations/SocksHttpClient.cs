@@ -37,7 +37,7 @@ public class SocksHttpClient : ISocksService
 
     public async Task<Socks> getByIdAsync(int id)
     {
-        HttpResponseMessage response = await client.GetAsync($"https://localhost:7140/socks/{id}");
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/socks/{id}");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

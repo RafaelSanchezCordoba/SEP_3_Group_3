@@ -46,4 +46,14 @@ public class ShoppingCartLogic :IShoppingCartLogic
 
         await dao.DeleteAsync(id);
     }
+
+    public async Task<ShoppingCart> RemoveProduct(Product product, int id)
+    {
+        ShoppingCart? shoppingCart= await dao.GetById(id);
+        if (shoppingCart == null)
+        {
+            throw new Exception($"ShoppingCart with ID {id} was not found!!!");
+        }
+        return await dao.DeleteProductAsync(product,id);
+    }
 }

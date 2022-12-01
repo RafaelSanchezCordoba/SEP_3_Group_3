@@ -77,4 +77,20 @@ public class ShoppingCartFileDao:IShoppingCartDao
 
         return Task.CompletedTask;
     }
+
+    public Task<ShoppingCart> DeleteProductAsync(Product product, int id)
+    {
+        ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(cart => cart.Id == id);
+        if (existing == null)
+        {
+            throw new Exception($"shopping cart with ID {id} does not exist!!!");
+        }
+       
+        context.ShoppingCarts.Remove(existing);
+        existing.Products.Remove(product);
+        context.ShoppingCarts.Add(existing);
+        context.SaveChanges();
+
+        return Task.FromResult(existing);
+    }
 }

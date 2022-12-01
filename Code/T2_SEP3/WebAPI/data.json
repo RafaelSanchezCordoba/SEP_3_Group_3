@@ -134,24 +134,6 @@
       "Products": []
     },
     {
-      "Id": 2,
-      "OwnerId": 2,
-      "Products": [
-        {
-          "ProductCardId": 3,
-          "Id": 5,
-          "Size": "s",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 11,
-          "Id": 25,
-          "Size": "xl",
-          "Color": "blue"
-        }
-      ]
-    },
-    {
       "Id": 1,
       "OwnerId": 3,
       "Products": [
@@ -195,6 +177,24 @@
           "ProductCardId": 10,
           "Id": 33,
           "Size": "xs",
+          "Color": "blue"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "OwnerId": 2,
+      "Products": [
+        {
+          "ProductCardId": 3,
+          "Id": 5,
+          "Size": "s",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 11,
+          "Id": 25,
+          "Size": "xl",
           "Color": "blue"
         }
       ]
