@@ -59,10 +59,9 @@ public class SockCardsFileDao : ISockCardDao
         }
         return Task.FromResult(existing);
     }
+    
 
-   
-
-    public Task UpdateAsync(SocksCard dto)
+    public Task UpdateAsync(UpdateSocksCardDto dto)
     {
         SocksCard? existing = context.SocksCards.FirstOrDefault(card => card.Id == dto.Id);
         if (existing == null)
@@ -71,10 +70,12 @@ public class SockCardsFileDao : ISockCardDao
         }
 
         context.SocksCards.Remove(existing);
-        context.SocksCards.Add(dto);
+        //context.SocksCards.Add(dto);
         context.SaveChanges();
         return Task.CompletedTask;
     }
+
+    
 
     public Task DeleteAsync(int id)
     {

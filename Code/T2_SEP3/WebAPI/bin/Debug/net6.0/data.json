@@ -62,6 +62,69 @@
       "Size": "xl",
       "Quantity": 9,
       "Id": 11
+    },
+    {
+      "CardId": 10,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 6,
+      "Id": 12
+    },
+    {
+      "CardId": 10,
+      "Color": "red",
+      "Size": "s",
+      "Quantity": 89,
+      "Id": 13
+    },
+    {
+      "CardId": 10,
+      "Color": "red",
+      "Size": "xl",
+      "Quantity": 988,
+      "Id": 14
+    },
+    {
+      "CardId": 10,
+      "Color": "blue",
+      "Size": "xs",
+      "Quantity": 56,
+      "Id": 15
+    },
+    {
+      "CardId": 10,
+      "Color": "blue",
+      "Size": "s",
+      "Quantity": 66,
+      "Id": 16
+    },
+    {
+      "CardId": 10,
+      "Color": "blue",
+      "Size": "l",
+      "Quantity": 6,
+      "Id": 17
+    },
+    {
+      "CardId": 11,
+      "Color": "blue",
+      "Size": "s",
+      "Quantity": 22,
+      "Id": 18
+    },
+    {
+      "CardId": 11,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 44,
+      "Id": 19
+    },
+    {
+      "CardId": 11,
+      "Color": "blue",
+      "Size": "xl",
+      "Quantity": 33,
+      "Id": 20
     }
   ],
   "SocksCards": [
@@ -94,6 +157,26 @@
       "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
       "Type": "Knee high",
       "Id": 9
+    },
+    {
+      "Title": "Pizza sock",
+      "Description": "yummyyyyyyy",
+      "Price": 10,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
+      "Type": "Invisible",
+      "Id": 10
+    },
+    {
+      "Title": "Penguin socks",
+      "Description": "to protect from danish cold",
+      "Price": 1,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.shopify.com/s/files/1/0458/9273/1037/products/40fc963a4aa341e4029b9c84ae9f5043b926a9fd5cd0f331aca11ac460b8581b.jpg?v=1645448614",
+      "Type": "Low cut",
+      "Id": 11
     }
   ],
   "Socks": []

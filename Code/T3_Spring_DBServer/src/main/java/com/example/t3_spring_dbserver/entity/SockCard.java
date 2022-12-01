@@ -46,6 +46,16 @@ public class SockCard implements Serializable {
         this.material = material;
         this.type = type;
     }
+    public SockCard(long id,String title, String description, double price,String material, String brand, String image, String type) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.brand = brand;
+        this.image = image;
+        this.material = material;
+        this.type = type;
+    }
 
     public long getId() {
         return id;

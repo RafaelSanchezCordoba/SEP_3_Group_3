@@ -32,30 +32,15 @@ public class SockCardLogic : ISockCardLogic
         return socksDao.GetById(id);
     }
 
-    public async Task UpdateAsync(SocksCard dto)
+    public async Task UpdateAsync(UpdateSocksCardDto dto)
     {
-        SocksCard? existing = await socksDao.GetById(dto.Id);
-
-        if (existing == null)
-        {
-            throw new Exception($"Socks with ID {dto.Id} not found!!!");
-        }
+       
         
-        string titleToUse = dto.Title ?? existing.Title;
-        string descriptionToUse = dto.Description ?? existing.Description;
-        string materialToUse = dto.Material ?? existing.Material;
-        string brandToUse = dto.Brand ?? existing.Brand;
-        string imageToUse = dto.Image ?? existing.Image;
-        string typeToUse = dto.Type ?? existing.Type;
-
-        SocksCard updated = new SocksCard(titleToUse, descriptionToUse, dto.Price, materialToUse, brandToUse, imageToUse,typeToUse)
-        {
-            Id = existing.Id
-        };
         
-        ValidateSocks(updated);
-        await socksDao.UpdateAsync((SocksCard)updated);
+        await socksDao.UpdateAsync(dto);
     }
+
+    
 
     public async Task DeleteAsync(int id)
     {
