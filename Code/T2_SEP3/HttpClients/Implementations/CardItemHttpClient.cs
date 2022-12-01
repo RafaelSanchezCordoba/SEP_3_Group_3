@@ -104,7 +104,7 @@ public class CardItemHttpClient:ICardItemService
 
     public async Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
     {
-        HttpResponseMessage response = await client.GetAsync($"ShoppingCartQuantities/Ids/{idProduct}/{idShoppingCard}");
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCartQuantities/IDs?product_id={idProduct}&shoppingCard_id={idShoppingCard}");
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {

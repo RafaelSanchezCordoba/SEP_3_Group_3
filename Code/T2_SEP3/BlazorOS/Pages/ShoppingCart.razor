@@ -21,10 +21,15 @@
         <th></th>
         </thead>
         <tbody>
+         @foreach (var p in productList)
+         {
+             p.ToString();
+         }
+     
         @foreach (var p in productList)
-               {
-                   ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-                   CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+        {
+            ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+            CardItem cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
             <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
                 <td >
                     <p>@card.Title</p>
@@ -34,14 +39,14 @@
                 <td class="price-td">@card.Price</td>
                 <td>
                     <label>@cardItem.Quantity</label>
-                    <div onclick="() => @IncreaseQuantity(p.Id,@cardItem.Quantity)" class="myButton">+</div>
-                    <div onclick="(() => @DecreaseQuantity(p.Id,@cardItem.Quantity))" class="myButton">-</div>
+                    <div onclick="() => @IncreaseQuantity(p.Id, @cardItem.Quantity)" class="myButton">+</div>
+                    <div onclick="(() => @DecreaseQuantity(p.Id, @cardItem.Quantity))" class="myButton">-</div>
                 </td>
                 <td >@card.Price</td>
                 <td><button @onclick="(() => { Remove(p.Id); })" class="myButton">Remove</button></td>
             </tr>
-}
-            </tbody>
+        }
+        </tbody>
     </table>
     </div>
 
@@ -79,6 +84,7 @@
                 items.Add(item);
                 subtotal += card.Price;
             }
+           
         }
         catch (Exception e)
         {

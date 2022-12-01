@@ -147,6 +147,42 @@
           "Id": 1,
           "Size": "m",
           "Color": "blue"
+        },
+        {
+          "ProductCardId": 2,
+          "Id": 6,
+          "Size": "s",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 7,
+          "Size": "m",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 9,
+          "Size": "blue",
+          "Color": "xl"
+        },
+        {
+          "ProductCardId": 4,
+          "Id": 8,
+          "Size": "xl",
+          "Color": "red"
+        },
+        {
+          "ProductCardId": 5,
+          "Id": 9,
+          "Size": "s",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 10,
+          "Size": "m",
+          "Color": "blue"
         }
       ]
     }
@@ -233,11 +269,38 @@
       "Id": 5,
       "Size": "m",
       "Color": "blue"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 6,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 7,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 4,
+      "Id": 8,
+      "Size": "xl",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 9,
+      "Size": "s",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 10,
+      "Size": "m",
+      "Color": "blue"
     }
   ],
-<<<<<<< Updated upstream
-  "CardItems": []
-=======
   "CardItems": [
     {
       "Id": 2,
@@ -250,7 +313,36 @@
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 5
+    },
+    {
+      "Id": 4,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 6
+    },
+    {
+      "Id": 5,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 7
+    },
+    {
+      "Id": 6,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 8
+    },
+    {
+      "Id": 7,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 9
+    },
+    {
+      "Id": 8,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 10
     }
   ]
->>>>>>> Stashed changes
 }
