@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/rafael/.nuget/packages/": {}
+    "C:\\Users\\maria\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj",
+      "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj",
-      "packagesPath": "/Users/rafael/.nuget/packages/",
-      "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/obj/",
+      "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/rafael/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj": {
-              "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj"
+            "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj"
             }
           }
         }
@@ -82,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/rafael/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

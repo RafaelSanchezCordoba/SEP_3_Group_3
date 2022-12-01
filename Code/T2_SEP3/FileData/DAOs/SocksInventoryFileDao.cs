@@ -12,62 +12,62 @@ public class SocksInventoryFileDao:ISocksInventoryDao
         this.context = context;
     }
 
-    public Task<Stock> CreateAsync(Stock stock)
+    public Task<Inventory> CreateAsync(Inventory inventory)
     {
         
         int Id = 1;
-        if (context.Stocks.Any())
+        if (context.Inventories.Any())
         {
-            Id = context.Stocks.Max(u => u.Id);
+            Id = context.Inventories.Max(u => u.Id);
             Id++;
         }
 
-        ProductCard exists = context.ProductCardSocks.FirstOrDefault(c => c.Id == stock.CardId);
+        ProductCard exists = context.SocksCards.FirstOrDefault(c => c.Id == inventory.CardId);
         if (exists==null)
         {
-            throw new Exception($"Product with id{stock.CardId} does not exists !!! cannot add Stock");
+            throw new Exception($"Product with id{inventory.CardId} does not exists !!! cannot add Stock");
         }
 
-        stock.Id = Id;
+        inventory.Id = Id;
         
-        context.Stocks.Add(stock);
+        context.Inventories.Add(inventory);
         context.SaveChanges();
-        return Task.FromResult(stock);
+        return Task.FromResult(inventory);
     }
 
-    public Task<IEnumerable<Stock>> GetAsync()
+    public Task<IEnumerable<Inventory>> GetAsync()
     {
-        IEnumerable<Stock> result = context.Stocks.AsEnumerable();
+        IEnumerable<Inventory> result = context.Inventories.AsEnumerable();
         return Task.FromResult(result);
     }
 
-    public Task<Stock> GetById(int id)
+    public Task<Inventory> GetById(int id)
     {
-        Stock? existing = context.Stocks.FirstOrDefault(stock => stock.Id == id);
+        Inventory? existing = context.Inventories.FirstOrDefault(stock => stock.Id == id);
         return Task.FromResult(existing);
     }
 
-    public Task<IEnumerable<Stock>> GetByCardIdAsync(int id)
+    public Task<IEnumerable<Inventory>> GetByCardIdAsync(int id)
     {
-        IEnumerable<Stock> result = context.Stocks.AsEnumerable().Where(s => s.CardId == id);
+        IEnumerable<Inventory> result = context.Inventories.AsEnumerable().Where(s => s.CardId == id);
         return Task.FromResult(result);
     }
 
-    public Task UpdateAsync(Stock dto)
+    public Task UpdateAsync(Inventory dto)
     {
         throw new NotImplementedException();
     }
 
     public Task DeleteFromCardAsync(int id)
     {
-        IEnumerable<Stock> result = context.Stocks.AsEnumerable().Where(s => s.CardId == id);
+        IEnumerable<Inventory> result = context.Inventories.AsEnumerable().Where(s => s.CardId == id);
         if (result == null)
         {
             throw new Exception($"Socks with ID {id} does not have any stock to delete!!!");
         }
-        foreach (var stock in result)
+        foreach (var inventory in result)
         {
-            context.Stocks.Remove(stock);
+            context.Inventories.Remove(inventory);
         }
         context.SaveChanges();
 
@@ -76,13 +76,13 @@ public class SocksInventoryFileDao:ISocksInventoryDao
 
     public Task DeleteAsync(int id)
     {
-        Stock? existing = context.Stocks.FirstOrDefault(stock => stock.Id == id);
+        Inventory? existing = context.Inventories.FirstOrDefault(stock => stock.Id == id);
         if (existing == null)
         {
             throw new Exception($"Socks Stock with ID {id} does not exist!!!");
         }
 
-        context.Stocks.Remove(existing);
+        context.Inventories.Remove(existing);
         context.SaveChanges();
 
         return Task.CompletedTask;

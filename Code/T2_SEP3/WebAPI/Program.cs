@@ -3,6 +3,7 @@ using Application.Logic;
 using Application.LogicInterfaces;
 using FileData;
 using FileData.DAOs;
+using GrpcDataAccess.DAOs;
 using Shared.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,10 +16,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
-builder.Services.AddScoped<ISocksDao, SocksFileDao>();
-builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+builder.Services.AddScoped<ISockCardDao, SockCardsGrpcDao>();
+builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
-builder.Services.AddScoped<ISockStockLogic, SocksInventoryLogic>();
+builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
+
 
 
 

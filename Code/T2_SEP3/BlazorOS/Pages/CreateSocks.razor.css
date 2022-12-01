@@ -1,0 +1,96 @@
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+*[b-zjw7gqpu4y] {
+    box-sizing: border-box;
+}
+
+.card[b-zjw7gqpu4y]{
+=======
+* {
+    box-sizing: border-box;
+}
+
+.card{
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+    width: 65%;
+    padding: 20px;
+    float: left;
+    
+}
+
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+.form-group-field[b-zjw7gqpu4y]{
+=======
+.form-group-field{
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+    padding: 10px;
+    float: left;
+}
+
+
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+.button-message[b-zjw7gqpu4y]
+=======
+.button-message
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    float: left;
+    margin-left: 2%;
+}
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+.small-form-field[b-zjw7gqpu4y]
+=======
+.small-form-field
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+input[b-zjw7gqpu4y]
+=======
+input
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    width: 73%;
+    float: right;
+}
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+.long-input[b-zjw7gqpu4y]
+=======
+.long-input
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    width: 87%;
+}
+
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+.acceptbtn[b-zjw7gqpu4y]
+=======
+.acceptbtn
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+#dropdown-list[b-zjw7gqpu4y]
+=======
+#dropdown-list
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    float: right;
+    width: 75%;
+}
+<<<<<<< HEAD:Code/T1_SEP3/BlazorWasm/Pages/CreateSocks.razor.css
+#dropdown-input[b-zjw7gqpu4y]
+=======
+#dropdown-input
+>>>>>>> new-master:Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor.css
+{
+    width: 100%;
+    float: right;
+}

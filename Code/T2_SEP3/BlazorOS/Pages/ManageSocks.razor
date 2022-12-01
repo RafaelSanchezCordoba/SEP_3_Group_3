@@ -1,7 +1,8 @@
 @page "/ManageSocks"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-@inject ISockService sockService;
+@inject ISockCardService sockService;
+@inject NavigationManager _navigationManager;
 
 <h3>ManageSocks</h3>
 <button onclick="@LoadCards">Load</button>
@@ -26,7 +27,7 @@ else
             <tr>
                 <td>@card.Id</td>
                 <td>@card.Title</td>
-                <td><button>edit</button></td>
+                <td><button @onclick="@(()=>Edit(@card.Id))">edit</button></td>
                 <td><button @onclick="@(()=>RemoveCardById(@card.Id))">remove</button></td>
             </tr>
         }
@@ -36,8 +37,8 @@ else
 }
 
 @code {
-    private ICollection<ProductCardSock> sockCards;
-    private ICollection<ProductCardSock> sockCardsLoaded;
+    private ICollection<SocksCard> sockCards;
+    private ICollection<SocksCard> sockCardsLoaded;
     private string msg = "";
 
     private async void LoadCards()
@@ -70,6 +71,10 @@ else
         }
         LoadCards();
        
+    }
+    public void Edit(int cardId)
+    {
+        _navigationManager.NavigateTo($"EditSockCard/{cardId}");
     }
 
 

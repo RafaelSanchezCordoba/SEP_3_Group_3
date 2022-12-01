@@ -1,15 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "IF9yyTTA6ec0h2uIZUJGpI1QRm2jPvYKvSR1N6Ld8guswpCpFmEINbfpssh8BSbJ+vSCJ4F0Pjg+i5JEXYMTvg==",
+  "dgSpecHash": "oT8CJfbYroYZDDArx3g3kzUIAaQADFylKcTRUSMAoiOYze2tyxer6wGRsqz7fxfvQ6gSsu1DgLPuMuT/NPFWug==",
   "success": true,
-  "projectFilePath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
-    "/Users/rafael/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "/Users/rafael/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/Users/rafael/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "/Users/rafael/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "/Users/rafael/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/Users/rafael/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\maria\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc\\2.46.5\\grpc.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc.core.api\\2.46.5\\grpc.core.api.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

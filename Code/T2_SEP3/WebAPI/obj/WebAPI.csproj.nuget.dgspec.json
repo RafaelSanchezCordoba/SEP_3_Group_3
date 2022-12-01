@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/WebAPI.csproj": {}
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj": {
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj",
-        "packagesPath": "/Users/rafael/.nuget/packages/",
-        "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/obj/",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rafael/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj": {
-                "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj"
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj"
               }
             }
           }
@@ -57,21 +57,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/rafael/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj": {
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/Domain.csproj",
-        "packagesPath": "/Users/rafael/.nuget/packages/",
-        "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Domain/obj/",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rafael/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -110,21 +110,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/rafael/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/FileData.csproj": {
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\FileData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/FileData.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\FileData.csproj",
         "projectName": "FileData",
-        "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/FileData.csproj",
-        "packagesPath": "/Users/rafael/.nuget/packages/",
-        "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/obj/",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\FileData.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rafael/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -136,8 +136,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj": {
-                "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj"
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj"
               }
             }
           }
@@ -167,21 +167,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/rafael/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/WebAPI.csproj": {
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/WebAPI.csproj",
-        "projectName": "WebAPI",
-        "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/WebAPI.csproj",
-        "packagesPath": "/Users/rafael/.nuget/packages/",
-        "outputPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj",
+        "projectName": "GrpcDataAccess",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rafael/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -193,11 +193,91 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj": {
-                "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/Application/Application.csproj"
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.21.9, )"
+            },
+            "Grpc": {
+              "target": "Package",
+              "version": "[2.46.5, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.5, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.50.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\Application\\Application.csproj"
               },
-              "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/FileData.csproj": {
-                "projectPath": "/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/FileData.csproj"
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\FileData.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\FileData\\FileData.csproj"
+              },
+              "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj": {
+                "projectPath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj"
               }
             }
           }
@@ -236,7 +316,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/rafael/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

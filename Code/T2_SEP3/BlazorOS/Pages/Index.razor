@@ -1,9 +1,17 @@
 ﻿@page "/"
+@inject NavigationManager NavManager
 
-<PageTitle>Index</PageTitle>
+<h1>Online shop</h1>
+<p>Choose which type of product you'd like to purchase</p>
 
-<h1>Hello, world!</h1>
+<button onclick="@socksBtn">Socks</button>
+<button>T-shirts</button>
+<button>Trousers</button>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?"/>
+@code
+{
+ public async Task  socksBtn()
+ {
+  NavManager.NavigateTo($"/BrowseSocks");
+ }
+}
