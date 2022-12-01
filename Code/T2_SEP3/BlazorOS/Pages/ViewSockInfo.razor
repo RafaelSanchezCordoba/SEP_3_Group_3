@@ -6,6 +6,7 @@
 @inject ISockInventoryService inventoryService 
 @inject ISocksService socksService
 @inject IShoppingCartService shoppingCartService
+@inject ICardItemService cardItemService
 @inject NavigationManager navMgr
 
 
@@ -107,6 +108,8 @@
     {
         CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
         Socks socks = await socksService.CreateAsync(socksDto);
+        CreateCardItemDto dto = new CreateCardItemDto(Convert.ToInt32(cartId), socks.Id);
+        await cardItemService.CreateAsync(dto);
         await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
         navMgr.NavigateTo($"/shoppingCart/{cartId}");
     }

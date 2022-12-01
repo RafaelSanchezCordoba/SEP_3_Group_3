@@ -1,10 +1,12 @@
 @page "/ShoppingCart/{id:int}"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
+@using Smart.Blazor
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
 @inject ISockInventoryService sockInventoryService
+@inject ICardItemService cardItemService
 @inject NavigationManager navMgr
 
 <h3>Item summary (@productList.Count)</h3>
@@ -22,20 +24,24 @@
         @foreach (var p in productList)
                {
                    ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-                   <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
-                       <td >
-                           <p>@card.Title</p>
-                           <p>@p.Size.ToUpper()</p>
-                           <p style="color: @p.Color">@p.Color</p>
-                       </td>
-                       <td class="price-td">@card.Price</td>
-                       <td><input type="number" placeholder="1" class="quantity-input"/></td>
-                       <td >@card.Price</td>
-                       <td><button @onclick="() => Remove(p.Id)" class="myButton">Remove</button></td>
-                       
-                   </tr>
-               }
-        </tbody>
+                   CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+            <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
+                <td >
+                    <p>@card.Title</p>
+                    <p>@p.Size.ToUpper()</p>
+                    <p style="color: @p.Color">@p.Color</p>
+                </td>
+                <td class="price-td">@card.Price</td>
+                <td>
+                    <label>@cardItem.Quantity</label>
+                    <div onclick="() => @IncreaseQuantity(p.Id,@cardItem.Quantity)" class="myButton">+</div>
+                    <div onclick="(() => @DecreaseQuantity(p.Id,@cardItem.Quantity))" class="myButton">-</div>
+                </td>
+                <td >@card.Price</td>
+                <td><button @onclick="(() => { Remove(p.Id); })" class="myButton">Remove</button></td>
+            </tr>
+}
+            </tbody>
     </table>
     </div>
 
@@ -56,6 +62,7 @@
     private double subtotal=0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
+    private List<CardItem?> items= new List<CardItem?>();
 
 
     protected override async Task OnInitializedAsync()
@@ -68,6 +75,8 @@
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
+                CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                items.Add(item);
                 subtotal += card.Price;
             }
         }
@@ -84,5 +93,15 @@
         shoppingCartService.RemoveProduct(product, Id);
     }
 
+    protected async Task IncreaseQuantity(int id, int quantity)
+    {
+        quantity++;
+        cardItemService.UpdateQuantityAsync(id, quantity);
+    }
+    protected async Task DecreaseQuantity(int id, int quantity)
+    {
+        quantity--;
+        cardItemService.UpdateQuantityAsync(id, quantity);
+    }
    
 }

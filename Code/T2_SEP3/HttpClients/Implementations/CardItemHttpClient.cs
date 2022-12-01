@@ -18,7 +18,7 @@ public class CardItemHttpClient:ICardItemService
     }
     public async Task<CardItem> CreateAsync(CreateCardItemDto dto)
     {
-        HttpResponseMessage response = await client.PostAsJsonAsync("CardItemQuantities", dto);
+        HttpResponseMessage response = await client.PostAsJsonAsync("ShoppingCartQuantities", dto);
         string result = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
@@ -37,7 +37,7 @@ public class CardItemHttpClient:ICardItemService
 
     public async Task<IEnumerable<CardItem>> GetAsync()
     {
-        HttpResponseMessage response = await client.GetAsync("https://localhost:7999/CardItemQuantities");
+        HttpResponseMessage response = await client.GetAsync("https://localhost:7999/ShoppingCartQuantities");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
@@ -55,7 +55,7 @@ public class CardItemHttpClient:ICardItemService
 
     public async Task<CardItem> GetByIdAsync(int Id)
     {
-        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/CardItemQuantities/{Id}");
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCartQuantities/{Id}");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

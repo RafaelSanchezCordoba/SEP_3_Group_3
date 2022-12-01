@@ -2,27 +2,27 @@
   "Inventories": [
     {
       "CardId": 1,
-      "Color": "string",
-      "Size": "string",
+      "Color": "blue",
+      "Size": "m",
       "Quantity": 0,
       "Id": 3
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "red",
       "Size": "xs",
       "Quantity": 4,
       "Id": 4
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "red",
       "Size": "s",
       "Quantity": 6,
       "Id": 5
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "red",
       "Size": "m",
       "Quantity": 6,
@@ -36,91 +36,91 @@
       "Id": 7
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "grey",
       "Size": "s",
       "Quantity": 456,
       "Id": 8
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "grey",
       "Size": "m",
       "Quantity": 5,
       "Id": 9
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "grey",
       "Size": "l",
       "Quantity": 89,
       "Id": 10
     },
     {
-      "CardId": 9,
+      "CardId": 2,
       "Color": "grey",
       "Size": "xl",
       "Quantity": 9,
       "Id": 11
     },
     {
-      "CardId": 10,
+      "CardId": 3,
       "Color": "red",
       "Size": "xs",
       "Quantity": 6,
       "Id": 12
     },
     {
-      "CardId": 10,
+      "CardId": 3,
       "Color": "red",
       "Size": "s",
       "Quantity": 89,
       "Id": 13
     },
     {
-      "CardId": 10,
+      "CardId": 4,
       "Color": "red",
       "Size": "xl",
       "Quantity": 988,
       "Id": 14
     },
     {
-      "CardId": 10,
+      "CardId": 4,
       "Color": "blue",
       "Size": "xs",
       "Quantity": 56,
       "Id": 15
     },
     {
-      "CardId": 10,
+      "CardId": 5,
       "Color": "blue",
       "Size": "s",
       "Quantity": 66,
       "Id": 16
     },
     {
-      "CardId": 10,
+      "CardId": 5,
       "Color": "blue",
       "Size": "l",
       "Quantity": 6,
       "Id": 17
     },
     {
-      "CardId": 11,
+      "CardId": 5,
       "Color": "blue",
       "Size": "s",
       "Quantity": 22,
       "Id": 18
     },
     {
-      "CardId": 11,
+      "CardId": 4,
       "Color": "blue",
       "Size": "m",
       "Quantity": 44,
       "Id": 19
     },
     {
-      "CardId": 11,
+      "CardId": 4,
       "Color": "blue",
       "Size": "xl",
       "Quantity": 33,
@@ -134,67 +134,18 @@
       "Products": []
     },
     {
+      "Id": 2,
+      "OwnerId": 2,
+      "Products": []
+    },
+    {
       "Id": 1,
       "OwnerId": 3,
       "Products": [
         {
           "ProductCardId": 1,
-          "Id": 2,
-          "Size": "xl",
-          "Color": "red"
-        },
-        {
-          "ProductCardId": 9,
-          "Id": 5,
-          "Size": "l",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 6,
-          "Id": 7,
-          "Size": "l",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 11,
-          "Id": 27,
-          "Size": "s",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 11,
-          "Id": 30,
-          "Size": "s",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 10,
-          "Id": 31,
-          "Size": "xs",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 10,
-          "Id": 33,
-          "Size": "xs",
-          "Color": "blue"
-        }
-      ]
-    },
-    {
-      "Id": 2,
-      "OwnerId": 2,
-      "Products": [
-        {
-          "ProductCardId": 3,
-          "Id": 5,
-          "Size": "s",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 11,
-          "Id": 25,
-          "Size": "xl",
+          "Id": 1,
+          "Size": "m",
           "Color": "blue"
         }
       ]
@@ -209,7 +160,7 @@
       "Brand": "nike",
       "Image": "https://cdn.shopify.com/s/files/1/0458/9273/1037/products/40fc963a4aa341e4029b9c84ae9f5043b926a9fd5cd0f331aca11ac460b8581b.jpg?v=1645448614",
       "Type": "Low cut",
-      "Id": 11
+      "Id": 1
     },
     {
       "Title": "Pokemon socks",
@@ -219,7 +170,7 @@
       "Brand": "pokemon",
       "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
       "Type": "Mid calf",
-      "Id": 1
+      "Id": 2
     },
     {
       "Title": "Xmas Sock",
@@ -229,7 +180,7 @@
       "Brand": "IDK",
       "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
       "Type": "Knee high",
-      "Id": 6
+      "Id": 3
     },
     {
       "Title": "unicorn socks",
@@ -239,7 +190,7 @@
       "Brand": "nike",
       "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
       "Type": "Anklets",
-      "Id": 9
+      "Id": 4
     },
     {
       "Title": "Pizza sock",
@@ -249,227 +200,28 @@
       "Brand": "nike",
       "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
       "Type": "Anklets",
-      "Id": 10
+      "Id": 5
     }
   ],
   "Socks": [
     {
-      "ProductCardId": 0,
-      "Id": 1,
-      "Size": "red",
-      "Color": "xs"
-    },
-    {
       "ProductCardId": 1,
-      "Id": 2,
-      "Size": "xl",
-      "Color": "red"
+      "Id": 1,
+      "Size": "m",
+      "Color": "blue"
     },
     {
-      "ProductCardId": 11,
+      "ProductCardId": 2,
+      "Id": 2,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
       "Id": 3,
       "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 4,
-      "Size": "xl",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 9,
-      "Id": 5,
-      "Size": "s",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 6,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 7,
-      "Size": "xl",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 8,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 9,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 10,
-      "Size": "xl",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 11,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 12,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 13,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 14,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 15,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 16,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 17,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 18,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 19,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 9,
-      "Id": 20,
-      "Size": "m",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 9,
-      "Id": 21,
-      "Size": "xs",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 22,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 9,
-      "Id": 23,
-      "Size": "xs",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 9,
-      "Id": 24,
-      "Size": "xs",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 25,
-      "Size": "xl",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 26,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 27,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 28,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 29,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 30,
-      "Size": "s",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 10,
-      "Id": 31,
-      "Size": "xs",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 11,
-      "Id": 32,
-      "Size": "xl",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 10,
-      "Id": 33,
-      "Size": "xs",
-      "Color": "blue"
+      "Color": "red"
     }
   ],
-  "CardItems": [
-    {
-      "Id": 2,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 2
-    },
-    {
-      "Id": 3,
-      "Quantity": 1,
-      "ShoppingCartId": 4,
-      "ProductId": 5
-    },
-    {
-      "Id": 1,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 1
-    }
-  ]
+  "CardItems": []
 }
