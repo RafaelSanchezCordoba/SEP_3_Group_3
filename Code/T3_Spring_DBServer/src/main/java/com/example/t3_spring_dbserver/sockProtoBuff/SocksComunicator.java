@@ -2814,7 +2814,7 @@ public final class SocksComunicator {
       }
 
       @java.lang.Override
-      public SocksComunicator.Empty build() {
+      public Empty build() {
         SocksComunicator.Empty result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
