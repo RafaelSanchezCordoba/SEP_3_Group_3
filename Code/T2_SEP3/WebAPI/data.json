@@ -20,6 +20,14 @@
       "Password": "admin",
       "PhoneNumber": null,
       "Adress": null,
+      "Auth": "Manager"
+    },
+    {
+      "Id": 2,
+      "Email": "string",
+      "Password": "string",
+      "PhoneNumber": null,
+      "Adress": null,
       "Auth": "Customer"
     }
   ]

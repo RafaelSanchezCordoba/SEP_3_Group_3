@@ -4054,12 +4054,9 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\n
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.csproj.CoreCompileInputs.cache
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\tXORPBYb.gz
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\Z+JjoVA6.gz
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\66GfDho1.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\p9+NO1N7.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\gbp4c9GU.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\jGkdNdBM.gz
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\rpm+PSV4.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\IJXrSkVd.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\zrJELT8o.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\pIlMBrn4.gz
@@ -4071,7 +4068,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\n
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\7u+I+pfU.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\WFr65u+o.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\kdKEKaSB.gz
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\4VKbyG+P.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\Qwmsd2Ln.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\aEF7NfrL.gz
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\rn+ijD+K.gz
@@ -6011,3 +6007,11 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\refint\BlazorOS.dll
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.pdb
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\ref\BlazorOS.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\fnVkGZdc.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\6iMti7f0.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\UEhaJzWS.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\q2BQo4HZ.gz
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\6xzEll6B.gz

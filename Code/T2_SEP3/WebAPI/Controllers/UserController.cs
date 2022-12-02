@@ -67,7 +67,7 @@ public class UserController:ControllerBase
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
           
-            new Claim("Auth", user.Auth),
+            new Claim("Authorization", user.Auth),
         
         };
         return claims.ToList();
