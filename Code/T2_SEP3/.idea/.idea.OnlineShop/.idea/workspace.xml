@@ -8,100 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dc1f43e-2e2a-491a-8f9f-5c59249a175d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorOS/Auth/CustomAuthProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorOS/Pages/Login.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HttpClients/Implementations/JwtUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/BlazorOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/BlazorOS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/_Imports.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/BlazorOS.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/HttpClients.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/HttpClients.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Authorization.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Components.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.AspNetCore.Metadata.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/BlazorOS.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/0cPKpitu.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/0cPKpitu.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/3S4YlIz5.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/3S4YlIz5.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/4VKbyG+P.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/66GfDho1.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/Vv25JRgR.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/Vv25JRgR.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/Xm7JSUiU.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/Xm7JSUiU.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/Z+JjoVA6.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/ocDLGu3f.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/ocDLGu3f.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/rpm+PSV4.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/vZWIYG0M.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/build-gz/vZWIYG0M.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/ClientInterfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/ClientInterfaces/IUserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/Implementations/UserHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/bin/Debug/net6.0/HttpClients.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/ref/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/ref/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/refint/HttpClients.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/refint/HttpClients.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/bin/Debug/net6.0/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +114,7 @@
       <workItem from="1669646620647" duration="3975000" />
       <workItem from="1669654510975" duration="960000" />
       <workItem from="1669725177295" duration="560000" />
-      <workItem from="1669910142481" duration="16908000" />
+      <workItem from="1669910142481" duration="17898000" />
     </task>
     <servers />
   </component>

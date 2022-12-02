@@ -83,23 +83,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/obj/Debug/net6.0/refint/FileData.dll
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/obj/Debug/net6.0/FileData.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/obj/Debug/net6.0/ref/FileData.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.deps.json
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.pdb
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\Application.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\Domain.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\Application.pdb
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\Domain.pdb
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.csproj.AssemblyReference.cache
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.AssemblyInfoInputs.cache
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.AssemblyInfo.cs
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.csproj.CoreCompileInputs.cache
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.csproj.CopyComplete
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\refint\FileData.dll
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.pdb
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\ref\FileData.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.deps.json
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.pdb
