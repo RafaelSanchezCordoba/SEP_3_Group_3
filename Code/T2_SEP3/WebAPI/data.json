@@ -177,6 +177,16 @@
       "Image": "https://cdn.shopify.com/s/files/1/0458/9273/1037/products/40fc963a4aa341e4029b9c84ae9f5043b926a9fd5cd0f331aca11ac460b8581b.jpg?v=1645448614",
       "Type": "Low cut",
       "Id": 11
+    },
+    {
+      "Title": "string",
+      "Description": "string",
+      "Price": 1,
+      "Material": "string",
+      "Brand": "string",
+      "Image": "string",
+      "Type": "string",
+      "Id": 12
     }
   ],
   "Socks": []
