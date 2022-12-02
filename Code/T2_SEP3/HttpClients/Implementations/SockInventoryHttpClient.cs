@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
 using HttpClients.ClientInterfaces;
 using Shared.DTOs;
@@ -67,5 +68,25 @@ public class SockInventoryHttpClient:ISockInventoryService
             }
         )!;
         return inventory;
+    }
+
+    public async Task<Inventory> updateAsync(Inventory inventory)
+    {
+        string inventoryAsJson = JsonSerializer.Serialize(inventory);
+        StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7140/socksInventory/", body);
+       string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+        Inventory inventoryResult = JsonSerializer.Deserialize<Inventory>(content, 
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            }
+        )!;
+
+        return inventoryResult;
     }
 }

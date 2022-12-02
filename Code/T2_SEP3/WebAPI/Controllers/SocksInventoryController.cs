@@ -103,4 +103,19 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    
+    [HttpPatch]
+    public async Task<ActionResult<Inventory>> UpdateAsync([FromBody] Inventory inventory)
+    {
+        try
+        {
+            await inventoryLogic.UpdateAsync(inventory);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }
