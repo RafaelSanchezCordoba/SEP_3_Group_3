@@ -170,7 +170,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.json
-C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\data.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\WebAPI.exe
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json

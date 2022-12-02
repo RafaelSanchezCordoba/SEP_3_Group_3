@@ -32,6 +32,16 @@ public class FileContext
             return dataContainer!.SocksCards;
         }
     }
+
+    public ICollection<User> Users
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.Users;
+        }
+    }
+
     private void LoadData()
     {
         if (dataContainer != null) return;
@@ -42,7 +52,8 @@ public class FileContext
             {
                 Inventories = new List<Inventory>(),
                 SocksCards = new List<SocksCard>(),
-                Socks = new List<Socks>()
+                Socks = new List<Socks>(),
+                Users = new List<User>()
             };
             return;
         }
