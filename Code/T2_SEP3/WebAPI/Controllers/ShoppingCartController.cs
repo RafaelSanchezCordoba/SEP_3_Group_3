@@ -95,7 +95,7 @@ public class ShoppingCartController:ControllerBase
     }
     
     
-    [HttpPatch("{id:int}")]
+    [HttpPatch("products/{id:int}")]
     public async Task<ActionResult> RemoveProduct([FromRoute] int id,[FromBody] Product product)
     {
         try

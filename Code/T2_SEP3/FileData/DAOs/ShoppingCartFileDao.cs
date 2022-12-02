@@ -87,10 +87,9 @@ public class ShoppingCartFileDao:IShoppingCartDao
         }
        
         context.ShoppingCarts.Remove(existing);
-        existing.Products.Remove(product);
+        existing.removeProduct(product);
         context.ShoppingCarts.Add(existing);
         context.SaveChanges();
-
         return Task.FromResult(existing);
     }
 }

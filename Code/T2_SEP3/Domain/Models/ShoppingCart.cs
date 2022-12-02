@@ -16,4 +16,17 @@ public class ShoppingCart
     {
         Products.Add(product);
     }
-}
+
+    public void removeProduct(Product product)
+    {
+        foreach (var i in Products)
+        {
+            if (i.Id==product.Id)
+                {
+                  Products.Remove(i);
+                  return;
+                }
+        }
+        throw new Exception("that product is not on the shopping cart");
+    }
+    }
