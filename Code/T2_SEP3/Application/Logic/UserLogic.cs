@@ -30,6 +30,11 @@ public class UserLogic:IUserLogic
         throw new NotImplementedException();
     }
 
+    public Task<User> ValidateUser(string email, string password)
+    {
+        return context.Validateuser(email, password);
+    }
+
     public Task<string> Login(string email, string password)
     {
         throw new NotImplementedException();
