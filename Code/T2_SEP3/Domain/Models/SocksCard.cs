@@ -6,6 +6,10 @@ public class SocksCard:ProductCard
     {
    
     }
+<<<<<<< HEAD
    
     
+=======
+    public SocksCard(){}
+>>>>>>> shopping-cart
 }

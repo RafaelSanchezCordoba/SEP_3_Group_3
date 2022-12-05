@@ -25,6 +25,7 @@ public class ProductCard
         Image = image;
         Type = type;
     }
+<<<<<<< HEAD
     protected ProductCard(int id,string title, string description, double price, string material, string brand, string image, string type)
     {
         Title = title;
@@ -35,5 +36,10 @@ public class ProductCard
         Image = image;
         Type = type;
         Id = id;
+=======
+
+    public ProductCard()
+    {
+>>>>>>> shopping-cart
     }
 }

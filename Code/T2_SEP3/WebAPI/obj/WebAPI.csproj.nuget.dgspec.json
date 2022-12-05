@@ -223,6 +223,7 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+<<<<<<< HEAD
             "Google.Protobuf": {
               "target": "Package",
               "version": "[3.21.9, )"
@@ -311,6 +312,11 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.11, )"
+=======
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.4.4, )"
+>>>>>>> shopping-cart
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

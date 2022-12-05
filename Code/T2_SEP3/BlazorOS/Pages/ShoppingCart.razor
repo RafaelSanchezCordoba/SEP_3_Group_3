@@ -1,0 +1,134 @@
+@page "/ShoppingCart/{id:int}"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@inject IShoppingCartService shoppingCartService
+@inject ISockCardService socksCardService
+@inject ISocksService socksService
+@inject ISockInventoryService sockInventoryService
+@inject ICardItemService cardItemService
+@inject NavigationManager navMgr
+
+<h3>Item summary (@productList.Count)</h3>
+<div class="table-div">
+    <table class="table">
+        <thead>
+            <th></th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        <th>Total</th>
+        <th></th>
+        </thead>
+        <tbody>
+         @foreach (var p in productList)
+         {
+             p.ToString();
+         }
+     
+        @foreach (var p in productList)
+        {
+            ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+            CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+            double totalPrice = @card.Price * @cardItem.Quantity;
+            <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
+                <td >
+                    <p>@card.Title</p>
+                    <p>@p.Size.ToUpper()</p>
+                    <p style="color: @p.Color">@p.Color</p>
+                </td>
+                <td class="price-td">@card.Price</td>
+                <td  @onclick="ChangeQuantity" >
+                    <label>@cardItem.Quantity</label>
+                    <div  @onclick="(() => { IncreaseQuantity(p.Id, cardItem.Quantity);})"  class="myButton">+</div>
+                    <div @onclick="(() => {  DecreaseQuantity(p.Id,cardItem.Quantity);})" class="myButton">-</div>
+                </td>
+                <td >@totalPrice</td>
+                <td><div @onclick="(() => { RemoveProduct(p.Id); })"  class="myButton">Remove</div></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    </div>
+
+<div class="order-summary-div">
+    <b>Order Summary</b>
+    <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
+    <button class="myButton" id="checkout-btn">Checkout</button>
+   <p>Apply a coupon code or points on the next step</p>
+</div>
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    private global::Shared.Models.ShoppingCart shoppingCart= null;
+    private List<Product> productList=new List<Product>();
+    private double subtotal=0;
+    private string msg = "";
+    private List<ProductCard?> cards = new List<ProductCard?>();
+    private List<CardItem?> items= new List<CardItem?>();
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            shoppingCart= await shoppingCartService.getByIdAsync(Id);
+            productList = (List<Product>)await shoppingCartService.GetProducts(Id);
+            foreach (Product p in productList)
+            {
+                SocksCard card = await socksCardService.GetById(p.ProductCardId);
+                cards.Add(card);
+                CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                items.Add(item);  
+                double totalPrice = card.Price * item.Quantity;
+                subtotal += totalPrice;
+            }
+           
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    
+    protected async Task RemoveProduct(int productId)
+    {
+        Product product = await socksService.getByIdAsync(productId);
+        await shoppingCartService.RemoveProduct(product, Id);
+        subtotal = 0;
+        foreach (Product p in productList)
+        {
+            SocksCard card = await socksCardService.GetById(p.ProductCardId);
+            CardItem item = await cardItemService.GetByIdsAsync(p.Id, Id);
+            double totalPrice = card.Price * item.Quantity;
+            subtotal += totalPrice;
+        }
+    }
+
+    protected async Task IncreaseQuantity(int productId, int quantity)
+    {
+        quantity++;
+       await cardItemService.UpdateQuantityAsync(productId,quantity);
+        SocksCard card = await socksCardService.GetById(productId);
+        subtotal += card.Price;
+        
+
+    }
+    
+    protected async Task DecreaseQuantity(int productId, int quantity)
+    {
+        quantity--;
+       await cardItemService.UpdateQuantityAsync(productId, quantity);
+        SocksCard card = await socksCardService.GetById(productId);
+        subtotal -= card.Price;
+      
+    }
+
+    protected async Task ChangeQuantity()
+    {
+        StateHasChanged();
+    }
+}

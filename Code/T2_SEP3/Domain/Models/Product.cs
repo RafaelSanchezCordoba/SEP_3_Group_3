@@ -2,14 +2,14 @@ namespace Shared.Models;
 
 public class Product
 {
-    private ProductCard ProductCard { get; set; }
-    private int Id { get; set; }
-    private string Size { get; set; }
-    private string Color { get; set; }
+    public int ProductCardId { get; set; }
+    public int Id { get; set; }
+    public string Size { get; set; }
+    public string Color { get; set; }
 
-    public Product(ProductCard productCard, string size, string color)
+    public Product(int productCardId, string size, string color)
     {
-        ProductCard = productCard;
+        ProductCardId = productCardId;
         Size = size;
         Color = color;
     }
