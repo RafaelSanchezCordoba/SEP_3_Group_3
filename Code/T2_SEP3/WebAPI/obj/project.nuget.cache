@@ -1,14 +1,9 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "xG7ItiIz3xrYiLbq8p7kmF8Nn9KPYFiBZwX1qHaR6XLjOzJI/X7z9ZFeyY1iUs6LQFJGHn10u/B7svCxldKMKQ==",
-=======
-  "dgSpecHash": "AyyM36smMCGAyf5N3+Qj8sK1Y4fJaWIyhWaKWJod4ioFKh1lMm6Mor1q7SFil2CC/o2QkCBYY+hrjaafRUad2A==",
->>>>>>> shopping-cart
+  "dgSpecHash": "E9pKgQx/YTE+9fo7NxFP4gZbvgYVLiCGhD7MJrZ/7Hr0le+sBfo4xt1Bj4/wMmoC2Bj5fx7jTMToHCpfOb+UqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
-<<<<<<< HEAD
     "C:\\Users\\alexd\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\grpc\\2.46.5\\grpc.2.46.5.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
@@ -27,7 +22,7 @@
     "C:\\Users\\alexd\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\alexd\\.nuget\\packages\\microsoft.openapi\\1.4.4\\microsoft.openapi.1.4.4.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
@@ -36,14 +31,13 @@
     "C:\\Users\\alexd\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
-=======
-    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\rosab\\.nuget\\packages\\microsoft.openapi\\1.4.4\\microsoft.openapi.1.4.4.nupkg.sha512",
-    "C:\\Users\\rosab\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\rosab\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\rosab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\rosab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
->>>>>>> shopping-cart
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

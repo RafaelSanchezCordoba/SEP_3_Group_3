@@ -7,7 +7,7 @@ using Shared.Models;
 
 namespace HttpClients.Implementations;
 
-public class SockInventoryHttpClient:ISockInventoryService
+public class SockInventoryHttpClient:ISockInventoryService 
 {
     
     private readonly HttpClient client;
@@ -18,6 +18,7 @@ public class SockInventoryHttpClient:ISockInventoryService
         this.client = client;
         
     }
+    
 
     public async Task<Inventory> CreateAsync(CreateSockInventoryDto dto)
     {
@@ -36,57 +37,64 @@ public class SockInventoryHttpClient:ISockInventoryService
         return inventory;
     }
 
-    public async Task<ICollection<Inventory>> GetByCardIdAsync(int cardId)
-    {
-        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/SocksInventory/card{cardId}");
-        string content = await response.Content.ReadAsStringAsync();
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception(content);
-        }
 
-        ICollection<Inventory> inventories = JsonSerializer.Deserialize<ICollection<Inventory>>(content, new JsonSerializerOptions
+    
+        public async Task<ICollection<Inventory>> GetByCardIdAsync(int id)
         {
-            PropertyNameCaseInsensitive = true
-        })!;
-        return inventories;
-    }
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/SocksInventory/Cards/{id}");
 
-    public async Task<Inventory> getByIdAsync(int id)
-    {
-        HttpResponseMessage response = await client.GetAsync($"https://localhost:7140/socksInventory/{id}");
-        string content = await response.Content.ReadAsStringAsync();
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception(content);
-        }
-
-        Inventory inventory = JsonSerializer.Deserialize<Inventory>(content, 
-            new JsonSerializerOptions
+            string content = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
             {
-                PropertyNameCaseInsensitive = true
+                throw new Exception(content);
             }
-        )!;
-        return inventory;
-    }
 
-    public async Task<Inventory> updateAsync(Inventory inventory)
-    {
-        string inventoryAsJson = JsonSerializer.Serialize(inventory);
-        StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7140/socksInventory/", body);
-       string content = await response.Content.ReadAsStringAsync();
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception(content);
+
+            ICollection<Inventory> inventories = JsonSerializer.Deserialize<ICollection<Inventory>>(content,
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                })!;
+            return inventories;
         }
-        Inventory inventoryResult = JsonSerializer.Deserialize<Inventory>(content, 
-            new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            }
-        )!;
 
-        return inventoryResult;
+        public async Task<Inventory> getByIdAsync(int id)
+        {
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/socksInventory/{id}");
+            string content = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception(content);
+            }
+
+            Inventory inventory = JsonSerializer.Deserialize<Inventory>(content,
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                }
+            )!;
+            return inventory;
+        }
+
+        public async Task<Inventory> updateAsync(Inventory inventory)
+        {
+            string inventoryAsJson = JsonSerializer.Serialize(inventory);
+            StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/socksInventory/", body);
+            string content = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception(content);
+            }
+
+            Inventory inventoryResult = JsonSerializer.Deserialize<Inventory>(content,
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                }
+            )!;
+
+            return inventoryResult;
+
+        }
     }
-}

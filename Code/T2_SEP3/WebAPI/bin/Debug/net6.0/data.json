@@ -1,0 +1,49 @@
+{
+  "Inventories": [
+    {
+      "CardId": 1,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 1,
+      "Id": 1
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 23,
+      "Id": 2
+    }
+  ],
+  "SocksCards": [
+    {
+      "Title": "string",
+      "Description": "string",
+      "Price": 2,
+      "Material": "string",
+      "Brand": "string",
+      "Image": "string",
+      "Type": "string",
+      "Id": 1
+    }
+  ],
+  "Socks": [],
+  "Users": [
+    {
+      "Id": 1,
+      "Email": "admin",
+      "Password": "admin",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Manager"
+    },
+    {
+      "Id": 2,
+      "Email": "string",
+      "Password": "string",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
+    }
+  ]
+}

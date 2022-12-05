@@ -122,7 +122,6 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-<<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
@@ -236,10 +235,7 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.OpenApi/1.2.3": {
-=======
       "Microsoft.OpenApi/1.4.4": {
->>>>>>> shopping-cart
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
@@ -641,7 +637,6 @@
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
       "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "type": "package",
@@ -860,12 +855,8 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.OpenApi/1.2.3": {
-      "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
-=======
     "Microsoft.OpenApi/1.4.4": {
       "sha512": "JzSCWm7KGtZ8TCxB5V0ZHBHAe3TJ9AQ+/v28Cq9kVbMIM+erjes7f1W7j4CYD+PiHgaPK7Xss6jAYkwqVjU5NQ==",
->>>>>>> shopping-cart
       "type": "package",
       "path": "microsoft.openapi/1.4.4",
       "files": [
@@ -1112,12 +1103,9 @@
     "net6.0": [
       "Application >= 1.0.0",
       "FileData >= 1.0.0",
-<<<<<<< HEAD
       "GrpcDataAccess >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.11",
-=======
       "Microsoft.OpenApi >= 1.4.4",
->>>>>>> shopping-cart
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1170,15 +1158,13 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-<<<<<<< HEAD
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[6.0.11, )"
-=======
+          },
           "Microsoft.OpenApi": {
             "target": "Package",
             "version": "[1.4.4, )"
->>>>>>> shopping-cart
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1207,5 +1193,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\WebAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

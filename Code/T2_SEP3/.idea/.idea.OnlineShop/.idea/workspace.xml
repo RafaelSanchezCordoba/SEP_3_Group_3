@@ -9,7 +9,9 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
     <list default="true" id="7dc1f43e-2e2a-491a-8f9f-5c59249a175d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BlazorOS/Pages/UpdateInventory.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineShop/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
 =======
     <list default="true" id="45bb0ab7-2af7-4d1a-af29-79f661d82a9d" name="Changes" comment="">
 <<<<<<< Updated upstream
@@ -195,6 +197,33 @@
       <change beforePath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Design/UI design.bmpr" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design/UI design.bmpr" afterDir="false" />
 >>>>>>> shopping-cart
+=======
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/CreateSocksInventory.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/CreateSocksInventory.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/EditSockCard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/EditSockCard.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/Pages/ManageSocks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/Pages/ManageSocks.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorOS/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/Debug/net6.0/FileData.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FileData/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcDataAccess/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/ClientInterfaces/ISockInventoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/ClientInterfaces/ISockInventoryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/Implementations/SockInventoryHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/Implementations/SockInventoryHttpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/Debug/net6.0/HttpClients.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/HttpClients/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/Debug/net6.0/WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,9 +262,13 @@
   }
 <<<<<<< Updated upstream
 }</component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected=".NET Launch Settings Profile.BlazorOS">
 =======
 }]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebAPI">
+>>>>>>> Stashed changes
+=======
   <component name="RunManager" selected=".NET Launch Settings Profile.WebAPI">
 >>>>>>> Stashed changes
     <configuration name="BlazorOS" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -315,6 +348,7 @@
       <workItem from="1669654510975" duration="960000" />
       <workItem from="1669725177295" duration="560000" />
       <workItem from="1669910142481" duration="17898000" />
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
       <workItem from="1668521109697" duration="3269000" />
@@ -324,6 +358,10 @@
       <workItem from="1668798932858" duration="7038000" />
 >>>>>>> Stashed changes
 >>>>>>> shopping-cart
+=======
+      <workItem from="1670231125295" duration="1332000" />
+      <workItem from="1670232602504" duration="4285000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

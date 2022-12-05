@@ -55,7 +55,10 @@
        
         
         <button @onclick="Edit" >edit</button>
+
                                
+<button @onclick="@(()=>Restock(Id))">Inventory Options</button>
+
     }
     <p>@msg</p>
 </div>
@@ -103,7 +106,14 @@
         
         card.Type = detail.Label;
     }
-    
+    public void Restock(int cardId)
+    {
+        _navigationManager.NavigateTo($"UpdateInventory/{cardId}");
+    }
+
 
 }
+
+ 
+
 }

@@ -1,0 +1,73 @@
+@page "/UpdateInventory/{Id:int}"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+
+@inject ISockInventoryService _inventoryService
+@inject NavigationManager NavManager
+
+
+@if (cardInv == null)
+    {
+        <p>No inventory for this card</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>size</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>button</th>
+            </thead>
+            <tbody>
+            @foreach (var inv in cardInv)
+            {
+                <tr>
+                    <td>@inv.Id</td>
+                    <td>@inv.Size</td>
+                    <td>@inv.Color</td>
+                    <td>@inv.Quantity</td>
+                    
+                    <td><button @onclick="@(()=>Add(@inv.Id))">Add</button></td>
+                   
+                </tr>
+            }
+            </tbody>
+        </table>
+       
+    }
+    <button @onclick=""></button>
+    <p>@msg</p>
+
+
+@code {
+    
+    [Parameter]
+    public int Id { get; set; }
+
+    private ICollection<Inventory> cardInv;
+    private string msg = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            cardInv = await _inventoryService.GetByCardIdAsync(Id);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+
+    
+    private void Add(int id)
+    {
+        //impl here 
+    }
+
+
+}

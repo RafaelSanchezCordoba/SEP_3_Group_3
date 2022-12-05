@@ -19,7 +19,7 @@ else
             <th>title</th>
             <th>button1</th>
             <th>button2</th>
-        </thead>
+
         <tbody>
         @foreach (var card in sockCards)
         {
@@ -28,6 +28,7 @@ else
                 <td>@card.Title</td>
                 <td><button @onclick="@(()=>Edit(@card.Id))">edit</button></td>
                 <td><button @onclick="@(()=>RemoveCardById(@card.Id))">remove</button></td>
+               
             </tr>
         }
         </tbody>
@@ -88,6 +89,11 @@ else
     public void Edit(int cardId)
     {
         _navigationManager.NavigateTo($"EditSockCard/{cardId}");
+    }
+
+    public void Restock(int cardId)
+    {
+        _navigationManager.NavigateTo($"UpdateInventory/{cardId}");
     }
 
 
