@@ -1,3 +1,5 @@
+
+
 using Application.DaoInterfaces;
 using Application.Logic;
 using Application.LogicInterfaces;
@@ -16,9 +18,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
-builder.Services.AddScoped<ISockCardDao,SockCardsFileDao >();
+builder.Services.AddScoped<ISockCardDao,SockCardsGrpcDao >();
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
-builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
+builder.Services.AddScoped<ISocksInventoryDao, SockInventoryGrpcDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
 builder.Services.AddScoped<IUserLogic,UserLogic>();
 builder.Services.AddScoped<IUserDao,UserDaoFile>();
