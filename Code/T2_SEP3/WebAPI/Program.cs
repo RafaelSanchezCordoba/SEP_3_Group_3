@@ -24,12 +24,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
-<<<<<<< HEAD
+
 
 builder.Services.AddScoped<ISockCardDao, SockCardsFileDao>();
-=======
+
 builder.Services.AddScoped<ISockCardDao,SockCardsFileDao >();
->>>>>>> Auth_Impl
+
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();

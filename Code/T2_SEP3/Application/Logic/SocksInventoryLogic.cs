@@ -50,13 +50,9 @@ public class SocksInventoryLogic:ISocksInventoryLogic
         return inventoryDao.GetByCardIdAsync(id);
     }
 
-<<<<<<< HEAD
 
-    public Task UpdateAsync(Inventory dto)
-
-=======
     public async Task UpdateAsync(Inventory inventory)
->>>>>>> Auth_Impl
+
     {
         Inventory? existing = await inventoryDao.GetById(inventory.Id);
 
@@ -79,16 +75,12 @@ public class SocksInventoryLogic:ISocksInventoryLogic
         await inventoryDao.UpdateAsync((Inventory)updated);
     }
 
-<<<<<<< HEAD
-    public async Task DeleteFromCardAsync(int id){
 
-      
-       
-=======
+
 
     public async Task DeleteFromCardAsync(int id)
     {
->>>>>>> Auth_Impl
+
        Task<IEnumerable<Inventory>> toBeDeleted = inventoryDao.GetByCardIdAsync(id);
 
        if (toBeDeleted==null)
