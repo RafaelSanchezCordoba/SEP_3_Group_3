@@ -1,5 +1,8 @@
 package com.example.t3_spring_dbserver.entity;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -25,14 +28,16 @@ public class Inventory implements Serializable {
     @Column (name = "quantity")
     private int  quantity;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "pc_id", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private SockCard sockCard;
 
     public Inventory() {
 
     }
 
-    public Inventory(long id, String color, String size, int quantity, SockCard sockCard) {
+    public Inventory(long id, String color, String size, int quantity, int cardId) {
         this.id = id;
         this.color = color;
         this.size = size;
@@ -47,10 +52,10 @@ public class Inventory implements Serializable {
         this.sockCard = sockCard;
     }
 
-    public Inventory(String color, String size, int quantity) {
+    public Inventory(String color, String size, SockCard sockCard) {
         this.color = color;
         this.size = size;
-        this.quantity = quantity;
+        this.sockCard = sockCard;
     }
 
     public long getId() {
@@ -69,7 +74,7 @@ public class Inventory implements Serializable {
         return quantity;
     }
 
-    public SockCard getProductCardsId() {
+    public SockCard getSockCard() {
         return sockCard;
     }
 
@@ -89,7 +94,18 @@ public class Inventory implements Serializable {
         this.quantity = quantity;
     }
 
-    public void setProductCardsId(SockCard productCards) {
-        this.sockCard = productCards;
+    public void setSockCard(SockCard sockCard) {
+        this.sockCard = sockCard;
+    }
+
+    @Override
+    public String toString() {
+        return "Inventory{" +
+                "id=" + id +
+                ", color='" + color + '\'' +
+                ", size='" + size + '\'' +
+                ", quantity=" + quantity +
+                ", sockCard=" + sockCard +
+                '}';
     }
 }

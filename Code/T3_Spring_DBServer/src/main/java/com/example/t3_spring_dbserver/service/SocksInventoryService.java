@@ -1,7 +1,7 @@
 package com.example.t3_spring_dbserver.service;
 
+import com.example.t3_spring_dbserver.DTOs.InventoryDto;
 import com.example.t3_spring_dbserver.entity.Inventory;
-import com.example.t3_spring_dbserver.repository.ISockCardRepository;
 import com.example.t3_spring_dbserver.repository.ISocksInventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,13 +36,14 @@ public class SocksInventoryService implements ISocksInventoryService {
     }
 
     @Override
-    public void updateInventory(Inventory inventory) {
-        Optional<Inventory> inventoryToUpdate = repository.findById(inventory.getId());
-        inventoryToUpdate.get().setColor(inventory.getColor());
-        inventoryToUpdate.get().setSize(inventory.getSize());
-        inventoryToUpdate.get().setQuantity(inventory.getQuantity());
+    public Inventory updateInventory(InventoryDto dto) {
+        Optional<Inventory> inventoryToUpdate = repository.findById(dto.getId());
+        inventoryToUpdate.get().setColor(dto.getColor());
+        inventoryToUpdate.get().setSize(dto.getSize());
+        inventoryToUpdate.get().setQuantity(dto.getQuantity());
 
         repository.save(inventoryToUpdate.get());
+        return null;
     }
 
     @Override
