@@ -21,6 +21,8 @@
     </ItemGroup>
     <ItemGroup>
         <Protobuf Include="protos\socksComunicator.proto" />
+        <Protobuf Include="protos\SocksInventoryComunicator.proto" />
+        
     </ItemGroup>
 
 </Project>

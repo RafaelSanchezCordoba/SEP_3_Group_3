@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kHaZcPbdkUr778S/r9vQG8jdbSqg42gF6giGXNBwhzXCpBkYPi/vf2yMCUavV3TeaGDLk5K9Y76wRilkUlvS1g==",
+  "dgSpecHash": "kOQrQX2eorWQk6sQSJXVn+xPxCVTwLXmlvVUljwJtczuYS3/EDh0Mm4jmjws2Dk0tcX2TM7IVCphQ6o6q6kPaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexd\\IdeaProjects\\SEP3\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj",
+  "projectFilePath": "C:\\Users\\maria\\OneDrive\\Escritorio\\SEP_3_Group_3\\Code\\T2_SEP3\\GrpcDataAccess\\GrpcDataAccess.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alexd\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\grpc\\2.46.5\\grpc.2.46.5.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\grpc.core.api\\2.46.5\\grpc.core.api.2.46.5.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\grpc.tools\\2.50.0\\grpc.tools.2.50.0.nupkg.sha512",
-    "C:\\Users\\alexd\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\maria\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc\\2.46.5\\grpc.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc.core.api\\2.46.5\\grpc.core.api.2.46.5.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\grpc.tools\\2.50.0\\grpc.tools.2.50.0.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

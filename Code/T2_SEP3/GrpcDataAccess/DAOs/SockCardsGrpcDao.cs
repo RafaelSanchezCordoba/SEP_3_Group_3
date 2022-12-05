@@ -37,7 +37,7 @@ public class SockCardsGrpcDao: ISockCardDao
           return Task.FromResult(sockCard);
         
      }
-     //get all doesn t work
+ 
 
      public async Task<IEnumerable<SocksCard>> GetAsync()
      {
