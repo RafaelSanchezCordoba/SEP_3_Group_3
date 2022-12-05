@@ -29,7 +29,8 @@
                     <td>@inv.Color</td>
                     <td>@inv.Quantity</td>
                     
-                    <td><button @onclick="@(()=>Add(@inv.Id))">Add</button></td>
+                    <td><button @onclick="@(()=>Add(@inv.Id,@addQnt))">Add+</button></td>
+                    <td><input type="number" @bind-value="addQnt"/></td>
                    
                 </tr>
             }
@@ -37,7 +38,7 @@
         </table>
        
     }
-    <button></button>
+    <button @onclick="@(()=>GoToCreateSockInvenotry(Id))">Add new type of Sock to Inventory</button>
     <p>@msg</p>
 
 
@@ -48,6 +49,7 @@
 
     private ICollection<Inventory> cardInv;
     private string msg = "";
+    private int addQnt = 0;
 
     protected override async Task OnInitializedAsync()
     {
@@ -63,10 +65,29 @@
     }
 
 
-    
-    private void Add(int id)
+    private void GoToCreateSockInvenotry(int id)
     {
-        //impl here 
+        NavManager.NavigateTo($"CreateSocksInventory/{id}");
+    }
+
+    private async void Add(int invId,int qnt)
+    {
+        Inventory invToUpdate;
+        try
+        {
+            invToUpdate = await _inventoryService.getByIdAsync(invId);
+            invToUpdate.Quantity += qnt;
+            await  _inventoryService.updateAsync(invToUpdate);
+            await OnInitializedAsync();
+           
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+        
     }
 
 

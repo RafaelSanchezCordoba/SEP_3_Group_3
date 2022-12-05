@@ -1,40 +1,5 @@
 {
-
-
-
-  "Users": [
-    {
-      "Id": 1,
-      "Email": "admin",
-      "Password": "admin",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Manager"
-    },
-    {
-      "Id": 2,
-      "Email": "string",
-      "Password": "string",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
-    }],
-
   "Inventories": [
-    {
-      "CardId": 1,
-      "Color": "blue",
-      "Size": "m",
-      "Quantity": 0,
-      "Id": 3
-    },
-    {
-      "CardId": 2,
-      "Color": "red",
-      "Size": "xs",
-      "Quantity": 4,
-      "Id": 4
-    },
     {
       "CardId": 2,
       "Color": "red",
@@ -106,13 +71,6 @@
       "Id": 14
     },
     {
-      "CardId": 4,
-      "Color": "blue",
-      "Size": "xs",
-      "Quantity": 56,
-      "Id": 15
-    },
-    {
       "CardId": 5,
       "Color": "blue",
       "Size": "s",
@@ -144,8 +102,43 @@
       "CardId": 1,
       "Color": "yellow",
       "Size": "m",
-      "Quantity": 100,
+      "Quantity": 20,
+      "Id": 22
+    },
+    {
+      "CardId": 2,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 10003,
+      "Id": 4
+    },
+    {
+      "CardId": 1,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 1993,
+      "Id": 3
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "s",
+      "Quantity": 43,
+      "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 178,
       "Id": 20
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "xs",
+      "Quantity": 80,
+      "Id": 15
     }
   ],
   "ShoppingCarts": [
@@ -294,6 +287,24 @@
       "Color": "yellow"
     }
   ],
+  "Users": [
+    {
+      "Id": 1,
+      "Email": "admin",
+      "Password": "admin",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Manager"
+    },
+    {
+      "Id": 2,
+      "Email": "string",
+      "Password": "string",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
+    }
+  ],
   "CardItems": [
     {
       "Id": 1,
@@ -354,7 +365,6 @@
       "Quantity": 2,
       "ShoppingCartId": 1,
       "ProductId": 4
-
     }
   ]
 }
