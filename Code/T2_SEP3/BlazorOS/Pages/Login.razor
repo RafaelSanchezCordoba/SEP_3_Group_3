@@ -6,28 +6,17 @@
 
 <AuthorizeView>
     <NotAuthorized>
-        <div class="card">
-            <h3>Please login</h3>
-            <div class="field">
-                <label>email:</label>
-                <input type="text" @bind="email"/>
-            </div>
-            <div class="field">
-                <label style="text-align: center">Password:</label>
-                <input type="password" @bind="password"/>
-            </div>
-            @if (!string.IsNullOrEmpty(errorLabel))
-            {
-                <div class="field">
-                    <label style="color: red">
-                        @errorLabel
-                    </label>
-                </div>
-            }
-            <div class="field">
-                <button class="loginbtn" @onclick="LoginAsync">Log in</button>
-            </div>
-        </div>
+       
+         <div class="card">
+             <h2>LOGIN</h2>
+             <label>Email</label>
+                 <input type="text" @bind="email"/>
+               <label>Password</label>
+                <input type="password" @bind="password" />
+             <button @onclick="LoginAsync"class="myButton">Login</button>
+                 <a href="/CreateAccount" id="signup">Don't have account yet?</a>
+         </div>
+        
     </NotAuthorized>
     <Authorized>
         <div class="card">
@@ -49,9 +38,7 @@
         try
         {
             await _userService.LoginAsync(email, password);
-            
-          
-          //  navMgr.NavigateTo("/");
+            navMgr.NavigateTo("/");
         }
         catch (Exception e)
         {

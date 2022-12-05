@@ -9,5 +9,6 @@ public class Adress
     public int PostCode { get; set; }
     public string Street { get; set; }
     public int Number { get; set; }
+    public string ExtraInfo { get; set; }
   
 }
