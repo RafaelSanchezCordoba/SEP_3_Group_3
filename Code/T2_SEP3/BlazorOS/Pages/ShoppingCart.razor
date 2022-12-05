@@ -37,10 +37,10 @@
                     <p style="color: @p.Color">@p.Color</p>
                 </td>
                 <td class="price-td">@card.Price</td>
-                <td>
+                <td  @onclick="ChangeQuantity" >
                     <label>@cardItem.Quantity</label>
-                    <div  @onclick="(() => { IncreaseQuantity(p.Id, cardItem.Quantity); })"  class="myButton">+</div>
-                    <div @onclick="(() => {  DecreaseQuantity(p.Id,cardItem.Quantity);  })" class="myButton">-</div>
+                    <div  @onclick="(() => { IncreaseQuantity(p.Id, cardItem.Quantity);})"  class="myButton">+</div>
+                    <div @onclick="(() => {  DecreaseQuantity(p.Id,cardItem.Quantity);})" class="myButton">-</div>
                 </td>
                 <td >@totalPrice</td>
                 <td><div @onclick="(() => { RemoveProduct(p.Id); })"  class="myButton">Remove</div></td>
@@ -114,6 +114,7 @@
        await cardItemService.UpdateQuantityAsync(productId,quantity);
         SocksCard card = await socksCardService.GetById(productId);
         subtotal += card.Price;
+        
 
     }
     
@@ -123,6 +124,11 @@
        await cardItemService.UpdateQuantityAsync(productId, quantity);
         SocksCard card = await socksCardService.GetById(productId);
         subtotal -= card.Price;
+      
     }
-   
+
+    protected async Task ChangeQuantity()
+    {
+        StateHasChanged();
+    }
 }
