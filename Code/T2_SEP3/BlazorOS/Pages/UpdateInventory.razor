@@ -1,0 +1,94 @@
+@page "/UpdateInventory/{Id:int}"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+
+@inject ISockInventoryService _inventoryService
+@inject NavigationManager NavManager
+
+
+@if (cardInv == null)
+    {
+        <p>No inventory for this card</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>size</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>button</th>
+            </thead>
+            <tbody>
+            @foreach (var inv in cardInv)
+            {
+                <tr>
+                    <td>@inv.Id</td>
+                    <td>@inv.Size</td>
+                    <td>@inv.Color</td>
+                    <td>@inv.Quantity</td>
+                    
+                    <td><button @onclick="@(()=>Add(@inv.Id,@addQnt))">Add+</button></td>
+                    <td><input type="number" @bind-value="addQnt"/></td>
+                   
+                </tr>
+            }
+            </tbody>
+        </table>
+       
+    }
+    <button @onclick="@(()=>GoToCreateSockInvenotry(Id))">Add new type of Sock to Inventory</button>
+    <p>@msg</p>
+
+
+@code {
+    
+    [Parameter]
+    public int Id { get; set; }
+
+    private ICollection<Inventory> cardInv;
+    private string msg = "";
+    private int addQnt = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            cardInv = await _inventoryService.GetByCardIdAsync(Id);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+
+    private void GoToCreateSockInvenotry(int id)
+    {
+        NavManager.NavigateTo($"CreateSocksInventory/{id}");
+    }
+
+    private async void Add(int invId,int qnt)
+    {
+        Inventory invToUpdate;
+        try
+        {
+            invToUpdate = await _inventoryService.getByIdAsync(invId);
+            invToUpdate.Quantity += qnt;
+            await  _inventoryService.updateAsync(invToUpdate);
+            await OnInitializedAsync();
+           
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+        
+    }
+
+
+}

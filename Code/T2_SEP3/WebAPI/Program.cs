@@ -1,9 +1,17 @@
+using System.Text;
 using Application.DaoInterfaces;
 using Application.Logic;
 using Application.LogicInterfaces;
 using FileData;
 using FileData.DAOs;
+
 using GrpcDataAccess.DAOs;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Shared.Auth;
+
+using Microsoft.AspNetCore.WebSockets;
+
 using Shared.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,11 +24,42 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
+<<<<<<< HEAD
 
 builder.Services.AddScoped<ISockCardDao, SockCardsFileDao>();
+=======
+builder.Services.AddScoped<ISockCardDao,SockCardsFileDao >();
+>>>>>>> Auth_Impl
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
+builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
+builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
 builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
+
+builder.Services.AddScoped<IUserLogic,UserLogic>();
+builder.Services.AddScoped<IUserDao,UserDaoFile>();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
+
+AuthorizationPolicies.AddPolicies(builder.Services);
+
+
+builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+builder.Services.AddScoped<ISocksDao, SocksFileDao>();
+builder.Services.AddScoped<ICardItemDao, CardItemFileDao>();
+builder.Services.AddScoped<ICardItemLogic, CardItemLogic>();
 
 
 
@@ -37,6 +76,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 

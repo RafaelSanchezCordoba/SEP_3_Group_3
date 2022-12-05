@@ -1,0 +1,50 @@
+@page "/Login"
+@using HttpClients.ClientInterfaces
+@inject IUserService _userService
+@inject NavigationManager navMgr
+
+
+<AuthorizeView>
+    <NotAuthorized>
+       
+         <div class="card">
+             <h2>LOGIN</h2>
+             <label>Email</label>
+                 <input type="text" @bind="email"/>
+               <label>Password</label>
+                <input type="password" @bind="password" />
+             <button @onclick="LoginAsync"class="myButton">Login</button>
+                 <a href="/CreateAccount" id="signup">Don't have account yet?</a>
+         </div>
+        
+    </NotAuthorized>
+    <Authorized>
+        <div class="card">
+            <h3>Hello Manager: @context.User.HasClaim("Authorization","Manager") </h3>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private string email = "";
+    private string password = "";
+    private string errorLabel = "";
+    private string message = "";
+    
+
+    private async Task LoginAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            await _userService.LoginAsync(email, password);
+            navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+    
+}

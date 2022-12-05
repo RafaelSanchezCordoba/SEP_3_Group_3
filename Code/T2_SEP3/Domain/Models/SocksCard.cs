@@ -6,6 +6,7 @@ public class SocksCard:ProductCard
     {
    
     }
+<<<<<<< HEAD
   /*
    this breaks the api
    public SocksCard(int id,string title, string description, double price, string material, string brand, string image, string type): base(id,title,description,price,material,brand,image,type)
@@ -13,5 +14,12 @@ public class SocksCard:ProductCard
    
     }
     **/
+=======
+
+   
+>>>>>>> Auth_Impl
     
+
+    public SocksCard(){}
+
 }

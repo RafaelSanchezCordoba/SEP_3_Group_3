@@ -5,7 +5,6 @@
 @inject NavigationManager _navigationManager;
 
 <h3>ManageSocks</h3>
-<button onclick="@LoadCards">Load</button>
 @if(sockCards ==null){
 }
 else if (!sockCards.Any())
@@ -15,12 +14,13 @@ else if (!sockCards.Any())
 else
 {
     <table class="table">
-        <thread>
+        <thead>
             <th>id</th>
             <th>title</th>
             <th>button1</th>
-            <th>button2</th>
-        </thread>
+        <th>button2</th>
+        </thead>
+
         <tbody>
         @foreach (var card in sockCards)
         {
@@ -29,6 +29,7 @@ else
                 <td>@card.Title</td>
                 <td><button @onclick="@(()=>Edit(@card.Id))">edit</button></td>
                 <td><button @onclick="@(()=>RemoveCardById(@card.Id))">remove</button></td>
+               
             </tr>
         }
         </tbody>
@@ -45,7 +46,7 @@ else
     {
         try
         {
-            base.OnInitialized();
+           
             sockCardsLoaded = await sockService.GetAllSockCards();
             sockCards = sockCardsLoaded;
         }
@@ -55,6 +56,20 @@ else
             throw ;
         }
         
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        try
+        {
+            sockCardsLoaded = await sockService.GetAllSockCards();
+            sockCards = sockCardsLoaded;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw ;
+        }
     }
 
     private async Task RemoveCardById(int id)
@@ -75,6 +90,11 @@ else
     public void Edit(int cardId)
     {
         _navigationManager.NavigateTo($"EditSockCard/{cardId}");
+    }
+
+    public void Restock(int cardId)
+    {
+        _navigationManager.NavigateTo($"UpdateInventory/{cardId}");
     }
 
 

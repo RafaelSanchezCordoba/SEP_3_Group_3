@@ -50,17 +50,45 @@ public class SocksInventoryLogic:ISocksInventoryLogic
         return inventoryDao.GetByCardIdAsync(id);
     }
 
+<<<<<<< HEAD
 
     public Task UpdateAsync(Inventory dto)
 
+=======
+    public async Task UpdateAsync(Inventory inventory)
+>>>>>>> Auth_Impl
     {
-        throw new NotImplementedException();
+        Inventory? existing = await inventoryDao.GetById(inventory.Id);
+
+        if (existing == null)
+        {
+            throw new Exception($"Inventory with ID {inventory.Id} not found!!!");
+        }
+        
+        string colorToUse =inventory.Color ?? existing.Color;
+        string sizeToUse = inventory.Size ?? existing.Size;
+        long quantityToUse = inventory.Quantity ;
+        int cardIdToUse =  inventory.CardId;
+
+        Inventory updated = new Inventory(cardIdToUse,colorToUse,sizeToUse,quantityToUse)
+        {
+            Id = existing.Id
+        };
+        
+        
+        await inventoryDao.UpdateAsync((Inventory)updated);
     }
 
+<<<<<<< HEAD
     public async Task DeleteFromCardAsync(int id){
 
       
        
+=======
+
+    public async Task DeleteFromCardAsync(int id)
+    {
+>>>>>>> Auth_Impl
        Task<IEnumerable<Inventory>> toBeDeleted = inventoryDao.GetByCardIdAsync(id);
 
        if (toBeDeleted==null)

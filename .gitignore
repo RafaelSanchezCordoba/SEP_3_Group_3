@@ -8,3 +8,7 @@ Code/T2_SEP3/.idea/.idea.OnlineShop/.idea/workspace.xml
 Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache
 Code/T2_SEP3/.idea/.idea.OnlineShop/.idea/workspace.xml
 Code/T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.dll
+*.pdb
+*.cache
+*.cache
+*.dll

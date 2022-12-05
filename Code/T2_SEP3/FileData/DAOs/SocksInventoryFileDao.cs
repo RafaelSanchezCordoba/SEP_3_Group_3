@@ -53,9 +53,18 @@ public class SocksInventoryFileDao:ISocksInventoryDao
         return Task.FromResult(result);
     }
 
-    public Task UpdateAsync(Inventory dto)
+    public Task UpdateAsync(Inventory inventory)
     {
-        throw new NotImplementedException();
+        Inventory? existing = context.Inventories.FirstOrDefault(card => card.Id == inventory.Id);
+        if (existing == null)
+        {
+            throw new Exception($"Inventory with ID {inventory.Id} does not exist!!!");
+        }
+
+        context.Inventories.Remove(existing);
+        context.Inventories.Add(inventory);
+        context.SaveChanges();
+        return Task.CompletedTask;
     }
 
     public Task DeleteFromCardAsync(int id)

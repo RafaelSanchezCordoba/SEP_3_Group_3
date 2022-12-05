@@ -16,6 +16,14 @@ public class FileContext
             return dataContainer!.Inventories;
         }
     }
+    public ICollection<ShoppingCart> ShoppingCarts
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.ShoppingCarts;
+        }
+    }
     public ICollection<Socks> Socks
     {
         get
@@ -32,6 +40,29 @@ public class FileContext
             return dataContainer!.SocksCards;
         }
     }
+
+
+    public ICollection<User> Users
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.Users;
+        }
+    }
+
+    public ICollection<CardItem> CardItems
+        {
+        get
+        {
+            LoadData();
+            return dataContainer!.CardItems;
+        }
+    }
+
+
+    
+
     private void LoadData()
     {
         if (dataContainer != null) return;
@@ -42,7 +73,12 @@ public class FileContext
             {
                 Inventories = new List<Inventory>(),
                 SocksCards = new List<SocksCard>(),
-                Socks = new List<Socks>()
+                Socks = new List<Socks>(),
+
+                Users = new List<User>(),
+                ShoppingCarts = new List<ShoppingCart>(),
+                CardItems = new List<CardItem>()
+
             };
             return;
         }
