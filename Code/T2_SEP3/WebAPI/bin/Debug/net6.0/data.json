@@ -93,6 +93,7 @@
     },
     {
       "CardId": 4,
+<<<<<<< Updated upstream
       "Color": "blue",
       "Size": "xs",
       "Quantity": 80,
@@ -100,28 +101,54 @@
     },
     {
       "CardId": 1,
+=======
+>>>>>>> Stashed changes
       "Color": "blue",
-      "Size": "m",
-      "Quantity": 2018,
-      "Id": 3
+      "Size": "xs",
+      "Quantity": 80,
+      "Id": 15
     },
     {
       "CardId": 1,
       "Color": "yellow",
+      "Size": "m",
+<<<<<<< Updated upstream
+      "Quantity": 2018,
+      "Id": 3
+=======
+      "Quantity": 119,
+      "Id": 22
+>>>>>>> Stashed changes
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+<<<<<<< Updated upstream
       "Size": "m",
       "Quantity": 122,
       "Id": 22
+=======
+      "Size": "s",
+      "Quantity": 132,
+      "Id": 21
+>>>>>>> Stashed changes
     },
     {
       "CardId": 1,
-      "Color": "yellow",
+      "Color": "blue",
       "Size": "m",
+<<<<<<< Updated upstream
       "Quantity": 201,
       "Id": 20
+=======
+      "Quantity": 2016,
+      "Id": 3
+>>>>>>> Stashed changes
     },
     {
       "CardId": 1,
       "Color": "yellow",
+<<<<<<< Updated upstream
       "Size": "s",
       "Quantity": 156,
       "Id": 21
@@ -139,6 +166,11 @@
       "Size": "xxl",
       "Quantity": 23,
       "Id": 6
+=======
+      "Size": "m",
+      "Quantity": 200,
+      "Id": 20
+>>>>>>> Stashed changes
     }
   ],
   "ShoppingCarts": [
@@ -315,6 +347,27 @@
       "Id": 15,
       "Size": "s",
       "Color": "red"
+<<<<<<< Updated upstream
+=======
+    },{
+      "ProductCardId": 1,
+      "Id": 12,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 13,
+      "Size": "l",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 14,
+      "Size": "l",
+      "Color": "blue"
+
+>>>>>>> Stashed changes
     }
   ],
   "Users": [
@@ -383,6 +436,12 @@
       "Quantity": 1,
       "ShoppingCartId": 1,
       "ProductId": 13
+<<<<<<< Updated upstream
+    },
+    {
+      "Id": 2,
+      "Quantity": 3,
+=======
     },
     {
       "Id": 2,
@@ -405,6 +464,43 @@
     {
       "Id": 11,
       "Quantity": 5,
+>>>>>>> Stashed changes
+      "ShoppingCartId": 1,
+      "ProductId": 2
+    },
+    {
+<<<<<<< Updated upstream
+      "Id": 5,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+    },
+    {
+      "Id": 13,
+      "Quantity": 2,
+      "ShoppingCartId": 1,
+      "ProductId": 15
+=======
+      "Id": 6,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 6
+    },{
+      "Id": 12,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 12
+    },
+    {
+      "Id": 2,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 2
+>>>>>>> Stashed changes
+    },
+    {
+      "Id": 11,
+      "Quantity": 5,
       "ShoppingCartId": 1,
       "ProductId": 11
     },
@@ -412,7 +508,29 @@
       "Id": 6,
       "Quantity": 3,
       "ShoppingCartId": 1,
+<<<<<<< Updated upstream
       "ProductId": 6
+=======
+      "ProductId": 4
+    },
+    {
+      "Id": 13,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 13
+    },
+    {
+      "Id": 14,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 14
+    },
+    {
+      "Id": 5,
+      "Quantity": 6,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+>>>>>>> Stashed changes
     }
   ]
 }

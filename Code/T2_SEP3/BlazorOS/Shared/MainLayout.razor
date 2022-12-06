@@ -1,5 +1,7 @@
-﻿@inherits LayoutComponentBase
+﻿@using HttpClients.ClientInterfaces
+@inherits LayoutComponentBase
 @inject NavigationManager NavManager
+@inject IUserService authService
 
 <div class="page">
     <div class="sidebar">
@@ -10,11 +12,35 @@
         <div class="top-row px-4">
            
             <img  style="width: 44px; float: right" src="https://static.thenounproject.com/png/1709580-200.png" @onclick="@(() => NavManager.NavigateTo("/ShoppingCart"))"/>
-            <LoginButtons/>
-            </div>
+            <AuthorizeView>
+                <Authorized>
+                    <img style="width: 44px" src="https://static.thenounproject.com/png/1251649-200.png" @onclick="Logout"/>
+                </Authorized>
+                <NotAuthorized>
+                    <img style="width: 44px" src="https://static.thenounproject.com/png/1401845-200.png" @onclick="Login"/>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
 
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+
+
+@code {
+
+    private void Login()
+    {
+        NavManager.NavigateTo("/Login");
+    }
+
+    private async Task Logout()
+    {
+        await authService.LogoutAsync();
+        NavManager.NavigateTo("/");
+    }
+
+}
