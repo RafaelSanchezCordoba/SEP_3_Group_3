@@ -47,21 +47,15 @@
     [Parameter]
     public int Id { get; set; }
 
-    private ICollection<Inventory> cardInv;
+    private ICollection<Inventory> cardInv { get; set; }
     private string msg = "";
     private int addQnt = 0;
 
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
+        
             cardInv = await _inventoryService.GetByCardIdAsync(Id);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
+        
     }
 
 
@@ -70,7 +64,7 @@
         NavManager.NavigateTo($"CreateSocksInventory/{id}");
     }
 
-    private async void Add(int invId,int qnt)
+    protected async Task Add(int invId,int qnt)
     {
         Inventory invToUpdate;
         try

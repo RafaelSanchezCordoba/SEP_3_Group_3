@@ -71,13 +71,6 @@
       "Id": 14
     },
     {
-      "CardId": 4,
-      "Color": "blue",
-      "Size": "xs",
-      "Quantity": 56,
-      "Id": 15
-    },
-    {
       "CardId": 5,
       "Color": "blue",
       "Size": "s",
@@ -109,13 +102,6 @@
       "CardId": 1,
       "Color": "yellow",
       "Size": "m",
-      "Quantity": 100,
-      "Id": 20
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
       "Quantity": 20,
       "Id": 22
     },
@@ -139,6 +125,20 @@
       "Size": "s",
       "Quantity": 43,
       "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 178,
+      "Id": 20
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "xs",
+      "Quantity": 80,
+      "Id": 15
     }
   ],
   "ShoppingCarts": [
