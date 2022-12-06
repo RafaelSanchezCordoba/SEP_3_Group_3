@@ -8,54 +8,61 @@
 @inject ICardItemService cardItemService
 @inject NavigationManager navMgr
 
-<h3>Item summary (@productList.Count)</h3>
-<div class="table-div">
-    <table class="table">
-        <thead>
+@if (productList == null)
+{
+    <p>no items in the cart</p>
+}
+else
+{
+    <h3>Item summary (@productList.Count)</h3>
+    <div class="table-div">
+        <table class="table">
+            <thead>
             <th></th>
             <th>Item</th>
             <th>Price</th>
             <th>Quantity</th>
-        <th>Total</th>
-        <th></th>
-        </thead>
-        <tbody>
-         @foreach (var p in productList)
-         {
-             p.ToString();
-         }
-     
-        @foreach (var p in productList)
-        {
-            ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-            CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
-            double totalPrice = @card.Price * @cardItem.Quantity;
-            <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
-                <td >
-                    <p>@card.Title</p>
-                    <p>@p.Size.ToUpper()</p>
-                    <p style="color: @p.Color">@p.Color</p>
-                </td>
-                <td class="price-td">@card.Price</td>
-                <td  @onclick="ChangeQuantity" >
-                    <label>@cardItem.Quantity</label>
-                    <div  @onclick="(() => { IncreaseQuantity(p.Id, cardItem.Quantity);})"  class="myButton">+</div>
-                    <div @onclick="(() => {  DecreaseQuantity(p.Id,cardItem.Quantity);})" class="myButton">-</div>
-                </td>
-                <td >@totalPrice</td>
-                <td><div @onclick="(() => { RemoveProduct(p.Id); })"  class="myButton">Remove</div></td>
-            </tr>
-        }
-        </tbody>
-    </table>
+            <th>Total</th>
+            <th></th>
+            </thead>
+            <tbody>
+            
+            @foreach (var p in productList)
+            {
+                ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+                CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+                double totalPrice = @card.Price * @cardItem.Quantity;
+                <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
+                    <td >
+                        <p>@card.Title</p>
+                        <p>@p.Size.ToUpper()</p>
+                        <p style="color: @p.Color">@p.Color</p>
+                        
+                    </td>
+                    <td class="price-td">@card.Price</td>
+                    <td @onclick="ChangeQuantity">
+                        <label>@cardItem.Quantity</label>
+                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity))" class="myButton">+</div>
+                        <div @onclick="(() => { DecreaseQuantity(p.Id, cardItem.Quantity); })" class="myButton">-</div>
+                    </td>
+                    <td >@totalPrice</td>
+                    <td>
+                        <div @onclick="(() => { RemoveProduct(p.Id); })" class="myButton">Remove</div></td>
+                </tr>
+            }
+            </tbody>
+        </table>
     </div>
+}
 
 <div class="order-summary-div">
     <b>Order Summary</b>
     <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
     <button class="myButton" id="checkout-btn">Checkout</button>
-   <p>Apply a coupon code or points on the next step</p>
+    <p>Apply a coupon code or points on the next step</p>
 </div>
+
+<button @onclick="LoadData">Force Load</button>
 
 
 @code {
@@ -112,26 +119,30 @@
     {
         quantity++;
         await cardItemService.UpdateQuantityAsync(productId,quantity);
-        SocksCard card = await socksCardService.GetById(productId);
-        subtotal += card.Price;
-<<<<<<< Updated upstream
-=======
-        StateHasChanged();
+      //  SocksCard card = await socksCardService.GetById(productId);
+       // subtotal += card.Price;
+        await LoadData();
 
->>>>>>> Stashed changes
     }
     
     protected async Task DecreaseQuantity(int productId, int quantity)
     {
         quantity--;
        await cardItemService.UpdateQuantityAsync(productId, quantity);
-        SocksCard card = await socksCardService.GetById(productId);
-        subtotal -= card.Price;
-      
+     //   SocksCard card = await socksCardService.GetById(productId);  for some reason this gives an error while accessing the sock cards
+    //    subtotal -= card.Price;  so sub total doesn't work
+       await LoadData();
+
     }
 
     protected async Task ChangeQuantity()
     {
         StateHasChanged();
     }
+
+    public async Task LoadData()
+    {
+        items = (List<CardItem?>)await cardItemService.GetAsync();
+    }
+
 }

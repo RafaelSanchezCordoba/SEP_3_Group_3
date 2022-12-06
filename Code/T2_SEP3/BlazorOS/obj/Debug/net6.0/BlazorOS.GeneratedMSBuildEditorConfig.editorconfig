@@ -34,20 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 [C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Refresh.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmcmVzaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
->>>>>>> Stashed changes
-[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/InventoryCreation.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbnRzXEludmVudG9yeUNyZWF0aW9uLnJhem9y
-=======
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/LoginButtons.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbnRzXExvZ2luQnV0dG9ucy5yYXpvcg==
->>>>>>> Stashed changes
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]

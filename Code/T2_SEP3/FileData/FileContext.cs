@@ -74,7 +74,6 @@ public class FileContext
                 Inventories = new List<Inventory>(),
                 SocksCards = new List<SocksCard>(),
                 Socks = new List<Socks>(),
-
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
                 CardItems = new List<CardItem>()
