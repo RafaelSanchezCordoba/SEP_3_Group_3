@@ -114,6 +114,11 @@
         await cardItemService.UpdateQuantityAsync(productId,quantity);
         SocksCard card = await socksCardService.GetById(productId);
         subtotal += card.Price;
+<<<<<<< Updated upstream
+=======
+        StateHasChanged();
+
+>>>>>>> Stashed changes
     }
     
     protected async Task DecreaseQuantity(int productId, int quantity)
