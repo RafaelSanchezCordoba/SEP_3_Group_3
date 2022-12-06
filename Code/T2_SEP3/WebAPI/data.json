@@ -1,20 +1,6 @@
 {
   "Inventories": [
     {
-      "CardId": 2,
-      "Color": "red",
-      "Size": "s",
-      "Quantity": 6,
-      "Id": 5
-    },
-    {
-      "CardId": 2,
-      "Color": "red",
-      "Size": "m",
-      "Quantity": 6,
-      "Id": 6
-    },
-    {
       "CardId": 9,
       "Color": "grey",
       "Size": "xs",
@@ -113,32 +99,46 @@
       "Id": 15
     },
     {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
-      "Quantity": 119,
-      "Id": 22
+      "CardId": 2,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 23,
+      "Id": 5
     },
     {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "s",
-      "Quantity": 132,
-      "Id": 21
+      "CardId": 2,
+      "Color": "string",
+      "Size": "xxl",
+      "Quantity": 23,
+      "Id": 6
     },
     {
       "CardId": 1,
       "Color": "blue",
       "Size": "m",
-      "Quantity": 2016,
+      "Quantity": 2022,
       "Id": 3
     },
     {
       "CardId": 1,
       "Color": "yellow",
+      "Size": "s",
+      "Quantity": 160,
+      "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
       "Size": "m",
-      "Quantity": 200,
+      "Quantity": 208,
       "Id": 20
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 242,
+      "Id": 22
     }
   ],
   "ShoppingCarts": [

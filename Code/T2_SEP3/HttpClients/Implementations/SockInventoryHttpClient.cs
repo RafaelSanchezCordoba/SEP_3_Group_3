@@ -80,14 +80,15 @@ public class SockInventoryHttpClient:ISockInventoryService
         {
             string inventoryAsJson = JsonSerializer.Serialize(inventory);
             StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/socksInventory/", body);
+            HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/SocksInventory/", body);
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {
                 throw new Exception(content);
             }
 
-            Inventory inventoryResult = JsonSerializer.Deserialize<Inventory>(content,
+            var inventoryResult = string.IsNullOrEmpty(content)?null
+                : JsonSerializer.Deserialize<Inventory>(content,
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true

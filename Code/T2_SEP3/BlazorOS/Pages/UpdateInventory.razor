@@ -1,9 +1,10 @@
 @page "/UpdateInventory/{Id:int}"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-
 @inject ISockInventoryService _inventoryService
 @inject NavigationManager NavManager
+
+
 
 
 @if (cardInv == null)
@@ -18,7 +19,8 @@
                 <th>size</th>
                 <th>Color</th>
                 <th>Quantity</th>
-                <th>button</th>
+            <th>button</th>
+            <th>input</th>
             </thead>
             <tbody>
             @foreach (var inv in cardInv)
@@ -29,7 +31,8 @@
                     <td>@inv.Color</td>
                     <td>@inv.Quantity</td>
                     
-                    <td><button @onclick="@(()=>Add(@inv.Id,@addQnt))">Add+</button></td>
+                    
+                    <td><button @onclick="@(()=> Add(inv.Id, addQnt) )">Add+</button></td>
                     <td><input type="number" @bind-value="addQnt"/></td>
                    
                 </tr>
@@ -39,6 +42,8 @@
        
     }
     <button @onclick="@(()=>GoToCreateSockInvenotry(Id))">Add new type of Sock to Inventory</button>
+    
+
     <p>@msg</p>
 
 
@@ -64,6 +69,20 @@
         NavManager.NavigateTo($"CreateSocksInventory/{id}");
     }
 
+    public void RefreshPage()
+    {
+        
+        NavManager.NavigateTo($"UpdateInventory/{Id}");
+    }
+
+    public async Task  LoadData()
+    {
+        cardInv = await _inventoryService.GetByCardIdAsync(Id);
+        msg = "";
+        addQnt = 0;
+
+    }
+
     protected async Task Add(int invId,int qnt)
     {
         Inventory invToUpdate;
@@ -71,10 +90,9 @@
         {
             invToUpdate = await _inventoryService.getByIdAsync(invId);
             invToUpdate.Quantity += qnt;
-            await  _inventoryService.updateAsync(invToUpdate);
-            await OnInitializedAsync();
-           
-
+            Inventory inv =   await  _inventoryService.updateAsync(invToUpdate);
+            msg = "the updated quantity si::" + invToUpdate.Quantity;
+            await LoadData();
         }
         catch (Exception e)
         {

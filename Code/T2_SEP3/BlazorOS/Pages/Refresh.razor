@@ -1,0 +1,14 @@
+@page "/refresh"
+@page "/refresh/{text}"
+@inject NavigationManager navMgr
+
+
+@code {
+    [Parameter]
+    public string Text { get; set; }
+    protected override void OnInitialized()
+    {
+        navMgr.NavigateTo(Text);
+    }
+
+}
