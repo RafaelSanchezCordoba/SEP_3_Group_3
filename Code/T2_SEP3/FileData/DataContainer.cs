@@ -13,4 +13,6 @@ public class DataContainer
 
     public ICollection<CardItem> CardItems { get; set; }
 
+    public ICollection<Order> Orders { get; set; }
+
 }

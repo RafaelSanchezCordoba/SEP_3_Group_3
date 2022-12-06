@@ -30,9 +30,10 @@ builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
 builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
 builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
-
 builder.Services.AddScoped<IUserLogic,UserLogic>();
 builder.Services.AddScoped<IUserDao,UserDaoFile>();
+builder.Services.AddScoped<IOrderDao, OrderFileDao>();
+builder.Services.AddScoped<IOrderLogic, OrderLogic>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {

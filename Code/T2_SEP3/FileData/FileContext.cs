@@ -59,6 +59,15 @@ public class FileContext
             return dataContainer!.CardItems;
         }
     }
+    
+    public ICollection<Order>  Orders
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.Orders;
+        }
+    }
 
 
     
@@ -77,7 +86,8 @@ public class FileContext
 
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
-                CardItems = new List<CardItem>()
+                CardItems = new List<CardItem>(),
+                Orders = new List<Order>()
 
             };
             return;
