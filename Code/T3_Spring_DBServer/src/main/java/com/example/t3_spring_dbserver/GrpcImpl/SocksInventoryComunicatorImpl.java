@@ -92,4 +92,33 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcImplBase{
         responseStream.onCompleted();
     }
 
+    @Override
+    public void getByCardId(IntReqInventory req, StreamObserver<inventory> streamObserver) {
+        System.out.println("Received get by card id request with id: " + req.getRequest());
+        List<Inventory> list = service.getByCardId(req.getRequest());
+
+        for (Inventory inventory:list) {
+            SocksInventoryComunicator.inventory protoInventory = SocksInventoryComunicator.inventory.newBuilder()
+                    .setId((int)inventory.getId())
+                    .setColor(inventory.getColor())
+                    .setSize(inventory.getSize())
+                    .setQuantity(inventory.getQuantity())
+                    .setCardId((int)inventory.getSockCard().getId()).build();
+
+            streamObserver.onNext(protoInventory);
+            System.out.println("Inventory added to stream with id: " + protoInventory.getId());
+        }
+        streamObserver.onCompleted();
+
+    }
+
+    @Override
+    public void deleteByCardId(IntReqInventory req, StreamObserver<EmptyInventoryMessage> streamObserver) {
+        System.out.println("Received req to delete inventory with card id: " + req.getRequest());
+        service.deleteByCardId(req.getRequest());
+
+        streamObserver.onNext(EmptyInventoryMessage.newBuilder().build());
+        streamObserver.onCompleted();
+    }
+
 }

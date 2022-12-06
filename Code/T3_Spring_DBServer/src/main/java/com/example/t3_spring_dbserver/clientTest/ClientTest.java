@@ -3,11 +3,13 @@ package com.example.t3_spring_dbserver.clientTest;
 import com.example.t3_spring_dbserver.sockProtoBuff.SockCardGrpcGrpc;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.EmptyInventoryMessage;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryGrpcGrpc;
+
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+
+import java.util.Iterator;
 
 public class ClientTest {
 
@@ -66,13 +68,13 @@ public class ClientTest {
 
 
         // Create Inventory
-//        EmptyInventoryMessage inventoryEmpty = inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
-//                .setColor("red").setSize("xl").setQuantity(9).setCardId(3).build());
+//        SocksInventoryComunicator.EmptyInventoryMessage inventoryEmpty = inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
+//                .setColor("red").setSize("xs").setQuantity(3).setCardId(1).build());
 //
 //        System.out.println("Check db");
 
         // Get all inventories
-//        Iterator<inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
+//        Iterator<SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
 //        for (int i = 1;result.hasNext();i++){
 //            System.out.println(result.next().getId());
 //        }
@@ -82,6 +84,7 @@ public class ClientTest {
 //
 //        System.out.println(inv);
 
+        // Update Inventory
 //        SocksInventoryComunicator.inventory updateReq = SocksInventoryComunicator.inventory.newBuilder()
 //                .setId(7)
 //                .setColor("orange")
@@ -94,8 +97,19 @@ public class ClientTest {
 //        System.out.println(updateResult);
 
         // Delete inventory by id
-        EmptyInventoryMessage deleteReq = inventoryStub.deleteById(SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(4).build());
+//        EmptyInventoryMessage deleteReq = inventoryStub.deleteById(SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(4).build());
+//
+//        System.out.println(deleteReq);
 
-        System.out.println(deleteReq);
+        // Get by card id
+//        Iterator<SocksInventoryComunicator.inventory> result =  inventoryStub.getByCardId(SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(1).build());
+//        for (int i = 1;result.hasNext();i++) {
+//            System.out.println(result);
+//        }
+
+        // Delete inventory by card id
+        SocksInventoryComunicator.EmptyInventoryMessage deleteReq = inventoryStub.deleteByCardId(SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(1).build());
+
+
     }
 }
