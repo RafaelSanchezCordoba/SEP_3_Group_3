@@ -42,8 +42,8 @@ else
                     <td class="price-td">@card.Price</td>
                     <td @onclick="ChangeQuantity">
                         <label>@cardItem.Quantity</label>
-                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity))" class="myButton">+</div>
-                        <div @onclick="(() => { DecreaseQuantity(p.Id, cardItem.Quantity); })" class="myButton">-</div>
+                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">+</div>
+                        <div @onclick="(() => { DecreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId); })" class="myButton">-</div>
                     </td>
                     <td >@totalPrice</td>
                     <td>
@@ -113,24 +113,26 @@ else
             double totalPrice = card.Price * item.Quantity;
             subtotal += totalPrice;
         }
+       await LoadData();
     }
 
-    protected async Task IncreaseQuantity(int productId, int quantity)
+    
+    protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId)
     {
         quantity++;
         await cardItemService.UpdateQuantityAsync(productId,quantity);
-      //  SocksCard card = await socksCardService.GetById(productId);
-       // subtotal += card.Price;
+        SocksCard card = await socksCardService.GetById(sockCardId);
+        subtotal += card.Price;
         await LoadData();
 
     }
     
-    protected async Task DecreaseQuantity(int productId, int quantity)
+    protected async Task DecreaseQuantity(int productId, int quantity,int productCardId)
     {
         quantity--;
        await cardItemService.UpdateQuantityAsync(productId, quantity);
-     //   SocksCard card = await socksCardService.GetById(productId);  for some reason this gives an error while accessing the sock cards
-    //    subtotal -= card.Price;  so sub total doesn't work
+        SocksCard card = await socksCardService.GetById(productCardId); 
+       subtotal -= card.Price; 
        await LoadData();
 
     }

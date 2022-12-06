@@ -36,12 +36,6 @@
       "Products": [
         {
           "ProductCardId": 1,
-          "Id": 8,
-          "Size": "s",
-          "Color": "orange"
-        },
-        {
-          "ProductCardId": 1,
           "Id": 9,
           "Size": "xs",
           "Color": "white"
@@ -121,13 +115,13 @@
   "CardItems": [
     {
       "Id": 8,
-      "Quantity": 6,
+      "Quantity": 8,
       "ShoppingCartId": 1,
       "ProductId": 8
     },
     {
       "Id": 9,
-      "Quantity": 20,
+      "Quantity": 15,
       "ShoppingCartId": 1,
       "ProductId": 9
     }
