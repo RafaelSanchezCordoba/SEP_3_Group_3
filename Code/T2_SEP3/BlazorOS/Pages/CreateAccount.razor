@@ -1,6 +1,73 @@
 @page "/CreateAccount"
-<h3>CreateAccount</h3>
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@inject IUserService _userService
+@inject NavigationManager navMgr
+
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="card">
+             <h2>Create Account</h2>
+             <label>Email</label>
+                 <input type="text" @bind="email"/>
+               <label>Password</label>
+                 <input type="password" @bind="password" />
+                  <label>Repeat Password</label>
+                 <input type="password" @bind="password2" />
+             <button @onclick="CreateUserAsync" class="myButton">Create Account</button>
+             <label style="color: red">@errorLabel</label>
+         </div>
+        
+    </NotAuthorized>
+    <Authorized>
+        <div class="card">
+            <h3>Logout first</h3>
+        </div>
+    </Authorized>
+</AuthorizeView>
 
 @code {
+    private string email = "";
+    private string password = "";
+    private string password2 = "";
+    private string errorLabel = "";
+    private string message = "";
     
+
+    private async Task CreateUserAsync()
+    {
+        errorLabel = "";
+        try
+        {
+          
+            if (email.Equals(""))
+            {
+                throw new Exception("Email cannot be empty");
+            }
+            else if (password.Equals(""))
+            {
+                throw new Exception("Password cannot be empty");
+            }
+            else if (!password.Equals(password2))
+            {
+                throw new Exception("Passwords don't match");
+            }
+            else
+            {
+                 User user = new User()
+                            {
+                                Email = email,
+                                Password = password
+                            };
+                            await _userService.CreateAsync(user, password);
+                            navMgr.NavigateTo("/");
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
 }

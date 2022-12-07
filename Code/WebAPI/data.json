@@ -1,0 +1,248 @@
+{
+  "Stocks": [
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 2,
+      "Id": 1
+    },
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "bing",
+      "Quantity": 2,
+      "Id": 2
+    },
+    {
+      "CardId": 1,
+      "Color": "string",
+      "Size": "string",
+      "Quantity": 0,
+      "Id": 3
+    },
+    {
+      "CardId": 6,
+      "Color": "black",
+      "Size": "xs",
+      "Quantity": 50,
+      "Id": 4
+    },
+    {
+      "CardId": 6,
+      "Color": "black",
+      "Size": "s",
+      "Quantity": 1,
+      "Id": 5
+    },
+    {
+      "CardId": 6,
+      "Color": "black",
+      "Size": "m",
+      "Quantity": 0,
+      "Id": 6
+    },
+    {
+      "CardId": 6,
+      "Color": "black",
+      "Size": "l",
+      "Quantity": 10,
+      "Id": 7
+    },
+    {
+      "CardId": 6,
+      "Color": "black",
+      "Size": "xl",
+      "Quantity": 0,
+      "Id": 8
+    },
+    {
+      "CardId": 9,
+      "Color": "black",
+      "Size": "m",
+      "Quantity": 12,
+      "Id": 9
+    },
+    {
+      "CardId": 9,
+      "Color": "white",
+      "Size": "xs",
+      "Quantity": 50,
+      "Id": 10
+    },
+    {
+      "CardId": 9,
+      "Color": "white",
+      "Size": "m",
+      "Quantity": 19,
+      "Id": 11
+    },
+    {
+      "CardId": 9,
+      "Color": "white",
+      "Size": "l",
+      "Quantity": 3,
+      "Id": 12
+    },
+    {
+      "CardId": 9,
+      "Color": "green",
+      "Size": "xs",
+      "Quantity": 75,
+      "Id": 13
+    },
+    {
+      "CardId": 9,
+      "Color": "green",
+      "Size": "s",
+      "Quantity": 45,
+      "Id": 14
+    },
+    {
+      "CardId": 2,
+      "Color": "red",
+      "Size": "s",
+      "Quantity": 5678,
+      "Id": 15
+    },
+    {
+      "CardId": 5,
+      "Color": "grey",
+      "Size": "xs",
+      "Quantity": 60,
+      "Id": 16
+    },
+    {
+      "CardId": 10,
+      "Color": "green",
+      "Size": "s",
+      "Quantity": 90,
+      "Id": 17
+    },
+    {
+      "CardId": 10,
+      "Color": "green",
+      "Size": "l",
+      "Quantity": 5,
+      "Id": 18
+    },
+    {
+      "CardId": 10,
+      "Color": "orange",
+      "Size": "xs",
+      "Quantity": 1,
+      "Id": 19
+    },
+    {
+      "CardId": 10,
+      "Color": "brown",
+      "Size": "m",
+      "Quantity": 6,
+      "Id": 20
+    }
+  ],
+  "ProductCardsSocks": [
+    {
+      "Title": "Pokemon socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
+      "Type": "",
+      "Id": 1
+    },
+    {
+      "Title": "xdfcgvbhjnk",
+      "Description": "xdcfgvbhjnkm",
+      "Price": 8,
+      "Material": "gvbhjnmk",
+      "Brand": "rdftghjn",
+      "Image": "rdftgyhjk",
+      "Type": "Anklets",
+      "Id": 2
+    },
+    {
+      "Title": "hello",
+      "Description": "ycfvcuvbsuhcb",
+      "Price": 5,
+      "Material": "rctvbhnj",
+      "Brand": "xcfgvbhjn",
+      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
+      "Type": "Executive",
+      "Id": 3
+    },
+    {
+      "Title": "fghjD",
+      "Description": "DXCFGVH",
+      "Price": 1,
+      "Material": "yfghj",
+      "Brand": "dxs",
+      "Image": "https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Socks/REI%20Co-op%20COOLMAX%20EcoMade%20Lightweight%20Hiking%20Quarter%20Socks.jpg",
+      "Type": "Low cut",
+      "Id": 5
+    },
+    {
+      "Title": "Xmas Sock",
+      "Description": "Perfect socks for your elf costume",
+      "Price": 430,
+      "Material": "Recycled polyester",
+      "Brand": "IDK",
+      "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
+      "Type": "Mid calf",
+      "Id": 6
+    },
+    {
+      "Title": "here it is",
+      "Description": "asdjlk\u00F2",
+      "Price": 12,
+      "Material": "jbhkl\u00F2",
+      "Brand": "hjkl",
+      "Image": "asd",
+      "Type": "Extra low cut",
+      "Id": 7
+    },
+    {
+      "Title": "sock no4",
+      "Description": "some nice socks etc etc",
+      "Price": 5,
+      "Material": "recycled polyester",
+      "Brand": "sockssss",
+      "Image": "https://assets.herringshoes.co.uk/_shop/imagelib/6/1530/5556/herring_erbert_sock_in_blue_multi_1.jpg",
+      "Type": "Low cut",
+      "Id": 8
+    },
+    {
+      "Title": "Turtle socks",
+      "Description": "some recycled socks so the turtles can be happy",
+      "Price": 6,
+      "Material": "recycled polyester",
+      "Brand": "seasock",
+      "Image": "https://media2.newlookassets.com/i/newlook/675271545/womens/accessories/socks/pale-blue-turtle-socks.jpg?strip=true\u0026qlt=80\u0026w=720",
+      "Type": "Mid calf",
+      "Id": 9
+    },
+    {
+      "Title": "Avocado socks",
+      "Description": "What do you not understand with \u0022avocado socks\u0022, do I really have to say anything else??",
+      "Price": 650,
+      "Material": "recycled polyester",
+      "Brand": "adidas",
+      "Image": "http://cdn.shopify.com/s/files/1/2511/8826/products/product-image-1695748486.jpg?v=1625647651",
+      "Type": "Low cut",
+      "Id": 10
+    },
+    {
+      "Title": "crfbjmk,l.\u00F1",
+      "Description": "xecrvgbhjmk,",
+      "Price": 7.8,
+      "Material": "dcfgbh",
+      "Brand": "sedrftghj",
+      "Image": "edrcgbhjnmk",
+      "Type": "Invisible",
+      "Id": 11
+    }
+  ],
+  "Products": [],
+  "Socks": []
+}

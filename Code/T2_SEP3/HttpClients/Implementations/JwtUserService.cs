@@ -13,6 +13,24 @@ public class JwtUserService:IUserService
 
     public static string? Jwt { get; private set; } = "";
 
+    public async Task<User> GetByEmail(string email)
+    {
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/user/{email}");
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        User user = JsonSerializer.Deserialize<User>(content, 
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            }
+        )!;
+        return user;
+    }
+
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 
     public Task CreateAsync(User user, string password)

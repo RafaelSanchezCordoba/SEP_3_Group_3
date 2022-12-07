@@ -49,4 +49,9 @@ public class UserLogic:IUserLogic
     {
         throw new NotImplementedException();
     }
+
+    public Task<User> GetByEmail(string email)
+    {
+        return context.GetByEmail(email);
+    }
 }

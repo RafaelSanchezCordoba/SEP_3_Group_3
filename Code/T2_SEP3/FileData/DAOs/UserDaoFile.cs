@@ -53,4 +53,15 @@ public class UserDaoFile:IUserDao
         return Task.FromResult(existingUser);
         
     }
+
+    public Task<User> GetByEmail(string email)
+    {
+        User? existing = context.Users.FirstOrDefault(user => user.Email == email);
+        
+        if (existing == null)
+        {
+            throw new Exception($"customer with email {email} does not exist!");
+        }
+        return Task.FromResult(existing);
+    }
 }

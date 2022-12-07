@@ -93,65 +93,10 @@
     },
     {
       "CardId": 4,
-<<<<<<< Updated upstream
       "Color": "blue",
       "Size": "xs",
       "Quantity": 80,
       "Id": 15
-    },
-    {
-      "CardId": 1,
-=======
->>>>>>> Stashed changes
-      "Color": "blue",
-      "Size": "xs",
-      "Quantity": 80,
-      "Id": 15
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
-<<<<<<< Updated upstream
-      "Quantity": 2018,
-      "Id": 3
-=======
-      "Quantity": 119,
-      "Id": 22
->>>>>>> Stashed changes
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-<<<<<<< Updated upstream
-      "Size": "m",
-      "Quantity": 122,
-      "Id": 22
-=======
-      "Size": "s",
-      "Quantity": 132,
-      "Id": 21
->>>>>>> Stashed changes
-    },
-    {
-      "CardId": 1,
-      "Color": "blue",
-      "Size": "m",
-<<<<<<< Updated upstream
-      "Quantity": 201,
-      "Id": 20
-=======
-      "Quantity": 2016,
-      "Id": 3
->>>>>>> Stashed changes
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-<<<<<<< Updated upstream
-      "Size": "s",
-      "Quantity": 156,
-      "Id": 21
     },
     {
       "CardId": 2,
@@ -166,11 +111,34 @@
       "Size": "xxl",
       "Quantity": 23,
       "Id": 6
-=======
+    },
+    {
+      "CardId": 1,
+      "Color": "blue",
       "Size": "m",
-      "Quantity": 200,
+      "Quantity": 2022,
+      "Id": 3
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "s",
+      "Quantity": 160,
+      "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 208,
       "Id": 20
->>>>>>> Stashed changes
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 242,
+      "Id": 22
     }
   ],
   "ShoppingCarts": [
@@ -347,8 +315,6 @@
       "Id": 15,
       "Size": "s",
       "Color": "red"
-<<<<<<< Updated upstream
-=======
     },{
       "ProductCardId": 1,
       "Id": 12,
@@ -367,7 +333,6 @@
       "Size": "l",
       "Color": "blue"
 
->>>>>>> Stashed changes
     }
   ],
   "Users": [
@@ -436,12 +401,6 @@
       "Quantity": 1,
       "ShoppingCartId": 1,
       "ProductId": 13
-<<<<<<< Updated upstream
-    },
-    {
-      "Id": 2,
-      "Quantity": 3,
-=======
     },
     {
       "Id": 2,
@@ -464,23 +423,10 @@
     {
       "Id": 11,
       "Quantity": 5,
->>>>>>> Stashed changes
       "ShoppingCartId": 1,
-      "ProductId": 2
+      "ProductId": 11
     },
     {
-<<<<<<< Updated upstream
-      "Id": 5,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 5
-    },
-    {
-      "Id": 13,
-      "Quantity": 2,
-      "ShoppingCartId": 1,
-      "ProductId": 15
-=======
       "Id": 6,
       "Quantity": 3,
       "ShoppingCartId": 1,
@@ -496,21 +442,11 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 2
->>>>>>> Stashed changes
     },
     {
-      "Id": 11,
-      "Quantity": 5,
-      "ShoppingCartId": 1,
-      "ProductId": 11
-    },
-    {
-      "Id": 6,
+      "Id": 4,
       "Quantity": 3,
       "ShoppingCartId": 1,
-<<<<<<< Updated upstream
-      "ProductId": 6
-=======
       "ProductId": 4
     },
     {
@@ -530,7 +466,6 @@
       "Quantity": 6,
       "ShoppingCartId": 1,
       "ProductId": 5
->>>>>>> Stashed changes
     }
   ]
 }

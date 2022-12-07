@@ -1,0 +1,14 @@
+*[b-qno29iuakm] {box-sizing: border-box;}
+
+.card[b-qno29iuakm]{
+    background: #bfd1ec;
+    padding: 20px;
+    width: 30%;
+    height: 40%;
+    float: left;
+}
+img[b-qno29iuakm]{
+    width:90% ;
+    height: 50%;
+    float: right;
+}

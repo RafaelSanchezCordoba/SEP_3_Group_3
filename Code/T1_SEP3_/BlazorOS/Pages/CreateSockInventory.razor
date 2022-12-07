@@ -1,0 +1,742 @@
+@page "/CreateSockInventory/{id:int}"
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@using global::Shared.DTOs
+@inject ISockService sockService;
+@inject ISockInventoryService SockInventoryService
+@inject NavigationManager NavManager
+
+<h3>Create Stock</h3>
+
+
+
+<div class="card">
+    <div>
+        <label style="color: black">
+            <input type="checkbox" @onchange="BlackChanged">
+            Black
+        </label>
+        <Modal style="display:@blackValue">
+            <div class="form-group field" display:inline>
+                <label>XS:</label>
+                <input type="number" @bind="xsBlack" @bind:event="oninput" class="stock-input"/>
+
+                <label>S:</label>
+                <input type="number" @bind="sBlack" @bind:event="oninput" class="stock-input"/>
+
+                <label>M:</label>
+                <input type="number" @bind="mBlack" @bind:event="oninput" class="stock-input"/>
+
+                <label>L:</label>
+                <input type="number" @bind="lBlack" @bind:event="oninput" class="stock-input"/>
+
+                <label>XL:</label>
+                <input type="number" @bind="xlBlack" @bind:event="oninput" class="stock-input"/>
+            </div>
+        </Modal>
+    </div>
+    
+    <div>
+        <label style="color: black">
+            <input type="checkbox" @onchange="WhiteChanged">
+            White
+        </label>
+        <Modal style="display:@whiteValue">
+            <div class="form-group field" display:inline><label>XS:</label><input type="number" @bind="xsWhite" @bind:event="oninput" class="stock-input"/><label>S:</label><input type="number" @bind="sWhite" @bind:event="oninput" class="stock-input"/><label>M:</label><input type="number" @bind="mWhite" @bind:event="oninput" class="stock-input"/><label>L:</label><input type="number" @bind="lWhite" @bind:event="oninput" class="stock-input"/><label>XL:</label><input type="number" @bind="xlWhite" @bind:event="oninput" class="stock-input"/></div>
+        </Modal>
+    </div>
+
+    <div>
+            <label style="color: red">
+                <input type="checkbox" @onchange="RedChanged">
+                Red
+            </label>
+            <Modal style="display:@redValue">
+                <div class="form-group field" display:inline><label>XS:</label><input type="number" @bind="xsRed" @bind:event="oninput" class="stock-input"/><label>S:</label><input type="number" @bind="sRed" @bind:event="oninput" class="stock-input"/><label>M:</label><input type="number" @bind="mRed" @bind:event="oninput" class="stock-input"/><label>L:</label><input type="number" @bind="lRed" @bind:event="oninput" class="stock-input"/><label>XL:</label><input type="number" @bind="xlRed" @bind:event="oninput" class="stock-input"/></div>
+            </Modal>
+        </div>
+
+    <div>
+        <label style="color: forestgreen">
+                <input type="checkbox" @onchange="GreenChanged">
+                Green
+            </label>
+            <Modal style="display:@greenValue">
+                <div class="form-group field" display:inline>
+                    <label>XS:</label>
+                    <input type="number" @bind="xsGreen" @bind:event="oninput" class="stock-input"/>
+    
+                    <label>S:</label>
+                    <input type="number" @bind="sGreen" @bind:event="oninput" class="stock-input"/>
+    
+                    <label>M:</label>
+                    <input type="number" @bind="mGreen" @bind:event="oninput" class="stock-input"/>
+    
+                    <label>L:</label>
+                    <input type="number" @bind="lGreen" @bind:event="oninput" class="stock-input"/>
+    
+                    <label>XL:</label>
+                    <input type="number" @bind="xlGreen" @bind:event="oninput" class="stock-input"/>
+                </div>
+            </Modal>
+        </div>
+    
+    <div>
+        <label style="color: blue">
+            <input type="checkbox" @onchange="BlueChanged">
+            Blue
+        </label>
+        <Modal style="display:@blueValue">
+            <div class="form-group field" display:inline>
+                <label>XS:</label>
+                <input type="number" @bind="xsBlue" @bind:event="oninput" class="stock-input"/>
+        
+                <label>S:</label>
+                <input type="number" @bind="sBlue" @bind:event="oninput" class="stock-input"/>
+        
+                <label>M:</label>
+                <input type="number" @bind="mBlue" @bind:event="oninput" class="stock-input"/>
+        
+                <label>L:</label>
+                <input type="number" @bind="lBlue" @bind:event="oninput" class="stock-input"/>
+        
+                <label>XL:</label>
+                <input type="number" @bind="xlBlue" @bind:event="oninput" class="stock-input"/>
+            </div>
+        </Modal>
+    </div>
+    
+    <div>
+                    <label style="color: yellow">
+                        <input type="checkbox" @onchange="YellowChanged">
+                        Yellow
+                    </label>
+                    <Modal style="display:@yellowValue">
+                        <div class="form-group field" display:inline>
+                            <label>XS:</label>
+                            <input type="number" @bind="xsYellow" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>S:</label>
+                            <input type="number" @bind="sYellow" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>M:</label>
+                            <input type="number" @bind="mYellow" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>L:</label>
+                            <input type="number" @bind="lYellow" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>XL:</label>
+                            <input type="number" @bind="xlYellow" @bind:event="oninput" class="stock-input"/>
+                        </div>
+                    </Modal>
+                </div>
+    
+    <div>
+                    <label style="color: grey">
+                        <input type="checkbox" @onchange="GreyChanged">
+                        Grey
+                    </label>
+                    <Modal style="display:@greyValue">
+                        <div class="form-group field" display:inline>
+                            <label>XS:</label>
+                            <input type="number" @bind="xsGrey" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>S:</label>
+                            <input type="number" @bind="sGrey" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>M:</label>
+                            <input type="number" @bind="mGrey" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>L:</label>
+                            <input type="number" @bind="lGrey" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>XL:</label>
+                            <input type="number" @bind="xlGrey" @bind:event="oninput" class="stock-input"/>
+                        </div>
+                    </Modal>
+                </div>
+    
+    <div>
+                        <label style="color: orange">
+                            <input type="checkbox" @onchange="OrangeChanged">
+                            Orange
+                        </label>
+                        <Modal style="display:@orangeValue">
+                            <div class="form-group field" display:inline>
+                                <label>XS:</label>
+                                <input type="number" @bind="xsOrange" @bind:event="oninput" class="stock-input"/>
+                
+                                <label>S:</label>
+                                <input type="number" @bind="sOrange" @bind:event="oninput" class="stock-input"/>
+                
+                                <label>M:</label>
+                                <input type="number" @bind="mOrange" @bind:event="oninput" class="stock-input"/>
+                
+                                <label>L:</label>
+                                <input type="number" @bind="lOrange" @bind:event="oninput" class="stock-input"/>
+                
+                                <label>XL:</label>
+                                <input type="number" @bind="xlOrange" @bind:event="oninput" class="stock-input"/>
+                            </div>
+                        </Modal>
+                    </div>
+    
+    <div>
+        <label style="color: purple">
+            <input type="checkbox" @onchange="PurpleChanged">
+            Purple
+        </label>
+        <Modal style="display:@purpleValue">
+            <div class="form-group field" display:inline>
+                <label>XS:</label>
+                <input type="number" @bind="xsPurple" @bind:event="oninput" class="stock-input"/>
+                
+                <label>S:</label>
+                <input type="number" @bind="sPurple" @bind:event="oninput" class="stock-input"/>
+                
+                <label>M:</label>
+                <input type="number" @bind="mPurple" @bind:event="oninput" class="stock-input"/>
+                
+                <label>L:</label>
+                <input type="number" @bind="lPurple" @bind:event="oninput" class="stock-input"/>
+                
+                <label>XL:</label>
+                <input type="number" @bind="xlPurple" @bind:event="oninput" class="stock-input"/>
+            </div>
+        </Modal>
+    </div>
+    
+<div>
+    <label style="color: #664d03">
+        <input type="checkbox" @onchange="BrownChanged">
+        Brown
+    </label>
+    <Modal style="display:@brownValue">
+        <div class="form-group field" display:inline>
+            <label>XS:</label>
+            <input type="number" @bind="xsBrown" @bind:event="oninput" class="stock-input"/>
+                
+            <label>S:</label>
+            <input type="number" @bind="sBrown" @bind:event="oninput" class="stock-input"/>
+                
+            <label>M:</label>
+            <input type="number" @bind="mBrown" @bind:event="oninput" class="stock-input"/>
+                
+            <label>L:</label>
+            <input type="number" @bind="lBrown" @bind:event="oninput" class="stock-input"/>
+                
+            <label>XL:</label>
+            <input type="number" @bind="xlBrown" @bind:event="oninput" class="stock-input"/>
+        </div>
+    </Modal>
+</div>
+
+<div>
+                    <label style="color: #d63384">
+                        <input type="checkbox" @onchange="MulticolorChanged">
+                        Multicolor
+                    </label>
+                    <Modal style="display:@multicolorValue">
+                        <div class="form-group field" display:inline>
+                            <label>XS:</label>
+                            <input type="number" @bind="xsMulticolor" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>S:</label>
+                            <input type="number" @bind="sMulticolor" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>M:</label>
+                            <input type="number" @bind="mMulticolor" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>L:</label>
+                            <input type="number" @bind="lMulticolor" @bind:event="oninput" class="stock-input"/>
+            
+                            <label>XL:</label>
+                            <input type="number" @bind="xlMulticolor" @bind:event="oninput" class="stock-input"/>
+                        </div>
+                    </Modal>
+                </div>
+    
+</div> 
+
+
+<div class="button-message">
+    <button @onclick="CreateStock" class="acceptbtn" name="blackBox">Confirm</button>
+    @if (!string.IsNullOrEmpty(resultMsg))
+    {
+        <br/> <label style="color:@color">@resultMsg</label>
+    }
+    
+</div>
+
+<div class="small-card">
+    <h5>Product Summary</h5>
+    <div>
+        <img src="@card.Image" id="product-image"/>
+        <b><label id="price-label">@card.Price €</label></b>
+    </div>
+    <h5 id="title-label">@card.Title</h5>
+    <p>@card.Description</p>
+    <p>Material: @card.Material</p>
+    <p>Brand: @card.Brand</p>
+     <p>Type: @card.Type</p> 
+</div>
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private ProductCardSock? card;
+
+    private string resultMsg = "";
+    private string color = "red";
+
+    string[] sizes = new[] { "xs", "s", "m", "l", "xl" };
+
+   //string values (initial/none) for each color
+    public string blackValue = "none";public string whiteValue = "none";public string redValue = "none";public string greenValue = "none";public string blueValue = "none";public string yellowValue = "none";public string greyValue = "none";public string purpleValue = "none";public string brownValue = "none";public string orangeValue = "none";public string multicolorValue = "none";
+
+    //black stock attributes
+    private int xsBlack = 0;private int sBlack = 0;private int mBlack = 0;private int lBlack = 0;private int xlBlack = 0;
+    
+    //white stock attributes
+    private int xsWhite = 0;private int sWhite = 0;private int mWhite = 0;private int lWhite = 0;private int xlWhite = 0;
+
+    //red stock attributes
+    private int xsRed = 0;private int sRed = 0;private int mRed = 0;private int lRed = 0;private int xlRed = 0;
+    
+    //green stock attributes
+    private int xsGreen = 0;private int sGreen= 0;private int mGreen = 0;private int lGreen= 0;private int xlGreen = 0;
+    
+    //blue stock attributes
+    private int xsBlue = 0;private int sBlue = 0;private int mBlue = 0;private int lBlue = 0;private int xlBlue = 0;
+    
+    //yellow stock attributes
+    private int xsYellow = 0;private int sYellow = 0;private int mYellow = 0;private int lYellow = 0;private int xlYellow = 0;
+    
+    //grey stock attributes
+    private int xsGrey = 0;private int sGrey= 0;private int mGrey = 0;private int lGrey = 0;private int xlGrey = 0;
+    
+    //purple stock attributes
+    private int xsPurple = 0;private int sPurple = 0;private int mPurple = 0;private int lPurple = 0;private int xlPurple = 0;
+  
+    //orange stock attributes 
+    private int xsOrange = 0;private int sOrange = 0;private int mOrange = 0;private int lOrange= 0;private int xlOrange= 0;
+   
+    //brown stock attributes
+    private int xsBrown = 0;private int sBrown= 0;private int mBrown = 0;private int lBrown= 0;private int xlBrown = 0;
+    
+    //multicolor stock attributes
+    private int xsMulticolor= 0; private int sMulticolor = 0;private int mMulticolor = 0;private int lMulticolor = 0;private int xlMulticolor = 0;
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        card = await sockService.GetById(Id);
+    }
+
+    private async Task CreateStock()
+    {
+        resultMsg = "";
+        try
+        {
+            if (blackValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsBlack;
+                            break;
+                        case "s":
+                            quantity = sBlack;
+                            break;
+                        case "m":
+                            quantity = mBlack;
+                            break;
+                        case "l":
+                            quantity = lBlack;
+                            break;
+                        case "xl":
+                            quantity = xlBlack;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "black", sizes[i], quantity));
+                    }
+                }
+            }
+
+            if (whiteValue.Equals("initial"))
+                {
+                    for (int i = 0; i < sizes.Length; i++){int quantity = 0;switch (sizes[i]){case "xs":quantity = xsWhite;break;case "s":quantity = sWhite;break;case "m":quantity = mWhite;break;case "l":quantity = lWhite;break;case "xl":quantity = xlWhite;break;}if (quantity != 0){await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "white", sizes[i], quantity));}}}
+            
+            if (redValue.Equals("initial"))
+                {for (int i = 0; i < sizes.Length; i++){int quantity = 0;switch (sizes[i]){case "xs":quantity = xsRed;break;case "s":quantity = sRed;break;case "m":quantity = mRed;break;case "l":quantity = lRed;break;case "xl":quantity = xlRed;break;}if (quantity != 0){ await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "red", sizes[i], quantity));}}}
+            
+            if (greenValue.Equals("initial"))
+                {for (int i = 0; i < sizes.Length; i++){int quantity = 0;switch (sizes[i]){case "xs":quantity = xsGreen;break;case "s":quantity = sGreen;break;case "m":quantity = mGreen;break;case "l":quantity = lGreen;break;case "xl":quantity = xlGreen;break;}if (quantity != 0){ await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "green", sizes[i], quantity));}}}
+
+            if (blueValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsBlue;
+                            break;
+                        case "s":
+                            quantity = sBlue;
+                            break;
+                        case "m":
+                            quantity = mBlue;
+                            break;
+                        case "l":
+                            quantity = lBlue;
+                            break;
+                        case "xl":
+                            quantity = xlBlue;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "blue", sizes[i], quantity));
+                    }
+                }
+            }
+            
+            if (yellowValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsYellow;
+                            break;
+                        case "s":
+                            quantity = sYellow;
+                            break;
+                        case "m":
+                            quantity = mYellow;
+                            break;
+                        case "l":
+                            quantity = lYellow;
+                            break;
+                        case "xl":
+                            quantity = xlYellow;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "yellow", sizes[i], quantity));
+                    }
+                }
+            }
+            
+            if (greyValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsGrey;
+                            break;
+                        case "s":
+                            quantity = sGrey;
+                            break;
+                        case "m":
+                            quantity = mGrey;
+                            break;
+                        case "l":
+                            quantity = lGrey;
+                            break;
+                        case "xl":
+                            quantity = xlGrey;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "grey", sizes[i], quantity));
+                    }
+                }
+            }
+            
+            if (orangeValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsOrange;
+                            break;
+                        case "s":
+                            quantity = sOrange;
+                            break;
+                        case "m":
+                            quantity = mOrange;
+                            break;
+                        case "l":
+                            quantity = lOrange;
+                            break;
+                        case "xl":
+                            quantity = xlOrange;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "orange", sizes[i], quantity));
+                    }
+                }
+            }
+            
+            if (purpleValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsPurple;
+                            break;
+                        case "s":
+                            quantity = sPurple;
+                            break;
+                        case "m":
+                            quantity = mPurple;
+                            break;
+                        case "l":
+                            quantity = lPurple;
+                            break;
+                        case "xl":
+                            quantity = xlPurple;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "purple", sizes[i], quantity));
+                    }
+                }
+            }
+            
+            if (brownValue.Equals("initial"))
+                        {
+            
+                            for (int i = 0; i < sizes.Length; i++)
+                            {
+                                int quantity = 0;
+                                switch (sizes[i])
+                                {
+                                    case "xs":
+                                        quantity = xsBrown;
+                                        break;
+                                    case "s":
+                                        quantity = sBrown;
+                                        break;
+                                    case "m":
+                                        quantity = mBrown;
+                                        break;
+                                    case "l":
+                                        quantity = lBrown;
+                                        break;
+                                    case "xl":
+                                        quantity = xlBrown;
+                                        break;
+                                }
+            
+                                if (quantity != 0)
+                                {
+                                    await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "brown", sizes[i], quantity));
+                                }
+                            }
+                        }
+            
+            if (multicolorValue.Equals("initial"))
+            {
+
+                for (int i = 0; i < sizes.Length; i++)
+                {
+                    int quantity = 0;
+                    switch (sizes[i])
+                    {
+                        case "xs":
+                            quantity = xsMulticolor;
+                            break;
+                        case "s":
+                            quantity = sMulticolor;
+                            break;
+                        case "m":
+                            quantity = mMulticolor;
+                            break;
+                        case "l":
+                            quantity = lMulticolor;
+                            break;
+                        case "xl":
+                            quantity = xlMulticolor;
+                            break;
+                    }
+
+                    if (quantity != 0)
+                    {
+                        await SockInventoryService.CreateAsync(new CreateSockInventoryDto(card.Id, "multicolor", sizes[i], quantity));
+                    }
+                }
+            }
+
+            color = "green";
+            resultMsg = "Sock card succesfully created";
+            NavManager.NavigateTo($"/CreateSock");
+
+        }
+        catch (Exception e)
+        {
+            color = "red";
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+        }
+
+    }
+
+    private async Task BlackChanged()
+    {
+        if (blackValue.Equals("none"))
+        {
+            blackValue = "initial";
+        }
+        else
+        {
+            blackValue = "none";
+        }
+    }
+    
+    private async Task WhiteChanged()
+    {
+        if (whiteValue.Equals("none"))
+        {
+            whiteValue = "initial";
+        }
+        else
+        {
+            whiteValue = "none";
+        }
+    }
+  
+    private async Task RedChanged()
+    {if (redValue.Equals("none")){redValue = "initial";}else{redValue = "none";}}
+
+    private async Task GreenChanged()
+    {
+        if (greenValue.Equals("none"))
+        {
+            greenValue = "initial";
+        }
+        else
+        {
+            greenValue = "none";
+        }}
+
+    private async Task BlueChanged()
+    {
+        if (blueValue.Equals("none"))
+        {
+            blueValue = "initial";
+        }
+        else
+        {
+            blueValue = "none";
+        }
+    }
+
+    private async Task YellowChanged()
+    {
+        if (yellowValue.Equals("none"))
+        {
+            yellowValue = "initial";
+        }
+        else
+        {
+            yellowValue = "none";
+        }}
+   
+    private async Task PurpleChanged()
+    {
+        if (purpleValue.Equals("none"))
+        {
+            purpleValue = "initial";
+        }
+    else
+    {
+        purpleValue = "none";
+    }}
+   
+    private async Task OrangeChanged()
+    {
+        if (orangeValue.Equals("none"))
+        {
+            orangeValue = "initial";
+        }
+        else
+        {
+            orangeValue = "none";
+        }}
+    
+    private async Task BrownChanged()
+    {
+        if (brownValue.Equals("none"))
+        {
+            brownValue = "initial";
+        }
+        else
+        {
+            brownValue = "none";
+        }}
+    
+    private async Task GreyChanged()
+    {
+        if (greyValue.Equals("none"))
+        {
+            greyValue = "initial";
+        }
+        else
+        {
+            greyValue = "none";
+        }}
+
+    private async Task MulticolorChanged()
+    {
+        if (multicolorValue.Equals("none"))
+        {
+            multicolorValue = "initial";
+        }
+        else
+        {
+            multicolorValue = "none";
+        }
+    }
+
+
+    
+}

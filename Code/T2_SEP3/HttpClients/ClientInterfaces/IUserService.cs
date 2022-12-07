@@ -9,6 +9,8 @@ public interface IUserService
     Task LoginAsync(string email, string password);
     Task LogoutAsync();
     Task<ClaimsPrincipal> GetAuthAsync();
+    
+    Task<User> GetByEmail(string email);
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }
 

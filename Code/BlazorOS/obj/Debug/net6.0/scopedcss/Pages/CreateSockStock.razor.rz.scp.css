@@ -1,0 +1,36 @@
+*[b-6vohmx41p5] {box-sizing: border-box;}
+
+.card[b-6vohmx41p5]{
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+.button-message[b-6vohmx41p5]
+{
+    float: left;
+    margin-left: 2%;
+}
+
+.acceptbtn[b-6vohmx41p5]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+#product-image[b-6vohmx41p5]
+{
+    width: 50%;
+}
+
+.small-card[b-6vohmx41p5]
+{
+    padding: 20px;
+    width: 34%;
+    float: right;
+}
+
+.stock-input[b-6vohmx41p5]
+{
+    width: 10%;
+    
+}
