@@ -33,14 +33,7 @@
     {
       "Id": 1,
       "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 9,
-          "Size": "xs",
-          "Color": "white"
-        }
-      ]
+      "Products": []
     }
   ],
   "SocksCards": [
@@ -109,6 +102,48 @@
       "Id": 9,
       "Size": "xs",
       "Color": "white"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 10,
+      "Size": "xl",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 11,
+      "Size": "s",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 12,
+      "Size": "xs",
+      "Color": "white"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 13,
+      "Size": "s",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 14,
+      "Size": "xl",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 15,
+      "Size": "xl",
+      "Color": "white"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 16,
+      "Size": "xl",
+      "Color": "orange"
     }
   ],
   "Users": [],
@@ -121,9 +156,51 @@
     },
     {
       "Id": 9,
-      "Quantity": 15,
+      "Quantity": 14,
       "ShoppingCartId": 1,
       "ProductId": 9
+    },
+    {
+      "Id": 11,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 11
+    },
+    {
+      "Id": 12,
+      "Quantity": 4,
+      "ShoppingCartId": 1,
+      "ProductId": 12
+    },
+    {
+      "Id": 10,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 10
+    },
+    {
+      "Id": 13,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 13
+    },
+    {
+      "Id": 15,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 15
+    },
+    {
+      "Id": 14,
+      "Quantity": 2,
+      "ShoppingCartId": 1,
+      "ProductId": 14
+    },
+    {
+      "Id": 16,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 16
     }
   ]
 }

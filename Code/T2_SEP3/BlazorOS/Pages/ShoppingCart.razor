@@ -40,14 +40,14 @@ else
                         
                     </td>
                     <td class="price-td">@card.Price</td>
-                    <td @onclick="ChangeQuantity">
+                    <td >
                         <label>@cardItem.Quantity</label>
                         <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">+</div>
-                        <div @onclick="(() => { DecreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId); })" class="myButton">-</div>
+                        <div @onclick="@(() =>  DecreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">-</div>
                     </td>
                     <td >@totalPrice</td>
                     <td>
-                        <div @onclick="(() => { RemoveProduct(p.Id); })" class="myButton">Remove</div></td>
+                        <div @onclick="@(() => RemoveProduct(p.Id))" class="myButton">Remove</div></td>
                 </tr>
             }
             </tbody>
@@ -70,7 +70,7 @@ else
     public int Id { get; set; }
     
     private global::Shared.Models.ShoppingCart shoppingCart= null;
-    private List<Product> productList=new List<Product>();
+    private List<Product?> productList=new List<Product?>();
     private double subtotal=0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
@@ -105,15 +105,7 @@ else
     {
         Product product = await socksService.getByIdAsync(productId);
         await shoppingCartService.RemoveProduct(product, Id);
-        subtotal = 0;
-        foreach (Product p in productList)
-        {
-            SocksCard card = await socksCardService.GetById(p.ProductCardId);
-            CardItem item = await cardItemService.GetByIdsAsync(p.Id, Id);
-            double totalPrice = card.Price * item.Quantity;
-            subtotal += totalPrice;
-        }
-       await LoadData();
+        await LoadData();
     }
 
     
@@ -137,14 +129,19 @@ else
 
     }
 
-    protected async Task ChangeQuantity()
-    {
-        StateHasChanged();
-    }
 
     public async Task LoadData()
     {
+        productList = (List<Product?>) await shoppingCartService.GetProducts(Id);
         items = (List<CardItem?>)await cardItemService.GetAsync();
+        subtotal = 0;
+        foreach (Product p in productList)
+        {
+            SocksCard card = await socksCardService.GetById(p.ProductCardId);
+            CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+            double totalPrice = card.Price * item.Quantity;
+            subtotal += totalPrice;
+        }
     }
 
 }
