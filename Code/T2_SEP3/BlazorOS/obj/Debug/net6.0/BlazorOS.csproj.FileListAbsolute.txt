@@ -10314,3 +10314,4 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\n
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateAccount.razor.rz.scp.css
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\UIComponents\LoginButtons.razor.rz.scp.css
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Profile.razor.rz.scp.css

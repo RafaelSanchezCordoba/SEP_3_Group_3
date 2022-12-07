@@ -39,7 +39,7 @@
         try
         {
             await _userService.LoginAsync(email, password);
-            navMgr.NavigateTo("/Profile");
+            navMgr.NavigateTo("/");
         }
         catch (Exception e)
         {

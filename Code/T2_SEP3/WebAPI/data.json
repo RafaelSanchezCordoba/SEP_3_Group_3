@@ -315,7 +315,8 @@
       "Id": 15,
       "Size": "s",
       "Color": "red"
-    },{
+    },
+    {
       "ProductCardId": 1,
       "Id": 12,
       "Size": "m",
@@ -332,7 +333,6 @@
       "Id": 14,
       "Size": "l",
       "Color": "blue"
-
     }
   ],
   "Users": [
@@ -340,6 +340,7 @@
       "Id": 1,
       "Email": "admin",
       "Password": "admin",
+      "Name": null,
       "PhoneNumber": null,
       "Adress": null,
       "Auth": "Manager"
@@ -348,6 +349,16 @@
       "Id": 2,
       "Email": "string",
       "Password": "string",
+      "Name": null,
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
+    },
+    {
+      "Id": 3,
+      "Email": "rosa@gmail.com",
+      "Password": "12345",
+      "Name": null,
       "PhoneNumber": null,
       "Adress": null,
       "Auth": "Customer"
@@ -431,7 +442,8 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 6
-    },{
+    },
+    {
       "Id": 12,
       "Quantity": 1,
       "ShoppingCartId": 1,

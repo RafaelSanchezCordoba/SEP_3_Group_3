@@ -1,16 +1,17 @@
 using System.Security.Claims;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace HttpClients.ClientInterfaces;
 
 public interface IUserService
 {
-    Task CreateAsync(User user, string password);
+    Task<User> CreateAsync(UserRegisterDto dto);
     Task LoginAsync(string email, string password);
     Task LogoutAsync();
     Task<ClaimsPrincipal> GetAuthAsync();
     
-    Task<User> GetByEmail(string email);
+    Task<User> GetByEmail(string? email);
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }
 

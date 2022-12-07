@@ -69,7 +69,7 @@ public class UserController:ControllerBase
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
             new Claim("Authorization", user.Auth),
-           new Claim("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",user.Email,"Email")
+           new Claim("Email",user.Email)
         };
         
         return claims.ToList();

@@ -1,6 +1,7 @@
 @page "/CreateAccount"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
+@using global::Shared.DTOs
 @inject IUserService _userService
 @inject NavigationManager navMgr
 
@@ -40,29 +41,15 @@
         errorLabel = "";
         try
         {
-          
-            if (email.Equals(""))
-            {
-                throw new Exception("Email cannot be empty");
-            }
-            else if (password.Equals(""))
-            {
-                throw new Exception("Password cannot be empty");
-            }
-            else if (!password.Equals(password2))
-            {
-                throw new Exception("Passwords don't match");
-            }
-            else
-            {
-                 User user = new User()
-                            {
-                                Email = email,
-                                Password = password
-                            };
-                            await _userService.CreateAsync(user, password);
-                            navMgr.NavigateTo("/");
-            }
+            UserRegisterDto dto = new UserRegisterDto()
+                {
+                    Email = email,
+                    Password = password,
+                    ConfirmPassword = password2
+                };
+                await _userService.CreateAsync(dto);
+                navMgr.NavigateTo("/");
+            
         }
         catch (Exception e)
         {
