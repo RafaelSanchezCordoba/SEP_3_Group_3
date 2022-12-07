@@ -5,19 +5,19 @@ import com.example.t3_spring_dbserver.entity.Inventory;
 import com.example.t3_spring_dbserver.entity.SockCard;
 import com.example.t3_spring_dbserver.service.SockCardService;
 import com.example.t3_spring_dbserver.service.SocksInventoryService;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.EmptyInventoryMessage;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.IntReqInventory;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryGrpcGrpc;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryGrpcGrpc.SocksInventoryGrpcImplBase;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.*;
-
 import java.util.List;
-import java.util.stream.Stream;
 
 @GRpcService
-public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcImplBase{
+public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcGrpc.SocksInventoryGrpcImplBase {
 
     @Autowired
     private SocksInventoryService service;
@@ -33,7 +33,7 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcImplBase{
         Inventory daoInventory = new Inventory(req.getColor(),req.getSize(),req.getQuantity(),sockCard);
         service.create(daoInventory);
 
-        responseStream.onNext(EmptyInventoryMessage.newBuilder().build());
+        responseStream.onNext(SocksInventoryComunicator.EmptyInventoryMessage.newBuilder().build());
         responseStream.onCompleted();
     }
 
@@ -44,7 +44,7 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcImplBase{
         List<Inventory> list = service.getAll();
 
         for (Inventory inventory:list) {
-            com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory protoInventory = com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory.newBuilder()
+            inventory protoInventory = SocksInventoryComunicator.inventory.newBuilder()
                     .setId((int)inventory.getId())
                     .setColor(inventory.getColor())
                     .setSize(inventory.getSize())
@@ -58,7 +58,7 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcImplBase{
     }
 
     @Override
-    public void getById(IntReqInventory req, StreamObserver<inventory> responseStream) {
+    public void getById(SocksInventoryComunicator.IntReqInventory req, StreamObserver<inventory> responseStream) {
         System.out.println("Received get by id request with id: " + req.getRequest());
         Inventory inventory = service.getById(req.getRequest());
         SocksInventoryComunicator.inventory toSent = SocksInventoryComunicator.inventory.newBuilder()

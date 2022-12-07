@@ -2,7 +2,7 @@ syntax = "proto3";
 
 
 
-service SockCardGrpc{
+service SocksCardGrpc{
 
   rpc getById(IntReq) returns (sockCard){}
 

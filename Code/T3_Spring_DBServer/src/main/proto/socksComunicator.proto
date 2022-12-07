@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service SocksGrpc {
+  rpc create(sock) returns (EmptySocksMessage);
+  rpc getAll(EmptySocksMessage) returns (stream sock);
+  rpc getById(IntReqSock) returns (sock);
+  rpc deleteById(IntReqSock) returns (EmptySocksMessage);
+
+}
+
+message IntReqSock {
+  int32 request = 1;
+}
+
+message EmptySocksMessage {
+
+}
+
+message sock {
+  int32 id = 1;
+  string size = 2;
+  string color = 3;
+  int32 sc_id = 4;
+}
