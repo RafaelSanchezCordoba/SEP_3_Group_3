@@ -1,6 +1,7 @@
 using System.Net.Http.Json;
 using System.Text.Json;
 using HttpClients.ClientInterfaces;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace HttpClients.Implementations;
@@ -15,7 +16,7 @@ public class OrderHttpClient:IOrderService
         this.client = client;
     }
     
-    public async Task<Order> CreateAsync(Order dto)
+    public async Task<Order> CreateAsync(CreateOrderDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("Order", dto);
         string result = await response.Content.ReadAsStringAsync();

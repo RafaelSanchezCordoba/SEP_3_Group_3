@@ -24,4 +24,15 @@ public class CreateOrderDto
         ShoppingCart = shoppingCart;
         Shipping = shipping;
     }
+    public CreateOrderDto( string status, string customerName, string customerEmail, string customerPhoneNumber, ShoppingCart shoppingCart, Adress shipping)
+    {
+        
+    
+        Status = status;
+        CustomerName = customerName;
+        CustomerEmail = customerEmail;
+        CustomerPhoneNumber = customerPhoneNumber;
+        ShoppingCart = shoppingCart;
+        Shipping = shipping;
+    }
 }

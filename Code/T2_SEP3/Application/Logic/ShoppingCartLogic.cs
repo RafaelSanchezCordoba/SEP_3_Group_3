@@ -56,4 +56,9 @@ public class ShoppingCartLogic :IShoppingCartLogic
         }
         return await dao.DeleteProductAsync(product,id);
     }
+
+    public Task<double> GetTotalPriceAsync(int id)
+    {
+        return dao.GetTotalPriceAsync(id);
+    }
 }

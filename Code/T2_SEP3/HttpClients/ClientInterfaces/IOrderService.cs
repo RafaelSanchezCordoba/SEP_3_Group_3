@@ -1,6 +1,9 @@
+using Shared.DTOs;
+using Shared.Models;
+
 namespace HttpClients.ClientInterfaces;
 
-public class IOrderService
+public interface IOrderService
 {
-    
+   Task<Order> CreateAsync(CreateOrderDto dto);
 }

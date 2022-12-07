@@ -10,5 +10,16 @@ public class Adress
     public string Street { get; set; }
     public int Number { get; set; }
     public string ExtraInfo{ get; set; }
-  
+
+    public Adress(int id, int userId, string country, string city, int postCode, string street, int number, string extraInfo)
+    {
+        Id = id;
+        UserId = userId;
+        Country = country;
+        City = city;
+        PostCode = postCode;
+        Street = street;
+        Number = number;
+        ExtraInfo = extraInfo;
+    }
 }

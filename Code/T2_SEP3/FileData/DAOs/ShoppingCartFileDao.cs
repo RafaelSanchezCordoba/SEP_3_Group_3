@@ -92,4 +92,18 @@ public class ShoppingCartFileDao:IShoppingCartDao
         context.SaveChanges();
         return Task.FromResult(existing);
     }
+
+    public async Task<double> GetTotalPriceAsync(int id)
+    {
+        ShoppingCart shoppingCart =  await GetById(id);
+        double totalprice = 0;
+        foreach (var p in shoppingCart.Products)
+        {
+            ProductCard productCard = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
+            CardItem cardItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id);
+            totalprice += productCard.Price*cardItem.Quantity;
+        }
+
+        return totalprice;
+    }
 }

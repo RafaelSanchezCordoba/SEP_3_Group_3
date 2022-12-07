@@ -11,4 +11,5 @@ public interface IShoppingCartLogic
     Task<ShoppingCart> AddProduct(Product product, int cartId);
     Task DeleteAsync(int cardId);
     Task<ShoppingCart> RemoveProduct(Product product, int id);
+    Task<double> GetTotalPriceAsync(int id);
 }

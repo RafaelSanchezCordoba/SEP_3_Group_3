@@ -14,5 +14,6 @@ public interface IShoppingCartService
     Task<ShoppingCart> AddProductAsync(Product product, int shoppingCartId);
     
     Task<ShoppingCart> RemoveProduct(Product product, int id);
+    Task<double> GetTotalPrice(int id);
 
 }

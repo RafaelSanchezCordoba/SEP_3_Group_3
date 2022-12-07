@@ -157,6 +157,11 @@
           "Color": "red"
         }
       ]
+    },
+    {
+      "Id": 2,
+      "OwnerId": 1,
+      "Products": []
     }
   ],
   "SocksCards": [

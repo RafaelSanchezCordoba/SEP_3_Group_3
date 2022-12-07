@@ -1,25 +1,4 @@
 {
-
-
-
-  "Users": [
-    {
-      "Id": 1,
-      "Email": "admin",
-      "Password": "admin",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Manager"
-    },
-    {
-      "Id": 2,
-      "Email": "string",
-      "Password": "string",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
-    }],
-
   "Inventories": [
     {
       "CardId": 1,
@@ -178,19 +157,14 @@
           "Color": "red"
         }
       ]
+    },
+    {
+      "Id": 2,
+      "OwnerId": 1,
+      "Products": []
     }
   ],
   "SocksCards": [
-    {
-      "Title": "Penguin socks",
-      "Description": "to protect from danish cold",
-      "Price": 1,
-      "Material": "recycled polyester",
-      "Brand": "nike",
-      "Image": "https://cdn.shopify.com/s/files/1/0458/9273/1037/products/40fc963a4aa341e4029b9c84ae9f5043b926a9fd5cd0f331aca11ac460b8581b.jpg?v=1645448614",
-      "Type": "Low cut",
-      "Id": 1
-    },
     {
       "Title": "Pokemon socks",
       "Description": "Cute Psyduck socks",
@@ -294,6 +268,24 @@
       "Color": "yellow"
     }
   ],
+  "Users": [
+    {
+      "Id": 1,
+      "Email": "admin",
+      "Password": "admin",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Manager"
+    },
+    {
+      "Id": 2,
+      "Email": "string",
+      "Password": "string",
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
+    }
+  ],
   "CardItems": [
     {
       "Id": 1,
@@ -354,8 +346,39 @@
       "Quantity": 2,
       "ShoppingCartId": 1,
       "ProductId": 4
-
     }
   ],
-  "Orders": []
+  "Orders": [
+    {
+      "Id": 1,
+      "NumberOfProducts": 1,
+      "TotalPrice": 0,
+      "Status": "string",
+      "CustomerName": "string",
+      "CustomerEmail": "string",
+      "CustomerPhoneNumber": "string",
+      "ShoppingCart": {
+        "Id": 0,
+        "OwnerId": 0,
+        "Products": [
+          {
+            "ProductCardId": 0,
+            "Id": 0,
+            "Size": "string",
+            "Color": "string"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 0,
+        "UserId": 0,
+        "Country": "string",
+        "City": "string",
+        "PostCode": 0,
+        "Street": "string",
+        "Number": 0,
+        "ExtraInfo": "string"
+      }
+    }
+  ]
 }
