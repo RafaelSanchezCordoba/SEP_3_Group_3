@@ -7,6 +7,7 @@ namespace Application.Logic;
 public class UserLogic:IUserLogic
 {
     private readonly IUserDao context;
+   
 
     public UserLogic(IUserDao context)
     {
@@ -33,6 +34,11 @@ public class UserLogic:IUserLogic
     public Task<User> ValidateUser(string email, string password)
     {
         return context.Validateuser(email, password);
+    }
+
+    public Task<User> Update(User user)
+    {
+        return context.UpdateUser(user);
     }
 
     public Task<string> Login(string email, string password)

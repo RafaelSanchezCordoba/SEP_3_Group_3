@@ -69,8 +69,19 @@ public class SockCardsFileDao : ISockCardDao
             throw new Exception($"Socks with ID {dto.Id} does not exist!!!");
         }
 
+        SocksCard card = new SocksCard
+        {
+            Title = dto.Title,
+            Brand = dto.Brand,
+            Description = dto.Description,
+            Id = existing.Id,
+            Image = dto.Image,
+            Material = dto.Material,
+            Price = dto.Price,
+            Type = dto.Type
+        };
         context.SocksCards.Remove(existing);
-        //context.SocksCards.Add(dto);
+        context.SocksCards.Add(card);
         context.SaveChanges();
         return Task.CompletedTask;
     }

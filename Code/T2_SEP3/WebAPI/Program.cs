@@ -53,9 +53,10 @@ AuthorizationPolicies.AddPolicies(builder.Services);
 
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
 builder.Services.AddScoped<ISocksDao, SocksFileDao>();
+builder.Services.AddScoped<IAdressDao, AdressFileDao>();
 builder.Services.AddScoped<ICardItemDao, CardItemFileDao>();
 builder.Services.AddScoped<ICardItemLogic, CardItemLogic>();
-
+builder.Services.AddScoped<IAdressLogic, AdressLogic>();
 
 
 

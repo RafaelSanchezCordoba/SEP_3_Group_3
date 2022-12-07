@@ -315,7 +315,8 @@
       "Id": 15,
       "Size": "s",
       "Color": "red"
-    },{
+    },
+    {
       "ProductCardId": 1,
       "Id": 12,
       "Size": "m",
@@ -332,25 +333,64 @@
       "Id": 14,
       "Size": "l",
       "Color": "blue"
-
     }
   ],
   "Users": [
+    {
+      "Id": 9,
+      "Email": "string",
+      "Password": "string",
+      "PhoneNumber": "string",
+      "Adress": {
+        "Id": 1,
+        "UserId": 9,
+        "Country": "string",
+        "City": "string",
+        "PostCode": 0,
+        "Street": "string",
+        "Number": 0,
+        "ExtraInfo": "string"
+      },
+      "Auth": "string"
+    },
     {
       "Id": 1,
       "Email": "admin",
       "Password": "admin",
       "PhoneNumber": null,
-      "Adress": null,
+      "Adress": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "string",
+        "City": "string",
+        "PostCode": 0,
+        "Street": "string",
+        "Number": 0,
+        "ExtraInfo": "string"
+      },
       "Auth": "Manager"
+    }
+  ],
+  "Adresses": [
+    {
+      "Id": 1,
+      "UserId": 0,
+      "Country": "string",
+      "City": "string",
+      "PostCode": 0,
+      "Street": "string",
+      "Number": 0,
+      "ExtraInfo": "string"
     },
     {
       "Id": 2,
-      "Email": "string",
-      "Password": "string",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
+      "UserId": -1,
+      "Country": "string",
+      "City": "string",
+      "PostCode": 0,
+      "Street": "string",
+      "Number": 0,
+      "ExtraInfo": "string"
     }
   ],
   "CardItems": [
@@ -431,7 +471,8 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 6
-    },{
+    },
+    {
       "Id": 12,
       "Quantity": 1,
       "ShoppingCartId": 1,
