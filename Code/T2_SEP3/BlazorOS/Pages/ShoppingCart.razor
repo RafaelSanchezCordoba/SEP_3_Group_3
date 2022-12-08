@@ -103,6 +103,7 @@ else
     {
         Product product = await socksService.getByIdAsync(productId);
         await shoppingCartService.RemoveProduct(product, Id);
+        await socksService.RemoveSocks(productId);
         await LoadData();
     }
 

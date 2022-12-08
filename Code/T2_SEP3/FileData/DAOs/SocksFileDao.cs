@@ -45,4 +45,20 @@ public class SocksFileDao : ISocksDao
         }
         return Task.FromResult(existing);
     }
+    
+    public Task DeleteAsync(int id)
+    {
+        Socks? existing = context.Socks.FirstOrDefault(socks => socks.Id == id);
+        if (existing == null)
+        {
+            throw new Exception($"Socks with ID {id} does not exist!!!");
+        }
+
+        context.Socks.Remove(existing);
+        CardItem? deleteCardItem = context.CardItems.FirstOrDefault(cardItem => cardItem.ProductId == id);
+        if (deleteCardItem != null) context.CardItems.Remove(deleteCardItem);
+        context.SaveChanges();
+
+        return Task.CompletedTask;
+    }
 }

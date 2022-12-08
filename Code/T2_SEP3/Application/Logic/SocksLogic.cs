@@ -32,6 +32,12 @@ public class SocksLogic : ISocksLogic
         ValidateSocksById(id);
         return await socksDao.GetById(id) ?? throw new Exception($"Socks with id: {id} was not found!!!");
     }
+    
+    public  Task DeleteAsync(int id)
+    {
+        ValidateSocksById(id);
+        return socksDao.DeleteAsync(id) ?? throw new Exception($"Socks with ID {id} was not found!!!");
+    }
 
     public void ValidateSocks(Socks dto)
     {

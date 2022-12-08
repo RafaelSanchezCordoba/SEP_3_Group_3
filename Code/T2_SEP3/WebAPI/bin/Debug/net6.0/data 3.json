@@ -168,22 +168,16 @@
   ],
   "Socks": [
     {
+      "ProductCardId": 1,
+      "Id": 3,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
       "ProductCardId": 2,
       "Id": 4,
       "Size": "xl",
       "Color": "blue"
-    },
-    {
-      "ProductCardId": 2,
-      "Id": 5,
-      "Size": "xxl",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 4,
-      "Id": 6,
-      "Size": "xl",
-      "Color": "red"
     }
   ],
   "Users": [
@@ -225,18 +219,6 @@
       "Quantity": 1,
       "ShoppingCartId": 1,
       "ProductId": 4
-    },
-    {
-      "Id": 5,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 5
-    },
-    {
-      "Id": 6,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 6
     }
   ],
   "Orders": []

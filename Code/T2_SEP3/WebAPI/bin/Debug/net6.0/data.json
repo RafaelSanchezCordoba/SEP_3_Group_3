@@ -3,13 +3,6 @@
     {
       "CardId": 1,
       "Color": "grey",
-      "Size": "xs",
-      "Quantity": 456789,
-      "Id": 7
-    },
-    {
-      "CardId": 1,
-      "Color": "grey",
       "Size": "s",
       "Quantity": 456,
       "Id": 8
@@ -135,19 +128,13 @@
     }
   ],
   "ShoppingCarts": [
-    
+    {
+      "Id": 1,
+      "OwnerId": 1,
+      "Products": []
+    }
   ],
   "SocksCards": [
-    {
-      "Title": "Pokemon socks",
-      "Description": "Cute Psyduck socks",
-      "Price": 5,
-      "Material": "Recycled polyester",
-      "Brand": "pokemon",
-      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
-      "Type": "Mid calf",
-      "Id": 1
-    },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
@@ -181,22 +168,22 @@
   ],
   "Socks": [
     {
-      "ProductCardId": 1,
-      "Id": 1,
-      "Size": "s",
-      "Color": "grey"
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "xl",
+      "Color": "blue"
     },
     {
-      "ProductCardId": 1,
-      "Id": 2,
-      "Size": "s",
-      "Color": "grey"
+      "ProductCardId": 2,
+      "Id": 5,
+      "Size": "xxl",
+      "Color": "red"
     },
     {
-      "ProductCardId": 1,
-      "Id": 3,
-      "Size": "s",
-      "Color": "grey"
+      "ProductCardId": 4,
+      "Id": 6,
+      "Size": "xl",
+      "Color": "red"
     }
   ],
   "Users": [
@@ -222,12 +209,6 @@
   "Adresses": [],
   "CardItems": [
     {
-      "Id": 1,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 1
-    },
-    {
       "Id": 2,
       "Quantity": 1,
       "ShoppingCartId": 1,
@@ -238,6 +219,24 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 3
+    },
+    {
+      "Id": 4,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 4
+    },
+    {
+      "Id": 5,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+    },
+    {
+      "Id": 6,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 6
     }
   ],
   "Orders": []

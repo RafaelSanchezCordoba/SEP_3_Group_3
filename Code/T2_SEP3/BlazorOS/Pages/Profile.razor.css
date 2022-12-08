@@ -14,12 +14,12 @@
     float: left;
 }
 
-
 .button-message
 {
     float: left;
     margin-left: 2%;
 }
+
 .small-form-field
 {
     width: 50%;
@@ -28,17 +28,16 @@
     display: inline;
 }
 
-
 input
 {
     width: 73%;
     float: right;
 }
+
 .long-input
 {
     width: 87%;
 }
-
 
 .myButton{
     background-color: #778da9;
