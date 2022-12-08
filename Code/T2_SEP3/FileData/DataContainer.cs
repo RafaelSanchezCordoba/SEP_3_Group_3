@@ -14,6 +14,4 @@ public class DataContainer
     public ICollection<Adress> Adresses { get; set; }
     public ICollection<CardItem> CardItems { get; set; }
 
-    public ICollection<Order> Orders { get; set; }
-
 }

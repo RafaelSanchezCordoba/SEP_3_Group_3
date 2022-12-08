@@ -93,7 +93,6 @@ public class ShoppingCartFileDao:IShoppingCartDao
         return Task.FromResult(existing);
     }
 
-<<<<<<< HEAD
     public Task<ShoppingCart> GetByCustomerName(int ownerId)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.OwnerId == ownerId);
@@ -104,19 +103,5 @@ public class ShoppingCartFileDao:IShoppingCartDao
         }
         
         return Task.FromResult(existing); ;
-=======
-    public async Task<double> GetTotalPriceAsync(int id)
-    {
-        ShoppingCart shoppingCart =  await GetById(id);
-        double totalprice = 0;
-        foreach (var p in shoppingCart.Products)
-        {
-            ProductCard productCard = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
-            CardItem cardItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id);
-            totalprice += productCard.Price*cardItem.Quantity;
-        }
-
-        return totalprice;
->>>>>>> origin/OrderWebAPI
     }
 }

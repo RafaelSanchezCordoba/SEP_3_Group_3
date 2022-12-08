@@ -21,8 +21,6 @@ builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
 builder.Services.AddScoped<ISocksService, SocksHttpClient>();
 builder.Services.AddScoped<IShoppingCartService, ShoppingCartHttpClient>();
 builder.Services.AddScoped<ICardItemService, CardItemHttpClient>();
-builder.Services.AddScoped<IOrderService, OrderHttpClient>();
-
 
 builder.Services.AddSmart();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7999") });
