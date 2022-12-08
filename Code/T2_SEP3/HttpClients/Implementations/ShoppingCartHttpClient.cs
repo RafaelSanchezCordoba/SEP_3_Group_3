@@ -135,43 +135,47 @@ public class ShoppingCartHttpClient:IShoppingCartService
         
         return shoppingCart;
     }
-<<<<<<< HEAD
 
     public async Task<ShoppingCart> getByUserIdAsync(int id)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCart/userId/{id}");
         string content = await response.Content.ReadAsStringAsync();
-=======
-    
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        ShoppingCart shoppingCart = JsonSerializer.Deserialize<ShoppingCart>(content,
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            })!;
+        return shoppingCart;
+    }
+
+
+
     public async Task<double> GetTotalPrice(int id)
     {
         string productAsJson = JsonSerializer.Serialize(id);
         StringContent body = new StringContent(productAsJson, Encoding.UTF8, "application/json");
         HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/shoppingCart/TotalPrice/{id}", body);
         string content = await response.Content.ReadAsStringAsync();
-       
->>>>>>> origin/OrderWebAPI
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(content);
         }
-<<<<<<< HEAD
-
-        ShoppingCart shoppingCart = JsonSerializer.Deserialize<ShoppingCart>(content, 
-=======
+       
         
-        double totalPrice = JsonSerializer.Deserialize<double>(content, 
->>>>>>> origin/OrderWebAPI
+        double totalPrice = JsonSerializer.Deserialize<double>(content,
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             }
         )!;
-<<<<<<< HEAD
-        return shoppingCart;
-=======
-        
+
         return totalPrice;
->>>>>>> origin/OrderWebAPI
+
     }
 }

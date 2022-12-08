@@ -1,14 +1,14 @@
 {
   "Inventories": [
     {
-      "CardId": 9,
+      "CardId": 1,
       "Color": "grey",
       "Size": "xs",
       "Quantity": 456789,
       "Id": 7
     },
     {
-      "CardId": 2,
+      "CardId": 1,
       "Color": "grey",
       "Size": "s",
       "Quantity": 456,
@@ -93,14 +93,14 @@
     },
     {
       "CardId": 2,
-      "Color": "string",
-      "Size": "string",
+      "Color": "blue",
+      "Size": "xl",
       "Quantity": 23,
       "Id": 5
     },
     {
       "CardId": 2,
-      "Color": "string",
+      "Color": "red",
       "Size": "xxl",
       "Quantity": 23,
       "Id": 6
@@ -127,13 +127,6 @@
       "Id": 20
     },
     {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
-      "Quantity": 242,
-      "Id": 22
-    },
-    {
       "CardId": 4,
       "Color": "blue",
       "Size": "xs",
@@ -142,35 +135,7 @@
     }
   ],
   "ShoppingCarts": [
-    {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 4,
-          "Id": 6,
-          "Size": "xl",
-          "Color": "red"
-        },
-        {
-          "ProductCardId": 1,
-          "Id": 11,
-          "Size": "m",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 3,
-          "Id": 13,
-          "Size": "s",
-          "Color": "red"
-        }
-      ]
-    },
-    {
-      "Id": 2,
-      "OwnerId": 1,
-      "Products": []
-    }
+   
   ],
   "SocksCards": [
     {
@@ -181,17 +146,17 @@
       "Brand": "pokemon",
       "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
       "Type": "Mid calf",
-      "Id": 2
+      "Id": 1
     },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
-      "Price": 430,
+      "Price": 4.30,
       "Material": "Recycled polyester",
       "Brand": "IDK",
       "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
       "Type": "Knee high",
-      "Id": 3
+      "Id": 2
     },
     {
       "Title": "unicorn socks",
@@ -201,7 +166,7 @@
       "Brand": "nike",
       "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
       "Type": "Anklets",
-      "Id": 4
+      "Id": 3
     },
     {
       "Title": "Pizza sock",
@@ -211,188 +176,18 @@
       "Brand": "nike",
       "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
       "Type": "Anklets",
-      "Id": 5
+      "Id": 4
     }
   ],
   "Socks": [
-    {
-      "ProductCardId": 2,
-      "Id": 1,
-      "Size": "s",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 2,
-      "Id": 2,
-      "Size": "s",
-      "Color": "grey"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 3,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 4,
-      "Size": "xs",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 5,
-      "Id": 5,
-      "Size": "l",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 4,
-      "Id": 6,
-      "Size": "xl",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 7,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 8,
-      "Size": "s",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 9,
-      "Size": "m",
-      "Color": "yellow"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 10,
-      "Size": "m",
-      "Color": "yellow"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 11,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 12,
-      "Size": "s",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 13,
-      "Size": "s",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 14,
-      "Size": "s",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 15,
-      "Size": "s",
-      "Color": "red"
-    },
-    {
-      "ProductCardId": 1,
-      "Id": 12,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 5,
-      "Id": 13,
-      "Size": "l",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 5,
-      "Id": 14,
-      "Size": "l",
-      "Color": "blue"
-    },
-    {
-      "ProductCardId": 2,
-      "Id": 16,
-      "Size": "",
-      "Color": ""
-    }
-  ],
-  "Users": [
-    {
-      "Id": 9,
-      "Email": "string",
-      "Password": "string",
-      "PhoneNumber": "string",
-      "Adress": {
-        "Id": 1,
-        "UserId": 9,
-        "Country": "string",
-        "City": "string",
-        "PostCode": 0,
-        "Street": "string",
-        "Number": 0,
-        "ExtraInfo": "string"
-      },
-      "Auth": "string"
-    },
-    {
-      "Id": 1,
-      "Email": "admin",
-      "Password": "admin",
-      "PhoneNumber": null,
-      "Adress": {
-        "Id": 1,
-        "UserId": 1,
-        "Country": "string",
-        "City": "string",
-        "PostCode": 0,
-        "Street": "string",
-        "Number": 0,
-        "ExtraInfo": "string"
-      },
-      "Auth": "Manager"
-    }
-  ],
-  "Adresses": [
-    {
-      "Id": 1,
-      "UserId": 0,
-      "Country": "string",
-      "City": "string",
-      "PostCode": 0,
-      "Street": "string",
-      "Number": 0,
-      "ExtraInfo": "string"
-    },
-    {
-      "Id": 2,
-      "UserId": -1,
-      "Country": "string",
-      "City": "string",
-      "PostCode": 0,
-      "Street": "string",
-      "Number": 0,
-      "ExtraInfo": "string"
-    }
+   
   ],
   "Users": [
     {
       "Id": 1,
       "Email": "admin",
       "Password": "admin",
+      "Name": null,
       "PhoneNumber": null,
       "Adress": null,
       "Auth": "Manager"
@@ -401,167 +196,17 @@
       "Id": 2,
       "Email": "string",
       "Password": "string",
+      "Name": null,
       "PhoneNumber": null,
       "Adress": null,
       "Auth": "Customer"
     }
   ],
+  "Adresses": [
+  ],
   "CardItems": [
-    {
-      "Id": 1,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 1
-    },
-    {
-      "Id": 3,
-      "Quantity": 4,
-      "ShoppingCartId": 1,
-      "ProductId": 3
-    },
-    {
-      "Id": 8,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 8
-    },
-    {
-      "Id": 9,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 9
-    },
-    {
-      "Id": 10,
-      "Quantity": 2,
-      "ShoppingCartId": 1,
-      "ProductId": 10
-    },
-    {
-      "Id": 7,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 7
-    },
-    {
-      "Id": 4,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 4
-<<<<<<< HEAD
-    },
-    {
-      "Id": 12,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 13
-    },
-    {
-      "Id": 2,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 2
-    },
-    {
-      "Id": 5,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 5
-    },
-    {
-      "Id": 13,
-      "Quantity": 2,
-      "ShoppingCartId": 1,
-      "ProductId": 15
-    },
-    {
-      "Id": 11,
-      "Quantity": 5,
-      "ShoppingCartId": 1,
-      "ProductId": 11
-    },
-    {
-      "Id": 12,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 12
-    },
-    {
-      "Id": 2,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 2
-    },
-    {
-      "Id": 4,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 4
-    },
-    {
-      "Id": 13,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 13
-    },
-    {
-      "Id": 14,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 14
-    },
-    {
-      "Id": 5,
-      "Quantity": 6,
-      "ShoppingCartId": 1,
-      "ProductId": 5
-    },
-    {
-      "Id": 15,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 16
-    },
-    {
-      "Id": 6,
-      "Quantity": 4,
-      "ShoppingCartId": 1,
-      "ProductId": 6
-=======
-    }
   ],
   "Orders": [
-    {
-      "Id": 1,
-      "NumberOfProducts": 1,
-      "TotalPrice": 0,
-      "Status": "string",
-      "CustomerName": "string",
-      "CustomerEmail": "string",
-      "CustomerPhoneNumber": "string",
-      "ShoppingCart": {
-        "Id": 0,
-        "OwnerId": 0,
-        "Products": [
-          {
-            "ProductCardId": 0,
-            "Id": 0,
-            "Size": "string",
-            "Color": "string"
-          }
-        ]
-      },
-      "Shipping": {
-        "Id": 0,
-        "UserId": 0,
-        "Country": "string",
-        "City": "string",
-        "PostCode": 0,
-        "Street": "string",
-        "Number": 0,
-        "ExtraInfo": "string"
-      }
->>>>>>> origin/OrderWebAPI
-    }
+    
   ]
 }

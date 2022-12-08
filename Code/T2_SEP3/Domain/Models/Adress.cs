@@ -9,11 +9,8 @@ public class Adress
     public int PostCode { get; set; }
     public string Street { get; set; }
     public int Number { get; set; }
-<<<<<<< HEAD
     public string ExtraInfo { get; set; }
   
-=======
-    public string ExtraInfo{ get; set; }
 
     public Adress(int id, int userId, string country, string city, int postCode, string street, int number, string extraInfo)
     {
@@ -26,5 +23,5 @@ public class Adress
         Number = number;
         ExtraInfo = extraInfo;
     }
->>>>>>> origin/OrderWebAPI
+
 }

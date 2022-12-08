@@ -1,13 +1,11 @@
 @page "/ShoppingCart/{id:int}"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-@using System.Runtime.CompilerServices
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
 @inject ICardItemService cardItemService
 @inject NavigationManager navMgr
-@inherits LayoutComponentBase
 
 @if (productList == null)
 {
@@ -23,7 +21,6 @@ else
             <th>Item</th>
             <th>Price</th>
             <th>Quantity</th>
-<<<<<<< HEAD
             <th>Total</th>
             <th></th>
             </thead>
@@ -54,47 +51,12 @@ else
             }
             </tbody>
         </table>
-=======
-        <th>Total</th>
-        <th></th>
-        </thead>
-        <tbody>
-         @foreach (var p in productList)
-         {
-             p.ToString();
-         }
-     
-        @foreach (var p in productList)
-        {
-            ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-            CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
-            double totalPrice = @card.Price * @cardItem.Quantity;
-            <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
-                <td >
-                    <p>@card.Title</p>
-                    <p>@p.Size.ToUpper()</p>
-                    <p style="color: @p.Color">@p.Color</p>
-                </td>
-                <td class="price-td">@card.Price</td>
-                <td  @onclick="ChangeQuantity" >
-                    <label>@cardItem.Quantity</label>
-                    <div  @onclick="(() => { IncreaseQuantity(p.ProductCardId, cardItem.Quantity);})"  class="myButton">+</div>
-                    <div @onclick="(() => {  DecreaseQuantity(p.Id,cardItem.Quantity);})" class="myButton">-</div>
-                </td>
-                <td >@totalPrice</td>
-                <td><div @onclick="(() => { RemoveProduct(p.Id); })"  class="myButton">Remove</div></td>
-            </tr>
-        }
-        </tbody>
-    </table>
->>>>>>> origin/OrderWebAPI
     </div>
 }
 
 <div class="order-summary-div">
     <b>Order Summary</b>
     <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
-<<<<<<< HEAD
     <button class="myButton" id="checkout-btn">Checkout</button>
     <p>Apply a coupon code or points on the next step</p>
 </div>
@@ -107,19 +69,6 @@ else
     
     private global::Shared.Models.ShoppingCart shoppingCart= null;
     private List<Product?> productList=new List<Product?>();
-=======
-    <button @onclick="OnOrderInformation" class="myButton" id="checkout-btn">Checkout</button>
-   <p>Apply a coupon code or points on the next step</p>
-</div>
- 
-@code {
-    [Parameter]
-    public int Id { get; set; }
-
-    public int id2 { get; set; } = 0;
-    private global::Shared.Models.ShoppingCart shoppingCart=null ;
-    private List<Product> productList=new List<Product>();
->>>>>>> origin/OrderWebAPI
     private double subtotal=0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
@@ -130,7 +79,6 @@ else
     {
         try
         {
-            id2 = Id;
             shoppingCart= await shoppingCartService.getByIdAsync(Id);
             productList = (List<Product>)await shoppingCartService.GetProducts(Id);
             foreach (Product p in productList)
@@ -200,35 +148,4 @@ else
         }
     }
 
-<<<<<<< HEAD
-=======
-    protected async Task IncreaseQuantity(int productId, int quantity)
-    {
-        quantity++;
-       await cardItemService.UpdateQuantityAsync(productId,quantity);
-        SocksCard card = await socksCardService.GetById(productId);
-        subtotal += card.Price;
-        
-
-    }
-    
-    protected async Task DecreaseQuantity(int productId, int quantity)
-    {
-        quantity--;
-       await cardItemService.UpdateQuantityAsync(productId, quantity);
-        SocksCard card = await socksCardService.GetById(productId);
-        subtotal -= card.Price;
-      
-    }
-
-    protected async Task ChangeQuantity()
-    {
-        StateHasChanged();
-    }
-
-    protected void OnOrderInformation()
-    {
-        navMgr.NavigateTo($"/OrderInformation/{id2}");}
-    }
->>>>>>> origin/OrderWebAPI
 }

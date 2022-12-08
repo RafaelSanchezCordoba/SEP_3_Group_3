@@ -97,11 +97,9 @@ public class FileContext
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
                 CardItems = new List<CardItem>(),
-<<<<<<< HEAD
-                Adresses = new List<Adress>()
-=======
+                Adresses = new List<Adress>(),
                 Orders = new List<Order>()
->>>>>>> origin/OrderWebAPI
+
 
             };
             return;

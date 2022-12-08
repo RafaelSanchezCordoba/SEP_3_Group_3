@@ -85,18 +85,6 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 <<<<<<< HEAD
 =======
 >>>>>>> Auth_Impl
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.deps.json
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.dll
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.pdb
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.dll
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\refint\Domain.dll
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.pdb
-C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\ref\Domain.dll
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.deps.json
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.dll
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.pdb
@@ -122,3 +110,15 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\Domain\obj\Debug\net6.0\ref\Domain.dll

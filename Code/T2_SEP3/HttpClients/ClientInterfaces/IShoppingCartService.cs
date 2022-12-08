@@ -14,11 +14,11 @@ public interface IShoppingCartService
     Task<ShoppingCart> AddProductAsync(Product product, int shoppingCartId);
     
     Task<ShoppingCart> RemoveProduct(Product product, int id);
-<<<<<<< HEAD
+
     
     Task<ShoppingCart> getByUserIdAsync(int id);
-=======
+
     Task<double> GetTotalPrice(int id);
->>>>>>> origin/OrderWebAPI
+
 
 }

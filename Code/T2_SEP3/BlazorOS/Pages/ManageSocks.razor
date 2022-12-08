@@ -38,8 +38,8 @@ else
 }
 
 @code {
-    private ICollection<SocksCard> sockCards;
-    private ICollection<SocksCard> sockCardsLoaded;
+    private ICollection<SocksCard> sockCards=new List<SocksCard>();
+    private ICollection<SocksCard> sockCardsLoaded=new List<SocksCard>();
     private string msg = "";
 
     private async void LoadCards()

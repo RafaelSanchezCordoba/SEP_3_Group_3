@@ -11,10 +11,10 @@ public interface IShoppingCartDao
     Task<ShoppingCart> AddProduct(Product product, int cartId);
     Task DeleteAsync(int cartId);
     Task<ShoppingCart> DeleteProductAsync(Product product, int id);
-<<<<<<< HEAD
+
     
     Task<ShoppingCart> GetByCustomerName(int ownerId);
-=======
+
     Task<double> GetTotalPriceAsync(int id);
->>>>>>> origin/OrderWebAPI
+
 }
