@@ -89,10 +89,8 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\HttpClients\obj\De
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\HttpClients\obj\Debug\net6.0\refint\HttpClients.dll
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\HttpClients\obj\Debug\net6.0\HttpClients.pdb
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\HttpClients\obj\Debug\net6.0\ref\HttpClients.dll
-<<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
-=======
 C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/HttpClients/bin/Debug/net6.0/HttpClients.deps.json
 C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/HttpClients/bin/Debug/net6.0/HttpClients.dll
 C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/HttpClients/bin/Debug/net6.0/HttpClients.pdb

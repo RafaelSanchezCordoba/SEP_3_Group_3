@@ -170,7 +170,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 >>>>>>> Auth_Impl
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.json
@@ -206,7 +205,6 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
-=======
 >>>>>>> shopping-cart
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\appsettings.json
@@ -263,8 +261,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Google.Protobuf.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Grpc.Core.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Grpc.Core.Api.dll
-<<<<<<< HEAD
-=======
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
@@ -274,15 +270,11 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
->>>>>>> Auth_Impl
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-<<<<<<< HEAD
-=======
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
->>>>>>> Auth_Impl
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
@@ -312,8 +304,6 @@ C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
-<<<<<<< HEAD
-=======
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Google.Protobuf.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Grpc.Core.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\Grpc.Core.Api.dll
@@ -334,4 +324,3 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\GrpcDataAccess.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\WebAPI\bin\Debug\net6.0\GrpcDataAccess.pdb
->>>>>>> Auth_Impl

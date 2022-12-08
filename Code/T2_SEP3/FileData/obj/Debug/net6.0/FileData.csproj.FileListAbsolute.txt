@@ -85,7 +85,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/FileData/obj/Debug/net6.0/ref/FileData.dll
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 >>>>>>> Auth_Impl
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.deps.json
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.dll
@@ -104,7 +103,6 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\refint\FileData.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\FileData.pdb
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\FileData\obj\Debug\net6.0\ref\FileData.dll
-=======
 >>>>>>> shopping-cart
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.deps.json
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\FileData\bin\Debug\net6.0\FileData.dll

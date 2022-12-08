@@ -175,6 +175,12 @@
           "Id": 11,
           "Size": "m",
           "Color": "blue"
+        },
+        {
+          "ProductCardId": 2,
+          "Id": 12,
+          "Size": "",
+          "Color": ""
         }
       ]
     }
@@ -188,20 +194,7 @@
       "Brand": "nike",
       "Image": "https://cdn.shopify.com/s/files/1/0458/9273/1037/products/40fc963a4aa341e4029b9c84ae9f5043b926a9fd5cd0f331aca11ac460b8581b.jpg?v=1645448614",
       "Type": "Low cut",
-<<<<<<< HEAD
       "Id": 11
-    },
-    {
-      "Title": "string",
-      "Description": "string",
-      "Price": 1,
-      "Material": "string",
-      "Brand": "string",
-      "Image": "string",
-      "Type": "string",
-      "Id": 12
-=======
-      "Id": 1
     },
     {
       "Title": "Pokemon socks",
@@ -242,7 +235,6 @@
       "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
       "Type": "Anklets",
       "Id": 5
->>>>>>> Auth_Impl
     }
   ],
   "Socks": [
@@ -311,24 +303,12 @@
       "Id": 11,
       "Size": "m",
       "Color": "blue"
-    }
-  ],
-  "Users": [
-    {
-      "Id": 1,
-      "Email": "admin",
-      "Password": "admin",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Manager"
     },
     {
-      "Id": 2,
-      "Email": "string",
-      "Password": "string",
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
+      "ProductCardId": 2,
+      "Id": 12,
+      "Size": "",
+      "Color": ""
     }
   ],
   "Users": [
@@ -415,6 +395,12 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 4
+    },
+    {
+      "Id": 12,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 12
     }
   ]
 }
