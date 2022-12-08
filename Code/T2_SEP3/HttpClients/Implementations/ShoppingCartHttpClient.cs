@@ -158,9 +158,9 @@ public class ShoppingCartHttpClient:IShoppingCartService
 
     public async Task<double> GetTotalPrice(int id)
     {
-        string productAsJson = JsonSerializer.Serialize(id);
-        StringContent body = new StringContent(productAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/shoppingCart/TotalPrice/{id}", body);
+      
+  
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCart/TotalPrice/{id}");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

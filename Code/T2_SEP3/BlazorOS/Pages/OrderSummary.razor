@@ -106,6 +106,7 @@
         try
         {
             await orderService.CreateAsync(OrderDto);
+            navMgr.NavigateTo("/");
             //nav to page that tells you congrats
         }
         catch (Exception e)
