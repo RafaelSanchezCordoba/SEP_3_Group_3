@@ -1,5 +1,7 @@
+using System.Diagnostics.CodeAnalysis;
 using Application.DaoInterfaces;
 using Application.LogicInterfaces;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace Application.Logic;
@@ -36,9 +38,29 @@ public class UserLogic:IUserLogic
         return context.Validateuser(email, password);
     }
 
-    public Task<User> Update(User user)
+    public async Task<User> Update(UpdateUserDto dto)
     {
-        return context.UpdateUser(user);
+        User? existing = await context.GetById(dto.Id);
+
+        if (existing == null)
+        {
+            throw new Exception($"User with ID {dto.Id} not found!!!");
+        }
+        
+        string passwordToUse =dto.Password ?? existing.Password;
+        string nameToUse = dto.Name ?? existing.Name;
+        string PhoneToUse = dto.PhoneNumber ?? existing.PhoneNumber ;
+        
+        User updated = new User()
+        {
+            Id = existing.Id,
+            Password = passwordToUse,
+            Name = nameToUse,
+            PhoneNumber = PhoneToUse
+        };
+
+        await context.UpdateUser(updated);
+        return updated;
     }
 
     public Task<string> Login(string email, string password)

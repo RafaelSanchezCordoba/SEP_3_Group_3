@@ -26,12 +26,14 @@ public class UserController:ControllerBase
     }
 
     [HttpPatch]
-    public async Task<ActionResult<User>> updateAsync(User user)
+    public async Task<ActionResult<User>> updateAsync([FromBody] UpdateUserDto dto)
     {
         try
         {
-            var result = _userLogic.Update(user);
-            return Ok(result);
+            
+                var result = await _userLogic.Update(dto);
+                return Ok(result);
+          
         }
         catch (Exception e)
         {

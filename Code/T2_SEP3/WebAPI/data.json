@@ -203,30 +203,6 @@
       ]
     },
     {
-      "Id": 3,
-      "OwnerId": 3,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 10,
-          "Size": "xs",
-          "Color": "grey"
-        },
-        {
-          "ProductCardId": 2,
-          "Id": 11,
-          "Size": "xl",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 3,
-          "Id": 12,
-          "Size": "s",
-          "Color": "purple"
-        }
-      ]
-    },
-    {
       "Id": 2,
       "OwnerId": 3,
       "Products": [
@@ -237,6 +213,29 @@
           "Color": "grey"
         }
       ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 10,
+          "Size": "xs",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 3,
+          "Id": 12,
+          "Size": "s",
+          "Color": "purple"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "OwnerId": 0,
+      "Products": []
     }
   ],
   "SocksCards": [
@@ -271,8 +270,7 @@
       "Id": 4
     },
     {
-<<<<<<< Updated upstream
-      "Title": "Anicorn socks",
+      "Title": "Unicorn socks",
       "Description": "makes you feel magical",
       "Price": 8,
       "Material": "recycled polyester",
@@ -280,7 +278,8 @@
       "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
       "Type": "Low cut",
       "Id": 3
-=======
+    },
+    {
       "Title": "Lighting mcQueen socks",
       "Description": "you\u0027ll be the fastest  ;)",
       "Price": 4,
@@ -289,7 +288,6 @@
       "Image": "https://s.ecrater.com/stores/3693/55cd6e2b3b4dd_3693b.jpg",
       "Type": "Low cut",
       "Id": 5
->>>>>>> Stashed changes
     }
   ],
   "Socks": [
@@ -395,10 +393,19 @@
       "Id": 3,
       "Email": "rosa",
       "Password": "12345",
-      "Name": null,
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
+      "Name": "Rosa Briales",
+      "PhoneNumber": "\u002B45 50444444",
+      "Adress": {
+        "Id": -1,
+        "UserId": 3,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 1,
+        "ExtraInfo": "apt77"
+      },
+      "Auth": "customer"
     }
   ],
   "Adresses": [],
@@ -464,12 +471,6 @@
       "ProductId": 10
     },
     {
-      "Id": 11,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 11
-    },
-    {
       "Id": 12,
       "Quantity": 1,
       "ShoppingCartId": 3,
@@ -480,6 +481,12 @@
       "Quantity": 1,
       "ShoppingCartId": 2,
       "ProductId": 13
+    },
+    {
+      "Id": 11,
+      "Quantity": 2,
+      "ShoppingCartId": 3,
+      "ProductId": 11
     }
   ],
   "Orders": []

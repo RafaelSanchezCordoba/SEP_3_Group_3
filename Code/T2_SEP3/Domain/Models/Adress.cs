@@ -24,4 +24,7 @@ public class Adress
         ExtraInfo = extraInfo;
     }
 
+    public Adress()
+    {
+    }
 }

@@ -193,10 +193,6 @@
           "Id": 3,
           "Size": "s",
           "Color": "grey"
-<<<<<<< Updated upstream
-        }
-      ]
-=======
         },
         {
           "ProductCardId": 5,
@@ -209,8 +205,37 @@
     {
       "Id": 2,
       "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 13,
+          "Size": "s",
+          "Color": "grey"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 10,
+          "Size": "xs",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 3,
+          "Id": 12,
+          "Size": "s",
+          "Color": "purple"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "OwnerId": 0,
       "Products": []
->>>>>>> Stashed changes
     }
   ],
   "SocksCards": [
@@ -235,16 +260,6 @@
       "Id": 2
     },
     {
-      "Title": "unicorn socks",
-      "Description": "makes you feel magical",
-      "Price": 8,
-      "Material": "recycled polyester",
-      "Brand": "nike",
-      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
-      "Type": "Anklets",
-      "Id": 3
-    },
-    {
       "Title": "Pizza sock",
       "Description": "yummyyyyyyy",
       "Price": 10,
@@ -253,6 +268,16 @@
       "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
       "Type": "Anklets",
       "Id": 4
+    },
+    {
+      "Title": "Unicorn socks",
+      "Description": "makes you feel magical",
+      "Price": 8,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
+      "Type": "Low cut",
+      "Id": 3
     },
     {
       "Title": "Lighting mcQueen socks",
@@ -283,8 +308,6 @@
       "Id": 3,
       "Size": "s",
       "Color": "grey"
-<<<<<<< Updated upstream
-=======
     },
     {
       "ProductCardId": 5,
@@ -321,7 +344,30 @@
       "Id": 9,
       "Size": "m",
       "Color": "blue"
->>>>>>> Stashed changes
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 10,
+      "Size": "xs",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 11,
+      "Size": "xl",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 12,
+      "Size": "s",
+      "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 13,
+      "Size": "s",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -347,10 +393,19 @@
       "Id": 3,
       "Email": "rosa",
       "Password": "12345",
-      "Name": null,
-      "PhoneNumber": null,
-      "Adress": null,
-      "Auth": "Customer"
+      "Name": "Rosa Briales",
+      "PhoneNumber": "\u002B45 50444444",
+      "Adress": {
+        "Id": -1,
+        "UserId": 3,
+        "Country": "Spain",
+        "City": "Malaga",
+        "PostCode": 29018,
+        "Street": "Calle Larios",
+        "Number": 12,
+        "ExtraInfo": "Under a bridge"
+      },
+      "Auth": "customer"
     }
   ],
   "Adresses": [],
@@ -372,8 +427,6 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 3
-<<<<<<< Updated upstream
-=======
     },
     {
       "Id": 4,
@@ -410,7 +463,30 @@
       "Quantity": 1,
       "ShoppingCartId": 0,
       "ProductId": 9
->>>>>>> Stashed changes
+    },
+    {
+      "Id": 10,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 10
+    },
+    {
+      "Id": 12,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 12
+    },
+    {
+      "Id": 13,
+      "Quantity": 1,
+      "ShoppingCartId": 2,
+      "ProductId": 13
+    },
+    {
+      "Id": 11,
+      "Quantity": 2,
+      "ShoppingCartId": 3,
+      "ProductId": 11
     }
   ],
   "Orders": []

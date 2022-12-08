@@ -1,3 +1,4 @@
+using Shared.DTOs;
 using Shared.Models;
 
 namespace Application.LogicInterfaces;
@@ -8,7 +9,7 @@ public interface IUserLogic
     Task<bool> UserExists(string email);
     Task<User> ValidateUser(string email, string password);
 
-    Task<User> Update(User user);
+    Task<User> Update(UpdateUserDto dto);
     Task<string> Login(string email, string password);
     int GetUserId();
     string GetUserEmail();

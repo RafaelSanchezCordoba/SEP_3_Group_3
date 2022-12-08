@@ -51,6 +51,11 @@ public class JwtUserService:IUserService
         return user;
     }
 
+    public Task<User> EditAsync(User user)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task LoginAsync(string email, string password)
     {
         UserLoginDto userLoginDto = new()

@@ -1,3 +1,4 @@
+using Shared.DTOs;
 using Shared.Models;
 
 namespace Application.LogicInterfaces;
@@ -11,5 +12,7 @@ public interface IAdressLogic
     Task<IEnumerable<Adress>> getNonUserAdresses();
 
     Task<Adress> getByUserId(int id);
-    
+
+    Task UpdateAsync(UpdateAdressDto dto);
+    Task<Adress> GetById(int id);
 }

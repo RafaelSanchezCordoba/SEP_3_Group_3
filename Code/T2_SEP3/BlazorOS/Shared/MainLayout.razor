@@ -38,6 +38,8 @@
 @code {
     
     private string claimString= "Id";
+    private bool addedSomething= false;
+   
 
            
     private void Login()
@@ -58,7 +60,18 @@
 
     private void ShoppingCart()
     {
-        
+        if (!addedSomething)
+        {
+            addedSomething = true;
+            Console.WriteLine("clear shopping cart!!!!!!!");
+            
+            NavManager.NavigateTo("ShoppingCart/4");
+        }
+        else
+        {
+            Console.WriteLine("not clear");
+            NavManager.NavigateTo("ShoppingCart/4");
+        }
     }
 
     private async Task ShoppingCartRegistered(int customerId)

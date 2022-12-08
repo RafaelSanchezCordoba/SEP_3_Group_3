@@ -10,6 +10,7 @@ public interface IAdressDao
 
     Task<IEnumerable<Adress>> getNonUserAdresses();
 
-   
 
+    Task<Adress> getById(int id);
+    Task UpdateAsync(Adress updated);
 }

@@ -1,5 +1,6 @@
 using Application.LogicInterfaces;
 using Microsoft.AspNetCore.Mvc;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace WebAPI.Controllers;
@@ -13,6 +14,22 @@ public class AdressController:ControllerBase
     public AdressController(IAdressLogic adressLogic)
     {
         this.adressLogic = adressLogic;
+    }
+    
+    
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<Adress>> GetById([FromRoute] int id)
+    {
+        try
+        {
+            var result = await adressLogic.GetById(id);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
     }
 
     [HttpPost]
@@ -68,6 +85,21 @@ public class AdressController:ControllerBase
         {
             var adresses = await adressLogic.getByUserId( id);
             return Ok(adresses);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpPatch]
+    public async Task<ActionResult> UpdateAsync([FromBody] UpdateAdressDto dto)
+    {
+        try
+        {
+            await adressLogic.UpdateAsync(dto);
+            return Ok();
         }
         catch (Exception e)
         {
