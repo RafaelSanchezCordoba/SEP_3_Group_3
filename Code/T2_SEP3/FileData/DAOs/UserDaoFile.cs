@@ -28,6 +28,7 @@ public class UserDaoFile:IUserDao
         
         return Task.FromResult(user);
     }
+    
 
     public Task<User> Register(User user, string password)
     {
@@ -94,6 +95,9 @@ public class UserDaoFile:IUserDao
         }
 
         return Task.FromResult(exists);
+    }
+    
+
     public Task<User> GetByEmail(string email)
     {
         User? existing = context.Users.FirstOrDefault(user => user.Email == email);

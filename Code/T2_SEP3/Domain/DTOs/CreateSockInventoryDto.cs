@@ -1,9 +1,8 @@
 namespace Shared.DTOs;
 
 
-public class CreateSocksInventoryDto
 
-
+public class CreateSockInventoryDto
 
 {
     public int CardId { get;}
@@ -15,9 +14,7 @@ public class CreateSocksInventoryDto
     public long Quantity { get; set; }
 
 
-    public CreateSocksInventoryDto(int cardId, string color, string size, long quantity)
-  
-
+    public CreateSockInventoryDto(int cardId, string color, string size, long quantity)
     {
         this.CardId = cardId;
         this.Color = color;

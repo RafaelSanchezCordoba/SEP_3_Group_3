@@ -147,12 +147,6 @@
       "OwnerId": 1,
       "Products": [
         {
-          "ProductCardId": 4,
-          "Id": 6,
-          "Size": "xl",
-          "Color": "red"
-        },
-        {
           "ProductCardId": 1,
           "Id": 11,
           "Size": "m",
@@ -333,6 +327,12 @@
       "Id": 16,
       "Size": "",
       "Color": ""
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 17,
+      "Size": "xs",
+      "Color": "red"
     }
   ],
   "Users": [
@@ -340,6 +340,7 @@
       "Id": 9,
       "Email": "string",
       "Password": "string",
+      "Name": null,
       "PhoneNumber": "string",
       "Adress": {
         "Id": 1,
@@ -357,6 +358,7 @@
       "Id": 1,
       "Email": "admin",
       "Password": "admin",
+      "Name": null,
       "PhoneNumber": null,
       "Adress": {
         "Id": 1,
@@ -369,6 +371,15 @@
         "ExtraInfo": "string"
       },
       "Auth": "Manager"
+    },
+    {
+      "Id": 10,
+      "Email": "rafaENP@gmail.com",
+      "Password": "smallpp",
+      "Name": null,
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
     }
   ],
   "Adresses": [
@@ -461,12 +472,6 @@
       "ProductId": 15
     },
     {
-      "Id": 11,
-      "Quantity": 5,
-      "ShoppingCartId": 1,
-      "ProductId": 11
-    },
-    {
       "Id": 12,
       "Quantity": 1,
       "ShoppingCartId": 1,
@@ -513,6 +518,18 @@
       "Quantity": 4,
       "ShoppingCartId": 1,
       "ProductId": 6
+    },
+    {
+      "Id": 16,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 17
+    },
+    {
+      "Id": 11,
+      "Quantity": 5,
+      "ShoppingCartId": 1,
+      "ProductId": 11
     }
   ]
 }
