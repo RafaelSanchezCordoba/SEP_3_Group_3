@@ -205,20 +205,32 @@
       "mscorlib.dll": "sha256-TYLzIm125RbnX9+RAPqJnwZhd6CnQpJcrjiMpJfZ720=",
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
+<<<<<<< HEAD
       "Domain.dll": "sha256-zFb6uTsJeol3wv+ATEj2GXojZnql1JRbtr9X2rB9Im8=",
       "HttpClients.dll": "sha256-efgvyp2MVKdUZUGsFreIpj+zCddA2b3yRs8UOg+TeCw=",
       "BlazorOS.dll": "sha256-N\/rhaj3ks+fl21aqbHG3Gsnlc32x9uhvvfi7OLCcfhc="
+=======
+      "Domain.dll": "sha256-b6SGg8obHNGtj6DP8\/IKmN4QTD\/vAjTJIDVAS8C6RCA=",
+      "HttpClients.dll": "sha256-BpG\/M2rLa6UAGBJlmb7BZ1fmezQ0dlqbN5uVUCvRaXI=",
+      "BlazorOS.dll": "sha256-Xa6ndpYIEBe7Hb7uPSLv5A63RyuHpdV1lyYaU5qOcMY="
+>>>>>>> origin/OrderWebAPI
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
+<<<<<<< HEAD
       "HttpClients.pdb": "sha256-ACtzI1yWHcN4J5PRP5iQ0vfraKvB5uzgepY4u8PMPbQ=",
       "Domain.pdb": "sha256-oCOsFQ1OqdorHDY+wxnWZAIW8fNsG2DD39Kzzu6iIWg=",
       "BlazorOS.pdb": "sha256-okCJDenU8bHdoGUbG89VwaNoaMZ+bSZqDlU0E64LsG0="
+=======
+      "HttpClients.pdb": "sha256-q5zSbXg9aV94uObd1Fk4zpHLLl3Ry+czv5JMZXOw6gw=",
+      "Domain.pdb": "sha256-y3WfZltkz9X+CSNgPXBFjQi8XFswI4c\/5vseQ3TvodI=",
+      "BlazorOS.pdb": "sha256-j8pL0fHQMNRS+VkIbJAwiJoNiZ5U6WROWmUgIUg9Gr8="
+>>>>>>> origin/OrderWebAPI
     },
     "runtime": {
-      "dotnet.6.0.8.3st3fntw0r.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
+      "dotnet.6.0.8.ba9svdhpad.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
       "dotnet.timezones.blat": "sha256-2NJf++ql6UnbRRdYWEir6MxH58bYGWDEqofII\/z+Xmo=",
       "dotnet.wasm": "sha256-y0gwhQ7a6FTinj6R6HEA3SlRDb\/iL70a56PEGpKbt\/8=",
       "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",

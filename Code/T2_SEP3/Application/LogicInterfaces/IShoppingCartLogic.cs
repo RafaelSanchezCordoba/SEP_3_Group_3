@@ -11,6 +11,10 @@ public interface IShoppingCartLogic
     Task<ShoppingCart> AddProduct(Product product, int cartId);
     Task DeleteAsync(int cardId);
     Task<ShoppingCart> RemoveProduct(Product product, int id);
+<<<<<<< HEAD
     Task<ShoppingCart> GetByCustomerName(int ownerId);
 
+=======
+    Task<double> GetTotalPriceAsync(int id);
+>>>>>>> origin/OrderWebAPI
 }
