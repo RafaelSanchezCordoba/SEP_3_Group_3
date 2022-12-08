@@ -39,9 +39,13 @@
         <br/><br/>
         
         <button @onclick="AddToCart" class="myButton">Add to the cart</button>
-        @errorMsg
         <input type="text" @bind="cartId" @bind:event ="oninput"/>
         shopping cart id (to be deleted when login is implemented)
+        
+         @if (!string.IsNullOrEmpty(errorMsg))
+                {
+                    <br/> <label style="color:red">@errorMsg</label>
+                }
     </div>
 </div>
 
@@ -60,6 +64,11 @@
     private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
     private String cartId{ get; set; }="";
 
+
+    public void ValidateColorSizes()
+    {
+        
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -106,24 +115,34 @@
 
     private async void AddToCart()
     {
-        CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
-        Socks socks = await socksService.CreateAsync(socksDto);
-        CreateCardItemDto dto = new CreateCardItemDto(Convert.ToInt32(cartId), socks.Id);
-        await cardItemService.CreateAsync(dto);
-        global::Shared.Models.ShoppingCart shoppingCart = await shoppingCartService.getByIdAsync(Convert.ToInt32(cartId));
-        foreach (Product p in shoppingCart.Products)
+        try
         {
-            if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+            CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
+            Socks socks = await socksService.CreateAsync(socksDto);
+            CreateCardItemDto dto = new CreateCardItemDto(Convert.ToInt32(cartId), socks.Id);
+            await cardItemService.CreateAsync(dto);
+            global::Shared.Models.ShoppingCart shoppingCart = await shoppingCartService.getByIdAsync(Convert.ToInt32(cartId));
+            foreach (Product p in shoppingCart.Products)
             {
-               CardItem item= await cardItemService.GetByIdsAsync(p.Id, Convert.ToInt32(cartId));
-                int quantity = item.Quantity;
-                quantity++;
-                cardItemService.UpdateQuantityAsync(item.Id, quantity);
-                navMgr.NavigateTo($"/shoppingCart/{cartId}");
-                return;
-            } 
+                if (p.ProductCardId == socks.ProductCardId && p.Color.Equals(socks.Color) && p.Size.Equals(socks.Size))
+                {
+                    CardItem item = await cardItemService.GetByIdsAsync(p.Id, Convert.ToInt32(cartId));
+                    int quantity = item.Quantity;
+                    quantity++;
+                    cardItemService.UpdateQuantityAsync(item.Id, quantity);
+                    navMgr.NavigateTo($"/shoppingCart/{cartId}");
+                    return;
+                }
+            }
+            await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
+            navMgr.NavigateTo($"/shoppingCart/{cartId}");
         }
-        await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
-        navMgr.NavigateTo($"/shoppingCart/{cartId}");
+
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
     }
+
 }

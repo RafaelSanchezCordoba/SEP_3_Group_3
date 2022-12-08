@@ -17,6 +17,7 @@ public class SocksLogic : ISocksLogic
     public async Task<Socks> CreateAsync(CreateSocksDto dto)
     {
         Socks socks = new Socks(dto.ProductCardId, dto.Size, dto.Color);
+        ValidateSocks(dto);
         Socks created = await socksDao.CreateAsync(socks);
         return created;
     }
@@ -24,6 +25,12 @@ public class SocksLogic : ISocksLogic
     public Task<IEnumerable<Socks>> GetAsync()
     {
         return socksDao.GetAsync();
+    }
+    
+    private void ValidateSocks(CreateSocksDto dto)
+    {
+        if (string.IsNullOrEmpty(dto.Color)) throw new Exception("Please Select a Color!!!");
+        if (string.IsNullOrEmpty(dto.Size)) throw new Exception("Please Select a Size!!!");
     }
 
     public Task<Socks> GetById(int id)

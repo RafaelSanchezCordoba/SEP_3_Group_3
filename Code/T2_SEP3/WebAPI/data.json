@@ -144,6 +144,12 @@
           "Id": 3,
           "Size": "s",
           "Color": "grey"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 7,
+          "Size": "m",
+          "Color": "blue"
         }
       ]
     }
@@ -208,6 +214,36 @@
       "Id": 3,
       "Size": "s",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 4,
+      "Size": "",
+      "Color": ""
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 5,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 6,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 7,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 8,
+      "Size": "s",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -245,8 +281,38 @@
       "ProductId": 2
     },
     {
+      "Id": 4,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 4
+    },
+    {
+      "Id": 5,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+    },
+    {
+      "Id": 6,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 6
+    },
+    {
+      "Id": 7,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 7
+    },
+    {
+      "Id": 8,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 8
+    },
+    {
       "Id": 3,
-      "Quantity": 3,
+      "Quantity": 6,
       "ShoppingCartId": 1,
       "ProductId": 3
     }
