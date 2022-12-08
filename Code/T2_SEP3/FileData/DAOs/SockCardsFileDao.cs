@@ -37,6 +37,11 @@ public class SockCardsFileDao : ISockCardDao
         return Task.FromResult(result);
     }
 
+    public Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync(string title)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
     {
         List<SocksCard> result = context.SocksCards.AsEnumerable().ToList();

@@ -7,103 +7,67 @@ namespace Application.Logic;
 
 
 public class SocksInventoryLogic:ISocksInventoryLogic
-
 {
-    
     private readonly ISocksInventoryDao inventoryDao;
 
     public SocksInventoryLogic(ISocksInventoryDao inventoryDao)
     {
         this.inventoryDao = inventoryDao;
     }
-
-
-
-
+    
     public async Task<Inventory> CreateAsync(CreateSockInventoryDto dto)
     {
         Inventory result = new Inventory(dto.CardId, dto.Color,dto.Size,dto.Quantity);
-        
+        ValidateInventory(result);
         Inventory created = await inventoryDao.CreateAsync(result);
         return created;
     }
 
-    public Task<IEnumerable<Inventory>> GetAsync()
-
+    public async Task<IEnumerable<Inventory>> GetAsync()
     {
-        return inventoryDao.GetAsync();
+        return await inventoryDao.GetAsync() ?? throw new Exception("Inventories were not found!!!");
+    }
+    
+    public async Task<Inventory> GetById(int id)
+    {
+        ValidateInventoryById(id);
+        return await inventoryDao.GetById(id) ?? throw new Exception($"Inventory with id {id} was not found!!!");
     }
 
-
-   
-
-    public Task<Inventory> GetById(int id)
-
+    public async Task<IEnumerable<Inventory>> GetByCardIdAsync(int id)
     {
-        return inventoryDao.GetById(id);
+        ValidateInventoryById(id);
+        return await inventoryDao.GetByCardIdAsync(id) ?? throw new Exception($"Inventories with id {id} were not found!!!");
+    }
+    
+    public Task UpdateAsync(Inventory inventory)
+    {
+        ValidateInventory(inventory);
+        return inventoryDao.UpdateAsync(inventory) ?? throw new Exception($"Inventory with ID {inventory.Id} not found!!!");
+    }
+    
+    public Task DeleteFromCardAsync(int id)
+    {
+        ValidateInventoryById(id);
+       return inventoryDao.DeleteFromCardAsync(id) ?? throw new Exception($"Sock Card with id{id} does not have any stock!!!");
     }
 
-
-    public Task<IEnumerable<Inventory>> GetByCardIdAsync(int id)
-
+    public Task DeleteAsync(int id)
     {
-        return inventoryDao.GetByCardIdAsync(id);
+        ValidateInventoryById(id);
+        return inventoryDao.DeleteAsync(id) ?? throw new Exception($"Inventory with ID {id} was not found!!!");
     }
 
-
-    public async Task UpdateAsync(Inventory inventory)
-
+    public void ValidateInventory(Inventory inventory)
     {
-        Inventory? existing = await inventoryDao.GetById(inventory.Id);
-
-        if (existing == null)
-        {
-            throw new Exception($"Inventory with ID {inventory.Id} not found!!!");
-        }
-        
-        string colorToUse =inventory.Color ?? existing.Color;
-        string sizeToUse = inventory.Size ?? existing.Size;
-        long quantityToUse = inventory.Quantity ;
-        int cardIdToUse =  inventory.CardId;
-
-        Inventory updated = new Inventory(cardIdToUse,colorToUse,sizeToUse,quantityToUse)
-        {
-            Id = existing.Id
-        };
-        
-        
-        await inventoryDao.UpdateAsync((Inventory)updated);
+        if (string.IsNullOrEmpty(inventory.Color)) throw new Exception("Color cannot be empty!!!");
+        if (string.IsNullOrEmpty(inventory.Size)) throw new Exception("Size cannot be empty!!!");
+        if (inventory.Quantity < 0) throw new Exception("Quantity cannot be negative!!!");
+        if (inventory.CardId <= 0) throw new Exception("Card id must be > 0!!!");
     }
-
-
-
-
-    public async Task DeleteFromCardAsync(int id)
+    
+    public void ValidateInventoryById(int id)
     {
-
-       Task<IEnumerable<Inventory>> toBeDeleted = inventoryDao.GetByCardIdAsync(id);
-
-       if (toBeDeleted==null)
-       {
-           throw new Exception($"Sock Card with id{id} does not have any stock!!!");
-       }
-
-       await inventoryDao.DeleteFromCardAsync(id);
-       
-    }
-
-    public async Task DeleteAsync(int id)
-    {
-
-     
-        Inventory? stock = await inventoryDao.GetById(id);
-
-        if (stock == null)
-        {
-            throw new Exception($"Stock with ID {id} was not found!!!");
-        }
-
-        await inventoryDao.DeleteAsync(id);
-       
+        if (id <= 0) throw new Exception("Card id must be > 0!!!");
     }
 }

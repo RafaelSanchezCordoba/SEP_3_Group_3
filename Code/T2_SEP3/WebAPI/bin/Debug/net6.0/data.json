@@ -135,7 +135,7 @@
     }
   ],
   "ShoppingCarts": [
-   
+    
   ],
   "SocksCards": [
     {
@@ -151,7 +151,7 @@
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
-      "Price": 4.30,
+      "Price": 4.3,
       "Material": "Recycled polyester",
       "Brand": "IDK",
       "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
@@ -180,7 +180,24 @@
     }
   ],
   "Socks": [
-   
+    {
+      "ProductCardId": 1,
+      "Id": 1,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 2,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 3,
+      "Size": "s",
+      "Color": "grey"
+    }
   ],
   "Users": [
     {
@@ -202,11 +219,26 @@
       "Auth": "Customer"
     }
   ],
-  "Adresses": [
-  ],
+  "Adresses": [],
   "CardItems": [
+    {
+      "Id": 1,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 1
+    },
+    {
+      "Id": 2,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 2
+    },
+    {
+      "Id": 3,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 3
+    }
   ],
-  "Orders": [
-    
-  ]
+  "Orders": []
 }

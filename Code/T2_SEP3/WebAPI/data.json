@@ -135,18 +135,7 @@
     }
   ],
   "ShoppingCarts": [
-    {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 3,
-          "Size": "s",
-          "Color": "grey"
-        }
-      ]
-    }
+    
   ],
   "SocksCards": [
     {
