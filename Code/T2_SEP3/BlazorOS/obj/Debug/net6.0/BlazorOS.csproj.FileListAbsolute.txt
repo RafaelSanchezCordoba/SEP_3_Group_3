@@ -9452,7 +9452,6 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Profile.razor.rz.scp.css
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css
-C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\UIComponents\LoginButtons.razor.rz.scp.css
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\ViewSockInfo.razor.rz.scp.css
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js

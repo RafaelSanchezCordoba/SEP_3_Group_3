@@ -48,8 +48,8 @@
     
     <b>Order Summary</b>
     <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
-    <button onclick="@PlaceOrder()" class="myButton" id="checkout-btn">Place Order</button>
-    <button onclick="@CancelOrder()" class="myButton" id="checkout-btn">Cancel Order</button>
+    <button @onclick="PlaceOrder" class="myButton" id="checkout-btn">Place Order</button>
+    <button @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</button>
     <p>@msg</p>
     
     <div>
@@ -83,8 +83,6 @@
     {
         try
         {
-
-
             productList = (List<Product>)OrderDto.ShoppingCart.Products;
             foreach (Product p in productList)
             {
@@ -94,9 +92,7 @@
                 items.Add(item);
                 subtotal = await shoppingCartService.GetTotalPrice(OrderDto.ShoppingCart.Id);
                 OrderDto.TotalPrice = subtotal;
-
             }
-           
         }
         catch (Exception e)
         {

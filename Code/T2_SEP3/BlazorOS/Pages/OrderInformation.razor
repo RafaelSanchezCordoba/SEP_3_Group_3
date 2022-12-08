@@ -2,13 +2,17 @@
 @using global::Shared.Models
 @using global::Shared.DTOs
 @using HttpClients.ClientInterfaces
+@using System.Text.Json.Serialization
 @inject NavigationManager navMgr
 @inherits LayoutComponentBase
 @inject IShoppingCartService shoppingCartService
+@inject ISockCardService socksCardService
+@inject ICardItemService cardItemService
+@inject IOrderService orderService
 
 <h3>OrderInformation</h3>
 
-<div class="container"> 
+<div class="container" style="display:@showModalInfo"> 
     <div class="card">
     
         <div class="form-group-field">
@@ -61,19 +65,75 @@
         </div>
     </div>
     <div class="button-message">
-        <button @onclick="ConfirmInformation" class="acceptbtn">Confirm My Information</button>
+        <button @onclick="@(() => ConfirmInformation())" class="acceptbtn">Confirm My Information</button>
         @if (!string.IsNullOrEmpty(resultMsg))
         {
             <br/> <label style="color:red">@resultMsg</label>
         }
     </div>
-     <CascadingValue Value="@OrderDto">
-         <article class="content px-4">
-             @Body
-         </article>
-      </CascadingValue>
+
+    </div>
+
+
+
+<div class="table-div" style="display: @showModalSum">
+    <table class="table">
+        <thead>
+        <th></th>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th></th>
+        </thead>
+        <tbody>
+        @foreach (var p in items)
+        {
+            <p>@p.Id</p>  
+            <p>@p.ProductId</p>      
+            
+        }
+     
+        @foreach (var p in productList)
+        {
+            ProductCard? productCard = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+            CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+
+            <tr> <td ><img src="@productCard.Image" style="width: 100px"/></td>
+                <td >
+                    <p>@productCard.Title</p>
+                    <p>@p.Size.ToUpper()</p>
+                    <p style="color: @p.Color">@p.Color</p>
+                </td>
+                <td>
+                    <p>@cardItem.Quantity</p>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <div class="order-summary-div">
+        
+        <b>Order Summary</b>
+        <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
+        <button @onclick="PlaceOrder" class="myButton" id="checkout-btn">Place Order</button>
+        <button @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</button>
+        <p>@resultMsg</p>
+        
+        <div>
+            <p>@OrderDto.CustomerName</p>
+            <p>@OrderDto.CustomerEmail</p>
+            <p>@OrderDto.CustomerPhoneNumber</p>
+            <p>@OrderDto.Shipping.City,@OrderDto.Shipping.Country</p>
+            <p>@OrderDto.Shipping.Street,@OrderDto.Shipping.Number</p>
+            <p>@OrderDto.Shipping.ExtraInfo</p>
+            <p>@OrderDto.Shipping.PostCode</p>
+        </div>
     
-</div>
+    </div>
+ </div>
+
+
+
+
    
 
 @code {
@@ -90,14 +150,20 @@
     private int postcode = 0;
     private string option = "";
     
-    
-    private CreateOrderDto OrderDto = null;
+    private double subtotal = 0;
+    private List<Product> productList = new List<Product>();
+    private List<ProductCard?> cards = new List<ProductCard?>();
+    private List<CardItem?> items = new List<CardItem?>();
+    ShoppingCart shoppingCart = null;
 
     
-
+    private CreateOrderDto OrderDto = new CreateOrderDto("ggg","hhh","jjj","jjjj",null,new Adress(1,1,"hhh","jjj",888,"fff",5,"hhhh"));
+    
 
     private string resultMsg = "";
     private string color = "";
+    private string showModalInfo = "initial";
+    private string showModalSum = "none";
 
     private async Task ConfirmInformation()
     {
@@ -105,7 +171,9 @@
         {
             global::Shared.Models.ShoppingCart cart = await shoppingCartService.getByIdAsync(Id);
             OrderDto = new CreateOrderDto( "Processing order", name, email, phone, cart, new Adress(1, 1, country, city, postcode, street, number, option));
-            navMgr.NavigateTo($"/OrderSummary");
+         
+            LoadOrderSummary();
+            
         }
         catch (Exception e)
         {
@@ -114,6 +182,55 @@
         }
 
     }
+    protected async Task LoadOrderSummary()
+    {
+        try
+        {
+            productList = (List<Product>)OrderDto.ShoppingCart.Products;
+            foreach (Product p in productList)
+            {
+                SocksCard card = await socksCardService.GetById(p.ProductCardId);
+                cards.Add(card);
+                Console.WriteLine("shp id"+OrderDto.ShoppingCart.Id);
+                CardItem item=await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
+                Console.WriteLine(item.Id);
+                items.Add(item);
+                //subtotal = await shoppingCartService.GetTotalPrice(OrderDto.ShoppingCart.Id);
+                Console.WriteLine(subtotal);
+                OrderDto.TotalPrice = subtotal;
+                
+            }
+            showModalInfo = "none";
+            showModalSum = "initial";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+        }
+    }
+
+    
+    protected async Task PlaceOrder()
+    {
+        try
+        {
+            await orderService.CreateAsync(OrderDto);
+    //nav to page that tells you congrats
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+        }
+
+    }
+    
+    protected async Task CancelOrder()
+    {
+        navMgr.NavigateTo($"/ShoppingCart/{OrderDto.ShoppingCart.Id}");
+    }
+
 
 
 
