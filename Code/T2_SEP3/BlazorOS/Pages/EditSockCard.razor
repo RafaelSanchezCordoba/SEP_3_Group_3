@@ -78,9 +78,20 @@
     {
         try
         {
-            UpdateSocksCardDto dto = new UpdateSocksCardDto(Id);
-            await sockService.UpdateAsync(dto);
+            UpdateSocksCardDto dto = new UpdateSocksCardDto(Id)
+            {
+                
+                Brand = card.Brand,
+                Description = card.Description,
+                Image = card.Image,
+                Material = card.Material,
+                Price = card.Price,
+                Title = card.Title,
+                Type = card.Type
+            };
             msg = "card updated";
+            await sockService.UpdateAsync(dto);
+            
         }
         catch (Exception e)
         {

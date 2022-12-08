@@ -34,9 +34,6 @@ public class SockCardLogic : ISockCardLogic
 
     public async Task UpdateAsync(UpdateSocksCardDto dto)
     {
-       
-        
-        
         await socksDao.UpdateAsync(dto);
     }
 

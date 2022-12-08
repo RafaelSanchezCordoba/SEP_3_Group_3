@@ -170,16 +170,6 @@
       "Id": 2
     },
     {
-      "Title": "unicorn socks",
-      "Description": "makes you feel magical",
-      "Price": 8,
-      "Material": "recycled polyester",
-      "Brand": "nike",
-      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
-      "Type": "Anklets",
-      "Id": 3
-    },
-    {
       "Title": "Pizza sock",
       "Description": "yummyyyyyyy",
       "Price": 10,
@@ -188,6 +178,16 @@
       "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
       "Type": "Anklets",
       "Id": 4
+    },
+    {
+      "Title": "Anicorn socks",
+      "Description": "makes you feel magical",
+      "Price": 8,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
+      "Type": "Low cut",
+      "Id": 3
     }
   ],
   "Socks": [
