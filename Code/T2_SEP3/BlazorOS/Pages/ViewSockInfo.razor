@@ -24,7 +24,7 @@
         <div class="color-container">
             @foreach (string color in colors)
             {
-                <div class="colorBtn" style="background-color: @color; width: 25px" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
+                <div class="colorBtn" style="background-color: @color; width: 25px; border: 1px black solid" @onclick="() => { selectedColor=color; LoadSizes();}"></div>
             }
         </div><br/><br/>
         <p>Size: @selectedSizes</p>

@@ -11,14 +11,16 @@
     <main>
         <div class="top-row px-4">
            
-            <img  style="width: 44px; float: right" src="https://static.thenounproject.com/png/1709580-200.png" @onclick="@(() => NavManager.NavigateTo("/ShoppingCart"))"/>
-            <AuthorizeView>
+             <AuthorizeView>
                 <Authorized>
+                    <img style="width: 40px" src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" @onclick="Profile"/>
+                    <img  style="width: 44px; float: right" src="https://static.thenounproject.com/png/1709580-200.png" @onclick="@(() => NavManager.NavigateTo("/ShoppingCart"))"/>
                     <img style="width: 44px" src="https://static.thenounproject.com/png/1251649-200.png" @onclick="Logout"/>
                 </Authorized>
-                <NotAuthorized>
-                    <img style="width: 44px" src="https://static.thenounproject.com/png/1401845-200.png" @onclick="Login"/>
-                </NotAuthorized>
+                 <NotAuthorized>
+                      <img  style="width: 44px; float: right" src="https://static.thenounproject.com/png/1709580-200.png" @onclick="@(() => NavManager.NavigateTo("/ShoppingCart"))"/>
+                      <img style="width: 44px" src="https://static.thenounproject.com/png/1401845-200.png" @onclick="Login"/>
+                 </NotAuthorized>
             </AuthorizeView>
         </div>
 
@@ -41,6 +43,10 @@
     {
         await authService.LogoutAsync();
         NavManager.NavigateTo("/");
+    }
+    private void Profile()
+    {
+        NavManager.NavigateTo("/Profile");
     }
 
 }

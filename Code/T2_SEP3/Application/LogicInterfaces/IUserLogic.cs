@@ -12,4 +12,5 @@ public interface IUserLogic
     Task<string> Login(string email, string password);
     int GetUserId();
     string GetUserEmail();
+    Task<User> GetByEmail(string email);
 }

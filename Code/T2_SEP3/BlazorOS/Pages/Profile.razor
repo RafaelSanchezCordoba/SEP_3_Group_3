@@ -1,0 +1,109 @@
+@attribute [Authorize]
+@page "/Profile"
+
+@using System.Security.Claims
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@inject IUserService userService
+<h3>My Profile</h3>
+<AuthorizeView>
+    <NotAuthorized>Please login first</NotAuthorized> 
+ <Authorized>
+<div class="container" style="display:@showModal2"> 
+    <div class="card">
+    
+        <div class="form-group-field">
+            <label>Email:</label>
+            <label class="long-input">@user.Email</label>
+        </div>
+    
+        <div class="form-group-field">
+            <label>Password:</label>
+            <label class="long-input" type="password">@user.Password</label>
+        
+        </div>
+        <div>
+            <div class="small-form-field" >
+                <label>Name:</label>
+                <label class="small-input" >@user.Name</label>
+            </div>  
+    
+            <div class="small-form-field" >
+                <label>Phone:</label>
+                <label class="small-input" >@user.PhoneNumber</label>
+        
+            </div>
+        </div></div>
+    <button class="myButton" @onclick="EditInfo">Edit info</button>
+    </div>
+   
+    <div style="display:@showModal">
+        <div class="container"> 
+            <div class="card">
+               <div class="form-group-field">
+                           <label>Email:</label>
+                           <label class="long-input">@user.Email</label>
+                       </div>
+                <div class="form-group-field">
+                    <label>Password:</label>
+                    <input class="long-input" type="text" @bind="password" @bind:event ="oninput"/>
+                </div>
+                <div>
+                    <div class="small-form-field" >
+                        <label>Name:</label>
+                        <input type="text" class="small-input" @bind="name" @bind:event ="oninput"/>
+                    </div>  
+        
+                    <div class="small-form-field" >
+                        <label>Phone:</label>
+                        <input type="text" class="small-input"  @bind="phone" @bind:event ="oninput"/>
+            
+                    </div>
+                </div></div>
+            <button class="myButton">Confirm</button>
+        </div>
+    </div>
+    </Authorized>
+</AuthorizeView>
+@code {
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+
+    private string? password="";
+    private string? name="";
+    private string? phone="";
+    private string? email="";
+    private bool isLoggedIn=false;
+    private string postTitle = "";
+    private string postBody="";
+    private string showModal="none";
+    private string showModal2="initial";
+    private User user = null;
+    
+    private string msg = "";
+    
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        AuthenticationState authState = await AuthState;
+        ClaimsPrincipal userClaims = authState.User;
+        isLoggedIn = userClaims.Identity != null;
+        if (!isLoggedIn) return;
+        Console.WriteLine(userClaims.FindFirst("Email").Value);
+        string? userEmail = userClaims.FindFirst("Email").Value;
+        user = await userService.GetByEmail(userEmail);
+        email = user.Email;
+        name = user.Name;
+        phone = user.PhoneNumber;
+        password = user.Password;
+        
+    }
+
+    protected void EditInfo()
+    {
+        showModal = "initial";
+        showModal2 = "none";
+    }
+    
+}

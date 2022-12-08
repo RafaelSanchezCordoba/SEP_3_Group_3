@@ -56,4 +56,9 @@ public class ShoppingCartLogic :IShoppingCartLogic
         }
         return await dao.DeleteProductAsync(product,id);
     }
+
+    public Task<ShoppingCart> GetByCustomerName(int ownerId)
+    {
+        return dao.GetByCustomerName(ownerId);
+    }
 }

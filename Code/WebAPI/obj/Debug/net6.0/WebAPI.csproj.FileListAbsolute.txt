@@ -1,0 +1,136 @@
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/appsettings.Development.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/appsettings.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/WebAPI
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/WebAPI.deps.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/WebAPI.runtimeconfig.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/WebAPI.pdb
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Application.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Domain.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/FileData.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Application.pdb
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/FileData.pdb
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/Domain.pdb
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfoInputs.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfo.cs
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CoreCompileInputs.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/staticwebassets.build.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/staticwebassets.development.json
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/scopedcss/bundle/WebAPI.styles.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CopyComplete
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/refint/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.pdb
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/WebAPI.genruntimeconfig.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/WebAPI/bin/Debug/net6.0/data.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.exe
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.pdb
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.pdb
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.pdb
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.pdb
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\data.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\data.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.exe
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.pdb
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.pdb
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.pdb
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.pdb
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\data.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.exe
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Application.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\FileData.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\bin\Debug\net6.0\Domain.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.pdb
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll

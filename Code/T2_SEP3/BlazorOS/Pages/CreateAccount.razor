@@ -1,0 +1,60 @@
+@page "/CreateAccount"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@using global::Shared.DTOs
+@inject IUserService _userService
+@inject NavigationManager navMgr
+
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="card">
+             <h2>Create Account</h2>
+             <label>Email</label>
+                 <input type="text" @bind="email"/>
+               <label>Password</label>
+                 <input type="password" @bind="password" />
+                  <label>Repeat Password</label>
+                 <input type="password" @bind="password2" />
+             <button @onclick="CreateUserAsync" class="myButton">Create Account</button>
+             <label style="color: red">@errorLabel</label>
+         </div>
+        
+    </NotAuthorized>
+    <Authorized>
+        <div class="card">
+            <h3>Logout first</h3>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private string email = "";
+    private string password = "";
+    private string password2 = "";
+    private string errorLabel = "";
+    private string message = "";
+    
+
+    private async Task CreateUserAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            UserRegisterDto dto = new UserRegisterDto()
+                {
+                    Email = email,
+                    Password = password,
+                    ConfirmPassword = password2
+                };
+                await _userService.CreateAsync(dto);
+                navMgr.NavigateTo("/");
+            
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}

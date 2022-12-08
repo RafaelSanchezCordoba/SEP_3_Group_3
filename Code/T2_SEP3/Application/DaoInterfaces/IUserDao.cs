@@ -13,4 +13,7 @@ public interface IUserDao
     Task<User> GetById(int id);
 
     Task<User> UpdateUser(User user);
+
+    Task<User> GetByEmail(string email);
+
 }

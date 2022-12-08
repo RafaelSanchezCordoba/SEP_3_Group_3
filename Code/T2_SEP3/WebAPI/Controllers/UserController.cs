@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -76,15 +77,16 @@ public class UserController:ControllerBase
 
     private List<Claim> GenerateClaims(User user)
     {
+        
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-          
             new Claim("Authorization", user.Auth),
-        
+           new Claim("Email",user.Email)
         };
+        
         return claims.ToList();
     }
     
@@ -108,6 +110,22 @@ public class UserController:ControllerBase
     
         string serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
         return serializedToken;
+    }
+    
+    
+    [HttpGet("{email}")]
+    public async Task<ActionResult<User>> GetByEmail([FromRoute]string email)
+    {
+        try
+        {
+            var result = await _userLogic.GetByEmail(email);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
     }
 
    
