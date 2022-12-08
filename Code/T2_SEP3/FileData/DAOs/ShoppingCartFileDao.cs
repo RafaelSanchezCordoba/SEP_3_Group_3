@@ -92,4 +92,16 @@ public class ShoppingCartFileDao:IShoppingCartDao
         context.SaveChanges();
         return Task.FromResult(existing);
     }
+
+    public Task<ShoppingCart> GetByCustomerName(int ownerId)
+    {
+        ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.OwnerId == ownerId);
+        
+        if (existing == null)
+        {
+            throw new Exception($"Shopping cart with userName {ownerId} does not exist!");
+        }
+        
+        return Task.FromResult(existing); ;
+    }
 }

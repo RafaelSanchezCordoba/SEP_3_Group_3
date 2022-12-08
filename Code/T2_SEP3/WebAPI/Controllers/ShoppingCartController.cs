@@ -110,4 +110,19 @@ public class ShoppingCartController:ControllerBase
         }
     }
     
+      [HttpGet("userId/{id:int}")]
+        public async Task<ActionResult<ShoppingCart>> GetByCustomerId([FromRoute] int id)
+        {
+            try
+            {
+                var result = await shoppingcartLogic.GetById(id);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500, e.Message);
+            }
+        }
+    
 }

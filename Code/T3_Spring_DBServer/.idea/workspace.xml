@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="" />
+    <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c51d99a-63cf-4389-9b25-911fcf81efa6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c51d99a-63cf-4389-9b25-911fcf81efa6.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T3_Spring_DBServer",
+    "last_opened_file_path": "C:/Users/maria/OneDrive - ViaUC/VIA/SecondSemester/SDJ2/Session4(MVVM)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -89,6 +91,7 @@
       <workItem from="1669642534262" duration="2924000" />
       <workItem from="1669705133894" duration="750000" />
       <workItem from="1669803279387" duration="4799000" />
+      <workItem from="1670420110398" duration="858000" />
     </task>
     <servers />
   </component>

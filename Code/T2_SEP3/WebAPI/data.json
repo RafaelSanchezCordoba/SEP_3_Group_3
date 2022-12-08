@@ -438,12 +438,6 @@
       "ProductId": 11
     },
     {
-      "Id": 6,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 6
-    },
-    {
       "Id": 12,
       "Quantity": 1,
       "ShoppingCartId": 1,
@@ -478,6 +472,12 @@
       "Quantity": 6,
       "ShoppingCartId": 1,
       "ProductId": 5
+    },
+    {
+      "Id": 6,
+      "Quantity": 4,
+      "ShoppingCartId": 1,
+      "ProductId": 6
     }
   ]
 }

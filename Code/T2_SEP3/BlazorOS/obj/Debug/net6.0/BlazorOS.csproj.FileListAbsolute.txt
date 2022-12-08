@@ -4917,12 +4917,9 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.csproj.CoreCompileInputs.cache
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\Cov8S+li.gz
-C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\0n4D5kKG.gz
-C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\D4QtQsTY.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\e0TgnMy+.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\UE8dLZqe.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\2+gmw58L.gz
-C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\ifdPulqq.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\UZojq3Z1.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\ToMGrVxh.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\DTV0FS7i.gz
@@ -4934,7 +4931,6 @@ C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\yCQ5t045.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\1aiiR+hf.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\9mbL+Vwl.gz
-C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\kZFGYkcE.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\oL5p0yn3.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\JXG22+WE.gz
 C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\2e9b9c5r.gz
@@ -10315,3 +10311,17 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateAccount.razor.rz.scp.css
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\UIComponents\LoginButtons.razor.rz.scp.css
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Profile.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\uDEy8f3r.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\UhzKNqOl.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\OkzfRWU4.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\o2QD+T+7.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\build-gz\EZE+xXFq.gz
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\CreateAccount.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\Profile.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\UIComponents\LoginButtons.razor.rz.scp.css
+C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\scopedcss\Pages\ViewSockInfo.razor.rz.scp.css

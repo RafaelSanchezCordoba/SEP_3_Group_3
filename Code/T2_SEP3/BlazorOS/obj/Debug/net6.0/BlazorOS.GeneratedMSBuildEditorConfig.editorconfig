@@ -11,85 +11,85 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorOS
 build_property.RootNamespace = BlazorOS
-build_property.ProjectDir = C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
+build_property.ProjectDir = C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS
+build_property.MSBuildProjectDirectory = C:\Users\maria\OneDrive\Escritorio\SEP_3_Group_3\Code\T2_SEP3\BlazorOS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/App.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/EditSockCard.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/EditSockCard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNvY2tDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageSocks.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/InventoryCreation.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/InventoryCreation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbnRzXEludmVudG9yeUNyZWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlSW52ZW50b3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/_Imports.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/BrowseSocks.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/BrowseSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJvd3NlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qno29iuakm
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateAccount.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateAccount.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-526gsgnfxa
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zjw7gqpu4y
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSocksInventory.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateSocksInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU29ja3NJbnZlbnRvcnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-akvj340y5b
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-o3v1w4jous
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Profile.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-hcozhfcqqu
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ShoppingCart.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ShoppingCart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-rmsxhl3zv7
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/LoginButtons.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UIComponents/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbnRzXExvZ2luQnV0dG9ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rg1y8n0p9u
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ViewSockInfo.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ViewSockInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1NvY2tJbmZvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ecdsryc5i8
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wcssxcvg4k
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
+[C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ov4nba62sm
