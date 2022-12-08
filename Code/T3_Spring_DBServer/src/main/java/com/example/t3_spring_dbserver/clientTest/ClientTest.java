@@ -1,15 +1,18 @@
 package com.example.t3_spring_dbserver.clientTest;
 
-import com.example.t3_spring_dbserver.entity.SockCard;
-import com.example.t3_spring_dbserver.service.ISockCardService;
+import com.example.t3_spring_dbserver.sockProtoBuff.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import com.example.t3_spring_dbserver.sockProtoBuff.SockCardGrpcGrpc;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sock;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.IntReqSock;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.EmptySocksMessage;
+
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.sockCard;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.IntReq;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.Empty;
 
 import java.util.Iterator;
-import java.util.List;
 
 public class ClientTest {
 
@@ -18,13 +21,16 @@ public class ClientTest {
     public static void main(String[] args)  throws Exception{
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9999).usePlaintext().build();
-        SockCardGrpcGrpc.SockCardGrpcBlockingStub stub = SockCardGrpcGrpc.newBlockingStub(channel);
-        SocksComunicator.StringReq req= SocksComunicator.StringReq.newBuilder().setRequest("string").build();
+        SocksCardGrpcGrpc.SocksCardGrpcBlockingStub stub = SocksCardGrpcGrpc.newBlockingStub(channel);
+        SocksInventoryGrpcGrpc.SocksInventoryGrpcBlockingStub inventoryStub = SocksInventoryGrpcGrpc.newBlockingStub(channel);
+        SocksGrpcGrpc.SocksGrpcBlockingStub socksStub = SocksGrpcGrpc.newBlockingStub(channel);
+        SocksCardComunicator.StringReq req= SocksCardComunicator.StringReq.newBuilder().setRequest("string").build();
 
-        SocksComunicator.sockCard getByTitleCard = stub.getByTitle(req);
-        System.out.println("get by title::"+getByTitleCard.getId());
 
-     //  Iterator<SocksComunicator.sockCard>result =  stub.getAllSockCards(SocksComunicator.Empty.newBuilder().build());
+//        com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard getByTitleCard = stub.getByTitle(req);
+//        System.out.println("get by title::"+getByTitleCard.getId());
+
+     //  Iterator<com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard>result =  stub.getAllSockCards(com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.Empty.newBuilder().build());
 
 
 
@@ -33,13 +39,13 @@ public class ClientTest {
       // }
        //find by id testing
 
-   //  SocksComunicator.sockCard card = stub.getByTitle(SocksComunicator.StringReq.newBuilder().setRequest("title").build());
+   //  com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard card = stub.getByTitle(com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.StringReq.newBuilder().setRequest("title").build());
        //update needs testing
 
        //delete needs testing
 
 /*
-      SocksComunicator.sockCard updateReq = SocksComunicator.sockCard.newBuilder().setType("type")
+      com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard updateReq = com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard.newBuilder().setType("type")
                  .setId(11)
                 .setPrice(19.72)
                 .setBrand("brand")
@@ -49,20 +55,83 @@ public class ClientTest {
                 .setTitle("title")
                 .build();
 
-      SocksComunicator.sockCard updateResult =  stub.updateSockCard(updateReq);
+      com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard updateResult =  stub.updateSockCard(updateReq);
         System.out.println(updateResult.getDescription());*/
 
 
-      //SocksComunicator.sockCard card =   stub.getById(SocksComunicator.IntReq.newBuilder().setRequest(10).build());
-      /*  SocksComunicator.Empty empty = stub.addSockCard( SocksComunicator.sockCard.newBuilder().setType("type")
-                .setPrice(13.72)
-                .setBrand("brand")
-                .setDescription("descrpition")
-                .setImage("image")
-                .setMaterial("material")
-                .setTitle("title")
-                .build());
+//      com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard card =   stub.getById(com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.IntReq.newBuilder().setRequest(10).build());
+//        Empty empty = stub.addSockCard(sockCard.newBuilder().setType("type")
+//                .setPrice(13.72)
+//                .setBrand("brand")
+//                .setDescription("descrpition")
+//                .setImage("image")
+//                .setMaterial("material")
+//                .setTitle("title")
+//                .build());
+//
+//        System.out.println("Added socksCard, check your db");
 
-        System.out.println("check db");*/
+
+        // Create Inventory
+//        com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.EmptyInventoryMessage inventoryEmpty = inventoryStub.create(com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory.newBuilder()
+//                .setColor("red").setSize("xs").setQuantity(3).setCardId(1).build());
+//
+//        System.out.println("Check db");
+
+        // Get all inventories
+//        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
+//        for (int i = 1;result.hasNext();i++){
+//            System.out.println(result.next().getId());
+//        }
+
+        // Get inventory by id
+//        com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory inv = inventoryStub.getById(com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(5).build());
+//
+//        System.out.println(inv);
+
+        // Update Inventory
+//        com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory updateReq = com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory.newBuilder()
+//                .setId(7)
+//                .setColor("orange")
+//                .setSize("m")
+//                .setQuantity(12)
+//                .setCardId(2)
+//                .build();
+//
+//        EmptyInventoryMessage updateResult =  inventoryStub.updateInventory(updateReq);
+//        System.out.println(updateResult);
+
+        // Delete inventory by id
+//        EmptyInventoryMessage deleteReq = inventoryStub.deleteById(com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(4).build());
+//
+//        System.out.println(deleteReq);
+
+        // Get by card id
+//        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getByCardId(com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(1).build());
+//        for (int i = 1;result.hasNext();i++) {
+//            System.out.println(result);
+//        }
+
+        // Delete inventory by card id
+//        SocksInventoryComunicator.EmptyInventoryMessage deleteReq = inventoryStub.deleteByCardId(SocksInventoryComunicator.IntReqInventory.newBuilder().setRequest(1).build());
+
+        // Create Socks
+//        EmptySocksMessage socksEmpty = socksStub.create(SocksComunicator.sock.newBuilder()
+//                .setColor("blue").setSize("l").setScId(2).build());
+//        System.out.println("Added socks, check your db");
+
+        // Get all socks
+//        Iterator<sock> result =  socksStub.getAll(EmptySocksMessage.newBuilder().build());
+//        for (int i = 1;result.hasNext();i++){
+//            System.out.println(result.next().getId());
+//        }
+
+        // Get socks by id
+//        sock sock = socksStub.getById(IntReqSock.newBuilder().setRequest(4).build());
+//        System.out.println(sock);
+
+        // Delete socks by id
+        EmptySocksMessage deleteReq = socksStub.deleteById(IntReqSock.newBuilder().setRequest(4).build());
+        System.out.println(deleteReq);
     }
 }

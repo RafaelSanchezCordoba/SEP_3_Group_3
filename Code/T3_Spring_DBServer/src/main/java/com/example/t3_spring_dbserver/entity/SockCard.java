@@ -1,4 +1,5 @@
 package com.example.t3_spring_dbserver.entity;
+
 import javax.persistence.*;
 import java.io.Serializable;
 

@@ -1,37 +1,24 @@
 syntax = "proto3";
 
+service SocksGrpc {
+  rpc create(sock) returns (EmptySocksMessage);
+  rpc getAll(EmptySocksMessage) returns (stream sock);
+  rpc getById(IntReqSock) returns (sock);
+  rpc deleteById(IntReqSock) returns (EmptySocksMessage);
 
-
-service SockCardGrpc{
-
-  rpc getById(IntReq) returns (sockCard){}
-
-  rpc addSockCard(sockCard)  returns (Empty){}
-
-  rpc getAllSockCards(Empty) returns (stream sockCard){}
-
-  rpc deleteSockCardById(IntReq) returns (sockCard);
-
-  rpc getByTitle (StringReq) returns (sockCard);
-
-  rpc updateSockCard(sockCard) returns (sockCard);
 }
-message IntReq{
+
+message IntReqSock {
   int32 request = 1;
 }
-message StringReq {
-  string request = 1;
-}
-message sockCard{
-  int32 id = 1;
-  string title = 2;
-  string description = 3;
-  double price = 4;
-  string material = 5;
-  string brand = 6;
-  string image = 7;
-  string type = 8;
-}
-message Empty{
 
+message EmptySocksMessage {
+
+}
+
+message sock {
+  int32 id = 1;
+  string size = 2;
+  string color = 3;
+  int32 sc_id = 4;
 }
