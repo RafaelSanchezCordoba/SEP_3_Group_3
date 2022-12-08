@@ -46,6 +46,7 @@
     align-items: center;
     margin-top: 5px;
 }
+
 .myButton span[b-ecdsryc5i8]{
     margin-right: 15px;
     display: block;
@@ -56,9 +57,11 @@
     background-size: contain;
     transform: rotate(0deg);
 }
+
 .myButton:hover[b-ecdsryc5i8]{
     background-color: #8b9cb3;
 }
+
 .myButton:active[b-ecdsryc5i8]{
     transform: scale(0.95);
 }
