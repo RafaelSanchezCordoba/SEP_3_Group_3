@@ -111,11 +111,10 @@
     protected async Task IncreaseQuantity(int productId, int quantity)
     {
         quantity++;
-       await cardItemService.UpdateQuantityAsync(productId,quantity);
+        await cardItemService.UpdateQuantityAsync(productId,quantity);
         SocksCard card = await socksCardService.GetById(productId);
         subtotal += card.Price;
-        
-
+        StateHasChanged();
     }
     
     protected async Task DecreaseQuantity(int productId, int quantity)

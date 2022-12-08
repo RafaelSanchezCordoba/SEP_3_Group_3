@@ -9,7 +9,10 @@
 
 <h3>Create Stock</h3>
 
-
+@if (card == null)
+{
+    <p>no car with this id found...</p>
+}
 
 <div class="card">
     <div>
@@ -260,6 +263,7 @@
 </div> 
 
 
+
 <div class="button-message">
     <button @onclick="CreateStock" class="acceptbtn" name="blackBox">Confirm</button>
     @if (!string.IsNullOrEmpty(resultMsg))
@@ -291,12 +295,12 @@
     [Parameter]
     public int Id { get; set; }
 
-    private SocksCard card;
+    private SocksCard? card;
 
     private string resultMsg = "";
     private string color = "red";
 
-    string[] sizes = new[] { "xs", "s", "m", "l", "xl" };
+   private string[] sizes = new[] { "xs", "s", "m", "l", "xl" };
 
     //string values (initial/none) for each color
     public string blackValue = "none";

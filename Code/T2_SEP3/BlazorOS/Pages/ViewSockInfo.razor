@@ -110,6 +110,19 @@
         Socks socks = await socksService.CreateAsync(socksDto);
         CreateCardItemDto dto = new CreateCardItemDto(Convert.ToInt32(cartId), socks.Id);
         await cardItemService.CreateAsync(dto);
+        global::Shared.Models.ShoppingCart shoppingCart = await shoppingCartService.getByIdAsync(Convert.ToInt32(cartId));
+        foreach (Product p in shoppingCart.Products)
+        {
+            if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+            {
+               CardItem item= await cardItemService.GetByIdsAsync(p.Id, Convert.ToInt32(cartId));
+                int quantity = item.Quantity;
+                quantity++;
+                cardItemService.UpdateQuantityAsync(item.Id, quantity);
+                navMgr.NavigateTo($"/shoppingCart/{cartId}");
+                return;
+            } 
+        }
         await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
         navMgr.NavigateTo($"/shoppingCart/{cartId}");
     }

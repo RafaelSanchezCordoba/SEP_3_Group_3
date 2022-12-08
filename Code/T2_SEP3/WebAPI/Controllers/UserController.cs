@@ -24,6 +24,21 @@ public class UserController:ControllerBase
         this.config = config;
     }
 
+    [HttpPatch]
+    public async Task<ActionResult<User>> updateAsync(User user)
+    {
+        try
+        {
+            var result = _userLogic.Update(user);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+
     [HttpPost]
     public async Task<ActionResult<User>> createAsync(UserRegisterDto dto)
     {

@@ -8,6 +8,16 @@ public class FileContext
     private const string filePath = "data.json";
     private DataContainer? dataContainer;
 
+
+    public ICollection<Adress> Adresses
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.Adresses;
+        }
+    }
+
     public ICollection<Inventory> Inventories
     {
         get
@@ -77,7 +87,8 @@ public class FileContext
 
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
-                CardItems = new List<CardItem>()
+                CardItems = new List<CardItem>(),
+                Adresses = new List<Adress>()
 
             };
             return;

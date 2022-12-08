@@ -11,6 +11,23 @@ public class UserDaoFile:IUserDao
     {
         this.context = context;
     }
+    
+    public Task<User> UpdateUser(User user)
+    {
+    
+        User? exists = context.Users.FirstOrDefault(u =>  user.Email.Equals(u.Email,StringComparison.OrdinalIgnoreCase));
+        if (exists==null)
+        {
+            
+            throw new Exception($"User with email::${user.Email} does not exists ");
+        }
+
+        context.Users.Remove(exists);
+        context.Users.Add(user);
+        context.SaveChanges();
+        
+        return Task.FromResult(user);
+    }
 
     public Task<User> Register(User user, string password)
     {
@@ -52,5 +69,30 @@ public class UserDaoFile:IUserDao
 
         return Task.FromResult(existingUser);
         
+    }
+
+    public Task<bool> UserExists(int id)
+    {
+       
+        User? exsists = context.Users.FirstOrDefault(u => u.Id == id);
+
+        Boolean result = exsists != null;
+
+        return Task.FromResult(result);
+
+
+
+    }
+
+    public Task<User> GetById(int id)
+    {
+        User? exists = context.Users.FirstOrDefault(u => u.Id == id);
+
+        if (exists == null)
+        {
+            throw new Exception($"user with id::{id} not found");
+        }
+
+        return Task.FromResult(exists);
     }
 }
