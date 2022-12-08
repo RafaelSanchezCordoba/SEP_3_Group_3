@@ -90,7 +90,6 @@
         ClaimsPrincipal userClaims = authState.User;
         isLoggedIn = userClaims.Identity != null;
         if (!isLoggedIn) return;
-        Console.WriteLine(userClaims.FindFirst("Email").Value);
         string? userEmail = userClaims.FindFirst("Email").Value;
         user = await userService.GetByEmail(userEmail);
         email = user.Email;

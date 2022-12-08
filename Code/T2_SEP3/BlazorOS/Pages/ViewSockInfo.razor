@@ -2,11 +2,13 @@
 @using global::Shared.Models
 @using HttpClients.ClientInterfaces
 @using global::Shared.DTOs
+@using System.Security.Claims
 @inject ISockCardService cardService
 @inject ISockInventoryService inventoryService 
 @inject ISocksService socksService
 @inject IShoppingCartService shoppingCartService
 @inject ICardItemService cardItemService
+@inject IUserService userService
 @inject NavigationManager navMgr
 
 
@@ -40,8 +42,6 @@
         
         <button @onclick="AddToCart" class="myButton">Add to the cart</button>
         @errorMsg
-        <input type="text" @bind="cartId" @bind:event ="oninput"/>
-        shopping cart id (to be deleted when login is implemented)
     </div>
 </div>
 
@@ -50,15 +50,20 @@
 @code {
     [Parameter]
     public int Id { get; set; }
+   
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
     
     private string errorMsg{ get; set; } = "";
+    private User user { get; set; } = null;
+    private bool isLoggedIn=false;
     private SocksCard card{ get; set; }=null!;
     private ICollection<String> colors { get; set; }=new List<string>();
     private String selectedColor{ get; set; }="" ;
     private ICollection<String> sizes{ get; set; }=new List<string>();
     private String selectedSizes{ get; set; }="";
     private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
-    private String cartId{ get; set; }="";
+    private global::Shared.Models.ShoppingCart  sc = null;
 
 
     protected override async Task OnInitializedAsync()
@@ -68,6 +73,14 @@
             card = await cardService.GetById(Id);
             inventories = await inventoryService.GetByCardIdAsync(card.Id);
             LoadColors();
+            AuthenticationState authState = await AuthState;
+            ClaimsPrincipal userClaims = authState.User;
+            isLoggedIn = userClaims.Identity != null;
+            if (!isLoggedIn) return;
+            string? userEmail = userClaims.FindFirst("Email").Value;
+            user = await userService.GetByEmail(userEmail);
+            sc = await shoppingCartService.getByUserIdAsync(user.Id);
+            
         }
         catch (Exception e)
         {
@@ -106,24 +119,29 @@
 
     private async void AddToCart()
     {
+        if (sc==null)
+        {
+            CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
+            sc = await shoppingCartService.CreateAsync(scdto);
+        }
         CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
         Socks socks = await socksService.CreateAsync(socksDto);
-        CreateCardItemDto dto = new CreateCardItemDto(Convert.ToInt32(cartId), socks.Id);
+        CreateCardItemDto dto = new CreateCardItemDto(sc.Id, socks.Id);
         await cardItemService.CreateAsync(dto);
-        global::Shared.Models.ShoppingCart shoppingCart = await shoppingCartService.getByIdAsync(Convert.ToInt32(cartId));
-        foreach (Product p in shoppingCart.Products)
+       
+        foreach (Product p in sc.Products)
         {
             if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
             {
-               CardItem item= await cardItemService.GetByIdsAsync(p.Id, Convert.ToInt32(cartId));
+               CardItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
                 int quantity = item.Quantity;
                 quantity++;
                 cardItemService.UpdateQuantityAsync(item.Id, quantity);
-                navMgr.NavigateTo($"/shoppingCart/{cartId}");
+                navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
                 return;
             } 
         }
-        await shoppingCartService.AddProductAsync(socks, Convert.ToInt32(cartId));
-        navMgr.NavigateTo($"/shoppingCart/{cartId}");
+        await shoppingCartService.AddProductAsync(socks, sc.Id);
+        navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
     }
 }
