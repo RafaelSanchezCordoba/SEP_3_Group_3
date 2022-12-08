@@ -57,8 +57,14 @@ public class ShoppingCartLogic :IShoppingCartLogic
         return await dao.DeleteProductAsync(product,id);
     }
 
+<<<<<<< HEAD
     public Task<ShoppingCart> GetByCustomerName(int ownerId)
     {
         return dao.GetByCustomerName(ownerId);
+=======
+    public Task<double> GetTotalPriceAsync(int id)
+    {
+        return dao.GetTotalPriceAsync(id);
+>>>>>>> origin/OrderWebAPI
     }
 }
