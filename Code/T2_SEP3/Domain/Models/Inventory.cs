@@ -17,6 +17,9 @@ public class Inventory
         Quantity = quantity;
     }
 
+  
+
+
     public int CardId { get; set; }
     public string Color { get; set; }
     public string Size { get; set; }

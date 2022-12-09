@@ -9,6 +9,8 @@
 @inject ISockCardService socksCardService
 @inject ICardItemService cardItemService
 @inject IOrderService orderService
+@inject ISockInventoryService sockInventoryService
+
 
 <h3>OrderInformation</h3>
 
@@ -216,10 +218,26 @@
     {
         try
         {
-            
-            
-            await orderService.CreateAsync(OrderDto);
             shoppingCart = await shoppingCartService.getByIdAsync(Id);
+            foreach (var p in shoppingCart.Products)
+            {
+                CardItem cardItem = await cardItemService.GetByIdsAsync(p.ProductCardId,Id);
+
+                Inventory inventory = await sockInventoryService.GetByParameters(p.ProductCardId, p.Color, p.Size);
+                long newQuantity = inventory.Quantity - cardItem.Quantity;
+                if (newQuantity < 0)
+                {
+
+                    resultMsg = "NO Stock!";
+                    throw new Exception("NO Stock");
+                }
+                Inventory newInventory = new Inventory( p.ProductCardId, p.Color, p.Size,newQuantity);
+                newInventory.Id = inventory.Id;
+                await sockInventoryService.updateAsync(newInventory);
+            }
+
+            await orderService.CreateAsync(OrderDto);
+            
             foreach (var p in shoppingCart.Products)
             {
                 await shoppingCartService.RemoveProduct(p, shoppingCart.Id);
