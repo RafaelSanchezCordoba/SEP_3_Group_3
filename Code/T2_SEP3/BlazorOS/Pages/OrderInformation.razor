@@ -2,18 +2,19 @@
 @using global::Shared.Models
 @using global::Shared.DTOs
 @using HttpClients.ClientInterfaces
-@using System.Text.Json.Serialization
+
+@using Microsoft.AspNetCore.Components
+@using System.Security.Claims
 @inject NavigationManager navMgr
 @inherits LayoutComponentBase
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
 @inject ICardItemService cardItemService
 @inject IOrderService orderService
+@inject IUserService userService
 @inject ISockInventoryService sockInventoryService
 
-
-<h3>OrderInformation</h3>
-
+<p>Please introduce contact and shipping information for your order</p>
 <div class="container" style="display:@showModalInfo"> 
     <div class="card">
     
@@ -29,13 +30,15 @@
     
         <div class="small-form-field" >
             <label>Phone:</label>
-            <input type="text" class="small-input" @bind="phone" @bind:event ="oninput"/>
+            <input type="text" @bind="phone" @bind:event ="oninput"/>
         </div>  
-    
+    </div>
+    <div class="card">
+        <h5>Shipping infomation</h5>
         <div>
             <div class="small-form-field" >
                 <label>Country:</label>
-                <input type="text" class="small-input"  @bind="country" @bind:event ="oninput"/>
+                <input type="text"   @bind="country" @bind:event ="oninput"/>
             </div>
     
             <div class="form-group-field">
@@ -46,17 +49,17 @@
     
         <div class="small-form-field">
             <label>Street:</label>
-            <input type="text" class="small-input" @bind="street" @bind:event ="oninput"/>
+            <input type="text"  @bind="street" @bind:event ="oninput"/>
         </div>
     
         <div>
             <div class="small-form-field">
                 <label>Number:</label>
-                <input type="text" class="small-input" @bind="number" @bind:event ="oninput"/>
+                <input type="text" @bind="number" @bind:event ="oninput"/>
             </div>
             <div class="small-form-field">
                 <label>Postcode:</label>
-                <input type="text" class="small-input" @bind="postcode" @bind:event ="oninput"/>
+                <input type="text" @bind="postCode" @bind:event ="oninput"/>
             </div>
     
         </div>
@@ -66,8 +69,9 @@
             <input type="text" class="small-input" @bind="option" @bind:event ="oninput"/>
         </div>
     </div>
+    
     <div class="button-message">
-        <button @onclick="@(() => ConfirmInformation())" class="acceptbtn">Confirm My Information</button>
+        <div @onclick="() => ConfirmInformation()" class="myButton">Confirm</div>
         @if (!string.IsNullOrEmpty(resultMsg))
         {
             <br/> <label style="color:red">@resultMsg</label>
@@ -111,20 +115,10 @@
         
         <b>Order Summary</b>
         <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
-        <button @onclick="PlaceOrder" class="myButton" id="checkout-btn">Place Order</button>
-        <button @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</button>
+        <div @onclick="PlaceOrder" class="myButton" id="checkout-btn">Place Order</div>
+        <div @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</div>
         <p>@resultMsg</p>
-        
-        <div>
-            <p>@OrderDto.CustomerName</p>
-            <p>@OrderDto.CustomerEmail</p>
-            <p>@OrderDto.CustomerPhoneNumber</p>
-            <p>@OrderDto.Shipping.City,@OrderDto.Shipping.Country</p>
-            <p>@OrderDto.Shipping.Street,@OrderDto.Shipping.Number</p>
-            <p>@OrderDto.Shipping.ExtraInfo</p>
-            <p>@OrderDto.Shipping.PostCode</p>
-        </div>
-    
+
     </div>
  </div>
 
@@ -134,17 +128,22 @@
    
 
 @code {
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+
    [Parameter]
    public int Id { get; set; }
-
-    private string email = "";
-    private string name = "";
-    private string phone = "";
-    private string country = "";
-    private string city = "";
-    private string street = "";
-    private int number = 0;
-    private int postcode = 0;
+    private User user = null;
+    private bool isLoggedIn=false;
+    private string? email="";
+    private string? name="";
+    private string? phone="";
+    private string? country = "";
+    private string? city = "";
+    private string? street = "";
+    private string? number = "";
+    private string? postCode = "";
     private string option = "";
     private int numberOfProducts = 0;
     
@@ -163,14 +162,48 @@
     private string showModalInfo = "initial";
     private string showModalSum = "none";
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        AuthenticationState authState = await AuthState;
+        ClaimsPrincipal userClaims = authState.User;
+        isLoggedIn = userClaims.Identity != null;
+        if (!isLoggedIn) return;
+        string? userEmail = userClaims.FindFirst("Email").Value;
+        user = await userService.GetByEmail(userEmail);
+
+        if (user!=null)
+        {
+            email = user.Email;
+            name = user.Name;
+            phone = user.PhoneNumber;
+
+            if (user.Adress!=null)
+            {
+                country = user.Adress.Country;
+                city = user.Adress.City;
+                street = user.Adress.Street;
+                postCode = user.Adress.PostCode.ToString();
+                number = user.Adress.Number.ToString();
+                option = user.Adress.ExtraInfo;
+            }   
+        }
+        
+    }
+
     private async Task ConfirmInformation()
     {
         try
         {
             global::Shared.Models.ShoppingCart cart = await shoppingCartService.getByIdAsync(Id);
-            OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1, 1, country, city, postcode, street, number, option));
+            if (user!=null)
+            {
+                OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1, user.Id, country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
+            }
+            OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1,-1 , country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
          
             LoadOrderSummary();
+            
             
         }
         catch (Exception e)

@@ -185,24 +185,6 @@
   ],
   "ShoppingCarts": [
     {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 3,
-          "Size": "s",
-          "Color": "grey"
-        },
-        {
-          "ProductCardId": 5,
-          "Id": 4,
-          "Size": "l",
-          "Color": "blue"
-        }
-      ]
-    },
-    {
       "Id": 2,
       "OwnerId": 3,
       "Products": [
@@ -225,10 +207,34 @@
           "Color": "grey"
         },
         {
+          "ProductCardId": 3,
+          "Id": 12,
+          "Size": "s",
+          "Color": "purple"
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "OwnerId": 1,
+      "Products": [
+        {
           "ProductCardId": 5,
+          "Id": 4,
+          "Size": "l",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 1,
           "Id": 14,
-          "Size": "xl",
-          "Color": "red"
+          "Size": "s",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 15,
+          "Size": "m",
+          "Color": "yellow"
         }
       ]
     },
@@ -237,15 +243,20 @@
       "OwnerId": 0,
       "Products": [
         {
-          "ProductCardId": 1,
-          "Id": 15,
-          "Size": "s",
+          "ProductCardId": 5,
+          "Id": 16,
+          "Size": "xl",
           "Color": "yellow"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 17,
+          "Size": "xs",
+          "Color": "grey"
         }
       ]
     }
   ],
-  
   "SocksCards": [
     {
       "Title": "Pokemon socks",
@@ -312,12 +323,6 @@
       "Color": "grey"
     },
     {
-      "ProductCardId": 1,
-      "Id": 3,
-      "Size": "s",
-      "Color": "grey"
-    },
-    {
       "ProductCardId": 5,
       "Id": 4,
       "Size": "l",
@@ -378,16 +383,28 @@
       "Color": "grey"
     },
     {
-      "ProductCardId": 5,
+      "ProductCardId": 1,
       "Id": 14,
-      "Size": "xl",
-      "Color": "red"
+      "Size": "s",
+      "Color": "yellow"
     },
     {
       "ProductCardId": 1,
       "Id": 15,
-      "Size": "s",
+      "Size": "m",
       "Color": "yellow"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 16,
+      "Size": "xl",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 17,
+      "Size": "xs",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -426,29 +443,9 @@
         "ExtraInfo": "apt77"
       },
       "Auth": "customer"
-    },
-    {
-      "Id": 4,
-      "Email": "alex",
-      "Password": "password",
-      "Name": null,
-      "PhoneNumber": "1234567",
-      "Adress": null,
-      "Auth": "Customer"
     }
   ],
-  "Adresses": [
-    {
-      "Id": 1,
-      "UserId": -1,
-      "Country": "string",
-      "City": "string",
-      "PostCode": 0,
-      "Street": "string",
-      "Number": 0,
-      "ExtraInfo": "string"
-    }
-  ],
+  "Adresses": [],
   "CardItems": [
     {
       "Id": 1,
@@ -461,18 +458,6 @@
       "Quantity": 1,
       "ShoppingCartId": 1,
       "ProductId": 2
-    },
-    {
-      "Id": 3,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 3
-    },
-    {
-      "Id": 4,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 4
     },
     {
       "Id": 5,
@@ -530,15 +515,33 @@
     },
     {
       "Id": 14,
-      "Quantity": 5,
-      "ShoppingCartId": 3,
+      "Quantity": 25,
+      "ShoppingCartId": 1,
       "ProductId": 14
     },
     {
       "Id": 15,
-      "Quantity": 3,
-      "ShoppingCartId": 4,
+      "Quantity": 53,
+      "ShoppingCartId": 1,
       "ProductId": 15
+    },
+    {
+      "Id": 4,
+      "Quantity": 6,
+      "ShoppingCartId": 1,
+      "ProductId": 4
+    },
+    {
+      "Id": 16,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 16
+    },
+    {
+      "Id": 17,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 17
     }
   ],
   "Orders": [

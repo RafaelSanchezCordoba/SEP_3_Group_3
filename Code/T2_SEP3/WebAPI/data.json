@@ -106,13 +106,6 @@
       "Id": 21
     },
     {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
-      "Quantity": 208,
-      "Id": 20
-    },
-    {
       "CardId": 4,
       "Color": "blue",
       "Size": "xs",
@@ -181,6 +174,13 @@
       "Size": "s",
       "Quantity": 10,
       "Id": 28
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 207,
+      "Id": 20
     }
   ],
   "ShoppingCarts": [
@@ -195,29 +195,6 @@
           "Color": "grey"
         }
       ]
-    },
-    {
-      "Id": 3,
-      "OwnerId": 3,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 10,
-          "Size": "xs",
-          "Color": "grey"
-        },
-        {
-          "ProductCardId": 3,
-          "Id": 12,
-          "Size": "s",
-          "Color": "purple"
-        }
-      ]
-    },
-    {
-      "Id": 4,
-      "OwnerId": 0,
-      "Products": []
     },
     {
       "Id": 1,
@@ -240,6 +217,36 @@
           "Id": 15,
           "Size": "m",
           "Color": "yellow"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 4,
+          "Id": 20,
+          "Size": "m",
+          "Color": "blue"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "OwnerId": 0,
+      "Products": [
+        {
+          "ProductCardId": 2,
+          "Id": 19,
+          "Size": "xxl",
+          "Color": "red"
+        },
+        {
+          "ProductCardId": 3,
+          "Id": 21,
+          "Size": "s",
+          "Color": "purple"
         }
       ]
     }
@@ -346,22 +353,10 @@
       "Color": "blue"
     },
     {
-      "ProductCardId": 1,
-      "Id": 10,
-      "Size": "xs",
-      "Color": "grey"
-    },
-    {
       "ProductCardId": 2,
       "Id": 11,
       "Size": "xl",
       "Color": "blue"
-    },
-    {
-      "ProductCardId": 3,
-      "Id": 12,
-      "Size": "s",
-      "Color": "purple"
     },
     {
       "ProductCardId": 1,
@@ -380,6 +375,42 @@
       "Id": 15,
       "Size": "m",
       "Color": "yellow"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 16,
+      "Size": "xl",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 17,
+      "Size": "xs",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 18,
+      "Size": "m",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 19,
+      "Size": "xxl",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 4,
+      "Id": 20,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 21,
+      "Size": "s",
+      "Color": "purple"
     }
   ],
   "Users": [
@@ -418,6 +449,15 @@
         "ExtraInfo": "apt77"
       },
       "Auth": "customer"
+    },
+    {
+      "Id": 4,
+      "Email": "rafa",
+      "Password": "12345",
+      "Name": null,
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
     }
   ],
   "Adresses": [],
@@ -425,7 +465,7 @@
     {
       "Id": 1,
       "Quantity": 1,
-      "ShoppingCartId": 1,
+      "ShoppingCartId": 3,
       "ProductId": 1
     },
     {
@@ -465,18 +505,6 @@
       "ProductId": 9
     },
     {
-      "Id": 10,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 10
-    },
-    {
-      "Id": 12,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 12
-    },
-    {
       "Id": 13,
       "Quantity": 1,
       "ShoppingCartId": 2,
@@ -505,6 +533,42 @@
       "Quantity": 6,
       "ShoppingCartId": 1,
       "ProductId": 4
+    },
+    {
+      "Id": 16,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 16
+    },
+    {
+      "Id": 17,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 17
+    },
+    {
+      "Id": 18,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 18
+    },
+    {
+      "Id": 19,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 19
+    },
+    {
+      "Id": 20,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 20
+    },
+    {
+      "Id": 21,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 21
     }
   ],
   "Orders": [
@@ -884,6 +948,37 @@
         "Street": "Kollegiev\u00E6nget",
         "Number": 3,
         "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 13,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50444444",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 18,
+            "Size": "m",
+            "Color": "yellow"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 1,
+        "ExtraInfo": "apt77"
       }
     }
   ]

@@ -21,9 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Include="wwwroot\Icons\log-in.png" />
       <None Include="wwwroot\Icons\magnifier.png" />
-      <None Include="wwwroot\Icons\shopping-cart.png" />
     </ItemGroup>
 
    
