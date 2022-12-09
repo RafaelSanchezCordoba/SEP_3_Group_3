@@ -38,25 +38,38 @@ public class UserLogic:IUserLogic
         return context.Validateuser(email, password);
     }
 
-    public async Task<User> Update(UpdateUserDto dto)
+    public async Task<User> Update(User user)
     {
-        User? existing = await context.GetById(dto.Id);
+        User? existing = await context.GetById(user.Id);
 
         if (existing == null)
         {
-            throw new Exception($"User with ID {dto.Id} not found!!!");
+            throw new Exception($"User with ID {user.Id} not found!!!");
         }
         
-        string passwordToUse =dto.Password ?? existing.Password;
-        string nameToUse = dto.Name ?? existing.Name;
-        string PhoneToUse = dto.PhoneNumber ?? existing.PhoneNumber ;
+        string passwordToUse =user.Password ?? existing.Password;
+        string nameToUse = user.Name ?? existing.Name;
+        string PhoneToUse = user.PhoneNumber ?? existing.PhoneNumber ;
+        string AuthToUse = user.Auth ?? existing.Auth ;
+        Adress adressToUse = null;
+        if (user.Adress!=null)
+        {
+            adressToUse = user.Adress;
+        } 
+        else if (existing.Adress!=null)
+        {
+            adressToUse = existing.Adress;
+        }
         
         User updated = new User()
         {
             Id = existing.Id,
             Password = passwordToUse,
             Name = nameToUse,
-            PhoneNumber = PhoneToUse
+            PhoneNumber = PhoneToUse,
+            Adress = adressToUse,
+            Auth = AuthToUse,
+            Email = existing.Email
         };
 
         await context.UpdateUser(updated);

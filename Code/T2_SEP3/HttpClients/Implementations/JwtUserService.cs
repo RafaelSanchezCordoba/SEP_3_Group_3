@@ -51,9 +51,24 @@ public class JwtUserService:IUserService
         return user;
     }
 
-    public Task<User> EditAsync(User user)
+    public async Task EditAsync(User user)
     {
-        throw new NotImplementedException();
+        
+        UpdateUserDto dto = new UpdateUserDto
+        {
+            Id = user.Id,
+            Name = user.Name,
+            Password = user.Password,
+            PhoneNumber = user.PhoneNumber
+        };
+        string userAsJson = JsonSerializer.Serialize(dto);
+        StringContent body = new StringContent(userAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PatchAsync("https://localhost:7999/User", body);
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(response.ToString());
+        }
+      
     }
 
     public async Task LoginAsync(string email, string password)

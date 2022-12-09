@@ -2,6 +2,7 @@
 @page "/Profile"
 
 @using System.Security.Claims
+@using global::Shared.DTOs
 @using global::Shared.Models
 @using HttpClients.ClientInterfaces
 @inject IUserService userService
@@ -19,23 +20,24 @@
     
         <div class="form-group-field">
             <label>Password:</label>
-            <label class="long-input" type=@passwordType>@user.Password</label>
-            <button class="myButton" @onclick="SeePassword">See Password</button>
+            <label class="long-input" style="display:@passwordVisibility">@user.Password</label>
+            <div class="myButton" style="width: 20px" @onmousedown="SeePassword"><img style="width: 15px" src="icons/magnifier.png" /></div>
         
         </div>
         <div>
             <div class="small-form-field" >
                 <label>Name:</label>
-                <label class="small-input" >@user.Name</label>
+                <label  >@user.Name</label>
             </div>  
     
             <div class="small-form-field" >
                 <label>Phone:</label>
-                <label class="small-input" >@user.PhoneNumber</label>
+                <label >@user.PhoneNumber</label>
         
             </div>
-        </div></div>
-    <button class="myButton" @onclick="EditInfo">Edit info</button>
+        </div>
+        <button class="myButton" @onclick="EditPersonalInfo">Edit info</button>
+        </div>
     </div>
    
      <div style="display:@showModal">
@@ -52,20 +54,97 @@
                  <div>
                      <div class="small-form-field" >
                          <label>Name:</label>
-                         <input type="text" class="small-input" @bind="name" @bind:event ="oninput"/>
+                         <input type="text" @bind="name" @bind:event ="oninput"/>
                      </div>  
         
                      <div class="small-form-field" >
                          <label>Phone:</label>
-                         <input type="text" class="small-input"  @bind="phone" @bind:event ="oninput"/>
+                         <input type="text"   @bind="phone" @bind:event ="oninput"/>
             
                      </div>
-                 </div></div>
-             <button class="myButton" @onclick="ConfirmEdit">Confirm</button>
+                 </div>
+                 <button class="myButton" @onclick="ConfirmEditPersonal">Confirm</button>
+           @Personalmsg
+                 </div>
+             
          </div>
      </div>
      
-    </Authorized>
+     <br/><br/> <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>
+     <div style="display: inline; margin: 10px 0px;">
+         <label>Shipping Information</label>
+         <img src="@trianguleIcon" style="width: 44px; " @onclick="DisplayShippingInfo"/>
+     </div>
+     <br/><br/> 
+      <div style="display: @showShippingInfo;" >
+          <div class="container"> 
+              <div class="card">
+                  <div class="small-form-field" >
+                      <label>Country:</label>
+                      <label>@country</label>
+                  </div>
+                  <div class="small-form-field" >
+                      <label>City:</label>
+                      <label >@city</label>
+                  </div>
+                  <div class="form-group-field">
+                      <label>Street:</label>
+                      <label class="long-input">@street</label>
+                  </div>
+                  <div class="small-form-field">
+                      <label>Postcode:</label>
+                      <label >@postCode</label>
+                  </div>
+                  <div class="small-form-field" >
+                      <label>Number:</label>
+                      <label>@number</label>
+                  </div>
+                  <div class="form-group-field">
+                      <label>Optional:</label>
+                      <label class="long-input">@extraInfo</label>
+                  </div>
+                  <button class="myButton" @onclick="EditShippingInfo">Edit info</button>
+                  @Shippingmsg
+              </div>       
+            
+          </div>
+      </div>
+      
+
+  <div style="display: @showShippingInfo2;" >
+         <div class="container"> 
+         <div class="card">
+             <div class="small-form-field" >
+                 <label>Country:</label>
+                 <input type="text"  @bind="country" @bind:event ="oninput"/>
+             </div>
+             <div class="small-form-field" >
+                 <label>City:</label>
+                 <input type="text" @bind="city"  @bind:event ="oninput" />
+             </div>
+             <div class="form-group-field">
+                 <label>Street:</label>
+                 <input type="text" @bind="street" class="long-input" @bind:event ="oninput"/>
+             </div>
+             <div class="small-form-field" >
+                              <label>Postcode:</label>
+                 <input type="text" @bind="postCode"  @bind:event ="oninput"/>
+                          </div>
+                          <div class="small-form-field" >
+                              <label>Number:</label>
+                              <input type="text" @bind="number" @bind:event ="oninput"/>
+                          </div>
+                          <div class="form-group-field">
+                              <label>Optional:</label>
+                              <input type="text" @bind="extraInfo" class="long-input" @bind:event ="oninput"/>
+                          </div>
+             <button class="myButton" @onclick="ConfirmEditShipping">Edit Shipping info</button>
+             @Shippingmsg
+         </div>       
+            
+         </div>
+         </div>
+ </Authorized>
 </AuthorizeView>
 @code {
     
@@ -75,47 +154,127 @@
     private string? password="";
     private string? name="";
     private string? phone="";
-    private string? email="";
     private bool isLoggedIn=false;
-    private string postTitle = "";
-    private string postBody="";
     private string showModal="none";
+    private string showShippingInfo="none";
+    private string showShippingInfo2="none";
     private string showModal2="initial";
-    private string passwordType="password";
+    private string passwordVisibility="none";
+    private string trianguleIcon = "Icons/triangle-down.png";
     private User user = null;
-    
-    private string msg = "";
+    private string Personalmsg = "";
+    private string Shippingmsg = "";
+
+    private string? country = "";
+    private string? city = "";
+    private string? street = "";
+    private string? number = "";
+    private string? postCode = "";
+    public string? extraInfo = "";
     
     protected override async Task OnInitializedAsync()
     {
-        msg = "";
+        Shippingmsg = "";
+        Personalmsg = "";
         AuthenticationState authState = await AuthState;
         ClaimsPrincipal userClaims = authState.User;
         isLoggedIn = userClaims.Identity != null;
         if (!isLoggedIn) return;
         string? userEmail = userClaims.FindFirst("Email").Value;
         user = await userService.GetByEmail(userEmail);
-        email = user.Email;
         name = user.Name;
         phone = user.PhoneNumber;
         password = user.Password;
-        
+
+        if (user.Adress!=null)
+        {
+            country = user.Adress.Country;
+            city = user.Adress.City;
+            street = user.Adress.Street;
+            postCode = user.Adress.PostCode.ToString();
+            number = user.Adress.Number.ToString();
+            extraInfo = user.Adress.ExtraInfo;
+        }
+      
     }
 
-    protected void EditInfo()
+    protected void EditPersonalInfo()
     {
         showModal = "initial";
         showModal2 = "none";
-        passwordType = "password";
+        passwordVisibility = "none";
+    }
+    
+    protected void EditShippingInfo()
+    {
+        passwordVisibility = "none";
+        showShippingInfo = "none";
+        showShippingInfo2 = "initial";
     }
 
     protected void SeePassword()
     {
-        passwordType = "text";
+        passwordVisibility = "initial";
     }
 
-    protected void ConfirmEdit()
+    protected async Task ConfirmEditPersonal()
     {
+        User updatedUser = new User
+        {
+            Id = user.Id,
+            Name = name,
+            Password = password,
+            PhoneNumber = phone,
+            Email = user.Email
+        };
+       await  userService.EditAsync(updatedUser);
+        Personalmsg = "Personal information successfully updated";
+        
+    }
+    
+    protected async Task ConfirmEditShipping()
+    {
+        Adress updatedAdress = new Adress
+        {
+            Country = country,
+            City = city,
+            PostCode = Convert.ToInt32(postCode),
+            ExtraInfo = extraInfo,
+            Number = Convert.ToInt32(number),
+            Street = street,
+            UserId = user.Id
+        };
+        
+        User updatedUser = new User
+        {
+            Id = user.Id,
+            Name = user.Name,
+            Password = user.Password,
+            PhoneNumber = user.PhoneNumber,
+            Email = user.Email,
+            Adress = updatedAdress
+        };
+
+        await userService.EditAsync(updatedUser);
+        Shippingmsg = "Shipping information successfully updated";
+        showShippingInfo = "initial";
+        showShippingInfo2 = "none";
+    }
+
+    protected void DisplayShippingInfo()
+    {
+        if (trianguleIcon.Equals("Icons/triangle-down.png"))
+        {
+            trianguleIcon = "Icons/triangle-up.png";
+            showShippingInfo = "initial";
+        }
+        else
+        {
+            trianguleIcon = "Icons/triangle-down.png";
+            showShippingInfo = "none";
+            showShippingInfo2 = "none";
+            Shippingmsg = "";
+        }
         
     }
     

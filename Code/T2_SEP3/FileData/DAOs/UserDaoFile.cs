@@ -15,18 +15,33 @@ public class UserDaoFile:IUserDao
     public Task<User> UpdateUser(User user)
     {
     
-        User? exists = context.Users.FirstOrDefault(u =>  user.Email.Equals(u.Email,StringComparison.OrdinalIgnoreCase));
-        if (exists==null)
+        User? existing = context.Users.FirstOrDefault(u => u.Id == user.Id);
+        if (existing == null)
         {
-            
-            throw new Exception($"User with email::${user.Email} does not exists ");
+            throw new Exception($"User with ID {user.Id} does not exist!!!");
+        }
+      
+        User updatedUser = new User
+                {
+                    PhoneNumber = user.PhoneNumber,
+                    Password = user.Password,
+                    Id = existing.Id,
+                    Email = existing.Email,
+                    Auth = existing.Auth,
+                    Name= user.Name
+                    
+                };
+
+        if (user.Adress!=null)
+        {
+            updatedUser.Adress = user.Adress;
         }
 
-        context.Users.Remove(exists);
-        context.Users.Add(user);
-        context.SaveChanges();
         
-        return Task.FromResult(user);
+        context.Users.Remove(existing);
+        context.Users.Add(updatedUser);
+        context.SaveChanges();
+        return Task.FromResult(updatedUser);
     }
     
 
@@ -80,8 +95,6 @@ public class UserDaoFile:IUserDao
         Boolean result = exsists != null;
 
         return Task.FromResult(result);
-
-
 
     }
 

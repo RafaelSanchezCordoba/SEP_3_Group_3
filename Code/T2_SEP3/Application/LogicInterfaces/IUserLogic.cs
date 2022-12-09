@@ -9,7 +9,7 @@ public interface IUserLogic
     Task<bool> UserExists(string email);
     Task<User> ValidateUser(string email, string password);
 
-    Task<User> Update(UpdateUserDto dto);
+    Task<User> Update(User user);
     Task<string> Login(string email, string password);
     int GetUserId();
     string GetUserEmail();
