@@ -118,4 +118,18 @@ public class SocksInventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    [HttpGet("/Parameters")]
+    public async Task<ActionResult<IEnumerable<Inventory>>> GetByParameters([FromQuery] int scId,[FromQuery] String color,[FromQuery] String size)
+    {
+        try
+        {
+            var result = await inventoryLogic.GetByParameters(scId,color,size);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

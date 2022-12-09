@@ -62,6 +62,17 @@ public class SocksInventoryLogic:ISocksInventoryLogic
         return inventoryDao.DeleteAsync(id) ?? throw new Exception($"Inventory with ID {id} was not found!!!");
     }
 
+    public async Task<Inventory> GetByParameters(int scId, string color, string size)
+    {
+        ValidateInventoryById(scId);
+        ValidateInventoryString(color);
+        ValidateInventoryString(size);
+
+        return await inventoryDao.GetByParameters(scId, color, size) ??
+               throw new Exception(
+                   $"Inventory with sockcardId, size amd  color :  {scId}, {color}, {size} was not found!!!");
+    }
+
     public void ValidateInventory(Inventory inventory)
     {
         if (string.IsNullOrEmpty(inventory.Color)) throw new Exception("Color cannot be empty!!!");
@@ -73,5 +84,9 @@ public class SocksInventoryLogic:ISocksInventoryLogic
     public void ValidateInventoryById(int id)
     {
         if (id <= 0) throw new Exception("Card id must be > 0!!!");
+    }
+    public void ValidateInventoryString(String message)
+    {
+        if (String.IsNullOrEmpty(message)) throw new Exception("Parameter empty!!!");
     }
 }

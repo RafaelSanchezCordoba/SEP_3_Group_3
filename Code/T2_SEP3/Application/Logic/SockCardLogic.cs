@@ -34,10 +34,10 @@ public class SockCardLogic : ISockCardLogic
         return socksDao.GetById(id) ??  throw new Exception($"Socks with ID {id} was not found!!!");
     }
 
-    public Task UpdateAsync(UpdateSocksCardDto dto)
+    public  Task UpdateAsync(UpdateSocksCardDto dto)
     {
-        await socksDao.UpdateAsync(dto);
         ValidateSockCardUpdate(dto);
+        socksDao.UpdateAsync(dto);
         return socksDao.UpdateAsync(dto) ?? throw new Exception("SocksCard was not found!!!");
     }
 

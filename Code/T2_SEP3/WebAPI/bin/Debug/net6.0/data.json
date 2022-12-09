@@ -3,6 +3,13 @@
     {
       "CardId": 1,
       "Color": "grey",
+      "Size": "xs",
+      "Quantity": 456789,
+      "Id": 7
+    },
+    {
+      "CardId": 1,
+      "Color": "grey",
       "Size": "s",
       "Quantity": 456,
       "Id": 8
@@ -231,7 +238,18 @@
       "Products": []
     }
   ],
+  
   "SocksCards": [
+    {
+      "Title": "Pokemon socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
+      "Type": "Mid calf",
+      "Id": 1
+    },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
@@ -381,12 +399,12 @@
       "Adress": {
         "Id": -1,
         "UserId": 3,
-        "Country": "Spain",
-        "City": "Malaga",
-        "PostCode": 29018,
-        "Street": "Calle Larios",
-        "Number": 12,
-        "ExtraInfo": "Under a bridge"
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 1,
+        "ExtraInfo": "apt77"
       },
       "Auth": "customer"
     }
@@ -410,7 +428,6 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 3
-
     },
     {
       "Id": 4,
@@ -783,7 +800,74 @@
         "Number": 3,
         "ExtraInfo": ""
       }
+    },
+    {
+      "Id": 11,
+      "NumberOfProducts": 6,
+      "TotalPrice": 30,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 3,
+            "Size": "s",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 12,
+      "NumberOfProducts": 4,
+      "TotalPrice": 26,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 4,
+            "Size": "xs",
+            "Color": "grey"
+          },
+          {
+            "ProductCardId": 3,
+            "Id": 5,
+            "Size": "s",
+            "Color": "red"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
+        "ExtraInfo": ""
+      }
     }
   ]
-
 }

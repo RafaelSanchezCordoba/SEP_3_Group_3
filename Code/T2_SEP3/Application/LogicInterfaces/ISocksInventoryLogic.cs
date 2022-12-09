@@ -13,4 +13,6 @@ public interface ISocksInventoryLogic
     Task UpdateAsync(Inventory dto);
     Task DeleteFromCardAsync(int id);
     Task DeleteAsync(int id);
+    Task<Inventory> GetByParameters(int scId, String color, String size);
+
 }

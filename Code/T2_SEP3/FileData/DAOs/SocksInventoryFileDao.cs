@@ -96,4 +96,10 @@ public class SocksInventoryFileDao:ISocksInventoryDao
 
         return Task.CompletedTask;
     }
+
+    public Task<Inventory> GetByParameters(int scId, string color, string size)
+    {
+        Inventory? existing = context.Inventories.FirstOrDefault(i => i.CardId == scId && i.Color.Equals(color) && i.Size.Equals(size) );
+        return Task.FromResult(existing);
+    }
 }

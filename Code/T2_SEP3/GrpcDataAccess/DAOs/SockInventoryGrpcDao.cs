@@ -125,4 +125,9 @@ public class SockInventoryGrpcDao:ISocksInventoryDao
      
         return Task.CompletedTask;
     }
+
+    public Task<Inventory> GetByParameters(int scId, string color, string size)
+    {
+        throw new NotImplementedException();
+    }
 }
