@@ -136,20 +136,7 @@
     {
       "Id": 4,
       "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 3,
-          "Id": 7,
-          "Size": "s",
-          "Color": "red"
-        },
-        {
-          "ProductCardId": 4,
-          "Id": 8,
-          "Size": "xl",
-          "Color": "red"
-        }
-      ]
+      "Products": []
     }
   ],
   "SocksCards": [

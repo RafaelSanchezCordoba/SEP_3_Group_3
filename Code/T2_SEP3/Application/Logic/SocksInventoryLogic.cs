@@ -43,6 +43,10 @@ public class SocksInventoryLogic:ISocksInventoryLogic
     public Task UpdateAsync(Inventory inventory)
     {
         ValidateInventory(inventory);
+        if (inventory.Quantity <= 0)
+        {
+            throw new Exception("There is no more available stock!!!");
+        }
         return inventoryDao.UpdateAsync(inventory) ?? throw new Exception($"Inventory with ID {inventory.Id} not found!!!");
     }
     
