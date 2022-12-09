@@ -53,6 +53,7 @@ else
             </tbody>
         </table>
     </div>
+    <label>@msg</label>
 }
 
 <div class="order-summary-div">
@@ -69,12 +70,13 @@ else
     public int Id { get; set; }
     
     private global::Shared.Models.ShoppingCart shoppingCart= null;
+    private Socks socks;
     private List<Product?> productList=new List<Product?>();
     private double subtotal=0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
     private List<CardItem?> items= new List<CardItem?>();
-    
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -112,6 +114,14 @@ else
     protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId)
     {
         quantity++;
+        socks = await socksService.getByIdAsync(productId);
+        Inventory? inventory =  await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
+        if (quantity > inventory.Quantity)
+        {
+            quantity--;
+            msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
+            throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
+        }
         await cardItemService.UpdateQuantityAsync(productId,quantity);
         SocksCard card = await socksCardService.GetById(sockCardId);
         await LoadData();

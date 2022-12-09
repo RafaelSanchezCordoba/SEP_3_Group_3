@@ -185,24 +185,6 @@
   ],
   "ShoppingCarts": [
     {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 3,
-          "Size": "s",
-          "Color": "grey"
-        },
-        {
-          "ProductCardId": 5,
-          "Id": 4,
-          "Size": "l",
-          "Color": "blue"
-        }
-      ]
-    },
-    {
       "Id": 2,
       "OwnerId": 3,
       "Products": [
@@ -236,9 +218,32 @@
       "Id": 4,
       "OwnerId": 0,
       "Products": []
+    },
+    {
+      "Id": 1,
+      "OwnerId": 1,
+      "Products": [
+        {
+          "ProductCardId": 5,
+          "Id": 4,
+          "Size": "l",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 14,
+          "Size": "s",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 15,
+          "Size": "m",
+          "Color": "yellow"
+        }
+      ]
     }
   ],
-  
   "SocksCards": [
     {
       "Title": "Pokemon socks",
@@ -305,12 +310,6 @@
       "Color": "grey"
     },
     {
-      "ProductCardId": 1,
-      "Id": 3,
-      "Size": "s",
-      "Color": "grey"
-    },
-    {
       "ProductCardId": 5,
       "Id": 4,
       "Size": "l",
@@ -369,6 +368,18 @@
       "Id": 13,
       "Size": "s",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 14,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 15,
+      "Size": "m",
+      "Color": "yellow"
     }
   ],
   "Users": [
@@ -424,18 +435,6 @@
       "ProductId": 2
     },
     {
-      "Id": 3,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 3
-    },
-    {
-      "Id": 4,
-      "Quantity": 1,
-      "ShoppingCartId": 1,
-      "ProductId": 4
-    },
-    {
       "Id": 5,
       "Quantity": 1,
       "ShoppingCartId": 0,
@@ -488,6 +487,24 @@
       "Quantity": 2,
       "ShoppingCartId": 3,
       "ProductId": 11
+    },
+    {
+      "Id": 14,
+      "Quantity": 25,
+      "ShoppingCartId": 1,
+      "ProductId": 14
+    },
+    {
+      "Id": 15,
+      "Quantity": 53,
+      "ShoppingCartId": 1,
+      "ProductId": 15
+    },
+    {
+      "Id": 4,
+      "Quantity": 6,
+      "ShoppingCartId": 1,
+      "ProductId": 4
     }
   ],
   "Orders": [

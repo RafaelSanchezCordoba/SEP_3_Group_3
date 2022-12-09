@@ -4,14 +4,14 @@
       "CardId": 1,
       "Color": "grey",
       "Size": "xs",
-      "Quantity": 5,
+      "Quantity": 456789,
       "Id": 7
     },
     {
       "CardId": 1,
       "Color": "grey",
       "Size": "s",
-      "Quantity": 5,
+      "Quantity": 456,
       "Id": 8
     },
     {
