@@ -61,4 +61,15 @@ public class SocksFileDao : ISocksDao
 
         return Task.CompletedTask;
     }
+
+    public Task DeleteByShoppingCartId(int id)
+    {
+        ShoppingCart? result = context.ShoppingCarts.FirstOrDefault(cart => cart.Id == id);
+        ICollection<Product> socksList = result.Products.AsEnumerable().ToList();
+        foreach (var product in socksList)
+        {
+            DeleteAsync(product.Id);
+        }
+        return Task.CompletedTask;
+    }
 }

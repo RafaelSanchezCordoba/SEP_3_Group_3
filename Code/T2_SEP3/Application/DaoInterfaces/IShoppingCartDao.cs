@@ -16,5 +16,4 @@ public interface IShoppingCartDao
     Task<ShoppingCart> GetByCustomerName(int ownerId);
 
     Task<double> GetTotalPriceAsync(int id);
-
 }
