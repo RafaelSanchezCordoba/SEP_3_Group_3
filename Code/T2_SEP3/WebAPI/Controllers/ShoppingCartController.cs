@@ -111,7 +111,7 @@ public class ShoppingCartController : ControllerBase
         }
     }
 
-    [HttpGet("TotalPrice{id:int}")]
+    [HttpGet("TotalPrice/{id:int}")]
     public async Task<ActionResult<double>> GetAsync([FromRoute] int id)
     {
         try

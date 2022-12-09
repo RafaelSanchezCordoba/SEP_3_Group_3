@@ -114,8 +114,8 @@ public class ShoppingCartFileDao:IShoppingCartDao
         foreach (var p in shoppingCart.Products)
         {
             ProductCard productCard = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
-            CardItem cardItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id);
-            totalprice += productCard.Price*cardItem.Quantity;
+            CardItem cardItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id && id==c.ShoppingCartId);
+            totalprice =totalprice+  productCard.Price*cardItem.Quantity;
         }
 
         return totalprice;
