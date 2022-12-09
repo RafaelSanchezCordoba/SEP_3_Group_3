@@ -111,6 +111,8 @@ public class AdressLogic:IAdressLogic
     public Task<Adress> GetById(int id)
     {
         return _adressDao.getById(id);
+    }
+
     public void ValidateAddress(Adress adress)
     {
         if (string.IsNullOrEmpty(adress.City)) throw new Exception("City can not be empty!!!");
