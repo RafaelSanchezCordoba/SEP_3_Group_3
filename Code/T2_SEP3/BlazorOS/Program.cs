@@ -22,6 +22,8 @@ builder.Services.AddScoped<ISocksService, SocksHttpClient>();
 builder.Services.AddScoped<IShoppingCartService, ShoppingCartHttpClient>();
 builder.Services.AddScoped<ICardItemService, CardItemHttpClient>();
 builder.Services.AddScoped<IOrderService, OrderHttpClient>();
+builder.Services.AddScoped<IAdressService, AdressHttpClient>();
+
 
 
 builder.Services.AddSmart();

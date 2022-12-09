@@ -225,17 +225,24 @@
           "Color": "grey"
         },
         {
-          "ProductCardId": 3,
-          "Id": 12,
-          "Size": "s",
-          "Color": "purple"
+          "ProductCardId": 5,
+          "Id": 14,
+          "Size": "xl",
+          "Color": "red"
         }
       ]
     },
     {
       "Id": 4,
       "OwnerId": 0,
-      "Products": []
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 15,
+          "Size": "s",
+          "Color": "yellow"
+        }
+      ]
     }
   ],
   
@@ -369,6 +376,18 @@
       "Id": 13,
       "Size": "s",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 14,
+      "Size": "xl",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 15,
+      "Size": "s",
+      "Color": "yellow"
     }
   ],
   "Users": [
@@ -407,9 +426,29 @@
         "ExtraInfo": "apt77"
       },
       "Auth": "customer"
+    },
+    {
+      "Id": 4,
+      "Email": "alex",
+      "Password": "password",
+      "Name": null,
+      "PhoneNumber": "1234567",
+      "Adress": null,
+      "Auth": "Customer"
     }
   ],
-  "Adresses": [],
+  "Adresses": [
+    {
+      "Id": 1,
+      "UserId": -1,
+      "Country": "string",
+      "City": "string",
+      "PostCode": 0,
+      "Street": "string",
+      "Number": 0,
+      "ExtraInfo": "string"
+    }
+  ],
   "CardItems": [
     {
       "Id": 1,
@@ -488,6 +527,18 @@
       "Quantity": 2,
       "ShoppingCartId": 3,
       "ProductId": 11
+    },
+    {
+      "Id": 14,
+      "Quantity": 5,
+      "ShoppingCartId": 3,
+      "ProductId": 14
+    },
+    {
+      "Id": 15,
+      "Quantity": 3,
+      "ShoppingCartId": 4,
+      "ProductId": 15
     }
   ],
   "Orders": [

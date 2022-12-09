@@ -62,6 +62,22 @@ public class AdressLogic:IAdressLogic
         {
             throw new Exception($"User with ID {dto.OwnerId} not found!!!");
         }
+
+      
+        if (user.Adress==null)
+        {
+            user.Adress = new Adress
+            {
+                Id = -1,
+                Country = "",
+                City = "",
+                Number = 0,
+                PostCode = 0,
+                Street = "",
+                UserId = user.Id
+            };
+        }
+        
         Adress? existing = user.Adress;
         string CountryToUse = dto.Country ?? existing.Country ;
         string CityToUse = dto.City ?? existing.City ;
@@ -72,10 +88,6 @@ public class AdressLogic:IAdressLogic
         }
         string StreetToUse = dto.Street ?? existing.Street ;
         int NumberToUse = dto.Number;
-        if (dto.Number==null)
-        {
-            NumberToUse = existing.Number;
-        }
         if (dto.Number==null)
         {
             NumberToUse = existing.Number;
@@ -94,18 +106,8 @@ public class AdressLogic:IAdressLogic
             UserId = existing.UserId
         };
         
-        
-        if (user == null)
-        { 
-            await _adressDao.UpdateAsync(updated);
-        }
-        else
-        {
             user.Adress = updated;
             await _userDao.UpdateUser(user);
-        }
-       
-         
     }
 
     public Task<Adress> GetById(int id)

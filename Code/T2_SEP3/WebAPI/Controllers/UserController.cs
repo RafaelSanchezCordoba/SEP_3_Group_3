@@ -26,12 +26,12 @@ public class UserController:ControllerBase
     }
 
     [HttpPatch]
-    public async Task<ActionResult<User>> updateAsync([FromBody] UpdateUserDto dto)
+    public async Task<ActionResult<User>> updateAsync([FromBody] User user)
     {
         try
         {
             
-                var result = await _userLogic.Update(dto);
+                var result = await _userLogic.Update(user);
                 return Ok(result);
           
         }
