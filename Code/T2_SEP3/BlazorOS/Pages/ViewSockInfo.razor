@@ -91,61 +91,84 @@
 
     private void LoadColors()
     {
-        foreach (Inventory i in inventories)
+        try
         {
-            if (!colors.Contains(i.Color))
+            foreach (Inventory i in inventories)
             {
-                colors.Add(i.Color);
+                if (!colors.Contains(i.Color))
+                {
+                    colors.Add(i.Color);
+                }
             }
         }
-        
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
     }
     
     
     private void LoadSizes()
     {
-        sizes.Clear();
-        foreach (var i in inventories)
+        try
         {
-            if (selectedColor.Equals(i.Color))
+            sizes.Clear();
+            foreach (var i in inventories)
             {
-                if (!sizes.Contains(i.Size))
+                if (selectedColor.Equals(i.Color))
                 {
-                    sizes.Add(i.Size);
+                    if (!sizes.Contains(i.Size))
+                    {
+                        sizes.Add(i.Size);
+                    }
                 }
             }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
         }
     }
 
     private async void AddToCart()
     {
-        if (user==null)
+        try
         {
-            sc =await shoppingCartService.getByIdAsync(4);
-        }
-        if (sc==null)
-        {
-            CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
-            sc = await shoppingCartService.CreateAsync(scdto);
-        }
-        CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
-        Socks socks = await socksService.CreateAsync(socksDto);
-        CreateCardItemDto dto = new CreateCardItemDto(sc.Id, socks.Id);
-        await cardItemService.CreateAsync(dto);
-       
-        foreach (Product p in sc.Products)
-        {
-            if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+            if (user==null)
             {
-               CardItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
-                int quantity = item.Quantity;
-                quantity++;
-                cardItemService.UpdateQuantityAsync(item.Id, quantity);
-                navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
-                return;
-            } 
+                sc =await shoppingCartService.getByIdAsync(4);
+            }
+            if (sc==null)
+            {
+                CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
+                sc = await shoppingCartService.CreateAsync(scdto);
+            }
+            CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
+            Socks socks = await socksService.CreateAsync(socksDto);
+            CreateCardItemDto dto = new CreateCardItemDto(sc.Id, socks.Id);
+            await cardItemService.CreateAsync(dto);
+       
+            foreach (Product p in sc.Products)
+            {
+                if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+                {
+                    CardItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
+                    int quantity = item.Quantity;
+                    quantity++;
+                    cardItemService.UpdateQuantityAsync(item.Id, quantity);
+                    navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
+                    return;
+                } 
+            }
+            await shoppingCartService.AddProductAsync(socks, sc.Id);
+            navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
         }
-        await shoppingCartService.AddProductAsync(socks, sc.Id);
-        navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
     }
 }

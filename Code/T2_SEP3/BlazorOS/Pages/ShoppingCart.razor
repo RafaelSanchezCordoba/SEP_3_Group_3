@@ -104,59 +104,88 @@ else
     
     protected async Task RemoveProduct(int productId)
     {
-        Product product = await socksService.getByIdAsync(productId);
-        await shoppingCartService.RemoveProduct(product, Id);
-        await socksService.RemoveSocks(productId);
-        await LoadData();
+        try
+        {
+            Product product = await socksService.getByIdAsync(productId);
+            await shoppingCartService.RemoveProduct(product, Id);
+            await socksService.RemoveSocks(productId);
+            await LoadData();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
     }
 
     
     protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId)
     {
-        quantity++;
-        socks = await socksService.getByIdAsync(productId);
-        Inventory? inventory =  await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
-        if (quantity > inventory.Quantity)
+        try
         {
-            quantity--;
-            msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
-            throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
+            quantity++;
+            socks = await socksService.getByIdAsync(productId);
+            Inventory? inventory =  await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
+            if (quantity > inventory.Quantity)
+            {
+                quantity--;
+                msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
+                throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
+            }
+            await cardItemService.UpdateQuantityAsync(productId,quantity);
+            SocksCard card = await socksCardService.GetById(sockCardId);
+            await LoadData();
         }
-        await cardItemService.UpdateQuantityAsync(productId,quantity);
-        SocksCard card = await socksCardService.GetById(sockCardId);
-        await LoadData();
-
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
     }
     
     protected async Task DecreaseQuantity(int productId, int quantity,int productCardId)
     {
-        quantity--;
-        if (quantity>=1)
+        try
         {
-            await cardItemService.UpdateQuantityAsync(productId, quantity);
-            SocksCard card = await socksCardService.GetById(productCardId);
+            quantity--;
+            if (quantity>=1)
+            {
+                await cardItemService.UpdateQuantityAsync(productId, quantity);
+                SocksCard card = await socksCardService.GetById(productCardId);
+            }
+            else
+            {
+                await RemoveProduct(productId);
+            }
+            await LoadData();
         }
-        else
+        catch (Exception e)
         {
-             await RemoveProduct(productId);
+            Console.WriteLine(e);
+            msg = e.Message;
         }
-      
-       await LoadData();
-
     }
 
 
     public async Task LoadData()
     {
-        productList = (List<Product?>) await shoppingCartService.GetProducts(Id);
-        items = (List<CardItem?>)await cardItemService.GetAsync();
-        subtotal = 0;
-        foreach (Product p in productList)
+        try
         {
-            SocksCard card = await socksCardService.GetById(p.ProductCardId);
-            CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
-            double totalPrice = card.Price * item.Quantity;
-            subtotal += totalPrice;
+            productList = (List<Product?>) await shoppingCartService.GetProducts(Id);
+            items = (List<CardItem?>)await cardItemService.GetAsync();
+            subtotal = 0;
+            foreach (Product p in productList)
+            {
+                SocksCard card = await socksCardService.GetById(p.ProductCardId);
+                CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                double totalPrice = card.Price * item.Quantity;
+                subtotal += totalPrice;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
         }
     }
 
