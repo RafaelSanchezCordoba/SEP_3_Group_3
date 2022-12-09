@@ -138,14 +138,7 @@
     {
       "Id": 1,
       "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 1,
-          "Id": 3,
-          "Size": "s",
-          "Color": "grey"
-        }
-      ]
+      "Products": []
     }
   ],
   "SocksCards": [
@@ -208,6 +201,18 @@
       "Id": 3,
       "Size": "s",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 4,
+      "Size": "xs",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 5,
+      "Size": "s",
+      "Color": "red"
     }
   ],
   "Users": [
@@ -249,6 +254,18 @@
       "Quantity": 3,
       "ShoppingCartId": 1,
       "ProductId": 3
+    },
+    {
+      "Id": 4,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 4
+    },
+    {
+      "Id": 5,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 5
     }
   ],
   "Orders": [
@@ -466,6 +483,167 @@
         "PostCode": 28600,
         "Street": "Fernando Hern\u00E1ndez Vidal",
         "Number": 13,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 8,
+      "NumberOfProducts": 1,
+      "TotalPrice": 15,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchuelo",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "601190167",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 3,
+            "Size": "s",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Spain",
+        "City": "Navalcarnero",
+        "PostCode": 28600,
+        "Street": "Fernando Hern\u00E1ndez Vidal",
+        "Number": 13,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 9,
+      "NumberOfProducts": 6,
+      "TotalPrice": 30,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 3,
+            "Size": "s",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 10,
+      "NumberOfProducts": 6,
+      "TotalPrice": 30,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 3,
+            "Size": "s",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 11,
+      "NumberOfProducts": 6,
+      "TotalPrice": 30,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 3,
+            "Size": "s",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 12,
+      "NumberOfProducts": 4,
+      "TotalPrice": 26,
+      "Status": "Processing order",
+      "CustomerName": "Mar\u00EDa Ortiz Planchueloe",
+      "CustomerEmail": "mariaorpl18@gmail.com",
+      "CustomerPhoneNumber": "",
+      "ShoppingCart": {
+        "Id": 1,
+        "OwnerId": 1,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 4,
+            "Size": "xs",
+            "Color": "grey"
+          },
+          {
+            "ProductCardId": 3,
+            "Id": 5,
+            "Size": "s",
+            "Color": "red"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": 1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kollegiev\u00E6nget",
+        "Number": 3,
         "ExtraInfo": ""
       }
     }

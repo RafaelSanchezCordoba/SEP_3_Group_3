@@ -85,12 +85,7 @@
         <th></th>
         </thead>
         <tbody>
-        @foreach (var p in items)
-        {
-            <p>@p.Id</p>  
-            <p>@p.ProductId</p>      
-            
-        }
+ 
      
         @foreach (var p in productList)
         {
@@ -138,7 +133,7 @@
 
 @code {
    [Parameter]
-       public int Id { get; set; }
+   public int Id { get; set; }
 
     private string email = "";
     private string name = "";
@@ -149,15 +144,16 @@
     private int number = 0;
     private int postcode = 0;
     private string option = "";
+    private int numberOfProducts = 0;
     
     private double subtotal = 0;
     private List<Product> productList = new List<Product>();
     private List<ProductCard?> cards = new List<ProductCard?>();
     private List<CardItem?> items = new List<CardItem?>();
-    ShoppingCart shoppingCart = null;
+    private global::Shared.Models.ShoppingCart shoppingCart = null;
 
     
-    private CreateOrderDto OrderDto = new CreateOrderDto("ggg","hhh","jjj","jjjj",null,new Adress(1,1,"hhh","jjj",888,"fff",5,"hhhh"));
+    private CreateOrderDto OrderDto = new CreateOrderDto(2,"ggg","hhh","jjj","jjjj",null,new Adress(1,1,"hhh","jjj",888,"fff",5,"hhhh"));
     
 
     private string resultMsg = "";
@@ -170,7 +166,7 @@
         try
         {
             global::Shared.Models.ShoppingCart cart = await shoppingCartService.getByIdAsync(Id);
-            OrderDto = new CreateOrderDto( "Processing order", name, email, phone, cart, new Adress(1, 1, country, city, postcode, street, number, option));
+            OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1, 1, country, city, postcode, street, number, option));
          
             LoadOrderSummary();
             
@@ -191,15 +187,20 @@
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
-                Console.WriteLine("shp id"+OrderDto.ShoppingCart.Id);
-                CardItem item=await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
-                Console.WriteLine(item.Id);
-                items.Add(item);
-                //subtotal = await shoppingCartService.GetTotalPrice(OrderDto.ShoppingCart.Id);
-                Console.WriteLine(subtotal);
-                OrderDto.TotalPrice = subtotal;
+              
+                CardItem item = await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
                 
+                items.Add(item);
+                int itemsCount = item.Quantity;
+                numberOfProducts += itemsCount;
+                double totalPrice = card.Price * item.Quantity;
+                subtotal += totalPrice;
+
             }
+
+            OrderDto.TotalPrice = subtotal;
+            Console.WriteLine(subtotal+"/"+numberOfProducts);
+            OrderDto.NumberOfProducts = numberOfProducts;
             showModalInfo = "none";
             showModalSum = "initial";
         }
@@ -215,7 +216,15 @@
     {
         try
         {
+            
+            
             await orderService.CreateAsync(OrderDto);
+            shoppingCart = await shoppingCartService.getByIdAsync(Id);
+            foreach (var p in shoppingCart.Products)
+            {
+                await shoppingCartService.RemoveProduct(p, shoppingCart.Id);
+            }
+           
             navMgr.NavigateTo("/");
     //nav to page that tells you congrats
         }
