@@ -37,6 +37,11 @@ public class SockCardsFileDao : ISockCardDao
         return Task.FromResult(result);
     }
 
+    public Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync(string title)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
     {
         List<SocksCard> result = context.SocksCards.AsEnumerable().ToList();
@@ -97,6 +102,12 @@ public class SockCardsFileDao : ISockCardDao
         }
 
         context.SocksCards.Remove(existing);
+        Socks? deleteSocks = context.Socks.FirstOrDefault(socks => socks.ProductCardId == id);
+        if (deleteSocks != null) context.Socks.Remove(deleteSocks);
+        CardItem? deleteCardItem = context.CardItems.FirstOrDefault(cardItem => cardItem.ProductId == id);
+        if (deleteCardItem != null) context.CardItems.Remove(deleteCardItem);
+        Inventory? deleteInventory = context.Inventories.FirstOrDefault(inventory => inventory.CardId == id);
+        if (deleteInventory != null) context.Inventories.Remove(deleteInventory);
         context.SaveChanges();
 
         return Task.CompletedTask;

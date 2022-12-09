@@ -3,13 +3,6 @@
     {
       "CardId": 1,
       "Color": "grey",
-      "Size": "xs",
-      "Quantity": 456789,
-      "Id": 7
-    },
-    {
-      "CardId": 1,
-      "Color": "grey",
       "Size": "s",
       "Quantity": 456,
       "Id": 8
@@ -239,16 +232,6 @@
     }
   ],
   "SocksCards": [
-    {
-      "Title": "Pokemon socks",
-      "Description": "Cute Psyduck socks",
-      "Price": 5,
-      "Material": "Recycled polyester",
-      "Brand": "pokemon",
-      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
-      "Type": "Mid calf",
-      "Id": 1
-    },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",

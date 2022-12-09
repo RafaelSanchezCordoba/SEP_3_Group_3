@@ -52,4 +52,15 @@ public class SocksHttpClient : ISocksService
         )!;
         return socks;
     }
+
+    public async Task RemoveSocks(int id)
+    {
+        HttpResponseMessage response = await client.DeleteAsync($"https://localhost:7999/Socks/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+        
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+    }
 }

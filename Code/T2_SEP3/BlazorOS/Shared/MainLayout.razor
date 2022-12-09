@@ -39,6 +39,7 @@
     
     private string claimString= "Id";
     private bool addedSomething= false;
+    private ShoppingCart shoppingCart;
    
 
            
@@ -58,11 +59,17 @@
         NavManager.NavigateTo("/Profile");
     }
 
-    private void ShoppingCart()
+    private async Task ShoppingCart()
     {
         if (!addedSomething)
         {
             addedSomething = true;
+            shoppingCart = await ShoppingCartService.getByIdAsync(4);
+            foreach (var p in shoppingCart.Products)
+            {
+                await ShoppingCartService.RemoveProduct(p, 4);
+            }
+            
             Console.WriteLine("clear shopping cart!!!!!!!");
             
             NavManager.NavigateTo("ShoppingCart/4");

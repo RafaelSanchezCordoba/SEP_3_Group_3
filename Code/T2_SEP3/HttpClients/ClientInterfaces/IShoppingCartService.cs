@@ -19,6 +19,4 @@ public interface IShoppingCartService
     Task<ShoppingCart> getByUserIdAsync(int id);
 
     Task<double> GetTotalPrice(int id);
-
-
 }

@@ -1,0 +1,225 @@
+{
+  "Inventories": [
+    {
+      "CardId": 1,
+      "Color": "grey",
+      "Size": "s",
+      "Quantity": 456,
+      "Id": 8
+    },
+    {
+      "CardId": 2,
+      "Color": "grey",
+      "Size": "m",
+      "Quantity": 5,
+      "Id": 9
+    },
+    {
+      "CardId": 2,
+      "Color": "grey",
+      "Size": "l",
+      "Quantity": 89,
+      "Id": 10
+    },
+    {
+      "CardId": 2,
+      "Color": "grey",
+      "Size": "xl",
+      "Quantity": 9,
+      "Id": 11
+    },
+    {
+      "CardId": 3,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 6,
+      "Id": 12
+    },
+    {
+      "CardId": 3,
+      "Color": "red",
+      "Size": "s",
+      "Quantity": 89,
+      "Id": 13
+    },
+    {
+      "CardId": 4,
+      "Color": "red",
+      "Size": "xl",
+      "Quantity": 988,
+      "Id": 14
+    },
+    {
+      "CardId": 5,
+      "Color": "blue",
+      "Size": "s",
+      "Quantity": 66,
+      "Id": 16
+    },
+    {
+      "CardId": 5,
+      "Color": "blue",
+      "Size": "l",
+      "Quantity": 6,
+      "Id": 17
+    },
+    {
+      "CardId": 5,
+      "Color": "blue",
+      "Size": "s",
+      "Quantity": 22,
+      "Id": 18
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 44,
+      "Id": 19
+    },
+    {
+      "CardId": 2,
+      "Color": "red",
+      "Size": "xs",
+      "Quantity": 10003,
+      "Id": 4
+    },
+    {
+      "CardId": 2,
+      "Color": "blue",
+      "Size": "xl",
+      "Quantity": 23,
+      "Id": 5
+    },
+    {
+      "CardId": 2,
+      "Color": "red",
+      "Size": "xxl",
+      "Quantity": 23,
+      "Id": 6
+    },
+    {
+      "CardId": 1,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 2022,
+      "Id": 3
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "s",
+      "Quantity": 160,
+      "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 208,
+      "Id": 20
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "xs",
+      "Quantity": 630,
+      "Id": 15
+    }
+  ],
+  "ShoppingCarts": [
+    {
+      "Id": 1,
+      "OwnerId": 1,
+      "Products": []
+    }
+  ],
+  "SocksCards": [
+    {
+      "Title": "Xmas Sock",
+      "Description": "Perfect socks for your elf costume",
+      "Price": 4.3,
+      "Material": "Recycled polyester",
+      "Brand": "IDK",
+      "Image": "https://cdn.shopify.com/s/files/1/0004/3712/5184/products/Elf-01_900x_e4e6f216-a1a4-47bf-9674-50532802c23e_large.webp?v=1661868254",
+      "Type": "Knee high",
+      "Id": 2
+    },
+    {
+      "Title": "unicorn socks",
+      "Description": "makes you feel magical",
+      "Price": 8,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.dedoles.sk/buxus/images//vsetko/inspiracie/vesele_ponozky/vysoke_ponozky/vesele_ponozky_duhovy_jednorozec/GMRS204.png",
+      "Type": "Anklets",
+      "Id": 3
+    },
+    {
+      "Title": "Pizza sock",
+      "Description": "yummyyyyyyy",
+      "Price": 10,
+      "Material": "recycled polyester",
+      "Brand": "nike",
+      "Image": "https://cdn.shopify.com/s/files/1/1889/3647/products/01_40191002-1cb8-4dd5-bb67-6d01b9e8799f_700x700.jpg?v=1632254116",
+      "Type": "Anklets",
+      "Id": 4
+    }
+  ],
+  "Socks": [
+    {
+      "ProductCardId": 1,
+      "Id": 3,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "xl",
+      "Color": "blue"
+    }
+  ],
+  "Users": [
+    {
+      "Id": 1,
+      "Email": "admin",
+      "Password": "admin",
+      "Name": null,
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Manager"
+    },
+    {
+      "Id": 2,
+      "Email": "string",
+      "Password": "string",
+      "Name": null,
+      "PhoneNumber": null,
+      "Adress": null,
+      "Auth": "Customer"
+    }
+  ],
+  "Adresses": [],
+  "CardItems": [
+    {
+      "Id": 2,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 2
+    },
+    {
+      "Id": 3,
+      "Quantity": 3,
+      "ShoppingCartId": 1,
+      "ProductId": 3
+    },
+    {
+      "Id": 4,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 4
+    }
+  ],
+  "Orders": []
+}

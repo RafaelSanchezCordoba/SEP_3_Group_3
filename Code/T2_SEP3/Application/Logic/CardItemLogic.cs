@@ -23,31 +23,57 @@ public class CardItemLogic : ICardItemLogic
 
     public Task<IEnumerable<CardItem>> GetAsync()
     {
-        return dao.GetAsync();
+        return dao.GetAsync() ?? throw new Exception("CardItems were not found!!!");
     }
 
-    public Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
+    public async Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
     {
-        return dao.GetByIdsAsync(idProduct, idShoppingCard);
+        ValidateById(idProduct);
+        ValidateById(idShoppingCard);
+        
+        return await dao.GetByIdsAsync(idProduct, idShoppingCard) ?? throw new Exception($"CardItem with product id {idProduct} and shoppingCart id {idShoppingCard} were not found!!!");
     }
 
-    public Task<CardItem> GetByIdAsync(int id)
+    public async Task<CardItem> GetByIdAsync(int id)
     {
-        return dao.GetByIdAsync(id);
+        ValidateById(id);
+        return await dao.GetByIdAsync(id) ?? throw new Exception($"CardItem with ID {id} was not found!!!");
     }
 
-    public Task<int> GetQuantityById(int id)
+    public async Task<int> GetQuantityById(int id)
     {
-        return dao.GetQuantityById(id);
+        ValidateById(id);
+        CardItem? cardItem = await dao.GetByIdAsync(id);
+        if (cardItem == null)
+        {
+            throw new Exception($"CardItem with ID {id} was not found!!!");
+        }
+
+        return await dao.GetQuantityById(id);
     }
 
     public Task<CardItem> UpdateQuantityAsync(int id, int newQuantity)
     {
-        return dao.UpdateQuantityAsync(id, newQuantity);
+        ValidateById(id);
+        ValidateById(newQuantity);
+        return dao.UpdateQuantityAsync(id, newQuantity) ?? throw new Exception($"CardItem with ID {id} was not found!!!");
     }
 
     public Task DeleteAsync(int cardId)
     {
-        return dao.DeleteAsync(cardId);
+        ValidateById(cardId);
+        return dao.DeleteAsync(cardId) ?? throw new Exception($"CardItem with ID {cardId} was not found!!!");
+    }
+
+    public void ValidateCardItem(CardItem cardItem)
+    {
+        if (cardItem.Quantity <= 0) throw new Exception("Quantity must be > 0!!!");
+        if (cardItem.ProductId <= 0) throw new Exception("Product id must be > 0!!!");
+        if (cardItem.ShoppingCartId <= 0) throw new Exception("ShoppingCart id must be > 0!!!");
+    }
+
+    public void ValidateById(int id)
+    {
+        if (id <= 0) throw new Exception("Id must be > 0!!!");
     }
 }

@@ -18,6 +18,7 @@ public class AdressLogic:IAdressLogic
 
     public  Task<Adress> CreateAsync(Adress adress)
     {
+         ValidateAddress(adress);
          
          if (!_userDao.UserExists(adress.UserId).Result)
          {
@@ -38,17 +39,18 @@ public class AdressLogic:IAdressLogic
 
     public Task<IEnumerable<Adress>> getUserAdresses()
     {
-       return _adressDao.getUserAdresses();
+       return _adressDao.getUserAdresses() ?? throw new Exception($"Addresses were not found");
     }
 
     public Task<IEnumerable<Adress>> getNonUserAdresses()
     {
-        return _adressDao.getNonUserAdresses();
+        return _adressDao.getNonUserAdresses() ?? throw new Exception($"Addresses were not found");
     }
 
     public Task<Adress> getByUserId(int id)
     {
-        User user = _userDao.GetById(id).Result;
+        ValidateById(id);
+        User user = _userDao.GetById(id).Result ?? throw new Exception($"User with ID {id} was not found");
         Adress result = user.Adress;
         return Task.FromResult(result);
     }
@@ -109,5 +111,19 @@ public class AdressLogic:IAdressLogic
     public Task<Adress> GetById(int id)
     {
         return _adressDao.getById(id);
+    public void ValidateAddress(Adress adress)
+    {
+        if (string.IsNullOrEmpty(adress.City)) throw new Exception("City can not be empty!!!");
+        if (string.IsNullOrEmpty(adress.Country)) throw new Exception("Country can not be empty!!!");
+        if (string.IsNullOrEmpty(adress.Street)) throw new Exception("Street can not be empty!!!");
+        if (adress.Id <= 0) throw new Exception("Id must be > 0!!!");
+        if (adress.Number <= 0) throw new Exception("Number must be > 0!!!");
+        if (adress.PostCode <= 0) throw new Exception("Post code must be > 0!!!");
+        if (adress.UserId <= 0) throw new Exception("User id must be > 0!!!");
+    }
+
+    public void ValidateById(int id)
+    {
+        if (id <= 0) throw new Exception("Id must be > 0!!!");
     }
 }

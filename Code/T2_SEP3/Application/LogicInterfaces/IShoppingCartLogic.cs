@@ -12,8 +12,5 @@ public interface IShoppingCartLogic
     Task DeleteAsync(int cardId);
     Task<ShoppingCart> RemoveProduct(Product product, int id);
     Task<ShoppingCart> GetByCustomerName(int ownerId);
-
-
     Task<double> GetTotalPriceAsync(int id);
-
 }
