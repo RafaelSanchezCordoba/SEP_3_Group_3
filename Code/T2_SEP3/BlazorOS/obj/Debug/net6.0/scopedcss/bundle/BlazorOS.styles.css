@@ -188,6 +188,30 @@ input[b-zjw7gqpu4y]
     width: 34%;
     float: right;
 }
+/* /Pages/index.razor.rz.scp.css */
+*[b-341o8pllcz]
+{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-341o8pllcz]
+{
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categoryTitle[b-341o8pllcz]
+{
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    font-size: larger;
+    padding: 10px;
+}
 /* /Pages/Login.razor.rz.scp.css */
 
 .myButton[b-o3v1w4jous]{

@@ -1,0 +1,23 @@
+*[b-341o8pllcz]
+{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-341o8pllcz]
+{
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categoryTitle[b-341o8pllcz]
+{
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    font-size: larger;
+    padding: 10px;
+}
