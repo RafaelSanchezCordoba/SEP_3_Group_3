@@ -5,6 +5,7 @@
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
 @inject ICardItemService cardItemService
+@inject ISockInventoryService inventoryService;
 @inject NavigationManager navMgr
 
 @if (productList == null)
@@ -61,6 +62,7 @@ else
     <p>Apply a coupon code or points on the next step</p>
 </div>
 
+<p>@msg</p>
 
 
 @code {
@@ -73,7 +75,10 @@ else
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
     private List<CardItem?> items= new List<CardItem?>();
+
+   
     
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -98,6 +103,20 @@ else
             msg = e.Message;
         }
     }
+     public async Task<int> InvCheck(int cardId,int cardItemId)
+    {
+       IEnumerable<Inventory> inventories =  await inventoryService.GetByCardIdAsync(cardId);
+         
+         Product sockToCompare = productList.Find(x => x.Id == cardItemId);
+       
+      
+       Inventory? toCompare = inventories.FirstOrDefault(x=>(x.Color.Equals(sockToCompare.Color)
+                                                            &&x.Size.Equals(sockToCompare.Size))) ;
+         return (int) toCompare.Quantity;
+
+
+    }
+
     
     protected async Task RemoveProduct(int productId)
     {
@@ -109,11 +128,23 @@ else
     
     protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId)
     {
-        quantity++;
-        await cardItemService.UpdateQuantityAsync(productId,quantity);
-        SocksCard card = await socksCardService.GetById(sockCardId);
-        await LoadData();
 
+        quantity++;
+        if (quantity <= await InvCheck(sockCardId,  productId))
+        {
+            await cardItemService.UpdateQuantityAsync(productId,quantity);
+            SocksCard card = await socksCardService.GetById(sockCardId);
+            await LoadData();
+           
+        }
+       else
+       {
+           msg = "not enough inv";
+       }
+       
+
+       
+       
     }
     
     protected async Task DecreaseQuantity(int productId, int quantity,int productCardId)

@@ -8,12 +8,39 @@ namespace Application.Logic;
 public class CardItemLogic : ICardItemLogic
 {
     private readonly ICardItemDao dao;
+    private readonly ISocksInventoryDao invDao;
+    private readonly ISocksDao sockDao;
     
-    public CardItemLogic(ICardItemDao dao)
+    
+    public CardItemLogic(ICardItemDao dao,ISocksInventoryDao invDao,ISocksDao sockDao)
     {
         this.dao = dao;
+        this.invDao = invDao;
+        this.sockDao = sockDao;
     }
-    
+
+ /*   public void InvCheck(int cardId, int qnt,int cardItemId)
+    {
+       IEnumerable<Inventory> inventories = invDao.GetByCardIdAsync(cardId).Result;
+
+       CardItem cardItem = dao.GetByIdAsync(cardItemId).Result;
+
+       Socks sockToCompare = sockDao.GetById(cardItem.ProductId).Result;
+       
+      
+       Inventory? toCompare = null ;
+
+       foreach (var x in inventories)
+       {
+           if (x.Color.Equals(sockToCompare.Color)&&x.Size.Equals(sockToCompare.Size))
+           {
+               toCompare = x;
+           }
+       }
+
+       if (toCompare.Quantity >= qnt) throw new Exception("quantity is more than the avaiable inv");
+    }
+**/
     public async Task<CardItem> CreateAsync(CreateCardItemDto dto)
     {
         CardItem cardItem = new CardItem(dto.ShoppingCartId, dto.ProductId);

@@ -1,20 +1,6 @@
 {
   "Inventories": [
     {
-      "CardId": 1,
-      "Color": "grey",
-      "Size": "xs",
-      "Quantity": 456789,
-      "Id": 7
-    },
-    {
-      "CardId": 1,
-      "Color": "grey",
-      "Size": "s",
-      "Quantity": 456,
-      "Id": 8
-    },
-    {
       "CardId": 2,
       "Color": "grey",
       "Size": "m",
@@ -107,13 +93,6 @@
     },
     {
       "CardId": 1,
-      "Color": "blue",
-      "Size": "m",
-      "Quantity": 2022,
-      "Id": 3
-    },
-    {
-      "CardId": 1,
       "Color": "yellow",
       "Size": "s",
       "Quantity": 160,
@@ -132,6 +111,34 @@
       "Size": "xs",
       "Quantity": 630,
       "Id": 15
+    },
+    {
+      "CardId": 1,
+      "Color": "black",
+      "Size": "xs",
+      "Quantity": 4,
+      "Id": 22
+    },
+    {
+      "CardId": 1,
+      "Color": "grey",
+      "Size": "xs",
+      "Quantity": 455789,
+      "Id": 7
+    },
+    {
+      "CardId": 1,
+      "Color": "grey",
+      "Size": "s",
+      "Quantity": 3,
+      "Id": 8
+    },
+    {
+      "CardId": 1,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 5,
+      "Id": 3
     }
   ],
   "ShoppingCarts": [
@@ -141,15 +148,15 @@
       "Products": [
         {
           "ProductCardId": 1,
-          "Id": 3,
-          "Size": "s",
-          "Color": "grey"
+          "Id": 7,
+          "Size": "m",
+          "Color": "blue"
         },
         {
-          "ProductCardId": 1,
-          "Id": 4,
-          "Size": "",
-          "Color": ""
+          "ProductCardId": 2,
+          "Id": 9,
+          "Size": "xs",
+          "Color": "red"
         }
       ]
     }
@@ -220,6 +227,78 @@
       "Id": 4,
       "Size": "",
       "Color": ""
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 5,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 6,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 7,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 8,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 9,
+      "Size": "xs",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 10,
+      "Size": "xs",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 11,
+      "Size": "xs",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 12,
+      "Size": "xs",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 13,
+      "Size": "xs",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 14,
+      "Size": "s",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 15,
+      "Size": "xs",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 16,
+      "Size": "m",
+      "Color": "blue"
     }
   ],
   "Users": [
@@ -257,16 +336,82 @@
       "ProductId": 2
     },
     {
-      "Id": 3,
-      "Quantity": 3,
-      "ShoppingCartId": 1,
-      "ProductId": 3
-    },
-    {
       "Id": 4,
       "Quantity": 1,
       "ShoppingCartId": 1,
       "ProductId": 4
+    },
+    {
+      "Id": 5,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+    },
+    {
+      "Id": 6,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 6
+    },
+    {
+      "Id": 8,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 8
+    },
+    {
+      "Id": 10,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 11
+    },
+    {
+      "Id": 11,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 12
+    },
+    {
+      "Id": 12,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 13
+    },
+    {
+      "Id": 3,
+      "Quantity": 9,
+      "ShoppingCartId": 1,
+      "ProductId": 3
+    },
+    {
+      "Id": 13,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 14
+    },
+    {
+      "Id": 14,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 15
+    },
+    {
+      "Id": 15,
+      "Quantity": 2,
+      "ShoppingCartId": 1,
+      "ProductId": 16
+    },
+    {
+      "Id": 9,
+      "Quantity": 5,
+      "ShoppingCartId": 1,
+      "ProductId": 9
+    },
+    {
+      "Id": 7,
+      "Quantity": 5,
+      "ShoppingCartId": 1,
+      "ProductId": 7
     }
   ],
   "Orders": []
