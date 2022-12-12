@@ -26,6 +26,12 @@ public class SocksLogic : ISocksLogic
     {
         return await socksDao.GetAsync() ?? throw new Exception("Socks were not found!!!");
     }
+    
+    private void ValidateSocks(CreateSocksDto dto)
+    {
+        if (string.IsNullOrEmpty(dto.Color)) throw new Exception("Please Select a Color!!!");
+        if (string.IsNullOrEmpty(dto.Size)) throw new Exception("Please Select a Size!!!");
+    }
 
     public async Task<Socks> GetById(int id)
     {

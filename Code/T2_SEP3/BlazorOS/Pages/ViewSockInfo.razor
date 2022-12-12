@@ -41,7 +41,13 @@
         <br/><br/>
         
         <button @onclick="AddToCart" class="myButton">Add to the cart</button>
-        @errorMsg
+        <input type="text" @bind="cartId" @bind:event ="oninput"/>
+        shopping cart id (to be deleted when login is implemented)
+        
+         @if (!string.IsNullOrEmpty(errorMsg))
+                {
+                    <br/> <label style="color:red">@errorMsg</label>
+                }
     </div>
 </div>
 
@@ -65,6 +71,11 @@
     private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
     private global::Shared.Models.ShoppingCart  sc = null;
 
+
+    public void ValidateColorSizes()
+    {
+        
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -171,4 +182,5 @@
             errorMsg = e.Message;
         }
     }
+
 }

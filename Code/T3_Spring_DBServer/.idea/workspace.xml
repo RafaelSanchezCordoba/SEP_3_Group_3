@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c51d99a-63cf-4389-9b25-911fcf81efa6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c51d99a-63cf-4389-9b25-911fcf81efa6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/maria/OneDrive - ViaUC/VIA/SecondSemester/SDJ2/Session4(MVVM)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "89133f94238d931d094f7d3554da6cb7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maria/OneDrive - ViaUC/VIA/SecondSemester/SDJ2/Session4(MVVM)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;89133f94238d931d094f7d3554da6cb7&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.ClientTest">
     <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.t3_spring_dbserver.clientTest.ClientTest" />
@@ -92,6 +94,7 @@
       <workItem from="1669705133894" duration="750000" />
       <workItem from="1669803279387" duration="4799000" />
       <workItem from="1670420110398" duration="858000" />
+      <workItem from="1670577720952" duration="210000" />
     </task>
     <servers />
   </component>

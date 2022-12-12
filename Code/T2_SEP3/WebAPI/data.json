@@ -93,13 +93,6 @@
     },
     {
       "CardId": 1,
-      "Color": "blue",
-      "Size": "m",
-      "Quantity": 2022,
-      "Id": 3
-    },
-    {
-      "CardId": 1,
       "Color": "yellow",
       "Size": "s",
       "Quantity": 160,
