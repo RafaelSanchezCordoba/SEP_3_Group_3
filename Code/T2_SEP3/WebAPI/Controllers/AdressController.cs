@@ -9,20 +9,20 @@ namespace WebAPI.Controllers;
 [Route("[controller]")]
 public class AdressController:ControllerBase
 {
-    private readonly IAdressLogic adressLogic;
+    private readonly IAddressLogic addressLogic;
 
-    public AdressController(IAdressLogic adressLogic)
+    public AdressController(IAddressLogic addressLogic)
     {
-        this.adressLogic = adressLogic;
+        this.addressLogic = addressLogic;
     }
     
     
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<Adress>> GetById([FromRoute] int id)
+    public async Task<ActionResult<Address>> GetById([FromRoute] int id)
     {
         try
         {
-            var result = await adressLogic.GetById(id);
+            var result = await addressLogic.GetById(id);
             return Ok(result);
         }
         catch (Exception e)
@@ -33,11 +33,11 @@ public class AdressController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult> CreateAsync(Adress adress)
+    public async Task<ActionResult> CreateAsync(Address address)
     {
         try
         {
-            Adress result = await adressLogic.CreateAsync(adress);
+            Address result = await addressLogic.CreateAsync(address);
             return Ok();
         }
         catch (Exception e)
@@ -48,11 +48,11 @@ public class AdressController:ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Adress>>> getUsersAdresses()
+    public async Task<ActionResult<IEnumerable<Address>>> getUsersAdresses()
     {
         try
         {
-            var adresses = await  adressLogic.getUserAdresses();
+            var adresses = await  addressLogic.GetUserAddresses();
             return Ok(adresses);
         }
         catch (Exception e)
@@ -63,11 +63,11 @@ public class AdressController:ControllerBase
     }
     [HttpGet]
     [Route("/NonRegAddreses")]
-    public async Task<ActionResult<IEnumerable<Adress>>> getNonUserAdresses()
+    public async Task<ActionResult<IEnumerable<Address>>> getNonUserAdresses()
     {
         try
         {
-            var adresses = await adressLogic.getNonUserAdresses();
+            var adresses = await addressLogic.GetNonUserAddresses();
             return Ok(adresses);
         }
         catch (Exception e)
@@ -79,11 +79,11 @@ public class AdressController:ControllerBase
     
     [HttpGet]
     [Route("/UserAdress/{id}")]
-    public async Task<ActionResult<IEnumerable<Adress>>> getByAdressByUserId([FromRoute]int id)
+    public async Task<ActionResult<IEnumerable<Address>>> getByAdressByUserId([FromRoute]int id)
     {
         try
         {
-            var adresses = await adressLogic.getByUserId( id);
+            var adresses = await addressLogic.GetByUserId( id);
             return Ok(adresses);
         }
         catch (Exception e)
@@ -98,7 +98,7 @@ public class AdressController:ControllerBase
     {
         try
         {
-            await adressLogic.UpdateAsync(dto);
+            await addressLogic.UpdateAsync(dto);
             return Ok();
         }
         catch (Exception e)

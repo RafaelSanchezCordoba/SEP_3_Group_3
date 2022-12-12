@@ -11,8 +11,8 @@ public class DataContainer
 
     public ICollection<User> Users { get; set; }
 
-    public ICollection<Adress> Adresses { get; set; }
-    public ICollection<CardItem> CardItems { get; set; }
+    public ICollection<Address> Adresses { get; set; }
+    public ICollection<CartItem> CardItems { get; set; }
 
     public ICollection<Order> Orders { get; set; }
 

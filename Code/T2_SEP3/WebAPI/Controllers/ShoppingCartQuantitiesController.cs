@@ -8,20 +8,20 @@ namespace WebAPI.Controllers;
 [Route("[controller]")]
 public class ShoppingCartQuantitiesController:ControllerBase
 {
-    private readonly ICardItemLogic cardItemLogic;
+    private readonly ICartItemLogic cartItemLogic;
 
-    public ShoppingCartQuantitiesController(ICardItemLogic cardItemLogic)
+    public ShoppingCartQuantitiesController(ICartItemLogic cartItemLogic)
     {
-        this.cardItemLogic = cardItemLogic;
+        this.cartItemLogic = cartItemLogic;
     }
     
     [HttpPost]
-    public async Task<ActionResult<CardItem>> CreateAsync(CreateCardItemDto dto)
+    public async Task<ActionResult<CartItem>> CreateAsync(CreateCartItemDto dto)
     {
         try
         {
-            CardItem cardItem = await cardItemLogic.CreateAsync(dto);
-            return Created($"/ShoppingCartQuantities/{cardItem.Id}", cardItem);
+            CartItem cartItem = await cartItemLogic.CreateAsync(dto);
+            return Created($"/ShoppingCartQuantities/{cartItem.Id}", cartItem);
         }
         catch (Exception e)
         {
@@ -36,8 +36,8 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            CardItem cardItem = await cardItemLogic.UpdateQuantityAsync(Id, newQuantity);
-            return Ok(cardItem);
+            CartItem cartItem = await cartItemLogic.UpdateQuantityAsync(Id, newQuantity);
+            return Ok(cartItem);
         }
         catch (Exception e)
         {
@@ -47,11 +47,11 @@ public class ShoppingCartQuantitiesController:ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<CardItem>>> GetAsync()
+    public async Task<ActionResult<IEnumerable<CartItem>>> GetAsync()
     {
         try
         {
-            var socks = await cardItemLogic.GetAsync();
+            var socks = await cartItemLogic.GetAsync();
             return Ok(socks);
         }
         catch (Exception e)
@@ -65,7 +65,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            var result = await cardItemLogic.GetByIdAsync(id);
+            var result = await cartItemLogic.GetByIdAsync(id);
             return Ok(result);
         }
         catch (Exception e)
@@ -79,7 +79,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            var result = await cardItemLogic.GetQuantityById(id);
+            var result = await cartItemLogic.GetQuantityById(id);
             return Ok(result);
         }
         catch (Exception e)
@@ -94,7 +94,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            var result = await cardItemLogic.GetByIdsAsync(product_id,shoppingCard_id);
+            var result = await cartItemLogic.GetByIdsAsync(product_id,shoppingCard_id);
             return Ok(result);
         }
         catch (Exception e)
@@ -109,7 +109,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            await cardItemLogic.DeleteAsync(id);
+            await cartItemLogic.DeleteAsync(id);
             return Ok();
         }
         catch (Exception e)

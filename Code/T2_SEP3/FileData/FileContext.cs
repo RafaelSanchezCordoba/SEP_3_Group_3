@@ -9,7 +9,7 @@ public class FileContext
     private DataContainer? dataContainer;
 
 
-    public ICollection<Adress> Adresses
+    public ICollection<Address> Adresses
     {
         get
         {
@@ -61,7 +61,7 @@ public class FileContext
         }
     }
 
-    public ICollection<CardItem> CardItems
+    public ICollection<CartItem> CardItems
         {
         get
         {
@@ -96,8 +96,8 @@ public class FileContext
 
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
-                CardItems = new List<CardItem>(),
-                Adresses = new List<Adress>(),
+                CardItems = new List<CartItem>(),
+                Adresses = new List<Address>(),
                 Orders = new List<Order>()
 
 

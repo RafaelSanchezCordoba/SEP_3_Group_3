@@ -33,8 +33,8 @@ builder.Services.AddScoped<ISockCardDao,SockCardsFileDao >();
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
-builder.Services.AddScoped<ISocksInventoryDao, SocksInventoryFileDao>();
-builder.Services.AddScoped<ISocksInventoryLogic, SocksInventoryLogic>();
+builder.Services.AddScoped<InterfaceInventoryDao, InventoryFileDao>();
+builder.Services.AddScoped<InterfaceInventoryLogic, InventoryLogic>();
 builder.Services.AddScoped<IUserLogic,UserLogic>();
 builder.Services.AddScoped<IUserDao,UserDaoFile>();
 builder.Services.AddScoped<IOrderDao, OrderFileDao>();
@@ -59,10 +59,10 @@ AuthorizationPolicies.AddPolicies(builder.Services);
 
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
 builder.Services.AddScoped<ISocksDao, SocksFileDao>();
-builder.Services.AddScoped<IAdressDao, AdressFileDao>();
-builder.Services.AddScoped<ICardItemDao, CardItemFileDao>();
-builder.Services.AddScoped<ICardItemLogic, CardItemLogic>();
-builder.Services.AddScoped<IAdressLogic, AdressLogic>();
+builder.Services.AddScoped<IAddressDao, AddressFileDao>();
+builder.Services.AddScoped<ICartItemDao, CartItemFileDao>();
+builder.Services.AddScoped<ICartItemLogic, CartItemLogic>();
+builder.Services.AddScoped<IAddressLogic, AddressLogic>();
 
 
 

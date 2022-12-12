@@ -56,7 +56,7 @@ public class ShoppingCartLogic :IShoppingCartLogic
     public async Task<ShoppingCart> GetByCustomerName(int ownerId)
     {
         ValidateShoppingCartById(ownerId);
-        return await dao.GetByCustomerName(ownerId) ?? throw new Exception($"ShoppingCart with ownerId {ownerId} was not found!!!");
+        return await dao.GetByCustomerId(ownerId) ?? throw new Exception($"ShoppingCart with ownerId {ownerId} was not found!!!");
     }
     
 
