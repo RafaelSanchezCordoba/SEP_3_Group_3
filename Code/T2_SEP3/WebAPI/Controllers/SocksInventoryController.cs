@@ -17,7 +17,7 @@ public class SocksInventoryController:ControllerBase
     }
     
     [HttpPost]
-    public async Task<ActionResult<Inventory>> CreateAsync(CreateSockInventoryDto dto)
+    public async Task<ActionResult<Inventory>> CreateAsync(CreateInventoryDto dto)
     {
         try
         {

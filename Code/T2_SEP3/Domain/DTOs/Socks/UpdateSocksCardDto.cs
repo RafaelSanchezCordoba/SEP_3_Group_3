@@ -2,7 +2,7 @@ using Shared.Models;
 
 namespace Shared.DTOs;
 
-public class SocksCardUpdateDto
+public class UpdateSocksCardDto
 { 
     public string Title { get; set; }
     public string Description { get; set; }
@@ -10,11 +10,10 @@ public class SocksCardUpdateDto
     public string Material { get; set; }
     public string Brand { get; set; }
     public string Image { get; set; }
-    public int Id { get; }
-    
-    public string Type { get; }
+    public int Id { get; set; }
+    public string Type { get; set; }
 
-    public SocksCardUpdateDto(int id)
+    public UpdateSocksCardDto(int id)
     {
         Id = id;
     }

@@ -12,8 +12,7 @@ public class CreateOrderDto
     public string CustomerPhoneNumber { get; set; }
     public ShoppingCart ShoppingCart { get; set; }
     public Adress Shipping { get; set; }
-
-
+    
     public CreateOrderDto( int numberOfProducts,string status, string customerName, string customerEmail, string customerPhoneNumber, ShoppingCart shoppingCart, Adress shipping)
     {
         NumberOfProducts = numberOfProducts;

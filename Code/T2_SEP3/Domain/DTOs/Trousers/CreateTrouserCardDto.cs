@@ -1,10 +1,7 @@
-using Shared.Models;
+namespace Shared.DTOs.Trousers;
 
-namespace Shared.DTOs;
-
-public class CreateSockCardDto
+public class CreateTrouserCardDto
 {
-    
     public string Title { get; }
     public string Description { get; }
     public double Price { get; }
@@ -12,12 +9,9 @@ public class CreateSockCardDto
     public string Brand { get; }
     public string Image { get; }
     public string Type { get; }
-
-   
-
-    public CreateSockCardDto(string title, string description, double price, string material, string brand, string image, string type)
+    
+    public CreateTrouserCardDto(string title, string description, double price, string material, string brand, string image, string type)
     {
-       
         Title = title;
         Description = description;
         Price = price;

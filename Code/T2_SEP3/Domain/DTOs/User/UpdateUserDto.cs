@@ -6,11 +6,6 @@ public class UpdateUserDto
     public string Name { get; set; }
     public string PhoneNumber { get; set; }
 
-    public UpdateUserDto(int id)
-    {
-        Id = id;
-    }
-
     public UpdateUserDto()
     {
     }

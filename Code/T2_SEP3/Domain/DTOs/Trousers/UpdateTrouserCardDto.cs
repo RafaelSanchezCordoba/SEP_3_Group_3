@@ -1,9 +1,7 @@
-using Shared.Models;
+namespace Shared.DTOs.Trousers;
 
-namespace Shared.DTOs;
-
-public class UpdateSocksCardDto
-{ 
+public class UpdateTrouserCardDto
+{
     public string Title { get; set; }
     public string Description { get; set; }
     public double Price { get; set; }
@@ -11,10 +9,9 @@ public class UpdateSocksCardDto
     public string Brand { get; set; }
     public string Image { get; set; }
     public int Id { get; set; }
-    
     public string Type { get; set; }
 
-    public UpdateSocksCardDto(int id)
+    public UpdateTrouserCardDto(int id)
     {
         Id = id;
     }

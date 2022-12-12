@@ -1,5 +1,3 @@
-using Shared.Models;
-
 namespace Shared.DTOs;
 
 public class CreateSocksDto
