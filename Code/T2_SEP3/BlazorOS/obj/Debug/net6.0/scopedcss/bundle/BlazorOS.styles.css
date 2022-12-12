@@ -194,24 +194,27 @@ input[b-zjw7gqpu4y]
     box-sizing: border-box;
 }
 
-.categoryCard[b-341o8pllcz]
-{
+.categoryCard[b-341o8pllcz] {
+   display: flex;
     height: 380px;
     width: auto;
     margin: 30px 0px;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    text-align:center;
+    align-items:center;
 }
 
-.categoryTitle[b-341o8pllcz]
-{
+.categoryTitle[b-341o8pllcz]{
    margin: 0px auto;
     color: white;
-    font-family: "Britannic Bold";
-    font-size: xx-large;
+    font-family: "Arial Black";
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
 }
+
+
+
 /* /Pages/Login.razor.rz.scp.css */
 
 .myButton[b-o3v1w4jous]{
