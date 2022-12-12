@@ -213,6 +213,14 @@ input[b-zjw7gqpu4y]
     -webkit-text-stroke: 3px black;
 }
 
+.eco-container[b-341o8pllcz] {
+    width: 45%;
+    margin: 0px auto;
+    background-color: #1dbf51;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
 
 
 /* /Pages/Login.razor.rz.scp.css */
