@@ -215,11 +215,6 @@
       ]
     },
     {
-      "Id": 4,
-      "OwnerId": 0,
-      "Products": []
-    },
-    {
       "Id": 1,
       "OwnerId": 1,
       "Products": [
@@ -240,6 +235,18 @@
           "Id": 15,
           "Size": "m",
           "Color": "yellow"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "OwnerId": 0,
+      "Products": [
+        {
+          "ProductCardId": 2,
+          "Id": 24,
+          "Size": "l",
+          "Color": "grey"
         }
       ]
     }
@@ -380,6 +387,54 @@
       "Id": 15,
       "Size": "m",
       "Color": "yellow"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 17,
+      "Size": "s",
+      "Color": "purple"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 18,
+      "Size": "l",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 19,
+      "Size": "m",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 4,
+      "Id": 20,
+      "Size": "xl",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 21,
+      "Size": "s",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 22,
+      "Size": "xs",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 4,
+      "Id": 23,
+      "Size": "xl",
+      "Color": "red"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 24,
+      "Size": "l",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -505,6 +560,54 @@
       "Quantity": 6,
       "ShoppingCartId": 1,
       "ProductId": 4
+    },
+    {
+      "Id": 17,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 17
+    },
+    {
+      "Id": 18,
+      "Quantity": 2,
+      "ShoppingCartId": 4,
+      "ProductId": 18
+    },
+    {
+      "Id": 19,
+      "Quantity": 3,
+      "ShoppingCartId": 4,
+      "ProductId": 19
+    },
+    {
+      "Id": 20,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 20
+    },
+    {
+      "Id": 22,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 22
+    },
+    {
+      "Id": 23,
+      "Quantity": 2,
+      "ShoppingCartId": 4,
+      "ProductId": 23
+    },
+    {
+      "Id": 21,
+      "Quantity": 4,
+      "ShoppingCartId": 4,
+      "ProductId": 21
+    },
+    {
+      "Id": 24,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 24
     }
   ],
   "Orders": [

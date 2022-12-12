@@ -39,13 +39,13 @@ else
                         <p style="color: @p.Color">@p.Color</p>
                         
                     </td>
-                    <td class="price-td">@card.Price</td>
+                    <td class="price-td">@card.Price €</td>
                     <td >
                         <label>@cardItem.Quantity</label>
                         <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">+</div>
                         <div @onclick="@(() =>  DecreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">-</div>
                     </td>
-                    <td >@totalPrice</td>
+                    <td >@totalPrice €</td>
                     <td>
                         <div @onclick="@(() => RemoveProduct(p.Id))" class="myButton">Remove</div></td>
                 </tr>
@@ -54,11 +54,10 @@ else
         </table>
     </div>
     <label>@msg</label>
-}
 
 <div class="order-summary-div">
     <b>Order Summary</b>
-    <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
+    <p>Subtotal: <b><label bind="@subtotal" style="float: right">@subtotal €</label></b></p>
     <button @onclick= "onCheckOut" class="myButton" id="checkout-btn">Checkout</button>
     <p>Apply a coupon code or points on the next step</p>
 </div>
