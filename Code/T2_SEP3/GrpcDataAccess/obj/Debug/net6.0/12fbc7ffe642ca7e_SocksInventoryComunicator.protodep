@@ -1,2 +1,2 @@
-obj/Debug/net6.0/protos/SocksInventoryComunicator.cs \
-obj/Debug/net6.0/protos/SocksInventoryComunicatorGrpc.cs: protos/SocksInventoryComunicator.proto
+obj\Debug\net6.0\protos/SocksInventoryComunicator.cs \
+obj\Debug\net6.0\protos/SocksInventoryComunicatorGrpc.cs: protos/SocksInventoryComunicator.proto
