@@ -74,3 +74,10 @@ input
 .myButton:active{
     transform: scale(0.95);
 }
+
+.payment-info{
+    position: absolute;
+    margin: auto;
+    width: 350px;
+    
+}

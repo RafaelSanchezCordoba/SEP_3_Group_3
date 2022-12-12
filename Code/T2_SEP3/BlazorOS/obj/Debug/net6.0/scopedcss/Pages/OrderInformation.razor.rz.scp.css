@@ -74,3 +74,10 @@ input[b-xmb3xxwfi1]
 .myButton:active[b-xmb3xxwfi1]{
     transform: scale(0.95);
 }
+
+.payment-info[b-xmb3xxwfi1]{
+    position: absolute;
+    margin: auto;
+    width: 350px;
+    
+}

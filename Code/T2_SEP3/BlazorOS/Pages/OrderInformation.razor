@@ -115,12 +115,25 @@
         
         <b>Order Summary</b>
         <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
-        <div @onclick="PlaceOrder" class="myButton" id="checkout-btn">Place Order</div>
+        <div @onclick="PlaceOrder" class="myButton" id="checkout-btn" style="display: @placeOrderBtn">Place Order</div>
+        <div @onclick="GoToPayment" class="myButton" id="checkout-btn" style="display: @goToPaymentBtn">Go To Payment</div>
         <div @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</div>
         <p>@resultMsg</p>
 
     </div>
- </div>
+</div>
+
+<div class="payment-info" style="display: @paymentInfo; z-index: 5">
+    
+    <label>Payment not required</label>
+    <p> Don't worry!!</p>
+
+    <p>  You will pay with card or cash when you receive your product at the address you provided before</p>
+
+    <p>   This is really important, confirm that you have understood!</p>
+    <div class="myButton" @onclick="ClosePaymentMsg">Ok</div>
+    
+</div>
 
 
 
@@ -161,6 +174,9 @@
     private string color = "";
     private string showModalInfo = "initial";
     private string showModalSum = "none";
+    private string placeOrderBtn = "none";
+    private string goToPaymentBtn = "initial";
+    private string paymentInfo = "none";
 
 
     protected override async Task OnInitializedAsync()
@@ -291,7 +307,20 @@
     {
         navMgr.NavigateTo($"/ShoppingCart/{OrderDto.ShoppingCart.Id}");
     }
+    
+    protected async Task GoToPayment()
+    {
+        paymentInfo = "initial";
+    }
+    
+    protected async Task ClosePaymentMsg()
+    {
+        paymentInfo = "none";
+        placeOrderBtn = "initial";
+        goToPaymentBtn = "none";
+    }
 
+    
 
 
 

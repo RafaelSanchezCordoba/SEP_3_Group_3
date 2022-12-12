@@ -217,8 +217,7 @@ input[b-zjw7gqpu4y]
     width: 45%;
     margin: 0px auto;
     background-color: #1dbf51;
-    color: white;
-    -webkit-text-stroke: 1px black;
+
 }
 
 
@@ -336,6 +335,13 @@ input[b-xmb3xxwfi1]
 
 .myButton:active[b-xmb3xxwfi1]{
     transform: scale(0.95);
+}
+
+.payment-info[b-xmb3xxwfi1]{
+    position: absolute;
+    margin: auto;
+    width: 350px;
+    
 }
 /* /Pages/Profile.razor.rz.scp.css */
 *[b-hcozhfcqqu] {
