@@ -26,9 +26,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<FileContext>();
 
 
-builder.Services.AddScoped<ISockCardDao, SockCardsFileDao>();
+builder.Services.AddScoped<ISockCardDao, SockCardFileDao>();
 
-builder.Services.AddScoped<ISockCardDao,SockCardsFileDao >();
+builder.Services.AddScoped<ISockCardDao,SockCardFileDao >();
 
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
