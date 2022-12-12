@@ -9,5 +9,4 @@ public class User
     public string PhoneNumber { get; set; }
     public Adress Adress { get; set; }
     public string Auth { get; set; } = "Customer";
-    
 }

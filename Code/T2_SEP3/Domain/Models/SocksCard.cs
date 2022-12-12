@@ -7,19 +7,5 @@ public class SocksCard:ProductCard
    
     }
 
-  /*
-   this breaks the api
-   public SocksCard(int id,string title, string description, double price, string material, string brand, string image, string type): base(id,title,description,price,material,brand,image,type)
-    {
-   
-    }
-    **/
-
-
-   
-
-    
-
     public SocksCard(){}
-
 }

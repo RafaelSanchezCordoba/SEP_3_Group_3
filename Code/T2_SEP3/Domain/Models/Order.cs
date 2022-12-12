@@ -23,6 +23,4 @@ public class Order
         ShoppingCart = shoppingCart;
         Shipping = shipping;
     }
-    
-    
 }

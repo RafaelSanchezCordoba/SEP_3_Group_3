@@ -39,12 +39,8 @@
         </div>
         
         <br/><br/>
-        
-        <button @onclick="AddToCart" class="myButton">Add to the cart</button>
-        <input type="text" @bind="cartId" @bind:event ="oninput"/>
-        shopping cart id (to be deleted when login is implemented)
-        
-         @if (!string.IsNullOrEmpty(errorMsg))
+
+        @if (!string.IsNullOrEmpty(errorMsg))
                 {
                     <br/> <label style="color:red">@errorMsg</label>
                 }

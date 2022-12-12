@@ -54,7 +54,7 @@ public class CardItemLogic : ICardItemLogic
     }
 
 
-    public Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
+    public async Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCard)
     {
         ValidateById(idProduct);
         ValidateById(idShoppingCard);

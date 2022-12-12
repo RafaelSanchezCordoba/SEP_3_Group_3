@@ -16,14 +16,10 @@ public class Inventory
         Size = size;
         Quantity = quantity;
     }
-
-  
-
-
+    
     public int CardId { get; set; }
     public string Color { get; set; }
     public string Size { get; set; }
     public long Quantity { get; set; }
-
     public int Id { get; set; }
 }
