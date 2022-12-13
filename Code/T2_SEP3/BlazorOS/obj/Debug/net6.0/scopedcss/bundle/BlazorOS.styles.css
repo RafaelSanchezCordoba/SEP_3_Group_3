@@ -242,7 +242,6 @@ h3[b-341o8pllcz]{
 
 .title-container[b-341o8pllcz]{
     display: flex;
-    align-items:center;
 }
 
 
@@ -364,9 +363,26 @@ input[b-xmb3xxwfi1]
 
 .payment-info[b-xmb3xxwfi1]{
     position: absolute;
-    margin: auto;
-    width: 350px;
-    
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background-color: white;
+    border: 1px #778da9 solid;
+    padding: 20px;
+    margin: -100px 0 0 -100px;    
+}
+
+.table-div[b-xmb3xxwfi1]{
+    width: 55%;
+    float: left;
+}
+
+.order-summary-div[b-xmb3xxwfi1]
+{
+    border: 1px solid black;
+    padding: 20px;
+    width: 38%;
+    float: right;
 }
 /* /Pages/Profile.razor.rz.scp.css */
 *[b-hcozhfcqqu] {

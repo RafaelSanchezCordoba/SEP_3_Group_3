@@ -14,10 +14,10 @@
 @inject IUserService userService
 @inject ISockInventoryService sockInventoryService
 
-<p>Please introduce contact and shipping information for your order</p>
+
 <div class="container" style="display:@showModalInfo"> 
     <div class="card">
-    
+    <p>Please introduce contact and shipping information for your order</p>
         <div class="form-group-field">
             <label>Email: </label>
             <input class="long-input" type="text" @bind="email" @bind:event ="oninput"/>
@@ -88,7 +88,6 @@
         <th></th>
         <th>Item</th>
         <th>Quantity</th>
-        <th></th>
         </thead>
         <tbody>
  
@@ -111,17 +110,31 @@
         }
         </tbody>
     </table>
-    <div class="order-summary-div">
-        
+
+    <div @onclick="PlaceOrder" class="myButton" id="checkout-btn" style="display: @placeOrderBtn">Place Order</div>
+    <div @onclick="GoToPayment" class="myButton" id="checkout-btn" style="display: @goToPaymentBtn">Go To Payment</div>
+    <div @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</div>
+    <p>@resultMsg</p>
+</div>
+
+    <div class="order-summary-div" style="display: @showModalSum">
         <b>Order Summary</b>
         <p>Subtotal: <label bind="@subtotal">@subtotal</label></p>
-        <div @onclick="PlaceOrder" class="myButton" id="checkout-btn" style="display: @placeOrderBtn">Place Order</div>
-        <div @onclick="GoToPayment" class="myButton" id="checkout-btn" style="display: @goToPaymentBtn">Go To Payment</div>
-        <div @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</div>
-        <p>@resultMsg</p>
+        <br/>
+        <div>
+            <p>@OrderDto.CustomerName</p>
+            <p> @OrderDto.CustomerEmail</p>
+            <p> @OrderDto.CustomerPhoneNumber</p>
+            <br/>
+            <p>Shipping address: </p>
+            <p>@OrderDto.Shipping.City, @OrderDto.Shipping.Country</p>
+            <p>@OrderDto.Shipping.Street, @OrderDto.Shipping.Number</p>
+            <p>@OrderDto.Shipping.ExtraInfo</p>
+            <p>@OrderDto.Shipping.PostCode</p>
+        </div></div>
+       
+    
 
-    </div>
-</div>
 
 <div class="payment-info" style="display: @paymentInfo; z-index: 5">
     
