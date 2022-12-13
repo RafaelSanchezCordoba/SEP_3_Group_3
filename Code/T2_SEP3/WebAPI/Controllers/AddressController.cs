@@ -7,11 +7,11 @@ namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class AdressController:ControllerBase
+public class AddressController:ControllerBase
 {
     private readonly IAddressLogic addressLogic;
 
-    public AdressController(IAddressLogic addressLogic)
+    public AddressController(IAddressLogic addressLogic)
     {
         this.addressLogic = addressLogic;
     }
@@ -48,7 +48,7 @@ public class AdressController:ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Address>>> getUsersAdresses()
+    public async Task<ActionResult<IEnumerable<Address>>> GetUsersAddresses()
     {
         try
         {
@@ -62,8 +62,8 @@ public class AdressController:ControllerBase
         }
     }
     [HttpGet]
-    [Route("/NonRegAddreses")]
-    public async Task<ActionResult<IEnumerable<Address>>> getNonUserAdresses()
+    [Route("/NonRegAddresses")]
+    public async Task<ActionResult<IEnumerable<Address>>> GetNonUserAddresses()
     {
         try
         {
@@ -78,8 +78,8 @@ public class AdressController:ControllerBase
     }
     
     [HttpGet]
-    [Route("/UserAdress/{id}")]
-    public async Task<ActionResult<IEnumerable<Address>>> getByAdressByUserId([FromRoute]int id)
+    [Route("/UserAddress/{id}")]
+    public async Task<ActionResult<IEnumerable<Address>>> GetByUserId([FromRoute]int id)
     {
         try
         {

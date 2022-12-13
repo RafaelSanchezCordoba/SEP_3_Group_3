@@ -7,11 +7,11 @@ namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class SocksInventoryController:ControllerBase
+public class InventoryController:ControllerBase
 {
     private readonly InterfaceInventoryLogic inventoryLogic;
 
-    public SocksInventoryController(InterfaceInventoryLogic stockLogic)
+    public InventoryController(InterfaceInventoryLogic stockLogic)
     {
         this.inventoryLogic = stockLogic;
     }

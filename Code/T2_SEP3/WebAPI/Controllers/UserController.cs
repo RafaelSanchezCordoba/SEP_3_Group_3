@@ -26,7 +26,7 @@ public class UserController:ControllerBase
     }
 
     [HttpPatch]
-    public async Task<ActionResult<User>> updateAsync([FromBody] User user)
+    public async Task<ActionResult<User>> UpdateAsync([FromBody] User user)
     {
         try
         {
@@ -43,7 +43,7 @@ public class UserController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<User>> createAsync(UserRegisterDto dto)
+    public async Task<ActionResult<User>> CreateAsyn(UserRegisterDto dto)
     {
         try
         {
@@ -114,8 +114,7 @@ public class UserController:ControllerBase
         string serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
         return serializedToken;
     }
-    
-    
+
     [HttpGet("{email}")]
     public async Task<ActionResult<User>> GetByEmail([FromRoute]string email)
     {
@@ -130,6 +129,4 @@ public class UserController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-
-   
 }

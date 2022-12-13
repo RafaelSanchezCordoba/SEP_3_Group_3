@@ -5,15 +5,28 @@ using Shared.Models;
 
 namespace Application.Logic;
 
+/// <summary>
+/// This class is the implementation of the business logic of our system.
+/// Implements the IShoppingCartDao
+/// </summary>
 public class ShoppingCartLogic :IShoppingCartLogic
 {
     private readonly IShoppingCartDao dao;
 
+    /// <summary>
+    /// Constructor that set the value of the da
+    /// </summary>
+    /// <param name="dao">Shopping cart dao</param>
     public ShoppingCartLogic(IShoppingCartDao dao)
     {
         this.dao = dao;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="dto"></param>
+    /// <returns></returns>
     public async Task<ShoppingCart> CreateAsync(CreateShoppingCartDto dto)
     {
         ShoppingCart shoppingCart= new ShoppingCart( dto.OwnerId);

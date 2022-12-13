@@ -21,4 +21,8 @@
       <ProjectReference Include="..\GrpcDataAccess\GrpcDataAccess.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\Trouser" />
+    </ItemGroup>
+
 </Project>

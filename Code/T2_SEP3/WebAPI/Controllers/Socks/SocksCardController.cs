@@ -91,7 +91,7 @@ public class SocksCardsController : ControllerBase
         }
     }
     [HttpGet("{title}")]
-    public async Task<ActionResult<SocksCard>> GetByIdAsync([FromRoute] string title)
+    public async Task<ActionResult<SocksCard>> GetByTitleAsync([FromRoute] string title)
     {
         try
         {
