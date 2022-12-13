@@ -112,9 +112,11 @@
     </table>
 
     <div @onclick="PlaceOrder" class="myButton" id="checkout-btn" style="display: @placeOrderBtn">Place Order</div>
+    <div @onclick="FinishOrder" class="myButton" id="checkout-btn" style="display: @okBtn">OK</div>
     <div @onclick="GoToPayment" class="myButton" id="checkout-btn" style="display: @goToPaymentBtn">Go To Payment</div>
-    <div @onclick="CancelOrder" class="myButton" id="checkout-btn">Cancel Order</div>
-    <p>@resultMsg</p>
+    <div @onclick="CancelOrder" class="myButton" id="checkout-btn" style="display: @cancelBtn">Cancel Order</div>
+   
+    <p style="margin-top: 10px">@resultMsg</p>
 </div>
 
     <div class="order-summary-div" style="display: @showModalSum">
@@ -189,6 +191,8 @@
     private string showModalSum = "none";
     private string placeOrderBtn = "none";
     private string goToPaymentBtn = "initial";
+    private string okBtn = "none";
+    private string cancelBtn = "initial";
     private string paymentInfo = "none";
 
 
@@ -304,9 +308,13 @@
             {
                 await shoppingCartService.RemoveProduct(p, shoppingCart.Id);
             }
-           
-            navMgr.NavigateTo("/");
-    //nav to page that tells you congrats
+
+            resultMsg = "Thanks for your purchase!! Do you want to keep shopping?";
+
+            okBtn = "initial";
+            cancelBtn = "none";
+            placeOrderBtn = "none";
+            goToPaymentBtn = "none";
         }
         catch (Exception e)
         {
@@ -331,6 +339,11 @@
         paymentInfo = "none";
         placeOrderBtn = "initial";
         goToPaymentBtn = "none";
+    }
+
+    protected async Task FinishOrder()
+    {
+        navMgr.NavigateTo("/");
     }
 
     

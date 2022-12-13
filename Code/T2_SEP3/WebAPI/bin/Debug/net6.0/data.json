@@ -36,13 +36,6 @@
       "Id": 11
     },
     {
-      "CardId": 4,
-      "Color": "red",
-      "Size": "xl",
-      "Quantity": 988,
-      "Id": 14
-    },
-    {
       "CardId": 5,
       "Color": "blue",
       "Size": "s",
@@ -62,13 +55,6 @@
       "Size": "s",
       "Quantity": 22,
       "Id": 18
-    },
-    {
-      "CardId": 4,
-      "Color": "blue",
-      "Size": "m",
-      "Quantity": 44,
-      "Id": 19
     },
     {
       "CardId": 2,
@@ -174,6 +160,20 @@
       "Size": "m",
       "Quantity": 207,
       "Id": 20
+    },
+    {
+      "CardId": 4,
+      "Color": "red",
+      "Size": "xl",
+      "Quantity": 990,
+      "Id": 14
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 52,
+      "Id": 19
     }
   ],
   "ShoppingCarts": [
@@ -186,6 +186,18 @@
           "Id": 13,
           "Size": "s",
           "Color": "grey"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": [
+        {
+          "ProductCardId": 4,
+          "Id": 20,
+          "Size": "m",
+          "Color": "blue"
         }
       ]
     },
@@ -210,38 +222,53 @@
           "Id": 15,
           "Size": "m",
           "Color": "yellow"
-        }
-      ]
-    },
-    {
-      "Id": 3,
-      "OwnerId": 3,
-      "Products": [
+        },
         {
-          "ProductCardId": 4,
-          "Id": 20,
+          "ProductCardId": 2,
+          "Id": 24,
           "Size": "m",
-          "Color": "blue"
+          "Color": "grey"
         }
       ]
     },
     {
       "Id": 4,
       "OwnerId": 0,
-      "Products": []
+      "Products": [
+        {
+          "ProductCardId": 2,
+          "Id": 25,
+          "Size": "m",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 2,
+          "Id": 26,
+          "Size": "xl",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 3,
+          "Id": 27,
+          "Size": "s",
+          "Color": "purple"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 28,
+          "Size": "s",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 5,
+          "Id": 29,
+          "Size": "l",
+          "Color": "blue"
+        }
+      ]
     }
   ],
   "SocksCards": [
-    {
-      "Title": "Pokemon socks",
-      "Description": "Cute Psyduck socks",
-      "Price": 5,
-      "Material": "Recycled polyester",
-      "Brand": "pokemon",
-      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
-      "Type": "Mid calf",
-      "Id": 1
-    },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
@@ -283,24 +310,14 @@
       "Id": 5
     },
     {
-      "Title": "for test case",
-      "Description": "fghj",
-      "Price": 1,
-      "Material": "dfvghnj",
-      "Brand": "dxcfvgh",
-      "Image": "cfvgbhn",
-      "Type": "Low cut",
-      "Id": 6
-    },
-    {
-      "Title": "dfghj",
-      "Description": "sxdcfvgh",
-      "Price": 1,
-      "Material": "HNJ",
-      "Brand": "fvghnj",
-      "Image": "img/rafa.jpg",
+      "Title": "Pokemon Socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
       "Type": "Mid calf",
-      "Id": 7
+      "Id": 1
     }
   ],
   "Socks": [
@@ -423,6 +440,42 @@
       "Id": 23,
       "Size": "m",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 24,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 25,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 26,
+      "Size": "xl",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 27,
+      "Size": "s",
+      "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 28,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 29,
+      "Size": "l",
+      "Color": "blue"
     }
   ],
   "Users": [
@@ -454,11 +507,20 @@
       "Auth": "Customer"
     },
     {
+      "Id": 5,
+      "Email": "h",
+      "Password": "hhhhh",
+      "Name": null,
+      "PhoneNumber": null,
+      "Address": null,
+      "Auth": "Customer"
+    },
+    {
       "Id": 3,
       "Email": "rosa",
-      "Password": "string",
-      "Name": "string",
-      "PhoneNumber": "string",
+      "Password": "12345",
+      "Name": "Rosa Briales",
+      "PhoneNumber": "\u002B45 50242425",
       "Address": {
         "Id": 0,
         "UserId": 3,
@@ -493,40 +555,10 @@
       "ProductId": 5
     },
     {
-      "Id": 6,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 6
-    },
-    {
-      "Id": 7,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 7
-    },
-    {
-      "Id": 8,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 8
-    },
-    {
-      "Id": 9,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 9
-    },
-    {
       "Id": 13,
       "Quantity": 1,
       "ShoppingCartId": 2,
       "ProductId": 13
-    },
-    {
-      "Id": 11,
-      "Quantity": 2,
-      "ShoppingCartId": 3,
-      "ProductId": 11
     },
     {
       "Id": 14,
@@ -593,6 +625,42 @@
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 23
+    },
+    {
+      "Id": 24,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 24
+    },
+    {
+      "Id": 25,
+      "Quantity": 5,
+      "ShoppingCartId": 4,
+      "ProductId": 25
+    },
+    {
+      "Id": 26,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 26
+    },
+    {
+      "Id": 27,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 27
+    },
+    {
+      "Id": 28,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 28
+    },
+    {
+      "Id": 29,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 29
     }
   ],
   "Orders": [

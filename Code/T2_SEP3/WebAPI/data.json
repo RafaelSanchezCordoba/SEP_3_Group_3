@@ -3,13 +3,6 @@
     {
       "CardId": 1,
       "Color": "grey",
-      "Size": "xs",
-      "Quantity": 5,
-      "Id": 7
-    },
-    {
-      "CardId": 1,
-      "Color": "grey",
       "Size": "s",
       "Quantity": 5,
       "Id": 8
@@ -76,13 +69,6 @@
       "Size": "xxl",
       "Quantity": 23,
       "Id": 6
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "s",
-      "Quantity": 160,
-      "Id": 21
     },
     {
       "CardId": 4,
@@ -155,13 +141,6 @@
       "Id": 28
     },
     {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "m",
-      "Quantity": 207,
-      "Id": 20
-    },
-    {
       "CardId": 4,
       "Color": "red",
       "Size": "xl",
@@ -174,6 +153,27 @@
       "Size": "m",
       "Quantity": 52,
       "Id": 19
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "s",
+      "Quantity": 159,
+      "Id": 21
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "m",
+      "Quantity": 206,
+      "Id": 20
+    },
+    {
+      "CardId": 1,
+      "Color": "grey",
+      "Size": "xs",
+      "Quantity": 4,
+      "Id": 7
     }
   ],
   "ShoppingCarts": [
@@ -186,18 +186,6 @@
           "Id": 13,
           "Size": "s",
           "Color": "grey"
-        }
-      ]
-    },
-    {
-      "Id": 3,
-      "OwnerId": 3,
-      "Products": [
-        {
-          "ProductCardId": 4,
-          "Id": 20,
-          "Size": "m",
-          "Color": "blue"
         }
       ]
     },
@@ -266,6 +254,11 @@
           "Color": "blue"
         }
       ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": []
     }
   ],
   "SocksCards": [
@@ -418,12 +411,6 @@
       "Color": "red"
     },
     {
-      "ProductCardId": 4,
-      "Id": 20,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
       "ProductCardId": 3,
       "Id": 21,
       "Size": "s",
@@ -476,6 +463,30 @@
       "Id": 29,
       "Size": "l",
       "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 30,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 31,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 32,
+      "Size": "m",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 33,
+      "Size": "xs",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -603,12 +614,6 @@
       "ProductId": 19
     },
     {
-      "Id": 20,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 20
-    },
-    {
       "Id": 21,
       "Quantity": 1,
       "ShoppingCartId": 4,
@@ -633,12 +638,6 @@
       "ProductId": 24
     },
     {
-      "Id": 25,
-      "Quantity": 5,
-      "ShoppingCartId": 4,
-      "ProductId": 25
-    },
-    {
       "Id": 26,
       "Quantity": 1,
       "ShoppingCartId": 4,
@@ -661,6 +660,30 @@
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 29
+    },
+    {
+      "Id": 30,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 30
+    },
+    {
+      "Id": 25,
+      "Quantity": 6,
+      "ShoppingCartId": 4,
+      "ProductId": 25
+    },
+    {
+      "Id": 31,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 32
+    },
+    {
+      "Id": 32,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 33
     }
   ],
   "Orders": [
@@ -1071,6 +1094,99 @@
         "Street": "Kamtjatka",
         "Number": 1,
         "ExtraInfo": "apt77"
+      }
+    },
+    {
+      "Id": 14,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 30,
+            "Size": "s",
+            "Color": "yellow"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 15,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 32,
+            "Size": "m",
+            "Color": "yellow"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 16,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 33,
+            "Size": "xs",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
       }
     }
   ],
