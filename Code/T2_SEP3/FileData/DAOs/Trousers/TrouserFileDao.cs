@@ -15,9 +15,9 @@ public class TrouserFileDao : ITrouserDao
     public Task<Trouser> CreateAsync(Trouser socks)
     {
         int Id = 1;
-        if (context.Socks.Any())
+        if (context.Trousers.Any())
         {
-            Id = context.Socks.Max(u => u.Id);
+            Id = context.Trousers.Max(u => u.Id);
             Id++;
         }
 

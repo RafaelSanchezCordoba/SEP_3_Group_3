@@ -400,7 +400,7 @@
       "Password": "admin",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Manager"
     },
     {
@@ -409,7 +409,7 @@
       "Password": "string",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Customer"
     },
     {
@@ -418,16 +418,7 @@
       "Password": "12345",
       "Name": "Rosa Briales",
       "PhoneNumber": "\u002B45 50444444",
-      "Adress": {
-        "Id": -1,
-        "UserId": 3,
-        "Country": "Denmark",
-        "City": "Horsens",
-        "PostCode": 8700,
-        "Street": "Kamtjatka",
-        "Number": 1,
-        "ExtraInfo": "apt77"
-      },
+      "Address": null,
       "Auth": "customer"
     },
     {
@@ -436,7 +427,7 @@
       "Password": "12345",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Customer"
     }
   ],
@@ -960,6 +951,54 @@
         "Number": 1,
         "ExtraInfo": "apt77"
       }
+    }
+  ],
+  "TrouserCards": [
+    {
+      "Title": "Levis world",
+      "Description": "This levis...",
+      "Price": 299,
+      "Material": "poliester",
+      "Brand": "Levis",
+      "Image": "asdfasd",
+      "Type": "Jeans",
+      "Id": 1
+    },
+    {
+      "Title": "Gucci Sprint 2022",
+      "Description": "Gucci jeans...",
+      "Price": 2499.99,
+      "Material": "poliester",
+      "Brand": "Gucci",
+      "Image": "asdfasdfasd",
+      "Type": "Jeans",
+      "Id": 2
+    }
+  ],
+  "Trousers": [
+    {
+      "ProductCardId": 1,
+      "Id": 1,
+      "Size": "xl",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 2,
+      "Size": "m",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 3,
+      "Size": "s",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "m",
+      "Color": "red"
     }
   ]
 }

@@ -300,6 +300,13 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.pdb
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.genruntimeconfig.cache
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/ref/WebAPI.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfoInputs.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfo.cs
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CoreCompileInputs.cache
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/appsettings.Development.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/appsettings.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/data.json
@@ -338,13 +345,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/FileData.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/GrpcDataAccess.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/bin/Debug/net6.0/Domain.pdb
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.AssemblyReference.cache
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfoInputs.cache
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfo.cs
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CoreCompileInputs.cache
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cs
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/staticwebassets.build.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/staticwebassets.development.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/WebAPI/obj/Debug/net6.0/scopedcss/bundle/WebAPI.styles.css

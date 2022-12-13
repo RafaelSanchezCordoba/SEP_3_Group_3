@@ -4,6 +4,9 @@ using Shared.Models;
 
 namespace FileData.DAOs;
 
+/// <summary>
+/// Sopping Cart data storage
+/// </summary>
 public class ShoppingCartFileDao:IShoppingCartDao
 {
     private readonly FileContext context;
@@ -13,6 +16,11 @@ public class ShoppingCartFileDao:IShoppingCartDao
         this.context = context;
     }
 
+    /// <summary>
+    /// Create and save a new shopping cart in the data file
+    /// </summary>
+    /// <param name="shoppingCart">Shopping cart to add</param>
+    /// <returns>The added shopping cart</returns>
     public Task<ShoppingCart> CreateAsync(ShoppingCart shoppingCart)
     {
         int Id = 1;
@@ -30,12 +38,22 @@ public class ShoppingCartFileDao:IShoppingCartDao
         return Task.FromResult(shoppingCart);
     }
     
+    /// <summary>
+    /// Get all shopping carts in the data file
+    /// </summary>
+    /// <returns>All the saved shopping carts</returns>
     public Task<IEnumerable<ShoppingCart>>GetAsync()
     {
         IEnumerable<ShoppingCart> result = context.ShoppingCarts.AsEnumerable();
         return Task.FromResult(result);
     }
 
+    /// <summary>
+    /// Get a shopping cart with an specific id
+    /// </summary>
+    /// <param name="id">The id of the shopping cart to get</param>
+    /// <returns>The shopping cart with the same id</returns>
+    /// <exception cref="Exception">If the shopping cart does not exist</exception>
     public Task<ShoppingCart> GetById(int id)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.Id == id);
@@ -48,6 +66,13 @@ public class ShoppingCartFileDao:IShoppingCartDao
         return Task.FromResult(existing);
     }
 
+    /// <summary>
+    /// Add a product to the shopping cart
+    /// </summary>
+    /// <param name="product">Product to add</param>
+    /// <param name="cartId">Card id of the shopping cart</param>
+    /// <returns>The added product</returns>
+    /// <exception cref="Exception">If the shopping cart does not exist</exception>
     public Task<ShoppingCart> AddProduct(Product product, int cartId)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.Id == cartId);
@@ -64,6 +89,12 @@ public class ShoppingCartFileDao:IShoppingCartDao
         return Task.FromResult(existing);
     }
 
+    /// <summary>
+    /// Delete a shopping cart with an specific id
+    /// </summary>
+    /// <param name="cartId">The card id of the shopping cart</param>
+    /// <returns>The deleted shopping cart</returns>
+    /// <exception cref="Exception">If the shopping cart does not exist</exception>
     public Task DeleteAsync(int cartId)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(cart => cart.Id == cartId);
@@ -78,6 +109,13 @@ public class ShoppingCartFileDao:IShoppingCartDao
         return Task.CompletedTask;
     }
 
+    /// <summary>
+    /// Delete product from a shopping cart
+    /// </summary>
+    /// <param name="product">Product to delete</param>
+    /// <param name="id">Id of the shopping cart</param>
+    /// <returns>The deleted product</returns>
+    /// <exception cref="Exception">If the shopping cart does not exist</exception>
     public Task<ShoppingCart> DeleteProductAsync(Product product, int id)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(cart => cart.Id == id);
@@ -92,8 +130,13 @@ public class ShoppingCartFileDao:IShoppingCartDao
         context.SaveChanges();
         return Task.FromResult(existing);
     }
-
-
+    
+    /// <summary>
+    /// Get a shopping cart with an specific owner id
+    /// </summary>
+    /// <param name="ownerId">The owner id of the shopping cart</param>
+    /// <returns>The shopping cart with the same owner id</returns>
+    /// <exception cref="Exception">If the shopping cart does not exist</exception>
     public Task<ShoppingCart> GetByCustomerId(int ownerId)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.OwnerId == ownerId);
@@ -107,6 +150,11 @@ public class ShoppingCartFileDao:IShoppingCartDao
         
     }
 
+    /// <summary>
+    /// Get total price of an specific shopping cart
+    /// </summary>
+    /// <param name="id">The id of the shopping cart</param>
+    /// <returns>The toal price</returns>
     public async Task<double> GetTotalPriceAsync(int id)
     {
         ShoppingCart shoppingCart =  await GetById(id);

@@ -5,6 +5,9 @@ using Shared.Models;
 
 namespace FileData.DAOs.Trousers;
 
+/// <summary>
+/// Trouser data storage
+/// </summary>
 public class TrouserCardFileDao : ITrouserCardDao
 {
     private readonly FileContext context;
@@ -14,12 +17,17 @@ public class TrouserCardFileDao : ITrouserCardDao
         this.context = context;
     }
 
+    /// <summary>
+    /// Create and save a new trouser card in the data file
+    /// </summary>
+    /// <param name="productCard">Trouser card to add</param>
+    /// <returns>The added trouser card</returns>
     public Task<TrouserCard> CreateAsync(TrouserCard productCard)
     {
         int Id = 1;
-        if (context.SocksCards.Any())
+        if (context.TrouserCards.Any())
         {
-            Id = context.SocksCards.Max(u => u.Id);
+            Id = context.TrouserCards.Max(u => u.Id);
             Id++;
         }
 
@@ -31,17 +39,25 @@ public class TrouserCardFileDao : ITrouserCardDao
         return Task.FromResult(productCard);
     }
 
+    /// <summary>
+    /// Get all trouser card in the data file
+    /// </summary>
+    /// <returns>Trousers in the data file</returns>
     public Task<IEnumerable<TrouserCard>> GetAsync()
     {
         IEnumerable<TrouserCard> result = context.TrouserCards.AsEnumerable();
         return Task.FromResult(result);
     }
-
+    
     public Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync(string title)
     {
         throw new NotImplementedException();
     }
 
+    /// <summary>
+    /// Get trouser card with an specific title
+    /// </summary>
+    /// <returns>The trouser card with the same title</returns>
     public async Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
     {
         List<TrouserCard> result = context.TrouserCards.AsEnumerable().ToList();
@@ -54,6 +70,12 @@ public class TrouserCardFileDao : ITrouserCardDao
         return resultTitle.AsEnumerable();
     }
 
+    /// <summary>
+    /// Get trouser card by id
+    /// </summary>
+    /// <param name="id">Id of the trouserCard</param>
+    /// <returns>The trouser card with the same id</returns>
+    /// <exception cref="Exception">If the trouser card does not exist</exception>
     public Task<TrouserCard?> GetById(int id)
     {
         TrouserCard? existing = context.TrouserCards.FirstOrDefault(productCard => productCard.Id == id);
@@ -66,7 +88,12 @@ public class TrouserCardFileDao : ITrouserCardDao
         return Task.FromResult(existing);
     }
 
-
+    /// <summary>
+    /// Update a trouser card
+    /// </summary>
+    /// <param name="dto">The updated trouser card</param>
+    /// <returns>The new trouser card</returns>
+    /// <exception cref="Exception">If the trouser does not exist</exception>
     public Task UpdateAsync(UpdateTrouserCardDto dto)
     {
         TrouserCard? existing = context.TrouserCards.FirstOrDefault(card => card.Id == dto.Id);
@@ -91,9 +118,13 @@ public class TrouserCardFileDao : ITrouserCardDao
         context.SaveChanges();
         return Task.CompletedTask;
     }
-
-
-
+    
+    /// <summary>
+    /// Delete a trouser card by Id
+    /// </summary>
+    /// <param name="id">Id of the trouser card to delete</param>
+    /// <returns>The deleted trouser card</returns>
+    /// <exception cref="Exception">If the trouser card does not exist</exception>
     public Task DeleteAsync(int id)
     {
         TrouserCard? existing = context.TrouserCards.FirstOrDefault(card => card.Id == id);
@@ -114,6 +145,11 @@ public class TrouserCardFileDao : ITrouserCardDao
         return Task.CompletedTask;
     }
 
+    /// <summary>
+    /// Get all titles
+    /// </summary>
+    /// <param name="title">Title of the trouser card</param>
+    /// <returns>The title of all the trouser cards</returns>
     public Task<TrouserCard?> GetByTitlesAsync(string title)
     {
         TrouserCard? existing = context.TrouserCards.FirstOrDefault(s => s.Title.Equals(title));

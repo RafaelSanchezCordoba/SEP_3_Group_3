@@ -2,9 +2,10 @@ using System.Text;
 using Application.DaoInterfaces;
 using Application.Logic;
 using Application.LogicInterfaces;
+using Application.LogicInterfaces.Trouser;
 using FileData;
 using FileData.DAOs;
-
+using FileData.DAOs.Trousers;
 using GrpcDataAccess.DAOs;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -31,6 +32,10 @@ builder.Services.AddScoped<ISockCardDao, SockCardFileDao>();
 builder.Services.AddScoped<ISockCardDao,SockCardFileDao >();
 
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
+builder.Services.AddScoped<ITrouserCardLogic, TrouserCardLogic>();
+builder.Services.AddScoped<ITrouserCardDao, TrouserCardFileDao>();
+builder.Services.AddScoped<ITrouserLogic, TrouserLogic>();
+builder.Services.AddScoped<ITrouserDao, TrouserFileDao>();
 builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
 builder.Services.AddScoped<InterfaceInventoryDao, InventoryFileDao>();
