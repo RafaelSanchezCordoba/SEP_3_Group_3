@@ -22,7 +22,7 @@ public class InventoryHttpClient:InterfaceInventoryService
 
     public async Task<Inventory> CreateAsync(CreateInventoryDto dto)
     {
-        HttpResponseMessage response = await client.PostAsJsonAsync("SocksInventory", dto);
+        HttpResponseMessage response = await client.PostAsJsonAsync("Inventory", dto);
         string result = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
@@ -41,7 +41,7 @@ public class InventoryHttpClient:InterfaceInventoryService
     
         public async Task<ICollection<Inventory>> GetByCardIdAsync(int id)
         {
-            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/SocksInventory/Card{id}");
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Inventory/Card{id}");
 
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
@@ -78,7 +78,7 @@ public class InventoryHttpClient:InterfaceInventoryService
 
         public async Task<Inventory> GetByIdAsync(int id)
         {
-            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/socksInventory/{id}");
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Inventory/{id}");
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {
@@ -98,7 +98,7 @@ public class InventoryHttpClient:InterfaceInventoryService
         {
             string inventoryAsJson = JsonSerializer.Serialize(inventory);
             StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/SocksInventory/", body);
+            HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/Inventory/", body);
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {

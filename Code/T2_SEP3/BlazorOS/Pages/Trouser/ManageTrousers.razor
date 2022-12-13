@@ -1,0 +1,101 @@
+@page "/ManageTrousers"
+@using HttpClients.ClientInterfaces.Trouser
+@using global::Shared.Models
+
+@inject ITrouserCardService trouserservice;
+@inject NavigationManager _navigationManager;
+
+
+<h3>Manage Trousers</h3>
+@if(trouserCards ==null){
+}
+else if (!trouserCards.Any())
+{
+    <p>no trouser cards</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>button1</th>
+        <th>button2</th>
+        </thead>
+
+        <tbody>
+        @foreach (var card in trouserCards)
+        {
+            <tr>
+                <td>@card.Id</td>
+                <td>@card.Title</td>
+                <td><button @onclick="@(() => Edit(@card.Id))">edit</button></td>
+                <td><button @onclick="@(() => RemoveCardById(@card.Id))">remove</button></td>
+
+            </tr>
+        }
+        </tbody>
+    </table>
+    <p>@msg</p>
+}
+
+@code {
+    private ICollection<TrouserCard> trouserCards = new List<TrouserCard>();
+    private ICollection<TrouserCard> trouserCardsLoaded = new List<TrouserCard>();
+    private string msg = "";
+
+    private async void LoadCards()
+    {
+        try
+        {
+           
+            trouserCardsLoaded = await trouserservice.GetAllSockCards();
+            trouserCards = trouserCardsLoaded;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw ;
+        }
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        try
+        {
+            trouserCardsLoaded = await trouserservice.GetAllSockCards();
+            trouserCards = trouserCardsLoaded;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw ;
+        }
+    }
+
+    private async Task RemoveCardById(int id)
+    {
+        try
+        {
+            await trouserservice.RemoveById(id);
+            msg = "Trouser card removed successfully";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+        LoadCards();
+       
+    }
+    
+    public void Edit(int cardId)
+    {
+        _navigationManager.NavigateTo($"EditTrouserCard/{cardId}");
+    }
+
+    public void Restock(int cardId)
+    {
+        _navigationManager.NavigateTo($"UpdateInventory/{cardId}");
+    }
+}

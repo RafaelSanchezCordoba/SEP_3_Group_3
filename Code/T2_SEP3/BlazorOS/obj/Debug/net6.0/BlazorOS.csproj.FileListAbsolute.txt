@@ -6047,6 +6047,7 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb
 C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.webassembly.js
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorFluentUI.CoreComponents.dll
@@ -6684,7 +6685,6 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/HttpClients.dll
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/HttpClients.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/bin/Debug/net6.0/Domain.pdb
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.AssemblyReference.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.AssemblyInfoInputs.cache
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.AssemblyInfo.cs
@@ -6905,16 +6905,12 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/blazor.boot.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/staticwebassets.build.json
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/staticwebassets.development.json
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/BrowseSocks.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/CreateAccount.razor.rz.scp.css
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/CreateSocks.razor.rz.scp.css
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/CreateSocksInventory.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/index.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Login.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/OrderInformation.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp.css
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ViewSockInfo.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/bundle/BlazorOS.styles.css
@@ -6924,3 +6920,10 @@ C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/refint/BlazorOS.dll
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/BrowseSocks.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/CreateSocks.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/ViewSockInfo.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/BrowseTrousers.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/CreateTrouser.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/ViewTrouserInfo.razor.rz.scp.css
+/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/CreateSockInventory.razor.rz.scp.css

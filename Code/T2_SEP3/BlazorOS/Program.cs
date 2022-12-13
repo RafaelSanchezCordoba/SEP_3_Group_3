@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using BlazorOS;
 using BlazorOS.Auth;
 using HttpClients.ClientInterfaces;
+using HttpClients.ClientInterfaces.Trouser;
 using HttpClients.Implementations;
+using HttpClients.Implementations.Trouser;
 using Microsoft.AspNetCore.Components.Authorization;
 using Shared.Auth;
 using Smart.Blazor;
@@ -23,6 +25,8 @@ builder.Services.AddScoped<IShoppingCartService, ShoppingCartHttpClient>();
 builder.Services.AddScoped<ICartItemService, CartItemHttpClient>();
 builder.Services.AddScoped<IOrderService, OrderHttpClient>();
 builder.Services.AddScoped<IAdressService, AdressHttpClient>();
+builder.Services.AddScoped<ITrouserCardService, TrouserCardHttpClient>();
+builder.Services.AddScoped<ITrouserService, TrouserHttpClient>();
 
 
 

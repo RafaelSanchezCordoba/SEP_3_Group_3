@@ -1,0 +1,34 @@
+@page "/BrowseTrousers"
+@using HttpClients.ClientInterfaces.Trouser
+@using global::Shared.Models
+
+@inject ITrouserCardService trouserService;
+@inject NavigationManager navMgr
+
+<h3>BrowseTrousers</h3>
+
+@code {
+    private ICollection<TrouserCard> trouserCards = new List<TrouserCard>();
+    private string msg = "";
+
+    protected async  void LoadData()
+    {
+        try
+        {
+            
+            trouserCards = await trouserService.GetAllSockCards();
+            msg = "data loaded";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        trouserCards = await trouserService.GetAllSockCards();
+    }
+}
