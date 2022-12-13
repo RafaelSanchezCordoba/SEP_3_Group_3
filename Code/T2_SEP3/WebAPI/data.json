@@ -281,6 +281,26 @@
       "Image": "https://s.ecrater.com/stores/3693/55cd6e2b3b4dd_3693b.jpg",
       "Type": "Low cut",
       "Id": 5
+    },
+    {
+      "Title": "for test case",
+      "Description": "fghj",
+      "Price": 1,
+      "Material": "dfvghnj",
+      "Brand": "dxcfvgh",
+      "Image": "cfvgbhn",
+      "Type": "Low cut",
+      "Id": 6
+    },
+    {
+      "Title": "dfghj",
+      "Description": "sxdcfvgh",
+      "Price": 1,
+      "Material": "HNJ",
+      "Brand": "fvghnj",
+      "Image": "img/rafa.jpg",
+      "Type": "Mid calf",
+      "Id": 7
     }
   ],
   "Socks": [

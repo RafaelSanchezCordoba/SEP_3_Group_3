@@ -281,6 +281,16 @@
       "Image": "https://s.ecrater.com/stores/3693/55cd6e2b3b4dd_3693b.jpg",
       "Type": "Low cut",
       "Id": 5
+    },
+    {
+      "Title": "for test case",
+      "Description": "fghj",
+      "Price": 1,
+      "Material": "dfvghnj",
+      "Brand": "dxcfvgh",
+      "Image": "cfvgbhn",
+      "Type": "Low cut",
+      "Id": 6
     }
   ],
   "Socks": [
@@ -441,13 +451,13 @@
       "PhoneNumber": "string",
       "Address": {
         "Id": 0,
-        "UserId": 0,
-        "Country": "string",
-        "City": "string",
-        "PostCode": 0,
-        "Street": "string",
-        "Number": 0,
-        "ExtraInfo": "string"
+        "UserId": 3,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
       },
       "Auth": "customer"
     }
