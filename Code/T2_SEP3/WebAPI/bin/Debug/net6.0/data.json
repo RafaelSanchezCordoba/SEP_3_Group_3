@@ -978,21 +978,27 @@
   "Trousers": [
     {
       "ProductCardId": 1,
-      "Id": 22,
+      "Id": 1,
       "Size": "xl",
       "Color": "black"
     },
     {
-      "ProductCardId": 2,
-      "Id": 22,
-      "Size": "l",
-      "Color": "red"
+      "ProductCardId": 1,
+      "Id": 2,
+      "Size": "m",
+      "Color": "orange"
     },
     {
       "ProductCardId": 2,
-      "Id": 22,
-      "Size": "m",
+      "Id": 3,
+      "Size": "s",
       "Color": "blue"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "m",
+      "Color": "red"
     }
   ]
 }

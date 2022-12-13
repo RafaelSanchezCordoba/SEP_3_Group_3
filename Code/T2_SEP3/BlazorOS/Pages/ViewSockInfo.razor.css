@@ -5,8 +5,7 @@
     place-items: center;
 }
 
-.sizeBtn
-{
+.sizeBtn {
     aspect-ratio: 1;
     border-radius: 20%;
     float:left;
@@ -18,14 +17,12 @@
     margin: 0px 5px;
 }
 
-.sockImg
-{
+.sockImg {
     width: 48%;
     float: left;
 }
 
-.sockInfo
-{
+.sockInfo {
     width: 50%;
     float: left;
 }

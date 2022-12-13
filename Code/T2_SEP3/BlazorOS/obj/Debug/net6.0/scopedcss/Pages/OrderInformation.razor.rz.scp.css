@@ -1,45 +1,41 @@
-*[b-xmb3xxwfi1] {
+*[b-42bsyk1tlt] {
     box-sizing: border-box;
 }
 
-.card[b-xmb3xxwfi1]{
+.card[b-42bsyk1tlt]{
     width: 65%;
     padding: 20px;
     float: left;
 
 }
 
-.form-group-field[b-xmb3xxwfi1]{
+.form-group-field[b-42bsyk1tlt]{
     padding: 10px;
     float: left;
 }
 
-.button-message[b-xmb3xxwfi1]
-{
+.button-message[b-42bsyk1tlt] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-xmb3xxwfi1]
-{
+.small-form-field[b-42bsyk1tlt] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-xmb3xxwfi1]
-{
+input[b-42bsyk1tlt] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-xmb3xxwfi1]
-{
+.long-input[b-42bsyk1tlt] {
     width: 87%;
 }
 
-.myButton[b-xmb3xxwfi1]{
+.myButton[b-42bsyk1tlt]{
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -56,7 +52,7 @@ input[b-xmb3xxwfi1]
     margin-top: 5px;
 }
 
-.myButton span[b-xmb3xxwfi1]{
+.myButton span[b-42bsyk1tlt]{
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -67,15 +63,15 @@ input[b-xmb3xxwfi1]
     transform: rotate(0deg);
 }
 
-.myButton:hover[b-xmb3xxwfi1]{
+.myButton:hover[b-42bsyk1tlt]{
     background-color: #8b9cb3;
 }
 
-.myButton:active[b-xmb3xxwfi1]{
+.myButton:active[b-42bsyk1tlt]{
     transform: scale(0.95);
 }
 
-.payment-info[b-xmb3xxwfi1]{
+.payment-info[b-42bsyk1tlt]{
     position: absolute;
     margin: auto;
     width: 350px;

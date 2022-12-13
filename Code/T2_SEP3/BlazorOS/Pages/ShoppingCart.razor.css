@@ -1,14 +1,12 @@
 * {box-sizing: border-box;}
 
-.table-div
-{
+.table-div {
     width: 60%;
     margin-right: 5px;
     float: left;
 } 
 
-.order-summary-div
-{
+.order-summary-div {
     width: 36%;
     border: 3px solid black;
     float: right;
@@ -19,8 +17,7 @@
     width: 40px;
 }
 
-#checkout-btn
-{
+#checkout-btnæ{
     width: 100%;
 }
 

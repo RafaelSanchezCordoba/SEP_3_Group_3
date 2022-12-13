@@ -14,28 +14,24 @@
     float: left;
 }
 
-.button-message[b-oomwygka46]
-{
+.button-message[b-oomwygka46] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-oomwygka46]
-{
+.small-form-field[b-oomwygka46] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-oomwygka46]
-{
+input[b-oomwygka46] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-oomwygka46]
-{
+.long-input[b-oomwygka46] {
     width: 87%;
 }
 

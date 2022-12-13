@@ -4,8 +4,8 @@
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
-@inject ISockInventoryService inventoryService
-@inject ICardItemService cardItemService
+@inject InterfaceInventoryService inventoryService
+@inject ICartItemService CartItemService
 @inject NavigationManager navMgr
 
 @if (productList == null)
@@ -81,13 +81,13 @@ else
     {
         try
         {
-            shoppingCart= await shoppingCartService.getByIdAsync(Id);
+            shoppingCart= await shoppingCartService.GetByIdAsync(Id);
             productList = (List<Product>)await shoppingCartService.GetProducts(Id);
             foreach (Product p in productList)
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
-                CartItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                CartItem item=await CartItemService.GetByIdsAsync(p.Id,Id);
                 items.Add(item);  
                 double totalPrice = card.Price * item.Quantity;
                 subtotal += totalPrice;
@@ -118,7 +118,7 @@ else
     {
         try
         {
-            Product product = await socksService.getByIdAsync(productId);
+            Product product = await socksService.GetByIdAsync(productId);
             await shoppingCartService.RemoveProduct(product, Id);
             await socksService.RemoveSocks(productId);
             await LoadData();
@@ -136,7 +136,7 @@ else
         try
         {
             quantity++;
-            socks = await socksService.getByIdAsync(productId);
+            socks = await socksService.GetByIdAsync(productId);
             Inventory? inventory =  await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
             if (quantity > inventory.Quantity)
             {
@@ -144,7 +144,7 @@ else
                 msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
                 throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
             }
-            await cardItemService.UpdateQuantityAsync(productId,quantity);
+            await CartItemService.UpdateQuantityAsync(productId,quantity);
             SocksCard card = await socksCardService.GetById(sockCardId);
             await LoadData();
         }
@@ -162,7 +162,7 @@ else
             quantity--;
             if (quantity>=1)
             {
-                await cardItemService.UpdateQuantityAsync(productId, quantity);
+                await CartItemService.UpdateQuantityAsync(productId, quantity);
                 SocksCard card = await socksCardService.GetById(productCardId);
             }
             else
@@ -184,12 +184,12 @@ else
         try
         {
             productList = (List<Product?>) await shoppingCartService.GetProducts(Id);
-            items = (List<CartItem?>)await cardItemService.GetAsync();
+            items = (List<CartItem?>)await CartItemService.GetAsync();
             subtotal = 0;
             foreach (Product p in productList)
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
-                CartItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                CartItem item=await CartItemService.GetByIdsAsync(p.Id,Id);
                 double totalPrice = card.Price * item.Quantity;
                 subtotal += totalPrice;
             }

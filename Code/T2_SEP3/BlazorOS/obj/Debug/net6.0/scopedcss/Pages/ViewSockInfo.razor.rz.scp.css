@@ -5,8 +5,7 @@
     place-items: center;
 }
 
-.sizeBtn[b-8zy5626g7u]
-{
+.sizeBtn[b-8zy5626g7u] {
     aspect-ratio: 1;
     border-radius: 20%;
     float:left;
@@ -18,14 +17,12 @@
     margin: 0px 5px;
 }
 
-.sockImg[b-8zy5626g7u]
-{
+.sockImg[b-8zy5626g7u] {
     width: 48%;
     float: left;
 }
 
-.sockInfo[b-8zy5626g7u]
-{
+.sockInfo[b-8zy5626g7u] {
     width: 50%;
     float: left;
 }

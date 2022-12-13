@@ -1,9 +1,9 @@
-*[b-341o8pllcz]
+*[b-91oe4ubkig]
 {
     box-sizing: border-box;
 }
 
-.categoryCard[b-341o8pllcz] {
+.categoryCard[b-91oe4ubkig] {
    display: flex;
     height: 380px;
     width: auto;
@@ -14,7 +14,7 @@
     align-items:center;
 }
 
-.categoryTitle[b-341o8pllcz]{
+.categoryTitle[b-91oe4ubkig] {
    margin: 0px auto;
     color: white;
     font-family: "Arial Black";
@@ -22,7 +22,7 @@
     -webkit-text-stroke: 3px black;
 }
 
-.eco-container[b-341o8pllcz] {
+.eco-container[b-91oe4ubkig] {
     width: 45%;
     margin: 0px auto;
     background-color: #1dbf51;

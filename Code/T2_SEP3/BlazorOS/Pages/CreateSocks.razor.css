@@ -15,14 +15,12 @@
 }
 
 
-.button-message
-{
+.button-message {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field
-{
+.small-form-field {
     width: 50%;
     padding: 10px;
     float: left;
@@ -30,14 +28,12 @@
 }
 
 
-input
-{
+input {
     width: 73%;
     float: right;
 }
 
-.long-input
-{
+.long-input {
     width: 87%;
 }
 

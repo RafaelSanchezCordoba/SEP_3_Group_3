@@ -6,25 +6,21 @@
     float: left;
 }
 
-.button-message
-{
+.button-message {
     float: left;
     margin-left: 2%;
 }
 
-.acceptbtn
-{
+.acceptbtn {
     padding: 4px;
     margin-right: 10px;
 }
 
-#product-image
-{
+#product-image {
     width: 50%;
 }
 
-.small-card
-{
+.small-card {
     padding: 20px;
     width: 34%;
     float: right;

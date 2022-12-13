@@ -9,10 +9,10 @@
 @inherits LayoutComponentBase
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
-@inject ICardItemService cardItemService
+@inject ICartItemService CartItemService
 @inject IOrderService orderService
 @inject IUserService userService
-@inject ISockInventoryService sockInventoryService
+@inject InterfaceInventoryService InterfaceInventoryService
 
 <p>Please introduce contact and shipping information for your order</p>
 <div class="container" style="display:@showModalInfo"> 
@@ -211,7 +211,7 @@
     {
         try
         {
-            global::Shared.Models.ShoppingCart cart = await shoppingCartService.getByIdAsync(Id);
+            global::Shared.Models.ShoppingCart cart = await shoppingCartService.GetByIdAsync(Id);
             if (user!=null)
             {
                 OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Address(1, user.Id, country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
@@ -239,7 +239,7 @@
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
               
-                CartItem item = await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
+                CartItem item = await CartItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
                 
                 items.Add(item);
                 int itemsCount = item.Quantity;
@@ -267,12 +267,12 @@
     {
         try
         {
-            shoppingCart = await shoppingCartService.getByIdAsync(Id);
+            shoppingCart = await shoppingCartService.GetByIdAsync(Id);
             foreach (var p in shoppingCart.Products)
             {
-                CartItem cartItem = await cardItemService.GetByIdsAsync(p.ProductCardId,Id);
+                CartItem cartItem = await CartItemService.GetByIdsAsync(p.ProductCardId,Id);
 
-                Inventory inventory = await sockInventoryService.GetByParameters(p.ProductCardId, p.Color, p.Size);
+                Inventory inventory = await InterfaceInventoryService.GetByParameters(p.ProductCardId, p.Color, p.Size);
                 long newQuantity = inventory.Quantity - cartItem.Quantity;
                 if (newQuantity < 0)
                 {
@@ -282,7 +282,7 @@
                 }
                 Inventory newInventory = new Inventory( p.ProductCardId, p.Color, p.Size,newQuantity);
                 newInventory.Id = inventory.Id;
-                await sockInventoryService.updateAsync(newInventory);
+                await InterfaceInventoryService.UpdateAsync(newInventory);
             }
 
             await orderService.CreateAsync(OrderDto);

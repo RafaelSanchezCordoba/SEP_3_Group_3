@@ -76,7 +76,7 @@ else
     {
         try
         {
-            await sockService.RemoveProductCardSockById(id);
+            await sockService.RemoveById(id);
             msg = "card removed succesfully";
         }
         catch (Exception e)

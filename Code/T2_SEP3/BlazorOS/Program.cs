@@ -11,16 +11,16 @@ using Smart.Blazor;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
-builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
+builder.Services.AddScoped<InterfaceInventoryService, InventoryHttpClient>();
 builder.Services.AddScoped<ISockCardService, SockCardHttpClient>();
 
 builder.Services.AddScoped<IUserService,JwtUserService>();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 
-builder.Services.AddScoped<ISockInventoryService, SockInventoryHttpClient>();
+builder.Services.AddScoped<InterfaceInventoryService, InventoryHttpClient>();
 builder.Services.AddScoped<ISocksService, SocksHttpClient>();
 builder.Services.AddScoped<IShoppingCartService, ShoppingCartHttpClient>();
-builder.Services.AddScoped<ICardItemService, CardItemHttpClient>();
+builder.Services.AddScoped<ICartItemService, CartItemHttpClient>();
 builder.Services.AddScoped<IOrderService, OrderHttpClient>();
 builder.Services.AddScoped<IAdressService, AdressHttpClient>();
 

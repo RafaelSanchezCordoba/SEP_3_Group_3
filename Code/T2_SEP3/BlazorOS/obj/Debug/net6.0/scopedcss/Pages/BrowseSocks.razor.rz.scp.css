@@ -19,13 +19,11 @@
     transform: scale(1.02);
 }
 
-div[b-6a93qks4sm]
-{
+div[b-6a93qks4sm] {
     border: none;
 }
 
-.product-card-container[b-6a93qks4sm]
-{
+.product-card-container[b-6a93qks4sm] {
     display: flex;
     flex-wrap: wrap;
 }

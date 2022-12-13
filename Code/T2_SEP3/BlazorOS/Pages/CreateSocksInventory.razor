@@ -4,7 +4,7 @@
 @using HttpClients.ClientInterfaces
 @using global::Shared.DTOs
 @inject ISockCardService sockService;
-@inject ISockInventoryService sockStockService
+@inject InterfaceInventoryService InterfaceStockService
 @inject NavigationManager NavManager
 
 <h3>Create Stock</h3>
@@ -432,7 +432,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "black", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "black", sizes[i], quantity));
                     }
                 }
             }
@@ -462,7 +462,7 @@
                     }
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "white", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "white", sizes[i], quantity));
                     }
                 }
             }
@@ -492,7 +492,7 @@
                     }
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "red", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "red", sizes[i], quantity));
                     }
                 }
             }
@@ -522,7 +522,7 @@
                     }
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "green", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "green", sizes[i], quantity));
                     }
                 }
             }
@@ -554,7 +554,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "blue", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "blue", sizes[i], quantity));
                     }
                 }
             }
@@ -586,7 +586,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "yellow", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "yellow", sizes[i], quantity));
                     }
                 }
             }
@@ -618,7 +618,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "grey", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "grey", sizes[i], quantity));
                     }
                 }
             }
@@ -650,7 +650,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "orange", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "orange", sizes[i], quantity));
                     }
                 }
             }
@@ -682,7 +682,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "purple", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "purple", sizes[i], quantity));
                     }
                 }
             }
@@ -714,7 +714,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "brown", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "brown", sizes[i], quantity));
                     }
                 }
             }
@@ -746,7 +746,7 @@
 
                     if (quantity != 0)
                     {
-                        await sockStockService.CreateAsync(new CreateInventoryDto(card.Id, "multicolor", sizes[i], quantity));
+                        await InterfaceStockService.CreateAsync(new CreateInventoryDto(card.Id, "multicolor", sizes[i], quantity));
                     }
                 }
             }
