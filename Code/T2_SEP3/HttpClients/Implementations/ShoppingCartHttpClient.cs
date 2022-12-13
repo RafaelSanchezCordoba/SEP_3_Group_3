@@ -98,7 +98,6 @@ public class ShoppingCartHttpClient:IShoppingCartService
               string result = await response.Content.ReadAsStringAsync();
         
         
-        
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(result);

@@ -39,7 +39,7 @@
         </div>
         
         <br/><br/>
-
+    <button @onclick="AddToCart" class="myButton">Add to the cart</button>
         @if (!string.IsNullOrEmpty(errorMsg))
                 {
                     <br/> <label style="color:red">@errorMsg</label>
@@ -141,12 +141,9 @@
 
     private async void AddToCart()
     {
-        try
-        {
+        try{
             if (user==null)
-            {
-                sc =await shoppingCartService.getByIdAsync(4);
-            }
+            {sc =await shoppingCartService.getByIdAsync(4);}
             if (sc==null)
             {
                 CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
@@ -154,12 +151,14 @@
             }
             CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
             Socks socks = await socksService.CreateAsync(socksDto);
+<<<<<<< Updated upstream
             CreateCartItemDto dto = new CreateCartItemDto(sc.Id, socks.Id);
             await cardItemService.CreateAsync(dto);
        
+=======
+>>>>>>> Stashed changes
             foreach (Product p in sc.Products)
-            {
-                if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+            {if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
                 {
                     CartItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
                     int quantity = item.Quantity;
@@ -169,10 +168,11 @@
                     return;
                 } 
             }
+            CreateCardItemDto dto = new CreateCardItemDto(sc.Id, socks.Id);
+            await cardItemService.CreateAsync(dto);
             await shoppingCartService.AddProductAsync(socks, sc.Id);
             navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
-        }
-        catch (Exception e)
+        }catch (Exception e)
         {
             Console.WriteLine(e);
             errorMsg = e.Message;

@@ -44,7 +44,6 @@ public class SockCardsGrpcDao: ISockCardDao
      {
          var req = new Empty();
          using var call = stub.getAllSockCards(req);
-         Console.WriteLine("hhhh");
          List<SocksCard> list = new List<SocksCard>();
 
          while (await call.ResponseStream.MoveNext())

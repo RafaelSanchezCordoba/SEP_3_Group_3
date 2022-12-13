@@ -391,6 +391,18 @@
       "Id": 21,
       "Size": "s",
       "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 22,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 23,
+      "Size": "m",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -540,6 +552,18 @@
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 21
+    },
+    {
+      "Id": 22,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 22
+    },
+    {
+      "Id": 23,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 23
     }
   ],
   "Orders": [
