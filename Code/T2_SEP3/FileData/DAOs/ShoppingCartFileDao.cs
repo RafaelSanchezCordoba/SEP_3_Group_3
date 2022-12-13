@@ -58,7 +58,7 @@ public class ShoppingCartFileDao:IShoppingCartDao
         }
 
         context.ShoppingCarts.Remove(existing);
-        existing.addProduct(product);
+        existing.AddProduct(product);
         context.ShoppingCarts.Add(existing);
         context.SaveChanges();
         return Task.FromResult(existing);
@@ -87,14 +87,14 @@ public class ShoppingCartFileDao:IShoppingCartDao
         }
        
         context.ShoppingCarts.Remove(existing);
-        existing.removeProduct(product);
+        existing.RemoveProduct(product);
         context.ShoppingCarts.Add(existing);
         context.SaveChanges();
         return Task.FromResult(existing);
     }
 
 
-    public Task<ShoppingCart> GetByCustomerName(int ownerId)
+    public Task<ShoppingCart> GetByCustomerId(int ownerId)
     {
         ShoppingCart? existing = context.ShoppingCarts.FirstOrDefault(shoppingCart => shoppingCart.OwnerId == ownerId);
 
@@ -114,8 +114,8 @@ public class ShoppingCartFileDao:IShoppingCartDao
         foreach (var p in shoppingCart.Products)
         {
             ProductCard productCard = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
-            CardItem cardItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id && id==c.ShoppingCartId);
-            totalprice =totalprice+  productCard.Price*cardItem.Quantity;
+            CartItem cartItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id && id==c.ShoppingCartId);
+            totalprice =totalprice+  productCard.Price*cartItem.Quantity;
         }
 
         return totalprice;

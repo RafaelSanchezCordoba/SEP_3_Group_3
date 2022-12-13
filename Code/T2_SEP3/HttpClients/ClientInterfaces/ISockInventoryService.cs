@@ -5,7 +5,7 @@ namespace HttpClients.ClientInterfaces;
 
 public interface ISockInventoryService
 {
-    Task<Inventory> CreateAsync(CreateSockInventoryDto dto);
+    Task<Inventory> CreateAsync(CreateInventoryDto dto);
 
     //Task<ICollection<Inventory>> GetByCardIdAsync(int cardId);
     Task<Inventory> getByIdAsync(int id);

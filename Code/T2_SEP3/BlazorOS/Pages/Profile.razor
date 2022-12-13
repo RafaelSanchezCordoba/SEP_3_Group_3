@@ -186,14 +186,14 @@
         phone = user.PhoneNumber;
         password = user.Password;
 
-        if (user.Adress!=null)
+        if (user.Address!=null)
         {
-            country = user.Adress.Country;
-            city = user.Adress.City;
-            street = user.Adress.Street;
-            postCode = user.Adress.PostCode.ToString();
-            number = user.Adress.Number.ToString();
-            extraInfo = user.Adress.ExtraInfo;
+            country = user.Address.Country;
+            city = user.Address.City;
+            street = user.Address.Street;
+            postCode = user.Address.PostCode.ToString();
+            number = user.Address.Number.ToString();
+            extraInfo = user.Address.ExtraInfo;
         }
       
     }
@@ -234,7 +234,7 @@
     
     protected async Task ConfirmEditShipping()
     {
-        Adress updatedAdress = new Adress
+        Address updatedAddress = new Address
         {
             Country = country,
             City = city,
@@ -252,7 +252,7 @@
             Password = user.Password,
             PhoneNumber = user.PhoneNumber,
             Email = user.Email,
-            Adress = updatedAdress
+            Address = updatedAddress
         };
 
         await userService.EditAsync(updatedUser);

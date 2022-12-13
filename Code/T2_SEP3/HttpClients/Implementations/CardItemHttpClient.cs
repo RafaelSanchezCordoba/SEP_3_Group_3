@@ -16,7 +16,7 @@ public class CardItemHttpClient:ICardItemService
     {
         this.client = client;
     }
-    public async Task<CardItem> CreateAsync(CreateCardItemDto dto)
+    public async Task<CartItem> CreateAsync(CreateCartItemDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("ShoppingCartQuantities", dto);
         string result = await response.Content.ReadAsStringAsync();
@@ -26,7 +26,7 @@ public class CardItemHttpClient:ICardItemService
             throw new Exception(result);
         }
 
-        var cardItem = JsonSerializer.Deserialize<CardItem>(result, new JsonSerializerOptions 
+        var cardItem = JsonSerializer.Deserialize<CartItem>(result, new JsonSerializerOptions 
             {
                 PropertyNameCaseInsensitive = true 
             }
@@ -35,7 +35,7 @@ public class CardItemHttpClient:ICardItemService
         return cardItem;
     }
 
-    public async Task<IEnumerable<CardItem>> GetAsync()
+    public async Task<IEnumerable<CartItem>> GetAsync()
     {
         HttpResponseMessage response = await client.GetAsync("https://localhost:7999/ShoppingCartQuantities");
         string content = await response.Content.ReadAsStringAsync();
@@ -44,7 +44,7 @@ public class CardItemHttpClient:ICardItemService
             throw new Exception(content);
         }
 
-        ICollection<CardItem> cardItems = JsonSerializer.Deserialize<ICollection<CardItem>>(content,
+        ICollection<CartItem> cardItems = JsonSerializer.Deserialize<ICollection<CartItem>>(content,
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
@@ -53,7 +53,7 @@ public class CardItemHttpClient:ICardItemService
         return cardItems;
     }
 
-    public async Task<CardItem> GetByIdAsync(int Id)
+    public async Task<CartItem> GetByIdAsync(int Id)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCartQuantities/{Id}");
         string content = await response.Content.ReadAsStringAsync();
@@ -62,13 +62,13 @@ public class CardItemHttpClient:ICardItemService
             throw new Exception(content);
         }
 
-        CardItem cardItem = JsonSerializer.Deserialize<CardItem>(content, 
+        CartItem cartItem = JsonSerializer.Deserialize<CartItem>(content, 
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             }
         )!;
-        return cardItem;
+        return cartItem;
     }
 
     public async Task<int> GetQuantityById(int Id)
@@ -102,7 +102,7 @@ public class CardItemHttpClient:ICardItemService
         }
     }
 
-    public async Task<CardItem> GetByIdsAsync(int idProduct, int idShoppingCart)
+    public async Task<CartItem> GetByIdsAsync(int idProduct, int idShoppingCart)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCartQuantities/IDs?product_id={idProduct}&shoppingCard_id={idShoppingCart}");
             string content = await response.Content.ReadAsStringAsync();
@@ -111,13 +111,13 @@ public class CardItemHttpClient:ICardItemService
                 throw new Exception(content);
             }
 
-            CardItem cardItem = JsonSerializer.Deserialize<CardItem>(content, 
+            CartItem cartItem = JsonSerializer.Deserialize<CartItem>(content, 
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 }
             )!;
-            return cardItem;
+            return cartItem;
        
     }
     

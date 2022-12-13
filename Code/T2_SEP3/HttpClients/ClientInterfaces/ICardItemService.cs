@@ -5,12 +5,12 @@ namespace HttpClients.ClientInterfaces;
 
 public interface ICardItemService
 {
-    Task<CardItem> CreateAsync(CreateCardItemDto dto);
-    Task<IEnumerable<CardItem>> GetAsync();
-    Task<CardItem> GetByIdAsync(int Id);
+    Task<CartItem> CreateAsync(CreateCartItemDto dto);
+    Task<IEnumerable<CartItem>> GetAsync();
+    Task<CartItem> GetByIdAsync(int Id);
     Task<int> GetQuantityById(int id);
     Task UpdateQuantityAsync(int id, int newQuantity);
-    Task<CardItem> GetByIdsAsync(int idProduct,int idShoppingCard);
+    Task<CartItem> GetByIdsAsync(int idProduct,int idShoppingCard);
 
     
 }

@@ -30,7 +30,7 @@ else
             @foreach (var p in productList)
             {
                 ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-                CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+                CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
                 double totalPrice = @card.Price * @cardItem.Quantity;
                 <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
                     <td >
@@ -75,7 +75,7 @@ else
     private double subtotal=0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
-    private List<CardItem?> items= new List<CardItem?>();
+    private List<CartItem?> items= new List<CartItem?>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -87,7 +87,7 @@ else
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
-                CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                CartItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
                 items.Add(item);  
                 double totalPrice = card.Price * item.Quantity;
                 subtotal += totalPrice;
@@ -184,12 +184,12 @@ else
         try
         {
             productList = (List<Product?>) await shoppingCartService.GetProducts(Id);
-            items = (List<CardItem?>)await cardItemService.GetAsync();
+            items = (List<CartItem?>)await cardItemService.GetAsync();
             subtotal = 0;
             foreach (Product p in productList)
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
-                CardItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
+                CartItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
                 double totalPrice = card.Price * item.Quantity;
                 subtotal += totalPrice;
             }

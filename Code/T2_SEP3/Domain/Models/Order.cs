@@ -10,9 +10,9 @@ public class Order
     public string CustomerEmail { get; set; }
     public string CustomerPhoneNumber { get; set; }
     public ShoppingCart ShoppingCart { get; set; }
-    public Adress Shipping { get; set; }
+    public Address Shipping { get; set; }
 
-    public Order(int numberOfProducts, double totalPrice, string status, string customerName, string customerEmail, string customerPhoneNumber, ShoppingCart shoppingCart, Adress shipping)
+    public Order(int numberOfProducts, double totalPrice, string status, string customerName, string customerEmail, string customerPhoneNumber, ShoppingCart shoppingCart, Address shipping)
     {
         NumberOfProducts = numberOfProducts;
         TotalPrice = totalPrice;

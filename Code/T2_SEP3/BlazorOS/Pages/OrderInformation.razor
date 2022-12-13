@@ -96,7 +96,7 @@
         @foreach (var p in productList)
         {
             ProductCard? productCard = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-            CardItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+            CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
 
             <tr> <td ><img src="@productCard.Image" style="width: 100px"/></td>
                 <td >
@@ -163,11 +163,11 @@
     private double subtotal = 0;
     private List<Product> productList = new List<Product>();
     private List<ProductCard?> cards = new List<ProductCard?>();
-    private List<CardItem?> items = new List<CardItem?>();
+    private List<CartItem?> items = new List<CartItem?>();
     private global::Shared.Models.ShoppingCart shoppingCart = null;
 
     
-    private CreateOrderDto OrderDto = new CreateOrderDto(2,"ggg","hhh","jjj","jjjj",null,new Adress(1,1,"hhh","jjj",888,"fff",5,"hhhh"));
+    private CreateOrderDto OrderDto = new CreateOrderDto(2,"ggg","hhh","jjj","jjjj",null,new Address(1,1,"hhh","jjj",888,"fff",5,"hhhh"));
     
 
     private string resultMsg = "";
@@ -194,14 +194,14 @@
             name = user.Name;
             phone = user.PhoneNumber;
 
-            if (user.Adress!=null)
+            if (user.Address!=null)
             {
-                country = user.Adress.Country;
-                city = user.Adress.City;
-                street = user.Adress.Street;
-                postCode = user.Adress.PostCode.ToString();
-                number = user.Adress.Number.ToString();
-                option = user.Adress.ExtraInfo;
+                country = user.Address.Country;
+                city = user.Address.City;
+                street = user.Address.Street;
+                postCode = user.Address.PostCode.ToString();
+                number = user.Address.Number.ToString();
+                option = user.Address.ExtraInfo;
             }   
         }
         
@@ -214,9 +214,9 @@
             global::Shared.Models.ShoppingCart cart = await shoppingCartService.getByIdAsync(Id);
             if (user!=null)
             {
-                OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1, user.Id, country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
+                OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Address(1, user.Id, country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
             }
-            OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Adress(1,-1 , country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
+            OrderDto = new CreateOrderDto( numberOfProducts,"Processing order", name, email, phone, cart, new Address(1,-1 , country, city, Convert.ToInt32(postCode), street, Convert.ToInt32(number), option));
          
             LoadOrderSummary();
             
@@ -239,7 +239,7 @@
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
               
-                CardItem item = await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
+                CartItem item = await cardItemService.GetByIdsAsync(p.Id, OrderDto.ShoppingCart.Id);
                 
                 items.Add(item);
                 int itemsCount = item.Quantity;
@@ -270,10 +270,10 @@
             shoppingCart = await shoppingCartService.getByIdAsync(Id);
             foreach (var p in shoppingCart.Products)
             {
-                CardItem cardItem = await cardItemService.GetByIdsAsync(p.ProductCardId,Id);
+                CartItem cartItem = await cardItemService.GetByIdsAsync(p.ProductCardId,Id);
 
                 Inventory inventory = await sockInventoryService.GetByParameters(p.ProductCardId, p.Color, p.Size);
-                long newQuantity = inventory.Quantity - cardItem.Quantity;
+                long newQuantity = inventory.Quantity - cartItem.Quantity;
                 if (newQuantity < 0)
                 {
 

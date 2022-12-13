@@ -32,9 +32,9 @@ public class UserDaoFile:IUserDao
                     
                 };
 
-        if (user.Adress!=null)
+        if (user.Address!=null)
         {
-            updatedUser.Adress = user.Adress;
+            updatedUser.Address = user.Address;
         }
 
         

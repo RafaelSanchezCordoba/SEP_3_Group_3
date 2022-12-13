@@ -9,7 +9,7 @@ public class FileContext
     private DataContainer? dataContainer;
 
 
-    public ICollection<Adress> Adresses
+    public ICollection<Address> Adresses
     {
         get
         {
@@ -50,8 +50,6 @@ public class FileContext
             return dataContainer!.SocksCards;
         }
     }
-
-
     public ICollection<User> Users
     {
         get
@@ -60,8 +58,7 @@ public class FileContext
             return dataContainer!.Users;
         }
     }
-
-    public ICollection<CardItem> CardItems
+    public ICollection<CartItem> CardItems
         {
         get
         {
@@ -69,7 +66,6 @@ public class FileContext
             return dataContainer!.CardItems;
         }
     }
-    
     public ICollection<Order>  Orders
     {
         get
@@ -78,10 +74,23 @@ public class FileContext
             return dataContainer!.Orders;
         }
     }
-
-
+    public ICollection<TrouserCard> TrouserCards
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.TrouserCards;
+        }
+    }
+    public ICollection<Trouser> Trousers
+    {
+        get
+        {
+            LoadData();
+            return dataContainer!.Trousers;
+        }
+    }
     
-
     private void LoadData()
     {
         if (dataContainer != null) return;
@@ -96,8 +105,8 @@ public class FileContext
 
                 Users = new List<User>(),
                 ShoppingCarts = new List<ShoppingCart>(),
-                CardItems = new List<CardItem>(),
-                Adresses = new List<Adress>(),
+                CardItems = new List<CartItem>(),
+                Adresses = new List<Address>(),
                 Orders = new List<Order>()
 
 

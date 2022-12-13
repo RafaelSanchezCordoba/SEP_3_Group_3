@@ -9,8 +9,7 @@ namespace Application.Logic;
 public class UserLogic:IUserLogic
 {
     private readonly IUserDao context;
-   
-
+    
     public UserLogic(IUserDao context)
     {
         this.context = context;
@@ -25,7 +24,6 @@ public class UserLogic:IUserLogic
         };
        
         return context.Register(result,password);
-
     }
 
     public Task<bool> UserExists(string email)
@@ -51,14 +49,14 @@ public class UserLogic:IUserLogic
         string nameToUse = user.Name ?? existing.Name;
         string PhoneToUse = user.PhoneNumber ?? existing.PhoneNumber ;
         string AuthToUse = user.Auth ?? existing.Auth ;
-        Adress adressToUse = null;
-        if (user.Adress!=null)
+        Address addressToUse = null;
+        if (user.Address!=null)
         {
-            adressToUse = user.Adress;
+            addressToUse = user.Address;
         } 
-        else if (existing.Adress!=null)
+        else if (existing.Address!=null)
         {
-            adressToUse = existing.Adress;
+            addressToUse = existing.Address;
         }
         
         User updated = new User()
@@ -67,7 +65,7 @@ public class UserLogic:IUserLogic
             Password = passwordToUse,
             Name = nameToUse,
             PhoneNumber = PhoneToUse,
-            Adress = adressToUse,
+            Address = addressToUse,
             Auth = AuthToUse,
             Email = existing.Email
         };
