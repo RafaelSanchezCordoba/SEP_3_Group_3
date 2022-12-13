@@ -1,8 +1,8 @@
-* {
+*{
     box-sizing: border-box;
 }
 
-.categoryCard {
+.categoryCard{
    display: flex;
     height: 380px;
     width: auto;
@@ -40,7 +40,7 @@ h3{
     -webkit-text-stroke: 3px black;
 }
 
-.eco-container {
+.eco-container{
     width: 45%;
     margin: 0px auto;
     background-color: #1dbf51;

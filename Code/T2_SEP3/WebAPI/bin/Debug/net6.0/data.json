@@ -391,6 +391,18 @@
       "Id": 21,
       "Size": "s",
       "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 22,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 23,
+      "Size": "m",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -413,15 +425,6 @@
       "Auth": "Customer"
     },
     {
-      "Id": 3,
-      "Email": "rosa",
-      "Password": "12345",
-      "Name": "Rosa Briales",
-      "PhoneNumber": "\u002B45 50444444",
-      "Address": null,
-      "Auth": "customer"
-    },
-    {
       "Id": 4,
       "Email": "rafa",
       "Password": "12345",
@@ -429,6 +432,24 @@
       "PhoneNumber": null,
       "Address": null,
       "Auth": "Customer"
+    },
+    {
+      "Id": 3,
+      "Email": "rosa",
+      "Password": "string",
+      "Name": "string",
+      "PhoneNumber": "string",
+      "Address": {
+        "Id": 0,
+        "UserId": 0,
+        "Country": "string",
+        "City": "string",
+        "PostCode": 0,
+        "Street": "string",
+        "Number": 0,
+        "ExtraInfo": "string"
+      },
+      "Auth": "customer"
     }
   ],
   "Adresses": [],
@@ -540,6 +561,18 @@
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 21
+    },
+    {
+      "Id": 22,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 22
+    },
+    {
+      "Id": 23,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 23
     }
   ],
   "Orders": [
@@ -978,21 +1011,27 @@
   "Trousers": [
     {
       "ProductCardId": 1,
-      "Id": 22,
+      "Id": 1,
       "Size": "xl",
       "Color": "black"
     },
     {
-      "ProductCardId": 2,
-      "Id": 22,
-      "Size": "l",
-      "Color": "red"
+      "ProductCardId": 1,
+      "Id": 2,
+      "Size": "m",
+      "Color": "orange"
     },
     {
       "ProductCardId": 2,
-      "Id": 22,
-      "Size": "m",
+      "Id": 3,
+      "Size": "s",
       "Color": "blue"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "m",
+      "Color": "red"
     }
   ]
 }

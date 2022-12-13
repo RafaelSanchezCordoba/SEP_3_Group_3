@@ -225,9 +225,10 @@
             Name = name,
             Password = password,
             PhoneNumber = phone,
-            Email = user.Email
+            Email = user.Email,
+            Address = user.Address
         };
-       await  userService.EditAsync(updatedUser);
+       await userService.EditAsync(updatedUser);
         Personalmsg = "Personal information successfully updated";
         
     }

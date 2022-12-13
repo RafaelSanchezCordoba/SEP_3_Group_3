@@ -1,8 +1,8 @@
-*[b-341o8pllcz] {
+*[b-341o8pllcz]{
     box-sizing: border-box;
 }
 
-.categoryCard[b-341o8pllcz] {
+.categoryCard[b-341o8pllcz]{
    display: flex;
     height: 380px;
     width: auto;
@@ -40,7 +40,7 @@ h3[b-341o8pllcz]{
     -webkit-text-stroke: 3px black;
 }
 
-.eco-container[b-341o8pllcz] {
+.eco-container[b-341o8pllcz]{
     width: 45%;
     margin: 0px auto;
     background-color: #1dbf51;
