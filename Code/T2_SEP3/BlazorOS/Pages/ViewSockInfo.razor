@@ -26,25 +26,25 @@
         <div class="color-container">
             @foreach (string color in colors)
             {
-                <div class="colorBtn" style="background-color: @color; width: 25px; border: 1px black solid; margin: 5px" @onclick="() => { selectedSizes=null; selectedColor=color; LoadSizes();}"></div>
+                <div class="colorBtn" style="background-color: @color; width: 25px; border: 1px black solid; margin: 5px" @onclick="() => { selectedSizes=null; selectedColor=color; LoadSizes(); ClearError();}"></div>
             }
         </div><br/><br/>
         <p>Size: @selectedSizes</p>
         <div class="size-container">
             @foreach (string s in sizes)
             {
-                <div class="sizeBtn" @onclick="() => { selectedSizes = s; }" >@s</div>
-
+                <div class="sizeBtn" @onclick="() => { selectedSizes = s; ClearError(); }" >@s</div>
             }
         </div>
         
         <br/><br/>
-    <button @onclick="AddToCart" class="myButton">Add to the cart</button>
-        @if (!string.IsNullOrEmpty(errorMsg))
-                {
-                    <br/> <label style="color:red">@errorMsg</label>
-                }
+        <button @onclick="AddToCart" class="myButton">Add to the cart</button>
+        
     </div>
+    @if (!string.IsNullOrEmpty(errorMsg))
+                          {
+                              <br/> <label style="color:red">@errorMsg</label>
+                          }
 </div>
 
 
@@ -141,7 +141,20 @@
 
     private async void AddToCart()
     {
-        try{
+        if (selectedColor.Equals(""))
+        {
+            errorMsg = "Please select a color!";
+            return;
+        }
+        
+        if (selectedSizes.Equals(""))
+        {
+            errorMsg = "Please select a size!";
+            return;
+        }
+       try
+       {
+           errorMsg = "";
             if (user==null)
             {sc =await shoppingCartService.getByIdAsync(4);}
             if (sc==null)
@@ -152,7 +165,8 @@
             CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
             Socks socks = await socksService.CreateAsync(socksDto);
             foreach (Product p in sc.Products)
-            {if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+            {
+                if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
                 {
                     CartItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
                     int quantity = item.Quantity;
@@ -171,6 +185,11 @@
             Console.WriteLine(e);
             errorMsg = e.Message;
         }
+    }
+
+    public void ClearError()
+    {
+        errorMsg = "";
     }
 
 }

@@ -10,7 +10,7 @@ namespace HttpClients.Implementations;
 public class ShoppingCartHttpClient:IShoppingCartService
 {
     private readonly HttpClient client;
-    private IShoppingCartService shoppingCartService;
+    
 
     public ShoppingCartHttpClient(HttpClient client)
     {

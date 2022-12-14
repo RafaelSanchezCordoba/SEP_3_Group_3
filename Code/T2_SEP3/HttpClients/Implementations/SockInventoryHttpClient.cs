@@ -11,7 +11,7 @@ public class SockInventoryHttpClient:ISockInventoryService
 {
     
     private readonly HttpClient client;
-    private ISockInventoryService service;
+ 
 
     public SockInventoryHttpClient(HttpClient client)
     {

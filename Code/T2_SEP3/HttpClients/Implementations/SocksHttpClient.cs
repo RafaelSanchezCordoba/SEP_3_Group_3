@@ -9,7 +9,6 @@ namespace HttpClients.Implementations;
 public class SocksHttpClient : ISocksService
 {
     private readonly HttpClient client;
-    private ISocksService socksService;
 
     public SocksHttpClient(HttpClient client)
     {

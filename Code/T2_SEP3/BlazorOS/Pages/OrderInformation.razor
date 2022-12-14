@@ -41,15 +41,15 @@
                 <input type="text"   @bind="country" @bind:event ="oninput"/>
             </div>
     
-            <div class="form-group-field">
+            <div class="small-form-field">
                 <label>City:</label>
-                <input class="long-input" type="text" @bind="city" @bind:event ="oninput"/>
+                <input  type="text" @bind="city" @bind:event ="oninput"/>
             </div>
         </div>
     
-        <div class="small-form-field">
+        <div class="form-group-field" >
             <label>Street:</label>
-            <input type="text"  @bind="street" @bind:event ="oninput"/>
+            <input type="text" class="long-input"  @bind="street" @bind:event ="oninput"/>
         </div>
     
         <div>
@@ -64,9 +64,9 @@
     
         </div>
         
-        <div class="small-form-field">
-            <label>Option:</label>
-            <input type="text" class="small-input" @bind="option" @bind:event ="oninput"/>
+        <div class="form-group-field" >
+            <label>Optional:</label>
+            <input type="text" class="long-input" @bind="option" @bind:event ="oninput"/>
         </div>
     </div>
     

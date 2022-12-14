@@ -10,7 +10,7 @@ namespace HttpClients.Implementations;
 public class CardItemHttpClient:ICardItemService
 {
     private readonly HttpClient client;
-    private ICardItemService CardItemService;
+  
 
     public CardItemHttpClient(HttpClient client)
     {

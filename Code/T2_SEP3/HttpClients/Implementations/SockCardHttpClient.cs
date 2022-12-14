@@ -10,8 +10,7 @@ namespace HttpClients.Implementations;
 public class SockCardHttpClient:ISockCardService
 {
     private readonly HttpClient client;
-    private ISockCardService _sockServiceImplementation;
-
+    
     public SockCardHttpClient(HttpClient client)
     {
         this.client = client;
