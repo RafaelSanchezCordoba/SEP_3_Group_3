@@ -1,18 +1,18 @@
-.page[b-wcssxcvg4k] {
+.page[b-fgro0f5ktg] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-wcssxcvg4k] {
+main[b-fgro0f5ktg] {
     flex: 1;
 }
 
-.sidebar[b-wcssxcvg4k] {
+.sidebar[b-fgro0f5ktg] {
     background-image: linear-gradient(180deg, #1B263B 0%,#778DA9  70%);
 }
 
-.top-row[b-wcssxcvg4k] {
+.top-row[b-fgro0f5ktg] {
     background-image: linear-gradient(90deg, #1B263B 0%,#778DA9  70%);
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -21,60 +21,60 @@ main[b-wcssxcvg4k] {
     align-items: center;
 }
 
-.top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+.top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
     white-space: nowrap;
     margin-left: 1.5rem;
     text-decoration: none;
 }
 
-.top-row[b-wcssxcvg4k]  a:hover, .top-row[b-wcssxcvg4k]  .btn-link:hover {
+.top-row[b-fgro0f5ktg]  a:hover, .top-row[b-fgro0f5ktg]  .btn-link:hover {
     text-decoration: underline;
 }
 
-.top-row[b-wcssxcvg4k]  a:first-child {
+.top-row[b-fgro0f5ktg]  a:first-child {
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-wcssxcvg4k] {
+    .top-row:not(.auth)[b-fgro0f5ktg] {
         display: none;
     }
 
-    .top-row.auth[b-wcssxcvg4k] {
+    .top-row.auth[b-fgro0f5ktg] {
         justify-content: space-between;
     }
 
-    .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+    .top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-wcssxcvg4k] {
+    .page[b-fgro0f5ktg] {
         flex-direction: row;
     }
 
-    .sidebar[b-wcssxcvg4k] {
+    .sidebar[b-fgro0f5ktg] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-wcssxcvg4k] {
+    .top-row[b-fgro0f5ktg] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-wcssxcvg4k]  a:first-child {
+    .top-row.auth[b-fgro0f5ktg]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-wcssxcvg4k], article[b-wcssxcvg4k] {
+    .top-row[b-fgro0f5ktg], article[b-fgro0f5ktg] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }

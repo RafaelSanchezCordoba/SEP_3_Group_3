@@ -1,11 +1,11 @@
-.colorBtn[b-ecdsryc5i8] {
+.colorBtn[b-8zy5626g7u] {
     aspect-ratio: 1;
     border-radius: 50%;
     float:left;
     place-items: center;
 }
 
-.sizeBtn[b-ecdsryc5i8]
+.sizeBtn[b-8zy5626g7u]
 {
     aspect-ratio: 1;
     border-radius: 20%;
@@ -18,19 +18,19 @@
     margin: 0px 5px;
 }
 
-.sockImg[b-ecdsryc5i8]
+.sockImg[b-8zy5626g7u]
 {
     width: 48%;
     float: left;
 }
 
-.sockInfo[b-ecdsryc5i8]
+.sockInfo[b-8zy5626g7u]
 {
     width: 50%;
     float: left;
 }
 
-.myButton[b-ecdsryc5i8]{
+.myButton[b-8zy5626g7u]{
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -47,7 +47,7 @@
     margin-top: 5px;
 }
 
-.myButton span[b-ecdsryc5i8]{
+.myButton span[b-8zy5626g7u]{
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -58,10 +58,10 @@
     transform: rotate(0deg);
 }
 
-.myButton:hover[b-ecdsryc5i8]{
+.myButton:hover[b-8zy5626g7u]{
     background-color: #8b9cb3;
 }
 
-.myButton:active[b-ecdsryc5i8]{
+.myButton:active[b-8zy5626g7u]{
     transform: scale(0.95);
 }
