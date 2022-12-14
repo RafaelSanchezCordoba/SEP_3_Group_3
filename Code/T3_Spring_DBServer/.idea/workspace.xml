@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_Spring_DBServer.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +71,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T3SpringDbServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="T3_Spring_DBServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.t3_spring_dbserver.T3SpringDbServerApplication" />
@@ -95,6 +108,7 @@
       <workItem from="1669803279387" duration="4799000" />
       <workItem from="1670420110398" duration="858000" />
       <workItem from="1670577720952" duration="210000" />
+      <workItem from="1671009686566" duration="5520000" />
     </task>
     <servers />
   </component>
