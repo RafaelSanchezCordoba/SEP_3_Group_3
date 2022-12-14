@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 
 import java.util.Optional;
-
+@Repository
 public interface ISockCardRepository extends JpaRepository<SockCard, Long> {
 
     Optional <SockCard> findSockCardByBrand (String brand);

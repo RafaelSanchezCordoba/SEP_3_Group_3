@@ -16,8 +16,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories
 public class T3SpringDbServerApplication  {
 
-	@Autowired
-    ISockCardRepository repository;
 	public static void main(String[] args) throws Exception {
 
 		SpringApplication.run(T3SpringDbServerApplication.class, args);
