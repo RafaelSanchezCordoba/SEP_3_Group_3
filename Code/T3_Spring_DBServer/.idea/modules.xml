@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/T3_Spring_DBServer.iml" filepath="$PROJECT_DIR$/T3_Spring_DBServer.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/../T3_Spring_DBServer.iml" filepath="$PROJECT_DIR$/../T3_Spring_DBServer.iml" />
->>>>>>> Auth_Impl
     </modules>
   </component>
 </project>
