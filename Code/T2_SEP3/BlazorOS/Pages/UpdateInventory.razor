@@ -1,7 +1,7 @@
 @page "/UpdateInventory/{Id:int}"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
-@inject ISockInventoryService _inventoryService
+@inject InterfaceInventoryService _inventoryService
 @inject NavigationManager NavManager
 
 
@@ -88,9 +88,9 @@
         Inventory invToUpdate;
         try
         {
-            invToUpdate = await _inventoryService.getByIdAsync(invId);
+            invToUpdate = await _inventoryService.GetByIdAsync(invId);
             invToUpdate.Quantity += qnt;
-            Inventory inv =   await  _inventoryService.updateAsync(invToUpdate);
+            Inventory inv =   await  _inventoryService.UpdateAsync(invToUpdate);
             msg = "the updated quantity si::" + invToUpdate.Quantity;
             await LoadData();
         }

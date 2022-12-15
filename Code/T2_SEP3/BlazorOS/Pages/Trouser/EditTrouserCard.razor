@@ -1,0 +1,123 @@
+@page "/EditTrouserCard"
+
+@inject ITrouserCardService trouserService;
+@inject NavigationManager _navigationManager;
+@using Smart.Blazor
+@using HttpClients.ClientInterfaces.Trouser
+@using global::Shared.Models
+@using global::Shared.DTOs.Trousers
+
+<h3>EditSockCard</h3>
+<div class="container">
+    @if (card == null)
+    {
+        <p>laoding...</p>
+    }
+    else
+    {
+        <div>
+            <label for="inputTitle">Title:</label>
+            <input type="text" class="form-control" id="inputTitle" @bind-value="card.Title"/>
+        </div>
+        <div>
+            <label for="inputDescription">Description:</label>
+            <input type="text" class="form-control" id="inputDescription" @bind-value="card.Description"/>
+        </div>
+        <div>
+            <label for="inputPrice">Price:</label>
+            <input type="number" class="form-control" id="inputPrice" @bind-value="card.Price"/>
+        </div>
+        <div>
+            <label for="inputMaterial">Material:</label>
+            <input type="text" class="form-control" id="inputMaterial" @bind-value="card.Material"/>
+        </div>
+        <div>
+            <label for="inputImage">Image:</label>
+            <input type="text" class="form-control" id="inputImage" @bind-value="card.Image"/>
+        </div>
+        <div>
+            <label for="inputType">Type:</label>
+          
+            <label>@card.Type</label>
+            <div  class="small-form-field">
+                   
+                <div id="dropdown-list">
+                    <DropDownList Id="dropdown-input" Placeholder="Select the type"  OnItemClick="TypeSelection">
+                        <ListItem Value="Invisible">Invisible</ListItem>
+                        <ListItem Value="Extra low cut">Extra low cut</ListItem>
+                        <ListItem Value="Low cut">Low cut</ListItem>
+                        <ListItem Value="Anklets">Anklets</ListItem>
+                        <ListItem Value="Mid calf">Mid calf</ListItem>
+                        <ListItem Value="Executive">Executive</ListItem>
+                        <ListItem Value="Knee high">Knee high</ListItem>
+                    </DropDownList></div>
+            </div> 
+      
+        </div>
+       
+        
+        <button @onclick="Edit" >edit</button>
+
+                               
+        <button @onclick="@(()=>Restock(Id))">Inventory Options</button>
+
+    }
+    <p>@msg</p>
+</div>
+
+@code {
+    TrouserCard card;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    String msg = "";
+
+    private async void Edit()
+    {
+        try
+        {
+            UpdateTrouserCardDto dto = new UpdateTrouserCardDto(Id)
+            {
+                
+                Brand = card.Brand,
+                Description = card.Description,
+                Image = card.Image,
+                Material = card.Material,
+                Price = card.Price,
+                Title = card.Title,
+                Type = card.Type
+            };
+            msg = "card updated";
+            await trouserService.UpdateAsync(dto);
+            
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            card = await trouserService.GetById(Id);
+        }
+        catch (Exception e)
+        {
+            msg = e.Message;
+        }
+    }
+    private void TypeSelection(Event ev)
+    {
+        DropDownListItemClickEventDetail detail = ev["Detail"];
+        
+        card.Type = detail.Label;
+    }
+    public void Restock(int cardId)
+    {
+        _navigationManager.NavigateTo($"UpdateInventory/{cardId}");
+    }
+}

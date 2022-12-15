@@ -4,8 +4,8 @@
 @inject IShoppingCartService shoppingCartService
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
-@inject ISockInventoryService inventoryService
-@inject ICardItemService cardItemService
+@inject InterfaceInventoryService inventoryService
+@inject ICartItemService CartItemService
 @inject NavigationManager navMgr
 
 @if (productList == null)
@@ -118,7 +118,7 @@
     {
         try
         {
-            Product product = await socksService.getByIdAsync(productId);
+            Product product = await socksService.GetByIdAsync(productId);
             await shoppingCartService.RemoveProduct(product, Id);
             await socksService.RemoveSocks(productId);
             await LoadData();

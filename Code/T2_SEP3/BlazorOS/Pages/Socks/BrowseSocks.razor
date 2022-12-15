@@ -1,0 +1,38 @@
+@page "/BrowseSocks"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@inject ISockCardService sockService;
+@inject NavigationManager navMgr
+
+<p>@msg</p>
+
+<div class="product-card-container">
+    @if (sockCards != null)
+    {
+        
+            @foreach (SocksCard card in sockCards)
+            {
+                <div class="card" @onclick="@(() => navMgr.NavigateTo($"/ViewSockInfo/{card.Id}"))">
+                    
+                        <img src="@card.Image ">
+                   
+                    <div class="card_info">
+                        <p id="price-label"><b>@card.Price €</b></p>
+                        <p id="title-label">@card.Title</p>
+                    </div>
+                </div>
+            }
+    }
+    </div>
+
+@code {
+    private ICollection<SocksCard> sockCards=new List<SocksCard>();
+    private string msg = "";
+
+   
+
+    protected async override Task OnInitializedAsync()
+    {
+        sockCards = await sockService.GetAllSockCards();
+    }
+}

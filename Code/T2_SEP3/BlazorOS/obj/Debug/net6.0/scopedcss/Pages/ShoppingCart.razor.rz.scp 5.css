@@ -1,14 +1,26 @@
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp 5.css
 *[b-rmsxhl3zv7] {box-sizing: border-box;}
 
 .table-div[b-rmsxhl3zv7]
 {
+========
+*[b-rmsxhl3zv7] {
+    box-sizing: border-box;
+}
+
+.table-div[b-rmsxhl3zv7] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp.css
     width: 60%;
     margin-right: 5px;
     float: left;
 } 
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp 5.css
 .order-summary-div[b-rmsxhl3zv7]
 {
+========
+.order-summary-div[b-rmsxhl3zv7] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp.css
     width: 36%;
     border: 3px solid black;
     float: right;
@@ -19,8 +31,12 @@
     width: 40px;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp 5.css
 #checkout-btn[b-rmsxhl3zv7]
 {
+========
+#checkout-btnæ[b-rmsxhl3zv7]{
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/ShoppingCart.razor.rz.scp.css
     width: 100%;
 }
 

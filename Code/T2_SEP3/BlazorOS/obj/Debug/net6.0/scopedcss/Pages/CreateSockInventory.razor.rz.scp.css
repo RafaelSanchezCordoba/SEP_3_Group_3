@@ -1,0 +1,27 @@
+*[b-nqotlpg6z3] {box-sizing: border-box;}
+
+.card[b-nqotlpg6z3]{
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+.button-message[b-nqotlpg6z3] {
+    float: left;
+    margin-left: 2%;
+}
+
+.acceptbtn[b-nqotlpg6z3] {
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#product-image[b-nqotlpg6z3] {
+    width: 50%;
+}
+
+.small-card[b-nqotlpg6z3] {
+    padding: 20px;
+    width: 34%;
+    float: right;
+}

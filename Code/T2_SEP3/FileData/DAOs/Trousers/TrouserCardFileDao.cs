@@ -24,11 +24,24 @@ public class TrouserCardFileDao : ITrouserCardDao
     /// <returns>The added trouser card</returns>
     public Task<TrouserCard> CreateAsync(TrouserCard productCard)
     {
-        int Id = 1;
-        if (context.TrouserCards.Any())
+        int Id = 0;
+        if (!context.SocksCards.Any() && !context.TrouserCards.Any())
         {
-            Id = context.TrouserCards.Max(u => u.Id);
-            Id++;
+            Id = 1;
+        }
+        
+        if (context.TrouserCards.Any() || context.SocksCards.Any())
+        {
+            int trouserId = context.TrouserCards.Max(u => u.Id);
+            int socksId = context.SocksCards.Max(u => u.Id);
+            if (trouserId > socksId)
+            {
+                Id = trouserId + 1;
+            }
+            else
+            {
+                Id = socksId + 1;
+            }
         }
 
         productCard.Id = Id;

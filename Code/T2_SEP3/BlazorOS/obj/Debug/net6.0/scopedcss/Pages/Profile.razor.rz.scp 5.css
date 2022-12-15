@@ -14,28 +14,44 @@
     float: left;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp 5.css
 .button-message[b-hcozhfcqqu]
 {
+========
+.button-message[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp.css
     float: left;
     margin-left: 2%;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp 5.css
 .small-form-field[b-hcozhfcqqu]
 {
+========
+.small-form-field[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp.css
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp 5.css
 input[b-hcozhfcqqu]
 {
+========
+input[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp.css
     width: 73%;
     float: right;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp 5.css
 .long-input[b-hcozhfcqqu]
 {
+========
+.long-input[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Profile.razor.rz.scp.css
     width: 87%;
 }
 

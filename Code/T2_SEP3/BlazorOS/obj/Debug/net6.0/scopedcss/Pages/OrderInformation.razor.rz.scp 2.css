@@ -14,28 +14,24 @@
     float: left;
 }
 
-.button-message[b-xmb3xxwfi1]
-{
+.button-message[b-xmb3xxwfi1] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-xmb3xxwfi1]
-{
+.small-form-field[b-xmb3xxwfi1] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-xmb3xxwfi1]
-{
+input[b-xmb3xxwfi1] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-xmb3xxwfi1]
-{
+.long-input[b-xmb3xxwfi1] {
     width: 87%;
 }
 

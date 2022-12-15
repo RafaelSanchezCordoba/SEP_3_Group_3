@@ -64,7 +64,7 @@
         if (!addedSomething)
         {
             addedSomething = true;
-            shoppingCart = await ShoppingCartService.getByIdAsync(4);
+            shoppingCart = await ShoppingCartService.GetByIdAsync(4);
             foreach (var p in shoppingCart.Products)
             {
                 await ShoppingCartService.RemoveProduct(p, 4);
@@ -83,7 +83,7 @@
 
     private async Task ShoppingCartRegistered(int customerId)
     {
-      ShoppingCart sc= await ShoppingCartService.getByUserIdAsync(customerId);
+      ShoppingCart sc= await ShoppingCartService.GetByUserIdAsync(customerId);
         if (sc==null)
         {
             CreateShoppingCartDto dto= new CreateShoppingCartDto(customerId);

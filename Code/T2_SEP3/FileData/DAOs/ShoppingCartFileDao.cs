@@ -161,9 +161,18 @@ public class ShoppingCartFileDao:IShoppingCartDao
         double totalprice = 0;
         foreach (var p in shoppingCart.Products)
         {
-            ProductCard productCard = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
-            CartItem cartItem = context.CardItems.FirstOrDefault(c => c.ProductId == productCard.Id && id==c.ShoppingCartId);
-            totalprice =totalprice+  productCard.Price*cartItem.Quantity;
+            ProductCard? exists = context.SocksCards.FirstOrDefault(sockCard => sockCard.Id == p.ProductCardId);
+           
+            if (exists==null)
+            {
+                exists = context.TrouserCards.FirstOrDefault(c => c.Id == p.ProductCardId);
+            }
+            if (exists==null)
+            {
+                throw new Exception($"Product with id {id} does not exists !!!");
+            }
+            CartItem cartItem = context.CardItems.FirstOrDefault(c => c.ProductId == exists.Id && id==c.ShoppingCartId);
+            totalprice =totalprice+exists.Price*cartItem.Quantity;
         }
 
         return totalprice;

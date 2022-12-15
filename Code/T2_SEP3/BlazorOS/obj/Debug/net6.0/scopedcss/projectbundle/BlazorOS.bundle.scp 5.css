@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 /* /Pages/BrowseSocks.razor.rz.scp.css */
 *[b-qno29iuakm] {box-sizing: border-box;}
 
@@ -56,6 +57,8 @@ img[b-qno29iuakm]{
     font-size: 17px;
     color: #424242;
 }
+========
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
 /* /Pages/CreateAccount.razor.rz.scp.css */
 
 .myButton[b-526gsgnfxa]{
@@ -93,6 +96,7 @@ img[b-qno29iuakm]{
 .myButton:active[b-526gsgnfxa]{
     transform: scale(0.95);
 }
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 /* /Pages/CreateSocks.razor.rz.scp.css */
 *[b-zjw7gqpu4y] {
     box-sizing: border-box;
@@ -186,6 +190,8 @@ input[b-zjw7gqpu4y]
     width: 34%;
     float: right;
 }
+========
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
 /* /Pages/index.razor.rz.scp.css */
 *[b-341o8pllcz]{
     box-sizing: border-box;
@@ -202,6 +208,7 @@ input[b-zjw7gqpu4y]
     align-items:center;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 h2[b-341o8pllcz]{
    font-family: "Rubik";
     font-size: 60px;
@@ -222,6 +229,9 @@ h3[b-341o8pllcz]{
 }
 
 .categoryTitle[b-341o8pllcz]{
+========
+.categoryTitle[b-341o8pllcz] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
    margin: 0px auto;
     color: white;
     font-family: "Arial Black";
@@ -298,28 +308,24 @@ h3[b-341o8pllcz]{
     float: left;
 }
 
-.button-message[b-xmb3xxwfi1]
-{
+.button-message[b-xmb3xxwfi1] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-xmb3xxwfi1]
-{
+.small-form-field[b-xmb3xxwfi1] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-xmb3xxwfi1]
-{
+input[b-xmb3xxwfi1] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-xmb3xxwfi1]
-{
+.long-input[b-xmb3xxwfi1] {
     width: 87%;
 }
 
@@ -399,28 +405,44 @@ input[b-xmb3xxwfi1]
     float: left;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .button-message[b-hcozhfcqqu]
 {
+========
+.button-message[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     float: left;
     margin-left: 2%;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .small-form-field[b-hcozhfcqqu]
 {
+========
+.small-form-field[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 input[b-hcozhfcqqu]
 {
+========
+input[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 73%;
     float: right;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .long-input[b-hcozhfcqqu]
 {
+========
+.long-input[b-hcozhfcqqu] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 87%;
 }
 
@@ -460,17 +482,29 @@ input[b-hcozhfcqqu]
     transform: scale(0.95);
 }
 /* /Pages/ShoppingCart.razor.rz.scp.css */
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 *[b-rmsxhl3zv7] {box-sizing: border-box;}
 
 .table-div[b-rmsxhl3zv7]
 {
+========
+*[b-rmsxhl3zv7] {
+    box-sizing: border-box;
+}
+
+.table-div[b-rmsxhl3zv7] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 60%;
     margin-right: 5px;
     float: left;
 } 
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .order-summary-div[b-rmsxhl3zv7]
 {
+========
+.order-summary-div[b-rmsxhl3zv7] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 36%;
     border: 3px solid black;
     float: right;
@@ -481,8 +515,12 @@ input[b-hcozhfcqqu]
     width: 40px;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 #checkout-btn[b-rmsxhl3zv7]
 {
+========
+#checkout-btnæ[b-rmsxhl3zv7]{
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 100%;
 }
 
@@ -521,16 +559,135 @@ input[b-hcozhfcqqu]
 .myButton:active[b-rmsxhl3zv7]{
     transform: scale(0.95);
 }
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 /* /Pages/ViewSockInfo.razor.rz.scp.css */
 .colorBtn[b-ecdsryc5i8] {
+========
+/* /Pages/Socks/BrowseSocks.razor.rz.scp.css */
+*[b-g6acxsz09v] {box-sizing: border-box;}
+
+.card[b-g6acxsz09v] {
+    width: 22%;
+    margin: 10px;
+    padding: 20px;
+    float:left;
+    height: 350px;
+    background-color: #DEE2FF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 30px;
+
+}
+
+.card:hover[b-g6acxsz09v] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #778DA9;
+    transform: scale(1.02);
+}
+
+div[b-g6acxsz09v] {
+    border: none;
+}
+
+.product-card-container[b-g6acxsz09v] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_info[b-g6acxsz09v]{
+    position: relative;
+    left: 10px;
+}
+
+img[b-g6acxsz09v] {
+    width:95% ;
+    max-height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: #c7cae1 solid 1px;
+    border-radius: 15px;
+}
+
+#price-label[b-g6acxsz09v]{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+#title-label[b-g6acxsz09v]{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #424242;
+}
+/* /Pages/Socks/CreateSocks.razor.rz.scp.css */
+*[b-eolvsyvibr] {
+    box-sizing: border-box;
+}
+
+.card[b-eolvsyvibr]{
+    width: 65%;
+    padding: 20px;
+    float: left;
+
+}
+
+.form-group-field[b-eolvsyvibr]{
+    padding: 10px;
+    float: left;
+}
+
+
+.button-message[b-eolvsyvibr] {
+    float: left;
+    margin-left: 2%;
+}
+
+.small-form-field[b-eolvsyvibr] {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+
+input[b-eolvsyvibr] {
+    width: 73%;
+    float: right;
+}
+
+.long-input[b-eolvsyvibr] {
+    width: 87%;
+}
+
+.acceptbtn[b-eolvsyvibr] {
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#dropdown-list[b-eolvsyvibr] {
+    float: right;
+    width: 75%;
+}
+
+#dropdown-input[b-eolvsyvibr] {
+    width: 100%;
+    float: right;
+}
+/* /Pages/Socks/ViewSockInfo.razor.rz.scp.css */
+.colorBtn[b-2j409rikm4] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     aspect-ratio: 1;
     border-radius: 50%;
     float:left;
     place-items: center;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .sizeBtn[b-ecdsryc5i8]
 {
+========
+.sizeBtn[b-2j409rikm4] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     aspect-ratio: 1;
     border-radius: 20%;
     float:left;
@@ -542,19 +699,31 @@ input[b-hcozhfcqqu]
     margin: 0px 5px;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .sockImg[b-ecdsryc5i8]
 {
+========
+.sockImg[b-2j409rikm4] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 48%;
     float: left;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .sockInfo[b-ecdsryc5i8]
 {
+========
+.sockInfo[b-2j409rikm4] {
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     width: 50%;
     float: left;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .myButton[b-ecdsryc5i8]{
+========
+.myButton[b-2j409rikm4]{
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -571,7 +740,11 @@ input[b-hcozhfcqqu]
     margin-top: 5px;
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .myButton span[b-ecdsryc5i8]{
+========
+.myButton span[b-2j409rikm4]{
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -582,11 +755,222 @@ input[b-hcozhfcqqu]
     transform: rotate(0deg);
 }
 
+<<<<<<<< HEAD:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp 5.css
 .myButton:hover[b-ecdsryc5i8]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-ecdsryc5i8]{
+========
+.myButton:hover[b-2j409rikm4]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-2j409rikm4]{
+    transform: scale(0.95);
+}
+/* /Pages/Trouser/BrowseTrousers.razor.rz.scp.css */
+*[b-x02ij1a4rk] {
+    box-sizing: border-box;
+}
+
+.card[b-x02ij1a4rk] {
+    width: 22%;
+    margin: 10px;
+    padding: 20px;
+    float:left;
+    height: 350px;
+    background-color: #DEE2FF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+.card:hover[b-x02ij1a4rk] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #778DA9;
+    transform: scale(1.02);
+}
+
+div[b-x02ij1a4rk] {
+    border: none;
+}
+
+.product-card-container[b-x02ij1a4rk] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_info[b-x02ij1a4rk]{
+    position: relative;
+    left: 10px;
+}
+
+img[b-x02ij1a4rk] {
+    width:95% ;
+    max-height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: #c7cae1 solid 1px;
+    border-radius: 15px;
+}
+
+#price-label[b-x02ij1a4rk]{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+#title-label[b-x02ij1a4rk]{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #424242;
+}
+/* /Pages/Trouser/CreateTrouser.razor.rz.scp.css */
+*[b-qsk2q83mke] {
+    box-sizing: border-box;
+}
+
+.card[b-qsk2q83mke]{
+    width: 65%;
+    padding: 20px;
+    float: left;
+}
+
+.form-group-field[b-qsk2q83mke]{
+    padding: 10px;
+    float: left;
+}
+
+.button-message[b-qsk2q83mke] {
+    float: left;
+    margin-left: 2%;
+}
+
+.small-form-field[b-qsk2q83mke] {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+input[b-qsk2q83mke] {
+    width: 73%;
+    float: right;
+}
+
+.long-input[b-qsk2q83mke] {
+    width: 87%;
+}
+
+.acceptbtn[b-qsk2q83mke] {
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#dropdown-list[b-qsk2q83mke] {
+    float: right;
+    width: 75%;
+}
+
+#dropdown-input[b-qsk2q83mke] {
+    width: 100%;
+    float: right;
+}
+/* /Pages/Trouser/CreateTrouserInventory.razor.rz.scp.css */
+*[b-ocdfxevhib] {
+    box-sizing: border-box;
+}
+
+.card[b-ocdfxevhib]{
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+.button-message[b-ocdfxevhib] {
+    float: left;
+    margin-left: 2%;
+}
+
+.acceptbtn[b-ocdfxevhib] {
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#product-image[b-ocdfxevhib] {
+    width: 50%;
+}
+
+.small-card[b-ocdfxevhib] {
+    padding: 20px;
+    width: 34%;
+    float: right;
+}
+/* /Pages/Trouser/ViewTrouserInfo.razor.rz.scp.css */
+.colorBtn[b-d0t2fozc2r] {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    float:left;
+    place-items: center;
+}
+
+.sizeBtn[b-d0t2fozc2r] {
+    aspect-ratio: 1;
+    border-radius: 20%;
+    float:left;
+    border: #464545 solid;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.sockImg[b-d0t2fozc2r] {
+    width: 48%;
+    float: left;
+}
+
+.sockInfo[b-d0t2fozc2r] {
+    width: 50%;
+    float: left;
+}
+
+.myButton[b-d0t2fozc2r]{
+    background-color: #778da9;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.myButton span[b-d0t2fozc2r]{
+    margin-right: 15px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAQAAACJ4248AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmCxwMJiMJdYA7AAADsklEQVRYw8WWS2hTQRSGv7kWFDdRoW5ai61YI6g1CpaoFJFUsNBCfOuiVrpyoSjiVneCCx/gShB8LdSNgrWotRZfEUEXdeFGrFbxtZDSRtIX6RwX597chDY3oZp6Njfzn39m/vnvnJML/zmM2MpKCId9JJ2G3l5jBgdnRIHIly8yKQYGRCKRGXKgtRWzYYMPlZdDPA4dHca0tMyICzmO2LIykcFBkVRK7OzZpd7PmWSJk07D06cwdy4mGp1xAWrDo0f6IxYrtYCyKVHjCdi1S+T37+KWGh2FkZGid5bv3zH375u8efn8GaqqSnv+q1cDBFy6BO3tcO0aJBJ+ZvNm2L0buX0b8/AhzJsHxsD69dDSAp2d8Py5z29ogKYm6OjIXefkSUin8zske/ZoT7h4MQe3O3Yofv58Lv/QIcWPHcvlnz0rIiJ2506fW1Gh3N5eJ7+C7m6wFrZsycFNX5/+qKkpymXj8szHjz64caM+E4m8Aozz6xfy9i0sXiyyZIkvzFsoCwsMT2i2AK/xJRJlgXNNVxdEInDkiNhnz/zEyAhUV2fbiqxejQFYtSoXr6nBjI0hsZhYD/TK++XLwP3FxmJSsvj2DfL1gYwDL17oaefMQc6cwUxMaKKpCVauhFu3oL9f1a5di4nFkJ4ezOvXyquqgr174d07uHdPsdpaiMeR7IoIdKGrS2/xunU+duqUYq2tGWyKKhDZt0+x06d97MQJnXv4MORrxTnhdkXT2Ohjnz4pVqASxMu7fCBzAY06UFhApi1nCciUYnV18GQ371aOiONAfT2SSmmFFboDACSTMDwM0ajItm1IMgkVFZqrqxPr3ehly/S5dGkGM3V1+qysVKy2FkIhePxY/3WD3BPHEbl8uTQVsH27t0+AAwcOQFsb9Pcj3d0Ya/nrGB+Hzk5jHjwoSBW5ckXVlvazLMABt75pbxcZH0cKvLNiw3z4YIy3dqADCxaI7ev79+//58+iHDBmYEBsJAL798Py5ciaNZj6ehgagrt3YdMmWLQI3r+HJ08mn6ChARMOw9ev0NMDzc0wfz7cuTMt50SuX9cTxOM6Dod1/ObNlHz76pV2vBUrdNzcrPybN7N5RXRCL1IpXXnWLHeqOzffd6DLx+Ubb97w8PQcsI2NItaKJJMiN26I/PiR3dMnO3bwoPfOlT80pOOtW6clQBc9elRkdFQXslbkwgVtr1NxHUfk3DmRiQnlj42JPX582pv7ToRCItGo2IULi+OXlys/FPrrzUsRfwA3BSIUW9+qEgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0xMS0yOFQxMjozODozNSswMDowMJy3QWgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMTEtMjhUMTI6Mzg6MzUrMDA6MDDt6vnUAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIyLTExLTI4VDEyOjM4OjM1KzAwOjAwuv/YCwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+}
+
+.myButton:hover[b-d0t2fozc2r]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-d0t2fozc2r]{
+>>>>>>>> Blazor-Trouser:Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/projectbundle/BlazorOS.bundle.scp.css
     transform: scale(0.95);
 }
 /* /Shared/MainLayout.razor.rz.scp.css */

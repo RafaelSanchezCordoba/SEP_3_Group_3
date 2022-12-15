@@ -43,6 +43,12 @@ builder.Services.AddScoped<IUserLogic,UserLogic>();
 builder.Services.AddScoped<IUserDao,UserDaoFile>();
 builder.Services.AddScoped<IOrderDao, OrderFileDao>();
 builder.Services.AddScoped<IOrderLogic, OrderLogic>();
+builder.Services.AddScoped<ISocksLogic, SocksLogic>();
+builder.Services.AddScoped<ISocksDao, SocksGrpcDao>();
+builder.Services.AddScoped<IAddressDao, AddressFileDao>();
+builder.Services.AddScoped<ICartItemDao, CartItemFileDao>();
+builder.Services.AddScoped<ICartItemLogic, CartItemLogic>();
+builder.Services.AddScoped<IAddressLogic, AddressLogic>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -61,12 +67,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 AuthorizationPolicies.AddPolicies(builder.Services);
 
 
-builder.Services.AddScoped<ISocksLogic, SocksLogic>();
-builder.Services.AddScoped<ISocksDao, SocksGrpcDao>();
-builder.Services.AddScoped<IAddressDao, AddressFileDao>();
-builder.Services.AddScoped<ICartItemDao, CartItemFileDao>();
-builder.Services.AddScoped<ICartItemLogic, CartItemLogic>();
-builder.Services.AddScoped<IAddressLogic, AddressLogic>();
 
 
 

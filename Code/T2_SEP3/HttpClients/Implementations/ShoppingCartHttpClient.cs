@@ -74,7 +74,7 @@ public class ShoppingCartHttpClient:IShoppingCartService
     
     
 
-    public async Task<ShoppingCart> getByIdAsync(int id)
+    public async Task<ShoppingCart> GetByIdAsync(int id)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/shoppingCart/{id}");
         string content = await response.Content.ReadAsStringAsync();
@@ -135,7 +135,7 @@ public class ShoppingCartHttpClient:IShoppingCartService
         return shoppingCart;
     }
 
-    public async Task<ShoppingCart> getByUserIdAsync(int id)
+    public async Task<ShoppingCart> GetByUserIdAsync(int id)
     {
         HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/ShoppingCart/userId/{id}");
         string content = await response.Content.ReadAsStringAsync();

@@ -22,7 +22,7 @@ public class InventoryController:ControllerBase
         try
         {
             Inventory inventory = await inventoryLogic.CreateAsync(dto);
-            return Created($"/sockInventory/{inventory.Id}", inventory);
+            return Created($"/Inventory/{inventory.Id}", inventory);
         }
         catch (Exception e)
         {
