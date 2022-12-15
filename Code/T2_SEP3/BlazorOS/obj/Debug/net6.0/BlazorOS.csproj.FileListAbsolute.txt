@@ -6044,6 +6044,7 @@ C:/Users/maria/OneDrive/Escritorio/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/obj/Debug
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.pdb
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/ref/BlazorOS.dll
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\BlazorFluentUI.CoreComponents.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
@@ -6927,6 +6928,8 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\BlazorOS.pdb
 C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\obj\Debug\net6.0\ref\BlazorOS.dll
 =======
+=======
+>>>>>>> Stashed changes
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/BrowseSocks.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/CreateSocks.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Socks/ViewSockInfo.razor.rz.scp.css
@@ -6934,4 +6937,7 @@ C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/CreateTrouser.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/CreateTrouserInventory.razor.rz.scp.css
 /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/obj/Debug/net6.0/scopedcss/Pages/Trouser/ViewTrouserInfo.razor.rz.scp.css
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

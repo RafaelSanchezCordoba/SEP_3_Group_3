@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 {
   "cacheBootResources": true,
   "config": [ ],
@@ -230,6 +231,8 @@
     "satelliteResources": null
   }
 =======
+=======
+>>>>>>> Stashed changes
 {
   "cacheBootResources": true,
   "config": [ ],
@@ -460,5 +463,8 @@
     },
     "satelliteResources": null
   }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }

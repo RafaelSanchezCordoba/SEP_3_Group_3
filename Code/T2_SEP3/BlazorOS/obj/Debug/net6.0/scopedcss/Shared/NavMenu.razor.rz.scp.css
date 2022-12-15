@@ -1,20 +1,27 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .navbar-toggler[b-ov4nba62sm] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .top-row[b-ov4nba62sm] {
 =======
+=======
+>>>>>>> Stashed changes
 .navbar-toggler[b-iknbjjsc52] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .top-row[b-iknbjjsc52] {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 .navbar-brand[b-ov4nba62sm] {
     font-size: 1.1rem;
@@ -22,11 +29,16 @@
 
 .oi[b-ov4nba62sm] {
 =======
+=======
+>>>>>>> Stashed changes
 .navbar-brand[b-iknbjjsc52] {
     font-size: 1.1rem;
 }
 
 .oi[b-iknbjjsc52] {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     width: 2rem;
     font-size: 1.1rem;
@@ -35,7 +47,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm] {
+=======
+.nav-item[b-iknbjjsc52] {
+>>>>>>> Stashed changes
 =======
 .nav-item[b-iknbjjsc52] {
 >>>>>>> Stashed changes
@@ -43,6 +59,7 @@
     padding-bottom: 0.5rem;
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 .nav-item:first-of-type[b-ov4nba62sm] {
     padding-top: 1rem;
@@ -54,6 +71,8 @@
 
 .nav-item[b-ov4nba62sm]  a {
 =======
+=======
+>>>>>>> Stashed changes
 .nav-item:first-of-type[b-iknbjjsc52] {
     padding-top: 1rem;
 }
@@ -63,6 +82,9 @@
 }
 
 .nav-item[b-iknbjjsc52]  a {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     color: #d7d7d7;
     border-radius: 4px;
@@ -73,7 +95,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm]  a.active {
+=======
+.nav-item[b-iknbjjsc52]  a.active {
+>>>>>>> Stashed changes
 =======
 .nav-item[b-iknbjjsc52]  a.active {
 >>>>>>> Stashed changes
@@ -82,7 +108,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm]  a:hover {
+=======
+.nav-item[b-iknbjjsc52]  a:hover {
+>>>>>>> Stashed changes
 =======
 .nav-item[b-iknbjjsc52]  a:hover {
 >>>>>>> Stashed changes
@@ -92,17 +122,23 @@
 
 @media (min-width: 641px) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     .navbar-toggler[b-ov4nba62sm] {
         display: none;
     }
 
     .collapse[b-ov4nba62sm] {
 =======
+=======
+>>>>>>> Stashed changes
     .navbar-toggler[b-iknbjjsc52] {
         display: none;
     }
 
     .collapse[b-iknbjjsc52] {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         /* Never collapse the sidebar for wide screens */
         display: block;

@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .page[b-wcssxcvg4k] {
+=======
+.page[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
 =======
 .page[b-fgro0f5ktg] {
 >>>>>>> Stashed changes
@@ -8,6 +12,7 @@
     flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 main[b-wcssxcvg4k] {
     flex: 1;
@@ -19,6 +24,8 @@ main[b-wcssxcvg4k] {
 
 .top-row[b-wcssxcvg4k] {
 =======
+=======
+>>>>>>> Stashed changes
 main[b-fgro0f5ktg] {
     flex: 1;
 }
@@ -28,6 +35,9 @@ main[b-fgro0f5ktg] {
 }
 
 .top-row[b-fgro0f5ktg] {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     background-image: linear-gradient(90deg, #1B263B 0%,#778DA9  70%);
     border-bottom: 1px solid #d6d5d5;
@@ -38,7 +48,11 @@ main[b-fgro0f5ktg] {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+=======
+.top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+>>>>>>> Stashed changes
 =======
 .top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
 >>>>>>> Stashed changes
@@ -48,23 +62,30 @@ main[b-fgro0f5ktg] {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a:hover, .top-row[b-wcssxcvg4k]  .btn-link:hover {
     text-decoration: underline;
 }
 
 .top-row[b-wcssxcvg4k]  a:first-child {
 =======
+=======
+>>>>>>> Stashed changes
 .top-row[b-fgro0f5ktg]  a:hover, .top-row[b-fgro0f5ktg]  .btn-link:hover {
     text-decoration: underline;
 }
 
 .top-row[b-fgro0f5ktg]  a:first-child {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 @media (max-width: 640.98px) {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     .top-row:not(.auth)[b-wcssxcvg4k] {
         display: none;
@@ -76,6 +97,8 @@ main[b-fgro0f5ktg] {
 
     .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
 =======
+=======
+>>>>>>> Stashed changes
     .top-row:not(.auth)[b-fgro0f5ktg] {
         display: none;
     }
@@ -85,6 +108,9 @@ main[b-fgro0f5ktg] {
     }
 
     .top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         margin-left: 0;
     }
@@ -92,17 +118,23 @@ main[b-fgro0f5ktg] {
 
 @media (min-width: 641px) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     .page[b-wcssxcvg4k] {
         flex-direction: row;
     }
 
     .sidebar[b-wcssxcvg4k] {
 =======
+=======
+>>>>>>> Stashed changes
     .page[b-fgro0f5ktg] {
         flex-direction: row;
     }
 
     .sidebar[b-fgro0f5ktg] {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         width: 250px;
         height: 100vh;
@@ -111,7 +143,11 @@ main[b-fgro0f5ktg] {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
 =======
     .top-row[b-fgro0f5ktg] {
 >>>>>>> Stashed changes
@@ -121,7 +157,11 @@ main[b-fgro0f5ktg] {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     .top-row.auth[b-wcssxcvg4k]  a:first-child {
+=======
+    .top-row.auth[b-fgro0f5ktg]  a:first-child {
+>>>>>>> Stashed changes
 =======
     .top-row.auth[b-fgro0f5ktg]  a:first-child {
 >>>>>>> Stashed changes
@@ -131,7 +171,11 @@ main[b-fgro0f5ktg] {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k], article[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg], article[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
 =======
     .top-row[b-fgro0f5ktg], article[b-fgro0f5ktg] {
 >>>>>>> Stashed changes

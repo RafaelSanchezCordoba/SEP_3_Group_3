@@ -1,15 +1,21 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 *[b-xmb3xxwfi1] {
     box-sizing: border-box;
 }
 
 .card[b-xmb3xxwfi1]{
 =======
+=======
+>>>>>>> Stashed changes
 *[b-42bsyk1tlt] {
     box-sizing: border-box;
 }
 
 .card[b-42bsyk1tlt]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     width: 65%;
     padding: 20px;
@@ -18,7 +24,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .form-group-field[b-xmb3xxwfi1]{
+=======
+.form-group-field[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
 =======
 .form-group-field[b-42bsyk1tlt]{
 >>>>>>> Stashed changes
@@ -27,7 +37,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .button-message[b-xmb3xxwfi1] {
+=======
+.button-message[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
 =======
 .button-message[b-42bsyk1tlt]
 {
@@ -37,7 +52,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .small-form-field[b-xmb3xxwfi1] {
+=======
+.small-form-field[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
 =======
 .small-form-field[b-42bsyk1tlt]
 {
@@ -49,7 +69,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 input[b-xmb3xxwfi1] {
+=======
+input[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
 =======
 input[b-42bsyk1tlt]
 {
@@ -59,18 +84,24 @@ input[b-42bsyk1tlt]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .long-input[b-xmb3xxwfi1] {
     width: 87%;
 }
 
 .myButton[b-xmb3xxwfi1]{
 =======
+=======
+>>>>>>> Stashed changes
 .long-input[b-42bsyk1tlt]
 {
     width: 87%;
 }
 
 .myButton[b-42bsyk1tlt]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
@@ -89,7 +120,11 @@ input[b-42bsyk1tlt]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton span[b-xmb3xxwfi1]{
+=======
+.myButton span[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
 =======
 .myButton span[b-42bsyk1tlt]{
 >>>>>>> Stashed changes
@@ -104,6 +139,7 @@ input[b-42bsyk1tlt]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton:hover[b-xmb3xxwfi1]{
     background-color: #8b9cb3;
 }
@@ -114,6 +150,8 @@ input[b-42bsyk1tlt]
 
 .payment-info[b-xmb3xxwfi1]{
 =======
+=======
+>>>>>>> Stashed changes
 .myButton:hover[b-42bsyk1tlt]{
     background-color: #8b9cb3;
 }
@@ -123,6 +161,9 @@ input[b-42bsyk1tlt]
 }
 
 .payment-info[b-42bsyk1tlt]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     position: absolute;
     top: 50%;
@@ -135,7 +176,11 @@ input[b-42bsyk1tlt]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .table-div[b-xmb3xxwfi1]{
+=======
+.table-div[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
 =======
 .table-div[b-42bsyk1tlt]{
 >>>>>>> Stashed changes
@@ -144,7 +189,11 @@ input[b-42bsyk1tlt]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .order-summary-div[b-xmb3xxwfi1]
+=======
+.order-summary-div[b-42bsyk1tlt]
+>>>>>>> Stashed changes
 =======
 .order-summary-div[b-42bsyk1tlt]
 >>>>>>> Stashed changes

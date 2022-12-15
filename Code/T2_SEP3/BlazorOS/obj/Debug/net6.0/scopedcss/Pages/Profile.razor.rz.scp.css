@@ -1,15 +1,21 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 *[b-hcozhfcqqu] {
     box-sizing: border-box;
 }
 
 .card[b-hcozhfcqqu]{
 =======
+=======
+>>>>>>> Stashed changes
 *[b-oomwygka46] {
     box-sizing: border-box;
 }
 
 .card[b-oomwygka46]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     width: 65%;
     padding: 20px;
@@ -18,7 +24,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .form-group-field[b-hcozhfcqqu]{
+=======
+.form-group-field[b-oomwygka46]{
+>>>>>>> Stashed changes
 =======
 .form-group-field[b-oomwygka46]{
 >>>>>>> Stashed changes
@@ -27,7 +37,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .button-message[b-hcozhfcqqu] {
+=======
+.button-message[b-oomwygka46]
+{
+>>>>>>> Stashed changes
 =======
 .button-message[b-oomwygka46]
 {
@@ -37,7 +52,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .small-form-field[b-hcozhfcqqu] {
+=======
+.small-form-field[b-oomwygka46]
+{
+>>>>>>> Stashed changes
 =======
 .small-form-field[b-oomwygka46]
 {
@@ -49,7 +69,12 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 input[b-hcozhfcqqu] {
+=======
+input[b-oomwygka46]
+{
+>>>>>>> Stashed changes
 =======
 input[b-oomwygka46]
 {
@@ -59,18 +84,24 @@ input[b-oomwygka46]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .long-input[b-hcozhfcqqu] {
     width: 87%;
 }
 
 .myButton[b-hcozhfcqqu]{
 =======
+=======
+>>>>>>> Stashed changes
 .long-input[b-oomwygka46]
 {
     width: 87%;
 }
 
 .myButton[b-oomwygka46]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
@@ -89,7 +120,11 @@ input[b-oomwygka46]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton span[b-hcozhfcqqu]{
+=======
+.myButton span[b-oomwygka46]{
+>>>>>>> Stashed changes
 =======
 .myButton span[b-oomwygka46]{
 >>>>>>> Stashed changes
@@ -104,17 +139,23 @@ input[b-oomwygka46]
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton:hover[b-hcozhfcqqu]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-hcozhfcqqu]{
 =======
+=======
+>>>>>>> Stashed changes
 .myButton:hover[b-oomwygka46]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-oomwygka46]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     transform: scale(0.95);
 }

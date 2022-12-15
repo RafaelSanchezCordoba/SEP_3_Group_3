@@ -1,6 +1,10 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton[b-o3v1w4jous]{
+=======
+.myButton[b-k8am3hw2wi]{
+>>>>>>> Stashed changes
 =======
 .myButton[b-k8am3hw2wi]{
 >>>>>>> Stashed changes
@@ -21,7 +25,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton span[b-o3v1w4jous]{
+=======
+.myButton span[b-k8am3hw2wi]{
+>>>>>>> Stashed changes
 =======
 .myButton span[b-k8am3hw2wi]{
 >>>>>>> Stashed changes
@@ -36,17 +44,23 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton:hover[b-o3v1w4jous]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-o3v1w4jous]{
 =======
+=======
+>>>>>>> Stashed changes
 .myButton:hover[b-k8am3hw2wi]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-k8am3hw2wi]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     transform: scale(0.95);
 }

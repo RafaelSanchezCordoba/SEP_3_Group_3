@@ -1,14 +1,20 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 *[b-rmsxhl3zv7] {
     box-sizing: border-box;
 }
 
 .table-div[b-rmsxhl3zv7] {
 =======
+=======
+>>>>>>> Stashed changes
 *[b-7xljfgsik8] {box-sizing: border-box;}
 
 .table-div[b-7xljfgsik8]
 {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     width: 60%;
     margin-right: 5px;
@@ -16,7 +22,12 @@
 } 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .order-summary-div[b-rmsxhl3zv7] {
+=======
+.order-summary-div[b-7xljfgsik8]
+{
+>>>>>>> Stashed changes
 =======
 .order-summary-div[b-7xljfgsik8]
 {
@@ -28,6 +39,7 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .quantity-input[b-rmsxhl3zv7]{
     width: 40px;
 }
@@ -38,6 +50,8 @@
 
 .myButton[b-rmsxhl3zv7]{
 =======
+=======
+>>>>>>> Stashed changes
 .quantity-input[b-7xljfgsik8]{
     width: 40px;
 }
@@ -48,6 +62,9 @@
 }
 
 .myButton[b-7xljfgsik8]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
@@ -66,7 +83,11 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton span[b-rmsxhl3zv7]{
+=======
+.myButton span[b-7xljfgsik8]{
+>>>>>>> Stashed changes
 =======
 .myButton span[b-7xljfgsik8]{
 >>>>>>> Stashed changes
@@ -81,17 +102,23 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .myButton:hover[b-rmsxhl3zv7]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-rmsxhl3zv7]{
 =======
+=======
+>>>>>>> Stashed changes
 .myButton:hover[b-7xljfgsik8]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-7xljfgsik8]{
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     transform: scale(0.95);
 }

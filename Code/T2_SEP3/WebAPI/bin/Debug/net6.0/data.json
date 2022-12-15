@@ -1,5 +1,6 @@
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "Inventories": [
     {
       "CardId": 0,
@@ -31,10 +32,15 @@
   "SocksCards": null,
   "Socks": null,
 =======
+=======
+>>>>>>> Stashed changes
   "Inventories": [],
   "ShoppingCarts": [],
   "SocksCards": [],
   "Socks": [],
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   "Users": [
     {
@@ -45,6 +51,7 @@
       "PhoneNumber": null,
       "Address": null,
       "Auth": "Manager"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     },
     {
@@ -171,6 +178,8 @@
       "Color": null
     }
 =======
+=======
+>>>>>>> Stashed changes
     }
   ],
   "Adresses": [],
@@ -181,6 +190,9 @@
   ],
   "Trousers": [
     
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ]
 }
