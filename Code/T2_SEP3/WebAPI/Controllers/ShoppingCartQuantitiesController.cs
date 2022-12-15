@@ -36,8 +36,8 @@ public class ShoppingCartQuantitiesController:ControllerBase
     {
         try
         {
-            CartItem cartItem = await cartItemLogic.UpdateQuantityAsync(Id, newQuantity);
-            return Ok(cartItem);
+            CartItem cardItem = await cartItemLogic.UpdateQuantityAsync(Id, newQuantity);
+            return Ok(cardItem);
         }
         catch (Exception e)
         {
@@ -45,7 +45,6 @@ public class ShoppingCartQuantitiesController:ControllerBase
             throw;
         }
     }
-
     [HttpGet]
     public async Task<ActionResult<IEnumerable<CartItem>>> GetAsync()
     {

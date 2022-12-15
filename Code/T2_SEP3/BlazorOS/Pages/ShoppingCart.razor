@@ -31,7 +31,7 @@ else
             {
                 ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
                 CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
-                double totalPrice = @card.Price * @cardItem.Quantity;
+                double totalPrice = card.Price * cardItem.Quantity;
                 <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
                     <td >
                         <p>@card.Title</p>
@@ -42,8 +42,8 @@ else
                     <td class="price-td">@card.Price €</td>
                     <td >
                         <label>@cardItem.Quantity</label>
-                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">+</div>
-                        <div @onclick="@(() =>  DecreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId))" class="myButton">-</div>
+                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId,cardItem.Id))" class="myButton">+</div>
+                        <div @onclick="@(() =>  DecreaseQuantity(p.Id, cardItem.Quantity,cardItem.Id))" class="myButton">-</div>
                     </td>
                     <td >@totalPrice €</td>
                     <td>
@@ -110,8 +110,7 @@ else
        Inventory? toCompare = inventories.FirstOrDefault(x=>(x.Color.Equals(sockToCompare.Color)
                                                             &&x.Size.Equals(sockToCompare.Size))) ;
          return (int) toCompare.Quantity;
-
-
+         
     }
 
     protected async Task RemoveProduct(int productId)
@@ -130,8 +129,7 @@ else
         }
     }
 
-    
-    protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId)
+    protected async Task IncreaseQuantity(int productId, int quantity,int sockCardId, int cartItemId)
     {
         try
         {
@@ -144,8 +142,8 @@ else
                 msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
                 throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
             }
-            await cardItemService.UpdateQuantityAsync(productId,quantity);
-            SocksCard card = await socksCardService.GetById(sockCardId);
+            await cardItemService.UpdateQuantityAsync(cartItemId,quantity);
+           
             await LoadData();
         }
         catch (Exception e)
@@ -155,15 +153,14 @@ else
         }
     }
     
-    protected async Task DecreaseQuantity(int productId, int quantity,int productCardId)
+    protected async Task DecreaseQuantity(int productId, int quantity, int cartItemId)
     {
         try
         {
             quantity--;
             if (quantity>=1)
             {
-                await cardItemService.UpdateQuantityAsync(productId, quantity);
-                SocksCard card = await socksCardService.GetById(productCardId);
+                await cardItemService.UpdateQuantityAsync(cartItemId, quantity);
             }
             else
             {
