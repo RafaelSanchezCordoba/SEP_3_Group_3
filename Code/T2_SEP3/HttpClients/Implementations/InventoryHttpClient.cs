@@ -7,13 +7,13 @@ using Shared.Models;
 
 namespace HttpClients.Implementations;
 
-public class SockInventoryHttpClient:ISockInventoryService 
+public class InventoryHttpClient:InterfaceInventoryService 
 {
     
     private readonly HttpClient client;
  
 
-    public SockInventoryHttpClient(HttpClient client)
+    public InventoryHttpClient(HttpClient client)
     {
         this.client = client;
         
@@ -76,7 +76,7 @@ public class SockInventoryHttpClient:ISockInventoryService
             return inventory;
         }
 
-        public async Task<Inventory> getByIdAsync(int id)
+        public async Task<Inventory> GetByIdAsync(int id)
         {
             HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Inventory/{id}");
             string content = await response.Content.ReadAsStringAsync();
@@ -94,7 +94,7 @@ public class SockInventoryHttpClient:ISockInventoryService
             return inventory;
         }
 
-        public async Task<Inventory> updateAsync(Inventory inventory)
+        public async Task<Inventory> UpdateAsync(Inventory inventory)
         {
             string inventoryAsJson = JsonSerializer.Serialize(inventory);
             StringContent body = new StringContent(inventoryAsJson, Encoding.UTF8, "application/json");

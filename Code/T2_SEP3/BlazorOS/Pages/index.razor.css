@@ -3,37 +3,37 @@
 }
 
 .categoryCard{
-   display: flex;
+    display: flex;
     height: 380px;
     width: auto;
     margin: 30px 0px;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items:center;
 }
 
 h2{
-   font-family: "Rubik";
-    font-size: 60px;
-    -webkit-text-stroke: 3px black;
-    color: #8b9cb3;
+
+    font-size: 50px;
+    /*color: #8b9cb3;*/
     margin: 0px auto;
+    width: 100%;
 }
 
 h4{
-    font-family: "hind madurai";
-    font-size: 50px;
+
+    font-size: 20px;
     margin: 0px auto;
 }
+
 h3{
-    font-family: "proza libre";
-    font-size: 60px;
+    font-size: 30px;
     margin: 0px auto;
 }
 
 .categoryTitle{
-   margin: 0px auto;
+    margin: 0px auto;
     color: white;
     font-family: "Arial Black";
     font-size: 100px;
@@ -45,12 +45,11 @@ h3{
     margin: 0px auto;
     background-color: #1dbf51;
     padding: 20px;
-    display: flex;
-    align-items:center;
+    color: white;
 }
 
 .title-container{
-    display: flex;
+    text-align: center;
 }
 
 

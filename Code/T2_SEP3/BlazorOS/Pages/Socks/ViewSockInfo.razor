@@ -7,7 +7,7 @@
 @inject InterfaceInventoryService inventoryService 
 @inject ISocksService socksService
 @inject IShoppingCartService shoppingCartService
-@inject ICartItemService CartItemService
+@inject ICartItemService cardItemService
 @inject IUserService userService
 @inject NavigationManager navMgr
 
@@ -148,7 +148,7 @@
        {
            errorMsg = "";
             if (user==null)
-            {sc =await shoppingCartService.getByIdAsync(4);}
+            {sc =await shoppingCartService.GetByIdAsync(4);}
             if (sc==null)
             {
                 CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
@@ -162,7 +162,7 @@
             {
                 if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
                 {
-                    CartItem item= await CartItemService.GetByIdsAsync(p.Id, sc.Id);
+                    CartItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
                     int quantity = item.Quantity;
                     quantity++;
                     await cardItemService.UpdateQuantityAsync(item.Id, quantity);

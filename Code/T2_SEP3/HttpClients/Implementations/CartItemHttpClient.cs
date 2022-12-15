@@ -7,12 +7,12 @@ using Shared.Models;
 
 namespace HttpClients.Implementations;
 
-public class CardItemHttpClient:ICardItemService
+public class CartItemHttpClient:ICartItemService
 {
     private readonly HttpClient client;
   
 
-    public CardItemHttpClient(HttpClient client)
+    public CartItemHttpClient(HttpClient client)
     {
         this.client = client;
     }

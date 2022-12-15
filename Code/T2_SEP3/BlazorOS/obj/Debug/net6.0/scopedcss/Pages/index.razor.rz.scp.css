@@ -1,0 +1,56 @@
+*[b-341o8pllcz]{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-341o8pllcz]{
+    display: flex;
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items:center;
+}
+
+h2[b-341o8pllcz]{
+
+    font-size: 50px;
+    /*color: #8b9cb3;*/
+    margin: 0px auto;
+    width: 100%;
+}
+
+h4[b-341o8pllcz]{
+
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+h3[b-341o8pllcz]{
+    font-size: 30px;
+    margin: 0px auto;
+}
+
+.categoryTitle[b-341o8pllcz]{
+    margin: 0px auto;
+    color: white;
+    font-family: "Arial Black";
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+}
+
+.eco-container[b-341o8pllcz]{
+    width: 45%;
+    margin: 0px auto;
+    background-color: #1dbf51;
+    padding: 20px;
+    color: white;
+}
+
+.title-container[b-341o8pllcz]{
+    text-align: center;
+}
+
+
+

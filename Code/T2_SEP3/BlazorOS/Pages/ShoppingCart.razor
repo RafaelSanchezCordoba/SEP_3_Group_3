@@ -5,7 +5,7 @@
 @inject ISockCardService socksCardService
 @inject ISocksService socksService
 @inject InterfaceInventoryService inventoryService
-@inject ICartItemService CartItemService
+@inject ICartItemService cardItemService
 @inject NavigationManager navMgr
 
 @if (productList == null)
@@ -70,7 +70,7 @@
     public int Id { get; set; }
 
     private global::Shared.Models.ShoppingCart shoppingCart = null;
-    private Socks socks;
+    private global::Shared.Models.Socks socks;
     private List<Product?> productList = new List<Product?>();
     private double subtotal = 0;
     private string msg = "";
@@ -81,7 +81,7 @@
     {
         try
         {
-            shoppingCart = await shoppingCartService.getByIdAsync(Id);
+            shoppingCart = await shoppingCartService.GetByIdAsync(Id);
             productList = (List<Product>)await shoppingCartService.GetProducts(Id);
             foreach (Product p in productList)
             {
@@ -135,7 +135,7 @@
         try
         {
             quantity++;
-            socks = await socksService.getByIdAsync(productId);
+            socks = await socksService.GetByIdAsync(productId);
             Inventory? inventory = await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
             if (quantity > inventory.Quantity)
             {
