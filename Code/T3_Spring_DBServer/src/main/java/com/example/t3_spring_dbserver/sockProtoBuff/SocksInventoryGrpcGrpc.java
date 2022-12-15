@@ -6,7 +6,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.39.0)",
-    comments = "Source: com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.proto")
+    comments = "Source: SocksInventoryComunicator.proto")
 public final class SocksInventoryGrpcGrpc {
 
   private SocksInventoryGrpcGrpc() {}
@@ -231,13 +231,44 @@ public final class SocksInventoryGrpcGrpc {
     return getDeleteByIdMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<SocksInventoryComunicator.InvParameters,
+      SocksInventoryComunicator.inventory> getGetByParametersMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getByParameters",
+      requestType = SocksInventoryComunicator.InvParameters.class,
+      responseType = SocksInventoryComunicator.inventory.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<SocksInventoryComunicator.InvParameters,
+      SocksInventoryComunicator.inventory> getGetByParametersMethod() {
+    io.grpc.MethodDescriptor<SocksInventoryComunicator.InvParameters, SocksInventoryComunicator.inventory> getGetByParametersMethod;
+    if ((getGetByParametersMethod = SocksInventoryGrpcGrpc.getGetByParametersMethod) == null) {
+      synchronized (SocksInventoryGrpcGrpc.class) {
+        if ((getGetByParametersMethod = SocksInventoryGrpcGrpc.getGetByParametersMethod) == null) {
+          SocksInventoryGrpcGrpc.getGetByParametersMethod = getGetByParametersMethod =
+              io.grpc.MethodDescriptor.<SocksInventoryComunicator.InvParameters, SocksInventoryComunicator.inventory>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getByParameters"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  SocksInventoryComunicator.InvParameters.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  SocksInventoryComunicator.inventory.getDefaultInstance()))
+              .setSchemaDescriptor(new SocksInventoryGrpcMethodDescriptorSupplier("getByParameters"))
+              .build();
+        }
+      }
+    }
+    return getGetByParametersMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
   public static SocksInventoryGrpcStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcStub>() {
-        @java.lang.Override
+        @Override
         public SocksInventoryGrpcStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksInventoryGrpcStub(channel, callOptions);
         }
@@ -252,7 +283,7 @@ public final class SocksInventoryGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcBlockingStub>() {
-        @java.lang.Override
+        @Override
         public SocksInventoryGrpcBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksInventoryGrpcBlockingStub(channel, callOptions);
         }
@@ -267,7 +298,7 @@ public final class SocksInventoryGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksInventoryGrpcFutureStub>() {
-        @java.lang.Override
+        @Override
         public SocksInventoryGrpcFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksInventoryGrpcFutureStub(channel, callOptions);
         }
@@ -282,53 +313,60 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void create(SocksInventoryComunicator.inventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateMethod(), responseObserver);
     }
 
     /**
      */
     public void getAll(SocksInventoryComunicator.EmptyInventoryMessage request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAllMethod(), responseObserver);
     }
 
     /**
      */
     public void getById(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getByCardId(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                            io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByCardIdMethod(), responseObserver);
     }
 
     /**
      */
     public void updateInventory(SocksInventoryComunicator.inventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                                io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateInventoryMethod(), responseObserver);
     }
 
     /**
      */
     public void deleteByCardId(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                               io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteByCardIdMethod(), responseObserver);
     }
 
     /**
      */
     public void deleteById(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteByIdMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    /**
+     */
+    public void getByParameters(SocksInventoryComunicator.InvParameters request,
+                                io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByParametersMethod(), responseObserver);
+    }
+
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getCreateMethod(),
@@ -379,6 +417,13 @@ public final class SocksInventoryGrpcGrpc {
                 SocksInventoryComunicator.IntReqInventory,
                 SocksInventoryComunicator.EmptyInventoryMessage>(
                   this, METHODID_DELETE_BY_ID)))
+          .addMethod(
+            getGetByParametersMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                SocksInventoryComunicator.InvParameters,
+                SocksInventoryComunicator.inventory>(
+                  this, METHODID_GET_BY_PARAMETERS)))
           .build();
     }
   }
@@ -391,7 +436,7 @@ public final class SocksInventoryGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksInventoryGrpcStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksInventoryGrpcStub(channel, callOptions);
@@ -400,7 +445,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void create(SocksInventoryComunicator.inventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateMethod(), getCallOptions()), request, responseObserver);
     }
@@ -408,7 +453,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void getAll(SocksInventoryComunicator.EmptyInventoryMessage request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGetAllMethod(), getCallOptions()), request, responseObserver);
     }
@@ -416,7 +461,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void getById(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetByIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -424,7 +469,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void getByCardId(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+                            io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGetByCardIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -432,7 +477,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void updateInventory(SocksInventoryComunicator.inventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                                io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateInventoryMethod(), getCallOptions()), request, responseObserver);
     }
@@ -440,7 +485,7 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void deleteByCardId(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                               io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteByCardIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -448,9 +493,17 @@ public final class SocksInventoryGrpcGrpc {
     /**
      */
     public void deleteById(SocksInventoryComunicator.IntReqInventory request,
-        io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteByIdMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void getByParameters(SocksInventoryComunicator.InvParameters request,
+                                io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getGetByParametersMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -462,7 +515,7 @@ public final class SocksInventoryGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksInventoryGrpcBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksInventoryGrpcBlockingStub(channel, callOptions);
@@ -518,6 +571,13 @@ public final class SocksInventoryGrpcGrpc {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeleteByIdMethod(), getCallOptions(), request);
     }
+
+    /**
+     */
+    public SocksInventoryComunicator.inventory getByParameters(SocksInventoryComunicator.InvParameters request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getGetByParametersMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -528,7 +588,7 @@ public final class SocksInventoryGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksInventoryGrpcFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksInventoryGrpcFutureStub(channel, callOptions);
@@ -573,6 +633,14 @@ public final class SocksInventoryGrpcGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeleteByIdMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<SocksInventoryComunicator.inventory> getByParameters(
+        SocksInventoryComunicator.InvParameters request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getGetByParametersMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_CREATE = 0;
@@ -582,6 +650,7 @@ public final class SocksInventoryGrpcGrpc {
   private static final int METHODID_UPDATE_INVENTORY = 4;
   private static final int METHODID_DELETE_BY_CARD_ID = 5;
   private static final int METHODID_DELETE_BY_ID = 6;
+  private static final int METHODID_GET_BY_PARAMETERS = 7;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -596,8 +665,8 @@ public final class SocksInventoryGrpcGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE:
@@ -628,13 +697,17 @@ public final class SocksInventoryGrpcGrpc {
           serviceImpl.deleteById((SocksInventoryComunicator.IntReqInventory) request,
               (io.grpc.stub.StreamObserver<SocksInventoryComunicator.EmptyInventoryMessage>) responseObserver);
           break;
+        case METHODID_GET_BY_PARAMETERS:
+          serviceImpl.getByParameters((SocksInventoryComunicator.InvParameters) request,
+              (io.grpc.stub.StreamObserver<SocksInventoryComunicator.inventory>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -648,12 +721,12 @@ public final class SocksInventoryGrpcGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     SocksInventoryGrpcBaseDescriptorSupplier() {}
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return SocksInventoryComunicator.getDescriptor();
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("SocksInventoryGrpc");
     }
@@ -673,7 +746,7 @@ public final class SocksInventoryGrpcGrpc {
       this.methodName = methodName;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
@@ -696,6 +769,7 @@ public final class SocksInventoryGrpcGrpc {
               .addMethod(getUpdateInventoryMethod())
               .addMethod(getDeleteByCardIdMethod())
               .addMethod(getDeleteByIdMethod())
+              .addMethod(getGetByParametersMethod())
               .build();
         }
       }

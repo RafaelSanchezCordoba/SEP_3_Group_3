@@ -23,4 +23,7 @@ public interface ISocksInventoryRepository extends JpaRepository<Inventory, Long
     @Modifying
     @Query("DELETE FROM Inventory i WHERE i.sockCard.id = :id")
     void deleteByCardId(@Param("id") long id);
+
+    @Query("SELECT i FROM Inventory i WHERE i.sockCard.id = :cardId AND i.color = :color AND i.size = :size")
+    Inventory getByParameters(@Param("cardId") long cardId, @Param("color") String color, @Param("size") String size);
 }

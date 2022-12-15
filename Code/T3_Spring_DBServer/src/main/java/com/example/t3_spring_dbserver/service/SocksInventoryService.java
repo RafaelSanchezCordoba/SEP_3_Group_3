@@ -55,4 +55,9 @@ public class SocksInventoryService implements ISocksInventoryService {
     public void deleteById(long id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public Inventory getByParameters(long cardId, String color, String size) {
+        return repository.getByParameters(cardId, color, size);
+    }
 }

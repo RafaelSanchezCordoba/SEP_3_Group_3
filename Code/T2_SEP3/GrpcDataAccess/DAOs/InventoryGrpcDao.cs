@@ -127,7 +127,14 @@ public class InventoryGrpcDao : InterfaceInventoryDao
 
     public Task<Inventory> GetByParameters(int scId, string color, string size)
     {
-        throw new NotImplementedException();
+        var req = new InvParameters()
+        {
+            CardId = scId, Color = color, Size = size
+        };
+        var resp = stub.getByParameters(req);
+        Inventory inventory = new Inventory(resp.CardId,resp.Color,resp.Size,resp.Quantity);
+        inventory.Id = resp.Id;
+        return Task.FromResult(inventory);
     }
 
 }
