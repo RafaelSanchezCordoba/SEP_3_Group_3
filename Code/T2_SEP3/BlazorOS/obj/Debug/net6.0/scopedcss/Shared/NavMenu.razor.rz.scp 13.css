@@ -1,0 +1,110 @@
+<<<<<<< HEAD
+.navbar-toggler[b-iknbjjsc52] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-iknbjjsc52] {
+=======
+.navbar-toggler[b-ov4nba62sm] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-ov4nba62sm] {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+<<<<<<< HEAD
+.navbar-brand[b-iknbjjsc52] {
+    font-size: 1.1rem;
+}
+
+.oi[b-iknbjjsc52] {
+=======
+.navbar-brand[b-ov4nba62sm] {
+    font-size: 1.1rem;
+}
+
+.oi[b-ov4nba62sm] {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+<<<<<<< HEAD
+.nav-item[b-iknbjjsc52] {
+=======
+.nav-item[b-ov4nba62sm] {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+<<<<<<< HEAD
+.nav-item:first-of-type[b-iknbjjsc52] {
+    padding-top: 1rem;
+}
+
+.nav-item:last-of-type[b-iknbjjsc52] {
+    padding-bottom: 1rem;
+}
+
+.nav-item[b-iknbjjsc52]  a {
+=======
+.nav-item:first-of-type[b-ov4nba62sm] {
+    padding-top: 1rem;
+}
+
+.nav-item:last-of-type[b-ov4nba62sm] {
+    padding-bottom: 1rem;
+}
+
+.nav-item[b-ov4nba62sm]  a {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    color: #d7d7d7;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+<<<<<<< HEAD
+.nav-item[b-iknbjjsc52]  a.active {
+=======
+.nav-item[b-ov4nba62sm]  a.active {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+<<<<<<< HEAD
+.nav-item[b-iknbjjsc52]  a:hover {
+=======
+.nav-item[b-ov4nba62sm]  a:hover {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+<<<<<<< HEAD
+    .navbar-toggler[b-iknbjjsc52] {
+        display: none;
+    }
+
+    .collapse[b-iknbjjsc52] {
+=======
+    .navbar-toggler[b-ov4nba62sm] {
+        display: none;
+    }
+
+    .collapse[b-ov4nba62sm] {
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

@@ -2,12 +2,14 @@ using Application.DaoInterfaces;
 using Application.LogicInterfaces;
 using Shared.DTOs;
 using Shared.Models;
-
-namespace Application.Logic;
-
 /// <summary>
 /// This class is the implementation of the business logic of our system.
 /// Implements the IShoppingCartDao
+/// </summary>
+namespace Application.Logic;
+
+/// <summary>
+/// 
 /// </summary>
 public class ShoppingCartLogic :IShoppingCartLogic
 {

@@ -1,0 +1,106 @@
+<<<<<<< HEAD
+*[b-91oe4ubkig]{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-91oe4ubkig]{
+   display: flex;
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center; 
+=======
+*[b-341o8pllcz]{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-341o8pllcz]{
+    display: flex;
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center;
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items:center;
+}
+
+<<<<<<< HEAD
+h2[b-91oe4ubkig]{
+   font-family: "Rubik";
+    font-size: 60px;
+    -webkit-text-stroke: 3px black;
+    color: #8b9cb3;
+    margin: 0px auto;
+}
+
+h4[b-91oe4ubkig]{
+    font-family: "hind madurai";
+    font-size: 50px;
+    margin: 0px auto;
+}
+h3[b-91oe4ubkig]{
+    font-family: "proza libre";
+    font-size: 60px;
+    margin: 0px auto;
+}
+
+.categoryTitle[b-91oe4ubkig]{
+   margin: 0px auto;
+=======
+h2[b-341o8pllcz]{
+
+    font-size: 50px;
+    /*color: #8b9cb3;*/
+    margin: 0px auto;
+    width: 100%;
+}
+
+h4[b-341o8pllcz]{
+
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+h3[b-341o8pllcz]{
+    font-size: 30px;
+    margin: 0px auto;
+}
+
+.categoryTitle[b-341o8pllcz]{
+    margin: 0px auto;
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    color: white;
+    font-family: "Arial Black";
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+}
+
+<<<<<<< HEAD
+.eco-container[b-91oe4ubkig]{
+=======
+.eco-container[b-341o8pllcz]{
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+    width: 45%;
+    margin: 0px auto;
+    background-color: #1dbf51;
+    padding: 20px;
+<<<<<<< HEAD
+    display: flex;
+    align-items:center;
+}
+
+.title-container[b-91oe4ubkig]{
+    display: flex;
+=======
+    color: white;
+}
+
+.title-container[b-341o8pllcz]{
+    text-align: center;
+>>>>>>> c47338410e90c8f0ff2b5f1be256c976cdd47a99
+}
+
+
+

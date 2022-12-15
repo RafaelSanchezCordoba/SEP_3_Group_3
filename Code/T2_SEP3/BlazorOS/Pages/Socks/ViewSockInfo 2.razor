@@ -1,0 +1,188 @@
+@page "/ViewSockInfo/{id:int}"
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@using global::Shared.DTOs
+@using System.Security.Claims
+@inject ISockCardService cardService
+@inject InterfaceInventoryService inventoryService 
+@inject ISocksService socksService
+@inject IShoppingCartService shoppingCartService
+@inject ICartItemService cardItemService
+@inject IUserService userService
+@inject NavigationManager navMgr
+
+
+<div style="display: inline">
+    <img class="sockImg" src=@card.Image/>
+
+    <div class="sockInfo">
+        <h4>@card.Title</h4>
+        <b><label id="price-label">@card.Price €</label></b>
+        <p>@card.Description</p>
+        <p>Material: @card.Material</p>
+        <p>Brand: @card.Brand</p>
+        <p>Type: @card.Type</p>
+        <p>Color: @selectedColor</p>
+        <div class="color-container">
+            @foreach (string color in colors)
+            {
+                <div class="colorBtn" style="background-color: @color; width: 25px; border: 1px black solid; margin: 5px" @onclick="() => { selectedSizes=null; selectedColor=color; LoadSizes(); ClearError();}"></div>
+            }
+        </div><br/><br/>
+        <p>Size: @selectedSizes</p>
+        <div class="size-container">
+            @foreach (string s in sizes)
+            {
+                <div class="sizeBtn" @onclick="() => { selectedSizes = s; ClearError(); }" >@s</div>
+            }
+        </div>
+        
+        <br/><br/>
+        <button @onclick="AddToCart" class="myButton">Add to the cart</button>
+        
+    </div>
+    @if (!string.IsNullOrEmpty(errorMsg))
+                          {
+                              <br/> <label style="color:red">@errorMsg</label>
+                          }
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+   
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+    
+    private string errorMsg{ get; set; } = "";
+    private User user { get; set; } = null;
+    private bool isLoggedIn=false;
+    private SocksCard card{ get; set; }=null!;
+    private ICollection<String> colors { get; set; }=new List<string>();
+    private String selectedColor{ get; set; }="" ;
+    private ICollection<String> sizes{ get; set; }=new List<string>();
+    private String selectedSizes{ get; set; }="";
+    private ICollection<Inventory> inventories { get; set; }=new List<Inventory>();
+    private global::Shared.Models.ShoppingCart  sc = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            card = await cardService.GetById(Id);
+            inventories = await inventoryService.GetByCardIdAsync(card.Id);
+            LoadColors();
+            AuthenticationState authState = await AuthState;
+            ClaimsPrincipal userClaims = authState.User;
+            isLoggedIn = userClaims.Identity != null;
+            if (!isLoggedIn) return;
+            string? userEmail = userClaims.FindFirst("Email").Value;
+            user = await userService.GetByEmail(userEmail);
+            sc = await shoppingCartService.GetByUserIdAsync(user.Id);
+            
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
+    }
+
+    private void LoadColors()
+    {
+        try
+        {
+            foreach (Inventory i in inventories)
+            {
+                if (!colors.Contains(i.Color))
+                {
+                    colors.Add(i.Color);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
+    }
+    
+    
+    private void LoadSizes()
+    {
+        try
+        {
+            sizes.Clear();
+            foreach (var i in inventories)
+            {
+                if (selectedColor.Equals(i.Color))
+                {
+                    if (!sizes.Contains(i.Size))
+                    {
+                        sizes.Add(i.Size);
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
+    }
+
+    private async void AddToCart()
+    {
+        if (selectedColor.Equals(""))
+        {
+            errorMsg = "Please select a color!";
+            return;
+        }
+        
+        if (selectedSizes.Equals(""))
+        {
+            errorMsg = "Please select a size!";
+            return;
+        }
+       try
+       {
+           errorMsg = "";
+            if (user==null)
+            {sc =await shoppingCartService.GetByIdAsync(4);}
+            if (sc==null)
+            {
+                CreateShoppingCartDto scdto= new CreateShoppingCartDto(user.Id);
+                sc = await shoppingCartService.CreateAsync(scdto);
+            }
+            CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
+            Socks socks = await socksService.CreateAsync(socksDto);
+            CreateCartItemDto dto = new CreateCartItemDto(sc.Id, socks.Id);
+            await CartItemService.CreateAsync(dto);
+            foreach (Product p in sc.Products)
+            {
+                if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
+                {
+                    CartItem item= await cardItemService.GetByIdsAsync(p.Id, sc.Id);
+                    int quantity = item.Quantity;
+                    quantity++;
+                    await CartItemService.UpdateQuantityAsync(item.Id, quantity);
+                    navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
+                    return;
+                } 
+            }
+            
+            await shoppingCartService.AddProductAsync(socks, sc.Id);
+            navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
+        }catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorMsg = e.Message;
+        }
+    }
+
+    public void ClearError()
+    {
+        errorMsg = "";
+    }
+
+}
