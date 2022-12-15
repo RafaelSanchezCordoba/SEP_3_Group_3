@@ -1,34 +1,8 @@
 {
-  "Inventories": [
-    {
-      "CardId": 0,
-      "Color": "none",
-      "Size": "none",
-      "Quantity": 0,
-      "Id": 0
-    }
-  ],
-  "ShoppingCarts": [
-    {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 12,
-          "Id": 19,
-          "Size": "xl",
-          "Color": "black"
-        }
-      ]
-    },
-    {
-      "Id": 4,
-      "OwnerId": 0,
-      "Products": []
-    }
-  ],
-  "SocksCards": null,
-  "Socks": null,
+  "Inventories": [],
+  "ShoppingCarts": [],
+  "SocksCards": [],
+  "Socks": [],
   "Users": [
     {
       "Id": 1,
@@ -38,129 +12,15 @@
       "PhoneNumber": null,
       "Address": null,
       "Auth": "Manager"
-    },
-    {
-      "Id": 2,
-      "Email": "string",
-      "Password": "string",
-      "Name": null,
-      "PhoneNumber": null,
-      "Address": null,
-      "Auth": "Customer"
-    },
-    {
-      "Id": 4,
-      "Email": "rafa",
-      "Password": "12345",
-      "Name": null,
-      "PhoneNumber": null,
-      "Address": null,
-      "Auth": "Customer"
-    },
-    {
-      "Id": 5,
-      "Email": "h",
-      "Password": "hhhhh",
-      "Name": null,
-      "PhoneNumber": null,
-      "Address": null,
-      "Auth": "Customer"
-    },
-    {
-      "Id": 3,
-      "Email": "rosa",
-      "Password": "12345",
-      "Name": "Rosa Briales",
-      "PhoneNumber": "\u002B45 50242425",
-      "Address": {
-        "Id": 0,
-        "UserId": 3,
-        "Country": "Denmark",
-        "City": "Horsens",
-        "PostCode": 8700,
-        "Street": "Kamtjatka",
-        "Number": 11,
-        "ExtraInfo": ""
-      },
-      "Auth": "customer"
     }
   ],
   "Adresses": [],
-  "CardItems": [
-    {
-      "Id": 0,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 0
-    },
-    {
-      "Id": 2,
-      "Quantity": 1,
-      "ShoppingCartId": 4,
-      "ProductId": 20
-    },
-    {
-      "Id": 4,
-      "Quantity": 1,
-      "ShoppingCartId": 4,
-      "ProductId": 22
-    },
-    {
-      "Id": 5,
-      "Quantity": 1,
-      "ShoppingCartId": 4,
-      "ProductId": 23
-    },
-    {
-      "Id": 6,
-      "Quantity": 1,
-      "ShoppingCartId": 4,
-      "ProductId": 24
-    },
-    {
-      "Id": 3,
-      "Quantity": 2,
-      "ShoppingCartId": 4,
-      "ProductId": 21
-    },
-    {
-      "Id": 1,
-      "Quantity": 4,
-      "ShoppingCartId": 1,
-      "ProductId": 19
-    }
-  ],
-  "Orders": [
-    {
-      "Id": 0,
-      "NumberOfProducts": 0,
-      "TotalPrice": 0,
-      "Status": null,
-      "CustomerName": null,
-      "CustomerEmail": null,
-      "CustomerPhoneNumber": null,
-      "ShoppingCart": null,
-      "Shipping": null
-    }
-  ],
+  "CardItems": [],
+  "Orders": [],
   "TrouserCards": [
-    {
-      "Title": null,
-      "Description": null,
-      "Price": 0,
-      "Material": null,
-      "Brand": null,
-      "Image": null,
-      "Type": null,
-      "Id": 0
-    }
+    
   ],
   "Trousers": [
-    {
-      "ProductCardId": 0,
-      "Id": 0,
-      "Size": null,
-      "Color": null
-    }
+    
   ]
 }

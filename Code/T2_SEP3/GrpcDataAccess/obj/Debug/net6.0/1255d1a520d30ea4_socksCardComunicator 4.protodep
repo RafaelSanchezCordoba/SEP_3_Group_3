@@ -1,0 +1,2 @@
+obj/Debug/net6.0/Protos/SocksCardComunicator.cs \
+obj/Debug/net6.0/Protos/SocksCardComunicatorGrpc.cs: Protos/socksCardComunicator.proto

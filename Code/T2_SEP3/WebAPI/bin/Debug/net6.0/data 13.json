@@ -3,13 +3,6 @@
     {
       "CardId": 1,
       "Color": "grey",
-      "Size": "xs",
-      "Quantity": 5,
-      "Id": 7
-    },
-    {
-      "CardId": 1,
-      "Color": "grey",
       "Size": "s",
       "Quantity": 5,
       "Id": 8
@@ -36,13 +29,6 @@
       "Id": 11
     },
     {
-      "CardId": 4,
-      "Color": "red",
-      "Size": "xl",
-      "Quantity": 988,
-      "Id": 14
-    },
-    {
       "CardId": 5,
       "Color": "blue",
       "Size": "s",
@@ -64,13 +50,6 @@
       "Id": 18
     },
     {
-      "CardId": 4,
-      "Color": "blue",
-      "Size": "m",
-      "Quantity": 44,
-      "Id": 19
-    },
-    {
       "CardId": 2,
       "Color": "red",
       "Size": "xs",
@@ -90,13 +69,6 @@
       "Size": "xxl",
       "Quantity": 23,
       "Id": 6
-    },
-    {
-      "CardId": 1,
-      "Color": "yellow",
-      "Size": "s",
-      "Quantity": 160,
-      "Id": 21
     },
     {
       "CardId": 4,
@@ -169,11 +141,39 @@
       "Id": 28
     },
     {
+      "CardId": 4,
+      "Color": "red",
+      "Size": "xl",
+      "Quantity": 990,
+      "Id": 14
+    },
+    {
+      "CardId": 4,
+      "Color": "blue",
+      "Size": "m",
+      "Quantity": 52,
+      "Id": 19
+    },
+    {
+      "CardId": 1,
+      "Color": "yellow",
+      "Size": "s",
+      "Quantity": 159,
+      "Id": 21
+    },
+    {
       "CardId": 1,
       "Color": "yellow",
       "Size": "m",
-      "Quantity": 207,
+      "Quantity": 206,
       "Id": 20
+    },
+    {
+      "CardId": 1,
+      "Color": "grey",
+      "Size": "xs",
+      "Quantity": 4,
+      "Id": 7
     }
   ],
   "ShoppingCarts": [
@@ -210,18 +210,12 @@
           "Id": 15,
           "Size": "m",
           "Color": "yellow"
-        }
-      ]
-    },
-    {
-      "Id": 3,
-      "OwnerId": 3,
-      "Products": [
+        },
         {
-          "ProductCardId": 4,
-          "Id": 20,
+          "ProductCardId": 2,
+          "Id": 24,
           "Size": "m",
-          "Color": "blue"
+          "Color": "grey"
         }
       ]
     },
@@ -231,30 +225,43 @@
       "Products": [
         {
           "ProductCardId": 2,
-          "Id": 19,
-          "Size": "xxl",
-          "Color": "red"
+          "Id": 25,
+          "Size": "m",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 2,
+          "Id": 26,
+          "Size": "xl",
+          "Color": "blue"
         },
         {
           "ProductCardId": 3,
-          "Id": 21,
+          "Id": 27,
           "Size": "s",
           "Color": "purple"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 28,
+          "Size": "s",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 5,
+          "Id": 29,
+          "Size": "l",
+          "Color": "blue"
         }
       ]
+    },
+    {
+      "Id": 3,
+      "OwnerId": 3,
+      "Products": []
     }
   ],
   "SocksCards": [
-    {
-      "Title": "Pokemon socks",
-      "Description": "Cute Psyduck socks",
-      "Price": 5,
-      "Material": "Recycled polyester",
-      "Brand": "pokemon",
-      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
-      "Type": "Mid calf",
-      "Id": 1
-    },
     {
       "Title": "Xmas Sock",
       "Description": "Perfect socks for your elf costume",
@@ -294,6 +301,16 @@
       "Image": "https://s.ecrater.com/stores/3693/55cd6e2b3b4dd_3693b.jpg",
       "Type": "Low cut",
       "Id": 5
+    },
+    {
+      "Title": "Pokemon Socks",
+      "Description": "Cute Psyduck socks",
+      "Price": 5,
+      "Material": "Recycled polyester",
+      "Brand": "pokemon",
+      "Image": "https://cdn.estore.nu/43877-large_default/pok-mon-str-mper---psyduck.jpg",
+      "Type": "Mid calf",
+      "Id": 1
     }
   ],
   "Socks": [
@@ -394,16 +411,82 @@
       "Color": "red"
     },
     {
-      "ProductCardId": 4,
-      "Id": 20,
-      "Size": "m",
-      "Color": "blue"
-    },
-    {
       "ProductCardId": 3,
       "Id": 21,
       "Size": "s",
       "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 22,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 23,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 24,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 25,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 26,
+      "Size": "xl",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 3,
+      "Id": 27,
+      "Size": "s",
+      "Color": "purple"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 28,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 5,
+      "Id": 29,
+      "Size": "l",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 30,
+      "Size": "s",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 31,
+      "Size": "m",
+      "Color": "grey"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 32,
+      "Size": "m",
+      "Color": "yellow"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 33,
+      "Size": "xs",
+      "Color": "grey"
     }
   ],
   "Users": [
@@ -413,7 +496,7 @@
       "Password": "admin",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Manager"
     },
     {
@@ -422,26 +505,8 @@
       "Password": "string",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Customer"
-    },
-    {
-      "Id": 3,
-      "Email": "rosa",
-      "Password": "12345",
-      "Name": "Rosa Briales",
-      "PhoneNumber": "\u002B45 50444444",
-      "Adress": {
-        "Id": -1,
-        "UserId": 3,
-        "Country": "Denmark",
-        "City": "Horsens",
-        "PostCode": 8700,
-        "Street": "Kamtjatka",
-        "Number": 1,
-        "ExtraInfo": "apt77"
-      },
-      "Auth": "customer"
     },
     {
       "Id": 4,
@@ -449,8 +514,35 @@
       "Password": "12345",
       "Name": null,
       "PhoneNumber": null,
-      "Adress": null,
+      "Address": null,
       "Auth": "Customer"
+    },
+    {
+      "Id": 5,
+      "Email": "h",
+      "Password": "hhhhh",
+      "Name": null,
+      "PhoneNumber": null,
+      "Address": null,
+      "Auth": "Customer"
+    },
+    {
+      "Id": 3,
+      "Email": "rosa",
+      "Password": "12345",
+      "Name": "Rosa Briales",
+      "PhoneNumber": "\u002B45 50242425",
+      "Address": {
+        "Id": 0,
+        "UserId": 3,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      },
+      "Auth": "customer"
     }
   ],
   "Adresses": [],
@@ -474,40 +566,10 @@
       "ProductId": 5
     },
     {
-      "Id": 6,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 6
-    },
-    {
-      "Id": 7,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 7
-    },
-    {
-      "Id": 8,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 8
-    },
-    {
-      "Id": 9,
-      "Quantity": 1,
-      "ShoppingCartId": 0,
-      "ProductId": 9
-    },
-    {
       "Id": 13,
       "Quantity": 1,
       "ShoppingCartId": 2,
       "ProductId": 13
-    },
-    {
-      "Id": 11,
-      "Quantity": 2,
-      "ShoppingCartId": 3,
-      "ProductId": 11
     },
     {
       "Id": 14,
@@ -552,16 +614,76 @@
       "ProductId": 19
     },
     {
-      "Id": 20,
-      "Quantity": 1,
-      "ShoppingCartId": 3,
-      "ProductId": 20
-    },
-    {
       "Id": 21,
       "Quantity": 1,
       "ShoppingCartId": 4,
       "ProductId": 21
+    },
+    {
+      "Id": 22,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 22
+    },
+    {
+      "Id": 23,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 23
+    },
+    {
+      "Id": 24,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 24
+    },
+    {
+      "Id": 26,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 26
+    },
+    {
+      "Id": 27,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 27
+    },
+    {
+      "Id": 28,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 28
+    },
+    {
+      "Id": 29,
+      "Quantity": 1,
+      "ShoppingCartId": 4,
+      "ProductId": 29
+    },
+    {
+      "Id": 30,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 30
+    },
+    {
+      "Id": 25,
+      "Quantity": 6,
+      "ShoppingCartId": 4,
+      "ProductId": 25
+    },
+    {
+      "Id": 31,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 32
+    },
+    {
+      "Id": 32,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 33
     }
   ],
   "Orders": [
@@ -973,6 +1095,147 @@
         "Number": 1,
         "ExtraInfo": "apt77"
       }
+    },
+    {
+      "Id": 14,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 30,
+            "Size": "s",
+            "Color": "yellow"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 15,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 32,
+            "Size": "m",
+            "Color": "yellow"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      }
+    },
+    {
+      "Id": 16,
+      "NumberOfProducts": 2,
+      "TotalPrice": 10,
+      "Status": "Processing order",
+      "CustomerName": "Rosa Briales",
+      "CustomerEmail": "rosa",
+      "CustomerPhoneNumber": "\u002B45 50242425",
+      "ShoppingCart": {
+        "Id": 3,
+        "OwnerId": 3,
+        "Products": [
+          {
+            "ProductCardId": 1,
+            "Id": 33,
+            "Size": "xs",
+            "Color": "grey"
+          }
+        ]
+      },
+      "Shipping": {
+        "Id": 1,
+        "UserId": -1,
+        "Country": "Denmark",
+        "City": "Horsens",
+        "PostCode": 8700,
+        "Street": "Kamtjatka",
+        "Number": 11,
+        "ExtraInfo": ""
+      }
+    }
+  ],
+  "TrouserCards": [
+    {
+      "Title": "Levis world",
+      "Description": "This levis...",
+      "Price": 299,
+      "Material": "poliester",
+      "Brand": "Levis",
+      "Image": "asdfasd",
+      "Type": "Jeans",
+      "Id": 1
+    },
+    {
+      "Title": "Gucci Sprint 2022",
+      "Description": "Gucci jeans...",
+      "Price": 2499.99,
+      "Material": "poliester",
+      "Brand": "Gucci",
+      "Image": "asdfasdfasd",
+      "Type": "Jeans",
+      "Id": 2
+    }
+  ],
+  "Trousers": [
+    {
+      "ProductCardId": 1,
+      "Id": 1,
+      "Size": "xl",
+      "Color": "black"
+    },
+    {
+      "ProductCardId": 1,
+      "Id": 2,
+      "Size": "m",
+      "Color": "orange"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 3,
+      "Size": "s",
+      "Color": "blue"
+    },
+    {
+      "ProductCardId": 2,
+      "Id": 4,
+      "Size": "m",
+      "Color": "red"
     }
   ]
 }

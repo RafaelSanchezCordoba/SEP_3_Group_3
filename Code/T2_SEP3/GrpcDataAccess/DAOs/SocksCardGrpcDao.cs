@@ -1,20 +1,19 @@
-using System.Threading.Channels;
 using Application.DaoInterfaces;
 using Grpc.Core;
 using Shared.DTOs;
 using Shared.Models;
-using Channel = Grpc.Core.Channel;
 
 namespace GrpcDataAccess.DAOs;
 
 public class SocksCardGrpcDao : ISockCardDao
-{ 
+{
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
     private SocksCardGrpc.SocksCardGrpcClient stub = new SocksCardGrpc.SocksCardGrpcClient(channel);
-    
+
+
     public Task<SocksCard> CreateAsync(SocksCard sockCard)
      {
-         var req = new sockCard
+         var req = new sockCard()
          {
              // Id = sockCard.Id,
              Brand = sockCard.Brand, Title = sockCard.Title, Description = sockCard.Description, Image = sockCard.Image,

@@ -3,8 +3,10 @@ package com.example.t3_spring_dbserver.GrpcImpl;
 import com.example.t3_spring_dbserver.DTOs.InventoryDto;
 import com.example.t3_spring_dbserver.entity.Inventory;
 import com.example.t3_spring_dbserver.entity.SockCard;
+import com.example.t3_spring_dbserver.entity.TrouserCard;
 import com.example.t3_spring_dbserver.service.SockCardService;
 import com.example.t3_spring_dbserver.service.SocksInventoryService;
+import com.example.t3_spring_dbserver.service.TrouserCardService;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.EmptyInventoryMessage;
@@ -26,12 +28,13 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcGrpc.SocksI
     @Autowired
     private SockCardService cardService;
 
+
     @Override
     public void create(inventory req, StreamObserver<EmptyInventoryMessage> responseStream) {
-        System.out.println("riecieved req to save inv with id::"+ req.getId());
-        SockCard sockCard = cardService.getById(req.getCardId());
+        System.out.println("riecieved req to save inv with id::" + req.getId());
+        SockCard sockCard = cardService.getById(req.getId());
 
-        Inventory daoInventory = new Inventory(req.getColor(),req.getSize(),req.getQuantity(),sockCard);
+        Inventory daoInventory = new Inventory(req.getColor(), req.getSize(), req.getQuantity(), sockCard);
         service.create(daoInventory);
 
         responseStream.onNext(SocksInventoryComunicator.EmptyInventoryMessage.newBuilder().build());

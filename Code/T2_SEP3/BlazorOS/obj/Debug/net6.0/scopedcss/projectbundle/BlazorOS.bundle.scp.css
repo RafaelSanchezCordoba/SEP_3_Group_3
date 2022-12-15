@@ -1,6 +1,10 @@
 /* /Pages/CreateAccount.razor.rz.scp.css */
 
+<<<<<<< Updated upstream
 .myButton[b-526gsgnfxa]{
+=======
+.myButton[b-ow5nzj4yj6]{
+>>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -17,7 +21,11 @@
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .myButton span[b-526gsgnfxa]{
+=======
+.myButton span[b-ow5nzj4yj6]{
+>>>>>>> Stashed changes
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -28,6 +36,7 @@
     transform: rotate(0deg);
 }
 
+<<<<<<< Updated upstream
 .myButton:hover[b-526gsgnfxa]{
     background-color: #8b9cb3;
 }
@@ -83,11 +92,32 @@
     width: auto;
     margin: 30px 0px;
     background-position: center;
+=======
+.myButton:hover[b-ow5nzj4yj6]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-ow5nzj4yj6]{
+    transform: scale(0.95);
+}
+/* /Pages/index.razor.rz.scp.css */
+*[b-91oe4ubkig]{
+    box-sizing: border-box;
+}
+
+.categoryCard[b-91oe4ubkig]{
+   display: flex;
+    height: 380px;
+    width: auto;
+    margin: 30px 0px;
+    background-position: center; 
+>>>>>>> Stashed changes
     background-repeat: no-repeat;
     background-size: cover;
     align-items:center;
 }
 
+<<<<<<< Updated upstream
 h2[b-341o8pllcz]{
 
     font-size: 50px;
@@ -109,29 +139,69 @@ h3[b-341o8pllcz]{
 
 .categoryTitle[b-341o8pllcz]{
     margin: 0px auto;
+=======
+h2[b-91oe4ubkig]{
+   font-family: "Rubik";
+    font-size: 60px;
+    -webkit-text-stroke: 3px black;
+    color: #8b9cb3;
+    margin: 0px auto;
+}
+
+h4[b-91oe4ubkig]{
+    font-family: "hind madurai";
+    font-size: 50px;
+    margin: 0px auto;
+}
+h3[b-91oe4ubkig]{
+    font-family: "proza libre";
+    font-size: 60px;
+    margin: 0px auto;
+}
+
+.categoryTitle[b-91oe4ubkig]{
+   margin: 0px auto;
+>>>>>>> Stashed changes
     color: white;
     font-family: "Arial Black";
     font-size: 100px;
     -webkit-text-stroke: 3px black;
 }
 
+<<<<<<< Updated upstream
 .eco-container[b-341o8pllcz]{
+=======
+.eco-container[b-91oe4ubkig]{
+>>>>>>> Stashed changes
     width: 45%;
     margin: 0px auto;
     background-color: #1dbf51;
     padding: 20px;
+<<<<<<< Updated upstream
     color: white;
 }
 
 .title-container[b-341o8pllcz]{
     text-align: center;
+=======
+    display: flex;
+    align-items:center;
+}
+
+.title-container[b-91oe4ubkig]{
+    display: flex;
+>>>>>>> Stashed changes
 }
 
 
 
 /* /Pages/Login.razor.rz.scp.css */
 
+<<<<<<< Updated upstream
 .myButton[b-o3v1w4jous]{
+=======
+.myButton[b-k8am3hw2wi]{
+>>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -148,7 +218,11 @@ h3[b-341o8pllcz]{
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .myButton span[b-o3v1w4jous]{
+=======
+.myButton span[b-k8am3hw2wi]{
+>>>>>>> Stashed changes
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -159,6 +233,7 @@ h3[b-341o8pllcz]{
     transform: rotate(0deg);
 }
 
+<<<<<<< Updated upstream
 .myButton:hover[b-o3v1w4jous]{
     background-color: #8b9cb3;
 }
@@ -209,39 +284,82 @@ h3[b-341o8pllcz]{
 }
 
 .card[b-xmb3xxwfi1]{
+=======
+.myButton:hover[b-k8am3hw2wi]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-k8am3hw2wi]{
+    transform: scale(0.95);
+}
+/* /Pages/OrderInformation.razor.rz.scp.css */
+*[b-42bsyk1tlt] {
+    box-sizing: border-box;
+}
+
+.card[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     width: 65%;
     padding: 20px;
     float: left;
 
 }
 
+<<<<<<< Updated upstream
 .form-group-field[b-xmb3xxwfi1]{
+=======
+.form-group-field[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     padding: 10px;
     float: left;
 }
 
+<<<<<<< Updated upstream
 .button-message[b-xmb3xxwfi1] {
+=======
+.button-message[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
     float: left;
     margin-left: 2%;
 }
 
+<<<<<<< Updated upstream
 .small-form-field[b-xmb3xxwfi1] {
+=======
+.small-form-field[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
+<<<<<<< Updated upstream
 input[b-xmb3xxwfi1] {
+=======
+input[b-42bsyk1tlt]
+{
+>>>>>>> Stashed changes
     width: 73%;
     float: right;
 }
 
+<<<<<<< Updated upstream
 .long-input[b-xmb3xxwfi1] {
     width: 87%;
 }
 
 .myButton[b-xmb3xxwfi1]{
+=======
+.long-input[b-42bsyk1tlt]
+{
+    width: 87%;
+}
+
+.myButton[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -258,7 +376,11 @@ input[b-xmb3xxwfi1] {
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .myButton span[b-xmb3xxwfi1]{
+=======
+.myButton span[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -269,6 +391,7 @@ input[b-xmb3xxwfi1] {
     transform: rotate(0deg);
 }
 
+<<<<<<< Updated upstream
 .myButton:hover[b-xmb3xxwfi1]{
     background-color: #8b9cb3;
 }
@@ -278,6 +401,17 @@ input[b-xmb3xxwfi1] {
 }
 
 .payment-info[b-xmb3xxwfi1]{
+=======
+.myButton:hover[b-42bsyk1tlt]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-42bsyk1tlt]{
+    transform: scale(0.95);
+}
+
+.payment-info[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     position: absolute;
     top: 50%;
     left: 50%;
@@ -288,12 +422,20 @@ input[b-xmb3xxwfi1] {
     margin: -100px 0 0 -100px;    
 }
 
+<<<<<<< Updated upstream
 .table-div[b-xmb3xxwfi1]{
+=======
+.table-div[b-42bsyk1tlt]{
+>>>>>>> Stashed changes
     width: 55%;
     float: left;
 }
 
+<<<<<<< Updated upstream
 .order-summary-div[b-xmb3xxwfi1]
+=======
+.order-summary-div[b-42bsyk1tlt]
+>>>>>>> Stashed changes
 {
     border: 1px solid black;
     padding: 20px;
@@ -301,44 +443,80 @@ input[b-xmb3xxwfi1] {
     float: right;
 }
 /* /Pages/Profile.razor.rz.scp.css */
+<<<<<<< Updated upstream
 *[b-hcozhfcqqu] {
     box-sizing: border-box;
 }
 
 .card[b-hcozhfcqqu]{
+=======
+*[b-oomwygka46] {
+    box-sizing: border-box;
+}
+
+.card[b-oomwygka46]{
+>>>>>>> Stashed changes
     width: 65%;
     padding: 20px;
     float: left;
 
 }
 
+<<<<<<< Updated upstream
 .form-group-field[b-hcozhfcqqu]{
+=======
+.form-group-field[b-oomwygka46]{
+>>>>>>> Stashed changes
     padding: 10px;
     float: left;
 }
 
+<<<<<<< Updated upstream
 .button-message[b-hcozhfcqqu] {
+=======
+.button-message[b-oomwygka46]
+{
+>>>>>>> Stashed changes
     float: left;
     margin-left: 2%;
 }
 
+<<<<<<< Updated upstream
 .small-form-field[b-hcozhfcqqu] {
+=======
+.small-form-field[b-oomwygka46]
+{
+>>>>>>> Stashed changes
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
+<<<<<<< Updated upstream
 input[b-hcozhfcqqu] {
+=======
+input[b-oomwygka46]
+{
+>>>>>>> Stashed changes
     width: 73%;
     float: right;
 }
 
+<<<<<<< Updated upstream
 .long-input[b-hcozhfcqqu] {
     width: 87%;
 }
 
 .myButton[b-hcozhfcqqu]{
+=======
+.long-input[b-oomwygka46]
+{
+    width: 87%;
+}
+
+.myButton[b-oomwygka46]{
+>>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -355,7 +533,11 @@ input[b-hcozhfcqqu] {
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .myButton span[b-hcozhfcqqu]{
+=======
+.myButton span[b-oomwygka46]{
+>>>>>>> Stashed changes
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -366,6 +548,7 @@ input[b-hcozhfcqqu] {
     transform: rotate(0deg);
 }
 
+<<<<<<< Updated upstream
 .myButton:hover[b-hcozhfcqqu]{
     background-color: #8b9cb3;
 }
@@ -379,18 +562,38 @@ input[b-hcozhfcqqu] {
 }
 
 .table-div[b-rmsxhl3zv7] {
+=======
+.myButton:hover[b-oomwygka46]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-oomwygka46]{
+    transform: scale(0.95);
+}
+/* /Pages/ShoppingCart.razor.rz.scp.css */
+*[b-7xljfgsik8] {box-sizing: border-box;}
+
+.table-div[b-7xljfgsik8]
+{
+>>>>>>> Stashed changes
     width: 60%;
     margin-right: 5px;
     float: left;
 } 
 
+<<<<<<< Updated upstream
 .order-summary-div[b-rmsxhl3zv7] {
+=======
+.order-summary-div[b-7xljfgsik8]
+{
+>>>>>>> Stashed changes
     width: 36%;
     border: 3px solid black;
     float: right;
     padding: 10px;
 }
 
+<<<<<<< Updated upstream
 .quantity-input[b-rmsxhl3zv7]{
     width: 40px;
 }
@@ -400,6 +603,18 @@ input[b-hcozhfcqqu] {
 }
 
 .myButton[b-rmsxhl3zv7]{
+=======
+.quantity-input[b-7xljfgsik8]{
+    width: 40px;
+}
+
+#checkout-btn[b-7xljfgsik8]
+{
+    width: 100%;
+}
+
+.myButton[b-7xljfgsik8]{
+>>>>>>> Stashed changes
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -416,7 +631,11 @@ input[b-hcozhfcqqu] {
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .myButton span[b-rmsxhl3zv7]{
+=======
+.myButton span[b-7xljfgsik8]{
+>>>>>>> Stashed changes
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -427,11 +646,19 @@ input[b-hcozhfcqqu] {
     transform: rotate(0deg);
 }
 
+<<<<<<< Updated upstream
 .myButton:hover[b-rmsxhl3zv7]{
     background-color: #8b9cb3;
 }
 
 .myButton:active[b-rmsxhl3zv7]{
+=======
+.myButton:hover[b-7xljfgsik8]{
+    background-color: #8b9cb3;
+}
+
+.myButton:active[b-7xljfgsik8]{
+>>>>>>> Stashed changes
     transform: scale(0.95);
 }
 /* /Pages/Socks/BrowseSocks.razor.rz.scp.css */
@@ -813,12 +1040,17 @@ input[b-qsk2q83mke] {
     transform: scale(0.95);
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
+<<<<<<< Updated upstream
 .page[b-wcssxcvg4k] {
+=======
+.page[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 main[b-wcssxcvg4k] {
     flex: 1;
 }
@@ -828,6 +1060,17 @@ main[b-wcssxcvg4k] {
 }
 
 .top-row[b-wcssxcvg4k] {
+=======
+main[b-fgro0f5ktg] {
+    flex: 1;
+}
+
+.sidebar[b-fgro0f5ktg] {
+    background-image: linear-gradient(180deg, #1B263B 0%,#778DA9  70%);
+}
+
+.top-row[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
     background-image: linear-gradient(90deg, #1B263B 0%,#778DA9  70%);
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -836,22 +1079,35 @@ main[b-wcssxcvg4k] {
     align-items: center;
 }
 
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+=======
+.top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+>>>>>>> Stashed changes
     white-space: nowrap;
     margin-left: 1.5rem;
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a:hover, .top-row[b-wcssxcvg4k]  .btn-link:hover {
     text-decoration: underline;
 }
 
 .top-row[b-wcssxcvg4k]  a:first-child {
+=======
+.top-row[b-fgro0f5ktg]  a:hover, .top-row[b-fgro0f5ktg]  .btn-link:hover {
+    text-decoration: underline;
+}
+
+.top-row[b-fgro0f5ktg]  a:first-child {
+>>>>>>> Stashed changes
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 @media (max-width: 640.98px) {
+<<<<<<< Updated upstream
     .top-row:not(.auth)[b-wcssxcvg4k] {
         display: none;
     }
@@ -861,65 +1117,117 @@ main[b-wcssxcvg4k] {
     }
 
     .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+=======
+    .top-row:not(.auth)[b-fgro0f5ktg] {
+        display: none;
+    }
+
+    .top-row.auth[b-fgro0f5ktg] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+>>>>>>> Stashed changes
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
+<<<<<<< Updated upstream
     .page[b-wcssxcvg4k] {
         flex-direction: row;
     }
 
     .sidebar[b-wcssxcvg4k] {
+=======
+    .page[b-fgro0f5ktg] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
+<<<<<<< Updated upstream
     .top-row.auth[b-wcssxcvg4k]  a:first-child {
+=======
+    .top-row.auth[b-fgro0f5ktg]  a:first-child {
+>>>>>>> Stashed changes
         flex: 1;
         text-align: right;
         width: 0;
     }
 
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k], article[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg], article[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 /* /Shared/NavMenu.razor.rz.scp.css */
+<<<<<<< Updated upstream
 .navbar-toggler[b-ov4nba62sm] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .top-row[b-ov4nba62sm] {
+=======
+.navbar-toggler[b-iknbjjsc52] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-iknbjjsc52] {
+>>>>>>> Stashed changes
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
+<<<<<<< Updated upstream
 .navbar-brand[b-ov4nba62sm] {
     font-size: 1.1rem;
 }
 
 .oi[b-ov4nba62sm] {
+=======
+.navbar-brand[b-iknbjjsc52] {
+    font-size: 1.1rem;
+}
+
+.oi[b-iknbjjsc52] {
+>>>>>>> Stashed changes
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm] {
+=======
+.nav-item[b-iknbjjsc52] {
+>>>>>>> Stashed changes
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
+<<<<<<< Updated upstream
 .nav-item:first-of-type[b-ov4nba62sm] {
     padding-top: 1rem;
 }
@@ -929,6 +1237,17 @@ main[b-wcssxcvg4k] {
 }
 
 .nav-item[b-ov4nba62sm]  a {
+=======
+.nav-item:first-of-type[b-iknbjjsc52] {
+    padding-top: 1rem;
+}
+
+.nav-item:last-of-type[b-iknbjjsc52] {
+    padding-bottom: 1rem;
+}
+
+.nav-item[b-iknbjjsc52]  a {
+>>>>>>> Stashed changes
     color: #d7d7d7;
     border-radius: 4px;
     height: 3rem;
@@ -937,22 +1256,38 @@ main[b-wcssxcvg4k] {
     line-height: 3rem;
 }
 
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm]  a.active {
+=======
+.nav-item[b-iknbjjsc52]  a.active {
+>>>>>>> Stashed changes
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
+<<<<<<< Updated upstream
 .nav-item[b-ov4nba62sm]  a:hover {
+=======
+.nav-item[b-iknbjjsc52]  a:hover {
+>>>>>>> Stashed changes
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
+<<<<<<< Updated upstream
     .navbar-toggler[b-ov4nba62sm] {
         display: none;
     }
 
     .collapse[b-ov4nba62sm] {
+=======
+    .navbar-toggler[b-iknbjjsc52] {
+        display: none;
+    }
+
+    .collapse[b-iknbjjsc52] {
+>>>>>>> Stashed changes
         /* Never collapse the sidebar for wide screens */
         display: block;
     }

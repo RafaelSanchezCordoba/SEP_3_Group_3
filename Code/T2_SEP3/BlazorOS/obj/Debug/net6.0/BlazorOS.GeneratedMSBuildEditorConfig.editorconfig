@@ -11,6 +11,7 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorOS
 build_property.RootNamespace = BlazorOS
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -125,3 +126,111 @@ build_metadata.AdditionalFiles.CssScope = b-wcssxcvg4k
 [C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ov4nba62sm
+=======
+build_property.ProjectDir = /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/AboutUs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXRVcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSockInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvQ3JlYXRlU29ja0ludmVudG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/EditSockCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvRWRpdFNvY2tDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/ManageSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvTWFuYWdlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/EditTrouserCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9FZGl0VHJvdXNlckNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/ManageTrousers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9NYW5hZ2VUcm91c2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXBkYXRlSW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/CreateAccount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlQWNjb3VudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ow5nzj4yj6
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-91oe4ubkig
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-k8am3hw2wi
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/OrderInformation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJJbmZvcm1hdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-42bsyk1tlt
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-oomwygka46
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/ShoppingCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hvcHBpbmdDYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7xljfgsik8
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/BrowseSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvQnJvd3NlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-g6acxsz09v
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvQ3JlYXRlU29ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-eolvsyvibr
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Socks/ViewSockInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU29ja3MvVmlld1NvY2tJbmZvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2j409rikm4
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/BrowseTrousers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9Ccm93c2VUcm91c2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4xa5sh0a8x
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9DcmVhdGVUcm91c2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qsk2q83mke
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouserInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9DcmVhdGVUcm91c2VySW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-fif9fh9mwd
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Pages/Trouser/ViewTrouserInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJvdXNlci9WaWV3VHJvdXNlckluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-d0t2fozc2r
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fgro0f5ktg
+
+[/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-iknbjjsc52
+>>>>>>> Stashed changes

@@ -1,0 +1,2 @@
+obj/Debug/net6.0/Protos/TrouserComunicator.cs \
+obj/Debug/net6.0/Protos/TrouserComunicatorGrpc.cs: Protos/trouserComunicator.proto

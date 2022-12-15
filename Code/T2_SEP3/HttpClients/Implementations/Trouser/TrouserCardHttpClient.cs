@@ -20,7 +20,7 @@ public class TrouserCardHttpClient : ITrouserCardService
 
     public async Task<TrouserCard> Create(CreateTrouserCardDto dto)
     {
-        HttpResponseMessage response = await client.PostAsJsonAsync("TrouserCard", dto);
+        HttpResponseMessage response = await client.PostAsJsonAsync("https://localhost:7999/TrouserCard", dto);
         string result = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

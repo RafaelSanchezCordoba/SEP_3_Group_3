@@ -3,6 +3,7 @@
 @using global::Shared.Models
 @using HttpClients.ClientInterfaces
 @using global::Shared.DTOs
+@using HttpClients.ClientInterfaces.Trouser
 @inject ISockCardService sockService;
 @inject InterfaceInventoryService InterfaceStockService
 @inject NavigationManager NavManager
@@ -296,6 +297,7 @@
     public int Id { get; set; }
 
     private SocksCard? card;
+    private TrouserCard? trouserCard;
 
     private string resultMsg = "";
     private string color = "red";
@@ -398,6 +400,7 @@
     {
         
         card = await sockService.GetById(Id);
+        
     }
 
     private async Task CreateStock()

@@ -33,6 +33,8 @@ public class Inventory implements Serializable {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private SockCard sockCard;
 
+
+
     public Inventory() {
 
     }

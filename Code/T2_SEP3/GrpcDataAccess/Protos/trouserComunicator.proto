@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service TrouserGrpc {
+  rpc create(trouser) returns (trouser);
+  rpc getAll(trouserEmpty) returns (stream trouser);
+  rpc getById(trouserIntReq) returns (trouser);
+  rpc deleteById(trouserIntReq) returns (trouserEmpty);
+
+}
+
+message trouserIntReq {
+  int32 request = 1;
+}
+
+message trouserEmpty {
+
+}
+
+message trouser {
+  int32 id = 1;
+  string size = 2;
+  string color = 3;
+  int32 sc_id = 5;
+}

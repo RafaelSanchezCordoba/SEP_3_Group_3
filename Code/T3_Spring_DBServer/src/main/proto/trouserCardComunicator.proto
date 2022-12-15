@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+service TrouserCardGrpc{
+
+  rpc getById(trouserCardIntReq) returns (trouserCard){}
+
+  rpc addTrouserCard(trouserCard)  returns (trouserCard){}
+
+  rpc getAllSockCards(trouserCardEmpty) returns (stream trouserCard){}
+
+  rpc deleteSockCardById(trouserCardIntReq) returns (trouserCard);
+
+  rpc getByTitle (trouserCardStringReq) returns (trouserCard);
+
+  rpc updateSockCard(trouserCard) returns (trouserCard);
+}
+message trouserCardIntReq{
+  int32 request = 1;
+}
+message trouserCardStringReq {
+  string request = 1;
+}
+message trouserCard{
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  double price = 4;
+  string material = 5;
+  string brand = 6;
+  string image = 7;
+  string type = 8;
+}
+message trouserCardEmpty{
+
+}

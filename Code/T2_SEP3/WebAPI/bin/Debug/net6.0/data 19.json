@@ -1,0 +1,35 @@
+{
+  "Inventories": [],
+  "ShoppingCarts": [],
+  "SocksCards": [],
+  "Socks": [],
+  "Users": [
+    {
+      "Id": 1,
+      "Email": "admin",
+      "Password": "admin",
+      "Name": null,
+      "PhoneNumber": null,
+      "Address": null,
+      "Auth": "Manager"
+    }
+  ],
+  "Adresses": [],
+  "CardItems": [],
+  "Orders": [],
+  "TrouserCards": [
+    {
+      "Title": "string",
+      "Description": "string",
+      "Price": 2,
+      "Material": "string",
+      "Brand": "string",
+      "Image": "string",
+      "Type": "string",
+      "Id": 1
+    }
+  ],
+  "Trousers": [
+    
+  ]
+}

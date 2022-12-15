@@ -6,7 +6,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.39.0)",
-    comments = "Source: SocksInventoryComunicator.proto")
+    comments = "Source: InventoryComunicator.proto")
 public final class SocksInventoryGrpcGrpc {
 
   private SocksInventoryGrpcGrpc() {}

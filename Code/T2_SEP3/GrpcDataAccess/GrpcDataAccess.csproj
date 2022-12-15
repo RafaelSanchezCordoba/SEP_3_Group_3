@@ -25,6 +25,8 @@
         <Protobuf Include="Protos\socksCardComunicator.proto" />
         <Protobuf Include="Protos\SocksInventoryComunicator.proto" />
         <Protobuf Include="Protos\socksComunicator.proto" />
+        <Protobuf Include="Protos\trouserCardComunicator.proto" />
+        <Protobuf Include="Protos\trouserComunicator.proto" />
     </ItemGroup>
 
 </Project>

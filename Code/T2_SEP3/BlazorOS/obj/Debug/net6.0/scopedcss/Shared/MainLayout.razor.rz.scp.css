@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 .page[b-wcssxcvg4k] {
+=======
+.page[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 main[b-wcssxcvg4k] {
     flex: 1;
 }
@@ -13,6 +18,17 @@ main[b-wcssxcvg4k] {
 }
 
 .top-row[b-wcssxcvg4k] {
+=======
+main[b-fgro0f5ktg] {
+    flex: 1;
+}
+
+.sidebar[b-fgro0f5ktg] {
+    background-image: linear-gradient(180deg, #1B263B 0%,#778DA9  70%);
+}
+
+.top-row[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
     background-image: linear-gradient(90deg, #1B263B 0%,#778DA9  70%);
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -21,22 +37,35 @@ main[b-wcssxcvg4k] {
     align-items: center;
 }
 
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+=======
+.top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+>>>>>>> Stashed changes
     white-space: nowrap;
     margin-left: 1.5rem;
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 .top-row[b-wcssxcvg4k]  a:hover, .top-row[b-wcssxcvg4k]  .btn-link:hover {
     text-decoration: underline;
 }
 
 .top-row[b-wcssxcvg4k]  a:first-child {
+=======
+.top-row[b-fgro0f5ktg]  a:hover, .top-row[b-fgro0f5ktg]  .btn-link:hover {
+    text-decoration: underline;
+}
+
+.top-row[b-fgro0f5ktg]  a:first-child {
+>>>>>>> Stashed changes
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 @media (max-width: 640.98px) {
+<<<<<<< Updated upstream
     .top-row:not(.auth)[b-wcssxcvg4k] {
         display: none;
     }
@@ -46,35 +75,66 @@ main[b-wcssxcvg4k] {
     }
 
     .top-row[b-wcssxcvg4k]  a, .top-row[b-wcssxcvg4k]  .btn-link {
+=======
+    .top-row:not(.auth)[b-fgro0f5ktg] {
+        display: none;
+    }
+
+    .top-row.auth[b-fgro0f5ktg] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-fgro0f5ktg]  a, .top-row[b-fgro0f5ktg]  .btn-link {
+>>>>>>> Stashed changes
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
+<<<<<<< Updated upstream
     .page[b-wcssxcvg4k] {
         flex-direction: row;
     }
 
     .sidebar[b-wcssxcvg4k] {
+=======
+    .page[b-fgro0f5ktg] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
+<<<<<<< Updated upstream
     .top-row.auth[b-wcssxcvg4k]  a:first-child {
+=======
+    .top-row.auth[b-fgro0f5ktg]  a:first-child {
+>>>>>>> Stashed changes
         flex: 1;
         text-align: right;
         width: 0;
     }
 
+<<<<<<< Updated upstream
     .top-row[b-wcssxcvg4k], article[b-wcssxcvg4k] {
+=======
+    .top-row[b-fgro0f5ktg], article[b-fgro0f5ktg] {
+>>>>>>> Stashed changes
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }

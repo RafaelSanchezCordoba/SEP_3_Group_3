@@ -32,9 +32,9 @@ builder.Services.AddScoped<ISockCardDao, SocksCardGrpcDao>();
 
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
 builder.Services.AddScoped<ITrouserCardLogic, TrouserCardLogic>();
-builder.Services.AddScoped<ITrouserCardDao, TrouserCardFileDao>();
+builder.Services.AddScoped<ITrouserCardDao, TrouserCardGrpcDao>();
 builder.Services.AddScoped<ITrouserLogic, TrouserLogic>();
-builder.Services.AddScoped<ITrouserDao, TrouserFileDao>();
+builder.Services.AddScoped<ITrouserDao, TrouserGrpcDao>();
 builder.Services.AddScoped<IShoppingCartLogic, ShoppingCartLogic>();
 builder.Services.AddScoped<IShoppingCartDao, ShoppingCartFileDao>();
 builder.Services.AddScoped<InterfaceInventoryDao, InventoryGrpcDao>();

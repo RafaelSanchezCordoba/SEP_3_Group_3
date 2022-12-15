@@ -20,7 +20,6 @@ public class InventoryGrpcDao : InterfaceInventoryDao
             Size = inventory.Size
 
         };
-
         
         try
         {
