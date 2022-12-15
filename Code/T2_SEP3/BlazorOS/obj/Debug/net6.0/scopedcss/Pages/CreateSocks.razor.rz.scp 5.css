@@ -1,0 +1,60 @@
+*[b-zjw7gqpu4y] {
+    box-sizing: border-box;
+}
+
+.card[b-zjw7gqpu4y]{
+    width: 65%;
+    padding: 20px;
+    float: left;
+
+}
+
+.form-group-field[b-zjw7gqpu4y]{
+    padding: 10px;
+    float: left;
+}
+
+
+.button-message[b-zjw7gqpu4y]
+{
+    float: left;
+    margin-left: 2%;
+}
+
+.small-form-field[b-zjw7gqpu4y]
+{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    display: inline;
+}
+
+
+input[b-zjw7gqpu4y]
+{
+    width: 73%;
+    float: right;
+}
+
+.long-input[b-zjw7gqpu4y]
+{
+    width: 87%;
+}
+
+.acceptbtn[b-zjw7gqpu4y]
+{
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#dropdown-list[b-zjw7gqpu4y]
+{
+    float: right;
+    width: 75%;
+}
+
+#dropdown-input[b-zjw7gqpu4y]
+{
+    width: 100%;
+    float: right;
+}

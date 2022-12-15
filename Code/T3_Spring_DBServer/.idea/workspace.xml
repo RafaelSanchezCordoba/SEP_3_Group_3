@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T3_Spring_DBServer.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/maria/OneDrive - ViaUC/VIA/SecondSemester/SDJ2/Session4(MVVM)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -57,7 +53,12 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.ClientTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.T3SpringDbServerApplication">
     <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.t3_spring_dbserver.clientTest.ClientTest" />
       <module name="T3_Spring_DBServer" />
@@ -109,6 +110,9 @@
       <workItem from="1670420110398" duration="858000" />
       <workItem from="1670577720952" duration="210000" />
       <workItem from="1671009686566" duration="5520000" />
+      <workItem from="1671026104535" duration="2760000" />
+      <workItem from="1671093156611" duration="9639000" />
+      <workItem from="1671106118620" duration="437000" />
     </task>
     <servers />
   </component>

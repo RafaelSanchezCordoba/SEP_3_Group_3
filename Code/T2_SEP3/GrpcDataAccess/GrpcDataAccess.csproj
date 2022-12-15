@@ -1,3 +1,5 @@
+
+
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
@@ -7,22 +9,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Application\Application.csproj" />
+        <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Google.Protobuf" Version="3.21.9" />
-      <PackageReference Include="Grpc" Version="2.46.5" />
-      <PackageReference Include="Grpc.Core" Version="2.46.5" />
-      <PackageReference Include="Grpc.Tools" Version="2.50.0">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>      
+        <PackageReference Include="Google.Protobuf" Version="3.21.9" />
+        <PackageReference Include="Grpc" Version="2.46.5" />
+        <PackageReference Include="Grpc.Core" Version="2.46.5" />
+        <PackageReference Include="Grpc.Tools" Version="2.50.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="protos\socksComunicator.proto" />
-        <Protobuf Include="protos\SocksInventoryComunicator.proto" />
-        
+        <Protobuf Include="Protos\socksCardComunicator.proto" />
+        <Protobuf Include="Protos\SocksInventoryComunicator.proto"/>
+        <Protobuf Include="Protos\socksComunicator.proto"/>
     </ItemGroup>
 
 </Project>

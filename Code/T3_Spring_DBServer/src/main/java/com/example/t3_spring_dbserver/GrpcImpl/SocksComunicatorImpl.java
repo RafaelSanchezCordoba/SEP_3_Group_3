@@ -4,6 +4,7 @@ import com.example.t3_spring_dbserver.entity.SockCard;
 import com.example.t3_spring_dbserver.entity.Socks;
 import com.example.t3_spring_dbserver.service.SockCardService;
 import com.example.t3_spring_dbserver.service.SocksService;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksGrpcGrpc;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
 import io.grpc.stub.StreamObserver;
@@ -28,15 +29,22 @@ public class SocksComunicatorImpl extends SocksGrpcGrpc.SocksGrpcImplBase {
 
 
     @Override
-    public void create(sock req, StreamObserver<EmptySocksMessage> streamObserver) {
+    public void create(sock req, StreamObserver<sock> streamObserver) {
         System.out.println("Received req to save socks with id::"+ req.getId());
 
         SockCard sockCard = cardService.getById(req.getScId());
 
         Socks daoSocks = new Socks(req.getId(), req.getSize(), req.getColor(), sockCard);
-        service.createSocks(daoSocks);
+        Socks socks = service.createSocks(daoSocks);
 
-        streamObserver.onNext(EmptySocksMessage.newBuilder().build());
+        sock toSent = sock.newBuilder()
+                .setId((int) socks.getId())
+                .setSize(socks.getSize())
+                .setColor(socks.getColor())
+                .setScId((int) socks.getSockCard().getId()).build();
+
+
+        streamObserver.onNext(toSent);
         streamObserver.onCompleted();
     }
 

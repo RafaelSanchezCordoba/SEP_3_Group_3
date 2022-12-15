@@ -1,15 +1,14 @@
 using Application.DaoInterfaces;
-using Application.Logic;
 using Grpc.Core;
 using Shared.Models;
 
 namespace GrpcDataAccess.DAOs;
 
-public class InventoryGrpcDao:InterfaceInventoryDao
+public class InventoryGrpcDao : InterfaceInventoryDao
 {
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
     private SocksInventoryGrpc.SocksInventoryGrpcClient stub = new SocksInventoryGrpc.SocksInventoryGrpcClient(channel);
-
+    
     public Task<Inventory> CreateAsync(Inventory inventory)
     {
         var req = new inventory()
@@ -130,4 +129,5 @@ public class InventoryGrpcDao:InterfaceInventoryDao
     {
         throw new NotImplementedException();
     }
+
 }

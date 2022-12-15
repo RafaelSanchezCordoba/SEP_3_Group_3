@@ -37,14 +37,14 @@ public final class SocksComunicator {
     private IntReqSock() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new IntReqSock();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -55,7 +55,7 @@ public final class SocksComunicator {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -98,12 +98,12 @@ public final class SocksComunicator {
       return SocksComunicator.internal_static_IntReqSock_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return SocksComunicator.internal_static_IntReqSock_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SocksComunicator.IntReqSock.class, SocksComunicator.IntReqSock.Builder.class);
+              IntReqSock.class, Builder.class);
     }
 
     public static final int REQUEST_FIELD_NUMBER = 1;
@@ -112,13 +112,13 @@ public final class SocksComunicator {
      * <code>int32 request = 1;</code>
      * @return The request.
      */
-    @java.lang.Override
+    @Override
     public int getRequest() {
       return request_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -128,7 +128,7 @@ public final class SocksComunicator {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (request_ != 0) {
@@ -137,7 +137,7 @@ public final class SocksComunicator {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -152,15 +152,15 @@ public final class SocksComunicator {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof SocksComunicator.IntReqSock)) {
+      if (!(obj instanceof IntReqSock)) {
         return super.equals(obj);
       }
-      SocksComunicator.IntReqSock other = (SocksComunicator.IntReqSock) obj;
+      IntReqSock other = (IntReqSock) obj;
 
       if (getRequest()
           != other.getRequest()) return false;
@@ -168,7 +168,7 @@ public final class SocksComunicator {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -182,69 +182,69 @@ public final class SocksComunicator {
       return hash;
     }
 
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.IntReqSock parseFrom(byte[] data)
+    public static IntReqSock parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.IntReqSock parseFrom(java.io.InputStream input)
+    public static IntReqSock parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.IntReqSock parseDelimitedFrom(java.io.InputStream input)
+    public static IntReqSock parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static SocksComunicator.IntReqSock parseDelimitedFrom(
+    public static IntReqSock parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.IntReqSock parseFrom(
+    public static IntReqSock parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -252,23 +252,23 @@ public final class SocksComunicator {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(SocksComunicator.IntReqSock prototype) {
+    public static Builder newBuilder(IntReqSock prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -278,27 +278,27 @@ public final class SocksComunicator {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:IntReqSock)
-        SocksComunicator.IntReqSockOrBuilder {
+        IntReqSockOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return SocksComunicator.internal_static_IntReqSock_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return SocksComunicator.internal_static_IntReqSock_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SocksComunicator.IntReqSock.class, SocksComunicator.IntReqSock.Builder.class);
+                IntReqSock.class, Builder.class);
       }
 
-      // Construct using com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.IntReqSock.newBuilder()
+      // Construct using SocksComunicator.IntReqSock.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -307,7 +307,7 @@ public final class SocksComunicator {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         request_ = 0;
@@ -315,78 +315,78 @@ public final class SocksComunicator {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return SocksComunicator.internal_static_IntReqSock_descriptor;
       }
 
-      @java.lang.Override
-      public SocksComunicator.IntReqSock getDefaultInstanceForType() {
-        return SocksComunicator.IntReqSock.getDefaultInstance();
+      @Override
+      public IntReqSock getDefaultInstanceForType() {
+        return IntReqSock.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public SocksComunicator.IntReqSock build() {
-        SocksComunicator.IntReqSock result = buildPartial();
+      @Override
+      public IntReqSock build() {
+        IntReqSock result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public SocksComunicator.IntReqSock buildPartial() {
-        SocksComunicator.IntReqSock result = new SocksComunicator.IntReqSock(this);
+      @Override
+      public IntReqSock buildPartial() {
+        IntReqSock result = new IntReqSock(this);
         result.request_ = request_;
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SocksComunicator.IntReqSock) {
-          return mergeFrom((SocksComunicator.IntReqSock)other);
+        if (other instanceof IntReqSock) {
+          return mergeFrom((IntReqSock)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SocksComunicator.IntReqSock other) {
-        if (other == SocksComunicator.IntReqSock.getDefaultInstance()) return this;
+      public Builder mergeFrom(IntReqSock other) {
+        if (other == IntReqSock.getDefaultInstance()) return this;
         if (other.getRequest() != 0) {
           setRequest(other.getRequest());
         }
@@ -395,21 +395,21 @@ public final class SocksComunicator {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SocksComunicator.IntReqSock parsedMessage = null;
+        IntReqSock parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SocksComunicator.IntReqSock) e.getUnfinishedMessage();
+          parsedMessage = (IntReqSock) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -424,7 +424,7 @@ public final class SocksComunicator {
        * <code>int32 request = 1;</code>
        * @return The request.
        */
-      @java.lang.Override
+      @Override
       public int getRequest() {
         return request_;
       }
@@ -449,13 +449,13 @@ public final class SocksComunicator {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -466,18 +466,18 @@ public final class SocksComunicator {
     }
 
     // @@protoc_insertion_point(class_scope:IntReqSock)
-    private static final SocksComunicator.IntReqSock DEFAULT_INSTANCE;
+    private static final IntReqSock DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new SocksComunicator.IntReqSock();
+      DEFAULT_INSTANCE = new IntReqSock();
     }
 
-    public static SocksComunicator.IntReqSock getDefaultInstance() {
+    public static IntReqSock getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<IntReqSock>
         PARSER = new com.google.protobuf.AbstractParser<IntReqSock>() {
-      @java.lang.Override
+      @Override
       public IntReqSock parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -490,13 +490,13 @@ public final class SocksComunicator {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<IntReqSock> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public SocksComunicator.IntReqSock getDefaultInstanceForType() {
+    @Override
+    public IntReqSock getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -521,14 +521,14 @@ public final class SocksComunicator {
     private EmptySocksMessage() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new EmptySocksMessage();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -539,7 +539,7 @@ public final class SocksComunicator {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -577,16 +577,16 @@ public final class SocksComunicator {
       return SocksComunicator.internal_static_EmptySocksMessage_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return SocksComunicator.internal_static_EmptySocksMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SocksComunicator.EmptySocksMessage.class, SocksComunicator.EmptySocksMessage.Builder.class);
+              EmptySocksMessage.class, Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -596,13 +596,13 @@ public final class SocksComunicator {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -613,21 +613,21 @@ public final class SocksComunicator {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof SocksComunicator.EmptySocksMessage)) {
+      if (!(obj instanceof EmptySocksMessage)) {
         return super.equals(obj);
       }
-      SocksComunicator.EmptySocksMessage other = (SocksComunicator.EmptySocksMessage) obj;
+      EmptySocksMessage other = (EmptySocksMessage) obj;
 
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -639,69 +639,69 @@ public final class SocksComunicator {
       return hash;
     }
 
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(byte[] data)
+    public static EmptySocksMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(java.io.InputStream input)
+    public static EmptySocksMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.EmptySocksMessage parseDelimitedFrom(java.io.InputStream input)
+    public static EmptySocksMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static SocksComunicator.EmptySocksMessage parseDelimitedFrom(
+    public static EmptySocksMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.EmptySocksMessage parseFrom(
+    public static EmptySocksMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -709,23 +709,23 @@ public final class SocksComunicator {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(SocksComunicator.EmptySocksMessage prototype) {
+    public static Builder newBuilder(EmptySocksMessage prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -735,27 +735,27 @@ public final class SocksComunicator {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:EmptySocksMessage)
-        SocksComunicator.EmptySocksMessageOrBuilder {
+        EmptySocksMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return SocksComunicator.internal_static_EmptySocksMessage_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return SocksComunicator.internal_static_EmptySocksMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SocksComunicator.EmptySocksMessage.class, SocksComunicator.EmptySocksMessage.Builder.class);
+                EmptySocksMessage.class, Builder.class);
       }
 
-      // Construct using com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.EmptySocksMessage.newBuilder()
+      // Construct using SocksComunicator.EmptySocksMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -764,103 +764,103 @@ public final class SocksComunicator {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return SocksComunicator.internal_static_EmptySocksMessage_descriptor;
       }
 
-      @java.lang.Override
-      public SocksComunicator.EmptySocksMessage getDefaultInstanceForType() {
-        return SocksComunicator.EmptySocksMessage.getDefaultInstance();
+      @Override
+      public EmptySocksMessage getDefaultInstanceForType() {
+        return EmptySocksMessage.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public SocksComunicator.EmptySocksMessage build() {
-        SocksComunicator.EmptySocksMessage result = buildPartial();
+      @Override
+      public EmptySocksMessage build() {
+        EmptySocksMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public SocksComunicator.EmptySocksMessage buildPartial() {
-        SocksComunicator.EmptySocksMessage result = new SocksComunicator.EmptySocksMessage(this);
+      @Override
+      public EmptySocksMessage buildPartial() {
+        EmptySocksMessage result = new EmptySocksMessage(this);
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SocksComunicator.EmptySocksMessage) {
-          return mergeFrom((SocksComunicator.EmptySocksMessage)other);
+        if (other instanceof EmptySocksMessage) {
+          return mergeFrom((EmptySocksMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SocksComunicator.EmptySocksMessage other) {
-        if (other == SocksComunicator.EmptySocksMessage.getDefaultInstance()) return this;
+      public Builder mergeFrom(EmptySocksMessage other) {
+        if (other == EmptySocksMessage.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SocksComunicator.EmptySocksMessage parsedMessage = null;
+        EmptySocksMessage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SocksComunicator.EmptySocksMessage) e.getUnfinishedMessage();
+          parsedMessage = (EmptySocksMessage) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -869,13 +869,13 @@ public final class SocksComunicator {
         }
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -886,18 +886,18 @@ public final class SocksComunicator {
     }
 
     // @@protoc_insertion_point(class_scope:EmptySocksMessage)
-    private static final SocksComunicator.EmptySocksMessage DEFAULT_INSTANCE;
+    private static final EmptySocksMessage DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new SocksComunicator.EmptySocksMessage();
+      DEFAULT_INSTANCE = new EmptySocksMessage();
     }
 
-    public static SocksComunicator.EmptySocksMessage getDefaultInstance() {
+    public static EmptySocksMessage getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<EmptySocksMessage>
         PARSER = new com.google.protobuf.AbstractParser<EmptySocksMessage>() {
-      @java.lang.Override
+      @Override
       public EmptySocksMessage parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -910,13 +910,13 @@ public final class SocksComunicator {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<EmptySocksMessage> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public SocksComunicator.EmptySocksMessage getDefaultInstanceForType() {
+    @Override
+    public EmptySocksMessage getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -936,7 +936,7 @@ public final class SocksComunicator {
      * <code>string size = 2;</code>
      * @return The size.
      */
-    java.lang.String getSize();
+    String getSize();
     /**
      * <code>string size = 2;</code>
      * @return The bytes for size.
@@ -948,7 +948,7 @@ public final class SocksComunicator {
      * <code>string color = 3;</code>
      * @return The color.
      */
-    java.lang.String getColor();
+    String getColor();
     /**
      * <code>string color = 3;</code>
      * @return The bytes for color.
@@ -957,7 +957,7 @@ public final class SocksComunicator {
         getColorBytes();
 
     /**
-     * <code>int32 sc_id = 4;</code>
+     * <code>int32 sc_id = 5;</code>
      * @return The scId.
      */
     int getScId();
@@ -979,14 +979,14 @@ public final class SocksComunicator {
       color_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new sock();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -997,7 +997,7 @@ public final class SocksComunicator {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1015,18 +1015,18 @@ public final class SocksComunicator {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               size_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               color_ = s;
               break;
             }
-            case 32: {
+            case 40: {
 
               scId_ = input.readInt32();
               break;
@@ -1057,12 +1057,12 @@ public final class SocksComunicator {
       return SocksComunicator.internal_static_sock_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return SocksComunicator.internal_static_sock_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SocksComunicator.sock.class, SocksComunicator.sock.Builder.class);
+              sock.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -1071,26 +1071,26 @@ public final class SocksComunicator {
      * <code>int32 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public int getId() {
       return id_;
     }
 
     public static final int SIZE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object size_;
+    private volatile Object size_;
     /**
      * <code>string size = 2;</code>
      * @return The size.
      */
-    @java.lang.Override
-    public java.lang.String getSize() {
-      java.lang.Object ref = size_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getSize() {
+      Object ref = size_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         size_ = s;
         return s;
       }
@@ -1099,14 +1099,14 @@ public final class SocksComunicator {
      * <code>string size = 2;</code>
      * @return The bytes for size.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getSizeBytes() {
-      java.lang.Object ref = size_;
-      if (ref instanceof java.lang.String) {
+      Object ref = size_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         size_ = b;
         return b;
       } else {
@@ -1115,20 +1115,20 @@ public final class SocksComunicator {
     }
 
     public static final int COLOR_FIELD_NUMBER = 3;
-    private volatile java.lang.Object color_;
+    private volatile Object color_;
     /**
      * <code>string color = 3;</code>
      * @return The color.
      */
-    @java.lang.Override
-    public java.lang.String getColor() {
-      java.lang.Object ref = color_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getColor() {
+      Object ref = color_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         color_ = s;
         return s;
       }
@@ -1137,14 +1137,14 @@ public final class SocksComunicator {
      * <code>string color = 3;</code>
      * @return The bytes for color.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getColorBytes() {
-      java.lang.Object ref = color_;
-      if (ref instanceof java.lang.String) {
+      Object ref = color_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         color_ = b;
         return b;
       } else {
@@ -1152,19 +1152,19 @@ public final class SocksComunicator {
       }
     }
 
-    public static final int SC_ID_FIELD_NUMBER = 4;
+    public static final int SC_ID_FIELD_NUMBER = 5;
     private int scId_;
     /**
-     * <code>int32 sc_id = 4;</code>
+     * <code>int32 sc_id = 5;</code>
      * @return The scId.
      */
-    @java.lang.Override
+    @Override
     public int getScId() {
       return scId_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1174,7 +1174,7 @@ public final class SocksComunicator {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
@@ -1187,12 +1187,12 @@ public final class SocksComunicator {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, color_);
       }
       if (scId_ != 0) {
-        output.writeInt32(4, scId_);
+        output.writeInt32(5, scId_);
       }
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1210,22 +1210,22 @@ public final class SocksComunicator {
       }
       if (scId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, scId_);
+          .computeInt32Size(5, scId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof SocksComunicator.sock)) {
+      if (!(obj instanceof sock)) {
         return super.equals(obj);
       }
-      SocksComunicator.sock other = (SocksComunicator.sock) obj;
+      sock other = (sock) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -1239,7 +1239,7 @@ public final class SocksComunicator {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1259,69 +1259,69 @@ public final class SocksComunicator {
       return hash;
     }
 
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.sock parseFrom(byte[] data)
+    public static sock parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SocksComunicator.sock parseFrom(java.io.InputStream input)
+    public static sock parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.sock parseDelimitedFrom(java.io.InputStream input)
+    public static sock parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static SocksComunicator.sock parseDelimitedFrom(
+    public static sock parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static SocksComunicator.sock parseFrom(
+    public static sock parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1329,23 +1329,23 @@ public final class SocksComunicator {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(SocksComunicator.sock prototype) {
+    public static Builder newBuilder(sock prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1355,27 +1355,27 @@ public final class SocksComunicator {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:sock)
-        SocksComunicator.sockOrBuilder {
+        sockOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return SocksComunicator.internal_static_sock_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return SocksComunicator.internal_static_sock_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SocksComunicator.sock.class, SocksComunicator.sock.Builder.class);
+                sock.class, Builder.class);
       }
 
-      // Construct using com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sock.newBuilder()
+      // Construct using SocksComunicator.sock.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1384,7 +1384,7 @@ public final class SocksComunicator {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         id_ = 0;
@@ -1398,29 +1398,29 @@ public final class SocksComunicator {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return SocksComunicator.internal_static_sock_descriptor;
       }
 
-      @java.lang.Override
-      public SocksComunicator.sock getDefaultInstanceForType() {
-        return SocksComunicator.sock.getDefaultInstance();
+      @Override
+      public sock getDefaultInstanceForType() {
+        return sock.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public SocksComunicator.sock build() {
-        SocksComunicator.sock result = buildPartial();
+      @Override
+      public sock build() {
+        sock result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public SocksComunicator.sock buildPartial() {
-        SocksComunicator.sock result = new SocksComunicator.sock(this);
+      @Override
+      public sock buildPartial() {
+        sock result = new sock(this);
         result.id_ = id_;
         result.size_ = size_;
         result.color_ = color_;
@@ -1429,50 +1429,50 @@ public final class SocksComunicator {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SocksComunicator.sock) {
-          return mergeFrom((SocksComunicator.sock)other);
+        if (other instanceof sock) {
+          return mergeFrom((sock)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SocksComunicator.sock other) {
-        if (other == SocksComunicator.sock.getDefaultInstance()) return this;
+      public Builder mergeFrom(sock other) {
+        if (other == sock.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -1492,21 +1492,21 @@ public final class SocksComunicator {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SocksComunicator.sock parsedMessage = null;
+        sock parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SocksComunicator.sock) e.getUnfinishedMessage();
+          parsedMessage = (sock) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1521,7 +1521,7 @@ public final class SocksComunicator {
        * <code>int32 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public int getId() {
         return id_;
       }
@@ -1547,21 +1547,21 @@ public final class SocksComunicator {
         return this;
       }
 
-      private java.lang.Object size_ = "";
+      private Object size_ = "";
       /**
        * <code>string size = 2;</code>
        * @return The size.
        */
-      public java.lang.String getSize() {
-        java.lang.Object ref = size_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getSize() {
+        Object ref = size_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           size_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1570,11 +1570,11 @@ public final class SocksComunicator {
        */
       public com.google.protobuf.ByteString
           getSizeBytes() {
-        java.lang.Object ref = size_;
+        Object ref = size_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           size_ = b;
           return b;
         } else {
@@ -1587,7 +1587,7 @@ public final class SocksComunicator {
        * @return This builder for chaining.
        */
       public Builder setSize(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1623,21 +1623,21 @@ public final class SocksComunicator {
         return this;
       }
 
-      private java.lang.Object color_ = "";
+      private Object color_ = "";
       /**
        * <code>string color = 3;</code>
        * @return The color.
        */
-      public java.lang.String getColor() {
-        java.lang.Object ref = color_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getColor() {
+        Object ref = color_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           color_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1646,11 +1646,11 @@ public final class SocksComunicator {
        */
       public com.google.protobuf.ByteString
           getColorBytes() {
-        java.lang.Object ref = color_;
+        Object ref = color_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           color_ = b;
           return b;
         } else {
@@ -1663,7 +1663,7 @@ public final class SocksComunicator {
        * @return This builder for chaining.
        */
       public Builder setColor(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1701,15 +1701,15 @@ public final class SocksComunicator {
 
       private int scId_ ;
       /**
-       * <code>int32 sc_id = 4;</code>
+       * <code>int32 sc_id = 5;</code>
        * @return The scId.
        */
-      @java.lang.Override
+      @Override
       public int getScId() {
         return scId_;
       }
       /**
-       * <code>int32 sc_id = 4;</code>
+       * <code>int32 sc_id = 5;</code>
        * @param value The scId to set.
        * @return This builder for chaining.
        */
@@ -1720,7 +1720,7 @@ public final class SocksComunicator {
         return this;
       }
       /**
-       * <code>int32 sc_id = 4;</code>
+       * <code>int32 sc_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScId() {
@@ -1729,13 +1729,13 @@ public final class SocksComunicator {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1746,18 +1746,18 @@ public final class SocksComunicator {
     }
 
     // @@protoc_insertion_point(class_scope:sock)
-    private static final SocksComunicator.sock DEFAULT_INSTANCE;
+    private static final sock DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new SocksComunicator.sock();
+      DEFAULT_INSTANCE = new sock();
     }
 
-    public static SocksComunicator.sock getDefaultInstance() {
+    public static sock getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<sock>
         PARSER = new com.google.protobuf.AbstractParser<sock>() {
-      @java.lang.Override
+      @Override
       public sock parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1770,13 +1770,13 @@ public final class SocksComunicator {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<sock> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public SocksComunicator.sock getDefaultInstanceForType() {
+    @Override
+    public sock getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1805,15 +1805,15 @@ public final class SocksComunicator {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\026socksComunicator.proto\"\035\n\nIntReqSock\022\017" +
       "\n\007request\030\001 \001(\005\"\023\n\021EmptySocksMessage\">\n\004" +
       "sock\022\n\n\002id\030\001 \001(\005\022\014\n\004size\030\002 \001(\t\022\r\n\005color\030" +
-      "\003 \001(\t\022\r\n\005sc_id\030\004 \001(\0052\245\001\n\tSocksGrpc\022#\n\006cr" +
-      "eate\022\005.sock\032\022.EmptySocksMessage\022%\n\006getAl" +
-      "l\022\022.EmptySocksMessage\032\005.sock0\001\022\035\n\007getByI" +
-      "d\022\013.IntReqSock\032\005.sock\022-\n\ndeleteById\022\013.In" +
-      "tReqSock\032\022.EmptySocksMessageb\006proto3"
+      "\003 \001(\t\022\r\n\005sc_id\030\005 \001(\0052\230\001\n\tSocksGrpc\022\026\n\006cr" +
+      "eate\022\005.sock\032\005.sock\022%\n\006getAll\022\022.EmptySock" +
+      "sMessage\032\005.sock0\001\022\035\n\007getById\022\013.IntReqSoc" +
+      "k\032\005.sock\022-\n\ndeleteById\022\013.IntReqSock\032\022.Em" +
+      "ptySocksMessageb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1824,19 +1824,19 @@ public final class SocksComunicator {
     internal_static_IntReqSock_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IntReqSock_descriptor,
-        new java.lang.String[] { "Request", });
+        new String[] { "Request", });
     internal_static_EmptySocksMessage_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_EmptySocksMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EmptySocksMessage_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_sock_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_sock_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_sock_descriptor,
-        new java.lang.String[] { "Id", "Size", "Color", "ScId", });
+        new String[] { "Id", "Size", "Color", "ScId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

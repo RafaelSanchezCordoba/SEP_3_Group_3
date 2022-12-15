@@ -7,7 +7,7 @@ import java.util.List;
 public interface ISockCardService {
     SockCard getById(long id);
 
-    void saveCard(SockCard card);
+    SockCard saveCard(SockCard card);
 
     List<SockCard> getAllCards();
 

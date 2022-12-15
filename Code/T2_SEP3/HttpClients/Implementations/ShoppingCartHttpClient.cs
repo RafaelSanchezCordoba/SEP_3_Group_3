@@ -117,7 +117,7 @@ public class ShoppingCartHttpClient:IShoppingCartService
     {
         string productAsJson = JsonSerializer.Serialize(product);
         StringContent body = new StringContent(productAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/shoppingCart/products/{id}", body);
+        HttpResponseMessage response = await client.PatchAsync($"https://localhost:7999/ShoppingCart/products/{id}", body);
         string content = await response.Content.ReadAsStringAsync();
        
         if (!response.IsSuccessStatusCode)

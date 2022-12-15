@@ -41,7 +41,7 @@ public class SockInventoryHttpClient:ISockInventoryService
     
         public async Task<ICollection<Inventory>> GetByCardIdAsync(int id)
         {
-            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Inventory/Card{id}");
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7999/Inventory/card{id}");
 
             string content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)

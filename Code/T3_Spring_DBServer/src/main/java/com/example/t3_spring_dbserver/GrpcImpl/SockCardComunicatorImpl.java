@@ -3,8 +3,9 @@ import com.example.t3_spring_dbserver.DTOs.SockCardDto;
 import com.example.t3_spring_dbserver.entity.SockCard;
 import com.example.t3_spring_dbserver.service.SockCardService;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator;
+import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.sockCard;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardGrpcGrpc;
-import com.google.protobuf.Empty;
+
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,8 @@ public class SockCardComunicatorImpl extends SocksCardGrpcGrpc.SocksCardGrpcImpl
 
 
     @Override
-    public void getByTitle(SocksCardComunicator.StringReq req, StreamObserver<SocksCardComunicator.sockCard> responseStream){
-        System.out.println("riecied req to get by title");
+    public void getByTitle(SocksCardComunicator.StringReq req, StreamObserver<sockCard> responseStream){
+        System.out.println("Received req to get by title:" + req.getRequest());
         SockCard sockCard = service.getByTitle(req.getRequest());
 
         SocksCardComunicator.sockCard toSend = SocksCardComunicator.sockCard.newBuilder()
@@ -138,12 +139,23 @@ public class SockCardComunicatorImpl extends SocksCardGrpcGrpc.SocksCardGrpcImpl
     }
 
     @Override
-    public void addSockCard(SocksCardComunicator.sockCard card, StreamObserver<SocksCardComunicator.Empty> responseStream) {
+    public void addSockCard(SocksCardComunicator.sockCard card, StreamObserver<SocksCardComunicator.sockCard> responseStream) {
         System.out.println("riecieved req to save card with id::"+card.getId());
 
         SockCard daoCard = new SockCard(card.getTitle(),card.getDescription(),card.getPrice(), card.getMaterial(), card.getBrand(), card.getImage(), card.getType());
-        service.saveCard(daoCard);
-        responseStream.onNext(SocksCardComunicator.Empty.newBuilder().build());
+        SockCard sockCard = service.saveCard(daoCard);
+
+
+        SocksCardComunicator.sockCard toSent = SocksCardComunicator.sockCard.newBuilder()
+                .setId((int) sockCard.getId())
+                .setPrice(sockCard.getPrice())
+                .setBrand(sockCard.getBrand())
+                .setType(sockCard.getType())
+                .setTitle(sockCard.getBrand())
+                .setDescription(sockCard.getType())
+                .setImage(sockCard.getBrand())
+                .setMaterial(sockCard.getType()).build();
+        responseStream.onNext(toSent);
         responseStream.onCompleted();
     }
 

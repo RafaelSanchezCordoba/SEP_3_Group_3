@@ -164,6 +164,8 @@
             }
             CreateSocksDto socksDto = new CreateSocksDto(card.Id, selectedSizes, selectedColor);
             Socks socks = await socksService.CreateAsync(socksDto);
+            CreateCartItemDto dto = new CreateCartItemDto(sc.Id, socks.Id);
+            await cardItemService.CreateAsync(dto);
             foreach (Product p in sc.Products)
             {
                 if (p.ProductCardId==socks.ProductCardId&&p.Color.Equals(socks.Color)&&p.Size.Equals(socks.Size))
@@ -176,8 +178,7 @@
                     return;
                 } 
             }
-            CreateCartItemDto dto = new CreateCartItemDto(sc.Id, socks.Id);
-            await cardItemService.CreateAsync(dto);
+            
             await shoppingCartService.AddProductAsync(socks, sc.Id);
             navMgr.NavigateTo($"/shoppingCart/{sc.Id}");
         }catch (Exception e)

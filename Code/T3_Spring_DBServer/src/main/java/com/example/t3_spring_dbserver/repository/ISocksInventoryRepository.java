@@ -15,12 +15,9 @@ import java.util.Optional;
 
 @Repository
 public interface ISocksInventoryRepository extends JpaRepository<Inventory, Long> {
-//    @Query( value = "SELECT *  FROM sep_db.inventory i WHERE i.pc_id = :cardId",
-//            nativeQuery = true)
-//    List<Inventory> getByCardId(@Param("cardId") int cardId);
 
-    @Query("SELECT i  FROM Inventory i WHERE i.sockCard = :cardId")
-    List<Inventory> getByCardId(@Param("cardId") int cardId);
+    @Query("SELECT i  FROM Inventory i WHERE i.sockCard.id = :cardId")
+    List<Inventory> getByCardId(@Param("cardId") long cardId);
 
     @Transactional
     @Modifying

@@ -30,13 +30,13 @@ public class InventoryLogic:InterfaceInventoryLogic
     
     public async Task<Inventory> GetById(int id)
     {
-        ValidateInventoryById(id);
+        // ValidateInventoryById(id);
         return await inventoryDao.GetById(id) ?? throw new Exception($"Inventory with id {id} was not found!!!");
     }
 
     public async Task<IEnumerable<Inventory>> GetByCardIdAsync(int id)
     {
-        ValidateInventoryById(id);
+        // ValidateInventoryById(id);
         return await inventoryDao.GetByCardIdAsync(id) ?? throw new Exception($"Inventories with id {id} were not found!!!");
     }
     
@@ -52,19 +52,19 @@ public class InventoryLogic:InterfaceInventoryLogic
     
     public Task DeleteFromCardAsync(int id)
     {
-        ValidateInventoryById(id);
+        // ValidateInventoryById(id);
        return inventoryDao.DeleteFromCardAsync(id) ?? throw new Exception($"Sock Card with id{id} does not have any stock!!!");
     }
 
     public Task DeleteAsync(int id)
     {
-        ValidateInventoryById(id);
+        // ValidateInventoryById(id);
         return inventoryDao.DeleteAsync(id) ?? throw new Exception($"Inventory with ID {id} was not found!!!");
     }
 
     public async Task<Inventory> GetByParameters(int scId, string color, string size)
     {
-        ValidateInventoryById(scId);
+        // ValidateInventoryById(scId);
         ValidateInventoryString(color);
         ValidateInventoryString(size);
 
@@ -81,10 +81,10 @@ public class InventoryLogic:InterfaceInventoryLogic
         if (inventory.CardId <= 0) throw new Exception("Card id must be > 0!!!");
     }
     
-    public void ValidateInventoryById(int id)
-    {
-        if (id <= 0) throw new Exception("Card id must be > 0!!!");
-    }
+    // public void ValidateInventoryById(int id)
+    // {
+    //     if (id <= 0) throw new Exception("Card id must be > 0!!!");
+    // }
     public void ValidateInventoryString(String message)
     {
         if (String.IsNullOrEmpty(message)) throw new Exception("Parameter empty!!!");
