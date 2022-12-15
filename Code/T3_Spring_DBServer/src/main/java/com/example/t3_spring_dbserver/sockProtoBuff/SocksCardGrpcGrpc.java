@@ -46,28 +46,28 @@ public final class SocksCardGrpcGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<SocksCardComunicator.sockCard,
-      SocksCardComunicator.Empty> getAddSockCardMethod;
+      SocksCardComunicator.sockCard> getAddSockCardMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "addSockCard",
       requestType = SocksCardComunicator.sockCard.class,
-      responseType = SocksCardComunicator.Empty.class,
+      responseType = SocksCardComunicator.sockCard.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<SocksCardComunicator.sockCard,
-      SocksCardComunicator.Empty> getAddSockCardMethod() {
-    io.grpc.MethodDescriptor<SocksCardComunicator.sockCard, SocksCardComunicator.Empty> getAddSockCardMethod;
+      SocksCardComunicator.sockCard> getAddSockCardMethod() {
+    io.grpc.MethodDescriptor<SocksCardComunicator.sockCard, SocksCardComunicator.sockCard> getAddSockCardMethod;
     if ((getAddSockCardMethod = SocksCardGrpcGrpc.getAddSockCardMethod) == null) {
       synchronized (SocksCardGrpcGrpc.class) {
         if ((getAddSockCardMethod = SocksCardGrpcGrpc.getAddSockCardMethod) == null) {
           SocksCardGrpcGrpc.getAddSockCardMethod = getAddSockCardMethod =
-              io.grpc.MethodDescriptor.<SocksCardComunicator.sockCard, SocksCardComunicator.Empty>newBuilder()
+              io.grpc.MethodDescriptor.<SocksCardComunicator.sockCard, SocksCardComunicator.sockCard>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "addSockCard"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   SocksCardComunicator.sockCard.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SocksCardComunicator.Empty.getDefaultInstance()))
+                  SocksCardComunicator.sockCard.getDefaultInstance()))
               .setSchemaDescriptor(new SocksCardGrpcMethodDescriptorSupplier("addSockCard"))
               .build();
         }
@@ -206,7 +206,7 @@ public final class SocksCardGrpcGrpc {
   public static SocksCardGrpcStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcStub>() {
-        @java.lang.Override
+        @Override
         public SocksCardGrpcStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksCardGrpcStub(channel, callOptions);
         }
@@ -221,7 +221,7 @@ public final class SocksCardGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcBlockingStub>() {
-        @java.lang.Override
+        @Override
         public SocksCardGrpcBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksCardGrpcBlockingStub(channel, callOptions);
         }
@@ -236,7 +236,7 @@ public final class SocksCardGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksCardGrpcFutureStub>() {
-        @java.lang.Override
+        @Override
         public SocksCardGrpcFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksCardGrpcFutureStub(channel, callOptions);
         }
@@ -251,46 +251,46 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void getById(SocksCardComunicator.IntReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void addSockCard(SocksCardComunicator.sockCard request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.Empty> responseObserver) {
+                            io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAddSockCardMethod(), responseObserver);
     }
 
     /**
      */
     public void getAllSockCards(SocksCardComunicator.Empty request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                                io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAllSockCardsMethod(), responseObserver);
     }
 
     /**
      */
     public void deleteSockCardById(SocksCardComunicator.IntReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                                   io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteSockCardByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getByTitle(SocksCardComunicator.StringReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByTitleMethod(), responseObserver);
     }
 
     /**
      */
     public void updateSockCard(SocksCardComunicator.sockCard request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                               io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateSockCardMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetByIdMethod(),
@@ -304,7 +304,7 @@ public final class SocksCardGrpcGrpc {
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 SocksCardComunicator.sockCard,
-                SocksCardComunicator.Empty>(
+                SocksCardComunicator.sockCard>(
                   this, METHODID_ADD_SOCK_CARD)))
           .addMethod(
             getGetAllSockCardsMethod(),
@@ -346,7 +346,7 @@ public final class SocksCardGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksCardGrpcStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksCardGrpcStub(channel, callOptions);
@@ -355,7 +355,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void getById(SocksCardComunicator.IntReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetByIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -363,7 +363,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void addSockCard(SocksCardComunicator.sockCard request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.Empty> responseObserver) {
+                            io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAddSockCardMethod(), getCallOptions()), request, responseObserver);
     }
@@ -371,7 +371,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void getAllSockCards(SocksCardComunicator.Empty request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                                io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGetAllSockCardsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -379,7 +379,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void deleteSockCardById(SocksCardComunicator.IntReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                                   io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteSockCardByIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -387,7 +387,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void getByTitle(SocksCardComunicator.StringReq request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetByTitleMethod(), getCallOptions()), request, responseObserver);
     }
@@ -395,7 +395,7 @@ public final class SocksCardGrpcGrpc {
     /**
      */
     public void updateSockCard(SocksCardComunicator.sockCard request,
-        io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
+                               io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateSockCardMethod(), getCallOptions()), request, responseObserver);
     }
@@ -409,7 +409,7 @@ public final class SocksCardGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksCardGrpcBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksCardGrpcBlockingStub(channel, callOptions);
@@ -424,7 +424,7 @@ public final class SocksCardGrpcGrpc {
 
     /**
      */
-    public SocksCardComunicator.Empty addSockCard(SocksCardComunicator.sockCard request) {
+    public SocksCardComunicator.sockCard addSockCard(SocksCardComunicator.sockCard request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAddSockCardMethod(), getCallOptions(), request);
     }
@@ -467,7 +467,7 @@ public final class SocksCardGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksCardGrpcFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksCardGrpcFutureStub(channel, callOptions);
@@ -483,7 +483,7 @@ public final class SocksCardGrpcGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<SocksCardComunicator.Empty> addSockCard(
+    public com.google.common.util.concurrent.ListenableFuture<SocksCardComunicator.sockCard> addSockCard(
         SocksCardComunicator.sockCard request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAddSockCardMethod(), getCallOptions()), request);
@@ -534,8 +534,8 @@ public final class SocksCardGrpcGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_BY_ID:
@@ -544,7 +544,7 @@ public final class SocksCardGrpcGrpc {
           break;
         case METHODID_ADD_SOCK_CARD:
           serviceImpl.addSockCard((SocksCardComunicator.sockCard) request,
-              (io.grpc.stub.StreamObserver<SocksCardComunicator.Empty>) responseObserver);
+              (io.grpc.stub.StreamObserver<SocksCardComunicator.sockCard>) responseObserver);
           break;
         case METHODID_GET_ALL_SOCK_CARDS:
           serviceImpl.getAllSockCards((SocksCardComunicator.Empty) request,
@@ -567,8 +567,8 @@ public final class SocksCardGrpcGrpc {
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -582,12 +582,12 @@ public final class SocksCardGrpcGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     SocksCardGrpcBaseDescriptorSupplier() {}
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return SocksCardComunicator.getDescriptor();
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("SocksCardGrpc");
     }
@@ -607,7 +607,7 @@ public final class SocksCardGrpcGrpc {
       this.methodName = methodName;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

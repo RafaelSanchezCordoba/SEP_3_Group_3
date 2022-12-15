@@ -27,12 +27,13 @@ public static partial class SocksCardComunicatorReflection {
           "KAkihwEKCHNvY2tDYXJkEgoKAmlkGAEgASgFEg0KBXRpdGxlGAIgASgJEhMK",
           "C2Rlc2NyaXB0aW9uGAMgASgJEg0KBXByaWNlGAQgASgBEhAKCG1hdGVyaWFs",
           "GAUgASgJEg0KBWJyYW5kGAYgASgJEg0KBWltYWdlGAcgASgJEgwKBHR5cGUY",
-          "CCABKAkiBwoFRW1wdHky9QEKDVNvY2tzQ2FyZEdycGMSHwoHZ2V0QnlJZBIH",
-          "LkludFJlcRoJLnNvY2tDYXJkIgASIgoLYWRkU29ja0NhcmQSCS5zb2NrQ2Fy",
-          "ZBoGLkVtcHR5IgASKAoPZ2V0QWxsU29ja0NhcmRzEgYuRW1wdHkaCS5zb2Nr",
-          "Q2FyZCIAMAESKAoSZGVsZXRlU29ja0NhcmRCeUlkEgcuSW50UmVxGgkuc29j",
-          "a0NhcmQSIwoKZ2V0QnlUaXRsZRIKLlN0cmluZ1JlcRoJLnNvY2tDYXJkEiYK",
-          "DnVwZGF0ZVNvY2tDYXJkEgkuc29ja0NhcmQaCS5zb2NrQ2FyZGIGcHJvdG8z"));
+          "CCABKAkiBwoFRW1wdHky+AEKDVNvY2tzQ2FyZEdycGMSHwoHZ2V0QnlJZBIH",
+          "LkludFJlcRoJLnNvY2tDYXJkIgASJQoLYWRkU29ja0NhcmQSCS5zb2NrQ2Fy",
+          "ZBoJLnNvY2tDYXJkIgASKAoPZ2V0QWxsU29ja0NhcmRzEgYuRW1wdHkaCS5z",
+          "b2NrQ2FyZCIAMAESKAoSZGVsZXRlU29ja0NhcmRCeUlkEgcuSW50UmVxGgku",
+          "c29ja0NhcmQSIwoKZ2V0QnlUaXRsZRIKLlN0cmluZ1JlcRoJLnNvY2tDYXJk",
+          "EiYKDnVwZGF0ZVNvY2tDYXJkEgkuc29ja0NhcmQaCS5zb2NrQ2FyZGIGcHJv",
+          "dG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

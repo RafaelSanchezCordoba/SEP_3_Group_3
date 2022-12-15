@@ -190,36 +190,6 @@
       ]
     },
     {
-      "Id": 1,
-      "OwnerId": 1,
-      "Products": [
-        {
-          "ProductCardId": 5,
-          "Id": 4,
-          "Size": "l",
-          "Color": "blue"
-        },
-        {
-          "ProductCardId": 1,
-          "Id": 14,
-          "Size": "s",
-          "Color": "yellow"
-        },
-        {
-          "ProductCardId": 1,
-          "Id": 15,
-          "Size": "m",
-          "Color": "yellow"
-        },
-        {
-          "ProductCardId": 2,
-          "Id": 24,
-          "Size": "m",
-          "Color": "grey"
-        }
-      ]
-    },
-    {
       "Id": 4,
       "OwnerId": 0,
       "Products": [
@@ -259,6 +229,42 @@
       "Id": 3,
       "OwnerId": 3,
       "Products": []
+    },
+    {
+      "Id": 1,
+      "OwnerId": 1,
+      "Products": [
+        {
+          "ProductCardId": 5,
+          "Id": 4,
+          "Size": "l",
+          "Color": "blue"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 14,
+          "Size": "s",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 15,
+          "Size": "m",
+          "Color": "yellow"
+        },
+        {
+          "ProductCardId": 2,
+          "Id": 24,
+          "Size": "m",
+          "Color": "grey"
+        },
+        {
+          "ProductCardId": 19,
+          "Id": 34,
+          "Size": "xl",
+          "Color": "black"
+        }
+      ]
     }
   ],
   "SocksCards": [
@@ -487,6 +493,12 @@
       "Id": 33,
       "Size": "xs",
       "Color": "grey"
+    },
+    {
+      "ProductCardId": 19,
+      "Id": 34,
+      "Size": "xl",
+      "Color": "black"
     }
   ],
   "Users": [
@@ -684,6 +696,12 @@
       "Quantity": 1,
       "ShoppingCartId": 3,
       "ProductId": 33
+    },
+    {
+      "Id": 33,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 34
     }
   ],
   "Orders": [

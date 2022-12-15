@@ -4,7 +4,7 @@ service SocksCardGrpc{
 
   rpc getById(IntReq) returns (sockCard){}
 
-  rpc addSockCard(sockCard)  returns (Empty){}
+  rpc addSockCard(sockCard)  returns (sockCard){}
 
   rpc getAllSockCards(Empty) returns (stream sockCard){}
 

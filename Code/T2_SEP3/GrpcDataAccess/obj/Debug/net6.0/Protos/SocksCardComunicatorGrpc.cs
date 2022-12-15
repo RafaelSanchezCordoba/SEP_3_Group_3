@@ -62,12 +62,12 @@ public static partial class SocksCardGrpc
       __Marshaller_sockCard);
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-  static readonly grpc::Method<global::sockCard, global::Empty> __Method_addSockCard = new grpc::Method<global::sockCard, global::Empty>(
+  static readonly grpc::Method<global::sockCard, global::sockCard> __Method_addSockCard = new grpc::Method<global::sockCard, global::sockCard>(
       grpc::MethodType.Unary,
       __ServiceName,
       "addSockCard",
       __Marshaller_sockCard,
-      __Marshaller_Empty);
+      __Marshaller_sockCard);
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Method<global::Empty, global::sockCard> __Method_getAllSockCards = new grpc::Method<global::Empty, global::sockCard>(
@@ -118,7 +118,7 @@ public static partial class SocksCardGrpc
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::System.Threading.Tasks.Task<global::Empty> addSockCard(global::sockCard request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::sockCard> addSockCard(global::sockCard request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -197,22 +197,22 @@ public static partial class SocksCardGrpc
       return CallInvoker.AsyncUnaryCall(__Method_getById, null, options, request);
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::Empty addSockCard(global::sockCard request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual global::sockCard addSockCard(global::sockCard request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return addSockCard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::Empty addSockCard(global::sockCard request, grpc::CallOptions options)
+    public virtual global::sockCard addSockCard(global::sockCard request, grpc::CallOptions options)
     {
       return CallInvoker.BlockingUnaryCall(__Method_addSockCard, null, options, request);
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual grpc::AsyncUnaryCall<global::Empty> addSockCardAsync(global::sockCard request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual grpc::AsyncUnaryCall<global::sockCard> addSockCardAsync(global::sockCard request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return addSockCardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual grpc::AsyncUnaryCall<global::Empty> addSockCardAsync(global::sockCard request, grpc::CallOptions options)
+    public virtual grpc::AsyncUnaryCall<global::sockCard> addSockCardAsync(global::sockCard request, grpc::CallOptions options)
     {
       return CallInvoker.AsyncUnaryCall(__Method_addSockCard, null, options, request);
     }
@@ -316,7 +316,7 @@ public static partial class SocksCardGrpc
   public static void BindService(grpc::ServiceBinderBase serviceBinder, SocksCardGrpcBase serviceImpl)
   {
     serviceBinder.AddMethod(__Method_getById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::IntReq, global::sockCard>(serviceImpl.getById));
-    serviceBinder.AddMethod(__Method_addSockCard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::sockCard, global::Empty>(serviceImpl.addSockCard));
+    serviceBinder.AddMethod(__Method_addSockCard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::sockCard, global::sockCard>(serviceImpl.addSockCard));
     serviceBinder.AddMethod(__Method_getAllSockCards, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Empty, global::sockCard>(serviceImpl.getAllSockCards));
     serviceBinder.AddMethod(__Method_deleteSockCardById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::IntReq, global::sockCard>(serviceImpl.deleteSockCardById));
     serviceBinder.AddMethod(__Method_getByTitle, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::StringReq, global::sockCard>(serviceImpl.getByTitle));

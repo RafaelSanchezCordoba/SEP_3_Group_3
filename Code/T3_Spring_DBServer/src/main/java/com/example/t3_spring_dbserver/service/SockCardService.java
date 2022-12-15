@@ -25,8 +25,8 @@ public class SockCardService implements ISockCardService {
     }
 
     @Override
-    public void saveCard(SockCard card){
-        repository.save(card);
+    public SockCard saveCard(SockCard card){
+        return repository.save(card);
     }
 
     @Override
@@ -68,7 +68,8 @@ public class SockCardService implements ISockCardService {
 
     @Override
     public SockCard getByTitle(String title){
-      Optional<SockCard> sockCardData = repository.findSockCardByTitle(title);
-      return sockCardData.get();
+      SockCard sockCardData = repository.findSockCardByTitle(title);
+        System.out.println(sockCardData);
+      return sockCardData;
     }
 }

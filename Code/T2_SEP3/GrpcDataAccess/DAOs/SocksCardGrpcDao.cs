@@ -14,26 +14,28 @@ public class SocksCardGrpcDao : ISockCardDao
     
     public Task<SocksCard> CreateAsync(SocksCard sockCard)
      {
-          var req = new sockCard
+         var req = new sockCard
          {
-             Id = sockCard.Id,
+             // Id = sockCard.Id,
              Brand = sockCard.Brand, Title = sockCard.Title, Description = sockCard.Description, Image = sockCard.Image,
              Price = sockCard.Price, Material = sockCard.Material, Type = sockCard.Type
          };
 
           try
           {
-              var empty =  stub.addSockCard(req);
-              empty.ToString();
+              var resp =  stub.addSockCard(req);
+              resp.ToString();
+              SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
+                  resp.Price, resp.Material, resp.Brand,
+                  resp.Image, resp.Type);
+              socksCard.Id = resp.Id;
+              return Task.FromResult(socksCard);
           }
           catch (Exception e)
           {
               Console.WriteLine(e);
               throw;
           }
-
-          return Task.FromResult(sockCard);
-        
      }
     
      public async Task<IEnumerable<SocksCard>> GetAsync()
@@ -48,6 +50,7 @@ public class SocksCardGrpcDao : ISockCardDao
              SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
                  resp.Price, resp.Material, resp.Brand,
                  resp.Image, resp.Type);
+             socksCard.Id = resp.Id;
              Console.WriteLine(socksCard.Material);
              list.Add(socksCard);
          }
@@ -71,6 +74,7 @@ public class SocksCardGrpcDao : ISockCardDao
          SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
              resp.Price, resp.Material, resp.Brand,
              resp.Image, resp.Type);
+         socksCard.Id = resp.Id;
          return Task.FromResult(socksCard);
      }
      
@@ -117,6 +121,7 @@ public class SocksCardGrpcDao : ISockCardDao
          SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
              resp.Price, resp.Material, resp.Brand,
              resp.Image, resp.Type);
+         socksCard.Id = resp.Id;
          return Task.FromResult(socksCard);
      }
 }
