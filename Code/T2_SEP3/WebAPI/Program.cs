@@ -62,7 +62,7 @@ AuthorizationPolicies.AddPolicies(builder.Services);
 
 
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
-builder.Services.AddScoped<ISocksDao, SocksFileDao>();
+builder.Services.AddScoped<ISocksDao, SocksGrpcDao>();
 builder.Services.AddScoped<IAddressDao, AddressFileDao>();
 builder.Services.AddScoped<ICartItemDao, CartItemFileDao>();
 builder.Services.AddScoped<ICartItemLogic, CartItemLogic>();

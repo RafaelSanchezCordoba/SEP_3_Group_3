@@ -31,7 +31,7 @@ else
             {
                 ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
                 CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
-                double totalPrice = @card.Price * @cardItem.Quantity;
+                double totalPrice = cardItem.Quantity*card.Price;
                 <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
                     <td >
                         <p>@card.Title</p>
@@ -144,8 +144,7 @@ else
                 msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
                 throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
             }
-            await cardItemService.UpdateQuantityAsync(productId,quantity);
-            SocksCard card = await socksCardService.GetById(sockCardId);
+            await cardItemService.UpdateQuantityAsync(cardItemService.GetByIdsAsync(productId,shoppingCart.Id).Result.Id,quantity);
             await LoadData();
         }
         catch (Exception e)

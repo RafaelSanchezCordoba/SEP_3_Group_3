@@ -15,8 +15,8 @@ public class SocksService implements ISocksService{
     ISocksRepository repository;
 
     @Override
-    public void createSocks(Socks socks) {
-        repository.save(socks);
+    public Socks createSocks(Socks socks) {
+        return repository.save(socks);
     }
 
     @Override

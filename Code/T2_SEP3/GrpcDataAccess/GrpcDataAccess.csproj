@@ -23,7 +23,8 @@
     </ItemGroup>
     <ItemGroup>
         <Protobuf Include="Protos\socksCardComunicator.proto" />
-        <Protobuf Include="Protos\SocksInventoryComunicator.proto" />
+        <Protobuf Include="Protos\SocksInventoryComunicator.proto"/>
+        <Protobuf Include="Protos\socksComunicator.proto"/>
     </ItemGroup>
 
 </Project>

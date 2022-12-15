@@ -81,7 +81,7 @@ public class ShoppingCartController : ControllerBase
 
 
     [HttpGet("products/{id:int}")]
-    public async Task<ActionResult<Product>> GetProducts([FromRoute] int id)
+    public async Task<ActionResult<ICollection<Product>>> GetProducts([FromRoute] int id)
     {
         try
         {

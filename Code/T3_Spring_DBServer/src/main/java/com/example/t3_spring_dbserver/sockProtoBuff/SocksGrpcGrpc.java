@@ -15,28 +15,28 @@ public final class SocksGrpcGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<SocksComunicator.sock,
-      SocksComunicator.EmptySocksMessage> getCreateMethod;
+      SocksComunicator.sock> getCreateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "create",
       requestType = SocksComunicator.sock.class,
-      responseType = SocksComunicator.EmptySocksMessage.class,
+      responseType = SocksComunicator.sock.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<SocksComunicator.sock,
-      SocksComunicator.EmptySocksMessage> getCreateMethod() {
-    io.grpc.MethodDescriptor<SocksComunicator.sock, SocksComunicator.EmptySocksMessage> getCreateMethod;
+      SocksComunicator.sock> getCreateMethod() {
+    io.grpc.MethodDescriptor<SocksComunicator.sock, SocksComunicator.sock> getCreateMethod;
     if ((getCreateMethod = SocksGrpcGrpc.getCreateMethod) == null) {
       synchronized (SocksGrpcGrpc.class) {
         if ((getCreateMethod = SocksGrpcGrpc.getCreateMethod) == null) {
           SocksGrpcGrpc.getCreateMethod = getCreateMethod =
-              io.grpc.MethodDescriptor.<SocksComunicator.sock, SocksComunicator.EmptySocksMessage>newBuilder()
+              io.grpc.MethodDescriptor.<SocksComunicator.sock, SocksComunicator.sock>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "create"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   SocksComunicator.sock.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SocksComunicator.EmptySocksMessage.getDefaultInstance()))
+                  SocksComunicator.sock.getDefaultInstance()))
               .setSchemaDescriptor(new SocksGrpcMethodDescriptorSupplier("create"))
               .build();
         }
@@ -144,7 +144,7 @@ public final class SocksGrpcGrpc {
   public static SocksGrpcStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksGrpcStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksGrpcStub>() {
-        @java.lang.Override
+        @Override
         public SocksGrpcStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksGrpcStub(channel, callOptions);
         }
@@ -159,7 +159,7 @@ public final class SocksGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksGrpcBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksGrpcBlockingStub>() {
-        @java.lang.Override
+        @Override
         public SocksGrpcBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksGrpcBlockingStub(channel, callOptions);
         }
@@ -174,7 +174,7 @@ public final class SocksGrpcGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SocksGrpcFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SocksGrpcFutureStub>() {
-        @java.lang.Override
+        @Override
         public SocksGrpcFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SocksGrpcFutureStub(channel, callOptions);
         }
@@ -189,39 +189,39 @@ public final class SocksGrpcGrpc {
     /**
      */
     public void create(SocksComunicator.sock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateMethod(), responseObserver);
     }
 
     /**
      */
     public void getAll(SocksComunicator.EmptySocksMessage request,
-        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAllMethod(), responseObserver);
     }
 
     /**
      */
     public void getById(SocksComunicator.IntReqSock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void deleteById(SocksComunicator.IntReqSock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteByIdMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getCreateMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 SocksComunicator.sock,
-                SocksComunicator.EmptySocksMessage>(
+                SocksComunicator.sock>(
                   this, METHODID_CREATE)))
           .addMethod(
             getGetAllMethod(),
@@ -256,7 +256,7 @@ public final class SocksGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksGrpcStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksGrpcStub(channel, callOptions);
@@ -265,7 +265,7 @@ public final class SocksGrpcGrpc {
     /**
      */
     public void create(SocksComunicator.sock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateMethod(), getCallOptions()), request, responseObserver);
     }
@@ -273,7 +273,7 @@ public final class SocksGrpcGrpc {
     /**
      */
     public void getAll(SocksComunicator.EmptySocksMessage request,
-        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
+                       io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGetAllMethod(), getCallOptions()), request, responseObserver);
     }
@@ -281,7 +281,7 @@ public final class SocksGrpcGrpc {
     /**
      */
     public void getById(SocksComunicator.IntReqSock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
+                        io.grpc.stub.StreamObserver<SocksComunicator.sock> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetByIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -289,7 +289,7 @@ public final class SocksGrpcGrpc {
     /**
      */
     public void deleteById(SocksComunicator.IntReqSock request,
-        io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
+                           io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteByIdMethod(), getCallOptions()), request, responseObserver);
     }
@@ -303,7 +303,7 @@ public final class SocksGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksGrpcBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksGrpcBlockingStub(channel, callOptions);
@@ -311,7 +311,7 @@ public final class SocksGrpcGrpc {
 
     /**
      */
-    public SocksComunicator.EmptySocksMessage create(SocksComunicator.sock request) {
+    public SocksComunicator.sock create(SocksComunicator.sock request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateMethod(), getCallOptions(), request);
     }
@@ -347,7 +347,7 @@ public final class SocksGrpcGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SocksGrpcFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SocksGrpcFutureStub(channel, callOptions);
@@ -355,7 +355,7 @@ public final class SocksGrpcGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<SocksComunicator.EmptySocksMessage> create(
+    public com.google.common.util.concurrent.ListenableFuture<SocksComunicator.sock> create(
         SocksComunicator.sock request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateMethod(), getCallOptions()), request);
@@ -396,13 +396,13 @@ public final class SocksGrpcGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE:
           serviceImpl.create((SocksComunicator.sock) request,
-              (io.grpc.stub.StreamObserver<SocksComunicator.EmptySocksMessage>) responseObserver);
+              (io.grpc.stub.StreamObserver<SocksComunicator.sock>) responseObserver);
           break;
         case METHODID_GET_ALL:
           serviceImpl.getAll((SocksComunicator.EmptySocksMessage) request,
@@ -421,8 +421,8 @@ public final class SocksGrpcGrpc {
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -436,12 +436,12 @@ public final class SocksGrpcGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     SocksGrpcBaseDescriptorSupplier() {}
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return SocksComunicator.getDescriptor();
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("SocksGrpc");
     }
@@ -461,7 +461,7 @@ public final class SocksGrpcGrpc {
       this.methodName = methodName;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
