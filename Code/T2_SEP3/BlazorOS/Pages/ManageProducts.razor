@@ -1,0 +1,19 @@
+@page "/ManageProducts"
+@inject NavigationManager navMgr
+
+<label>Which type of product would you like to manage?</label>
+
+<div class="myButton" @onclick="TrousersBtn">Trousers</div>
+<div class="myButton" @onclick="SocksBtn">Socks</div>
+
+@code {
+
+    private void TrousersBtn()
+    {
+        navMgr.NavigateTo("ManageTrousers");
+    }
+    private void SocksBtn()
+    {
+        navMgr.NavigateTo("ManageSocks");
+    }
+}

@@ -62,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-526gsgnfxa
 
+[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hu3qvdp1au
+
 [C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-341o8pllcz
@@ -69,6 +73,10 @@ build_metadata.AdditionalFiles.CssScope = b-341o8pllcz
 [C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-o3v1w4jous
+
+[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-81t8kgjlsa
 
 [C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/OrderInformation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJbmZvcm1hdGlvbi5yYXpvcg==
