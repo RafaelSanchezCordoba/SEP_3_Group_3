@@ -222,9 +222,6 @@
     {
       "Id": 4,
       "OwnerId": 0,
-<<<<<<< Updated upstream
-      "Products": []
-=======
       "Products": [
         {
           "ProductCardId": 1,
@@ -275,7 +272,6 @@
           "Color": "red"
         }
       ]
->>>>>>> Stashed changes
     }
   ],
   "SocksCards": [
@@ -781,6 +777,12 @@
       "ProductId": 35
     },
     {
+      "Id": 35,
+      "Quantity": 1,
+      "ShoppingCartId": 3,
+      "ProductId": 36
+    },
+    {
       "Id": 37,
       "Quantity": 1,
       "ShoppingCartId": 4,
@@ -818,15 +820,9 @@
     },
     {
       "Id": 42,
-      "Quantity": 1,
+      "Quantity": 2,
       "ShoppingCartId": 3,
       "ProductId": 43
-    },
-    {
-      "Id": 35,
-      "Quantity": 4,
-      "ShoppingCartId": 3,
-      "ProductId": 36
     }
   ],
   "Orders": [

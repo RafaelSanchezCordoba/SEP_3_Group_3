@@ -1,2 +1,0 @@
-obj/Debug/net6.0/protos/SockCardGrpc.cs \
-obj/Debug/net6.0/protos/SockCardGrpcGrpc.cs: protos/SockCardGrpc.proto

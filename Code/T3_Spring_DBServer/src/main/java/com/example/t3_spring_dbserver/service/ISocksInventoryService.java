@@ -13,5 +13,4 @@ public interface ISocksInventoryService {
     Inventory updateInventory(InventoryDto dto);
     void deleteByCardId(int id);
     void deleteById(long id);
-    Inventory getByParameters(long cardId, String color, String size);
 }

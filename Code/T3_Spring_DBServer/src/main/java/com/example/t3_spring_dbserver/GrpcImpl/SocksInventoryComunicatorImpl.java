@@ -8,7 +8,6 @@ import com.example.t3_spring_dbserver.service.SocksInventoryService;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.EmptyInventoryMessage;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.InvParameters;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.IntReqInventory;
 import com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryGrpcGrpc;
 import io.grpc.stub.StreamObserver;
@@ -95,7 +94,7 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcGrpc.SocksI
 
     @Override
     public void getByCardId(IntReqInventory req, StreamObserver<inventory> streamObserver) {
-        System.out.println("Received get by inv id request with id: " + req.getRequest());
+        System.out.println("Received get by card id request with id: " + req.getRequest());
         List<Inventory> list = service.getByCardId(req.getRequest());
 
         for (Inventory inventory:list) {
@@ -120,21 +119,6 @@ public class SocksInventoryComunicatorImpl extends SocksInventoryGrpcGrpc.SocksI
 
         streamObserver.onNext(EmptyInventoryMessage.newBuilder().build());
         streamObserver.onCompleted();
-    }
-
-    @Override
-    public void getByParameters(InvParameters req, StreamObserver<inventory> responseStream) {
-        System.out.println("Received get by parameters request with : " + req.getCardId() + req.getColor() + req.getSize());
-        Inventory inventory = service.getByParameters(req.getCardId(), req.getColor(), req.getSize());
-        SocksInventoryComunicator.inventory toSent = SocksInventoryComunicator.inventory.newBuilder()
-                .setId((int) inventory.getId())
-                .setColor(inventory.getColor())
-                .setSize(inventory.getSize())
-                .setQuantity(inventory.getQuantity())
-                .setCardId((int)inventory.getSockCard().getId()).build();
-
-        responseStream.onNext(toSent);
-        responseStream.onCompleted();
     }
 
 }

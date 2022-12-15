@@ -60,7 +60,6 @@ public class InventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
     [HttpGet("card{id:int}")]
     public async Task<ActionResult<IEnumerable<Inventory>>> GetByCardId([FromRoute] int id)
     {
@@ -90,7 +89,6 @@ public class InventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
     [HttpDelete("Cards/{id:int}")]
     public async Task<ActionResult> DeleteFromCardAsync([FromRoute] int id)
     {
@@ -120,7 +118,6 @@ public class InventoryController:ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
     [HttpGet("/Parameters")]
     public async Task<ActionResult<IEnumerable<Inventory>>> GetByParameters([FromQuery] int scId,[FromQuery] String color,[FromQuery] String size)
     {

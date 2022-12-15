@@ -9,7 +9,6 @@ service SocksInventoryGrpc {
   rpc updateInventory(inventory) returns (EmptyInventoryMessage) {}
   rpc deleteByCardId(IntReqInventory) returns (EmptyInventoryMessage) {}
   rpc deleteById(IntReqInventory) returns (EmptyInventoryMessage) {}
-  rpc getByParameters(InvParameters) returns (inventory) {}
 }
 
   message IntReqInventory{
@@ -22,12 +21,6 @@ service SocksInventoryGrpc {
     string color = 3;
     string size = 4;
     int32 quantity = 5;
-  }
-
-  message InvParameters {
-    int32 cardId = 1;
-    string color = 2;
-    string size = 3;
   }
 
   message EmptyInventoryMessage {
