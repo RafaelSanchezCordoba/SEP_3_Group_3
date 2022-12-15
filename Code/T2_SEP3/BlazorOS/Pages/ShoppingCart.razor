@@ -1,109 +1,98 @@
-@page "/"
-@inject NavigationManager NavManager
+@page "/ShoppingCart/{id:int}"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@inject IShoppingCartService shoppingCartService
+@inject ISockCardService socksCardService
+@inject ISocksService socksService
+@inject ISockInventoryService inventoryService
+@inject ICardItemService cardItemService
+@inject NavigationManager navMgr
 
-<<<<<<< Updated upstream
-=======
 @if (productList == null)
 {
     <p>no items in the cart</p>
 }
-else
-{
-    <h3>Item summary (@productList.Count)</h3>
-    <div class="table-div">
-        <table class="table">
-            <thead>
-            <th></th>
-            <th>Item</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th></th>
-            </thead>
-            <tbody>
-            
-            @foreach (var p in productList)
-            {
-                ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
-                
-                CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
-              
-                double totalPrice = card.Price * cardItem.Quantity;
-                <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
-                    <td >
-                        <p>@card.Title</p>
-                        <p>@p.Size.ToUpper()</p>
-                        <p style="color: @p.Color">@p.Color</p>
-                        
-                    </td>
-                    <td class="price-td">@card.Price €</td>
-                    <td >
-                        <label>@cardItem.Quantity</label>
-                        <div @onclick="@(() =>  IncreaseQuantity(p.Id, cardItem.Quantity,p.ProductCardId,cardItem.Id))" class="myButton">+</div>
-                        <div @onclick="@(() =>  DecreaseQuantity(p.Id, cardItem.Quantity,cardItem.Id))" class="myButton">-</div>
-                    </td>
-                    <td >@totalPrice €</td>
-                    <td>
-                        <div @onclick="@(() => RemoveProduct(p.Id))" class="myButton">Remove</div></td>
-                </tr>
-            }
-            </tbody>
-        </table>
-    </div>
-    <label>@msg</label>
->>>>>>> Stashed changes
+ else
+ {
+     <h3>Item summary (@productList.Count)</h3>
+     <div class="table-div">
+         <table class="table">
+             <thead>
+             <th></th>
+             <th>Item</th>
+             <th>Price</th>
+             <th>Quantity</th>
+             <th>Total</th>
+             <th></th>
+             </thead>
+             <tbody>
 
-<div class="title-container">
-    <h2>Your Fashion Future is Here</h2>
-    <br/>
-    <h4>Our clothes are made with 100% recycled polyester</h4>
-    <br/><h3>Because dressing with style should never hurt the planet</h3>
-</div>
-<br/>
-<label>Shop By Category</label>
-<div class="categoriesContainer">
-    <div class="categoryCard" @onclick="SocksBtn" style="background-image: url(img/portada-calcetines.jpg)">
-        <div class="categoryTitle">Socks</div>
-    </div>
- 
+             @foreach (var p in productList)
+             {
+                 ProductCard? card = cards.FirstOrDefault(productCard => productCard.Id == p.ProductCardId);
+                 CartItem? cardItem = items.FirstOrDefault(item => item.ProductId == p.Id);
+                 double totalPrice = card.Price * cardItem.Quantity;
+                 <tr> <td ><img src="@card.Image" style="width: 100px"/></td>
+                     <td >
+                         <p>@card.Title</p>
+                         <p>@p.Size.ToUpper()</p>
+                         <p style="color: @p.Color">@p.Color</p>
 
-<<<<<<< Updated upstream
-    <div class="categoryCard" style="background-image: url(img/trousers-img.webp)">
-        <div class="categoryTitle">Trousers</div>
-    </div>
-</div>
-=======
-<p>@msg</p>
+                     </td>
+                     <td class="price-td">@card.Price €</td>
+                     <td >
+                         <label>@cardItem.Quantity</label>
+                         <div @onclick="@(() => IncreaseQuantity(p.Id, cardItem.Quantity, p.ProductCardId, cardItem.Id))" class="myButton">+</div>
+                         <div @onclick="@(() => DecreaseQuantity(p.Id, cardItem.Quantity, cardItem.Id))" class="myButton">-</div>
+                     </td>
+                     <td >@totalPrice €</td>
+                     <td>
+                         <div @onclick="@(() => RemoveProduct(p.Id))" class="myButton">Remove</div></td>
+                 </tr>
+             }
+             </tbody>
+         </table>
+     </div>
+     <label>@msg</label>
 
+     <div class="order-summary-div">
+         <b>Order Summary</b>
+         <p>Subtotal: <b><label bind="@subtotal" style="float: right">@subtotal €</label></b></p>
+         <button @onclick="onCheckOut" class="myButton" id="checkout-btn">Checkout</button>
+         <p>Apply a coupon code or points on the next step</p>
+         -
+         <p>@msg</p>
+     </div>
 
 @code {
+
     [Parameter]
     public int Id { get; set; }
-    
-    private global::Shared.Models.ShoppingCart shoppingCart= null;
+
+    private global::Shared.Models.ShoppingCart shoppingCart = null;
     private Socks socks;
-    private List<Product?> productList=new List<Product?>();
-    private double subtotal=0;
+    private List<Product?> productList = new List<Product?>();
+    private double subtotal = 0;
     private string msg = "";
     private List<ProductCard?> cards = new List<ProductCard?>();
-    private List<CartItem?> items= new List<CartItem?>();
+    private List<CartItem?> items = new List<CartItem?>();
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            shoppingCart= await shoppingCartService.getByIdAsync(Id);
-            productList = (List<Product>) await shoppingCartService.GetProducts(Id);
+            shoppingCart = await shoppingCartService.getByIdAsync(Id);
+            productList = (List<Product>)await shoppingCartService.GetProducts(Id);
             foreach (Product p in productList)
             {
                 SocksCard card = await socksCardService.GetById(p.ProductCardId);
                 cards.Add(card);
-                CartItem item=await cardItemService.GetByIdsAsync(p.Id,Id);
-                items.Add(item);  
+                CartItem item = await cardItemService.GetByIdsAsync(p.Id, Id);
+                items.Add(item);
                 double totalPrice = card.Price * item.Quantity;
                 subtotal += totalPrice;
             }
-           
+
         }
         catch (Exception e)
         {
@@ -111,17 +100,18 @@ else
             msg = e.Message;
         }
     }
-     public async Task<int> InvCheck(int cardId,int cardItemId)
+
+    public async Task<int> InvCheck(int cardId, int cardItemId)
     {
-       IEnumerable<Inventory> inventories =  await inventoryService.GetByCardIdAsync(cardId);
-         
-         Product sockToCompare = productList.Find(x => x.Id == cardItemId);
-       
-      
-       Inventory? toCompare = inventories.FirstOrDefault(x=>(x.Color.Equals(sockToCompare.Color)
-                                                            &&x.Size.Equals(sockToCompare.Size))) ;
-         return (int) toCompare.Quantity;
-         
+        IEnumerable<Inventory> inventories = await inventoryService.GetByCardIdAsync(cardId);
+
+        Product sockToCompare = productList.Find(x => x.Id == cardItemId);
+
+
+        Inventory? toCompare = inventories.FirstOrDefault(x => (x.Color.Equals(sockToCompare.Color)
+                                                                && x.Size.Equals(sockToCompare.Size)));
+        return (int)toCompare.Quantity;
+
     }
 
     protected async Task RemoveProduct(int productId)
@@ -139,21 +129,79 @@ else
             msg = e.Message;
         }
     }
->>>>>>> Stashed changes
 
-<div class="eco-container">
-    <h5>Our Ecological Comitment</h5>
-    <p>Climate Action</p>
-    <a href="">Read more</a> about the actions we are taking towards a sustainable future 
-</div>
-
-<br/>
-
-
-@code
-{
-    public async Task  SocksBtn()
+    protected async Task IncreaseQuantity(int productId, int quantity, int sockCardId, int cartItemId)
     {
-        NavManager.NavigateTo($"/BrowseSocks");
+        try
+        {
+            quantity++;
+            socks = await socksService.getByIdAsync(productId);
+            Inventory? inventory = await inventoryService.GetByParameters(sockCardId, socks.Color, socks.Size);
+            if (quantity > inventory.Quantity)
+            {
+                quantity--;
+                msg = $"The stock for product with ID: {productId}, is {inventory.Quantity}";
+                throw new Exception($"The stock for product with ID: {productId}, is {inventory.Quantity}");
+            }
+            await cardItemService.UpdateQuantityAsync(cartItemId, quantity);
+
+            await LoadData();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
     }
+
+    protected async Task DecreaseQuantity(int productId, int quantity, int cartItemId)
+    {
+        try
+        {
+            quantity--;
+            if (quantity >= 1)
+            {
+                await cardItemService.UpdateQuantityAsync(cartItemId, quantity);
+            }
+            else
+            {
+                await RemoveProduct(productId);
+            }
+            await LoadData();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    public async Task LoadData()
+    {
+        try
+        {
+            productList = (List<Product?>)await shoppingCartService.GetProducts(Id);
+            items = (List<CartItem?>)await cardItemService.GetAsync();
+            subtotal = 0;
+            foreach (Product p in productList)
+            {
+                SocksCard card = await socksCardService.GetById(p.ProductCardId);
+                CartItem item = await cardItemService.GetByIdsAsync(p.Id, Id);
+                double totalPrice = card.Price * item.Quantity;
+                subtotal += totalPrice;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    public void onCheckOut()
+    {
+        navMgr.NavigateTo($"/OrderInformation/{shoppingCart.Id}");
+    }
+
 }
+ }

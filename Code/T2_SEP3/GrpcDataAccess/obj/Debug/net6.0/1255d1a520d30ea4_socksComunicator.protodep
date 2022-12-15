@@ -1,2 +1,0 @@
-obj/Debug/net6.0/Protos/SocksComunicator.cs \
-obj/Debug/net6.0/Protos/SocksComunicatorGrpc.cs: Protos/socksComunicator.proto

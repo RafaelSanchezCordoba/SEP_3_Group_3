@@ -24,14 +24,7 @@
     {
       "Id": 4,
       "OwnerId": 0,
-      "Products": [
-        {
-          "ProductCardId": 12,
-          "Id": 21,
-          "Size": "xs",
-          "Color": "black"
-        }
-      ]
+      "Products": []
     }
   ],
   "SocksCards": null,
