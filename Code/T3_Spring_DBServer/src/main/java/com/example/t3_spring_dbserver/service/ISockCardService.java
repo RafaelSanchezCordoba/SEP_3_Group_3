@@ -1,5 +1,6 @@
 package com.example.t3_spring_dbserver.service;
 
+import com.example.t3_spring_dbserver.entity.Inventory;
 import com.example.t3_spring_dbserver.entity.SockCard;
 
 import java.util.List;

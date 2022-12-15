@@ -50,6 +50,8 @@ public static partial class SocksInventoryGrpc
   static readonly grpc::Marshaller<global::EmptyInventoryMessage> __Marshaller_EmptyInventoryMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::EmptyInventoryMessage.Parser));
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Marshaller<global::IntReqInventory> __Marshaller_IntReqInventory = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::IntReqInventory.Parser));
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Marshaller<global::InvParameters> __Marshaller_InvParameters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvParameters.Parser));
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Method<global::inventory, global::EmptyInventoryMessage> __Method_create = new grpc::Method<global::inventory, global::EmptyInventoryMessage>(
@@ -107,6 +109,14 @@ public static partial class SocksInventoryGrpc
       __Marshaller_IntReqInventory,
       __Marshaller_EmptyInventoryMessage);
 
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::InvParameters, global::inventory> __Method_getByParameters = new grpc::Method<global::InvParameters, global::inventory>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "getByParameters",
+      __Marshaller_InvParameters,
+      __Marshaller_inventory);
+
   /// <summary>Service descriptor</summary>
   public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
   {
@@ -155,6 +165,12 @@ public static partial class SocksInventoryGrpc
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::System.Threading.Tasks.Task<global::EmptyInventoryMessage> deleteById(global::IntReqInventory request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::inventory> getByParameters(global::InvParameters request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -308,6 +324,26 @@ public static partial class SocksInventoryGrpc
     {
       return CallInvoker.AsyncUnaryCall(__Method_deleteById, null, options, request);
     }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::inventory getByParameters(global::InvParameters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return getByParameters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::inventory getByParameters(global::InvParameters request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_getByParameters, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::inventory> getByParametersAsync(global::InvParameters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return getByParametersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::inventory> getByParametersAsync(global::InvParameters request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_getByParameters, null, options, request);
+    }
     /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     protected override SocksInventoryGrpcClient NewInstance(ClientBaseConfiguration configuration)
@@ -328,7 +364,8 @@ public static partial class SocksInventoryGrpc
         .AddMethod(__Method_getByCardId, serviceImpl.getByCardId)
         .AddMethod(__Method_updateInventory, serviceImpl.updateInventory)
         .AddMethod(__Method_deleteByCardId, serviceImpl.deleteByCardId)
-        .AddMethod(__Method_deleteById, serviceImpl.deleteById).Build();
+        .AddMethod(__Method_deleteById, serviceImpl.deleteById)
+        .AddMethod(__Method_getByParameters, serviceImpl.getByParameters).Build();
   }
 
   /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -345,6 +382,7 @@ public static partial class SocksInventoryGrpc
     serviceBinder.AddMethod(__Method_updateInventory, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::inventory, global::EmptyInventoryMessage>(serviceImpl.updateInventory));
     serviceBinder.AddMethod(__Method_deleteByCardId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::IntReqInventory, global::EmptyInventoryMessage>(serviceImpl.deleteByCardId));
     serviceBinder.AddMethod(__Method_deleteById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::IntReqInventory, global::EmptyInventoryMessage>(serviceImpl.deleteById));
+    serviceBinder.AddMethod(__Method_getByParameters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvParameters, global::inventory>(serviceImpl.getByParameters));
   }
 
 }
