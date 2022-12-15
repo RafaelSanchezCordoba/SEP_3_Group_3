@@ -6,6 +6,41 @@
       "Size": "none",
       "Quantity": 0,
       "Id": 0
+    },
+    {
+      "CardId": 1,
+      "Color": "black",
+      "Size": "xs",
+      "Quantity": 2,
+      "Id": 1
+    },
+    {
+      "CardId": 1,
+      "Color": "black",
+      "Size": "s",
+      "Quantity": 55,
+      "Id": 2
+    },
+    {
+      "CardId": 1,
+      "Color": "green",
+      "Size": "xl",
+      "Quantity": 3,
+      "Id": 3
+    },
+    {
+      "CardId": 3,
+      "Color": "white",
+      "Size": "xs",
+      "Quantity": 9,
+      "Id": 4
+    },
+    {
+      "CardId": 4,
+      "Color": "purple",
+      "Size": "xs",
+      "Quantity": 9,
+      "Id": 5
     }
   ],
   "ShoppingCarts": [
@@ -28,7 +63,26 @@
     }
   ],
   "SocksCards": [
-    {}
+    {
+      "Title": null,
+      "Description": null,
+      "Price": 0,
+      "Material": null,
+      "Brand": null,
+      "Image": null,
+      "Type": null,
+      "Id": 0
+    },
+    {
+      "Title": "asdf",
+      "Description": "adfa",
+      "Price": 33,
+      "Material": "adf",
+      "Brand": "asdf",
+      "Image": "j",
+      "Type": "Mid calf",
+      "Id": 1
+    }
   ],
   "Socks": [
     {
@@ -110,7 +164,36 @@
     }
   ],
   "TrouserCards": [
-    {}
+    {
+      "Title": "trouser 1",
+      "Description": "h",
+      "Price": 1,
+      "Material": "h",
+      "Brand": "h",
+      "Image": "h",
+      "Type": "Low cut",
+      "Id": 2
+    },
+    {
+      "Title": "test2",
+      "Description": "u",
+      "Price": 1,
+      "Material": "i",
+      "Brand": "i",
+      "Image": "i",
+      "Type": "Mid calf",
+      "Id": 3
+    },
+    {
+      "Title": "test3",
+      "Description": "8",
+      "Price": 8,
+      "Material": "8",
+      "Brand": "8",
+      "Image": "8",
+      "Type": "Executive",
+      "Id": 4
+    }
   ],
   "Trousers": []
 }

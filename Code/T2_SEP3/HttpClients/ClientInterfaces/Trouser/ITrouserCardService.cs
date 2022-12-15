@@ -7,7 +7,7 @@ public interface ITrouserCardService
 {
     Task<TrouserCard> Create(CreateTrouserCardDto dto);
     Task<TrouserCard> GetById(int id);
-    Task<ICollection<TrouserCard>> GetAllSockCards();
+    Task<ICollection<TrouserCard>> GetAllTrouserCards();
     Task RemoveById(int id);
     Task UpdateAsync(UpdateTrouserCardDto cardUpdateDto);
 }

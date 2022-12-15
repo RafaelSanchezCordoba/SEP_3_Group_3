@@ -5,30 +5,34 @@
 @inject ITrouserCardService trouserService;
 @inject NavigationManager navMgr
 
-<h3>BrowseTrousers</h3>
+
+<div class="product-card-container">
+    @if (trouserCards != null)
+    {
+        
+            @foreach (TrouserCard card in trouserCards)
+            {
+                <div class="card" @onclick="@(() => navMgr.NavigateTo($"/ViewTrouserInfo/{card.Id}"))">
+                    
+                        <img src="@card.Image ">
+                   
+                    <div class="card_info">
+                        <p id="price-label"><b>@card.Price €</b></p>
+                        <p id="title-label">@card.Title</p>
+                    </div>
+                </div>
+            }
+    }
+    </div>
 
 @code {
     private ICollection<TrouserCard> trouserCards = new List<TrouserCard>();
     private string msg = "";
 
-    protected async  void LoadData()
-    {
-        try
-        {
-            
-            trouserCards = await trouserService.GetAllSockCards();
-            msg = "data loaded";
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            msg = e.Message;
-        }
 
-    }
 
     protected async override Task OnInitializedAsync()
     {
-        trouserCards = await trouserService.GetAllSockCards();
+        trouserCards = await trouserService.GetAllTrouserCards();
     }
 }

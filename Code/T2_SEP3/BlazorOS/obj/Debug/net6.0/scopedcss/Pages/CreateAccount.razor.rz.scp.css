@@ -1,5 +1,5 @@
 
-.myButton[b-ow5nzj4yj6]{
+.myButton[b-526gsgnfxa]{
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -16,7 +16,7 @@
     margin-top: 5px;
 }
 
-.myButton span[b-ow5nzj4yj6]{
+.myButton span[b-526gsgnfxa]{
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -27,10 +27,10 @@
     transform: rotate(0deg);
 }
 
-.myButton:hover[b-ow5nzj4yj6]{
+.myButton:hover[b-526gsgnfxa]{
     background-color: #8b9cb3;
 }
 
-.myButton:active[b-ow5nzj4yj6]{
+.myButton:active[b-526gsgnfxa]{
     transform: scale(0.95);
 }

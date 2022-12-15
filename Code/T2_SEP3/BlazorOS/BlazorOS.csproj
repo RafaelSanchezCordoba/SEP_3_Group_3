@@ -24,10 +24,6 @@
       <None Include="wwwroot\Icons\magnifier.png" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Include="Pages\Socks\CreateSockInventory.razor.css" />
-    </ItemGroup>
-
    
 
 </Project>

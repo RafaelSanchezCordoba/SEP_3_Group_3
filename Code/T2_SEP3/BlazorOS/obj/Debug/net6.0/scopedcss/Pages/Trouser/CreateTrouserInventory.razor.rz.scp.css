@@ -1,26 +1,28 @@
-* {box-sizing: border-box;}
+*[b-ocdfxevhib] {
+    box-sizing: border-box;
+}
 
-.card{
+.card[b-ocdfxevhib]{
     padding: 20px;
     width: 65%;
     float: left;
 }
 
-.button-message {
+.button-message[b-ocdfxevhib] {
     float: left;
     margin-left: 2%;
 }
 
-.acceptbtn {
+.acceptbtn[b-ocdfxevhib] {
     padding: 4px;
     margin-right: 10px;
 }
 
-#product-image {
+#product-image[b-ocdfxevhib] {
     width: 50%;
 }
 
-.small-card {
+.small-card[b-ocdfxevhib] {
     padding: 20px;
     width: 34%;
     float: right;

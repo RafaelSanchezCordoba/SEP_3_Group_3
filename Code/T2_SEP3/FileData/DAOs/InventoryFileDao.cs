@@ -25,6 +25,10 @@ public class InventoryFileDao:InterfaceInventoryDao
         ProductCard exists = context.SocksCards.FirstOrDefault(c => c.Id == inventory.CardId);
         if (exists==null)
         {
+            exists = context.TrouserCards.FirstOrDefault(c => c.Id == inventory.CardId);
+        }
+        if (exists==null)
+        {
             throw new Exception($"Product with id{inventory.CardId} does not exists !!! cannot add Stock");
         }
 
@@ -72,7 +76,7 @@ public class InventoryFileDao:InterfaceInventoryDao
         IEnumerable<Inventory> result = context.Inventories.AsEnumerable().Where(s => s.CardId == id);
         if (result == null)
         {
-            throw new Exception($"Socks with ID {id} does not have any stock to delete!!!");
+            throw new Exception($"Product with ID {id} does not have any stock to delete!!!");
         }
         foreach (var inventory in result)
         {
@@ -88,7 +92,7 @@ public class InventoryFileDao:InterfaceInventoryDao
         Inventory? existing = context.Inventories.FirstOrDefault(stock => stock.Id == id);
         if (existing == null)
         {
-            throw new Exception($"Socks Stock with ID {id} does not exist!!!");
+            throw new Exception($"Inventory with ID {id} does not exist!!!");
         }
 
         context.Inventories.Remove(existing);

@@ -54,7 +54,7 @@ public class TrouserCardHttpClient : ITrouserCardService
         return product;
     }
 
-    public async Task<ICollection<TrouserCard>> GetAllSockCards()
+    public async Task<ICollection<TrouserCard>> GetAllTrouserCards()
     {
         HttpResponseMessage response = await client.GetAsync("https://localhost:7999/TrouserCard");
         string content = await response.Content.ReadAsStringAsync();
@@ -63,13 +63,13 @@ public class TrouserCardHttpClient : ITrouserCardService
             throw new Exception(content);
         }
 
-        ICollection<TrouserCard> socks = JsonSerializer.Deserialize<ICollection<TrouserCard>>(content,
+        ICollection<TrouserCard> trouserCards = JsonSerializer.Deserialize<ICollection<TrouserCard>>(content,
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             })!;
       
-        return socks;
+        return trouserCards;
     }
 
     public async Task RemoveById(int id)

@@ -1,4 +1,4 @@
-@page "/ViewTrouserInfo"
+@page "/ViewTrouserInfo/{id:int}"
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
 @using System.Security.Claims
@@ -40,7 +40,8 @@
             }
         </div>
         
-        <br/><br/>
+       <br/><br/>
+               <button @onclick="AddToCart" class="myButton">Add to the cart</button>
 
         @if (!string.IsNullOrEmpty(errorMsg))
                 {

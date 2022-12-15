@@ -29,21 +29,7 @@
     private ICollection<SocksCard> sockCards=new List<SocksCard>();
     private string msg = "";
 
-    protected async  void LoadData()
-    {
-        try
-        {
-            
-            sockCards = await sockService.GetAllSockCards();
-            msg = "data loaded";
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            msg = e.Message;
-        }
-
-    }
+   
 
     protected async override Task OnInitializedAsync()
     {

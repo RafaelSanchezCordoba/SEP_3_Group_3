@@ -1,41 +1,41 @@
-*[b-oomwygka46] {
+*[b-hcozhfcqqu] {
     box-sizing: border-box;
 }
 
-.card[b-oomwygka46]{
+.card[b-hcozhfcqqu]{
     width: 65%;
     padding: 20px;
     float: left;
 
 }
 
-.form-group-field[b-oomwygka46]{
+.form-group-field[b-hcozhfcqqu]{
     padding: 10px;
     float: left;
 }
 
-.button-message[b-oomwygka46] {
+.button-message[b-hcozhfcqqu] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-oomwygka46] {
+.small-form-field[b-hcozhfcqqu] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-oomwygka46] {
+input[b-hcozhfcqqu] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-oomwygka46] {
+.long-input[b-hcozhfcqqu] {
     width: 87%;
 }
 
-.myButton[b-oomwygka46]{
+.myButton[b-hcozhfcqqu]{
     background-color: #778da9;
     color: #fff;
     font-family: Trebuchet MS;
@@ -52,7 +52,7 @@ input[b-oomwygka46] {
     margin-top: 5px;
 }
 
-.myButton span[b-oomwygka46]{
+.myButton span[b-hcozhfcqqu]{
     margin-right: 15px;
     display: block;
     width: 29px;
@@ -63,10 +63,10 @@ input[b-oomwygka46] {
     transform: rotate(0deg);
 }
 
-.myButton:hover[b-oomwygka46]{
+.myButton:hover[b-hcozhfcqqu]{
     background-color: #8b9cb3;
 }
 
-.myButton:active[b-oomwygka46]{
+.myButton:active[b-hcozhfcqqu]{
     transform: scale(0.95);
 }
