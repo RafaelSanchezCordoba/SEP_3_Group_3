@@ -1,6 +1,7 @@
 {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "Inventories": [
     {
       "CardId": 0,
@@ -34,11 +35,16 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   "Inventories": [],
   "ShoppingCarts": [],
   "SocksCards": [],
   "Socks": [],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -51,6 +57,7 @@
       "PhoneNumber": null,
       "Address": null,
       "Auth": "Manager"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     },
@@ -180,6 +187,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
   ],
   "Adresses": [],
@@ -191,6 +200,9 @@
   "Trousers": [
     
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
