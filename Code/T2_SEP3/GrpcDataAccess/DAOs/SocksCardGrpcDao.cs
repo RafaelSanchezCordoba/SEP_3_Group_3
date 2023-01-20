@@ -1,4 +1,4 @@
-/*using System.Threading.Channels;
+using System.Threading.Channels;
 using Application.DaoInterfaces;
 using Grpc.Core;
 using Shared.DTOs;
@@ -10,13 +10,13 @@ namespace GrpcDataAccess.DAOs;
 public class SocksCardGrpcDao : ISockCardDao
 { 
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
-    private  stub = new SocksCardGrpc.SocksCardGrpcClient(channel);
+    private ProductCardGrpc.ProductCardGrpcClient stub = new ProductCardGrpc.ProductCardGrpcClient(channel);
     
     public Task<SocksCard> CreateAsync(SocksCard sockCard)
      {
-         var req = new sockCard
-         {
-             // Id = sockCard.Id,
+         var req = new productCard
+         { 
+             Id = sockCard.Id,
              Brand = sockCard.Brand, Title = sockCard.Title, Description = sockCard.Description, Image = sockCard.Image,
              Price = sockCard.Price, Material = sockCard.Material, Type = sockCard.Type
          };
@@ -59,14 +59,25 @@ public class SocksCardGrpcDao : ISockCardDao
 
      }
 
-     public Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
+     public async Task<IEnumerable<ProductCardBasicDto>> GetTitlesAsync()
      {
-         throw new NotImplementedException();
+         var req = new Empty();
+         using var call = stub.getAllSockCards(req);
+         List<ProductCardBasicDto> list = new List<ProductCardBasicDto>();
+
+         while (await call.ResponseStream.MoveNext())
+         {
+             var resp = call.ResponseStream.Current;
+             ProductCardBasicDto dto = new ProductCardBasicDto(resp.Title);
+             list.Add(dto);
+         }
+         Console.WriteLine(list.Count);
+         return await Task.FromResult(list.AsEnumerable());
      }
 
      public Task<SocksCard> GetById(int id)
      {
-         var req = new IntReq
+         var req = new IntReqCard()
          {
              Request = id
          };
@@ -80,7 +91,7 @@ public class SocksCardGrpcDao : ISockCardDao
      
      public Task UpdateAsync(UpdateSocksCardDto dto)
      {
-         var req = new sockCard()
+         var req = new productCard()
          {
              Id = dto.Id
              ,Description = dto.Description
@@ -91,37 +102,31 @@ public class SocksCardGrpcDao : ISockCardDao
              ,Title = dto.Title
              ,Type = dto.Title
          };
-         var resp = stub.updateSockCard(req);
-         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
-             resp.Price, resp.Material, resp.Brand,
-             resp.Image, resp.Type);
+         var resp = stub.updateCard(req);
          return Task.CompletedTask;
      }
 
      public Task DeleteAsync(int id)
      {
-         var req = new IntReq()
+         var req = new IntReqCard()
          {
              Request =id
          };
-         var resp = stub.deleteSockCardById(req);
-         SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
-             resp.Price, resp.Material, resp.Brand,
-             resp.Image, resp.Type);
+         var resp = stub.deleteProductCardById(req);
          return Task.CompletedTask;
      }
 
-     public Task<SocksCard?> GetByTitlesAsync(string title)
+     public Task<SocksCard> GetByTitlesAsync(string title)
      {
-         var req = new StringReq()
+         var req = new StringReqCard()
          {
              Request =title
          };
-         var resp = stub.getByTitle(req);
+         var resp = stub.getByTitleSockCard(req);
          SocksCard socksCard = new SocksCard(resp.Title, resp.Description,
              resp.Price, resp.Material, resp.Brand,
              resp.Image, resp.Type);
          socksCard.Id = resp.Id;
          return Task.FromResult(socksCard);
      }
-}*/
+}

@@ -23,8 +23,8 @@
         
     </ItemGroup>
     <ItemGroup>
-        
-       <Protobuf Include="Protos/productCardComunicator.proto" />
+        <Protobuf Include="Protos/addressComunicator.proto" />
+        <Protobuf Include="Protos/productCardComunicator.proto" />
         <Protobuf Include="Protos/productComunicator.proto" />
         <Protobuf Include="Protos/shoppingCartComunicator.proto" />
         <Protobuf Include="Protos/SocksInventoryComunicator.proto" />

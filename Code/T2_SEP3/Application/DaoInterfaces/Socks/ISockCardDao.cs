@@ -11,5 +11,5 @@ public interface ISockCardDao
     Task<SocksCard> GetById(int id);
     Task UpdateAsync(UpdateSocksCardDto dto);
     Task DeleteAsync(int id);
-    Task<SocksCard?> GetByTitlesAsync(string title);
+    Task<SocksCard> GetByTitlesAsync(string title);
 }
