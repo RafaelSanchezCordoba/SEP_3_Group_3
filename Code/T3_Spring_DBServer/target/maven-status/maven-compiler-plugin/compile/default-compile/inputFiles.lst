@@ -1,42 +1,41 @@
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/repository/ISocksInventoryRepository.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/SockCardService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksCardComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksCardGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/InventoryDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/Order.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/SocksDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksCardGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/CustomerDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/ISockCardService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/ISocksService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksInventoryComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksInventoryGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/Customer.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/Socks.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksInventoryGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/ManagerDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/SockCard.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/SocksInventoryService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/service/ISocksInventoryService.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/SockCardComunicatorImpl.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/OrderDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff/SocksGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/Inventory.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksCardComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/SocksInventoryComunicatorImpl.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/ShoppingCart.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/SockCardDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/ShoppingCartDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/repository/ISocksRepository.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksGrpcGrpc.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/ShippingInf.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/entity/Manager.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/SocksComunicatorImpl.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/T3SpringDbServerApplication.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/sockProtoBuff/SocksInventoryComunicator.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/DTOs/ShippingInfDto.java
-/Users/rafael/Library/Mobile Documents/com~apple~CloudDocs/Denmark/Software Engineering/Semester 3/Semester-Project/Code/T3_Spring_DBServer/src/main/java/com/example/t3_spring_dbserver/repository/ISockCardRepository.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\IProductCardService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\ManagerDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\IInventoryService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\repository\IProductCardRepository.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\SocksDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\SockCard.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\ISocksService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\clientTest\ClientTest.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ProductCardComunicator.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\GrpcImpl\InventoryComunicatorImpl.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ShoppingCartGrpcGrpc.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ProductGrpcGrpc.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\OrderDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\SocksInventoryComunicator.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\GrpcImpl\ProductComunicatorImpl.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\Order.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ProductComunicator.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\InventoryService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\InventoryGrpcGrpc.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\InventoryDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\CustomerDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\T3SpringDbServerApplication.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\AddressAndUserGrpcGrpc.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\ShippingInfDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\Inventory.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\AddressComunicator.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\repository\ISocksRepository.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\Customer.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\GrpcImpl\ProductCardComunicatorImpl.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\Manager.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ProductCardGrpcGrpc.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\protoBuff\ShoppingCartComunicator.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\ShoppingCart.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\ShoppingCartDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\DTOs\SockCardDto.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\Product.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\ShippingInf.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\ProductCardService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\service\SocksService.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\entity\ProductCard.java
+C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T3_Spring_DBServer\src\main\java\com\example\t3_spring_dbserver\repository\IInventoryRepository.java

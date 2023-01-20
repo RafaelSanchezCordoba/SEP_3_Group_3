@@ -1,26 +1,26 @@
-*[b-eolvsyvibr] {
+*[b-0z71pwhilc] {
     box-sizing: border-box;
 }
 
-.card[b-eolvsyvibr]{
+.card[b-0z71pwhilc]{
     width: 65%;
     padding: 20px;
     float: left;
 
 }
 
-.form-group-field[b-eolvsyvibr]{
+.form-group-field[b-0z71pwhilc]{
     padding: 10px;
     float: left;
 }
 
 
-.button-message[b-eolvsyvibr] {
+.button-message[b-0z71pwhilc] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-eolvsyvibr] {
+.small-form-field[b-0z71pwhilc] {
     width: 50%;
     padding: 10px;
     float: left;
@@ -28,26 +28,26 @@
 }
 
 
-input[b-eolvsyvibr] {
+input[b-0z71pwhilc] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-eolvsyvibr] {
+.long-input[b-0z71pwhilc] {
     width: 87%;
 }
 
-.acceptbtn[b-eolvsyvibr] {
+.acceptbtn[b-0z71pwhilc] {
     padding: 4px;
     margin-right: 10px;
 }
 
-#dropdown-list[b-eolvsyvibr] {
+#dropdown-list[b-0z71pwhilc] {
     float: right;
     width: 75%;
 }
 
-#dropdown-input[b-eolvsyvibr] {
+#dropdown-input[b-0z71pwhilc] {
     width: 100%;
     float: right;
 }

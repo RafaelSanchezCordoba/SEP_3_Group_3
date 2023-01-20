@@ -1,50 +1,50 @@
-*[b-qsk2q83mke] {
+*[b-6p62dul75g] {
     box-sizing: border-box;
 }
 
-.card[b-qsk2q83mke]{
+.card[b-6p62dul75g]{
     width: 65%;
     padding: 20px;
     float: left;
 }
 
-.form-group-field[b-qsk2q83mke]{
+.form-group-field[b-6p62dul75g]{
     padding: 10px;
     float: left;
 }
 
-.button-message[b-qsk2q83mke] {
+.button-message[b-6p62dul75g] {
     float: left;
     margin-left: 2%;
 }
 
-.small-form-field[b-qsk2q83mke] {
+.small-form-field[b-6p62dul75g] {
     width: 50%;
     padding: 10px;
     float: left;
     display: inline;
 }
 
-input[b-qsk2q83mke] {
+input[b-6p62dul75g] {
     width: 73%;
     float: right;
 }
 
-.long-input[b-qsk2q83mke] {
+.long-input[b-6p62dul75g] {
     width: 87%;
 }
 
-.acceptbtn[b-qsk2q83mke] {
+.acceptbtn[b-6p62dul75g] {
     padding: 4px;
     margin-right: 10px;
 }
 
-#dropdown-list[b-qsk2q83mke] {
+#dropdown-list[b-6p62dul75g] {
     float: right;
     width: 75%;
 }
 
-#dropdown-input[b-qsk2q83mke] {
+#dropdown-input[b-6p62dul75g] {
     width: 100%;
     float: right;
 }

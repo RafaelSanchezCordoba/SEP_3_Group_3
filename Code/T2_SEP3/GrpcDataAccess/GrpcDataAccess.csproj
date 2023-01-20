@@ -20,11 +20,15 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="Protos\socksCardComunicator.proto" />
-        <Protobuf Include="Protos\SocksInventoryComunicator.proto" />
-        <Protobuf Include="Protos\socksComunicator.proto" />
+        
+       <Protobuf Include="Protos/productCardComunicator.proto" />
+        <Protobuf Include="Protos/productComunicator.proto" />
+        <Protobuf Include="Protos/shoppingCartComunicator.proto" />
+        <Protobuf Include="Protos/SocksInventoryComunicator.proto" />
     </ItemGroup>
+   
 
 </Project>

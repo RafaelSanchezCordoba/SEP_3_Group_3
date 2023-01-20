@@ -1,6 +1,6 @@
-*[b-g6acxsz09v] {box-sizing: border-box;}
+*[b-bphac1fk4u] {box-sizing: border-box;}
 
-.card[b-g6acxsz09v] {
+.card[b-bphac1fk4u] {
     width: 22%;
     margin: 10px;
     padding: 20px;
@@ -13,27 +13,27 @@
 
 }
 
-.card:hover[b-g6acxsz09v] {
+.card:hover[b-bphac1fk4u] {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background: #778DA9;
     transform: scale(1.02);
 }
 
-div[b-g6acxsz09v] {
+div[b-bphac1fk4u] {
     border: none;
 }
 
-.product-card-container[b-g6acxsz09v] {
+.product-card-container[b-bphac1fk4u] {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card_info[b-g6acxsz09v]{
+.card_info[b-bphac1fk4u]{
     position: relative;
     left: 10px;
 }
 
-img[b-g6acxsz09v] {
+img[b-bphac1fk4u] {
     width:95% ;
     max-height: 70%;
     margin-left: auto;
@@ -43,12 +43,12 @@ img[b-g6acxsz09v] {
     border-radius: 15px;
 }
 
-#price-label[b-g6acxsz09v]{
+#price-label[b-bphac1fk4u]{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 22px;
 }
 
-#title-label[b-g6acxsz09v]{
+#title-label[b-bphac1fk4u]{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 17px;
     color: #424242;

@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+
+
+service ProductCardGrpc{
+
+  rpc getById(IntReqCard) returns (productCard);
+
+  rpc addSockCard(productCard)  returns (productCard);
+
+  rpc addTrouserCard(productCard) returns (productCard);
+
+  rpc getAllSockCards(Empty) returns (stream productCard);
+
+  rpc getAllTrouserCards(Empty) returns (stream productCard);
+
+  rpc deleteProductCardById(IntReqCard) returns (productCard);
+
+  rpc getByTitleSockCard (StringReqCard) returns (productCard);
+
+  rpc getByTitleTrouserCard (StringReqCard) returns (productCard);
+
+  rpc updateCard(productCard) returns (productCard);
+}
+message IntReqCard{
+  int32 request = 1;
+}
+message StringReqCard {
+  string request = 1;
+}
+message productCard{
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  double price = 4;
+  string material = 5;
+  string brand = 6;
+  string image = 7;
+  string type = 8;
+}
+message Empty{
+
+}

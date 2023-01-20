@@ -28,34 +28,39 @@ public class Inventory implements Serializable {
     @Column (name = "quantity")
     private int  quantity;
 
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "pc_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private SockCard sockCard;
+    private ProductCard productCard;
+
+
 
     public Inventory() {
 
     }
 
-    public Inventory(long id, String color, String size, int quantity, int cardId) {
+    public Inventory(long id, String color, String size, int quantity) {
         this.id = id;
         this.color = color;
         this.size = size;
         this.quantity = quantity;
-        this.sockCard = sockCard;
+
     }
 
-    public Inventory(String color, String size, int quantity, SockCard sockCard) {
+  public Inventory(String color, String size, int quantity, ProductCard productCard) {
         this.color = color;
         this.size = size;
         this.quantity = quantity;
-        this.sockCard = sockCard;
+        this.productCard = productCard;
     }
+
+
 
     public Inventory(String color, String size, SockCard sockCard) {
         this.color = color;
         this.size = size;
-        this.sockCard = sockCard;
+      //  this.sockCard = sockCard;
     }
 
     public long getId() {
@@ -74,9 +79,10 @@ public class Inventory implements Serializable {
         return quantity;
     }
 
-    public SockCard getSockCard() {
-        return sockCard;
+   public ProductCard getProductCard() {
+        return productCard;
     }
+
 
     public void setId(long id) {
         this.id = id;
@@ -95,7 +101,7 @@ public class Inventory implements Serializable {
     }
 
     public void setSockCard(SockCard sockCard) {
-        this.sockCard = sockCard;
+      //  this.sockCard = sockCard;
     }
 
     @Override
@@ -105,7 +111,7 @@ public class Inventory implements Serializable {
                 ", color='" + color + '\'' +
                 ", size='" + size + '\'' +
                 ", quantity=" + quantity +
-                ", sockCard=" + sockCard +
+                ", sockCard=" + " " +
                 '}';
     }
 }

@@ -7,9 +7,9 @@
 
 using grpc = global::Grpc.Core;
 
-public static partial class SocksInventoryGrpc
+public static partial class InventoryGrpc
 {
-  static readonly string __ServiceName = "SocksInventoryGrpc";
+  static readonly string __ServiceName = "InventoryGrpc";
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -54,12 +54,12 @@ public static partial class SocksInventoryGrpc
   static readonly grpc::Marshaller<global::InvParameters> __Marshaller_InvParameters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvParameters.Parser));
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-  static readonly grpc::Method<global::inventory, global::EmptyInventoryMessage> __Method_create = new grpc::Method<global::inventory, global::EmptyInventoryMessage>(
+  static readonly grpc::Method<global::inventory, global::inventory> __Method_create = new grpc::Method<global::inventory, global::inventory>(
       grpc::MethodType.Unary,
       __ServiceName,
       "create",
       __Marshaller_inventory,
-      __Marshaller_EmptyInventoryMessage);
+      __Marshaller_inventory);
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Method<global::EmptyInventoryMessage, global::inventory> __Method_getAll = new grpc::Method<global::EmptyInventoryMessage, global::inventory>(
@@ -123,12 +123,12 @@ public static partial class SocksInventoryGrpc
     get { return global::SocksInventoryComunicatorReflection.Descriptor.Services[0]; }
   }
 
-  /// <summary>Base class for server-side implementations of SocksInventoryGrpc</summary>
-  [grpc::BindServiceMethod(typeof(SocksInventoryGrpc), "BindService")]
-  public abstract partial class SocksInventoryGrpcBase
+  /// <summary>Base class for server-side implementations of InventoryGrpc</summary>
+  [grpc::BindServiceMethod(typeof(InventoryGrpc), "BindService")]
+  public abstract partial class InventoryGrpcBase
   {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::System.Threading.Tasks.Task<global::EmptyInventoryMessage> create(global::inventory request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::inventory> create(global::inventory request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -177,50 +177,50 @@ public static partial class SocksInventoryGrpc
 
   }
 
-  /// <summary>Client for SocksInventoryGrpc</summary>
-  public partial class SocksInventoryGrpcClient : grpc::ClientBase<SocksInventoryGrpcClient>
+  /// <summary>Client for InventoryGrpc</summary>
+  public partial class InventoryGrpcClient : grpc::ClientBase<InventoryGrpcClient>
   {
-    /// <summary>Creates a new client for SocksInventoryGrpc</summary>
+    /// <summary>Creates a new client for InventoryGrpc</summary>
     /// <param name="channel">The channel to use to make remote calls.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public SocksInventoryGrpcClient(grpc::ChannelBase channel) : base(channel)
+    public InventoryGrpcClient(grpc::ChannelBase channel) : base(channel)
     {
     }
-    /// <summary>Creates a new client for SocksInventoryGrpc that uses a custom <c>CallInvoker</c>.</summary>
+    /// <summary>Creates a new client for InventoryGrpc that uses a custom <c>CallInvoker</c>.</summary>
     /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public SocksInventoryGrpcClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+    public InventoryGrpcClient(grpc::CallInvoker callInvoker) : base(callInvoker)
     {
     }
     /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    protected SocksInventoryGrpcClient() : base()
+    protected InventoryGrpcClient() : base()
     {
     }
     /// <summary>Protected constructor to allow creation of configured clients.</summary>
     /// <param name="configuration">The client configuration.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    protected SocksInventoryGrpcClient(ClientBaseConfiguration configuration) : base(configuration)
+    protected InventoryGrpcClient(ClientBaseConfiguration configuration) : base(configuration)
     {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::EmptyInventoryMessage create(global::inventory request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual global::inventory create(global::inventory request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual global::EmptyInventoryMessage create(global::inventory request, grpc::CallOptions options)
+    public virtual global::inventory create(global::inventory request, grpc::CallOptions options)
     {
       return CallInvoker.BlockingUnaryCall(__Method_create, null, options, request);
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual grpc::AsyncUnaryCall<global::EmptyInventoryMessage> createAsync(global::inventory request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual grpc::AsyncUnaryCall<global::inventory> createAsync(global::inventory request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return createAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public virtual grpc::AsyncUnaryCall<global::EmptyInventoryMessage> createAsync(global::inventory request, grpc::CallOptions options)
+    public virtual grpc::AsyncUnaryCall<global::inventory> createAsync(global::inventory request, grpc::CallOptions options)
     {
       return CallInvoker.AsyncUnaryCall(__Method_create, null, options, request);
     }
@@ -346,16 +346,16 @@ public static partial class SocksInventoryGrpc
     }
     /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    protected override SocksInventoryGrpcClient NewInstance(ClientBaseConfiguration configuration)
+    protected override InventoryGrpcClient NewInstance(ClientBaseConfiguration configuration)
     {
-      return new SocksInventoryGrpcClient(configuration);
+      return new InventoryGrpcClient(configuration);
     }
   }
 
   /// <summary>Creates service definition that can be registered with a server</summary>
   /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-  public static grpc::ServerServiceDefinition BindService(SocksInventoryGrpcBase serviceImpl)
+  public static grpc::ServerServiceDefinition BindService(InventoryGrpcBase serviceImpl)
   {
     return grpc::ServerServiceDefinition.CreateBuilder()
         .AddMethod(__Method_create, serviceImpl.create)
@@ -373,9 +373,9 @@ public static partial class SocksInventoryGrpc
   /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
   /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-  public static void BindService(grpc::ServiceBinderBase serviceBinder, SocksInventoryGrpcBase serviceImpl)
+  public static void BindService(grpc::ServiceBinderBase serviceBinder, InventoryGrpcBase serviceImpl)
   {
-    serviceBinder.AddMethod(__Method_create, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::inventory, global::EmptyInventoryMessage>(serviceImpl.create));
+    serviceBinder.AddMethod(__Method_create, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::inventory, global::inventory>(serviceImpl.create));
     serviceBinder.AddMethod(__Method_getAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::EmptyInventoryMessage, global::inventory>(serviceImpl.getAll));
     serviceBinder.AddMethod(__Method_getById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::IntReqInventory, global::inventory>(serviceImpl.getById));
     serviceBinder.AddMethod(__Method_getByCardId, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::IntReqInventory, global::inventory>(serviceImpl.getByCardId));

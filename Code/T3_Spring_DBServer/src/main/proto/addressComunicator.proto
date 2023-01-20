@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+service AddressAndUserGrpc{
+
+  rpc GetAddressById(IntReqAddress) returns (address);
+  rpc CreateAddress(address) returns (address);
+  rpc GetAllAddresses(EmptyAddressMessage) returns (stream address);
+  rpc UpdateAddress(addressUpdateMessage) returns (StringMessageAddress);
+
+  rpc GetAddressByUserId(IntReqAddress) returns (address);
+  rpc RegisterUser (loginMessage) returns (user);
+  rpc Login (loginMessage) returns (StringMessageAddress);
+  rpc GetUserById(IntReqAddress) returns (user);
+  rpc GetUserByEmail(StringMessageAddress) returns (user);
+  rpc UpdateUser(user) returns (user);
+
+
+}
+
+message IntReqAddress{
+  int32 request = 1;
+}
+message loginMessage{
+  string email = 1;
+  string password = 2;
+}
+message user{
+  int32 id = 1;
+  string email = 2;
+  string name = 3;
+  string phoneNumber = 4;
+  address Address= 5;
+  string auth = 6;
+}
+message address{
+  int32 id = 1;
+  int32 userId = 2;
+  string country = 3;
+  string city = 4;
+  int64  postCode= 5;
+  string street = 6;
+  int32 number = 7;
+  string extraInfo = 8;
+
+}
+message EmptyAddressMessage{}
+message StringMessageAddress{
+  string  message= 1;
+};
+
+message addressUpdateMessage{
+  string country = 1;
+  string city = 2;
+  string street = 3;
+  int32  ownerId = 4;
+  int64  postCode= 5;
+  int32 number = 6;
+  string extraInfo = 7;
+
+}

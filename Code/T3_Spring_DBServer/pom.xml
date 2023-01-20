@@ -85,13 +85,13 @@
 							<outputTargets>
 								<outputTarget>
 									<type>java</type>
-									<outputDirectory>src/main/java/sockProtoBuff</outputDirectory>
+									<outputDirectory>src/main/java/protoBuff</outputDirectory>
 								</outputTarget>
 
 								<outputTarget>
 									<type>grpc-java</type>
 									<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.39.0</pluginArtifact>
-									<outputDirectory>src/main/java/sockProtoBuff</outputDirectory>
+									<outputDirectory>src/main/java/protoBuff</outputDirectory>
 								</outputTarget>
 							</outputTargets>
 

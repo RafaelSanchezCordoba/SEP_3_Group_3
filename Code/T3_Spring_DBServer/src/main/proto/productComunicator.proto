@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+service ProductGrpc {
+  rpc createSock(product) returns (product);
+  rpc createTrouser (product) returns (product);
+  rpc getAllSocks(emptyMessageProduct) returns (stream product);
+  rpc getAllTrousers(emptyMessageProduct) returns (stream product);
+  rpc getById(intReqProduct) returns (product);
+  rpc deleteById(intReqProduct) returns (StringMessageProduct);
+
+}
+
+message intReqProduct {
+  int32 request = 1;
+}
+
+message emptyMessageProduct {
+
+}
+message StringMessageProduct{
+  string message = 1;
+}
+
+message product {
+  int32 id = 1;
+  string size = 2;
+  string color = 3;
+  int32 pc_id = 4;
+}

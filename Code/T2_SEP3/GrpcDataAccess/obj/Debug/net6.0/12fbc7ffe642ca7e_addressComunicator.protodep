@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/AddressComunicator.cs \
+obj\Debug\net6.0\Protos/AddressComunicatorGrpc.cs: Protos/addressComunicator.proto

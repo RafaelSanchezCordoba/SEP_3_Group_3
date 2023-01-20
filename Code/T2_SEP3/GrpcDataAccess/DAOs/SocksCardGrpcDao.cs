@@ -1,4 +1,4 @@
-using System.Threading.Channels;
+/*using System.Threading.Channels;
 using Application.DaoInterfaces;
 using Grpc.Core;
 using Shared.DTOs;
@@ -10,7 +10,7 @@ namespace GrpcDataAccess.DAOs;
 public class SocksCardGrpcDao : ISockCardDao
 { 
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
-    private SocksCardGrpc.SocksCardGrpcClient stub = new SocksCardGrpc.SocksCardGrpcClient(channel);
+    private  stub = new SocksCardGrpc.SocksCardGrpcClient(channel);
     
     public Task<SocksCard> CreateAsync(SocksCard sockCard)
      {
@@ -124,4 +124,4 @@ public class SocksCardGrpcDao : ISockCardDao
          socksCard.Id = resp.Id;
          return Task.FromResult(socksCard);
      }
-}
+}*/

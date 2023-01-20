@@ -2,12 +2,13 @@ using Application.DaoInterfaces;
 using Grpc.Core;
 using Shared.Models;
 
+
 namespace GrpcDataAccess.DAOs;
 
 public class InventoryGrpcDao : InterfaceInventoryDao
 {
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
-    private SocksInventoryGrpc.SocksInventoryGrpcClient stub = new SocksInventoryGrpc.SocksInventoryGrpcClient(channel);
+    private SocksInventoryComunicatorGrpc.
     
     public Task<Inventory> CreateAsync(Inventory inventory)
     {
@@ -25,6 +26,7 @@ public class InventoryGrpcDao : InterfaceInventoryDao
         try
         {
             var empty = stub.create(req);
+            
         }
         catch (Exception e)
         {
@@ -137,4 +139,4 @@ public class InventoryGrpcDao : InterfaceInventoryDao
         return Task.FromResult(inventory);
     }
 
-}
+}*/

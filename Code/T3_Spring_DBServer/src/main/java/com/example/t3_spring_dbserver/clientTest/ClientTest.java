@@ -1,18 +1,10 @@
 package com.example.t3_spring_dbserver.clientTest;
 
-import com.example.t3_spring_dbserver.sockProtoBuff.*;
+import com.google.protobuf.GeneratedMessageV3;
+
+import com.protoBuff.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sock;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.IntReqSock;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.EmptySocksMessage;
-
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.sockCard;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.IntReq;
-import com.example.t3_spring_dbserver.sockProtoBuff.SocksCardComunicator.Empty;
-
-import java.util.Iterator;
 
 public class ClientTest {
 
@@ -21,10 +13,26 @@ public class ClientTest {
     public static void main(String[] args)  throws Exception{
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9999).usePlaintext().build();
-        SocksCardGrpcGrpc.SocksCardGrpcBlockingStub stub = SocksCardGrpcGrpc.newBlockingStub(channel);
-        SocksInventoryGrpcGrpc.SocksInventoryGrpcBlockingStub inventoryStub = SocksInventoryGrpcGrpc.newBlockingStub(channel);
+       /* SocksCardGrpcGrpc.SocksCardGrpcBlockingStub stub = SocksCardGrpcGrpc.newBlockingStub(channel);
+
         SocksGrpcGrpc.SocksGrpcBlockingStub socksStub = SocksGrpcGrpc.newBlockingStub(channel);
         SocksCardComunicator.StringReq req= SocksCardComunicator.StringReq.newBuilder().setRequest("string").build();
+
+
+        inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
+                .setId(3).setColor("b").setSize("M").setCardId(3).build());
+
+        */
+
+
+
+        InventoryGrpcGrpc.InventoryGrpcBlockingStub inventoryStub = InventoryGrpcGrpc.newBlockingStub(channel);
+        inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
+                .setSize("m")
+                .setColor("greenb")
+                .setId(2)
+                .setQuantity(44)
+                .setCardId(1).build());
 
 
 //        com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard getByTitleCard = stub.getByTitle(req);
@@ -131,7 +139,7 @@ public class ClientTest {
 //        System.out.println(sock);
 
         // Delete socks by id
-        EmptySocksMessage deleteReq = socksStub.deleteById(IntReqSock.newBuilder().setRequest(4).build());
-        System.out.println(deleteReq);
+     //   EmptySocksMessage deleteReq = socksStub.deleteById(IntReqSock.newBuilder().setRequest(4).build());
+       // System.out.println(deleteReq);
     }
 }

@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/ProductCardComunicator.cs \
+obj\Debug\net6.0\Protos/ProductCardComunicatorGrpc.cs: Protos/productCardComunicator.proto

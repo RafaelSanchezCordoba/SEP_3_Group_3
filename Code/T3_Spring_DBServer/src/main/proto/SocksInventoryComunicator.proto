@@ -1,15 +1,15 @@
 syntax = "proto3";
 
 
-service SocksInventoryGrpc {
-  rpc create(inventory) returns (EmptyInventoryMessage){}
-  rpc getAll(EmptyInventoryMessage) returns (stream inventory) {}
-  rpc getById(IntReqInventory) returns (inventory) {}
-  rpc getByCardId(IntReqInventory) returns (stream inventory) {}
-  rpc updateInventory(inventory) returns (EmptyInventoryMessage) {}
-  rpc deleteByCardId(IntReqInventory) returns (EmptyInventoryMessage) {}
-  rpc deleteById(IntReqInventory) returns (EmptyInventoryMessage) {}
-  rpc getByParameters(InvParameters) returns (inventory) {}
+service InventoryGrpc {
+  rpc create(inventory) returns (inventory);
+  rpc getAll(EmptyInventoryMessage) returns (stream inventory);
+  rpc getById(IntReqInventory) returns (inventory);
+  rpc getByCardId(IntReqInventory) returns (stream inventory);
+  rpc updateInventory(inventory) returns (EmptyInventoryMessage);
+  rpc deleteByCardId(IntReqInventory) returns (EmptyInventoryMessage);
+  rpc deleteById(IntReqInventory) returns (EmptyInventoryMessage);
+  rpc getByParameters(InvParameters) returns (inventory);
 }
 
   message IntReqInventory{

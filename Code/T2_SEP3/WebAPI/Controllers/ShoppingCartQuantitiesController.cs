@@ -60,7 +60,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
         }
     }
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<ShoppingCart>> GetByIdAsync([FromRoute] int id)
+    public async Task<ActionResult<CartItem>> GetByIdAsync([FromRoute] int id)
     {
         try
         {
@@ -74,7 +74,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
         }
     }
     [HttpGet("/Quantity/{id:int}")]
-    public async Task<ActionResult<ShoppingCart>> GetById([FromRoute] int id)
+    public async Task<ActionResult<int>> GetQuantityById([FromRoute] int id)
     {
         try
         {
@@ -88,7 +88,7 @@ public class ShoppingCartQuantitiesController:ControllerBase
         }
     }
     [HttpGet("/ShoppingCartQuantities/IDs")]
-    public async Task<ActionResult<ShoppingCart>> GetByIdsAsync([FromQuery] int product_id,
+    public async Task<ActionResult<CartItem>> GetByIdsAsync([FromQuery] int product_id,
         [FromQuery] int shoppingCard_id)
     {
         try

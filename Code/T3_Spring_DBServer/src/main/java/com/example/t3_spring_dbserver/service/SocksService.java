@@ -1,6 +1,6 @@
 package com.example.t3_spring_dbserver.service;
 
-import com.example.t3_spring_dbserver.entity.Socks;
+import com.example.t3_spring_dbserver.entity.Product;
 import com.example.t3_spring_dbserver.repository.ISocksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,18 +15,18 @@ public class SocksService implements ISocksService{
     ISocksRepository repository;
 
     @Override
-    public Socks createSocks(Socks socks) {
-        return repository.save(socks);
+    public Product createSocks(Product product) {
+        return repository.save(product);
     }
 
     @Override
-    public Socks getSocksById(long id) {
-        Optional<Socks> socks = repository.findById(id);
+    public Product getSocksById(long id) {
+        Optional<Product> socks = repository.findById(id);
         return socks.get();
     }
 
     @Override
-    public List<Socks> getAll() {
+    public List<Product> getAll() {
         return repository.findAll();
     }
 

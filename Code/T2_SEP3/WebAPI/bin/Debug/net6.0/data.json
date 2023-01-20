@@ -10,6 +10,11 @@
   ],
   "ShoppingCarts": [
     {
+      "Id": 4,
+      "OwnerId": 0,
+      "Products": []
+    },
+    {
       "Id": 1,
       "OwnerId": 1,
       "Products": [
@@ -18,13 +23,26 @@
           "Id": 19,
           "Size": "xl",
           "Color": "black"
+        },
+        {
+          "ProductCardId": 1,
+          "Id": 5,
+          "Size": "xs",
+          "Color": "white"
         }
       ]
     },
     {
-      "Id": 4,
-      "OwnerId": 0,
-      "Products": []
+      "Id": 5,
+      "OwnerId": 2,
+      "Products": [
+        {
+          "ProductCardId": 1,
+          "Id": 6,
+          "Size": "m",
+          "Color": "green"
+        }
+      ]
     }
   ],
   "SocksCards": null,
@@ -128,6 +146,18 @@
       "Quantity": 4,
       "ShoppingCartId": 1,
       "ProductId": 19
+    },
+    {
+      "Id": 7,
+      "Quantity": 1,
+      "ShoppingCartId": 1,
+      "ProductId": 5
+    },
+    {
+      "Id": 8,
+      "Quantity": 5,
+      "ShoppingCartId": 5,
+      "ProductId": 6
     }
   ],
   "Orders": [
@@ -143,18 +173,7 @@
       "Shipping": null
     }
   ],
-  "TrouserCards": [
-    {
-      "Title": null,
-      "Description": null,
-      "Price": 0,
-      "Material": null,
-      "Brand": null,
-      "Image": null,
-      "Type": null,
-      "Id": 0
-    }
-  ],
+  "TrouserCards": [],
   "Trousers": [
     {
       "ProductCardId": 0,

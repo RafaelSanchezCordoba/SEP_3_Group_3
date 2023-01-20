@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+service ShoppingCartGrpc{
+  rpc createCart(IntMessageCart) returns (cart);
+  rpc getAllCarts(EmptyCartMessage) returns (stream cart);
+  rpc getCartByCartId(IntMessageCart) returns (cart);
+  rpc getProductsByCartId(IntMessageCart) returns (stream cartProduct);
+  rpc addProductInCart(patchProductMessage) returns (cart);
+  rpc deleteProductInCart(patchProductMessage) returns (cart);
+  rpc deleteByCartId(IntMessageCart) returns(StringCartMessage);
+
+  rpc getTotalPrice(IntMessageCart) returns (IntMessageCart);
+  rpc getCartByUserId(IntMessageCart) returns (cart);
+
+  //wtf ask team??
+  rpc createQuantity(cartIdProductId) returns (cartItem);
+  rpc getAllCartQuantities (EmptyCartMessage) returns (stream cartItem);
+  rpc getCartItemById(IntMessageCart) returns (cartItem);
+  rpc getQuantityByCartItemId(IntMessageCart) returns (IntMessageCart);
+  rpc updateQuantity(cartIdQuantity) returns (cartItem);
+  rpc deleteCartById(IntMessageCart) returns (StringCartMessage);
+  rpc getCartByIds(cartIdProductId) returns (cartItem);
+
+
+}
+
+message IntMessageCart{
+  int32 number = 1;
+}
+message EmptyCartMessage{
+
+}
+
+message cartIdProductId{
+  int32 shoppingCartId = 1;
+  int32 productId = 2;
+}
+message cartIdQuantity{
+  int32 cartItemId = 1;
+  int32 quantity = 2;
+}
+
+
+message StringCartMessage{
+  string message = 1;
+}
+
+message patchProductMessage{
+  cartProduct cartInMessage = 1;
+  int32 cartId = 2;
+}
+message cartProduct {
+  int32 id = 1;
+  string size = 2;
+  string color = 3;
+  int32 productCardId = 4;
+}
+message cartItem {
+  int32 id = 1;
+  int32 quantity = 2;
+  int32 shoppingCartId = 3;
+  int32 productId = 4;
+}
+
+message cart {
+  int32  id = 1;
+  int32 ownerId = 2;
+  repeated cartProduct products = 3;
+}

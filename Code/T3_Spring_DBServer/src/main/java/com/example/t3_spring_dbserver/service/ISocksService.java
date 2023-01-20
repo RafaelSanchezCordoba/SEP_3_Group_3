@@ -1,14 +1,14 @@
 package com.example.t3_spring_dbserver.service;
 
-import com.example.t3_spring_dbserver.entity.Socks;
+import com.example.t3_spring_dbserver.entity.Product;
 
 import java.util.List;
 
 public interface ISocksService {
 
-    Socks createSocks(Socks socks);
-    Socks getSocksById(long id);
-    List<Socks> getAll();
+    Product createSocks(Product product);
+    Product getSocksById(long id);
+    List<Product> getAll();
     void deleteById(long id);
 
 }

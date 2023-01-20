@@ -11,117 +11,117 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorOS
 build_property.RootNamespace = BlazorOS
-build_property.ProjectDir = C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
+build_property.ProjectDir = C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rosab\OneDrive\Escritorio\Software Engineering\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS
+build_property.MSBuildProjectDirectory = C:\Users\alexd\IdeaProjects\SEP3\SEP_3_Group_3\Code\T2_SEP3\BlazorOS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/App.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/AboutUs.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/AboutUs.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSockInventory.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSockInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcQ3JlYXRlU29ja0ludmVudG9yeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/EditSockCard.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/EditSockCard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcRWRpdFNvY2tDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/ManageSocks.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/ManageSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcTWFuYWdlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/EditTrouserCard.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/EditTrouserCard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxFZGl0VHJvdXNlckNhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/ManageTrousers.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/ManageTrousers.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxNYW5hZ2VUcm91c2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/UpdateInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlSW52ZW50b3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/_Imports.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateAccount.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateAccount.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-526gsgnfxa
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateProducts.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/CreateProducts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hu3qvdp1au
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-341o8pllcz
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-o3v1w4jous
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageProducts.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ManageProducts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-81t8kgjlsa
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/OrderInformation.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/OrderInformation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJbmZvcm1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-xmb3xxwfi1
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Profile.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-hcozhfcqqu
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ShoppingCart.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/ShoppingCart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-rmsxhl3zv7
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/BrowseSocks.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/BrowseSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcQnJvd3NlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-bphac1fk4u
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSocks.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/CreateSocks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcQ3JlYXRlU29ja3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0z71pwhilc
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/ViewSockInfo.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Socks/ViewSockInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29ja3NcVmlld1NvY2tJbmZvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ftbq555bln
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/BrowseTrousers.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/BrowseTrousers.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxCcm93c2VUcm91c2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-x02ij1a4rk
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouser.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxDcmVhdGVUcm91c2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-6p62dul75g
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouserInventory.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/CreateTrouserInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxDcmVhdGVUcm91c2VySW52ZW50b3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ocdfxevhib
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/ViewTrouserInfo.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Pages/Trouser/ViewTrouserInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJvdXNlclxWaWV3VHJvdXNlckluZm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jxks79vshb
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wcssxcvg4k
 
-[C:/Users/rosab/OneDrive/Escritorio/Software Engineering/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
+[C:/Users/alexd/IdeaProjects/SEP3/SEP_3_Group_3/Code/T2_SEP3/BlazorOS/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ov4nba62sm
