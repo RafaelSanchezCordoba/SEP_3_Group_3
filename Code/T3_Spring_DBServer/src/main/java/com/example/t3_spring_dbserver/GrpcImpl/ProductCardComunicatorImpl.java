@@ -1,161 +1,82 @@
-/*
 package com.example.t3_spring_dbserver.GrpcImpl;
-import com.example.t3_spring_dbserver.DTOs.SockCardDto;
 import com.example.t3_spring_dbserver.entity.ProductCard;
+import com.example.t3_spring_dbserver.entity.SockCard;
 import com.example.t3_spring_dbserver.service.ProductCardService;
 
+import com.protoBuff.ProductCardComunicator;
+import com.protoBuff.ProductCardComunicator.StringReqCard;
+import com.protoBuff.ProductCardComunicator.productCard;
+import com.protoBuff.ProductCardComunicator.Empty;
+import com.protoBuff.ProductCardComunicator.IntReqCard;
+import com.protoBuff.ProductCardGrpcGrpc;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
-
 @GRpcService
-public class ProductCardComunicatorImpl {
-
+public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardGrpcImplBase {
 
     @Autowired
     private ProductCardService service;
 
+    @Override
+    public void addSocksCard(productCard request, StreamObserver<productCard> responseStream) {
+        System.out.println("Received req to save sock card with id::"+ request.getId());
 
-
-  //  @Override
-    public void getByTitle(SocksCardComunicator.StringReq req, StreamObserver<sockCard> responseStream){
-        System.out.println("Received req to get by title:" + req.getRequest());
-        ProductCard sockCard = service.getByTitle(req.getRequest());
-
-        SocksCardComunicator.sockCard toSend = SocksCardComunicator.sockCard.newBuilder()
-                .setId((int) sockCard.getId())
-                .setPrice(sockCard.getPrice())
-                .setBrand(sockCard.getBrand())
-                .setType(sockCard.getType())
-                .setDescription(sockCard.getDescription())
-                .setImage(sockCard.getImage())
-                .setMaterial(sockCard.getMaterial()).build();
-
-        responseStream.onNext(toSend);
-        responseStream.onCompleted();
-
-
-    }
-  //  @Override
-    public void updateSockCard(SocksCardComunicator.sockCard card, StreamObserver<SocksCardComunicator.sockCard> responseStream){
-        System.out.println("reicieved req to update sock card::"+card.getId());
-
-         SockCardDto dtoCard = new SockCardDto(card.getId(),card.getTitle()
-                 ,card.getDescription(),card.getPrice()
-                , card.getMaterial()
-                , card.getBrand()
-                , card.getImage()
-                , card.getType());
-
-
-        ProductCard sockCard = service.updateSockCard(dtoCard);
-
-        SocksCardComunicator.sockCard toSent = SocksCardComunicator.sockCard.newBuilder()
-                .setId((int) sockCard.getId())
-                .setPrice(sockCard.getPrice())
-                .setBrand(sockCard.getBrand())
-                .setType(sockCard.getType())
-                .setDescription(sockCard.getDescription())
-                .setImage(sockCard.getImage())
-                .setMaterial(sockCard.getMaterial()).build();
-
-
-        responseStream.onNext(toSent);
-        responseStream.onCompleted();
-
-    }
-
-   // @Override
-    public void deleteSockCardById(SocksCardComunicator.IntReq req, StreamObserver<SocksCardComunicator.sockCard> responseStream){
-        System.out.println("riecieved req to delete sock card with id::"+req.getRequest());
-
-        ProductCard sockCard = service.deleteSockCard(req.getRequest());
-
-        SocksCardComunicator.sockCard toSent = SocksCardComunicator.sockCard.newBuilder()
-                .setId((int) sockCard.getId())
-                .setPrice(sockCard.getPrice())
-                .setBrand(sockCard.getBrand())
-                .setType(sockCard.getType())
-                .setDescription(sockCard.getDescription())
-                .setImage(sockCard.getImage())
-                .setMaterial(sockCard.getMaterial()).build();
-
-
-        responseStream.onNext(toSent);
-        responseStream.onCompleted();
-
-
-    }
-
-   // @Override
-    public void getAllSockCards(SocksCardComunicator.Empty req, StreamObserver<SocksCardComunicator.sockCard> responseStream) {
-
-        System.out.println("reicieved req for all cards");
-
-        List<ProductCard> list = service.getAllSockCards();
-
-        for (ProductCard sockCard:list) {
-            SocksCardComunicator.sockCard protoCard = SocksCardComunicator.sockCard.newBuilder().build().newBuilder()
-                    .setId((int) sockCard.getId())
-                    .setPrice(sockCard.getPrice())
-                    .setBrand(sockCard.getBrand())
-                    .setTitle(sockCard.getTitle())
-                    .setType(sockCard.getType())
-                    .setDescription(sockCard.getDescription())
-                    .setImage(sockCard.getImage())
-                    .setMaterial(sockCard.getMaterial()).build();
-
-            responseStream.onNext(protoCard);
-            System.out.println("card added to stream with id::"+protoCard.getId());
-        }
-        responseStream.onCompleted();
-
-    }
-  //  @Override
-    public void getById (SocksCardComunicator.IntReq req, StreamObserver<SocksCardComunicator.sockCard> responseStream){
-
-        System.out.println("ricieved get by id request with id::"+req.getRequest());
-
-            ProductCard sockCard = service.getById(req.getRequest());
-            SocksCardComunicator.sockCard toSent = SocksCardComunicator.sockCard.newBuilder()
-                    .setId((int) sockCard.getId())
-                    .setPrice(sockCard.getPrice())
-                    .setBrand(sockCard.getBrand())
-                    .setType(sockCard.getType())
-                    .setTitle(sockCard.getTitle())
-                    .setDescription(sockCard.getDescription())
-                    .setImage(sockCard.getImage())
-                    .setMaterial(sockCard.getMaterial()).build();
-
-
-
-            responseStream.onNext(toSent);
-            responseStream.onCompleted();
-
-    }
-
-    //@Override
-    public void addSockCard(SocksCardComunicator.sockCard card, StreamObserver<SocksCardComunicator.sockCard> responseStream) {
-        System.out.println("riecieved req to save card with id::"+card.getId());
-
-        ProductCard daoCard = new ProductCard(card.getTitle(),card.getDescription(),card.getPrice(), card.getMaterial(), card.getBrand(), card.getImage(), card.getType(),"sock");
-        ProductCard sockCard = service.saveCard(daoCard);
-
-
-        SocksCardComunicator.sockCard toSent = SocksCardComunicator.sockCard.newBuilder()
-                .setId((int) sockCard.getId())
-                .setPrice(sockCard.getPrice())
-                .setBrand(sockCard.getBrand())
-                .setType(sockCard.getType())
-                .setTitle(sockCard.getBrand())
-                .setDescription(sockCard.getType())
-                .setImage(sockCard.getBrand())
-                .setMaterial(sockCard.getType()).build();
-        responseStream.onNext(toSent);
+        ProductCard card = new ProductCard(request.getTitle(), request.getDescription(), request.getPrice(), request.getMaterial(), request.getBrand(), request.getImage(), request.getType(), "sock");
+        service.saveCard(card);
+        responseStream.onNext(productCard.newBuilder()
+                .setTitle(card.getTitle())
+                .setDescription(card.getDescription())
+                .setPrice(card.getPrice())
+                .setMaterial(card.getMaterial())
+                .setBrand(card.getBrand())
+                .setImage(card.getImage())
+                .setType(card.getType())
+                .build());
         responseStream.onCompleted();
     }
 
+    @Override
+    public void addTrouserCard(productCard request, StreamObserver<productCard> responseStream) {
+        System.out.println("Received req to save trouser card with id::"+ request.getId());
+
+        ProductCard card = new ProductCard(request.getTitle(), request.getDescription(), request.getPrice(), request.getMaterial(), request.getBrand(), request.getImage(), request.getType(), "trouser");
+        service.saveCard(card);
+        responseStream.onNext(productCard.newBuilder()
+                .setTitle(card.getTitle())
+                .setDescription(card.getDescription())
+                .setPrice(card.getPrice())
+                .setMaterial(card.getMaterial())
+                .setBrand(card.getBrand())
+                .setImage(card.getImage())
+                .setType(card.getType())
+                .build());
+        responseStream.onCompleted();
+    }
+
+    @Override
+    public void getById(IntReqCard request, StreamObserver<productCard> responseStream) {
+        System.out.println("Received req to get product card with id::"+ request.getRequest());
+
+        ProductCard card = service.getById(request.getRequest());
+        responseStream.onNext(productCard.newBuilder()
+                .setTitle(card.getTitle())
+                .setDescription(card.getDescription())
+                .setPrice(card.getPrice())
+                .setMaterial(card.getMaterial())
+                .setBrand(card.getBrand())
+                .setImage(card.getImage())
+                .setType(card.getType())
+                .setId((int) card.getId())
+                .build());
+        responseStream.onCompleted();
+    }
+
+    @Override
+    public void getAllSockCards(Empty request, StreamObserver<productCard> responseStream) {
+        System.out.println("Received req to get all sock card");
+        
+    }
 }
-*/
+

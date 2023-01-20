@@ -1,5 +1,7 @@
 package com.protoBuff;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -471,6 +473,8 @@ public final class ProductCardGrpcGrpc {
                   this, METHODID_UPDATE_CARD)))
           .build();
     }
+
+      public abstract void addSocksCard(ProductCardComunicator.productCard request, StreamObserver<ProductCardComunicator.productCard> responseStream);
   }
 
   /**

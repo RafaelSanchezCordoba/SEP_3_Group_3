@@ -1,6 +1,7 @@
 package com.example.t3_spring_dbserver.GrpcImpl;
 
 
+import com.example.t3_spring_dbserver.DTOs.InventoryDto;
 import com.example.t3_spring_dbserver.entity.Inventory;
 import com.example.t3_spring_dbserver.entity.ProductCard;
 import com.example.t3_spring_dbserver.service.ProductCardService;
@@ -74,7 +75,7 @@ public class InventoryComunicatorImpl extends InventoryGrpcImplBase {
         responseStream.onCompleted();
     }
 
-   /* @Override
+    @Override
     public void updateInventory(inventory inv, StreamObserver<EmptyInventoryMessage> message) {
         System.out.println("Received req to update inventory: " + inv.getId());
 
@@ -83,7 +84,7 @@ public class InventoryComunicatorImpl extends InventoryGrpcImplBase {
 
         message.onNext(EmptyInventoryMessage.newBuilder().build());
         message.onCompleted();
-    }*/
+    }
 
     @Override
     public void deleteById(IntReqInventory req, StreamObserver<EmptyInventoryMessage> responseStream) {
