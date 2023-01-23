@@ -5,46 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/Debug/net6.0/Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.dll.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/BlazorOS.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.dll.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/Domain.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.dll.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/HttpClients.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/dotnet.6.0.8.3st3fntw0r.js" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/bin/Debug/net6.0/wwwroot/_framework/dotnet.6.0.8.3st3fntw0r.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/BlazorOS.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/BlazorOS.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/29vJdthH.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/29vJdthH.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/PMTf3GAn.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/PMTf3GAn.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/S6ieCVYr.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/S6ieCVYr.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/bueFgF2+.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/bueFgF2+.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/gniKCGCx.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/gniKCGCx.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/hG+9A2sX.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/Debug/net6.0/build-gz/hG+9A2sX.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/BlazorOS/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Debug/net6.0/Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/Debug/net6.0/FileData.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/FileData.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/FileData.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/FileData.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/FileData.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/FileData/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/DAOs/TrouserCardGrpcDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/DAOs/TrouserCardGrpcDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/DAOs/UserGrpcDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/DAOs/UserGrpcDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/12fbc7ffe642ca7e_socksCardComunicator.protodep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/12fbc7ffe642ca7e_socksComunicator.protodep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/Debug/net6.0/GrpcDataAccess.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/GrpcDataAccess.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/GrpcDataAccess/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/Debug/net6.0/HttpClients.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/HttpClients.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/HttpClients.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/HttpClients.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/HttpClients/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/Debug/net6.0/WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/WebAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/WebAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../T2_SEP3/WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-=======
->>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/DTOs/InventoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/DTOs/InventoryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/AddressAndUserCommunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/AddressAndUserCommunicatorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" afterDir="false" />
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/ISocksRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ISocksService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShippingInf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShippingInf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/SockCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/ISocksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ISocksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/addressComunicator.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/addressComunicator.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/entity/SockCard.class" beforeDir="false" />
->>>>>>> Stashed changes
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <list id="ffcb8ffc-5dcd-4e8a-8876-e89e8010c3e9" name="Changes by alexd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +168,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/sockProtoBuff" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientTest">
+  <component name="RunManager" selected="Spring Boot.T3SpringDbServerApplication">
     <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.t3_spring_dbserver.clientTest.ClientTest" />
       <module name="T3_Spring_DBServer" />
@@ -173,15 +233,9 @@
       <workItem from="1673880054361" duration="7257000" />
       <workItem from="1673964403267" duration="6449000" />
       <workItem from="1674123449310" duration="18967000" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       <workItem from="1674465336932" duration="4308000" />
-=======
       <workItem from="1674465282144" duration="4417000" />
->>>>>>> Stashed changes
-=======
       <workItem from="1674465336932" duration="4875000" />
->>>>>>> Stashed changes
     </task>
     <servers />
   </component>

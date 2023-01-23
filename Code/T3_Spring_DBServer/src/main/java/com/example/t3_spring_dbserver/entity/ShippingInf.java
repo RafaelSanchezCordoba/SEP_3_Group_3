@@ -13,10 +13,6 @@ public class ShippingInf implements Serializable {
     @Column(name = "id")
     private long id;
 
-    @OneToOne
-    @Column(name="uId")
-    private Customer customer;
-
     @Column(name = "country")
     private String country;
 
@@ -46,7 +42,6 @@ public class ShippingInf implements Serializable {
         this.street = street;
         this.number = number;
         this.extraInf = extraInf;
-        this.customer= customer;
     }
 
     public long getId() {
@@ -105,13 +100,6 @@ public class ShippingInf implements Serializable {
         this.extraInf = extraInf;
     }
 
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
 
     @Override
     public String toString() {

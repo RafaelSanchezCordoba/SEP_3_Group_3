@@ -22,7 +22,7 @@ public class TrouserCardGrpcDao : ITrouserCardDao
 
         try
         {
-            var resp =  stub.addSockCard(req);
+            var resp =  stub.addTrouserCard(req);
             resp.ToString();
             TrouserCard trouserCard = new TrouserCard(resp.Title, resp.Description,
                 resp.Price, resp.Material, resp.Brand,

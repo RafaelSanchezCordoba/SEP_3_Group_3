@@ -18,7 +18,7 @@ public interface IUserRepository extends JpaRepository<Customer, Long> {
     @Query("SELECT i  FROM Customer i WHERE i.email = :email")
     Customer getByEmail(@Param("email") String email);
 
-    @Query("SELECT ShippingInf FROM Customer i WHERE i.id = :email")
-    ShippingInf getAddressByUserId(@Param("id") long id);
+   // @Query("SELECT ShippingInf FROM Customer i WHERE i.id=:id")
+   // ShippingInf getAddressByUserId(@Param("id") long id);
 
 }

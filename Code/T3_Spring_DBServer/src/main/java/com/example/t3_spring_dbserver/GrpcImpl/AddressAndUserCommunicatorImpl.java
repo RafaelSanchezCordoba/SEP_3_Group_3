@@ -29,8 +29,7 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
         ShippingInf address = addressService.GetAddressById(request.getRequest());
         AddressComunicator.address toSent = AddressComunicator.address.newBuilder()
                 .setId((int) address.getId())
-                .setUserId((int)address.getCustomer().getId())
-                .setCountry(address.getCountry())
+                 .setCountry(address.getCountry())
                 .setCity(address.getCity())
                 .setPostCode(address.getPostCode())
                 .setStreet(address.getStreet())
@@ -52,8 +51,7 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
         addressService.CreateAddress(address);
         responseObserver.onNext(AddressComunicator.address.newBuilder()
                 .setId((int) address.getId())
-                .setUserId((int)address.getCustomer().getId())
-                .setCountry(address.getCountry())
+                 .setCountry(address.getCountry())
                 .setCity(address.getCity())
                 .setPostCode(address.getPostCode())
                 .setStreet(address.getStreet())
@@ -73,7 +71,6 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
         for (ShippingInf address:list) {
             AddressComunicator.address toSent = AddressComunicator.address.newBuilder()
                     .setId((int) address.getId())
-                    .setUserId((int)address.getCustomer().getId())
                     .setCountry(address.getCountry())
                     .setCity(address.getCity())
                     .setPostCode(address.getPostCode())
@@ -115,7 +112,6 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
             ShippingInf address= userService.GetAddressByUserId(request.getRequest());
             AddressComunicator.address toSent = AddressComunicator.address.newBuilder()
                     .setId((int) address.getId())
-                    .setUserId((int)address.getCustomer().getId())
                     .setCountry(address.getCountry())
                     .setCity(address.getCity())
                     .setPostCode(address.getPostCode())
@@ -149,7 +145,7 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
         Customer customer = userService.Login(request.getEmail(),request.getPassword());
 
             responseObserver.onNext(AddressComunicator.StringMessageAddress.newBuilder()
-                    .setMessage(customer.getName())
+                    .setMessage(customer.getEmail())
                     .build());
             responseObserver.onCompleted();
         }
@@ -166,14 +162,46 @@ public class AddressAndUserCommunicatorImpl extends AddressAndUserGrpcGrpc.Addre
                             .setCity(user.getShippingInf().getCity())
                             .setCountry(user.getShippingInf().getCountry())
                              .setStreet(user.getShippingInf().getStreet())
-                             .setUserId((int) user.getId()).setNumber(user.getShippingInf().getNumber())
-                            .setExtraInfo(user.getShippingInf().getExtraInf()).build();
+                             .setExtraInfo(user.getShippingInf().getExtraInf()).build();
             responseObserver.onNext(AddressComunicator.user.newBuilder()
                     .setEmail(user.getEmail())
                     .setName(user.getName())
+                            .setId((int) user.getId())
                     .setPhoneNumber(String.valueOf(user.getPhone()))
-                    .setAddress(address)
+                    .setAddress(address).setAuth(user.getAuth())
                     .build());
             responseObserver.onCompleted();
         }
+
+
+    @Override
+    public void getUserByEmail(AddressComunicator.StringMessageAddress request,
+                            StreamObserver<AddressComunicator.user> responseObserver) {
+        System.out.println("Received req to get customer with email:" + request.getMessage());
+
+        Customer user = userService.GetUserByEmail(request.getMessage());
+        if (user.getShippingInf() != null) {
+            AddressComunicator.address address = AddressComunicator.address.newBuilder()
+                    .setCity(user.getShippingInf().getCity())
+                    .setCountry(user.getShippingInf().getCountry())
+                    .setStreet(user.getShippingInf().getStreet())
+                    .setExtraInfo(user.getShippingInf().getExtraInf()).build();
+            responseObserver.onNext(AddressComunicator.user.newBuilder()
+                    .setEmail(user.getEmail())
+                    .setName(user.getName())
+                    .setId((int) user.getId())
+                    .setPhoneNumber(String.valueOf(user.getPhone()))
+                    .setAddress(address).setAuth(user.getAuth())
+                    .build());
+            responseObserver.onCompleted();
         }
+        else {
+
+            responseObserver.onNext(AddressComunicator.user.newBuilder()
+                    .setEmail(user.getEmail())
+                    .setAuth(user.getAuth())
+                    .setId((int) user.getId())
+                    .build());
+            responseObserver.onCompleted();
+        }
+    }}

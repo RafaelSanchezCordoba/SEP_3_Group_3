@@ -32,7 +32,38 @@ public class UserGrpcDao : IUserDao
 
     public Task<User> Validateuser(string email, string password)
     {
-        throw new NotImplementedException();
+        var req = new loginMessage()
+        {
+            Email = email,Password = password
+        };
+        try
+        {
+            var resp2 = stub.Login(req);
+
+            if (resp2.Message.Equals(email))
+            {
+                var req2 = new StringMessageAddress() { Message = email };
+                var resp = stub.GetUserByEmail(req2);
+                User user = new User()
+                {
+                    Id = resp.Id,
+                    Email = resp.Email,
+                    //     Password = resp.Password,
+                   // Address = new Address(resp.Address.Id, resp.Id,
+                    //    resp.Address.Country, resp.Address.City, (int)resp.Address.PostCode, resp.Address.Street,
+                      //  resp.Address.Number, resp.Address.ExtraInfo),
+                    Auth = resp.Auth,// Name = resp.Name, PhoneNumber = resp.PhoneNumber
+                };
+                return Task.FromResult(user);
+            }
+
+            return null;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
 
     public Task<bool> UserExists(int id)
@@ -92,9 +123,10 @@ public class UserGrpcDao : IUserDao
             Id = resp.Id,
             Email = resp.Email,
             //     Password = resp.Password,
-            Address = new Address(resp.Address.Id, resp.Id,
-                resp.Address.Country,resp.Address.City,(int)resp.Address.PostCode,resp.Address.Street,resp.Address.Number,resp.Address.ExtraInfo),
-            Auth = resp.Auth,Name = resp.Name,PhoneNumber = resp.PhoneNumber
+           // Address = new Address(resp.Address.Id, resp.Id,
+           //     resp.Address.Country,resp.Address.City,(int)resp.Address.PostCode,resp.Address.Street,resp.Address.Number,resp.Address.ExtraInfo),
+            Auth = resp.Auth,
+            //Name = resp.Name,PhoneNumber = resp.PhoneNumber
         };
         user.Id = resp.Id;
         return Task.FromResult(user);

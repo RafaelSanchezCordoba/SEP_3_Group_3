@@ -43,6 +43,23 @@
           "Color": "green"
         }
       ]
+    },
+    {
+      "Id": 6,
+      "OwnerId": 10,
+      "Products": []
+    },
+    {
+      "Id": 7,
+      "OwnerId": 2,
+      "Products": [
+        {
+          "ProductCardId": 3,
+          "Id": 13,
+          "Size": "s",
+          "Color": "green"
+        }
+      ]
     }
   ],
   "SocksCards": null,
@@ -158,6 +175,12 @@
       "Quantity": 5,
       "ShoppingCartId": 5,
       "ProductId": 6
+    },
+    {
+      "Id": 9,
+      "Quantity": 4,
+      "ShoppingCartId": 7,
+      "ProductId": 13
     }
   ],
   "Orders": [

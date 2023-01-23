@@ -21,13 +21,14 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
     private ProductCardService service;
 
     @Override
-    public void addSocksCard(productCard request, StreamObserver<productCard> responseStream) {
+    public void addSockCard(productCard request, StreamObserver<productCard> responseStream) {
         System.out.println("Received req to save sock card with id::"+ request.getId());
 
         ProductCard card = new ProductCard(request.getTitle(), request.getDescription(), request.getPrice(), request.getMaterial(), request.getBrand(), request.getImage(), request.getType(), "sock");
         service.saveCard(card);
         responseStream.onNext(productCard.newBuilder()
                 .setTitle(card.getTitle())
+                .setId((int) card.getId())
                 .setDescription(card.getDescription())
                 .setPrice(card.getPrice())
                 .setMaterial(card.getMaterial())
@@ -46,6 +47,7 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
         service.saveCard(card);
         responseStream.onNext(productCard.newBuilder()
                 .setTitle(card.getTitle())
+                .setId((int) card.getId())
                 .setDescription(card.getDescription())
                 .setPrice(card.getPrice())
                 .setMaterial(card.getMaterial())
@@ -63,6 +65,7 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
         ProductCard card = service.getById(request.getRequest());
         responseStream.onNext(productCard.newBuilder()
                 .setTitle(card.getTitle())
+                .setId((int) card.getId())
                 .setDescription(card.getDescription())
                 .setPrice(card.getPrice())
                 .setMaterial(card.getMaterial())
@@ -90,8 +93,9 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
                     .setDescription(cards.getDescription())
                     .setType(cards.getType())
                     .build();
-            responseStream.onCompleted();
+            responseStream.onNext(protoCard);
         }
+        responseStream.onCompleted();
     }
 
     @Override
@@ -110,8 +114,9 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
                     .setDescription(cards.getDescription())
                     .setType(cards.getType())
                     .build();
-            responseStream.onCompleted();
+            responseStream.onNext(protoCard);
         }
+        responseStream.onCompleted();
     }
 
     @Override
@@ -120,6 +125,7 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
         ProductCard productCard = service.deleteByCardId(request.getRequest());
         responseStream.onNext(ProductCardComunicator.productCard.newBuilder()
                 .setTitle(productCard.getTitle())
+                .setId((int) productCard.getId())
                 .setDescription(productCard.getDescription())
                 .setPrice(productCard.getPrice())
                 .setMaterial(productCard.getMaterial())
@@ -136,6 +142,7 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
         ProductCard card = service.getByTitleSockCard(request.getRequest());
         responseStream.onNext(productCard.newBuilder()
                 .setTitle(card.getTitle())
+                .setId((int) card.getId())
                 .setDescription(card.getDescription())
                 .setPrice(card.getPrice())
                 .setMaterial(card.getMaterial())
@@ -153,13 +160,13 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
         ProductCard card = service.getByTitleTrouserCard(request.getRequest());
         responseStream.onNext(productCard.newBuilder()
                 .setTitle(card.getTitle())
+                .setId((int) card.getId())
                 .setDescription(card.getDescription())
                 .setPrice(card.getPrice())
                 .setMaterial(card.getMaterial())
                 .setBrand(card.getBrand())
                 .setImage(card.getImage())
                 .setType(card.getType())
-                .setId((int) card.getId())
                 .build());
         responseStream.onCompleted();
     }
@@ -180,6 +187,11 @@ public class ProductCardComunicatorImpl extends ProductCardGrpcGrpc.ProductCardG
                 .setId((int) productCard.getId())
                 .build());
         responseStream.onCompleted();
+    }
+
+    @Override
+    public void addSocksCard(productCard request, StreamObserver<productCard> responseStream) {
+
     }
 }
 

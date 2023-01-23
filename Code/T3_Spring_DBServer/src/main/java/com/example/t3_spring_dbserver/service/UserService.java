@@ -19,32 +19,16 @@ public class UserService implements IUserService{
     @Override
     public Customer RegisterUser(String email, String password) {
         Customer user=new Customer(email,password);
+        user.setAuth("Customer");
         return repo.save(user);
     }
 
     @Override
     public Customer Login(String email, String password){
 
-        Customer user = GetUserByEmail(email);
-        if (user==null){
-            try {
-                throw new Exception("That email does not correspond to a registered customer");
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
+        return GetUserByEmail(email);
         }
-        else if (user.getPassword().equals(password))
-        {
-            return user;
-        }
-        else {
-            try {
-                throw new Exception("Password is incorrect!!");
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
+
 
     @Override
     public Customer GetUserById(long id) {
@@ -54,8 +38,8 @@ public class UserService implements IUserService{
 
     @Override
     public Customer GetUserByEmail(String email) {
-        Optional<Customer> user = Optional.ofNullable(repo.getByEmail(email));
-        return user.get();
+        Customer user = repo.getByEmail(email);
+        return user;
     }
 
     @Override
@@ -72,8 +56,9 @@ public class UserService implements IUserService{
 
     @Override
     public ShippingInf GetAddressByUserId(int id) {
-        Optional<ShippingInf> address = Optional.ofNullable(repo.getAddressByUserId(id));
-        return address.get();
+       // Optional<ShippingInf> address = Optional.ofNullable(repo.getAddressByUserId(id));
+      //  return address.get();
+        return null;
     }
 
    }

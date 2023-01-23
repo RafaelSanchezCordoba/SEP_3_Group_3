@@ -31,11 +31,7 @@ public class ClientTest {
                 .setPrice(22.33)
                 .build());
         System.out.println("Product card saved: " + productCardEmpty.toString());
-<<<<<<< Updated upstream
 
-
-=======
->>>>>>> Stashed changes
         // Get all inventories
 //        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
 //        for (int i = 1;result.hasNext();i++){

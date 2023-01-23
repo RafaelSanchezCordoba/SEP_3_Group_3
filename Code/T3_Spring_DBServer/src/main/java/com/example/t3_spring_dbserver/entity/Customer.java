@@ -15,7 +15,7 @@ public class Customer implements Serializable {
     @Column(name = "id")
     private long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = true)
     private String name;
 
     @Column(name = "email")
@@ -24,11 +24,14 @@ public class Customer implements Serializable {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "auth")
+    private String auth;
+
     @Column(name = "phone_number")
     private long phone;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "shipping_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "shipping_id", nullable = true)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private ShippingInf shippingInf;
 
@@ -38,7 +41,7 @@ public class Customer implements Serializable {
 
     public Customer(String email, String password) {
         this.email = email;
-        this.password=password;
+        this.password = password;
     }
 
     @Override
@@ -100,11 +103,26 @@ public class Customer implements Serializable {
         this.password = password;
     }
 
+    public String getAuth() {
+        return auth;
+    }
+
+    public void setAuth(String auth) {
+        this.auth = auth;
+    }
+
+    public Customer(String email, String password, String auth) {
+        this.email = email;
+        this.password = password;
+        this.auth = auth;
+    }
+
     public Customer(String name, String email, long phone, ShippingInf shippingInf, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.shippingInf = shippingInf;
-        this.password=password;
+        this.password = password;
+
     }
 }

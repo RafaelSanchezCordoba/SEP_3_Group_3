@@ -1,3 +1,4 @@
+/*
 package com.example.t3_spring_dbserver.repository;
 
 import com.example.t3_spring_dbserver.entity.ProductCard;
@@ -26,3 +27,4 @@ public interface IShoppingCart extends JpaRepository<ShoppingCart, Long> {
     ShoppingCart getCartByUserId(@Param("customer_id") int customerId);
 
 }
+*/
