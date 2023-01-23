@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/DTOs/InventoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/DTOs/InventoryDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" afterDir="false" />
@@ -19,6 +24,21 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/entity/SockCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/ISocksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ISocksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/addressComunicator.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/addressComunicator.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/entity/SockCard.class" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <list id="ffcb8ffc-5dcd-4e8a-8876-e89e8010c3e9" name="Changes by alexd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +167,11 @@
       <workItem from="1673880054361" duration="7257000" />
       <workItem from="1673964403267" duration="6449000" />
       <workItem from="1674123449310" duration="18967000" />
+<<<<<<< Updated upstream
       <workItem from="1674465336932" duration="4308000" />
+=======
+      <workItem from="1674465282144" duration="4417000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

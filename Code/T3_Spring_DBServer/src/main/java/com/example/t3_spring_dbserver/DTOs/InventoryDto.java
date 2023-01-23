@@ -1,7 +1,5 @@
 package com.example.t3_spring_dbserver.DTOs;
 
-import com.example.t3_spring_dbserver.entity.SockCard;
-
 public class InventoryDto {
     private long id;
     private String color;

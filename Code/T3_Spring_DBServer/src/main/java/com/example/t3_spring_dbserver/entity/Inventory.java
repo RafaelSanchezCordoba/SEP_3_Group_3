@@ -57,11 +57,7 @@ public class Inventory implements Serializable {
 
 
 
-    public Inventory(String color, String size, SockCard sockCard) {
-        this.color = color;
-        this.size = size;
-      //  this.sockCard = sockCard;
-    }
+
 
     public long getId() {
         return id;
@@ -100,9 +96,7 @@ public class Inventory implements Serializable {
         this.quantity = quantity;
     }
 
-    public void setSockCard(SockCard sockCard) {
-      //  this.sockCard = sockCard;
-    }
+
 
     @Override
     public String toString() {

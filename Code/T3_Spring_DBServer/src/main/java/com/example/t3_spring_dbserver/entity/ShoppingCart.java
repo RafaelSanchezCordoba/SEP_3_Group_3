@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "shoppingCart",schema = "sep_db")
+@Table(name = "shopping_cart",schema = "sep_db")
 public class ShoppingCart implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

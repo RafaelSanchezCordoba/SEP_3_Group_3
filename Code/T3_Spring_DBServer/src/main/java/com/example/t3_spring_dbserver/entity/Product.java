@@ -21,16 +21,28 @@ public class Product implements Serializable {
     @Column(name = "color")
     private String color;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "sc_id", nullable = false)
+    @Column(name = "category")
+    private String category;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "pc_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private ProductCard sockCard;
 
-    public Product(long id, String size, String color, ProductCard sockCard) {
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "shc_id", nullable = true)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private ShoppingCart shoppingCart;
+
+
+
+    public Product(long id, String size, String color, ProductCard sockCard, String category, ShoppingCart shoppingCart) {
         this.id = id;
         this.size = size;
         this.color = color;
         this.sockCard = sockCard;
+        this.category = category;
+        this.shoppingCart = shoppingCart;
     }
 
     public Product(String size, String color, ProductCard sockCard) {
@@ -41,6 +53,21 @@ public class Product implements Serializable {
 
     public Product() {
 
+    }
+    public String getCategory() {
+        return category;
+    }
+
+    public ShoppingCart getShoppingCart() {
+        return shoppingCart;
+    }
+
+    public void setShoppingCart(ShoppingCart shoppingCart) {
+        this.shoppingCart = shoppingCart;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public void setId(long id) {

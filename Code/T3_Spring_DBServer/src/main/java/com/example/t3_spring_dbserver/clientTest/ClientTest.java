@@ -42,6 +42,7 @@ public class ClientTest {
                 .build());
         System.out.println("Product card saved: " + productCardEmpty.toString());
 
+
         // Get all inventories
 //        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
 //        for (int i = 1;result.hasNext();i++){
@@ -55,6 +56,17 @@ public class ClientTest {
 //                .setId(2)
 //                .setQuantity(44)
 //                .setCardId(1).build());
+
+        InventoryGrpcGrpc.InventoryGrpcBlockingStub inventoryStub = InventoryGrpcGrpc.newBlockingStub(channel);
+        ProductGrpcGrpc.ProductGrpcBlockingStub productStub = ProductGrpcGrpc.newBlockingStub(channel);
+
+        productStub.createSock(ProductComunicator.product.newBuilder()
+                .setSize("m")
+                .setColor("lol")
+                .setPcId(1)
+                .build());
+
+
 
 
 //        com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard getByTitleCard = stub.getByTitle(req);

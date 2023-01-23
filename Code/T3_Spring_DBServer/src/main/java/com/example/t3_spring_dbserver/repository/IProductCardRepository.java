@@ -1,6 +1,5 @@
 package com.example.t3_spring_dbserver.repository;
 import com.example.t3_spring_dbserver.entity.ProductCard;
-import com.example.t3_spring_dbserver.entity.SockCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
