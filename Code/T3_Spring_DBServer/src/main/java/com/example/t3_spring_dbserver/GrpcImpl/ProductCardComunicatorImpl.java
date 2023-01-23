@@ -1,12 +1,10 @@
 package com.example.t3_spring_dbserver.GrpcImpl;
 import com.example.t3_spring_dbserver.entity.ProductCard;
 import com.example.t3_spring_dbserver.service.ProductCardService;
-<<<<<<< Updated upstream
+
 import com.protoBuff.ProductCardComunicator;
 import com.protoBuff.ProductCardComunicator.StringReqCard;
-=======
 
->>>>>>> Stashed changes
 import com.protoBuff.ProductCardComunicator.productCard;
 import com.protoBuff.ProductCardComunicator.Empty;
 import com.protoBuff.ProductCardComunicator.IntReqCard;

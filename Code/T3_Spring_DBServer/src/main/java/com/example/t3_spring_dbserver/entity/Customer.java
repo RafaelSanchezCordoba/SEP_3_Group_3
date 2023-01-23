@@ -21,6 +21,9 @@ public class Customer implements Serializable {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "phone_number")
     private long phone;
 
@@ -31,6 +34,11 @@ public class Customer implements Serializable {
 
     public Customer() {
 
+    }
+
+    public Customer(String email, String password) {
+        this.email = email;
+        this.password=password;
     }
 
     @Override
@@ -84,10 +92,19 @@ public class Customer implements Serializable {
         return shippingInf;
     }
 
-    public Customer(String name, String email, long phone, ShippingInf shippingInf) {
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Customer(String name, String email, long phone, ShippingInf shippingInf, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.shippingInf = shippingInf;
+        this.password=password;
     }
 }

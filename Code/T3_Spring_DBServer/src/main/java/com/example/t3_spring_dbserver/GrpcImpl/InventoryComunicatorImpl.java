@@ -4,6 +4,8 @@ package com.example.t3_spring_dbserver.GrpcImpl;
 import com.example.t3_spring_dbserver.DTOs.InventoryDto;
 import com.example.t3_spring_dbserver.entity.Inventory;
 import com.example.t3_spring_dbserver.entity.ProductCard;
+import com.example.t3_spring_dbserver.service.IInventoryService;
+import com.example.t3_spring_dbserver.service.IProductCardService;
 import com.example.t3_spring_dbserver.service.ProductCardService;
 import com.example.t3_spring_dbserver.service.InventoryService;
 import com.protoBuff.InventoryGrpcGrpc.*;
@@ -19,10 +21,10 @@ import java.util.List;
 public class InventoryComunicatorImpl extends InventoryGrpcImplBase {
 
     @Autowired
-    private InventoryService service;
+    private IInventoryService service;
 
     @Autowired
-    private ProductCardService cardService;
+    private IProductCardService cardService;
 
     @Override
     public void create(inventory req, StreamObserver<inventory> responseStream) {

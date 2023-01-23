@@ -1,5 +1,7 @@
 package com.example.t3_spring_dbserver.entity;
 
+import org.apache.catalina.User;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -10,6 +12,10 @@ public class ShippingInf implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private long id;
+
+    @OneToOne
+    @Column(name="uId")
+    private Customer customer;
 
     @Column(name = "country")
     private String country;
@@ -33,13 +39,14 @@ public class ShippingInf implements Serializable {
 
     }
 
-    public ShippingInf(String country, String city, int postCode, String street, int number, String extraInf) {
+    public ShippingInf(String country, String city, int postCode, String street, int number, String extraInf, Customer customer) {
         this.country = country;
         this.city = city;
         this.postCode = postCode;
         this.street = street;
         this.number = number;
         this.extraInf = extraInf;
+        this.customer= customer;
     }
 
     public long getId() {
@@ -96,6 +103,14 @@ public class ShippingInf implements Serializable {
 
     public void setExtraInf(String extraInf) {
         this.extraInf = extraInf;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
     @Override
