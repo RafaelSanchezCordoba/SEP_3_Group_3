@@ -13,9 +13,12 @@ public interface IProductCardService {
 
     List<ProductCard> getAllSockCards();
 
-    ProductCard deleteSockCard(long id);
+    List<ProductCard> getAllTrouserCards();
 
-    ProductCard updateSockCard(ProductCard sockCard);
+    ProductCard deleteByCardId(long id);
 
-    ProductCard getByTitle(String title);
+    ProductCard updateSockCard(ProductCard productCard);
+
+    ProductCard getByTitleSockCard(String title);
+    ProductCard getByTitleTrouserCard(String title);
 }

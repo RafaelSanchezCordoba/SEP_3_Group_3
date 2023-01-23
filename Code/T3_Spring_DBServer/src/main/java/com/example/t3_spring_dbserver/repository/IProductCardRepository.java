@@ -11,10 +11,18 @@ import java.util.List;
 @Repository
 public interface IProductCardRepository extends JpaRepository<ProductCard, Long> {
 
-    @Query("SELECT i  FROM ProductCard i WHERE i.title = :title")
-    ProductCard findCardByTitle(@Param("title") String title);
+    @Query(value = "SELECT i  FROM ProductCard i WHERE i.title = :title AND category = 'sock'", nativeQuery = true)
+    ProductCard findSockCardByTitle(@Param("title") String title);
+
+    @Query(value = "SELECT i  FROM ProductCard i WHERE i.title = :title AND category = 'trouser'", nativeQuery = true)
+    ProductCard findTrouserCardByTitle(@Param("title") String title);
 
     @Query(value= "SELECT *  from sep_db.product_card where category = 'sock'",nativeQuery = true)
     List<ProductCard> findAllSockCards ();
+
+    @Query(value= "SELECT *  from sep_db.product_card where category = 'trouser'",nativeQuery = true)
+    List<ProductCard> findAllTrouserCards ();
+
+
 
 }

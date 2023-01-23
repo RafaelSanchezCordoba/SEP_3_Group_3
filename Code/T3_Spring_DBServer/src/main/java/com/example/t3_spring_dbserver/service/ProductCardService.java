@@ -38,41 +38,45 @@ public class ProductCardService implements IProductCardService {
     }
 
     @Override
-    public ProductCard deleteSockCard(long id){
-        Optional<ProductCard> sockCardData = repository.findById(id);
+    public List<ProductCard> getAllTrouserCards() {
+        return repository.findAllTrouserCards();
+    }
+
+    @Override
+    public ProductCard deleteByCardId(long id) {
+        Optional<ProductCard> productCard = repository.findById(id);
         repository.deleteById(id);
-        return  sockCardData.get();
-
+        return productCard.get();
     }
 
     @Override
-    public ProductCard updateSockCard(ProductCard sockCard) {
-        return null;
+    public ProductCard updateSockCard(ProductCard productCard) {
+        Optional<ProductCard> productCardToUpdate = repository.findById(productCard.getId());
+        productCardToUpdate.get().setBrand(productCard.getBrand());
+        productCardToUpdate.get().setPrice(productCard.getPrice());
+        productCardToUpdate.get().setDescription(productCard.getDescription());
+        productCardToUpdate.get().setBrand(productCard.getBrand());
+        productCardToUpdate.get().setTitle(productCard.getTitle());
+        productCardToUpdate.get().setImage(productCard.getImage());
+        productCardToUpdate.get().setMaterial(productCard.getMaterial());
+        productCardToUpdate.get().setType(productCard.getType());
+
+        repository.save(productCardToUpdate.get());
+        return repository.getReferenceById(productCard.getId());
     }
 
 
-    public ProductCard updateSockCard(SockCardDto dtoCard){
-
-        Optional<ProductCard> sockCardToUpdate = repository.findById(dtoCard.getId());
-        sockCardToUpdate.get().setBrand(dtoCard.getBrand());
-        sockCardToUpdate.get().setPrice(dtoCard.getPrice());
-        sockCardToUpdate.get().setDescription(dtoCard.getDescription());
-        sockCardToUpdate.get().setBrand(dtoCard.getBrand());
-        sockCardToUpdate.get().setTitle(dtoCard.getTitle());
-        sockCardToUpdate.get().setImage(dtoCard.getImage());
-        sockCardToUpdate.get().setMaterial(dtoCard.getMaterial());
-        sockCardToUpdate.get().setType(dtoCard.getType());
-
-
-        repository.save(sockCardToUpdate.get());
-
-        return repository.getReferenceById(dtoCard.getId());
+    @Override
+    public ProductCard getByTitleSockCard(String title){
+      ProductCard sockCard = repository.findSockCardByTitle(title);
+      System.out.println(sockCard);
+      return sockCard;
     }
 
     @Override
-    public ProductCard getByTitle(String title){
-      ProductCard sockCardData = repository.findCardByTitle(title);
-        System.out.println(sockCardData);
-      return sockCardData;
+    public ProductCard getByTitleTrouserCard(String title) {
+        ProductCard trouserCard = repository.findTrouserCardByTitle(title);
+        System.out.println(trouserCard);
+        return trouserCard;
     }
 }

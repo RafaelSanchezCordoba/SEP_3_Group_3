@@ -5,6 +5,11 @@ import com.google.protobuf.GeneratedMessageV3;
 import com.protoBuff.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import com.protoBuff.ProductCardComunicator;
+import com.protoBuff.ProductCardComunicator.StringReqCard;
+import com.protoBuff.ProductCardComunicator.productCard;
+import com.protoBuff.ProductCardComunicator.Empty;
+import com.protoBuff.ProductCardComunicator.IntReqCard;
 
 public class ClientTest {
 
@@ -14,7 +19,6 @@ public class ClientTest {
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9999).usePlaintext().build();
        /* SocksCardGrpcGrpc.SocksCardGrpcBlockingStub stub = SocksCardGrpcGrpc.newBlockingStub(channel);
-
         SocksGrpcGrpc.SocksGrpcBlockingStub socksStub = SocksGrpcGrpc.newBlockingStub(channel);
         SocksCardComunicator.StringReq req= SocksCardComunicator.StringReq.newBuilder().setRequest("string").build();
 
@@ -23,16 +27,34 @@ public class ClientTest {
                 .setId(3).setColor("b").setSize("M").setCardId(3).build());
 
         */
+        ProductCardGrpcGrpc.ProductCardGrpcBlockingStub productCardStub = ProductCardGrpcGrpc.newBlockingStub(channel);
 
 
+        // Create Product Card
+        productCard productCardEmpty = productCardStub.addSockCard(productCard.newBuilder()
+                .setTitle("asdf")
+                .setDescription("sdfs")
+                .setBrand(" sdfsd")
+                .setMaterial("sdf")
+                .setImage("sdfs")
+                .setType("trsadf")
+                .setPrice(22.33)
+                .build());
+        System.out.println("Product card saved: " + productCardEmpty.toString());
 
-        InventoryGrpcGrpc.InventoryGrpcBlockingStub inventoryStub = InventoryGrpcGrpc.newBlockingStub(channel);
-        inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
-                .setSize("m")
-                .setColor("greenb")
-                .setId(2)
-                .setQuantity(44)
-                .setCardId(1).build());
+        // Get all inventories
+//        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
+//        for (int i = 1;result.hasNext();i++){
+//            System.out.println(result.next().getId());
+//        }
+
+//        InventoryGrpcGrpc.InventoryGrpcBlockingStub inventoryStub = InventoryGrpcGrpc.newBlockingStub(channel);
+//        inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
+//                .setSize("m")
+//                .setColor("greenb")
+//                .setId(2)
+//                .setQuantity(44)
+//                .setCardId(1).build());
 
 
 //        com.example.t3_spring_dbserver.sockProtoBuff.com.example.t3_spring_dbserver.sockProtoBuff.SocksComunicator.sockCard getByTitleCard = stub.getByTitle(req);

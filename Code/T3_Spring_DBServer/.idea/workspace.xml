@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Microsoft.IdentityModel.JsonWebTokens 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Microsoft.IdentityModel.Logging 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Microsoft.IdentityModel.Protocols 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Microsoft.IdentityModel.Protocols.OpenIdConnect 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Microsoft.IdentityModel.Tokens 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Swashbuckle.AspNetCore.Swagger 4.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Swashbuckle.AspNetCore.SwaggerGen 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.Swashbuckle.AspNetCore.SwaggerUI 3.dll.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T2_SEP3/WebAPI/bin/Debug/net6.0/.System.IdentityModel.Tokens.Jwt 3.dll.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductCardComunicatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/protoBuff/ProductCardGrpcGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/protoBuff/ProductCardGrpcGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IProductCardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/ISocksRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/IProductCardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ISocksService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/ProductCardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/service/SocksService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/clientTest/ClientTest.class" afterDir="false" />
     </list>
-    <list id="ffcb8ffc-5dcd-4e8a-8876-e89e8010c3e9" name="Changes by alexd" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/InventoryComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/InventoryComunicatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/GrpcImpl/ProductComunicatorImpl.java" afterDir="false" />
-    </list>
+    <list id="ffcb8ffc-5dcd-4e8a-8876-e89e8010c3e9" name="Changes by alexd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +147,7 @@
       <workItem from="1673880054361" duration="7257000" />
       <workItem from="1673964403267" duration="6449000" />
       <workItem from="1674123449310" duration="18967000" />
+      <workItem from="1674465336932" duration="4308000" />
     </task>
     <servers />
   </component>
@@ -164,5 +164,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
