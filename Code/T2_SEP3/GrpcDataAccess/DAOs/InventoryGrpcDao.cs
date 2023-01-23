@@ -8,7 +8,7 @@ namespace GrpcDataAccess.DAOs;
 public class InventoryGrpcDao : InterfaceInventoryDao
 {
     static Channel channel = new Channel("localhost:9999", ChannelCredentials.Insecure);
-    private SocksInventoryComunicatorGrpc.
+    private InventoryGrpc.InventoryGrpcClient stub = new InventoryGrpc.InventoryGrpcClient(channel); 
     
     public Task<Inventory> CreateAsync(Inventory inventory)
     {
@@ -26,7 +26,9 @@ public class InventoryGrpcDao : InterfaceInventoryDao
         try
         {
             var empty = stub.create(req);
-            
+            Inventory resp = new Inventory(empty.CardId,empty.Color,empty.Size,empty.Quantity);
+
+            return Task.FromResult(resp);
         }
         catch (Exception e)
         {
@@ -34,7 +36,7 @@ public class InventoryGrpcDao : InterfaceInventoryDao
             throw;
         }
 
-        return Task.FromResult(inventory);
+        
     }
 
     public async Task<IEnumerable<Inventory>> GetAsync()
@@ -139,4 +141,4 @@ public class InventoryGrpcDao : InterfaceInventoryDao
         return Task.FromResult(inventory);
     }
 
-}*/
+}

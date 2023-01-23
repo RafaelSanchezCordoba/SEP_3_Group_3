@@ -26,8 +26,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FileContext>();
 
-builder.Services.AddScoped<ISockCardDao, SocksCardGrpcDao>();
 
+builder.Services.AddScoped<InterfaceInventoryDao,InventoryGrpcDao>();
+builder.Services.AddScoped<IShoppingCartDao, ShoppingCartGrpcDao>();
 // builder.Services.AddScoped<ISockCardDao, SockCardFileDao>();
 
 builder.Services.AddScoped<ISockCardLogic, SockCardLogic>();
@@ -44,7 +45,7 @@ builder.Services.AddScoped<IUserDao,UserDaoFile>();
 builder.Services.AddScoped<IOrderDao, OrderFileDao>();
 builder.Services.AddScoped<IOrderLogic, OrderLogic>();
 builder.Services.AddScoped<ISocksLogic, SocksLogic>();
-builder.Services.AddScoped<ISocksDao, SocksGrpcDao>();
+
 builder.Services.AddScoped<IAddressDao, AddressFileDao>();
 builder.Services.AddScoped<ICartItemDao, CartItemFileDao>();
 builder.Services.AddScoped<ICartItemLogic, CartItemLogic>();
