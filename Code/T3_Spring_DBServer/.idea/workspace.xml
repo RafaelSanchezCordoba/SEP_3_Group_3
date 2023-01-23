@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9c8a956-cc83-40aa-b907-e17b0cafecb9" name="Changes" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
 =======
@@ -39,6 +40,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/t3_spring_dbserver/entity/SockCard.class" beforeDir="false" />
 >>>>>>> Stashed changes
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/repository/IShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/t3_spring_dbserver/clientTest/ClientTest.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <list id="ffcb8ffc-5dcd-4e8a-8876-e89e8010c3e9" name="Changes by alexd" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -168,9 +174,13 @@
       <workItem from="1673964403267" duration="6449000" />
       <workItem from="1674123449310" duration="18967000" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <workItem from="1674465336932" duration="4308000" />
 =======
       <workItem from="1674465282144" duration="4417000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1674465336932" duration="4875000" />
 >>>>>>> Stashed changes
     </task>
     <servers />

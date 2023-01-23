@@ -15,6 +15,8 @@ public class ShoppingCart implements Serializable {
     @JoinColumn(name = "customer_id", referencedColumnName = "id")
     private Customer customer;
 
+
+
     public ShoppingCart() {
 
     }

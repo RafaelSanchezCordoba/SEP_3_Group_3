@@ -18,18 +18,8 @@ public class ClientTest {
     public static void main(String[] args)  throws Exception{
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9999).usePlaintext().build();
-       /* SocksCardGrpcGrpc.SocksCardGrpcBlockingStub stub = SocksCardGrpcGrpc.newBlockingStub(channel);
-        SocksGrpcGrpc.SocksGrpcBlockingStub socksStub = SocksGrpcGrpc.newBlockingStub(channel);
-        SocksCardComunicator.StringReq req= SocksCardComunicator.StringReq.newBuilder().setRequest("string").build();
-
-
-        inventoryStub.create(SocksInventoryComunicator.inventory.newBuilder()
-                .setId(3).setColor("b").setSize("M").setCardId(3).build());
-
-        */
         ProductCardGrpcGrpc.ProductCardGrpcBlockingStub productCardStub = ProductCardGrpcGrpc.newBlockingStub(channel);
-
-
+        //PRODUCT CARD!!!
         // Create Product Card
         productCard productCardEmpty = productCardStub.addSockCard(productCard.newBuilder()
                 .setTitle("asdf")
@@ -41,8 +31,11 @@ public class ClientTest {
                 .setPrice(22.33)
                 .build());
         System.out.println("Product card saved: " + productCardEmpty.toString());
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
         // Get all inventories
 //        Iterator<com.example.t3_spring_dbserver.sockProtoBuff.SocksInventoryComunicator.inventory> result =  inventoryStub.getAll(EmptyInventoryMessage.newBuilder().build());
 //        for (int i = 1;result.hasNext();i++){

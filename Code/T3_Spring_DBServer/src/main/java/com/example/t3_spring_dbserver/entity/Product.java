@@ -27,7 +27,7 @@ public class Product implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
     @JoinColumn(name = "pc_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private ProductCard sockCard;
+    private ProductCard productCard;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
     @JoinColumn(name = "shc_id", nullable = true)
@@ -36,19 +36,19 @@ public class Product implements Serializable {
 
 
 
-    public Product(long id, String size, String color, ProductCard sockCard, String category, ShoppingCart shoppingCart) {
+    public Product(long id, String size, String color, ProductCard productCard, String category, ShoppingCart shoppingCart) {
         this.id = id;
         this.size = size;
         this.color = color;
-        this.sockCard = sockCard;
+        this.productCard = productCard;
         this.category = category;
         this.shoppingCart = shoppingCart;
     }
 
-    public Product(String size, String color, ProductCard sockCard) {
+    public Product(String size, String color, ProductCard productCard) {
         this.size = size;
         this.color = color;
-        this.sockCard = sockCard;
+        this.productCard = productCard;
     }
 
     public Product() {
@@ -83,7 +83,7 @@ public class Product implements Serializable {
     }
 
     public void setSockCard(ProductCard sockCard) {
-        this.sockCard = sockCard;
+        this.productCard = sockCard;
     }
 
     public long getId() {
@@ -99,6 +99,6 @@ public class Product implements Serializable {
     }
 
     public ProductCard getSockCard() {
-        return sockCard;
+        return productCard;
     }
 }
